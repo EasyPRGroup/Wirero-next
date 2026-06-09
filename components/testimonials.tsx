@@ -1,5 +1,4 @@
 import type { NextPage } from "next";
-import { type CSSProperties } from "react";
 import Image from "next/image";
 
 export type TestimonialsType = {
@@ -7,7 +6,7 @@ export type TestimonialsType = {
   image83: string;
 
   /** Variant props */
-  property1?: CSSProperties["property1"];
+  property1?: "Default" | "Variant2";
 };
 
 const Testimonials: NextPage<TestimonialsType> = ({

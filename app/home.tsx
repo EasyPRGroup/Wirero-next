@@ -52,7 +52,7 @@ const Home: NextPage = () => {
               Distribution Platforms
             </div>
             <Image
-              className="w-[3rem] h-[3rem] absolute !!m-[0 important] top-[-0.625rem] left-[7.5rem] object-cover z-[2] shrink-0"
+              className="w-[3rem] h-[3rem] absolute !m-0 top-[-0.625rem] left-[7.5rem] object-cover z-[2] shrink-0"
               width={48}
               height={48}
               sizes="100vw"
@@ -62,7 +62,7 @@ const Home: NextPage = () => {
           </div>
           <div className="self-stretch flex flex-col items-start relative isolate gap-[0.375rem]">
             <Image
-              className="w-[3rem] h-[3rem] absolute !!m-[0 important] top-[-0.625rem] left-[10.375rem] object-cover z-[0] shrink-0"
+              className="w-[3rem] h-[3rem] absolute !m-0 top-[-0.625rem] left-[10.375rem] object-cover z-[0] shrink-0"
               width={48}
               height={48}
               sizes="100vw"
@@ -78,7 +78,7 @@ const Home: NextPage = () => {
           </div>
           <div className="self-stretch flex flex-col items-start relative isolate gap-[0.375rem]">
             <Image
-              className="w-[3rem] h-[3rem] absolute !!m-[0 important] top-[-0.625rem] left-[5.5rem] object-cover hidden z-[0] shrink-0"
+              className="w-[3rem] h-[3rem] absolute !m-0 top-[-0.625rem] left-[5.5rem] object-cover hidden z-[0] shrink-0"
               width={48}
               height={48}
               sizes="100vw"
@@ -86,7 +86,7 @@ const Home: NextPage = () => {
               src="/Mask-group2@2x.png"
             />
             <Image
-              className="w-[3rem] h-[3rem] absolute !!m-[0 important] top-[-0.625rem] left-[10.688rem] object-cover z-[1] shrink-0"
+              className="w-[3rem] h-[3rem] absolute !m-0 top-[-0.625rem] left-[10.688rem] object-cover z-[1] shrink-0"
               width={48}
               height={48}
               sizes="100vw"

@@ -1,20 +1,34 @@
+/* Tailwind CSS v4 imports */
 @import "tailwindcss/preflight.css" layer(base);
 @import "tailwindcss/theme.css" layer(theme);
 @import "tailwindcss/utilities.css" layer(utilities);
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,700&display=swap");
+
+/* Google Fonts - Note: Proxima Nova is a commercial font */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Proxima+Nova:ital,wght@0,400;0,600;0,700;0,800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,400;0,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Onest:ital,wght@0,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Onest:wght@600&display=swap");
+
+/* Layer order for Tailwind */
 @layer theme, base, components, utilities;
+
+/* Tailwind configuration */
 @config "../tailwind.config.js";
 
+/* Base styles */
 body {
   @apply leading-[normal] m-0;
 }
+
 @layer base {
   *,
   *::before,
   *::after {
     border-width: 0;
   }
+}
+
+/* Custom selection color */
+::selection {
+  @apply bg-primary text-white;
 }

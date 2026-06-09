@@ -1,6 +1,4 @@
-"use client";
 import type { NextPage } from "next";
-import { useState } from "react";
 import Image from "next/image";
 import ItemMenu from "./item-menu";
 
@@ -8,125 +6,36 @@ export type FrameComponent4Type = {
   className?: string;
 };
 
+/**
+ * Footer links section component
+ * Contains Resources, Company, and Legal link columns
+ */
 const FrameComponent4: NextPage<FrameComponent4Type> = ({ className = "" }) => {
-  const [itemMenuItems] = useState([
-    {
-      property1: "Default" as const,
-      showItemMenu: true,
-      itemMenuAlignSelf: "stretch" as const,
-      itemMenuWidth: undefined,
-      aboutUs: "Blog",
-    },
-    {
-      property1: "Default" as const,
-      showItemMenu: false,
-      itemMenuAlignSelf: "unset" as const,
-      itemMenuWidth: "17.75rem" as const,
-      aboutUs: "Press Release Writing Guide",
-    },
-    {
-      property1: "Default" as const,
-      showItemMenu: false,
-      itemMenuAlignSelf: "unset" as const,
-      itemMenuWidth: "17.75rem" as const,
-      aboutUs: "Case Studies",
-    },
-    {
-      property1: "Default" as const,
-      showItemMenu: true,
-      itemMenuAlignSelf: "stretch" as const,
-      itemMenuWidth: undefined,
-      aboutUs: "Help Center",
-    },
-    {
-      property1: "Default" as const,
-      showItemMenu: true,
-      itemMenuAlignSelf: "stretch" as const,
-      itemMenuWidth: undefined,
-      aboutUs: "FAQs",
-    },
-    {
-      property1: "Default" as const,
-      showItemMenu: true,
-      itemMenuAlignSelf: "stretch" as const,
-      itemMenuWidth: undefined,
-      aboutUs: "News Room",
-    },
-  ]);
-  const [itemMenuItems1] = useState([
-    {
-      property1: "Default" as const,
-      showItemMenu: false,
-      itemMenuAlignSelf: "unset" as const,
-      itemMenuWidth: "17.75rem" as const,
-      aboutUs: "Services",
-    },
-    {
-      property1: "Default" as const,
-      showItemMenu: true,
-      itemMenuAlignSelf: "unset" as const,
-      itemMenuWidth: "17.75rem" as const,
-      aboutUs: "About",
-    },
-    {
-      property1: "Default" as const,
-      showItemMenu: true,
-      itemMenuAlignSelf: "unset" as const,
-      itemMenuWidth: "17.75rem" as const,
-      aboutUs: "Media Network",
-    },
-    {
-      property1: "Default" as const,
-      showItemMenu: true,
-      itemMenuAlignSelf: "unset" as const,
-      itemMenuWidth: "17.75rem" as const,
-      aboutUs: "Pricing",
-    },
-    {
-      property1: "Default" as const,
-      showItemMenu: false,
-      itemMenuAlignSelf: "unset" as const,
-      itemMenuWidth: "17.75rem" as const,
-      aboutUs: "Distribution Process",
-    },
-    {
-      property1: "Default" as const,
-      showItemMenu: false,
-      itemMenuAlignSelf: "unset" as const,
-      itemMenuWidth: "17.75rem" as const,
-      aboutUs: "Partner Program",
-    },
-  ]);
-  const [itemMenuItems2] = useState([
-    {
-      property1: "Default" as const,
-      showItemMenu: false,
-      itemMenuAlignSelf: "unset" as const,
-      itemMenuWidth: "17.75rem" as const,
-      aboutUs: "Help Center",
-    },
-    {
-      property1: "Default" as const,
-      showItemMenu: true,
-      itemMenuAlignSelf: "unset" as const,
-      itemMenuWidth: "17.75rem" as const,
-      aboutUs: "Terms of Service",
-    },
-    {
-      property1: "Default" as const,
-      showItemMenu: true,
-      itemMenuAlignSelf: "unset" as const,
-      itemMenuWidth: "17.75rem" as const,
-      aboutUs: "Privacy Policy",
-    },
-    {
-      property1: "Default" as const,
-      showItemMenu: false,
-      itemMenuAlignSelf: "unset" as const,
-      itemMenuWidth: "17.75rem" as const,
-      aboutUs: "Editorial Guidelines",
-    },
-  ]);
+  const resourceLinks = [
+    { showItemMenu: true, aboutUs: "Blog" },
+    { showItemMenu: false, aboutUs: "Press Release Writing Guide" },
+    { showItemMenu: false, aboutUs: "Case Studies" },
+    { showItemMenu: true, aboutUs: "Help Center" },
+    { showItemMenu: true, aboutUs: "FAQs" },
+    { showItemMenu: true, aboutUs: "News Room" },
+  ];
+
+  const companyLinks = [
+    { showItemMenu: false, aboutUs: "Services" },
+    { showItemMenu: true, aboutUs: "About" },
+    { showItemMenu: true, aboutUs: "Media Network" },
+    { showItemMenu: true, aboutUs: "Pricing" },
+    { showItemMenu: false, aboutUs: "Distribution Process" },
+    { showItemMenu: false, aboutUs: "Partner Program" },
+  ];
+
+  const legalLinks = [
+    { showItemMenu: false, aboutUs: "Help Center" },
+    { showItemMenu: true, aboutUs: "Terms of Service" },
+    { showItemMenu: true, aboutUs: "Privacy Policy" },
+    { showItemMenu: false, aboutUs: "Editorial Guidelines" },
+  ];
+
   return (
     <div
       className={`w-[76.25rem] flex items-start gap-[1.75rem] text-left text-[1.25rem] text-[#1a2530] font-['Proxima_Nova'] ${className}`}
@@ -239,13 +148,10 @@ const FrameComponent4: NextPage<FrameComponent4Type> = ({ className = "" }) => {
           </h3>
         </div>
         <div className="self-stretch flex flex-col items-start gap-[0.75rem] text-[1rem] text-[rgba(26,37,48,0.7)]">
-          {itemMenuItems.map((item, index) => (
+          {resourceLinks.map((item, index) => (
             <ItemMenu
               key={index}
-              property1={item.property1}
               showItemMenu={item.showItemMenu}
-              itemMenuAlignSelf={item.itemMenuAlignSelf}
-              itemMenuWidth={item.itemMenuWidth}
               aboutUs={item.aboutUs}
             />
           ))}
@@ -258,13 +164,10 @@ const FrameComponent4: NextPage<FrameComponent4Type> = ({ className = "" }) => {
           </h3>
         </div>
         <div className="self-stretch flex flex-col items-start gap-[0.75rem]">
-          {itemMenuItems1.map((item, index) => (
+          {companyLinks.map((item, index) => (
             <ItemMenu
               key={index}
-              property1={item.property1}
               showItemMenu={item.showItemMenu}
-              itemMenuAlignSelf={item.itemMenuAlignSelf}
-              itemMenuWidth={item.itemMenuWidth}
               aboutUs={item.aboutUs}
             />
           ))}
@@ -277,13 +180,10 @@ const FrameComponent4: NextPage<FrameComponent4Type> = ({ className = "" }) => {
           </h3>
         </div>
         <div className="self-stretch flex flex-col items-start gap-[0.75rem]">
-          {itemMenuItems2.map((item, index) => (
+          {legalLinks.map((item, index) => (
             <ItemMenu
               key={index}
-              property1={item.property1}
               showItemMenu={item.showItemMenu}
-              itemMenuAlignSelf={item.itemMenuAlignSelf}
-              itemMenuWidth={item.itemMenuWidth}
               aboutUs={item.aboutUs}
             />
           ))}

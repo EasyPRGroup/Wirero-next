@@ -1,6 +1,5 @@
-"use client";
 import type { NextPage } from "next";
-import { useMemo, type CSSProperties } from "react";
+import type { CSSProperties } from "react";
 import Image from "next/image";
 
 export type UserOutlinedType = {
@@ -13,7 +12,7 @@ export type UserOutlinedType = {
   showArrowRightIcon?: boolean;
 
   /** Variant props */
-  property1?: CSSProperties["property1"];
+  property1?: "Default" | "Variant2";
 
   /** Style props */
   userOutlinedBorder?: CSSProperties["border"];
@@ -27,48 +26,39 @@ export type UserOutlinedType = {
 
 const UserOutlined: NextPage<UserOutlinedType> = ({
   className = "",
-  property1 = "Default",
   showUserOutlined,
+  userOutlined,
+  showUserOutlinedIcon,
+  cTAButton,
+  arrowRight,
+  showArrowRightIcon,
   userOutlinedBorder,
   userOutlinedPadding,
   userOutlinedBackgroundColor,
   userOutlinedHeight,
-  userOutlined,
-  showUserOutlinedIcon,
-  cTAButton,
   cTAButtonFontSize,
   cTAButtonColor,
   cTAButtonMargin,
-  arrowRight,
-  showArrowRightIcon,
 }) => {
-  const userOutlinedStyle: CSSProperties = useMemo(() => {
-    return {
-      border: userOutlinedBorder,
-      padding: userOutlinedPadding,
-      backgroundColor: userOutlinedBackgroundColor,
-      height: userOutlinedHeight,
-    };
-  }, [
-    userOutlinedBorder,
-    userOutlinedPadding,
-    userOutlinedBackgroundColor,
-    userOutlinedHeight,
-  ]);
+  // Static inline styles (no need for useMemo since they don't change)
+  const buttonStyle: CSSProperties = {
+    border: userOutlinedBorder,
+    padding: userOutlinedPadding,
+    backgroundColor: userOutlinedBackgroundColor,
+    height: userOutlinedHeight,
+  };
 
-  const cTAButtonStyle: CSSProperties = useMemo(() => {
-    return {
-      fontSize: cTAButtonFontSize,
-      color: cTAButtonColor,
-      margin: cTAButtonMargin,
-    };
-  }, [cTAButtonFontSize, cTAButtonColor, cTAButtonMargin]);
+  const textStyle: CSSProperties = {
+    fontSize: cTAButtonFontSize,
+    color: cTAButtonColor,
+    margin: cTAButtonMargin,
+  };
 
   return (
     !!showUserOutlined && (
       <button
         className={`cursor-pointer [border:none] py-[0.75rem] px-[2.25rem] bg-color-white h-[3rem] rounded-lg flex items-center justify-center box-border gap-[0.5rem] ${className}`}
-        style={userOutlinedStyle}
+        style={buttonStyle}
       >
         {!!showUserOutlinedIcon && (
           <Image
@@ -82,7 +72,7 @@ const UserOutlined: NextPage<UserOutlinedType> = ({
         )}
         <div
           className="relative text-[0.875rem] leading-[1.125rem] font-semibold font-['Proxima_Nova'] text-[#0f0928] text-center shrink-0"
-          style={cTAButtonStyle}
+          style={textStyle}
         >
           {cTAButton}
         </div>

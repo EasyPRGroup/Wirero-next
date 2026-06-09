@@ -27,7 +27,7 @@ const FrameComponent6: NextPage<FrameComponent6Type> = ({ className = "" }) => {
       <section className="self-stretch shadow-[0px_2px_12px_rgba(26,_38,_48,_0.08)] rounded-[20px] bg-color-white overflow-hidden flex items-start justify-center p-[0.5rem] box-border [row-gap:20px] max-w-full text-left text-[1.5rem] text-[#1a2530] font-['Proxima_Nova'] mq1125:flex-wrap">
         <div className="w-[35rem] rounded-2xl bg-[rgba(226,239,249,0.5)] overflow-hidden shrink-0 flex flex-col items-start p-[2rem] box-border relative isolate gap-[1.25rem] max-w-full mq1125:flex-1 mq1125:min-w-full">
           <Image
-            className="w-[9rem] h-[3.063rem] absolute !!m-[0 important] top-[3.063rem] left-[0rem] z-[0] shrink-0"
+            className="w-[9rem] h-[3.063rem] absolute !m-0 top-[3.063rem] left-[0rem] z-[0] shrink-0"
             width={144}
             height={49}
             sizes="100vw"
@@ -35,7 +35,7 @@ const FrameComponent6: NextPage<FrameComponent6Type> = ({ className = "" }) => {
             src="/Vector-3.svg"
           />
           <Image
-            className="w-[11.5rem] h-[5.438rem] absolute !!m-[0 important] right-[-3.875rem] bottom-[0.188rem] z-[1] shrink-0"
+            className="w-[11.5rem] h-[5.438rem] absolute !m-0 right-[-3.875rem] bottom-[0.188rem] z-[1] shrink-0"
             width={184}
             height={87}
             sizes="100vw"

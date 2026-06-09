@@ -181,7 +181,7 @@ const WhyChooseUs: NextPage<WhyChooseUsType> = ({ className = "" }) => {
               />
             </div>
           </div>
-          <div className="w-[22.875rem] h-[0.375rem] absolute !!m-[0 important] top-[0rem] left-[-0.187rem] border-[#1a8cd5] border-solid border-t-[6px] box-border z-[7]" />
+          <div className="w-[22.875rem] h-[0.375rem] absolute !m-0 top-[0rem] left-[-0.187rem] border-[#1a8cd5] border-solid border-t-[6px] box-border z-[7]" />
         </section>
         <div className="h-[30rem] w-[32.5rem] relative rounded-[20px] bg-[#5b5c5c] max-w-full mq800:min-w-full mq1350:flex-1" />
       </div>

@@ -1,6 +1,5 @@
-"use client";
 import type { NextPage } from "next";
-import { useMemo, type CSSProperties } from "react";
+import type { CSSProperties } from "react";
 
 export type ItemMenuType = {
   className?: string;
@@ -8,27 +7,29 @@ export type ItemMenuType = {
   aboutUs?: string;
 
   /** Variant props */
-  property1?: CSSProperties["property1"];
+  property1?: "Default" | "Variant2";
 
   /** Style props */
   itemMenuAlignSelf?: CSSProperties["alignSelf"];
   itemMenuWidth?: CSSProperties["width"];
 };
 
+/**
+ * Footer menu item component
+ * Used in the footer navigation sections
+ */
 const ItemMenu: NextPage<ItemMenuType> = ({
   className = "",
-  property1 = "Default",
   showItemMenu,
   itemMenuAlignSelf,
   itemMenuWidth,
   aboutUs,
 }) => {
-  const itemMenuStyle: CSSProperties = useMemo(() => {
-    return {
-      alignSelf: itemMenuAlignSelf,
-      width: itemMenuWidth,
-    };
-  }, [itemMenuAlignSelf, itemMenuWidth]);
+  // Static inline styles
+  const itemMenuStyle: CSSProperties = {
+    alignSelf: itemMenuAlignSelf,
+    width: itemMenuWidth,
+  };
 
   return (
     !!showItemMenu && (

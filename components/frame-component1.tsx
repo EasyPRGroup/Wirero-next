@@ -1,4 +1,3 @@
-"use client";
 import type { NextPage } from "next";
 import { useMemo, type CSSProperties } from "react";
 import Image from "next/image";
@@ -9,7 +8,7 @@ export type FrameComponent1Type = {
   newsmax?: string;
 
   /** Variant props */
-  property1?: CSSProperties["property1"];
+  property1?: string;
 
   /** Style props */
   networkOverflow?: CSSProperties["overflow"];

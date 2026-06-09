@@ -10,10 +10,10 @@ export type BannerheaderType = {
 const Bannerheader: NextPage<BannerheaderType> = ({ className = "" }) => {
   return (
     <section
-      className={`flex flex-col items-start p-0 w-[90rem] h-[46.75rem] bg-gradient-to-b from-[#12171c] to-[#060809] order-0 self-stretch flex-grow-0 ${className}`}
+      className={`flex flex-col items-start p-0 w-full min-h-[46.75rem] bg-gradient-to-b from-[#12171c] to-[#060809] order-0 self-stretch flex-grow-0 ${className}`}
     >
       <Header property1="Variant2" />
-      <div className="w-[90rem] h-[46.75rem] overflow-hidden shrink-0 flex items-end pt-[0rem] pb-[2.5rem] pl-[6.875rem] pr-[0rem] box-border gap-[3.75rem] max-w-full mq450:gap-[0.938rem] mq800:gap-[1.875rem] mq1350:h-auto mq1350:flex-wrap mq1350:pl-[1.25rem] mq1350:pt-[1.25rem] mq1350:pr-[1.25rem] mq1350:box-border">
+      <div className="w-full flex-1 shrink-0 flex items-end pt-[0rem] pb-[2.5rem] pl-[6.875rem] pr-[0rem] box-border gap-[3.75rem] max-w-full mq450:gap-[0.938rem] mq800:gap-[1.875rem] mq1350:flex-wrap mq1350:pl-[1.25rem] mq1350:pt-[1.25rem] mq1350:pr-[1.25rem] mq1350:box-border">
         <section className="h-[33.75rem] flex flex-col items-start max-w-full text-left text-[4.125rem] text-[#eee] font-['Proxima_Nova'] mq800:h-auto mq800:min-w-full mq1350:flex-1">
           <div className="w-[37.5rem] flex flex-col items-start max-w-full">
             <div className="self-stretch flex flex-col items-start gap-[1.75rem]">

@@ -13,7 +13,7 @@ const CtaSection1: NextPage<CtaSection1Type> = ({ className = "" }) => {
     >
       <div className="self-stretch rounded-3xl bg-[#0461c3] flex items-center p-[3.75rem] box-border relative isolate gap-[5rem] max-w-full mq450:gap-[1.25rem] mq450:pt-[2.438rem] mq450:pb-[2.438rem] mq450:box-border mq800:gap-[2.5rem] mq1350:flex-wrap mq1350:pl-[1.875rem] mq1350:pr-[1.875rem] mq1350:box-border">
         <Image
-          className="h-[14.375rem] w-[30.25rem] absolute !!m-[0 important] bottom-[0rem] left-[2.25rem] z-[0] shrink-0"
+          className="h-[14.375rem] w-[30.25rem] absolute !m-0 bottom-[0rem] left-[2.25rem] z-[0] shrink-0"
           width={484}
           height={230}
           sizes="100vw"
@@ -21,7 +21,7 @@ const CtaSection1: NextPage<CtaSection1Type> = ({ className = "" }) => {
           src="/Group-11.svg"
         />
         <Image
-          className="h-[11.563rem] w-[23.75rem] absolute !!m-[0 important] top-[11.563rem] left-[49.313rem] z-[1] shrink-0"
+          className="h-[11.563rem] w-[23.75rem] absolute !m-0 top-[11.563rem] left-[49.313rem] z-[1] shrink-0"
           width={380}
           height={185}
           sizes="100vw"

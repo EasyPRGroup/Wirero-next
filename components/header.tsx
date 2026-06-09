@@ -1,6 +1,6 @@
 "use client";
 import type { NextPage } from "next";
-import { useState, type CSSProperties } from "react";
+import { useState } from "react";
 import Image from "next/image";
 import Option from "./option1";
 import UserOutlined from "./user-outlined";
@@ -9,7 +9,7 @@ export type HeaderType = {
   className?: string;
 
   /** Variant props */
-  property1?: CSSProperties["property1"];
+  property1?: "Default" | "Variant2";
 };
 
 const Header: NextPage<HeaderType> = ({

@@ -1,5 +1,4 @@
 import type { NextPage } from "next";
-import { type CSSProperties } from "react";
 
 export type OptionType = {
   className?: string;
@@ -7,9 +6,13 @@ export type OptionType = {
   features?: string;
 
   /** Variant props */
-  property1?: CSSProperties["property1"];
+  property1?: "default" | "active";
 };
 
+/**
+ * Navigation option component
+ * Used in the header navigation menu
+ */
 const Option: NextPage<OptionType> = ({
   className = "",
   property1 = "active",

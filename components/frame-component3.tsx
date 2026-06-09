@@ -32,20 +32,16 @@ const FrameComponent3: NextPage<FrameComponent3Type> = ({ className = "" }) => {
         </section>
         <section className="flex flex-col items-start pt-[4.125rem] px-[0rem] pb-[0rem] mq450:pt-[2.688rem] mq450:box-border">
           <Agencies
-            solarglobalBoldIconMaxHeight="100%"
-            solarglobalBoldIconHeight="auto"
             dedicatedProjectMa="Reseller Platforms"
             withLotsOfUnique="Offer scalable distribution services directly to your customers without building your own publishing network."
           />
         </section>
         <Agencies
-          solarglobalBoldIconMaxHeight="unset"
-          solarglobalBoldIconHeight="3rem"
           dedicatedProjectMa="High-Frequency Industries"
           withLotsOfUnique="Built for industries where speed, publishing volume, and continuous visibility matter."
         />
         <Image
-          className="h-[7.75rem] w-[50.156rem] absolute !!m-[0 important] top-[23.625rem] left-[26.063rem] z-[1]"
+          className="h-[7.75rem] w-[50.156rem] absolute !m-0 top-[23.625rem] left-[26.063rem] z-[1]"
           loading="lazy"
           width={802.5}
           height={124}

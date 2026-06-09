@@ -1,6 +1,4 @@
-"use client";
 import type { NextPage } from "next";
-import { useState } from "react";
 import Image from "next/image";
 import UserOutlined from "./user-outlined";
 import FrameComponent from "./frame-component";
@@ -10,38 +8,17 @@ export type CtaSectionType = {
 };
 
 const CtaSection: NextPage<CtaSectionType> = ({ className = "" }) => {
-  const [frameComponentItems] = useState([
-    {
-      frameDivAlignItems: "flex-start" as const,
-      textWidth: "22.375rem" as const,
-      frameDivMargin: undefined,
-      independentDomains: "1000 Independent Domains",
-      independentDomainsMinWidth: "11.125rem" as const,
-      independentDomainsMargin: "0" as const,
-    },
-    {
-      frameDivAlignItems: "flex-end" as const,
-      textWidth: "23rem" as const,
-      frameDivMargin: "0" as const,
-      independentDomains: "Targeted Category Networks",
-      independentDomainsMinWidth: "11.563rem" as const,
-      independentDomainsMargin: "0" as const,
-    },
-    {
-      frameDivAlignItems: "flex-start" as const,
-      textWidth: "24.375rem" as const,
-      frameDivMargin: undefined,
-      independentDomains: "Automated Distribution System",
-      independentDomainsMinWidth: "12.438rem" as const,
-      independentDomainsMargin: "unset" as const,
-    },
-  ]);
+  const featureItems = [
+    "1000 Independent Domains",
+    "Targeted Category Networks",
+    "Automated Distribution System",
+  ];
   return (
     <section
       className={`self-stretch bg-[#e2eff9] flex flex-col items-start py-[2.5rem] px-[6.875rem] box-border relative isolate gap-[0.625rem] max-w-full mq450:py-[1.625rem] mq450:px-[1.25rem] mq450:box-border mq800:pl-[3.438rem] mq800:pr-[3.438rem] mq800:box-border ${className}`}
     >
       <Image
-        className="w-[40.688rem] h-[14.375rem] absolute !!m-[0 important] bottom-[0rem] left-[49.313rem] z-[0] shrink-0"
+        className="w-[40.688rem] h-[14.375rem] absolute !m-0 bottom-[0rem] left-[49.313rem] z-[0] shrink-0"
         width={651}
         height={230}
         sizes="100vw"
@@ -149,15 +126,10 @@ const CtaSection: NextPage<CtaSectionType> = ({ className = "" }) => {
               Distribution across media platforms
             </div>
           </div>
-          {frameComponentItems.map((item, index) => (
+          {featureItems.map((item, index) => (
             <FrameComponent
               key={index}
-              frameDivAlignItems={item.frameDivAlignItems}
-              textWidth={item.textWidth}
-              frameDivMargin={item.frameDivMargin}
-              independentDomains={item.independentDomains}
-              independentDomainsMinWidth={item.independentDomainsMinWidth}
-              independentDomainsMargin={item.independentDomainsMargin}
+              independentDomains={item}
             />
           ))}
         </div>

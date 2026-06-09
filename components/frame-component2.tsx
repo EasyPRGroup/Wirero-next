@@ -63,7 +63,7 @@ const FrameComponent2: NextPage<FrameComponent2Type> = ({ className = "" }) => {
             Distribution Platforms
           </div>
           <Image
-            className="h-[3rem] w-[3rem] absolute !!m-[0 important] top-[-0.625rem] left-[0.938rem] object-cover hidden z-[3] shrink-0"
+            className="h-[3rem] w-[3rem] absolute !m-0 top-[-0.625rem] left-[0.938rem] object-cover hidden z-[3] shrink-0"
             width={48}
             height={48}
             sizes="100vw"
@@ -73,7 +73,7 @@ const FrameComponent2: NextPage<FrameComponent2Type> = ({ className = "" }) => {
         </div>
         <div className="flex items-center relative isolate gap-[0.5rem]">
           <Image
-            className="h-[3rem] w-[3rem] absolute !!m-[0 important] top-[-0.625rem] left-[8rem] object-cover hidden z-[0] shrink-0"
+            className="h-[3rem] w-[3rem] absolute !m-0 top-[-0.625rem] left-[8rem] object-cover hidden z-[0] shrink-0"
             width={48}
             height={48}
             sizes="100vw"
@@ -97,7 +97,7 @@ const FrameComponent2: NextPage<FrameComponent2Type> = ({ className = "" }) => {
         </div>
         <div className="flex items-center relative isolate gap-[0.5rem]">
           <Image
-            className="h-[3rem] w-[3rem] absolute !!m-[0 important] top-[-0.625rem] left-[5.5rem] object-cover hidden z-[0] shrink-0"
+            className="h-[3rem] w-[3rem] absolute !m-0 top-[-0.625rem] left-[5.5rem] object-cover hidden z-[0] shrink-0"
             width={48}
             height={48}
             sizes="100vw"
@@ -105,7 +105,7 @@ const FrameComponent2: NextPage<FrameComponent2Type> = ({ className = "" }) => {
             src="/Mask-group2@2x.png"
           />
           <Image
-            className="h-[3rem] w-[3rem] absolute !!m-[0 important] top-[-0.625rem] left-[10.688rem] object-cover hidden z-[1] shrink-0"
+            className="h-[3rem] w-[3rem] absolute !m-0 top-[-0.625rem] left-[10.688rem] object-cover hidden z-[1] shrink-0"
             width={48}
             height={48}
             sizes="100vw"
