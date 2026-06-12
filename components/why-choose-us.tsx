@@ -10,6 +10,7 @@ export type WhyChooseUsType = {
 };
 
 const WhyChooseUs: NextPage<WhyChooseUsType> = ({ className = "" }) => {
+  const [isFirstOpen, setIsFirstOpen] = useState(true);
   const [component1Items] = useState([
     {
       divPadding: "1.375rem 0.75rem 1.5rem" as const,
@@ -82,7 +83,10 @@ const WhyChooseUs: NextPage<WhyChooseUsType> = ({ className = "" }) => {
       <div className="self-stretch flex items-start pt-[0rem] px-[0rem] pb-[2.5rem] box-border gap-[2.5rem] max-w-full shrink-0 mq800:gap-[1.25rem] mq1350:flex-wrap">
         <section className="flex-1 flex flex-col items-start relative isolate min-w-[26.813rem] text-left text-[1.5rem] text-[#1a2530] font-['Proxima_Nova'] mq800:min-w-full">
           <div className="self-stretch border-[rgba(226,229,233,0.5)] border-solid border-t-[6px] overflow-hidden flex flex-col items-start pt-[1.062rem] px-[0.75rem] pb-[2rem] gap-[0.25rem] z-[0]">
-            <div className="self-stretch flex items-center gap-[1rem] mq800:flex-wrap">
+            <button
+              onClick={() => setIsFirstOpen(!isFirstOpen)}
+              className="self-stretch flex items-center gap-[1rem] cursor-pointer bg-transparent border-none p-0 text-left w-full mq800:flex-wrap"
+            >
               <div className="h-[3.5rem] w-[3.5rem] rounded-[56px] bg-[rgba(26,140,213,0.1)] flex items-center justify-center py-[0.75rem] px-[0.625rem] box-border">
                 <Image
                   className="w-full relative max-h-full h-auto shrink-0"
@@ -98,33 +102,33 @@ const WhyChooseUs: NextPage<WhyChooseUsType> = ({ className = "" }) => {
                 <h3 className="m-0 self-stretch relative text-[length:inherit] leading-[1.875rem] font-bold font-[inherit] shrink-0 mq450:text-[1.188rem] mq450:leading-[1.5rem]">
                   Multi-Domain Publishing
                 </h3>
-                <div className="w-[31.25rem] relative text-[1.125rem] leading-[1.75rem] text-[#4d565f] hidden shrink-0">
-                  Wirero is designed to remove unnecessary steps from the
-                  distribution process. From submission to distribution,
-                  everything is streamlined so you can publish content quickly
-                  without dealing with complex workflows or manual coordination.
-                </div>
               </div>
-              <div className="rounded-[56px] flex items-center justify-center p-[0.625rem]">
+              <div className="rounded-[56px] flex items-center justify-center p-[0.625rem] shrink-0">
                 <Image
-                  className="h-[1.75rem] w-full relative"
+                  className="h-[1.75rem] w-full relative transition-transform duration-300"
                   width={28}
                   height={28}
                   sizes="100vw"
                   alt=""
-                  src="/chevron-up.svg"
+                  src={isFirstOpen ? "/chevron-up.svg" : "/chevron-down.svg"}
                 />
               </div>
-            </div>
-            <div className="self-stretch flex flex-col items-start py-[0rem] pl-[4.5rem] pr-[4rem] gap-[1rem] mq800:pl-[2.25rem] mq800:pr-[2rem] mq800:box-border">
-              <b className="w-[31.25rem] relative leading-[1.875rem] hidden mq450:text-[1.188rem] mq450:leading-[1.5rem]">
-                Simple and Fast Distribution
-              </b>
-              <div className="self-stretch relative text-[1.125rem] leading-[1.75rem] text-[#4d565f]">
-                Publish content across hundreds of independent domains
-                simultaneously through one centralized interface. Wirero
-                simplifies large-scale distribution without requiring manual
-                coordination across multiple websites.
+            </button>
+            <div
+              className={`self-stretch overflow-hidden transition-all duration-300 ${
+                isFirstOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
+              }`}
+            >
+              <div className="self-stretch flex flex-col items-start py-[0rem] pl-[4.5rem] pr-[4rem] gap-[1rem] mq800:pl-[2.25rem] mq800:pr-[2rem] mq800:box-border">
+                <b className="w-[31.25rem] relative leading-[1.875rem] hidden mq450:text-[1.188rem] mq450:leading-[1.5rem]">
+                  Simple and Fast Distribution
+                </b>
+                <div className="self-stretch relative text-[1.125rem] leading-[1.75rem] text-[#4d565f]">
+                  Publish content across hundreds of independent domains
+                  simultaneously through one centralized interface. Wirero
+                  simplifies large-scale distribution without requiring manual
+                  coordination across multiple websites.
+                </div>
               </div>
             </div>
           </div>
@@ -197,6 +201,7 @@ const WhyChooseUs: NextPage<WhyChooseUsType> = ({ className = "" }) => {
         </div>
         <UserOutlined
           showUserOutlined
+          href="/pricing"
           userOutlinedBorder="unset"
           userOutlinedPadding="1rem 2.5rem"
           userOutlinedBackgroundColor="#0461c3"

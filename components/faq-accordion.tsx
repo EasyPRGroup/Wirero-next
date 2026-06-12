@@ -27,7 +27,7 @@ const FaqAccordion: React.FC<FaqAccordionProps> = ({ item, isOpen, onToggle }) =
       >
         <b
           className={`flex-1 relative leading-[2.125rem] font-abel ${
-            isOpen ? "text-gray-100" : "text-gray-100"
+            isOpen ? "text-[#1a2530]" : "text-[#1a2530]"
           }`}
         >
           {item.question}

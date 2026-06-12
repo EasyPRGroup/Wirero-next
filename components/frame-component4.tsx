@@ -91,7 +91,7 @@ const FrameComponent4: NextPage<FrameComponent4Type> = ({ className = "" }) => {
         </div>
         <div className="self-stretch flex flex-col items-start gap-[1rem] text-[#1a2530] font-['Proxima_Nova']">
           <div className="w-[7.813rem] h-[1.5rem] relative">
-            <h3 className="m-0 absolute top-[0rem] left-[0rem] text-[length:inherit] leading-[1.5rem] capitalize font-semibold font-[inherit]">
+            <h3 className="m-0 whitespace-nowrap absolute top-[0rem] left-[0rem] text-[length:inherit] leading-[1.5rem] capitalize font-semibold font-[inherit]">
               Follow us on:
             </h3>
           </div>

@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import UserOutlined from "./user-outlined";
 
 export type CtaSection1Type = {
@@ -40,6 +41,7 @@ const CtaSection1: NextPage<CtaSection1Type> = ({ className = "" }) => {
           </div>
           <UserOutlined
             showUserOutlined
+            href="/contact"
             userOutlinedBorder="none"
             userOutlinedPadding="1rem 2.5rem"
             userOutlinedBackgroundColor="#fff"
@@ -74,9 +76,9 @@ const CtaSection1: NextPage<CtaSection1Type> = ({ className = "" }) => {
             </div>
           </div>
           <button className="cursor-pointer border-[#0461c3] border-solid border-[4px] py-[0.687rem] pl-[1.687rem] pr-[1.25rem] bg-[#b1ceec] absolute top-[0rem] left-[0rem] rounded-xl overflow-hidden flex flex-col items-center gap-[0.75rem]">
-            <div className="relative text-[1.375rem] tracking-[0.02em] leading-[1.625rem] font-semibold font-['Proxima_Nova'] text-[#1a2530] text-left shrink-0 mq450:text-[1.125rem] mq450:leading-[1.313rem]">
+            <Link href="/network" className="relative text-[1.375rem] tracking-[0.02em] leading-[1.625rem] font-semibold font-['Proxima_Nova'] text-[#1a2530] text-left shrink-0 no-underline mq450:text-[1.125rem] mq450:leading-[1.313rem]">
               Reseller Platforms
-            </div>
+            </Link>
             <div className="w-[23.75rem] relative text-[1rem] leading-[1.5rem] font-[Urbanist] text-[rgba(77,86,95,0.8)] text-left hidden shrink-0">
               March 10, 2026
             </div>

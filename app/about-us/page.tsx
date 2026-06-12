@@ -1,5 +1,7 @@
+"use client";
 import type { NextPage } from "next";
 import Image from "next/image";
+import { useRef } from "react";
 import Footer from "../../components/footer";
 
 const AboutUs: NextPage = () => {
@@ -72,6 +74,17 @@ const AboutUs: NextPage = () => {
       highlight: false,
     },
   ];
+
+  const industryScrollRef = useRef<HTMLDivElement>(null);
+
+  const scrollIndustry = (direction: "left" | "right") => {
+    if (!industryScrollRef.current) return;
+    const scrollAmount = industryScrollRef.current.clientWidth * 0.5;
+    industryScrollRef.current.scrollBy({
+      left: direction === "left" ? -scrollAmount : scrollAmount,
+      behavior: "smooth",
+    });
+  };
 
   return (
     <div className="w-full relative bg-color-white flex flex-col items-start leading-[normal] tracking-[normal]">
@@ -365,7 +378,9 @@ const AboutUs: NextPage = () => {
         {/* Industry Cards */}
         <div className="self-stretch flex items-center gap-[3rem] max-w-full shrink-0 text-[2.25rem] lg:flex-wrap mq750:gap-[1.5rem]">
           <section className="w-[47.5rem] overflow-hidden shrink-0 flex flex-col items-center relative isolate gap-[0.625rem] max-w-full text-left text-[1.375rem] text-[#4d565f] font-['Proxima_Nova'] lg:flex-1 mq1050:min-w-full">
-            <div className="w-[42.5rem] backdrop-blur-[8px] rounded-[28px] bg-[rgba(0,94,220,0.08)] flex items-start justify-center py-[3.75rem] px-[0rem] box-border gap-[1.25rem] z-[0] shrink-0 mq450:pt-[2.438rem] mq450:pb-[2.438rem] mq450:box-border">
+            <div
+              ref={industryScrollRef}
+              className="w-[42.5rem] backdrop-blur-[8px] rounded-[28px] bg-[rgba(0,94,220,0.08)] flex items-start justify-center py-[3.75rem] px-[0rem] box-border gap-[1.25rem] z-[0] shrink-0 mq450:pt-[2.438rem] mq450:pb-[2.438rem] mq450:box-border overflow-x-auto scroll-smooth">
               {industries.map((industry, index) => (
                 <div
                   key={index}
@@ -394,26 +409,32 @@ const AboutUs: NextPage = () => {
             <div className="w-[2.75rem] h-[29rem] absolute !m-0 top-[calc(50%_-_232px)] left-[-0.25rem] bg-[linear-gradient(270deg,_rgba(255,_255,_255,_0.2),_#fff)] z-[1] shrink-0" />
             <div className="w-[2.75rem] h-[29rem] absolute !m-0 top-[calc(50%_-_232px)] right-[-0.25rem] bg-[linear-gradient(270deg,_#fff,_rgba(255,_255,_255,_0.2))] z-[2] shrink-0" />
             <div className="w-[45rem] !m-0 absolute top-[calc(50%_-_22px)] left-[calc(50%_-_360px)] flex items-center justify-between gap-[1.25rem] z-[3] shrink-0">
-              <div className="rounded-[40px] bg-[#4d575f] flex flex-col items-center justify-center p-[0.5rem]">
+              <button
+                onClick={() => scrollIndustry("left")}
+                className="rounded-[40px] bg-[#4d575f] flex flex-col items-center justify-center p-[0.5rem] cursor-pointer border-none hover:bg-[#3a444b] transition-colors"
+              >
                 <Image
                   className="w-[1.75rem] h-[1.75rem] relative"
                   width={28}
                   height={28}
                   sizes="100vw"
-                  alt=""
+                  alt="Scroll left"
                   src="/arrow-left.svg"
                 />
-              </div>
-              <div className="rounded-[40px] bg-[#4d575f] flex flex-col items-center justify-center p-[0.5rem]">
+              </button>
+              <button
+                onClick={() => scrollIndustry("right")}
+                className="rounded-[40px] bg-[#4d575f] flex flex-col items-center justify-center p-[0.5rem] cursor-pointer border-none hover:bg-[#3a444b] transition-colors"
+              >
                 <Image
                   className="w-[1.75rem] h-[1.75rem] relative"
                   width={28}
                   height={28}
                   sizes="100vw"
-                  alt=""
+                  alt="Scroll right"
                   src="/arrow-right1.svg"
                 />
-              </div>
+              </button>
             </div>
           </section>
 

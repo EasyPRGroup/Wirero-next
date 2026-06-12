@@ -43,6 +43,7 @@ const CtaSection: NextPage<CtaSectionType> = ({ className = "" }) => {
           </div>
           <UserOutlined
             showUserOutlined
+            href="/pricing"
             userOutlinedBorder="none"
             userOutlinedPadding="1rem 2.5rem"
             userOutlinedBackgroundColor="#0461c3"

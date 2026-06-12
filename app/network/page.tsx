@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import Footer from "../../components/footer";
 import FeatureItem from "../../components/feature-item";
 import NetworkTag from "../../components/network-tag";
@@ -39,7 +40,10 @@ const Network: NextPage = () => {
               targeted distribution at scale.
             </div>
           </div>
-          <button className="cursor-pointer [border:none] py-[1rem] px-[2.5rem] bg-[#0461c3] h-[3.5rem] rounded-[8px] flex items-center justify-center box-border gap-[0.5rem]">
+          <Link
+            href="/contact"
+            className="cursor-pointer [border:none] py-[1rem] px-[2.5rem] bg-[#0461c3] h-[3.5rem] rounded-[8px] flex items-center justify-center box-border gap-[0.5rem] no-underline hover:bg-[#0354a8] transition-colors"
+          >
             <div className="relative text-[1rem] leading-[1.25rem] font-semibold font-proxima text-color-white text-center shrink-0">
               View Sample Domains
             </div>
@@ -51,7 +55,7 @@ const Network: NextPage = () => {
               alt=""
               src="/arrow-right1.svg"
             />
-          </button>
+          </Link>
         </section>
         <Image
           className="h-[30.938rem] w-[29.688rem] relative rounded-[20px] object-contain max-w-full lg:flex-1"

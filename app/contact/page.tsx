@@ -332,7 +332,7 @@ const ContactPage: NextPage = () => {
                 distribute press releases worldwide through our trusted media network.
               </div>
             </div>
-            <button className="cursor-pointer border-none py-[1rem] px-[2.5rem] bg-[#0461c3] h-[3.5rem] rounded-[8px] flex items-center justify-center box-border gap-[0.5rem] text-color-white hover:bg-[#0354a8] transition-colors font-proxima-nova">
+            <Link href="/pricing" className="cursor-pointer border-none py-[1rem] px-[2.5rem] bg-[#0461c3] h-[3.5rem] rounded-[8px] flex items-center justify-center box-border gap-[0.5rem] text-color-white hover:bg-[#0354a8] transition-colors font-proxima-nova no-underline">
               <span className="relative text-[1rem] leading-[1.25rem] font-semibold">
                 Submit Press Release
               </span>
@@ -343,7 +343,7 @@ const ContactPage: NextPage = () => {
                 alt="Arrow"
                 src="/arrow-right1.svg"
               />
-            </button>
+            </Link>
           </section>
           <div className="h-[13.625rem] flex-1 relative min-w-[15.625rem] max-w-[27.25rem] mq750:max-w-full">
             <div className="absolute bottom-[0rem] left-[0rem] shadow-[0px_0px_12px_rgba(26,38,48,0.08)] rounded-[12px] bg-color-white border-color-white border-solid border-[4px] overflow-hidden flex flex-col items-center py-[0.687rem] pl-[1.687rem] pr-[1.25rem] opacity-[0.6]">
@@ -388,7 +388,7 @@ const ContactPage: NextPage = () => {
                 multi-network system designed for fast and controlled distribution.
               </div>
             </div>
-            <button className="cursor-pointer border-none py-[1rem] px-[2.5rem] bg-color-white h-[3.5rem] rounded-[8px] flex items-center justify-center box-border gap-[0.5rem] text-[#1a2530] hover:bg-[#f0f0f0] transition-colors font-proxima-nova">
+            <Link href="/pricing" className="cursor-pointer border-none py-[1rem] px-[2.5rem] bg-color-white h-[3.5rem] rounded-[8px] flex items-center justify-center box-border gap-[0.5rem] text-[#1a2530] hover:bg-[#f0f0f0] transition-colors font-proxima-nova no-underline">
               <span className="relative text-[1rem] leading-[1.25rem] font-semibold">
                 Start Publishing
               </span>
@@ -399,7 +399,7 @@ const ContactPage: NextPage = () => {
                 alt="Arrow"
                 src="/arrow-right.svg"
               />
-            </button>
+            </Link>
           </div>
         </div>
       </section>

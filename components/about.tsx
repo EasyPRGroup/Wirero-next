@@ -38,7 +38,7 @@ const About: NextPage<AboutType> = ({ className = "" }) => {
         groupDivBackgroundImage="unset"
         groupDivBackgroundSize="cover"
         image91="/image-91@2x.png"
-        showImage91Icon={false}
+        showImage91Icon
         frameDivMinWidth="14.813rem"
         dedicatedProjectMa="Publish Across 1000 Domains"
         dedicatedProjectMaMargin="0"
@@ -48,7 +48,7 @@ const About: NextPage<AboutType> = ({ className = "" }) => {
         groupDivBackgroundImage1="unset"
         groupDivBackgroundSize1="cover"
         image92="/image-92@2x.png"
-        showImage92Icon={false}
+        showImage92Icon
         frameDivMinWidth1="14.875rem"
         dedicatedProjectMa1="Under 1 Hour Distribution"
         dedicatedProjectMaMargin1="0"
@@ -58,7 +58,7 @@ const About: NextPage<AboutType> = ({ className = "" }) => {
         groupDivBackgroundImage2="unset"
         groupDivBackgroundSize2="cover"
         image90="/image-90@2x.png"
-        showImage90Icon={false}
+        showImage90Icon
         frameDivMinWidth2="14.875rem"
         dedicatedProjectMa2="Unlimited Monthly Publishing"
         dedicatedProjectMaMargin2="0"
@@ -69,7 +69,7 @@ const About: NextPage<AboutType> = ({ className = "" }) => {
         groupDivBackgroundImage3="unset"
         groupDivBackgroundSize3="cover"
         image93="/image-93@2x.png"
-        showImage93Icon={false}
+        showImage93Icon
         frameDivMinWidth3="14.875rem"
         dedicatedProjectMa3="RSS Automation"
         dedicatedProjectMaMargin3="0"

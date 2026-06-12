@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import Link from "next/link";
 
 export type PricingCardType = {
   className?: string;
@@ -226,15 +227,16 @@ const PricingCard: NextPage<PricingCardType> = ({
               {bestFor}
             </div>
           </div>
-          <button
-            className={`cursor-pointer self-stretch h-[3.5rem] rounded-[8px] flex items-center justify-center gap-[0.5rem] ${ctaVariant === "filled" ? "bg-[#0461c3] border-none" : "border-[#0461c3] border-solid border-[1px] bg-transparent"}`}
+          <Link
+            href="/contact"
+            className={`cursor-pointer self-stretch h-[3.5rem] rounded-[8px] flex items-center justify-center gap-[0.5rem] no-underline ${ctaVariant === "filled" ? "bg-[#0461c3] border-none" : "border-[#0461c3] border-solid border-[1px] bg-transparent"} hover:opacity-90 transition-opacity`}
           >
             <div
               className={`relative text-[1rem] leading-[1.25rem] font-semibold font-['Proxima_Nova'] text-center shrink-0 ${isPopular ? "text-color-white" : "text-[#0461c3]"}`}
             >
               {ctaText}
             </div>
-          </button>
+          </Link>
         </div>
       </div>
     </section>

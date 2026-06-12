@@ -104,6 +104,7 @@ const Title: NextPage<TitleType> = ({ className = "" }) => {
         </div>
         <UserOutlined
           showUserOutlined
+          href="/network"
           userOutlinedBorder="unset"
           userOutlinedPadding="1rem 2.5rem"
           userOutlinedBackgroundColor="unset"

@@ -38,6 +38,7 @@ const Bannerheader: NextPage<BannerheaderType> = ({ className = "" }) => {
               <div className="cursor-pointer [border:none] p-0 bg-[transparent] flex items-start">
                 <UserOutlined
                   showUserOutlined
+                  href="/pricing"
                   userOutlinedBorder="unset"
                   userOutlinedPadding="1rem 2.5rem"
                   userOutlinedBackgroundColor="#0461c3"

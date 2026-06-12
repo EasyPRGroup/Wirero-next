@@ -102,56 +102,6 @@ const Home: NextPage = () => {
           </div>
         </div>
       </section>
-      <div className="w-[90rem] hidden flex-col items-center py-[6.125rem] px-[1.25rem] box-border gap-[4.25rem] max-w-full">
-        <div className="w-[47.5rem] overflow-hidden hidden flex-col items-start gap-[1.5rem] max-w-full">
-          <b className="self-stretch relative tracking-[1.2px] leading-[1.25rem] uppercase">
-            Flexible solutions
-          </b>
-          <b className="self-stretch relative text-[3.5rem] leading-[4.25rem] text-[#1a2730] mq450:text-[2.125rem] mq450:leading-[2.563rem] mq800:text-[2.813rem] mq800:leading-[3.375rem]">
-            Built for Scalable Press Release Distribution
-          </b>
-        </div>
-        <div className="w-[76.25rem] overflow-hidden flex flex-col items-start gap-[1.5rem] max-w-full text-[#0bc111] font-['Proxima_Nova']">
-          <b className="self-stretch relative tracking-[0.02em] leading-[1.25rem] uppercase">
-            Flexible solutions
-          </b>
-          <div className="self-stretch flex items-start gap-[4.25rem] max-w-full text-[3.5rem] text-[#1a2530] mq1125:flex-wrap">
-            <b className="flex-1 relative leading-[4.25rem] inline-block min-w-[23.813rem] mq450:text-[2.125rem] mq450:leading-[2.563rem] mq450:min-w-full mq800:text-[2.813rem] mq800:leading-[3.375rem]">
-              Built for Distribution at Scale
-            </b>
-            <div className="w-[35.375rem] flex flex-col items-start gap-[0.75rem] max-w-full text-[1.125rem] text-[#4d565f] mq800:min-w-full mq1125:flex-1">
-              <div className="self-stretch relative leading-[1.75rem]">
-                Distribute your press releases and content across a growing
-                network of platforms, blogs, and category-based websites — all
-                from a single dashboard.
-              </div>
-              <div className="self-stretch relative leading-[1.75rem]">
-                No outreach. No complexity. Just simple distribution.
-              </div>
-            </div>
-          </div>
-        </div>
-        <Points
-          image91="/image-91@2x.png"
-          showImage91Icon
-          dedicatedProjectMa="1000+ Distribution Network"
-          withLotsOfUnique="Access a wide network of websites across different categories including business, tech, finance, and more."
-          image92="/image-92@2x.png"
-          showImage92Icon
-          dedicatedProjectMa1="Category-Based Distribution"
-          withLotsOfUnique1={`Choose where your content goes.
-Distribute across relevant categories and audiences.`}
-          image90="/image-90@2x.png"
-          showImage90Icon
-          dedicatedProjectMa2="Simple Submission Process"
-          withLotsOfUnique2="Submit your content once — we handle the distribution across the network."
-          image93="/image-93@2x.png"
-          showImage93Icon
-          dedicatedProjectMa3="Subscription-Based Access"
-          withLotsOfUnique3={`No per-release complexity.
-Get ongoing access to the network with a simple subscription.`}
-        />
-      </div>
       <About />
       <section className="self-stretch bg-[#12171c] flex flex-col items-center py-[6.125rem] px-[6.875rem] box-border gap-[4.25rem] max-w-full text-center text-[1rem] text-[#0bc111] font-['Proxima_Nova'] mq450:gap-[1.063rem] mq450:pl-[1.25rem] mq450:pr-[1.25rem] mq450:box-border mq800:gap-[2.125rem] mq800:py-[2.625rem] mq800:px-[3.438rem] mq800:box-border mq1125:pt-[4rem] mq1125:pb-[4rem] mq1125:box-border">
         <div className="w-[60rem] overflow-hidden flex flex-col items-center gap-[1.5rem]">

@@ -39,6 +39,7 @@ const List: NextPage<ListType> = ({ className = "" }) => {
       </div>
       <UserOutlined
         showUserOutlined={false}
+        href="/network"
         userOutlinedBorder="unset"
         userOutlinedPadding="1rem 2.5rem"
         userOutlinedBackgroundColor="unset"

@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Link from "next/link";
 import Footer from "../../components/footer";
 import FaqAccordion from "../../components/faq-accordion";
 import FaqCategory from "../../components/faq-category";
@@ -66,7 +67,7 @@ const Page = () => {
           <b className="relative tracking-[0.02em] leading-[1.25rem] uppercase text-left shrink-0">
             FAQs
           </b>
-          <div className="self-stretch flex flex-col items-start max-w-full shrink-0 text-[3.5rem] text-gray-100">
+          <div className="self-stretch flex flex-col items-start max-w-full shrink-0 text-[3.5rem] text-[#1a2530]">
             <h1 className="m-0 w-full relative text-[length:inherit] leading-[4.25rem] font-bold font-[inherit] inline-block max-w-[61.25rem] shrink-0 mq1050:text-[2.813rem] mq1050:leading-[3.375rem] mq1050:max-w-full mq450:text-[2.125rem] mq450:leading-[2.563rem]">
               Everything you need to know before publishing
             </h1>
@@ -75,7 +76,7 @@ const Page = () => {
       </section>
 
       {/* Main Content */}
-      <main className="self-stretch flex items-start flex-wrap content-start pt-[4.25rem] px-[6.875rem] pb-[6.125rem] box-border gap-[4.25rem] max-w-full text-left text-[1.75rem] text-gray-100 font-abel mq750:gap-[2.125rem] mq750:pl-[3.438rem] mq750:pr-[3.438rem] mq750:box-border mq1050:pt-[2.75rem] mq1050:pb-[4rem] mq1050:box-border mq450:gap-[1.063rem] mq450:pt-[1.813rem] mq450:px-[1.25rem] mq450:pb-[2.625rem] mq450:box-border">
+      <main className="self-stretch flex items-start flex-wrap content-start pt-[4.25rem] px-[6.875rem] pb-[6.125rem] box-border gap-[4.25rem] max-w-full text-left text-[1.75rem] text-[#1a2530] font-abel mq750:gap-[2.125rem] mq750:pl-[3.438rem] mq750:pr-[3.438rem] mq750:box-border mq1050:pt-[2.75rem] mq1050:pb-[4rem] mq1050:box-border mq450:gap-[1.063rem] mq450:pt-[1.813rem] mq450:px-[1.25rem] mq450:pb-[2.625rem] mq450:box-border">
         {/* Categories Sidebar */}
         <section className="flex-1 flex flex-col items-start gap-[1.25rem] min-w-[9.5rem] max-w-[23.75rem] text-left text-[1.25rem] text-color-white font-abel">
           {faqCategories.map((category, index) => (
@@ -114,9 +115,6 @@ const Page = () => {
             src="/Vector-2@2x.png"
           />
 
-          <div
-            className="h-[13.375rem] w-[29.375rem] absolute m-[0!important] top-[calc(50%-126px)] left-[3.625rem] blur-[130px] rounded-[50px] bg-gradient-[103.11deg,#177aba,#1a8cd5] z-[1] shrink-0"
-          />
           <section className="flex-1 flex flex-col items-center gap-[1.75rem] max-w-full z-[4] shrink-0 text-center text-[3rem] text-color-white font-abel">
             <div className="self-stretch overflow-hidden flex flex-col items-start gap-[0.75rem]">
               <h2 className="m-0 self-stretch relative text-[length:inherit] leading-[3.625rem] font-bold font-[inherit] mq1050:text-[2.375rem] mq1050:leading-[2.875rem] mq450:text-[1.813rem] mq450:leading-[2.188rem]">
@@ -126,7 +124,10 @@ const Page = () => {
                 Contact us or start publishing to see how it works.
               </div>
             </div>
-            <button className="cursor-pointer border-none py-[1rem] px-[2.5rem] bg-color-white h-[3.5rem] rounded-[8px] flex items-center justify-center box-border gap-[0.5rem]">
+            <Link
+              href="/contact"
+              className="cursor-pointer border-none py-[1rem] px-[2.5rem] bg-color-white h-[3.5rem] rounded-[8px] flex items-center justify-center box-border gap-[0.5rem] no-underline"
+            >
               <Image
                 className="h-[1rem] w-[1rem] relative hidden shrink-0"
                 width={16}
@@ -134,7 +135,7 @@ const Page = () => {
                 alt=""
                 src="/search.svg"
               />
-              <div className="relative text-[1rem] leading-[1.25rem] font-semibold font-proxima-nova text-gray-100 text-center shrink-0">
+              <div className="relative text-[1rem] leading-[1.25rem] font-semibold font-proxima-nova text-[#1a2530] text-center shrink-0">
                 Contact us
               </div>
               <Image
@@ -144,11 +145,8 @@ const Page = () => {
                 alt=""
                 src="/arrow-right1.svg"
               />
-            </button>
+            </Link>
           </section>
-          <div
-            className="h-[7.5rem] w-[20rem] absolute m-[0!important] right-[8.625rem] bottom-[-3.75rem] blur-[120px] rounded-[50px] bg-gradient-[103.11deg,#1a8cd5] z-[1] shrink-0"
-          />
         </div>
       </section>
 

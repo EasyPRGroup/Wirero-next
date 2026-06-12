@@ -2,12 +2,16 @@
 import type { NextPage } from "next";
 import { useMemo, type CSSProperties } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export type NetworkCategoryType = {
   className?: string;
 
   /** Category display text (e.g., "Blockchain & Cryptocurrency") */
   name?: string;
+
+  /** Link destination when clicked */
+  href?: string;
 
   /** Variant props */
   property1?: "Default" | "Variant2";
@@ -31,6 +35,7 @@ const NetworkCategory: NextPage<NetworkCategoryType> = ({
   className = "",
   property1 = "Default",
   name = "Blockchain & Cryptocurrency",
+  href = "/network",
   networkCategoryBorder,
   networkCategoryIconHeight,
   networkCategoryIconMaxHeight,
@@ -82,8 +87,9 @@ const NetworkCategory: NextPage<NetworkCategoryType> = ({
   ]);
 
   return (
-    <button
-      className={`cursor-pointer [border:none] py-[1.5rem] pl-[1.5rem] pr-[2rem] bg-color-white min-w-[18.75rem] rounded-[126px] flex items-center gap-[1rem] ${className}`}
+    <Link
+      href={href}
+      className={`cursor-pointer [border:none] py-[1.5rem] pl-[1.5rem] pr-[2rem] bg-color-white min-w-[18.75rem] rounded-[126px] flex items-center gap-[1rem] no-underline hover:shadow-[0px_2px_12px_rgba(26,38,48,0.12)] transition-shadow ${className}`}
       style={networkCategoryStyle}
     >
       <Image
@@ -112,7 +118,7 @@ const NetworkCategory: NextPage<NetworkCategoryType> = ({
         alt=""
         src="/arrow-up-right.svg"
       />
-    </button>
+    </Link>
   );
 };
 

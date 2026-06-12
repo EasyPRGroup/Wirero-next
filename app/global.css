@@ -3,7 +3,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,400;0,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Onest:wght@600&display=swap");
 
-/* Proxima Nova - Local Font Files (Commercial License Required) */
+/* Mulish - free Proxima Nova alternative (Google Fonts, OFL) */
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap");
+
+/* Proxima Nova - Local Font Files (Commercial License Required, optional) */
 @import url("/fonts/proxima-nova.css");
 
 /* Tailwind CSS v4 imports - must follow @import rules */
@@ -17,9 +20,9 @@
 /* Tailwind configuration */
 @config "../tailwind.config.js";
 
-/* CSS Variable for Proxima Nova font */
+/* CSS Variable for Proxima Nova font (with free Mulish fallback) */
 :root {
-  --font-proxima: 'Proxima Nova', 'Inter', Arial, sans-serif;
+  --font-proxima: 'Proxima Nova', 'Mulish', 'Inter', Arial, sans-serif;
 }
 
 /* Base styles - Set Proxima Nova as default font */
