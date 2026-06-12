@@ -1,13 +1,15 @@
-/* Tailwind CSS v4 imports */
+/* Google Fonts - Inter & Urbanist (Open Source) */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,400;0,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Onest:wght@600&display=swap");
+
+/* Proxima Nova - Local Font Files (Commercial License Required) */
+@import url("/fonts/proxima-nova.css");
+
+/* Tailwind CSS v4 imports - must follow @import rules */
 @import "tailwindcss/preflight.css" layer(base);
 @import "tailwindcss/theme.css" layer(theme);
 @import "tailwindcss/utilities.css" layer(utilities);
-
-/* Google Fonts - Note: Proxima Nova is a commercial font */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Proxima+Nova:ital,wght@0,400;0,600;0,700;0,800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,400;0,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Onest:wght@600&display=swap");
 
 /* Layer order for Tailwind */
 @layer theme, base, components, utilities;
@@ -15,9 +17,15 @@
 /* Tailwind configuration */
 @config "../tailwind.config.js";
 
-/* Base styles */
+/* CSS Variable for Proxima Nova font */
+:root {
+  --font-proxima: 'Proxima Nova', 'Inter', Arial, sans-serif;
+}
+
+/* Base styles - Set Proxima Nova as default font */
 body {
   @apply leading-[normal] m-0;
+  font-family: var(--font-proxima);
 }
 
 @layer base {
@@ -31,4 +39,14 @@ body {
 /* Custom selection color */
 ::selection {
   @apply bg-primary text-white;
+}
+
+/* Headings default to Proxima Nova */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-proxima);
+}
+
+/* Button text default to Proxima Nova */
+button, a {
+  font-family: var(--font-proxima);
 }

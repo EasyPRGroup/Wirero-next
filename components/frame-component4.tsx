@@ -38,7 +38,7 @@ const FrameComponent4: NextPage<FrameComponent4Type> = ({ className = "" }) => {
 
   return (
     <div
-      className={`w-[76.25rem] flex items-start gap-[1.75rem] text-left text-[1.25rem] text-[#1a2530] font-['Proxima_Nova'] ${className}`}
+      className={`w-full flex items-start gap-[1.75rem] text-left text-[1.25rem] text-[#1a2530] font-['Proxima_Nova'] ${className} mq800:flex-wrap mq450:flex-col mq450:gap-[2rem]`}
     >
       <div className="self-stretch flex-1 flex flex-col items-start justify-between gap-[1.25rem] text-[#0f0928] font-[Onest]">
         <div className="self-stretch h-[3.25rem] flex flex-col items-start gap-[1rem]">

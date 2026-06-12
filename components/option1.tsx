@@ -1,9 +1,12 @@
 import type { NextPage } from "next";
+import Link from "next/link";
 
 export type OptionType = {
   className?: string;
   showOption?: boolean;
   features?: string;
+  isActive?: boolean;
+  href?: string;
 
   /** Variant props */
   property1?: "default" | "active";
@@ -15,19 +18,22 @@ export type OptionType = {
  */
 const Option: NextPage<OptionType> = ({
   className = "",
-  property1 = "active",
+  property1 = "default",
   showOption,
   features,
+  isActive = false,
+  href = "#",
 }) => {
   return (
     !!showOption && (
-      <div
-        className={`flex items-center justify-center py-[0rem] px-[0.25rem] shrink-0 text-left text-[1.125rem] text-[#64676f] font-['Proxima_Nova'] ${className}`}
+      <Link
+        href={href}
+        className={`flex items-center justify-center py-[0rem] px-[0.25rem] shrink-0 text-left text-[1.125rem] font-['Proxima_Nova'] ${className} ${isActive ? "text-color-white font-semibold" : "text-[#64676f] font-semibold hover:text-[#4d565f]"}`}
       >
-        <div className="relative leading-[1.625rem] font-semibold">
+        <div className={`relative leading-[1.625rem] font-semibold ${isActive ? "text-color-white" : ""}`}>
           {features}
         </div>
-      </div>
+      </Link>
     )
   );
 };

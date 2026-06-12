@@ -28,10 +28,12 @@ module.exports = {
         },
       },
       fontFamily: {
-        proxima: ["Proxima Nova", "Arial", "sans-serif"],
+        proxima: ["var(--font-proxima)"],
+        "proxima-nova": ["var(--font-proxima)"],
         inter: ["Inter", "Arial", "sans-serif"],
         urbanist: ["Urbanist", "Arial", "sans-serif"],
         onest: ["Onest", "Arial", "sans-serif"],
+        abel: ["Abel", "Arial", "sans-serif"],
       },
       fontSize: {
         xs: ["0.875rem", { lineHeight: "1.125rem" }],
@@ -69,7 +71,9 @@ module.exports = {
     screens: {
       mq1350: { max: "1350px" },
       mq1125: { max: "1125px" },
+      mq1050: { max: "1050px" },
       mq800: { max: "800px" },
+      mq750: { max: "750px" },
       mq450: { max: "450px" },
     },
   },
