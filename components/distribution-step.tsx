@@ -17,8 +17,8 @@ const DistributionStep: NextPage<DistributionStepType> = ({
     <div
       className={`self-stretch overflow-hidden flex items-center flex-wrap content-center gap-[1.25rem] z-[0] shrink-0 ${className}`}
     >
-      <div className="h-[3.75rem] w-[3.75rem] rounded-[40px] bg-[#1a8cd5] flex items-center justify-center p-[0.75rem] box-border">
-        <h2 className="m-0 relative text-[length:inherit] leading-[2.5rem] font-semibold font-[inherit] shrink-0 mq1050:text-[1.625rem] mq1050:leading-[2rem] mq450:text-[1.188rem] mq450:leading-[1.5rem]">
+      <div className="h-[3.75rem] w-[3.75rem] rounded-[40px] bg-[#e2eff9] flex items-center justify-center p-[0.75rem] box-border">
+        <h2 className="m-0 relative text-[length:inherit] leading-[2.5rem] font-semibold font-[inherit] text-[#1a8cd5] shrink-0 mq1050:text-[1.625rem] mq1050:leading-[2rem] mq450:text-[1.188rem] mq450:leading-[1.5rem]">
           {number}
         </h2>
       </div>

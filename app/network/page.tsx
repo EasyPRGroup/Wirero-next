@@ -7,6 +7,8 @@ import NetworkTag from "../../components/network-tag";
 import DistributionStep from "../../components/distribution-step";
 import IndustryTag from "../../components/industry-tag";
 import NetworkCategory from "../../components/network-category";
+import DomainCard from "../../components/domain-card";
+import CtaBanner from "../../components/cta-banner";
 
 const Network: NextPage = () => {
   const industryCategories = [
@@ -20,6 +22,70 @@ const Network: NextPage = () => {
     "Consumer & Cosmetics",
     "Travel & Hospitality",
     "Food & Beverage",
+  ];
+
+  const eachPlacementTags = [
+    "Uniquely hosted",
+    "Naturally structured",
+    "Published consistently across the network",
+  ];
+
+  const domainNetworks = [
+    {
+      name: "Crypto Network",
+      domains: [
+        { name: "Crypto Domain", url: "https://www.cryptodomain1.com" },
+        { name: "Block Insight News", url: "https://www.blockinsightnews.com" },
+        { name: "Token Report Daily", url: "https://www.tokenreportdaily.com" },
+        { name: "Chainwire Hub", url: "https://www.chainwirehub.com" },
+      ],
+    },
+    {
+      name: "Tech Network",
+      domains: [
+        { name: "Crypto Domain", url: "https://www.cryptodomain1.com" },
+        { name: "Block Insight News", url: "https://www.blockinsightnews.com" },
+        { name: "Token Report Daily", url: "https://www.tokenreportdaily.com" },
+        { name: "Newsmax", url: "https://www.newsmax.com/" },
+      ],
+    },
+    {
+      name: "Healthcare Network",
+      domains: [
+        { name: "Crypto Domain", url: "https://www.cryptodomain1.com" },
+        { name: "Block Insight News", url: "https://www.blockinsightnews.com" },
+        { name: "Token Report Daily", url: "https://www.tokenreportdaily.com" },
+        { name: "Newsmax", url: "https://www.newsmax.com/" },
+      ],
+    },
+  ];
+
+  const domainCharacteristics = [
+    {
+      title: "Independently Hosted",
+      description: "Each domain operates on separate hosting infrastructure.",
+    },
+    {
+      title: "Optimized for Distribution",
+      description: "Structured for rapid publishing and indexing workflows.",
+    },
+    {
+      title: "Categorized by Industry",
+      description:
+        "Networks are segmented by niche relevance and topical organization.",
+    },
+    {
+      title: "Built for Scale",
+      description:
+        "Designed for deployment consistency—not editorial branding.",
+    },
+  ];
+
+  const controlChecklist = [
+    "Select industry-specific networks",
+    "Deploy across 10 to 1000 domains",
+    "Publish selectively or network-wide",
+    "Adjust campaigns instantly",
   ];
 
   return (
@@ -260,7 +326,212 @@ const Network: NextPage = () => {
             </section>
           </div>
         </div>
+
+        {/* Each placement is: */}
+        <section className="self-stretch rounded-[20px] bg-[#0461c3] flex flex-col items-center py-[3rem] px-[4.25rem] box-border gap-[2.5rem] max-w-full text-center text-[2rem] text-color-white font-proxima mq750:gap-[1.5rem] mq750:py-[2.625rem] mq750:px-[2.125rem] mq750:box-border mq450:px-[1.25rem] mq450:box-border">
+          <h2 className="m-0 relative text-[length:inherit] leading-[2.375rem] font-bold font-[inherit] mq1050:text-[1.625rem] mq1050:leading-[1.875rem] mq450:text-[1.188rem] mq450:leading-[1.438rem]">
+            Each placement is:
+          </h2>
+          <div className="self-stretch grid grid-cols-3 gap-[1.25rem] text-left text-[1.125rem] mq750:grid-cols-1">
+            {eachPlacementTags.map((tag, index) => (
+              <div
+                key={index}
+                className="rounded-[12px] bg-[rgba(255,255,255,0.1)] flex items-center p-[1.25rem] box-border gap-[0.75rem]"
+              >
+                <Image
+                  className="h-[1.5rem] w-[1.5rem] relative shrink-0"
+                  width={24}
+                  height={24}
+                  sizes="100vw"
+                  alt=""
+                  src="/diamond-sharp.svg"
+                />
+                <b className="flex-1 relative leading-[1.5rem] font-semibold">
+                  {tag}
+                </b>
+              </div>
+            ))}
+          </div>
+          <div className="self-stretch relative text-[1.125rem] leading-[1.75rem] text-[rgba(238,238,238,0.8)]">
+            Distribution is fully system-controlled — not dependent on manual
+            outreach or publisher approval workflows.
+          </div>
+        </section>
       </main>
+
+      {/* Explore Domains Section */}
+      <section className="self-stretch bg-color-white flex flex-col items-start py-[6.125rem] px-[6.875rem] box-border gap-[3rem] max-w-full text-left text-[3rem] text-[#1a2530] font-abel mq1050:pt-[4rem] mq1050:pb-[4rem] mq1050:box-border mq750:gap-[1.5rem] mq750:px-[3.438rem] mq750:box-border mq450:pt-[2.625rem] mq450:px-[1.25rem] mq450:pb-[2.625rem] mq450:box-border">
+        <div className="self-stretch flex items-start gap-[4.25rem] max-w-full lg:flex-wrap mq750:gap-[2.125rem] mq450:gap-[1.063rem]">
+          <h2 className="m-0 w-[33.75rem] relative text-[length:inherit] leading-[3.625rem] font-bold font-[inherit] inline-block shrink-0 max-w-full lg:flex-1 mq1050:text-[2.375rem] mq1050:leading-[2.875rem] mq1050:min-w-full mq450:text-[1.813rem] mq450:leading-[2.188rem]">
+            Explore domains across the network
+          </h2>
+          <div className="flex-1 flex flex-col items-start min-w-[20.813rem] text-[1.125rem] text-[#4d565f] font-proxima mq750:min-w-full">
+            <div className="self-stretch relative leading-[1.75rem]">
+              Preview example domains from different industry categories within
+              the Wirero infrastructure.
+            </div>
+          </div>
+        </div>
+
+        <div className="self-stretch flex flex-col items-start gap-[2rem]">
+          {domainNetworks.map((network, index) => (
+            <div
+              key={index}
+              className="self-stretch flex flex-col items-start gap-[1.25rem]"
+            >
+              <h3 className="m-0 relative text-[1.5rem] leading-[1.875rem] font-bold font-[inherit] text-[#1a2530] mq450:text-[1.375rem] mq450:leading-[1.75rem]">
+                {network.name}
+              </h3>
+              <div className="self-stretch grid grid-cols-4 gap-[1.25rem] mq1050:grid-cols-2 mq450:grid-cols-1">
+                {network.domains.map((domain, i) => (
+                  <DomainCard key={i} name={domain.name} url={domain.url} />
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <Link
+          href="/contact"
+          className="cursor-pointer [border:none] py-[1rem] px-[2.5rem] bg-[#0461c3] h-[3.5rem] rounded-[8px] flex items-center justify-center box-border gap-[0.5rem] no-underline hover:bg-[#0354a8] transition-colors"
+        >
+          <div className="relative text-[1rem] leading-[1.25rem] font-semibold font-proxima text-color-white text-center shrink-0">
+            View Full List
+          </div>
+          <Image
+            className="h-[1rem] w-[1rem] relative shrink-0"
+            width={16}
+            height={16}
+            sizes="100vw"
+            alt=""
+            src="/arrow-right1.svg"
+          />
+        </Link>
+      </section>
+
+      {/* Domain Characteristics Section */}
+      <section className="self-stretch bg-[#12171c] flex flex-col items-center py-[6.125rem] px-[6.875rem] box-border gap-[3rem] max-w-full text-center text-[3rem] text-[#eee] font-abel mq1050:pt-[4rem] mq1050:pb-[4rem] mq1050:box-border mq750:gap-[1.5rem] mq750:px-[3.438rem] mq750:box-border mq450:pt-[2.625rem] mq450:px-[1.25rem] mq450:pb-[2.625rem] mq450:box-border">
+        <div className="w-[60rem] max-w-full overflow-hidden flex flex-col items-center gap-[1rem]">
+          <h2 className="m-0 self-stretch relative text-[length:inherit] leading-[3.625rem] font-bold font-[inherit] mq1050:text-[2.375rem] mq1050:leading-[2.875rem] mq450:text-[1.813rem] mq450:leading-[2.188rem]">
+            Domain Characteristics
+          </h2>
+          <div className="self-stretch relative text-[1.125rem] leading-[1.75rem] font-proxima text-[rgba(238,238,238,0.8)]">
+            Transparency over hype.
+          </div>
+        </div>
+
+        <div className="self-stretch grid grid-cols-2 gap-[1.5rem] text-left text-[1.25rem] mq750:grid-cols-1">
+          {domainCharacteristics.map((item, index) => (
+            <FeatureItem
+              key={index}
+              icon="/solar-global-bold.svg"
+              title={item.title}
+              description={item.description}
+              className="rounded-[16px] bg-[#181f25] border-[#2d3640] border-solid border-[1px] p-[1.5rem] box-border"
+              badgeClassName="rounded-[10px] bg-[rgba(26,140,213,0.1)]"
+              titleColor="text-[#eee]"
+              descriptionColor="text-[rgba(238,238,238,0.7)]"
+            />
+          ))}
+        </div>
+      </section>
+
+      {/* Control Distribution Your Way Section */}
+      <section className="self-stretch bg-color-white flex flex-col items-center py-[6.125rem] px-[6.875rem] box-border gap-[4.25rem] max-w-full text-center text-[3rem] text-[#1a2530] font-abel mq1050:pt-[4rem] mq1050:pb-[4rem] mq1050:box-border mq750:gap-[2.125rem] mq750:px-[3.438rem] mq750:box-border mq450:gap-[1.063rem] mq450:pt-[2.625rem] mq450:px-[1.25rem] mq450:pb-[2.625rem] mq450:box-border">
+        <div className="w-[51.25rem] max-w-full overflow-hidden flex flex-col items-center gap-[1.5rem]">
+          <h2 className="m-0 self-stretch relative text-[length:inherit] leading-[3.625rem] font-bold font-[inherit] mq1050:text-[2.375rem] mq1050:leading-[2.875rem] mq450:text-[1.813rem] mq450:leading-[2.188rem]">
+            Control Distribution Your Way
+          </h2>
+          <div className="self-stretch relative text-[1.125rem] leading-[1.75rem] font-proxima text-[#4d565f]">
+            Choose industries, placement volume, and deployment structure with
+            full control over every campaign.
+          </div>
+        </div>
+
+        <div className="self-stretch flex items-center justify-center gap-[4.25rem] max-w-full lg:flex-wrap mq750:gap-[2.125rem]">
+          {/* Left visual */}
+          <div className="h-[20rem] w-[24rem] relative max-w-full shrink-0 mq450:scale-[0.85]">
+            {/* Decorative green dots */}
+            <div className="absolute top-[6rem] left-[0rem] grid grid-cols-5 gap-[0.625rem]">
+              {Array.from({ length: 25 }).map((_, i) => (
+                <div
+                  key={i}
+                  className="h-[0.375rem] w-[0.375rem] rounded-full bg-[#0bc111]"
+                />
+              ))}
+            </div>
+
+            {/* Gray background card */}
+            <div className="absolute top-[1.25rem] left-[4rem] rounded-[20px] bg-[#e2e5e9] w-[13rem] h-[17rem]"></div>
+
+            {/* White placement card */}
+            <div className="absolute top-[3.5rem] left-[10.5rem] w-[12.5rem] shadow-[0px_8px_24px_rgba(26,37,48,0.12)] rounded-[12px] bg-color-white box-border flex items-center gap-[0.75rem] py-[0.875rem] px-[1rem] z-[3]">
+              <div className="rounded-[8px] bg-[rgba(4,97,195,0.1)] flex items-center justify-center p-[0.5rem] shrink-0">
+                <Image
+                  className="h-[1.25rem] w-[1.25rem] relative"
+                  width={20}
+                  height={20}
+                  sizes="100vw"
+                  alt=""
+                  src="/stack-fill.svg"
+                />
+              </div>
+              <div className="flex flex-col items-start text-left">
+                <b className="relative text-[1.125rem] leading-[1.5rem] font-proxima text-[#1a2530]">
+                  1–1000
+                </b>
+                <div className="relative text-[0.875rem] leading-[1.25rem] font-proxima text-[#4d565f]">
+                  Placement Range
+                </div>
+              </div>
+            </div>
+
+            {/* Blue distribution card */}
+            <div className="absolute top-[7.5rem] left-[11.5rem] w-[11rem] shadow-[0px_12px_32px_rgba(4,97,195,0.32)] rounded-[16px] bg-[#0461c3] box-border flex flex-col items-center py-[1.25rem] px-[1.25rem] gap-[0.75rem] z-[2]">
+              <div className="self-stretch flex items-center gap-[0.5rem]">
+                <div className="flex-1 h-[0.5rem] rounded-full bg-color-white"></div>
+                <div className="h-[0.625rem] w-[0.625rem] rounded-full bg-[#12171c] shrink-0"></div>
+              </div>
+              <b className="relative text-[1.5rem] leading-[1.875rem] font-proxima text-color-white">
+                100%
+              </b>
+              <div className="self-stretch relative text-[0.875rem] leading-[1.25rem] font-proxima text-[rgba(255,255,255,0.8)] text-center">
+                System-Controlled Distribution
+              </div>
+            </div>
+          </div>
+
+          {/* Right checklist */}
+          <div className="flex-1 flex flex-col items-start gap-[1.75rem] min-w-[20rem] text-left text-[1.875rem] mq750:min-w-full">
+            <h2 className="m-0 relative text-[length:inherit] leading-[2.375rem] font-bold font-[inherit] mq450:text-[1.375rem] mq450:leading-[1.75rem]">
+              You decide
+            </h2>
+            <div className="self-stretch flex flex-col items-start gap-[1.25rem] text-[1.125rem] text-[#1a2530] font-proxima">
+              {controlChecklist.map((item, index) => (
+                <div key={index} className="flex items-center gap-[0.75rem]">
+                  <Image
+                    className="h-[1.25rem] w-[1.25rem] relative shrink-0"
+                    width={20}
+                    height={20}
+                    sizes="100vw"
+                    alt=""
+                    src="/check-check.svg"
+                  />
+                  <div className="relative leading-[1.75rem] font-semibold">
+                    {item}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <CtaBanner
+        title="Access the full network and start publishing instantly"
+        buttonText="Start Publishing"
+        buttonHref="/contact"
+      />
 
       <Footer />
     </div>

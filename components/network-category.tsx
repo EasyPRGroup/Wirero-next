@@ -29,6 +29,7 @@ export type NetworkCategoryType = {
   networkCategoryNameFontWeight?: CSSProperties["fontWeight"];
   networkCategoryNameFontSize?: CSSProperties["fontSize"];
   networkCategoryNameColor?: CSSProperties["color"];
+  iconSrc?: string;
 };
 
 const NetworkCategory: NextPage<NetworkCategoryType> = ({
@@ -36,6 +37,7 @@ const NetworkCategory: NextPage<NetworkCategoryType> = ({
   property1 = "Default",
   name = "Blockchain & Cryptocurrency",
   href = "/network",
+  iconSrc = "/blockchain.svg",
   networkCategoryBorder,
   networkCategoryIconHeight,
   networkCategoryIconMaxHeight,
@@ -98,7 +100,7 @@ const NetworkCategory: NextPage<NetworkCategoryType> = ({
         height={48}
         sizes="100vw"
         alt=""
-        src="/blockchain.svg"
+        src={iconSrc}
         style={networkCategoryIconStyle}
       />
       <div

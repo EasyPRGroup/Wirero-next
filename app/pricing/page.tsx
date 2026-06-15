@@ -2,6 +2,9 @@
 import type { NextPage } from "next";
 import Footer from "../../components/footer";
 import PricingCard from "../../components/pricing-card";
+import FrameComponent6 from "../../components/frame-component6";
+import FeatureItem from "../../components/feature-item";
+import CtaBanner from "../../components/cta-banner";
 
 const PricingPill = ({
   icon,
@@ -170,6 +173,33 @@ const Pricing: NextPage = () => {
     },
   ];
 
+  const pricingBenefits = [
+    {
+      title: "Multi-Domain Publishing",
+      description: "Distribute content across hundreds of domains from one dashboard.",
+    },
+    {
+      title: "Niche Targeting",
+      description: "Choose specific industries or deploy across the full network.",
+    },
+    {
+      title: "RSS Automation",
+      description: "Automate distribution directly from your publishing feeds.",
+    },
+    {
+      title: "Dofollow Backlinks",
+      description: "Include backlinks naturally within distributed content.",
+    },
+    {
+      title: "Custom Anchors",
+      description: "Control how links appear across placements.",
+    },
+    {
+      title: "Exportable Reporting",
+      description: "Download live URLs and reporting anytime.",
+    },
+  ];
+
   return (
     <div className="w-full relative bg-color-white flex flex-col items-start leading-[normal] tracking-[normal] text-left text-[1rem] text-[#64676f] font-['Proxima_Nova']">
       <main className="self-stretch flex flex-col items-start pt-[4.25rem] px-[6.875rem] pb-[6.125rem] gap-[4.25rem] lg:pt-[2.75rem] lg:pb-[4rem] mq800:gap-[2.125rem] mq800:pt-[1.813rem] mq800:px-[3.438rem] mq800:pb-[2.625rem] mq450:gap-[1.063rem] mq450:px-[1.25rem]">
@@ -223,6 +253,63 @@ const Pricing: NextPage = () => {
           </div>
         </div>
       </main>
+
+      {/* Why flat-rate pricing comparison */}
+      <section className="self-stretch bg-[#f7fafd] flex flex-col items-start py-[6.125rem] px-[6.875rem] box-border max-w-full mq800:py-[2.625rem] mq800:px-[3.438rem] mq800:box-border mq450:py-[1.688rem] mq450:px-[1.25rem] mq450:box-border">
+        <FrameComponent6
+          eyebrow=""
+          title="Why flat-rate pricing changes distribution economics"
+          positiveLabel="With Wirero"
+          positiveItems={[
+            "Predictable monthly pricing",
+            "Instant multi-domain publishing",
+            "Infrastructure built for scale",
+            "Automated RSS distribution",
+            "Unlimited publishing capability",
+          ]}
+          negativeLabel="Traditional Distribution"
+          negativeItems={[
+            "Pay per placement",
+            "Manual publisher outreach",
+            "Slow approval cycles",
+            "Increasing costs at scale",
+            "Limited operational efficiency",
+          ]}
+        />
+      </section>
+
+      {/* Why flat-rate pricing works */}
+      <section className="self-stretch bg-color-white flex flex-col items-center py-[6.125rem] px-[6.875rem] box-border gap-[3.5rem] max-w-full text-center text-[#1a2530] font-['Proxima_Nova'] mq800:gap-[2rem] mq800:py-[2.625rem] mq800:px-[3.438rem] mq800:box-border mq450:px-[1.25rem]">
+        <h2 className="m-0 relative text-[3.5rem] leading-[4.25rem] font-bold mq450:text-[2.125rem] mq450:leading-[2.563rem] mq800:text-[2.813rem] mq800:leading-[3.375rem]">
+          Why flat-rate pricing works
+        </h2>
+        <div className="self-stretch flex items-start justify-center flex-wrap gap-[1.5rem] text-left text-[1.25rem]">
+          {pricingBenefits.map((item, index) => (
+            <FeatureItem
+              key={index}
+              vertical
+              icon="/globe.svg"
+              title={item.title}
+              description={item.description}
+              badgeClassName="h-[3rem] w-[3rem] rounded-[12px] bg-color-white shadow-[0px_2px_8px_rgba(26,37,48,0.08)]"
+              className="grow basis-[calc((100%_-_3rem)/3)] min-w-[15rem] rounded-2xl bg-[#f7fafd] p-[1.75rem] box-border"
+            />
+          ))}
+        </div>
+      </section>
+
+      <CtaBanner
+        title="Choose Your Plan and Start Publishing Instantly"
+        subtitle="Stop relying on third-party networks and fragmented outreach workflows."
+        pills={[
+          { text: "Publish once" },
+          { text: "Distribute instantly" },
+          { text: "Scale without limits" },
+        ]}
+        buttonText="Start Publishing with Wirero"
+        buttonHref="/contact"
+      />
+
       <Footer />
     </div>
   );
