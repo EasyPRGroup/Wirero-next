@@ -18,7 +18,7 @@ export type OptionType = {
  */
 const Option: NextPage<OptionType> = ({
   className = "",
-  property1 = "default",
+  property1: _property1 = "default",
   showOption,
   features,
   isActive = false,

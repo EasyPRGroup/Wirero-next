@@ -2,6 +2,7 @@
 import type { NextPage } from "next";
 import Image from "next/image";
 import { useRef } from "react";
+import CtaBanner from "../../components/cta-banner";
 import Footer from "../../components/footer";
 import NetworkCategory from "../../components/network-category";
 
@@ -466,81 +467,6 @@ const AboutUs: NextPage = () => {
         </div>
       </section>
 
-      {false && (
-      <section className="self-stretch bg-color-white flex flex-col items-center py-[6.125rem] px-[6.875rem] box-border gap-[3.5rem] max-w-full text-center font-['Proxima_Nova'] mq800:gap-[2rem] mq800:py-[2.625rem] mq800:px-[3.438rem] mq800:box-border mq450:px-[1.25rem] mq450:box-border">
-        <div className="flex flex-col items-center gap-[1.5rem] max-w-[60rem]">
-          <b className="relative tracking-[0.02em] leading-[1.25rem] uppercase text-[#0bc111]">
-            HOW DISTRIBUTION WORKS
-          </b>
-          <h2 className="m-0 relative text-[3rem] leading-[3.625rem] font-bold text-[#1a2530] mq1050:text-[2.375rem] mq1050:leading-[2.875rem] mq450:text-[1.813rem] mq450:leading-[2.188rem]">
-            Simple, centralized publishing workflow
-          </h2>
-          <div className="relative text-[1.125rem] leading-[1.75rem] text-[#4d565f] max-w-[50rem]">
-            Wirero simplifies large-scale distribution through a controlled multi-domain infrastructure designed for fast and scalable deployment.
-          </div>
-        </div>
-
-        <div className="self-stretch flex items-center justify-center flex-wrap gap-[1rem] max-w-full">
-          {[
-            {
-              icon: (
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M12 16V4M12 4L8 8M12 4L16 8" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                  <path d="M4 17V19C4 19.5304 4.21071 20.0391 4.58579 20.4142C4.96086 20.7893 5.46957 21 6 21H18C18.5304 21 19.0391 20.7893 19.4142 20.4142C19.7893 20.0391 20 19.5304 20 19V17" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              ),
-              title: "Upload or Connect",
-            },
-            {
-              icon: (
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="12" cy="12" r="10" stroke="white" strokeWidth="2"/>
-                  <circle cx="12" cy="12" r="6" stroke="white" strokeWidth="2"/>
-                  <circle cx="12" cy="12" r="2" fill="white"/>
-                </svg>
-              ),
-              title: "Select Distribution",
-            },
-            {
-              icon: (
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              ),
-              title: "Publish at Scale",
-            },
-            {
-              icon: (
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M14 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V8L14 2Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                  <path d="M14 2V8H20M16 13H8M16 17H8M10 9H8" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              ),
-              title: "Access Reports",
-            },
-          ].map((step, index, arr) => (
-            <div key={index} className="flex items-center gap-[1rem]">
-              <div className="flex items-center gap-[1rem] shrink-0">
-                <div className="h-[3.75rem] w-[3.75rem] rounded-full bg-[#1a8cd5] flex items-center justify-center shrink-0">
-                  {step.icon}
-                </div>
-                <b className="relative text-[1.25rem] leading-[1.5rem] font-bold text-[#1a2530] text-left shrink-0 whitespace-nowrap">
-                  {step.title}
-                </b>
-              </div>
-              {index < arr.length - 1 && (
-                <div className="shrink-0 mx-[0.5rem] mq750:hidden">
-                  <svg width="40" height="24" viewBox="0 0 40 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M2 12C2 12 10 2 20 12C30 22 38 12 38 12" stroke="#b4c3d0" strokeWidth="2" strokeLinecap="round" strokeDasharray="4 4"/>
-                    <path d="M32 8L38 12L32 16" stroke="#b4c3d0" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                  </svg>
-                </div>
-              )}
-            </div>
-          ))}
-        </div>
-      </section>)}
-
       {/* Network Structure Section */}
       <section className="self-stretch bg-[#f7fafd] flex flex-col items-center py-[6.125rem] px-[6.875rem] box-border gap-[3.5rem] max-w-full text-center font-['Proxima_Nova'] mq800:gap-[2rem] mq800:py-[2.625rem] mq800:px-[3.438rem] mq800:box-border mq450:px-[1.25rem] mq450:box-border">
         <div className="flex flex-col items-center gap-[1.5rem] max-w-[60rem]">
@@ -554,7 +480,7 @@ const AboutUs: NextPage = () => {
             The Wirero infrastructure is organized into niche-focused domain categories designed for contextual and scalable distribution.
           </div>
         </div>
-        <div className="self-stretch flex items-start justify-center flex-wrap content-start gap-[1.25rem] text-left">
+        <div className="self-stretch flex items-start justify-start flex-wrap content-start gap-[1.25rem] text-left">
           {[
             { name: "Blockchain & Cryptocurrency" },
             { name: "Casino & Gambling" },
@@ -577,6 +503,62 @@ const AboutUs: NextPage = () => {
           ))}
         </div>
       </section>
+
+      {/* How Distribution Works Section */}
+      <section className="self-stretch bg-color-white flex flex-col items-center py-[6.125rem] px-[6.875rem] box-border gap-[3.5rem] max-w-full text-center font-['Proxima_Nova'] mq800:gap-[2rem] mq800:py-[2.625rem] mq800:px-[3.438rem] mq800:box-border mq450:px-[1.25rem] mq450:box-border">
+        <div className="flex flex-col items-center gap-[1.5rem] max-w-[60rem]">
+          <b className="relative tracking-[0.02em] leading-[1.25rem] uppercase text-[#0bc111]">
+            HOW DISTRIBUTION WORKS
+          </b>
+          <h2 className="m-0 relative text-[3rem] leading-[3.625rem] font-bold text-[#1a2530] mq1050:text-[2.375rem] mq1050:leading-[2.875rem] mq450:text-[1.813rem] mq450:leading-[2.188rem]">
+            Simple, centralized publishing workflow
+          </h2>
+          <div className="relative text-[1.125rem] leading-[1.75rem] text-[#4d565f] max-w-[50rem]">
+            Wirero simplifies large-scale distribution through a controlled multi-domain infrastructure designed for fast and scalable deployment.
+          </div>
+        </div>
+
+        <div className="self-stretch flex items-center justify-center flex-wrap gap-[1.25rem] max-w-full">
+          {[
+            { number: "1", title: "Upload or Connect" },
+            { number: "2", title: "Select Distribution" },
+            { number: "3", title: "Publish at Scale" },
+            { number: "4", title: "Access Reports" },
+          ].map((step, index, arr) => (
+            <div key={index} className="flex items-center gap-[1.25rem]">
+              <div className="flex items-center gap-[1rem] shrink-0">
+                <div className="h-[3.75rem] w-[3.75rem] rounded-[40px] bg-[#e2eff9] flex items-center justify-center shrink-0">
+                  <h3 className="m-0 relative text-[1.5rem] leading-[2.5rem] font-semibold text-[#1a8cd5]">
+                    {step.number}
+                  </h3>
+                </div>
+                <b className="relative text-[1.125rem] leading-[1.5rem] font-bold text-[#1a2530] text-left shrink-0 w-[6.5rem]">
+                  {step.title}
+                </b>
+              </div>
+              {index < arr.length - 1 && (
+                <div className="shrink-0 mq750:hidden">
+                  <Image
+                    className="w-[2.875rem] h-[1.0625rem] relative"
+                    width={46}
+                    height={17}
+                    sizes="100vw"
+                    alt=""
+                    src="/Vector2.svg"
+                  />
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <CtaBanner
+        title="Take control of your distribution infrastructure"
+        subtitle="Publish across independently managed domains through a centralized multi-network system designed for scalable deployment."
+        buttonText="Start Publishing"
+        buttonHref="/contact"
+      />
 
       <Footer property1="Variant2" />
     </div>

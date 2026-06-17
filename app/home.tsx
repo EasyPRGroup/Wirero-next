@@ -3,7 +3,7 @@ import Image from "next/image";
 import Bannerheader from "../components/bannerheader";
 import Clients from "../components/clients";
 import FrameComponent2 from "../components/frame-component2";
-import Points from "../components/points";
+
 import About from "../components/about";
 import Step from "../components/step";
 import FrameComponent5 from "../components/frame-component5";

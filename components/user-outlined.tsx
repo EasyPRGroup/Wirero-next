@@ -43,18 +43,22 @@ const UserOutlined: NextPage<UserOutlinedType> = ({
   cTAButtonColor,
   cTAButtonMargin,
 }) => {
-  const buttonStyle: CSSProperties = {
-    border: userOutlinedBorder,
-    padding: userOutlinedPadding,
-    backgroundColor: userOutlinedBackgroundColor,
-    height: userOutlinedHeight,
-  };
+  const buttonStyle: CSSProperties = Object.fromEntries(
+    Object.entries({
+      border: userOutlinedBorder,
+      padding: userOutlinedPadding,
+      backgroundColor: userOutlinedBackgroundColor,
+      height: userOutlinedHeight,
+    }).filter(([, v]) => v !== undefined)
+  ) as CSSProperties;
 
-  const textStyle: CSSProperties = {
-    fontSize: cTAButtonFontSize,
-    color: cTAButtonColor,
-    margin: cTAButtonMargin,
-  };
+  const textStyle: CSSProperties = Object.fromEntries(
+    Object.entries({
+      fontSize: cTAButtonFontSize,
+      color: cTAButtonColor,
+      margin: cTAButtonMargin,
+    }).filter(([, v]) => v !== undefined)
+  ) as CSSProperties;
 
   const content = (
     <>

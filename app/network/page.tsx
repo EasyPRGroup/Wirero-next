@@ -194,7 +194,7 @@ const Network: NextPage = () => {
         <div className="self-stretch flex items-start justify-center gap-[1.25rem] mq1050:flex-wrap">
           <NetworkTag icon="/Frame-266@2x.png" text="No outreach." />
           <NetworkTag icon="/Frame-2681@2x.png" text="No third-party dependency." />
-          <div className="rounded-[40px] bg-[#1a8cd5] flex items-center py-[0.375rem] px-[0.75rem] gap-[0.5rem]">
+          <div className="rounded-[40px] bg-[#B4DAF1] flex items-center py-[0.375rem] px-[0.75rem] gap-[0.5rem]">
             <Image
               className="h-[1.25rem] w-[1.25rem] relative object-cover"
               width={20}
@@ -227,7 +227,7 @@ const Network: NextPage = () => {
             Industry Networks
           </h2>
 
-          <div className="self-stretch rounded-[16px] overflow-hidden flex flex-col items-center gap-[1.25rem] text-center text-[1.25rem] text-color-white">
+          <div className="self-stretch rounded-[16px] overflow-hidden flex flex-col items-center justify-start gap-[1.25rem] text-center text-[1.25rem] text-color-white">
             {/* First row of category cards */}
             <section className="self-stretch flex items-start flex-wrap content-start gap-[1.25rem] text-left text-[1.5rem] text-[#1a2530] font-abel">
               {industryCategories.slice(0, 3).map((category, index) => (

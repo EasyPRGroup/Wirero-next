@@ -29,9 +29,8 @@ const ContactPage: NextPage = () => {
 
   return (
     <div className="w-full relative bg-color-white overflow-hidden flex flex-col items-start leading-[normal] tracking-[normal]">
-
       {/* Main Content */}
-      <main className="self-stretch flex items-start justify-center flex-wrap content-start pt-[0.625rem] px-[1.875rem] pb-[2.5rem] box-border gap-[4.25rem] max-w-full">
+      <main className="self-stretch flex items-start justify-start flex-wrap content-start pt-[4.25rem] px-[6.875rem] pb-[6.125rem] box-border gap-[4.25rem] max-w-full mq750:gap-[2.125rem] mq750:pt-[1.813rem] mq750:px-[3.438rem] mq750:pb-[2.625rem] mq750:box-border mq1050:pt-[2.75rem] mq1050:pb-[4rem] mq1050:box-border mq450:gap-[1.063rem] mq450:pl-[1.25rem] mq450:pr-[1.25rem] mq450:box-border">
         {/* Left Column */}
         <section className="flex-[1.1481] overflow-hidden flex flex-col items-start gap-[1.5rem] min-w-[19.375rem] max-w-[33.25rem] text-left text-[1rem] text-[#4d565f] font-proxima-nova">
           {/* Contact Label */}
@@ -112,7 +111,10 @@ const ContactPage: NextPage = () => {
                   Social Media:
                 </h3>
                 <div className="w-[12.5rem] h-[2.75rem] flex items-center gap-[0.5rem]">
-                  <Link href="#" className="h-[2.75rem] w-[2.75rem] relative rounded-full flex items-center justify-center bg-[#d9f0ff] hover:bg-[#b8e0ff] transition-colors">
+                  <Link
+                    href="#"
+                    className="h-[2.75rem] w-[2.75rem] relative rounded-full flex items-center justify-center bg-[#d9f0ff] hover:bg-[#b8e0ff] transition-colors"
+                  >
                     <Image
                       className="h-[1.25rem] w-[1.25rem] object-contain"
                       width={20}
@@ -121,7 +123,10 @@ const ContactPage: NextPage = () => {
                       src="/facebook.svg"
                     />
                   </Link>
-                  <Link href="#" className="h-[2.75rem] w-[2.75rem] relative rounded-full flex items-center justify-center bg-[#d9f0ff] hover:bg-[#b8e0ff] transition-colors">
+                  <Link
+                    href="#"
+                    className="h-[2.75rem] w-[2.75rem] relative rounded-full flex items-center justify-center bg-[#d9f0ff] hover:bg-[#b8e0ff] transition-colors"
+                  >
                     <Image
                       className="h-[1.25rem] w-[1.25rem] object-contain"
                       width={20}
@@ -130,7 +135,10 @@ const ContactPage: NextPage = () => {
                       src="/twitter@2x.png"
                     />
                   </Link>
-                  <Link href="#" className="h-[2.75rem] w-[2.75rem] relative rounded-full flex items-center justify-center bg-[#d9f0ff] hover:bg-[#b8e0ff] transition-colors">
+                  <Link
+                    href="#"
+                    className="h-[2.75rem] w-[2.75rem] relative rounded-full flex items-center justify-center bg-[#d9f0ff] hover:bg-[#b8e0ff] transition-colors"
+                  >
                     <Image
                       className="h-[1.25rem] w-[1.25rem] object-contain"
                       width={20}
@@ -139,7 +147,10 @@ const ContactPage: NextPage = () => {
                       src="/linkedin-fill.svg"
                     />
                   </Link>
-                  <Link href="#" className="h-[2.75rem] w-[2.75rem] relative rounded-full flex items-center justify-center bg-[#d9f0ff] hover:bg-[#b8e0ff] transition-colors">
+                  <Link
+                    href="#"
+                    className="h-[2.75rem] w-[2.75rem] relative rounded-full flex items-center justify-center bg-[#d9f0ff] hover:bg-[#b8e0ff] transition-colors"
+                  >
                     <Image
                       className="h-[1.25rem] w-[1.25rem] object-contain"
                       width={20}
@@ -154,26 +165,30 @@ const ContactPage: NextPage = () => {
           </div>
 
           {/* New to Wirero Card */}
-          <div className="self-stretch rounded-[16px] bg-[#0461c3] overflow-hidden flex items-start p-[1.25rem] box-border gap-[1.5rem] max-w-full text-[1.5rem] text-color-white">
+          <div className="self-stretch rounded-[24px] bg-[#e6f4ff] overflow-hidden flex items-start p-[1.25rem] box-border gap-[1.5rem] max-w-full text-[1.5rem] text-[#4d565f]">
             <div className="flex-1 flex items-start gap-[1rem] min-w-[17.375rem] max-w-full">
               <Image
-                className="w-[3.5rem] relative max-h-full object-cover"
-                width={56}
-                height={56}
+                className="w-[3.5rem] h-auto relative max-h-full object-cover rounded"
+                width={54}
+                height={30}
                 loading="lazy"
                 alt="New to Wirero"
-                src="/Group-9.svg"
+                src="/Group-1.jpg"
               />
               <div className="flex-1 flex flex-col items-start gap-[0.25rem] min-w-[14.438rem] max-w-full">
                 <h3 className="m-0 self-stretch relative text-[length:inherit] leading-[1.875rem] font-bold font-[inherit]">
                   New to Wirero?
                 </h3>
-                <div className="w-full relative text-[1.125rem] leading-[1.75rem] text-[#d1d9e6] inline-block max-w-[22.25rem]">
-                  Explore how our multi-domain distribution infrastructure works.
+                <div className="w-full relative text-[1.125rem] leading-[1.75rem] text-[#64676f] inline-block max-w-[22.25rem]">
+                  Explore how our multi-domain distribution infrastructure
+                  works.
                 </div>
               </div>
             </div>
-            <Link href="#" className="h-[2.5rem] w-[2.5rem] relative rounded-full flex items-center justify-center bg-color-white/10 hover:bg-color-white/20 transition-colors">
+            <Link
+              href="#"
+              className="cursor-pointer border-none py-[0.5rem] px-[0.5rem] bg-[#0461c3] h-[2.25rem] w-[2.25rem] rounded-[8px] flex items-center justify-center box-border text-color-white hover:bg-[#0354a8] transition-colors no-underline"
+            >
               <Image
                 className="h-[1.25rem] w-[1.25rem]"
                 width={20}
@@ -204,10 +219,16 @@ const ContactPage: NextPage = () => {
           </div>
 
           {/* Form */}
-          <form onSubmit={handleSubmit} className="self-stretch flex flex-col items-start gap-[1rem] text-[1rem] text-[#64676f]">
+          <form
+            onSubmit={handleSubmit}
+            className="self-stretch flex flex-col items-start gap-[1rem] text-[1rem] text-[#64676f]"
+          >
             {/* Full Name */}
             <div className="self-stretch flex flex-col items-start gap-[0.375rem]">
-              <label htmlFor="fullName" className="relative leading-[1.5rem] font-semibold">
+              <label
+                htmlFor="fullName"
+                className="relative leading-[1.5rem] font-semibold"
+              >
                 Full Name
               </label>
               <input
@@ -223,7 +244,10 @@ const ContactPage: NextPage = () => {
 
             {/* Email Address */}
             <div className="self-stretch flex flex-col items-start gap-[0.375rem]">
-              <label htmlFor="email" className="relative leading-[1.5rem] font-semibold">
+              <label
+                htmlFor="email"
+                className="relative leading-[1.5rem] font-semibold"
+              >
                 Email Address
               </label>
               <input
@@ -239,7 +263,10 @@ const ContactPage: NextPage = () => {
 
             {/* Company Name (Optional) */}
             <div className="self-stretch flex flex-col items-start gap-[0.375rem]">
-              <label htmlFor="companyName" className="relative leading-[1.5rem] font-semibold">
+              <label
+                htmlFor="companyName"
+                className="relative leading-[1.5rem] font-semibold"
+              >
                 Company Name (Optional)
               </label>
               <input
@@ -255,7 +282,10 @@ const ContactPage: NextPage = () => {
 
             {/* Company Type */}
             <div className="self-stretch flex flex-col items-start gap-[0.375rem]">
-              <label htmlFor="companyType" className="relative leading-[1.5rem] font-semibold">
+              <label
+                htmlFor="companyType"
+                className="relative leading-[1.5rem] font-semibold"
+              >
                 Company Type
               </label>
               <div className="self-stretch relative">
@@ -285,7 +315,10 @@ const ContactPage: NextPage = () => {
 
             {/* Message */}
             <div className="self-stretch flex flex-col items-start gap-[0.375rem]">
-              <label htmlFor="message" className="relative leading-[1.5rem] font-semibold">
+              <label
+                htmlFor="message"
+                className="relative leading-[1.5rem] font-semibold"
+              >
                 Message
               </label>
               <textarea
@@ -329,10 +362,14 @@ const ContactPage: NextPage = () => {
               </b>
               <div className="w-full relative text-[1.125rem] leading-[1.75rem] text-[#64676f] inline-block max-w-[36.5rem]">
                 From startups to global enterprises, Wirero helps organizations
-                distribute press releases worldwide through our trusted media network.
+                distribute press releases worldwide through our trusted media
+                network.
               </div>
             </div>
-            <Link href="/pricing" className="cursor-pointer border-none py-[1rem] px-[2.5rem] bg-[#0461c3] h-[3.5rem] rounded-[8px] flex items-center justify-center box-border gap-[0.5rem] text-color-white hover:bg-[#0354a8] transition-colors font-proxima-nova no-underline">
+            <Link
+              href="/pricing"
+              className="cursor-pointer border-none py-[1rem] px-[2.5rem] bg-[#0461c3] h-[3.5rem] rounded-[8px] flex items-center justify-center box-border gap-[0.5rem] text-color-white hover:bg-[#0354a8] transition-colors font-proxima-nova no-underline"
+            >
               <span className="relative text-[1rem] leading-[1.25rem] font-semibold">
                 Submit Press Release
               </span>
@@ -377,20 +414,24 @@ const ContactPage: NextPage = () => {
 
       {/* CTA Section 2 */}
       <section className="self-stretch flex flex-col items-center py-[2.5rem] px-[1.875rem] box-border max-w-full text-left text-[1.375rem] text-[#4d565f] font-proxima-nova">
-        <div className="w-[76.25rem] h-[23rem] relative rounded-[24px] bg-[#0461c3] max-w-full">
-          <div className="absolute top-[3.75rem] left-[3.75rem] w-[36.813rem] flex flex-col items-start gap-[1.75rem] max-w-full text-left text-[2.25rem] text-color-white font-proxima-nova">
+        <div className="w-full rounded-[24px] bg-[#0461c3] flex items-center justify-center flex-wrap content-center py-[3.75rem] px-[1.875rem] box-border gap-[5rem] max-w-[76.25rem]">
+          <section className="flex-1 flex flex-col items-start gap-[1.75rem] min-w-[15.625rem] max-w-[36.5rem] text-left text-[2.25rem] text-color-white font-proxima-nova">
             <div className="self-stretch overflow-hidden flex flex-col items-start gap-[0.75rem]">
               <b className="self-stretch relative leading-[3rem]">
                 Scale your distribution with centralized infrastructure
               </b>
               <div className="self-stretch relative text-[1.125rem] leading-[1.75rem] text-[#d1d9e6]">
                 Publish across independently managed domains through a scalable
-                multi-network system designed for fast and controlled distribution.
+                multi-network system designed for fast and controlled
+                distribution.
               </div>
             </div>
-            <Link href="/pricing" className="cursor-pointer border-none py-[1rem] px-[2.5rem] bg-color-white h-[3.5rem] rounded-[8px] flex items-center justify-center box-border gap-[0.5rem] text-[#1a2530] hover:bg-[#f0f0f0] transition-colors font-proxima-nova no-underline">
+            <Link
+              href="/pricing"
+              className="cursor-pointer border-none py-[1rem] px-[2.5rem] bg-color-white h-[3.5rem] rounded-[8px] flex items-center justify-center box-border gap-[0.5rem] text-[#1a2530] hover:bg-[#f0f0f0] transition-colors font-proxima-nova no-underline"
+            >
               <span className="relative text-[1rem] leading-[1.25rem] font-semibold">
-                Start Publishing
+                Get Started
               </span>
               <Image
                 className="h-[1rem] w-[1rem] relative"
@@ -400,6 +441,33 @@ const ContactPage: NextPage = () => {
                 src="/arrow-right.svg"
               />
             </Link>
+          </section>
+          <div className="h-[13.625rem] flex-1 relative min-w-[15.625rem] max-w-[27.25rem] mq750:max-w-full">
+            <div className="absolute bottom-[0rem] left-[0rem] shadow-[0px_0px_12px_rgba(26,38,48,0.08)] rounded-[12px] bg-color-white border-color-white border-solid border-[4px] overflow-hidden flex flex-col items-center py-[0.687rem] pl-[1.687rem] pr-[1.25rem] opacity-[0.6]">
+              <h3 className="m-0 relative text-[length:inherit] tracking-[0.02em] leading-[1.625rem] font-semibold font-[inherit] shrink-0">
+                Growing Businesses
+              </h3>
+            </div>
+            <div className="absolute top-[2.75rem] right-[2.688rem] shadow-[0px_0px_12px_rgba(26,38,48,0.08)] rounded-[12px] bg-color-white border-color-white border-solid border-[4px] overflow-hidden flex flex-col items-center py-[1rem] pl-[1.687rem] pr-[1.25rem] opacity-[0.6]">
+              <h3 className="m-0 relative text-[length:inherit] tracking-[0.02em] leading-[1.625rem] font-semibold font-[inherit] shrink-0">
+                Startups
+              </h3>
+            </div>
+            <div className="absolute top-[0rem] left-[6.5rem] shadow-[0px_0px_12px_rgba(26,38,48,0.08)] rounded-[12px] bg-color-white border-color-white border-solid border-[4px] overflow-hidden flex flex-col items-center py-[1rem] px-[1.5rem] opacity-[0.6]">
+              <h3 className="m-0 relative text-[length:inherit] tracking-[0.02em] leading-[1.625rem] font-semibold font-[inherit] shrink-0">
+                Enterprise
+              </h3>
+            </div>
+            <div className="absolute right-[0rem] bottom-[2.375rem] shadow-[0px_0px_12px_rgba(26,38,48,0.08)] rounded-[12px] bg-color-white border-color-white border-solid border-[4px] overflow-hidden flex flex-col items-center py-[0.687rem] px-[1.5rem] opacity-[0.6]">
+              <h3 className="m-0 relative text-[length:inherit] tracking-[0.02em] leading-[1.625rem] font-semibold font-[inherit] shrink-0">
+                PR Agencies
+              </h3>
+            </div>
+            <div className="absolute top-[calc(50%_-_29px)] left-[3.875rem] shadow-[0px_0px_12px_rgba(26,38,48,0.08)] rounded-[12px] bg-color-white border-color-white border-solid border-[4px] overflow-hidden flex flex-col items-center py-[1rem] pl-[1.687rem] pr-[1.25rem]">
+              <h3 className="m-0 relative text-[length:inherit] tracking-[0.02em] leading-[1.625rem] font-semibold font-[inherit] shrink-0">
+                Global Brands
+              </h3>
+            </div>
           </div>
         </div>
       </section>

@@ -11,7 +11,7 @@ export type TestimonialsType = {
 
 const Testimonials: NextPage<TestimonialsType> = ({
   className = "",
-  property1 = "Default",
+  property1: _property1 = "Default",
   image83,
 }) => {
   return (

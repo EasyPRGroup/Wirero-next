@@ -12,7 +12,7 @@ export type FooterType = {
 
 const Footer: NextPage<FooterType> = ({
   className = "",
-  property1 = "Default",
+  property1: _property1 = "Default",
 }) => {
   return (
     <footer
@@ -24,9 +24,9 @@ const Footer: NextPage<FooterType> = ({
           <div className="h-[1.5rem] w-[7.5rem] relative shrink-0">
             <Link href="/">
               <Image
-                className="absolute w-[32.5%] top-[calc(50%_-_15.7px)] right-[65.58%] left-[1.92%] max-w-full overflow-hidden h-[1.969rem] object-cover shrink-0"
-                width={39}
-                height={31.5}
+                className="absolute w-[32.5%] top-[calc(50%_-_15.7px)] right-[65.58%] left-[1.92%] max-w-full overflow-hidden h-auto object-cover shrink-0"
+                width={52}
+                height={42}
                 sizes="100vw"
                 alt=""
                 src="/Wirero-main-1@2x.png"

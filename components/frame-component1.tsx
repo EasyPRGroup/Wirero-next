@@ -16,7 +16,7 @@ export type FrameComponent1Type = {
 
 const FrameComponent1: NextPage<FrameComponent1Type> = ({
   className = "",
-  property1 = "default",
+  property1: _property1 = "default",
   networkOverflow,
   eFCBBCFDF,
   newsmax,

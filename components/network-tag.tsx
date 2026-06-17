@@ -14,7 +14,7 @@ const NetworkTag: NextPage<NetworkTagType> = ({
 }) => {
   return (
     <button
-      className={`cursor-pointer [border:none] py-[0.375rem] px-[0.75rem] bg-[#1a8cd5] rounded-[40px] flex items-center gap-[0.5rem] hover:bg-[#1a8cd5]/90 ${className}`}
+      className={`cursor-pointer [border:none] py-[0.375rem] px-[0.75rem] bg-[#B4DAF1] rounded-[40px] flex items-center gap-[0.5rem] hover:bg-[#B4DAF1]/90 ${className}`}
     >
       <Image
         className="h-[1.25rem] w-[1.25rem] relative object-cover"

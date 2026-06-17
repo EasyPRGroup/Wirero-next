@@ -16,7 +16,7 @@ export type HeaderType = {
 
 const Header: NextPage<HeaderType> = ({
   className = "",
-  property1 = "Default",
+  property1: _property1 = "Default",
   activeLink = "",
 }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
