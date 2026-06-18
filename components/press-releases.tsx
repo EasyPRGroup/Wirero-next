@@ -25,7 +25,7 @@ const PressReleases: NextPage<PressReleasesType> = ({ className = "" }) => {
     <section
       className={`self-stretch flex flex-col items-center py-[6.125rem] px-[6.875rem] box-border gap-[4.25rem] max-w-full mq450:gap-[1.063rem] mq450:pl-[1.25rem] mq450:pr-[1.25rem] mq450:box-border mq800:gap-[2.125rem] mq800:py-[2.625rem] mq800:px-[3.438rem] mq800:box-border mq1125:pt-[4rem] mq1125:pb-[4rem] mq1125:box-border ${className}`}
     >
-      <section className="w-[60rem] overflow-hidden flex flex-col items-center gap-[1.5rem] text-left text-[1rem] text-[#0bc111] font-['Proxima_Nova']">
+      <section className="w-[60rem] max-w-full overflow-hidden flex flex-col items-center gap-[1.5rem] text-left text-[1rem] text-[#0bc111] font-['Proxima_Nova']">
         <b className="relative tracking-[0.02em] leading-[1.25rem] uppercase">
           Recently Distributed
         </b>

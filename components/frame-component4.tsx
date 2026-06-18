@@ -12,21 +12,21 @@ export type FrameComponent4Type = {
  */
 const FrameComponent4: NextPage<FrameComponent4Type> = ({ className = "" }) => {
   const resourceLinks = [
-    { showItemMenu: true, aboutUs: "Blog" },
+    { showItemMenu: true, aboutUs: "Blog", href: "/blog" },
     { showItemMenu: false, aboutUs: "Press Release Writing Guide" },
     { showItemMenu: false, aboutUs: "Case Studies" },
-    { showItemMenu: true, aboutUs: "Help Center" },
-    { showItemMenu: true, aboutUs: "FAQs" },
-    { showItemMenu: true, aboutUs: "News Room" },
+    { showItemMenu: true, aboutUs: "Contact Us", href: "/contact" },
+    { showItemMenu: true, aboutUs: "FAQs", href: "/faqs" },
+    { showItemMenu: true, aboutUs: "News Room", href: "/newsroom" },
   ];
 
   const companyLinks = [
     { showItemMenu: false, aboutUs: "Services" },
-    { showItemMenu: true, aboutUs: "About" },
-    { showItemMenu: true, aboutUs: "Media Network" },
-    { showItemMenu: true, aboutUs: "Pricing" },
+    { showItemMenu: true, aboutUs: "About", href: "/about-us" },
+    { showItemMenu: true, aboutUs: "Media Network", href: "/network" },
+    { showItemMenu: true, aboutUs: "Pricing", href: "/pricing" },
     { showItemMenu: false, aboutUs: "Distribution Process" },
-    { showItemMenu: false, aboutUs: "Partner Program" },
+    { showItemMenu: true, aboutUs: "Agencies", href: "/agency" },
   ];
 
   const legalLinks = [
@@ -153,6 +153,7 @@ const FrameComponent4: NextPage<FrameComponent4Type> = ({ className = "" }) => {
               key={index}
               showItemMenu={item.showItemMenu}
               aboutUs={item.aboutUs}
+              href={item.href}
             />
           ))}
         </div>
@@ -169,6 +170,7 @@ const FrameComponent4: NextPage<FrameComponent4Type> = ({ className = "" }) => {
               key={index}
               showItemMenu={item.showItemMenu}
               aboutUs={item.aboutUs}
+              href={item.href}
             />
           ))}
         </div>

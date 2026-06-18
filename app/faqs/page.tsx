@@ -63,7 +63,7 @@ const Page = () => {
 
       {/* Hero Section */}
       <section className="self-stretch bg-[#f7fafd] flex items-center py-[4.25rem] px-[6.875rem] box-border max-w-full text-center text-[1rem] text-[#0bc111] font-abel">
-        <div className="flex-1 overflow-hidden flex flex-col items-center py-[0rem] px-[7.5rem] box-border gap-[1.5rem] max-w-full lg:pl-[3.75rem] lg:pr-[3.75rem] lg:box-border mq750:pl-[1.875rem] mq750:pr-[1.875rem] mq750:box-border">
+        <div className="flex-1 overflow-hidden flex flex-col items-center py-[0rem] px-[7.5rem] box-border gap-[1.5rem] max-w-full mq1050:pl-[3.75rem] mq1050:pr-[3.75rem] mq1050:box-border mq750:pl-[1.875rem] mq750:pr-[1.875rem] mq750:box-border">
           <b className="relative tracking-[0.02em] leading-[1.25rem] uppercase text-left shrink-0">
             FAQs
           </b>
@@ -105,7 +105,7 @@ const Page = () => {
 
       {/* CTA Section */}
       <section className="self-stretch flex flex-col items-start py-[3.75rem] px-[6.875rem] box-border max-w-full mq750:pl-[3.438rem] mq750:pr-[3.438rem] mq750:box-border mq450:py-[2.438rem] mq450:px-[1.25rem] mq450:box-border">
-        <div className="self-stretch rounded-[24px] bg-[#0461c3] overflow-hidden flex items-center py-[3.75rem] px-[11.25rem] box-border relative isolate max-w-full lg:pl-[5.625rem] lg:pr-[5.625rem] lg:box-border mq750:pl-[2.813rem] mq750:pr-[2.813rem] mq750:box-border mq450:pl-[1.25rem] mq450:pr-[1.25rem] mq450:box-border">
+        <div className="self-stretch rounded-[24px] bg-[#0461c3] overflow-hidden flex items-center py-[3.75rem] px-[11.25rem] box-border relative isolate max-w-full mq1050:pl-[5.625rem] mq1050:pr-[5.625rem] mq1050:box-border mq750:pl-[2.813rem] mq750:pr-[2.813rem] mq750:box-border mq450:pl-[1.25rem] mq450:pr-[1.25rem] mq450:box-border">
           <Image
             className="h-[14.375rem] w-[30.25rem] absolute m-[0!important] bottom-[0rem] left-[2.25rem] object-cover z-[3] shrink-0"
             loading="lazy"

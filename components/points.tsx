@@ -217,7 +217,7 @@ const Points: NextPage<PointsType> = ({
 
   return (
     <div
-      className={`w-[76.25rem] flex flex-col items-start gap-[2.5rem] text-left text-[1.5rem] text-[#1a2530] font-['Proxima_Nova'] ${className}`}
+      className={`w-[76.25rem] max-w-full flex flex-col items-start gap-[2.5rem] text-left text-[1.5rem] text-[#1a2530] font-['Proxima_Nova'] ${className}`}
       style={pointsStyle}
     >
       <div className="self-stretch flex items-start flex-wrap content-start gap-[2.5rem]">

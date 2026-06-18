@@ -1,10 +1,14 @@
 import type { NextPage } from "next";
+import Link from "next/link";
 import type { CSSProperties } from "react";
 
 export type ItemMenuType = {
   className?: string;
   showItemMenu?: boolean;
   aboutUs?: string;
+
+  /** Navigation destination */
+  href?: string;
 
   /** Variant props */
   property1?: "Default" | "Variant2";
@@ -24,6 +28,7 @@ const ItemMenu: NextPage<ItemMenuType> = ({
   itemMenuAlignSelf,
   itemMenuWidth,
   aboutUs,
+  href,
 }) => {
   // Static inline styles
   const itemMenuStyle: CSSProperties = {
@@ -31,17 +36,30 @@ const ItemMenu: NextPage<ItemMenuType> = ({
     width: itemMenuWidth,
   };
 
+  if (!showItemMenu) return null;
+
+  const label = (
+    <div className="flex-1 relative leading-[1.5rem] capitalize font-semibold">
+      {aboutUs}
+    </div>
+  );
+
   return (
-    !!showItemMenu && (
-      <div
-        className={`self-stretch flex items-start text-left text-[1rem] text-[rgba(26,37,48,0.7)] font-['Proxima_Nova'] ${className}`}
-        style={itemMenuStyle}
-      >
-        <div className="flex-1 relative leading-[1.5rem] capitalize font-semibold">
-          {aboutUs}
-        </div>
-      </div>
-    )
+    <div
+      className={`self-stretch flex items-start text-left text-[1rem] text-[rgba(26,37,48,0.7)] font-['Proxima_Nova'] ${className}`}
+      style={itemMenuStyle}
+    >
+      {href ? (
+        <Link
+          href={href}
+          className="flex-1 no-underline text-[inherit] transition-colors hover:text-[#1a8cd5]"
+        >
+          {label}
+        </Link>
+      ) : (
+        label
+      )}
+    </div>
   );
 };
 

@@ -10,7 +10,7 @@ const Clients: NextPage<ClientsType> = ({ className = "" }) => {
     <section
       className={`self-stretch bg-[#f7fafd] flex flex-col items-center py-[3rem] px-[1.25rem] box-border gap-[1.75rem] max-w-full text-center text-[1.125rem] text-[#1a2530] font-['Proxima_Nova'] ${className}`}
     >
-      <div className="w-[76.25rem] overflow-hidden flex flex-col items-center gap-[0.75rem]">
+      <div className="w-[76.25rem] max-w-full overflow-hidden flex flex-col items-center gap-[0.75rem]">
         <b className="self-stretch relative tracking-[0.01em] leading-[1.625rem] uppercase shrink-0">
           Trusted by Top Brands
         </b>

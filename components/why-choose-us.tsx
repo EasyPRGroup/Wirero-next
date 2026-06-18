@@ -72,7 +72,7 @@ const WhyChooseUs: NextPage<WhyChooseUsType> = ({ className = "" }) => {
     <section
       className={`self-stretch bg-[#f7fafd] flex flex-col items-center py-[6.125rem] px-[6.875rem] box-border gap-[4.75rem] max-w-full text-center text-[1rem] text-[#0bc111] font-['Proxima_Nova'] mq450:gap-[1.188rem] mq450:pl-[1.25rem] mq450:pr-[1.25rem] mq450:box-border mq800:gap-[2.375rem] mq800:py-[2.625rem] mq800:px-[3.438rem] mq800:box-border mq1350:pt-[4rem] mq1350:pb-[4rem] mq1350:box-border ${className}`}
     >
-      <div className="w-[60rem] overflow-hidden flex flex-col items-center gap-[1.5rem] shrink-0">
+      <div className="w-[60rem] max-w-full overflow-hidden flex flex-col items-center gap-[1.5rem] shrink-0">
         <b className="self-stretch relative tracking-[0.02em] leading-[1.25rem] uppercase">
           Core Capabilities
         </b>

@@ -89,7 +89,7 @@ const AboutUs: NextPage = () => {
   };
 
   return (
-    <div className="w-full relative bg-color-white flex flex-col items-start leading-[normal] tracking-[normal]">
+    <div className="w-full relative bg-color-white overflow-hidden flex flex-col items-start leading-[normal] tracking-[normal]">
 
       {/* Hero Section */}
       <section className="self-stretch flex flex-col items-start pt-[4.25rem] px-[6.875rem] pb-[6.125rem] box-border gap-[4.25rem] max-w-full text-center font-['Proxima_Nova'] mq750:gap-[2.125rem] mq750:pt-[1.813rem] mq750:px-[3.438rem] mq750:pb-[2.625rem] mq750:box-border mq1050:pt-[2.75rem] mq1050:pb-[4rem] mq1050:box-border mq450:gap-[1.063rem] mq450:pl-[1.25rem] mq450:pr-[1.25rem] mq450:box-border">
@@ -97,8 +97,8 @@ const AboutUs: NextPage = () => {
           <b className="self-stretch relative tracking-[0.02em] leading-[1.25rem] uppercase">
             About Wirero
           </b>
-          <div className="self-stretch flex items-start gap-[4.25rem] max-w-full text-[3.5rem] text-[#4d565f] lg:flex-wrap mq750:gap-[2.125rem] mq450:gap-[1.063rem]">
-            <h1 className="m-0 w-[32.5rem] relative text-[length:inherit] leading-[4.25rem] font-bold font-[inherit] inline-block shrink-0 max-w-full lg:flex-1 mq1050:text-[2.813rem] mq1050:leading-[3.375rem] mq1050:min-w-full mq450:text-[2.125rem] mq450:leading-[2.563rem]">
+          <div className="self-stretch flex items-start gap-[4.25rem] max-w-full text-[3.5rem] text-[#4d565f] mq1050:flex-wrap mq750:gap-[2.125rem] mq450:gap-[1.063rem]">
+            <h1 className="m-0 w-[32.5rem] relative text-[length:inherit] leading-[4.25rem] font-bold font-[inherit] inline-block shrink-0 max-w-full mq1050:flex-1 mq1050:text-[2.813rem] mq1050:leading-[3.375rem] mq1050:min-w-full mq450:text-[2.125rem] mq450:leading-[2.563rem]">
               Built for scalable content distribution
             </h1>
             <div className="flex-1 flex flex-col items-start gap-[1.25rem] min-w-[25.688rem] text-[1.125rem] text-[#4d565f] mq750:min-w-full">
@@ -170,7 +170,7 @@ const AboutUs: NextPage = () => {
       </section>
 
       {/* What Wirero Does Section */}
-      <section className="self-stretch bg-[#f8f8ff] flex items-start py-[5rem] px-[6.875rem] box-border gap-[4.25rem] max-w-full lg:flex-wrap mq750:gap-[2.125rem] mq750:py-[3.25rem] mq750:px-[3.438rem] mq750:box-border mq450:gap-[1.063rem] mq450:pl-[1.25rem] mq450:pr-[1.25rem] mq450:box-border">
+      <section className="self-stretch bg-[#f8f8ff] flex items-start py-[5rem] px-[6.875rem] box-border gap-[4.25rem] max-w-full mq1050:flex-wrap mq750:gap-[2.125rem] mq750:py-[3.25rem] mq750:px-[3.438rem] mq750:box-border mq450:gap-[1.063rem] mq450:pl-[1.25rem] mq450:pr-[1.25rem] mq450:box-border">
         <section className="flex-1 flex flex-col items-start gap-[1.75rem] min-w-[20.813rem] text-left text-[1rem] text-[#005edc] font-['Proxima_Nova']">
           <div className="self-stretch overflow-hidden flex flex-col items-start gap-[1.5rem]">
             <b className="self-stretch relative tracking-[0.02em] leading-[1.25rem] uppercase text-[#0bc111]">
@@ -220,7 +220,7 @@ const AboutUs: NextPage = () => {
           </div>
         </section>
 
-        <section className="h-[27.5rem] w-[40rem] flex flex-col items-end max-w-full text-left text-[1rem] text-[#4d565f] font-['Proxima_Nova'] lg:flex-1 mq1050:min-w-full">
+        <section className="h-[27.5rem] w-[40rem] flex flex-col items-end max-w-full text-left text-[1rem] text-[#4d565f] font-['Proxima_Nova'] mq1050:h-auto mq1050:flex-1 mq1050:min-w-full">
           <div className="w-[40rem] flex items-start max-w-full">
             <div className="w-[26.25rem] flex flex-col items-start gap-[2.5rem] shrink-0 max-w-full mq450:gap-[1.25rem]">
               {/* Infrastructure-First Card */}
@@ -287,8 +287,8 @@ const AboutUs: NextPage = () => {
           <b className="self-stretch relative tracking-[0.02em] leading-[1.25rem] uppercase">
             We're different
           </b>
-          <div className="self-stretch flex items-start gap-[4.25rem] max-w-full text-[3rem] text-[#eee] lg:flex-wrap mq750:gap-[2.125rem] mq450:gap-[1.063rem]">
-            <h1 className="m-0 w-[32.5rem] relative text-[length:inherit] leading-[3.625rem] font-bold font-[inherit] inline-block shrink-0 max-w-full lg:flex-1 mq1050:text-[2.375rem] mq1050:leading-[2.875rem] mq1050:min-w-full mq450:text-[1.813rem] mq450:leading-[2.188rem]">
+          <div className="self-stretch flex items-start gap-[4.25rem] max-w-full text-[3rem] text-[#eee] mq1050:flex-wrap mq750:gap-[2.125rem] mq450:gap-[1.063rem]">
+            <h1 className="m-0 w-[32.5rem] relative text-[length:inherit] leading-[3.625rem] font-bold font-[inherit] inline-block shrink-0 max-w-full mq1050:flex-1 mq1050:text-[2.375rem] mq1050:leading-[2.875rem] mq1050:min-w-full mq450:text-[1.813rem] mq450:leading-[2.188rem]">
               What Makes Wirero Different
             </h1>
             <div className="flex-1 relative text-[1.125rem] leading-[1.75rem] text-[rgba(238,238,238,0.8)] inline-block min-w-[25.688rem] mq750:min-w-full">
@@ -362,7 +362,7 @@ const AboutUs: NextPage = () => {
 
       {/* Industries We Serve Section */}
       <section className="self-stretch flex flex-col items-center py-[6.125rem] px-[6.875rem] box-border gap-[4.25rem] max-w-full text-left text-[1.375rem] text-[#4d565f] font-['Proxima_Nova'] mq750:gap-[2.125rem] mq750:pl-[3.438rem] mq750:pr-[3.438rem] mq750:box-border mq1050:pt-[4rem] mq1050:pb-[4rem] mq1050:box-border mq450:gap-[1.063rem] mq450:py-[2.625rem] mq450:px-[1.25rem] mq450:box-border">
-        <section className="w-[60rem] overflow-hidden flex flex-col items-center gap-[1.5rem] shrink-0 text-left text-[1rem] text-[#0bc111]">
+        <section className="w-[60rem] max-w-full overflow-hidden flex flex-col items-center gap-[1.5rem] shrink-0 text-left text-[1rem] text-[#0bc111]">
           <b className="relative tracking-[0.02em] leading-[1.25rem] uppercase">
             Industries We Serve
           </b>
@@ -378,11 +378,11 @@ const AboutUs: NextPage = () => {
         </section>
 
         {/* Industry Cards */}
-        <div className="self-stretch flex items-center gap-[3rem] max-w-full shrink-0 text-[2.25rem] lg:flex-wrap mq750:gap-[1.5rem]">
-          <section className="w-[47.5rem] overflow-hidden shrink-0 flex flex-col items-center relative isolate gap-[0.625rem] max-w-full text-left text-[1.375rem] text-[#4d565f] font-['Proxima_Nova'] lg:flex-1 mq1050:min-w-full">
+        <div className="self-stretch flex items-center gap-[3rem] max-w-full shrink-0 text-[2.25rem] mq1050:flex-wrap mq750:gap-[1.5rem]">
+          <section className="w-[47.5rem] overflow-hidden shrink-0 flex flex-col items-center relative isolate gap-[0.625rem] max-w-full text-left text-[1.375rem] text-[#4d565f] font-['Proxima_Nova'] mq1050:flex-1 mq1050:min-w-full">
             <div
               ref={industryScrollRef}
-              className="w-[42.5rem] backdrop-blur-[8px] rounded-[28px] bg-[rgba(0,94,220,0.08)] flex items-start justify-center py-[3.75rem] px-[0rem] box-border gap-[1.25rem] z-[0] shrink-0 mq450:pt-[2.438rem] mq450:pb-[2.438rem] mq450:box-border overflow-x-auto scroll-smooth">
+              className="w-[42.5rem] max-w-full backdrop-blur-[8px] rounded-[28px] bg-[rgba(0,94,220,0.08)] flex items-start justify-center mq1050:justify-start py-[3.75rem] px-[0rem] box-border gap-[1.25rem] z-[0] shrink-0 mq450:pt-[2.438rem] mq450:pb-[2.438rem] mq450:box-border overflow-x-auto scroll-smooth">
               {industries.map((industry, index) => (
                 <div
                   key={index}

@@ -149,7 +149,7 @@ const PricingCard: NextPage<PricingCardType> = ({
 
   return (
     <section
-      className={`self-stretch flex-1 rounded-[24px] flex flex-col items-start p-[0.5rem] gap-[1.25rem] text-left text-[0.75rem] font-['Proxima_Nova'] ${className} ${isPopular ? "bg-[#0461c3] shadow-[0px_2px_20px_rgba(26,37,48,0.12)] border-[2px] border-[#0461c3]" : "bg-[#f7fafd] shadow-[0px_2px_8px_rgba(26,37,48,0.04)]"}`}
+      className={`self-stretch flex-1 min-w-[18rem] rounded-[24px] flex flex-col items-start p-[0.5rem] gap-[1.25rem] text-left text-[0.75rem] font-['Proxima_Nova'] ${className} ${isPopular ? "bg-[#0461c3] shadow-[0px_2px_20px_rgba(26,37,48,0.12)] border-[2px] border-[#0461c3]" : "bg-[#f7fafd] shadow-[0px_2px_8px_rgba(26,37,48,0.04)]"}`}
     >
       <div
         className={`self-stretch rounded-[16px] flex flex-col items-start pt-[1.25rem] px-[1.25rem] pb-[1.75rem] gap-[1.5rem] ${isPopular ? "bg-[#0461c3]" : "bg-color-white"}`}

@@ -9,7 +9,7 @@ export type FrameComponent3Type = {
 const FrameComponent3: NextPage<FrameComponent3Type> = ({ className = "" }) => {
   return (
     <div className={`flex flex-col items-start ${className}`}>
-      <section className="w-[45rem] overflow-hidden flex flex-col items-start gap-[1.5rem] text-left text-[1rem] text-[#0bc111] font-['Proxima_Nova']">
+      <section className="w-[45rem] max-w-full overflow-hidden flex flex-col items-start gap-[1.5rem] text-left text-[1rem] text-[#0bc111] font-['Proxima_Nova']">
         <b className="self-stretch relative tracking-[0.02em] leading-[1.25rem] uppercase">
           Made For Scale
         </b>
@@ -23,14 +23,14 @@ const FrameComponent3: NextPage<FrameComponent3Type> = ({ className = "" }) => {
           </div>
         </div>
       </section>
-      <div className="w-[76.219rem] h-[31.375rem] flex items-start relative isolate gap-[2rem] mq800:gap-[1rem]">
-        <section className="flex flex-col items-start pt-[9.75rem] px-[0rem] pb-[0rem] text-center text-[1.5rem] text-[#1a2530] font-['Proxima_Nova'] mq800:pt-[6.313rem] mq800:box-border">
+      <div className="w-[76.219rem] max-w-full h-[31.375rem] flex items-start justify-center flex-wrap relative isolate gap-[2rem] mq1350:h-auto mq800:gap-[1rem]">
+        <section className="flex flex-col items-start pt-[9.75rem] px-[0rem] pb-[0rem] text-center text-[1.5rem] text-[#1a2530] font-['Proxima_Nova'] mq1350:pt-[0rem] mq1350:box-border mq800:pt-[0rem] mq800:box-border">
           <Agencies
             dedicatedProjectMa="Agencies"
             withLotsOfUnique="Expand your distribution capacity without increasing operational complexity or publishing overhead."
           />
         </section>
-        <section className="flex flex-col items-start pt-[4.125rem] px-[0rem] pb-[0rem] mq450:pt-[2.688rem] mq450:box-border">
+        <section className="flex flex-col items-start pt-[4.125rem] px-[0rem] pb-[0rem] mq1350:pt-[0rem] mq1350:box-border mq450:pt-[0rem] mq450:box-border">
           <Agencies
             dedicatedProjectMa="Reseller Platforms"
             withLotsOfUnique="Offer scalable distribution services directly to your customers without building your own publishing network."
@@ -41,7 +41,7 @@ const FrameComponent3: NextPage<FrameComponent3Type> = ({ className = "" }) => {
           withLotsOfUnique="Built for industries where speed, publishing volume, and continuous visibility matter."
         />
         <Image
-          className="h-[7.75rem] w-[50.156rem] absolute !m-0 top-[23.625rem] left-[26.063rem] z-[1]"
+          className="h-[7.75rem] w-[50.156rem] absolute !m-0 top-[23.625rem] left-[26.063rem] z-[1] mq1350:hidden"
           loading="lazy"
           width={802.5}
           height={124}

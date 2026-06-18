@@ -201,10 +201,10 @@ const Pricing: NextPage = () => {
   ];
 
   return (
-    <div className="w-full relative bg-color-white flex flex-col items-start leading-[normal] tracking-[normal] text-left text-[1rem] text-[#64676f] font-['Proxima_Nova']">
-      <main className="self-stretch flex flex-col items-start pt-[4.25rem] px-[6.875rem] pb-[6.125rem] gap-[4.25rem] lg:pt-[2.75rem] lg:pb-[4rem] mq800:gap-[2.125rem] mq800:pt-[1.813rem] mq800:px-[3.438rem] mq800:pb-[2.625rem] mq450:gap-[1.063rem] mq450:px-[1.25rem]">
+    <div className="w-full relative bg-color-white overflow-hidden flex flex-col items-start leading-[normal] tracking-[normal] text-left text-[1rem] text-[#64676f] font-['Proxima_Nova']">
+      <main className="self-stretch flex flex-col items-start pt-[4.25rem] px-[6.875rem] pb-[6.125rem] gap-[4.25rem] mq1050:pt-[2.75rem] mq1050:pb-[4rem] mq800:gap-[2.125rem] mq800:pt-[1.813rem] mq800:px-[3.438rem] mq800:pb-[2.625rem] mq450:gap-[1.063rem] mq450:px-[1.25rem]">
         {/* Hero Section */}
-        <section className="self-stretch overflow-hidden flex flex-col items-center py-[0rem] px-[7.5rem] gap-[1.5rem] lg:pl-[3.75rem] lg:pr-[3.75rem] mq750:pl-[1.875rem] mq750:pr-[1.875rem]">
+        <section className="self-stretch overflow-hidden flex flex-col items-center py-[0rem] px-[7.5rem] gap-[1.5rem] mq1050:pl-[3.75rem] mq1050:pr-[3.75rem] mq750:pl-[1.875rem] mq750:pr-[1.875rem]">
           <b className="relative tracking-[0.02em] leading-[1.25rem] uppercase text-[#0bc111]">
             Pricing
           </b>
@@ -217,7 +217,7 @@ const Pricing: NextPage = () => {
               publishing domains.
             </p>
           </div>
-          <div className="self-stretch flex items-start justify-center gap-[1.25rem] lg:flex-wrap">
+          <div className="self-stretch flex items-start justify-center gap-[1.25rem] mq1050:flex-wrap">
             <PricingPill
               icon="negotiations"
               text="No per-placement negotiations."
@@ -235,7 +235,7 @@ const Pricing: NextPage = () => {
 
         {/* Pricing Cards Grid */}
         <div className="self-stretch flex flex-col items-start mq800:gap-[1.25rem]">
-          <div className="self-stretch flex items-start justify-center flex-wrap content-start gap-[0.5rem] lg:h-auto">
+          <div className="self-stretch flex items-start justify-center flex-wrap content-start gap-[0.5rem] mq1050:h-auto">
             {pricingCards.map((card, index) => (
               <PricingCard
                 key={index}
