@@ -98,7 +98,7 @@ const WhyChooseUs: NextPage<WhyChooseUsType> = ({ className = "" }) => {
                   src="/solar-global-bold2.svg"
                 />
               </div>
-              <div className="flex-1 flex flex-col items-start gap-[1rem] min-w-[20.313rem]">
+              <div className="flex-1 flex flex-col items-start gap-[1rem] min-w-[20.313rem] mq800:min-w-0">
                 <h3 className="m-0 self-stretch relative text-[length:inherit] leading-[1.875rem] font-bold font-[inherit] shrink-0 mq450:text-[1.188rem] mq450:leading-[1.5rem]">
                   Multi-Domain Publishing
                 </h3>
@@ -119,7 +119,7 @@ const WhyChooseUs: NextPage<WhyChooseUsType> = ({ className = "" }) => {
                 isFirstOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
               }`}
             >
-              <div className="self-stretch flex flex-col items-start py-[0rem] pl-[4.5rem] pr-[4rem] gap-[1rem] mq800:pl-[2.25rem] mq800:pr-[2rem] mq800:box-border">
+              <div className="self-stretch flex flex-col items-start py-[0rem] pl-[4.5rem] pr-[4rem] gap-[1rem] mq800:pl-[2.25rem] mq800:pr-[2rem] mq800:box-border mq450:pl-[1.25rem] mq450:pr-[1.25rem]">
                 <b className="w-[31.25rem] relative leading-[1.875rem] hidden mq450:text-[1.188rem] mq450:leading-[1.5rem]">
                   Simple and Fast Distribution
                 </b>
@@ -187,7 +187,7 @@ const WhyChooseUs: NextPage<WhyChooseUsType> = ({ className = "" }) => {
           </div>
           <div className="w-[22.875rem] h-[0.375rem] absolute !m-0 top-[0rem] left-[-0.187rem] border-[#1a8cd5] border-solid border-t-[6px] box-border z-[7]" />
         </section>
-        <div className="h-[30rem] w-[32.5rem] relative rounded-[20px] bg-[#5b5c5c] max-w-full mq800:min-w-full mq1350:flex-1" />
+        <div className="h-[30rem] w-[32.5rem] relative rounded-[20px] bg-[#5b5c5c] max-w-full mq800:min-w-full mq800:h-[20rem] mq450:h-[14rem] mq1350:flex-1" />
       </div>
       <div className="w-[76.25rem] rounded-[20px] bg-color-white border-[#e2e5e9] border-solid border-t-[1px] box-border hidden items-center flex-wrap content-center pt-[2.375rem] px-[3.75rem] pb-[2.5rem] gap-[5rem] shrink-0 text-left text-[2.25rem] text-[#1a2530]">
         <div className="flex-1 overflow-hidden flex flex-col items-start gap-[0.75rem] min-w-[32.313rem] mq1125:min-w-full">

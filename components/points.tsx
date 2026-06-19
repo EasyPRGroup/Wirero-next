@@ -217,13 +217,13 @@ const Points: NextPage<PointsType> = ({
 
   return (
     <div
-      className={`w-[76.25rem] max-w-full flex flex-col items-start gap-[2.5rem] text-left text-[1.5rem] text-[#1a2530] font-['Proxima_Nova'] ${className}`}
+      className={`w-[76.25rem] mq450:w-full max-w-full flex flex-col items-start gap-[2.5rem] text-left text-[1.5rem] text-[#1a2530] font-['Proxima_Nova'] ${className}`}
       style={pointsStyle}
     >
-      <div className="self-stretch flex items-start flex-wrap content-start gap-[2.5rem]">
-        <div className="self-stretch flex-1 rounded-3xl border-[#e2e5e9] border-solid border-[1px] box-border overflow-hidden flex items-start py-[2.125rem] pl-[2.25rem] pr-[2.187rem] gap-[2rem] min-w-[24rem] mq450:min-w-full mq800:flex-wrap">
+      <div className="self-stretch flex items-start flex-wrap content-start gap-[2.5rem] mq450:gap-[1.25rem]">
+        <div className="self-stretch flex-1 rounded-3xl border-[#e2e5e9] border-solid border-[1px] box-border overflow-hidden flex items-start py-[2.125rem] pl-[2.25rem] pr-[2.187rem] gap-[2rem] min-w-[24rem] mq450:min-w-full mq450:flex-col mq450:items-center mq450:p-[1.25rem] mq450:gap-[1rem] mq800:min-w-full mq800:flex-wrap">
           <div
-            className="h-[10rem] w-[10.063rem] relative mq800:flex-1"
+            className="h-[10rem] w-[10.063rem] relative mq450:w-full mq450:h-auto mq450:max-w-[8rem] mq800:flex-1"
             style={groupDivStyle}
           >
             {!!showImage91Icon && (
@@ -239,7 +239,7 @@ const Points: NextPage<PointsType> = ({
             <div className="absolute top-[0rem] left-[0rem] bg-[#1e2226] w-full h-full mix-blend-overlay" />
           </div>
           <div
-            className="flex-1 flex flex-col items-start gap-[0.75rem] min-w-[13.188rem]"
+            className="flex-1 flex flex-col items-start gap-[0.75rem] min-w-[13.188rem] mq450:min-w-0"
             style={frameDivStyle}
           >
             <b
@@ -261,9 +261,9 @@ const Points: NextPage<PointsType> = ({
             </div>
           </div>
         </div>
-        <div className="self-stretch flex-1 rounded-3xl border-[#e2e5e9] border-solid border-[1px] box-border overflow-hidden flex items-start py-[2.125rem] pl-[2.25rem] pr-[2.187rem] gap-[2rem] min-w-[24rem] mq450:min-w-full mq800:flex-wrap">
+        <div className="self-stretch flex-1 rounded-3xl border-[#e2e5e9] border-solid border-[1px] box-border overflow-hidden flex items-start py-[2.125rem] pl-[2.25rem] pr-[2.187rem] gap-[2rem] min-w-[24rem] mq450:min-w-full mq450:flex-col mq450:items-center mq450:p-[1.25rem] mq450:gap-[1rem] mq800:min-w-full mq800:flex-wrap">
           <div
-            className="h-[10rem] w-[10rem] relative mq800:flex-1"
+            className="h-[10rem] w-[10rem] relative mq450:w-full mq450:h-auto mq450:max-w-[8rem] mq800:flex-1"
             style={groupDiv1Style}
           >
             {!!showImage92Icon && (
@@ -279,7 +279,7 @@ const Points: NextPage<PointsType> = ({
             <div className="absolute top-[0rem] left-[0rem] bg-[#1e2226] w-full h-full mix-blend-overlay" />
           </div>
           <div
-            className="flex-1 flex flex-col items-start gap-[0.75rem] min-w-[13.25rem]"
+            className="flex-1 flex flex-col items-start gap-[0.75rem] min-w-[13.25rem] mq450:min-w-0"
             style={frameDiv1Style}
           >
             <b
@@ -301,10 +301,10 @@ const Points: NextPage<PointsType> = ({
           </div>
         </div>
       </div>
-      <div className="self-stretch flex items-start flex-wrap content-start gap-[2.5rem]">
-        <div className="flex-1 rounded-3xl border-[#e2e5e9] border-solid border-[1px] box-border overflow-hidden flex items-start py-[2.125rem] pl-[2.25rem] pr-[2.187rem] gap-[2rem] min-w-[24rem] mq450:min-w-full mq800:flex-wrap">
+      <div className="self-stretch flex items-start flex-wrap content-start gap-[2.5rem] mq450:gap-[1.25rem]">
+        <div className="flex-1 rounded-3xl border-[#e2e5e9] border-solid border-[1px] box-border overflow-hidden flex items-start py-[2.125rem] pl-[2.25rem] pr-[2.187rem] gap-[2rem] min-w-[24rem] mq450:min-w-full mq450:flex-col mq450:items-center mq450:p-[1.25rem] mq450:gap-[1rem] mq800:min-w-full mq800:flex-wrap">
           <div
-            className="h-[10rem] w-[10rem] relative mq800:flex-1"
+            className="h-[10rem] w-[10rem] relative mq450:w-full mq450:h-auto mq450:max-w-[8rem] mq800:flex-1"
             style={groupDiv2Style}
           >
             {!!showImage90Icon && (
@@ -320,7 +320,7 @@ const Points: NextPage<PointsType> = ({
             <div className="absolute top-[0rem] left-[0rem] bg-[#1e2226] w-full h-full mix-blend-overlay" />
           </div>
           <div
-            className="flex-1 flex flex-col items-start gap-[0.75rem] min-w-[13.25rem]"
+            className="flex-1 flex flex-col items-start gap-[0.75rem] min-w-[13.25rem] mq450:min-w-0"
             style={frameDiv2Style}
           >
             <b
@@ -342,11 +342,11 @@ const Points: NextPage<PointsType> = ({
           </div>
         </div>
         <div
-          className="self-stretch flex-1 rounded-3xl border-[#e2e5e9] border-solid border-[1px] box-border overflow-hidden flex items-start py-[2.125rem] pl-[2.25rem] pr-[2.187rem] gap-[2rem] min-w-[24rem] mq450:min-w-full mq800:flex-wrap"
+          className="self-stretch flex-1 rounded-3xl border-[#e2e5e9] border-solid border-[1px] box-border overflow-hidden flex items-start py-[2.125rem] pl-[2.25rem] pr-[2.187rem] gap-[2rem] min-w-[24rem] mq450:min-w-full mq450:flex-col mq450:items-center mq450:p-[1.25rem] mq450:gap-[1rem] mq800:min-w-full mq800:flex-wrap"
           style={divStyle}
         >
           <div
-            className="h-[10rem] w-[10rem] relative mq800:flex-1"
+            className="h-[10rem] w-[10rem] relative mq450:w-full mq450:h-auto mq450:max-w-[8rem] mq800:flex-1"
             style={groupDiv3Style}
           >
             {!!showImage93Icon && (
@@ -362,7 +362,7 @@ const Points: NextPage<PointsType> = ({
             <div className="absolute top-[0rem] left-[0rem] bg-[#1e2226] w-full h-full mix-blend-overlay" />
           </div>
           <div
-            className="flex-1 flex flex-col items-start gap-[0.75rem] min-w-[13.25rem]"
+            className="flex-1 flex flex-col items-start gap-[0.75rem] min-w-[13.25rem] mq450:min-w-0"
             style={frameDiv3Style}
           >
             <b

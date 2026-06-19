@@ -22,9 +22,9 @@ const Home: NextPage = () => {
     <div className="w-full relative bg-color-white overflow-hidden flex flex-col items-start leading-[normal] tracking-[normal] text-left text-[1rem] text-[#005edc] font-[Urbanist]">
       <Bannerheader />
       <Clients />
-      <section className="self-stretch flex items-center py-[5rem] px-[6.875rem] box-border gap-[3rem] max-w-full text-left text-[3rem] text-[#0461c3] font-['Proxima_Nova'] mq450:pl-[1.25rem] mq450:pr-[1.25rem] mq450:box-border mq800:gap-[1.5rem] mq800:py-[3.25rem] mq800:px-[3.438rem] mq800:box-border mq1350:flex-wrap">
+      <section className="self-stretch flex items-center py-[5rem] px-[6.875rem] box-border gap-[3rem] max-w-full text-left text-[3rem] text-[#0461c3] font-['Proxima_Nova'] mq450:flex-col mq450:pl-[1.25rem] mq450:pr-[1.25rem] mq450:py-[2.5rem] mq450:box-border mq800:gap-[1.5rem] mq800:py-[3.25rem] mq800:px-[3.438rem] mq800:box-border mq1350:flex-wrap">
         <FrameComponent2 />
-        <div className="h-[27.5rem] w-[39.25rem] relative rounded-[20px] overflow-hidden shrink-0 max-w-full mq1125:min-w-full mq1350:flex-1">
+        <div className="h-[27.5rem] w-[39.25rem] relative rounded-[20px] overflow-hidden shrink-0 max-w-full mq450:hidden mq1125:min-w-full mq1350:flex-1">
           <Image
             className="absolute h-full top-[0rem] right-[0rem] bottom-[0rem] rounded-[20px] max-h-full w-[22.5rem] object-cover"
             loading="lazy"
@@ -112,7 +112,7 @@ const Home: NextPage = () => {
             Simple Access to Global Distribution
           </h1>
         </div>
-        <div className="self-stretch h-[44.75rem] flex flex-col items-start pt-[0rem] px-[0rem] pb-[1.75rem] box-border max-w-full mq1350:h-auto">
+        <div className="self-stretch h-[44.75rem] flex flex-col items-start pt-[0rem] px-[0rem] pb-[1.75rem] box-border max-w-full mq450:h-auto mq1350:h-auto">
           <Step />
           <FrameComponent5 />
         </div>

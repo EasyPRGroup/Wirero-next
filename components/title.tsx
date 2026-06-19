@@ -15,24 +15,28 @@ const Title: NextPage<TitleType> = ({ className = "" }) => {
       networkOverflow: "hidden" as const,
       eFCBBCFDF: "/8E821442-01FC-4318-BB27-92CF8D31F868@2x.png",
       newsmax: "TechCrunch",
+      url: "https://techcrunch.com/",
     },
     {
       property1: "Variant4" as const,
       networkOverflow: "hidden" as const,
       eFCBBCFDF: "/8E821442-01FC-4318-BB27-92CF8D31F868@2x.png",
       newsmax: "Forbes",
+      url: "https://www.forbes.com/",
     },
     {
       property1: "Variant4" as const,
       networkOverflow: "unset" as const,
       eFCBBCFDF: "/Group-9.svg",
       newsmax: "VentureBeat",
+      url: "https://venturebeat.com/",
     },
     {
       property1: "Variant4" as const,
       networkOverflow: "hidden" as const,
       eFCBBCFDF: "/8E821442-01FC-4318-BB27-92CF8D31F868@2x.png",
       newsmax: "Newsmax",
+      url: "https://www.newsmax.com/",
     },
   ]);
   const [frameComponent1Items1] = useState([
@@ -41,24 +45,28 @@ const Title: NextPage<TitleType> = ({ className = "" }) => {
       networkOverflow: undefined,
       eFCBBCFDF: "/8E821442-01FC-4318-BB27-92CF8D31F868@2x.png",
       newsmax: "CoinDesk",
+      url: "https://www.coindesk.com/",
     },
     {
       property1: "Variant4" as const,
       networkOverflow: undefined,
       eFCBBCFDF: "/8E821442-01FC-4318-BB27-92CF8D31F868@2x.png",
       newsmax: "Business Insider",
+      url: "https://www.businessinsider.com/",
     },
     {
       property1: "Variant4" as const,
       networkOverflow: undefined,
       eFCBBCFDF: "/8E821442-01FC-4318-BB27-92CF8D31F868@2x.png",
       newsmax: "Entrepreneur",
+      url: "https://www.entrepreneur.com/",
     },
     {
       property1: "Variant4" as const,
       networkOverflow: undefined,
       eFCBBCFDF: "/8E821442-01FC-4318-BB27-92CF8D31F868@2x.png",
       newsmax: "MarketWatch",
+      url: "https://www.marketwatch.com/",
     },
   ]);
   return (
@@ -88,6 +96,7 @@ const Title: NextPage<TitleType> = ({ className = "" }) => {
               networkOverflow={item.networkOverflow}
               eFCBBCFDF={item.eFCBBCFDF}
               newsmax={item.newsmax}
+              url={item.url}
             />
           ))}
         </div>
@@ -99,6 +108,7 @@ const Title: NextPage<TitleType> = ({ className = "" }) => {
               networkOverflow={item.networkOverflow}
               eFCBBCFDF={item.eFCBBCFDF}
               newsmax={item.newsmax}
+              url={item.url}
             />
           ))}
         </div>

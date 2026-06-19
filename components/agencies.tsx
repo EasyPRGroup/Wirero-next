@@ -18,7 +18,7 @@ const Agencies: NextPage<AgenciesType> = ({
 }) => {
   return (
     <div
-      className={`w-[24.125rem] max-w-full rounded-[20px] bg-color-white border-[#e2e5e9] border-solid border-[1px] box-border overflow-hidden flex flex-col items-center text-center text-[1.5rem] text-[#1a2530] font-['Proxima_Nova'] ${className}`}
+      className={`w-[24.125rem] max-w-full rounded-[20px] bg-color-white border-[#e2e5e9] border-solid border-[1px] box-border overflow-hidden flex flex-col items-center text-center text-[1.5rem] text-[#1a2530] font-['Proxima_Nova'] mq450:min-w-full ${className}`}
     >
       <div className="self-stretch h-[10rem] flex items-center justify-center relative isolate">
         {/* Decorative grid pattern */}

@@ -6,6 +6,7 @@ export type FrameComponent1Type = {
   className?: string;
   eFCBBCFDF: string;
   newsmax?: string;
+  url: string;
 
   /** Variant props */
   property1?: string;
@@ -20,6 +21,7 @@ const FrameComponent1: NextPage<FrameComponent1Type> = ({
   networkOverflow,
   eFCBBCFDF,
   newsmax,
+  url,
 }) => {
   const networkStyle: CSSProperties = useMemo(() => {
     return {
@@ -49,9 +51,14 @@ const FrameComponent1: NextPage<FrameComponent1Type> = ({
           <h3 className="m-0 self-stretch relative text-[length:inherit] leading-[1.75rem] font-bold font-[inherit]">
             {newsmax}
           </h3>
-          <div className="self-stretch relative text-[1rem] leading-[1.25rem] text-[#0461c3]">
-            https://www.newsmax.com/
-          </div>
+          <a
+            className="self-stretch relative text-[1rem] leading-[1.25rem] text-[#0461c3] break-words"
+            href={url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {url}
+          </a>
         </div>
       </div>
       <div className="w-[20.75rem] rounded-lg bg-color-white border-[#ebf3fb] border-solid border-[2px] box-border hidden flex-col items-start shrink-0 text-[1rem] text-[#4d565f]">

@@ -91,7 +91,7 @@ const NetworkCategory: NextPage<NetworkCategoryType> = ({
   return (
     <Link
       href={href}
-      className={`cursor-pointer [border:none] py-[1.5rem] pl-[2rem] pr-[1.5rem] bg-color-white min-w-[18.75rem] rounded-[126px] flex items-center justify-start gap-[1rem] no-underline hover:shadow-[0px_2px_12px_rgba(26,38,48,0.12)] transition-shadow ${className}`}
+      className={`cursor-pointer [border:none] py-[1.5rem] pl-[2rem] pr-[1.5rem] bg-color-white min-w-[18.75rem] mq450:min-w-full rounded-[126px] flex items-center justify-start gap-[1rem] no-underline hover:shadow-[0px_2px_12px_rgba(26,38,48,0.12)] transition-shadow ${className}`}
       style={networkCategoryStyle}
     >
       <Image
