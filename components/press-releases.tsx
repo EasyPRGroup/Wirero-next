@@ -205,7 +205,7 @@ const PressReleases: NextPage<PressReleasesType> = ({ className = "" }) => {
                 </div>
                 <div className="self-stretch w-[37.5rem] flex items-start pt-[22.875rem] px-[0rem] pb-[0.25rem] box-border relative isolate max-w-full text-[1.5rem] text-[#eee] mq800:pt-[14.875rem] mq800:pb-[1.25rem] mq800:box-border mq1125:flex-1 mq1125:min-w-full">
                   <Image
-                    className="h-[37.5rem] w-[38.25rem] absolute !!m-[0 important] top-[-1.625rem] left-[0.063rem] object-cover shrink-0"
+                    className="h-[37.5rem] w-[38.25rem] absolute !m-0 top-[-1.625rem] left-[0.063rem] object-cover shrink-0"
                     width={612}
                     height={600}
                     sizes="100vw"
@@ -423,7 +423,7 @@ const PressReleases: NextPage<PressReleasesType> = ({ className = "" }) => {
                 </section>
                 <section className="self-stretch w-[37.5rem] flex items-start pt-[25.125rem] px-[0rem] pb-[0.25rem] box-border relative isolate max-w-full text-left text-[1.5rem] text-[#eee] font-['Proxima_Nova'] mq800:pt-[16.313rem] mq800:pb-[1.25rem] mq800:box-border mq1125:flex-1 mq1125:min-w-full">
                   <Image
-                    className="h-[37.5rem] w-[38.25rem] absolute !!m-[0 important] top-[-1.625rem] left-[0.063rem] object-cover shrink-0"
+                    className="h-[37.5rem] w-[38.25rem] absolute !m-0 top-[-1.625rem] left-[0.063rem] object-cover shrink-0"
                     width={612}
                     height={600}
                     sizes="100vw"
@@ -641,7 +641,7 @@ const PressReleases: NextPage<PressReleasesType> = ({ className = "" }) => {
                 </div>
                 <div className="self-stretch w-[37.5rem] flex items-start pt-[22.875rem] px-[0rem] pb-[0.25rem] box-border relative isolate max-w-full text-[1.5rem] text-[#eee] mq800:pt-[14.875rem] mq800:pb-[1.25rem] mq800:box-border mq1125:flex-1 mq1125:min-w-full">
                   <Image
-                    className="h-[37.5rem] w-[38.25rem] absolute !!m-[0 important] top-[-1.625rem] left-[0.063rem] object-cover shrink-0"
+                    className="h-[37.5rem] w-[38.25rem] absolute !m-0 top-[-1.625rem] left-[0.063rem] object-cover shrink-0"
                     width={612}
                     height={600}
                     sizes="100vw"
@@ -700,9 +700,9 @@ const PressReleases: NextPage<PressReleasesType> = ({ className = "" }) => {
                 </div>
               </section>
             </div>
-            <div className="w-[11.25rem] h-full absolute !!m-[0 important] top-[0rem] bottom-[0rem] left-[-6.875rem] [background:linear-gradient(270deg,_rgba(255,_255,_255,_0.4),_#fff)] z-[1] shrink-0 mq800:hidden" />
-            <div className="w-[11.25rem] h-full absolute !!m-[0 important] top-[0rem] right-[-6.875rem] bottom-[0rem] [background:linear-gradient(270deg,_#fff,_rgba(255,_255,_255,_0.4))] z-[2] shrink-0 mq800:hidden" />
-            <div className="w-[78.75rem] max-w-full !!m-[0 important] absolute top-[calc(50%_-_22px)] left-[calc(50%_-_630px)] flex items-center justify-between gap-[1.25rem] z-[3] shrink-0 mq1350:w-full mq1350:left-0 mq1350:px-[0.5rem] mq1350:box-border mq800:hidden">
+            <div className="w-[11.25rem] h-full absolute !m-0 top-[0rem] bottom-[0rem] left-[-6.875rem] [background:linear-gradient(270deg,_rgba(255,_255,_255,_0.4),_#fff)] z-[1] shrink-0 mq800:hidden" />
+            <div className="w-[11.25rem] h-full absolute !m-0 top-[0rem] right-[-6.875rem] bottom-[0rem] [background:linear-gradient(270deg,_#fff,_rgba(255,_255,_255,_0.4))] z-[2] shrink-0 mq800:hidden" />
+            <div className="w-[78.75rem] max-w-full !m-0 absolute top-[calc(50%_-_22px)] left-[calc(50%_-_630px)] flex items-center justify-between gap-[1.25rem] z-[3] shrink-0 mq1350:w-full mq1350:left-0 mq1350:px-[0.5rem] mq1350:box-border mq800:hidden">
               <button
                 onClick={() => scroll("left")}
                 className="rounded-[40px] bg-[#12171c] flex flex-col items-center justify-center p-[0.5rem] cursor-pointer border-none hover:bg-[#1a2530] transition-colors"

@@ -81,7 +81,7 @@ const Newsroom: NextPage<NewsroomType> = ({
 
   return (
     <section
-      className={`self-stretch flex flex-col items-center py-[6.125rem] px-[6.875rem] box-border gap-[3rem] max-w-full text-center font-['Proxima_Nova'] mq450:py-[2.625rem] mq450:px-[1.25rem] mq800:py-[3.5rem] mq800:px-[3.438rem] ${className}`}
+      className={`self-stretch flex flex-col items-center py-[6.125rem] px-[6.875rem] box-border gap-[3rem] max-w-full text-center font-['Proxima_Nova'] mq1050:px-[3.438rem] mq450:py-[2.625rem] mq450:px-[1.25rem] mq800:py-[3.5rem] mq800:px-[3.438rem] ${className}`}
     >
       <div className="w-[60rem] max-w-full flex flex-col items-center gap-[1rem]">
         <b className="relative tracking-[0.02em] leading-[1.25rem] uppercase text-[1rem] text-[#0bc111]">
@@ -110,7 +110,7 @@ const Newsroom: NextPage<NewsroomType> = ({
             No articles available right now.
           </div>
         ) : (
-          <div className="w-full columns-1 gap-[1.5rem] md:columns-2 lg:columns-3 text-left">
+          <div className="w-full columns-3 gap-[1.5rem] mq1050:columns-2 mq750:columns-1 text-left">
             {pagedArticles.map((article) => (
               <NewsroomCard
                 key={article.id}
@@ -123,7 +123,7 @@ const Newsroom: NextPage<NewsroomType> = ({
         )}
 
         {!loading && !error && totalPages > 1 && (
-          <div className="flex items-center gap-[0.75rem]">
+          <div className="flex flex-wrap justify-center items-center gap-[0.75rem]">
             <button
               type="button"
               onClick={() => goToPage(page - 1)}

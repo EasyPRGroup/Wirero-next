@@ -62,7 +62,7 @@ const Page = () => {
     <div className="w-full relative bg-color-white overflow-hidden flex flex-col items-start leading-[normal] tracking-[normal]">
 
       {/* Hero Section */}
-      <section className="self-stretch bg-[#f7fafd] flex items-center py-[4.25rem] px-[6.875rem] box-border max-w-full text-center text-[1rem] text-[#0bc111] font-abel">
+      <section className="self-stretch bg-[#f7fafd] flex items-center py-[4.25rem] px-[6.875rem] box-border max-w-full text-center text-[1rem] text-[#0bc111] font-abel mq1050:px-[3.75rem] mq750:px-[1.875rem] mq450:px-[1.25rem]">
         <div className="flex-1 overflow-hidden flex flex-col items-center py-[0rem] px-[7.5rem] box-border gap-[1.5rem] max-w-full mq1050:pl-[3.75rem] mq1050:pr-[3.75rem] mq1050:box-border mq750:pl-[1.875rem] mq750:pr-[1.875rem] mq750:box-border">
           <b className="relative tracking-[0.02em] leading-[1.25rem] uppercase text-left shrink-0">
             FAQs
@@ -76,7 +76,7 @@ const Page = () => {
       </section>
 
       {/* Main Content */}
-      <main className="self-stretch flex items-start flex-wrap content-start pt-[4.25rem] px-[6.875rem] pb-[6.125rem] box-border gap-[4.25rem] max-w-full text-left text-[1.75rem] text-[#1a2530] font-abel mq750:gap-[2.125rem] mq750:pl-[3.438rem] mq750:pr-[3.438rem] mq750:box-border mq1050:pt-[2.75rem] mq1050:pb-[4rem] mq1050:box-border mq450:gap-[1.063rem] mq450:pt-[1.813rem] mq450:px-[1.25rem] mq450:pb-[2.625rem] mq450:box-border">
+      <main className="self-stretch flex items-start flex-wrap content-start pt-[4.25rem] px-[6.875rem] pb-[6.125rem] box-border gap-[4.25rem] max-w-full text-left text-[1.75rem] text-[#1a2530] font-abel mq750:gap-[2.125rem] mq750:pl-[3.438rem] mq750:pr-[3.438rem] mq750:box-border mq1050:pt-[2.75rem] mq1050:px-[3.438rem] mq1050:pb-[4rem] mq1050:box-border mq450:gap-[1.063rem] mq450:pt-[1.813rem] mq450:px-[1.25rem] mq450:pb-[2.625rem] mq450:box-border">
         {/* Categories Sidebar */}
         <section className="flex-1 flex flex-col items-start gap-[1.25rem] min-w-[9.5rem] max-w-[23.75rem] text-left text-[1.25rem] text-color-white font-abel">
           {faqCategories.map((category, index) => (
@@ -91,7 +91,7 @@ const Page = () => {
         </section>
 
         {/* FAQ Items */}
-        <div className="flex-1 flex flex-col items-start gap-[1.25rem] min-w-[20.938rem] max-w-full">
+        <div className="flex-1 flex flex-col items-start gap-[1.25rem] min-w-[20.938rem] mq450:min-w-full max-w-full">
           {faqItems.map((item, index) => (
             <FaqAccordion
               key={index}
@@ -107,7 +107,7 @@ const Page = () => {
       <section className="self-stretch flex flex-col items-start py-[3.75rem] px-[6.875rem] box-border max-w-full mq750:pl-[3.438rem] mq750:pr-[3.438rem] mq750:box-border mq450:py-[2.438rem] mq450:px-[1.25rem] mq450:box-border">
         <div className="self-stretch rounded-[24px] bg-[#0461c3] overflow-hidden flex items-center py-[3.75rem] px-[11.25rem] box-border relative isolate max-w-full mq1050:pl-[5.625rem] mq1050:pr-[5.625rem] mq1050:box-border mq750:pl-[2.813rem] mq750:pr-[2.813rem] mq750:box-border mq450:pl-[1.25rem] mq450:pr-[1.25rem] mq450:box-border">
           <Image
-            className="h-[14.375rem] w-[30.25rem] absolute m-[0!important] bottom-[0rem] left-[2.25rem] object-cover z-[3] shrink-0"
+            className="h-[14.375rem] w-[30.25rem] absolute m-[0!important] bottom-[0rem] left-[2.25rem] object-cover z-[3] shrink-0 mq750:hidden"
             loading="lazy"
             width={484}
             height={230}

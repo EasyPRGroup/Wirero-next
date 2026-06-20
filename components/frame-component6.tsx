@@ -44,8 +44,8 @@ const FrameComponent6: NextPage<FrameComponent6Type> = ({
           </h2>
         </div>
       </div>
-      <section className="self-stretch shadow-[0px_2px_12px_rgba(26,_38,_48,_0.08)] rounded-[20px] bg-color-white overflow-hidden flex items-start justify-center p-[0.5rem] box-border [row-gap:20px] max-w-full text-left text-[1.5rem] text-[#1a2530] font-['Proxima_Nova'] mq1125:flex-wrap">
-        <div className="w-[35rem] rounded-2xl bg-[rgba(226,239,249,0.5)] overflow-hidden shrink-0 flex flex-col items-start p-[2rem] box-border relative isolate gap-[1.25rem] max-w-full mq450:p-[1.25rem] mq1125:flex-1 mq1125:min-w-full">
+      <section className="self-stretch shadow-[0px_2px_12px_rgba(26,_38,_48,_0.08)] rounded-[20px] bg-color-white overflow-hidden flex items-start justify-center p-[0.5rem] box-border [row-gap:20px] max-w-full text-left text-[1.5rem] text-[#1a2530] font-['Proxima_Nova'] mq1350:flex-wrap">
+        <div className="w-[35rem] rounded-2xl bg-[rgba(226,239,249,0.5)] overflow-hidden shrink-0 flex flex-col items-start p-[2rem] box-border relative isolate gap-[1.25rem] max-w-full mq450:p-[1.25rem] mq1350:flex-1 mq1350:w-full mq1350:min-w-full">
           <Image
             className="w-[9rem] h-[3.063rem] absolute !m-0 top-[3.063rem] left-[0rem] z-[0] shrink-0"
             width={144}

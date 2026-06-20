@@ -97,7 +97,7 @@ const Bannerheader: NextPage<BannerheaderType> = ({ className = "" }) => {
             </div>
           </div>
         </section>
-        <section className="h-[38.75rem] w-[41.875rem] flex items-start py-[5rem] pl-[0rem] pr-[2.062rem] box-border max-w-full text-left text-[1.5rem] text-[#eee] font-['Proxima_Nova'] mq450:hidden mq800:pt-[3.25rem] mq800:pb-[3.25rem] mq800:box-border mq1125:min-w-full mq1350:flex-1 mq1350:pr-[0rem] mq1350:box-border mq1350:min-w-full mq1350:h-auto">
+        <section className="h-[38.75rem] w-[41.875rem] flex items-start py-[5rem] pl-[0rem] pr-[2.062rem] box-border max-w-full text-left text-[1.5rem] text-[#eee] font-['Proxima_Nova'] mq450:hidden mq800:hidden mq800:pt-[3.25rem] mq800:pb-[3.25rem] mq800:box-border mq1125:min-w-full mq1350:flex-1 mq1350:pr-[0rem] mq1350:box-border mq1350:min-w-full mq1350:h-auto">
           <div className="ml-[-0.338rem] h-[26.938rem] w-[39.775rem] relative shrink-0 origin-top-left mq800:scale-[0.78] mq800:mb-[-5.9rem] mq450:scale-[0.45] mq450:mb-[-14.8rem]">
             <div className="absolute h-full top-[0rem] bottom-[0rem] left-[2.819rem] rounded-tl-[110px] rounded-tr-none rounded-br-[110px] rounded-bl-none bg-[rgba(217,217,217,0.4)] w-[23.4rem]" />
             <div className="absolute top-[19.256rem] left-[0rem] [backdrop-filter:blur(10px)] rounded-xl bg-[rgba(24,31,37,0.8)] border-[rgba(122,131,140,0.2)] border-solid border-[1px] box-border w-[14.931rem] h-[5.281rem] flex items-start py-[0.875rem] pl-[1rem] pr-[0.812rem] gap-[0.75rem]">

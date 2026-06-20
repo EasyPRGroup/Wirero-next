@@ -77,7 +77,7 @@ const Header: NextPage<HeaderType> = ({
   return (
     <>
       <header
-        className={`self-stretch bg-[#12171c] border-[rgba(122,131,140,0.2)] border-solid border-b-[1px] flex items-center justify-between py-[1.25rem] px-[6.875rem] gap-[1.25rem] text-left text-[1.75rem] text-color-white font-[Inter] ${className} mq800:px-[3.438rem] mq450:px-[1.25rem] mq450:py-[1rem]`}
+        className={`self-stretch bg-[#12171c] border-[rgba(122,131,140,0.2)] border-solid border-b-[1px] flex items-center justify-between py-[1.25rem] px-[6.875rem] gap-[1.25rem] text-left text-[1.75rem] text-color-white font-[Inter] ${className} mq1125:px-[3.438rem] mq800:px-[3.438rem] mq450:px-[1.25rem] mq450:py-[1rem]`}
       >
         <Link href="/" className="h-[2rem] w-[10rem] relative block mq450:w-[8rem]">
           <Image
@@ -95,8 +95,8 @@ const Header: NextPage<HeaderType> = ({
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="flex items-center gap-[2.5rem] mq800:hidden">
-          <nav className="m-0 rounded-[50px] flex items-center justify-center gap-[2.5rem] text-left text-[1.125rem] text-[#64676f] font-['Proxima_Nova']">
+        <div className="flex items-center gap-[2.5rem] mq1125:gap-[1.5rem] mq800:hidden">
+          <nav className="m-0 rounded-[50px] flex items-center justify-center gap-[2.5rem] mq1125:gap-[1.5rem] text-left text-[1.125rem] text-[#64676f] font-['Proxima_Nova']">
             {optionItems.map((item, index) => (
               <Option
                 key={index}
@@ -123,7 +123,7 @@ const Header: NextPage<HeaderType> = ({
 
         {/* Hamburger Button */}
         <button
-          className="hidden mq800:flex flex-col justify-center items-center w-[2rem] h-[2rem] cursor-pointer bg-transparent border-none p-0 gap-[0.375rem]"
+          className="hidden mq800:flex flex-col justify-center items-center w-[2.75rem] h-[2.75rem] cursor-pointer bg-transparent border-none p-0 gap-[0.375rem]"
           onClick={toggleMobileMenu}
           aria-label="Toggle menu"
         >
@@ -146,7 +146,7 @@ const Header: NextPage<HeaderType> = ({
           onClick={closeMobileMenu}
         >
           <button
-            className="absolute top-[1rem] right-[1.25rem] w-[2rem] h-[2rem] flex items-center justify-center cursor-pointer bg-transparent border-none p-0"
+            className="absolute top-[1rem] right-[1.25rem] w-[2.75rem] h-[2.75rem] flex items-center justify-center cursor-pointer bg-transparent border-none p-0"
             onClick={closeMobileMenu}
             aria-label="Close menu"
           >

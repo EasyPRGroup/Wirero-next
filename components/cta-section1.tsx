@@ -57,7 +57,7 @@ const CtaSection1: NextPage<CtaSection1Type> = ({ className = "" }) => {
             showArrowRightIcon
           />
         </section>
-        <div className="h-[14.438rem] w-[26.938rem] relative [filter:drop-shadow(0px_2px_80px_rgba(26,_38,_48,_0.08))] max-w-full z-[1] shrink-0 origin-top-left mq450:hidden mq1125:min-w-full mq1350:flex-1">
+        <div className="h-[14.438rem] w-[26.938rem] relative [filter:drop-shadow(0px_2px_80px_rgba(26,_38,_48,_0.08))] max-w-full z-[1] shrink-0 origin-top-left mq450:hidden mq800:hidden mq1125:min-w-full mq1350:flex-1">
           <div className="absolute top-[10.813rem] left-[0.063rem] rounded-xl bg-[#b1ceec] border-[#0461c3] border-solid border-[4px] overflow-hidden flex flex-col items-center py-[0.687rem] px-[1.5rem] gap-[0.75rem]">
             <h3 className="m-0 relative text-[length:inherit] tracking-[0.02em] leading-[1.625rem] font-semibold font-[inherit] shrink-0 mq450:text-[1.125rem] mq450:leading-[1.313rem]">
               Enterprise Brands

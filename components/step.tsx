@@ -8,7 +8,7 @@ export type StepType = {
 const Step: NextPage<StepType> = ({ className = "" }) => {
   return (
     <div
-      className={`w-[76.25rem] h-[34.375rem] rounded-[28px] bg-[#181f25] overflow-hidden shrink-0 flex items-start p-[4.25rem] box-border gap-[3rem] max-w-full z-[1] mq800:gap-[1.5rem] mq450:p-[1.5rem] mq450:w-full mq450:h-auto mq450:flex-col mq450:gap-[1.5rem] mq1350:h-auto mq1350:flex-wrap mq1350:pl-[2.125rem] mq1350:pr-[2.125rem] mq1350:box-border ${className}`}
+      className={`w-[76.25rem] h-[34.375rem] rounded-[28px] bg-[#181f25] overflow-hidden shrink-0 flex items-start p-[4.25rem] box-border gap-[3rem] max-w-full z-[1] mq800:gap-[1.5rem] mq800:py-[2rem] mq450:p-[1.5rem] mq450:w-full mq450:h-auto mq450:flex-col mq450:gap-[1.5rem] mq1350:h-auto mq1350:flex-wrap mq1350:pl-[2.125rem] mq1350:pr-[2.125rem] mq1350:box-border ${className}`}
     >
       <section className="flex-1 flex flex-col items-start gap-[1.25rem] text-center text-[1.25rem] text-[#0bc111] font-['Proxima_Nova'] mq800:min-w-full mq450:min-w-full">
         <div className="rounded-[40px] bg-[rgba(11,193,17,0.2)] flex items-center py-[0.25rem] px-[0.625rem] gap-[0.25rem]">

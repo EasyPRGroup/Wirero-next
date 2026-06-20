@@ -36,7 +36,7 @@ const FrameComponent5: NextPage<FrameComponent5Type> = ({ className = "" }) => {
   ]);
   return (
     <section
-      className={`flex items-start py-[0rem] px-[4.25rem] box-border max-w-full mt-[-7.125rem] relative text-center text-[1rem] text-[#0bc111] font-['Proxima_Nova'] mq450:mt-0 mq450:px-[1.25rem] mq1350:pl-[2.125rem] mq1350:pr-[2.125rem] mq1350:box-border ${className}`}
+      className={`flex items-start py-[0rem] px-[4.25rem] box-border max-w-full mt-[-7.125rem] relative text-center text-[1rem] text-[#0bc111] font-['Proxima_Nova'] mq800:mt-0 mq450:mt-0 mq450:px-[1.25rem] mq1350:pl-[2.125rem] mq1350:pr-[2.125rem] mq1350:box-border ${className}`}
     >
       <div className="w-[67.75rem] flex items-start justify-center flex-wrap content-start gap-[1.25rem] shrink-0 max-w-full mq450:w-full">
         {howItWorksItems.map((item, index) => (

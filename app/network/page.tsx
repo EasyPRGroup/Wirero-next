@@ -77,7 +77,7 @@ const Network: NextPage = () => {
     {
       title: "Built for Scale",
       description:
-        "Designed for deployment consistencyâ€”not editorial branding.",
+        "Designed for deployment consistencyat”not editorial branding.",
     },
   ];
 
@@ -135,15 +135,15 @@ const Network: NextPage = () => {
       </section>
 
       {/* Built as Infrastructure Section */}
-      <section className="self-stretch flex flex-col items-start pt-[4.25rem] px-[6.875rem] pb-[6.125rem] box-border gap-[3rem] max-w-full text-left text-[1.125rem] text-[#4d565f] font-proxima mq750:gap-[1.5rem] mq750:pl-[3.438rem] mq750:pr-[3.438rem] mq750:box-border mq1050:pt-[2.75rem] mq1050:pb-[4rem] mq1050:box-border mq450:pt-[1.813rem] mq450:px-[1.25rem] mq450:pb-[2.625rem] mq450:box-border">
+      <section className="self-stretch flex flex-col items-start pt-[4.25rem] px-[6.875rem] pb-[6.125rem] box-border gap-[3rem] max-w-full text-left text-[1.125rem] text-[#4d565f] font-proxima mq750:gap-[1.5rem] mq750:pl-[3.438rem] mq750:pr-[3.438rem] mq750:box-border mq1050:pt-[2.75rem] mq1050:px-[3.438rem] mq1050:pb-[4rem] mq1050:box-border mq450:pt-[1.813rem] mq450:px-[1.25rem] mq450:pb-[2.625rem] mq450:box-border">
         <section className="self-stretch overflow-hidden flex flex-col items-start gap-[1.5rem] max-w-full text-left text-[1rem] text-[#0bc111] font-abel">
           <div
-            className="self-stretch flex items-start gap-[4.25rem] max-w-full text-[3rem] text-[#1a2530] mq1050:flex-wrap mq750:gap-[2.125rem] mq450:gap-[1.063rem]"
+            className="self-stretch flex items-start gap-[4.25rem] max-w-full text-[3rem] text-[#1a2530] mq1350:flex-wrap mq750:gap-[2.125rem] mq450:gap-[1.063rem]"
           >
-            <b className="w-[40rem] relative leading-[3.625rem] inline-block shrink-0 max-w-full mq1050:flex-1 mq1050:text-[2.375rem] mq1050:leading-[2.875rem] mq1050:min-w-full mq450:text-[1.813rem] mq450:leading-[2.188rem]">
-              Built as infrastructure â€” not a publisher marketplace
+            <b className="w-[40rem] relative leading-[3.625rem] inline-block shrink-0 max-w-full mq1350:w-full mq1350:min-w-full mq1050:flex-1 mq1050:text-[2.375rem] mq1050:leading-[2.875rem] mq1050:min-w-full mq450:text-[1.813rem] mq450:leading-[2.188rem]">
+              Built as infrastructure at not a publisher marketplace
             </b>
-            <div className="flex-1 flex flex-col items-start gap-[1.25rem] min-w-[20.813rem] text-[1.125rem] text-[#4d565f] font-proxima">
+            <div className="flex-1 flex flex-col items-start gap-[1.25rem] min-w-[20.813rem] text-[1.125rem] text-[#4d565f] font-proxima mq750:min-w-full">
               <div className="self-stretch relative leading-[1.75rem]">
                 Wirero operates a privately managed distribution network
                 engineered for scalable deployment across multiple industries.
@@ -157,7 +157,7 @@ const Network: NextPage = () => {
 
         <div className="self-stretch flex items-start justify-center gap-[4.25rem] max-w-full mq1050:flex-wrap mq750:gap-[2.125rem] mq450:gap-[1.063rem]">
           {/* Visual element - abstract shapes */}
-          <div className="h-[23.75rem] w-[35.125rem] relative max-w-full mq1050:flex-1 mq1050:min-w-full">
+          <div className="h-[23.75rem] w-[35.125rem] relative overflow-hidden max-w-full mq1050:flex-1 mq1050:h-auto mq1050:min-w-full">
             <div className="absolute top-[2.25rem] left-[20.125rem] rounded-[16px] bg-[#87ceeb] w-[15rem] h-[17.5rem]"></div>
             <div className="absolute h-full top-[0rem] bottom-[0rem] left-[0rem] rounded-[16px] bg-[#64676f] w-[18.625rem]"></div>
             <div className="absolute top-[6rem] left-[7.188rem] shadow-[0px_23px_54px_rgba(26,37,48,0.24)] rounded-[16px] bg-[#0461c3] w-[20.75rem] h-[11.25rem] z-[1]"></div>
@@ -211,7 +211,7 @@ const Network: NextPage = () => {
       </section>
 
       {/* Network Structure Section */}
-      <section className="w-[90rem] bg-[#12171c] flex flex-col items-center py-[6.125rem] px-[6.875rem] box-border gap-[3rem] max-w-full text-center text-[1rem] text-[#0bc111] font-abel mq1050:pt-[4rem] mq1050:pb-[4rem] mq1050:box-border mq750:gap-[1.5rem] mq750:py-[2.625rem] mq750:px-[3.438rem] mq750:box-border mq450:pl-[1.25rem] mq450:pr-[1.25rem] mq450:box-border">
+      <section className="self-stretch bg-[#12171c] flex flex-col items-center py-[6.125rem] px-[6.875rem] box-border gap-[3rem] max-w-full text-center text-[1rem] text-[#0bc111] font-abel mq1050:pt-[4rem] mq1050:px-[3.438rem] mq1050:pb-[4rem] mq1050:box-border mq750:gap-[1.5rem] mq750:py-[2.625rem] mq750:px-[3.438rem] mq750:box-border mq450:pl-[1.25rem] mq450:pr-[1.25rem] mq450:box-border">
         <div className="w-[60rem] max-w-full overflow-hidden flex flex-col items-center gap-[1rem]">
           <h1 className="m-0 self-stretch relative text-[3rem] leading-[3.625rem] font-bold font-[inherit] text-[#eee] mq1050:text-[2.375rem] mq1050:leading-[2.875rem] mq450:text-[1.813rem] mq450:leading-[2.188rem]">
             Network Structure
@@ -284,7 +284,7 @@ const Network: NextPage = () => {
       </section>
 
       {/* How Distribution Works Section */}
-      <main className="w-[90rem] max-w-full bg-[#f7fafd] flex flex-col items-center py-[6.125rem] px-[6.875rem] box-border gap-[4.25rem] text-center text-[1rem] text-[#0bc111] font-abel mq1050:pt-[4rem] mq1050:pb-[4rem] mq1050:box-border mq750:gap-[2.125rem] mq750:py-[2.625rem] mq750:px-[3.438rem] mq750:box-border mq450:gap-[1.063rem] mq450:pl-[1.25rem] mq450:pr-[1.25rem] mq450:box-border">
+      <main className="self-stretch max-w-full bg-[#f7fafd] flex flex-col items-center py-[6.125rem] px-[6.875rem] box-border gap-[4.25rem] text-center text-[1rem] text-[#0bc111] font-abel mq1050:pt-[4rem] mq1050:px-[3.438rem] mq1050:pb-[4rem] mq1050:box-border mq750:gap-[2.125rem] mq750:py-[2.625rem] mq750:px-[3.438rem] mq750:box-border mq450:gap-[1.063rem] mq450:pl-[1.25rem] mq450:pr-[1.25rem] mq450:box-border">
         <div className="self-stretch flex flex-col items-center gap-[3rem] mq750:gap-[1.5rem]">
           <div className="w-[51.25rem] max-w-full overflow-hidden flex flex-col items-center gap-[1.5rem]">
             <h2 className="m-0 self-stretch relative text-[3rem] leading-[3.625rem] font-bold font-[inherit] text-[#1a2530] mq1050:text-[2.375rem] mq1050:leading-[2.875rem] mq450:text-[1.813rem] mq450:leading-[2.188rem]">
@@ -353,14 +353,14 @@ const Network: NextPage = () => {
             ))}
           </div>
           <div className="self-stretch relative text-[1.125rem] leading-[1.75rem] text-[rgba(238,238,238,0.8)]">
-            Distribution is fully system-controlled â€” not dependent on manual
+            Distribution is fully system-controlled at” not dependent on manual
             outreach or publisher approval workflows.
           </div>
         </section>
       </main>
 
       {/* Explore Domains Section */}
-      <section className="self-stretch bg-color-white flex flex-col items-start py-[6.125rem] px-[6.875rem] box-border gap-[3rem] max-w-full text-left text-[3rem] text-[#1a2530] font-abel mq1050:pt-[4rem] mq1050:pb-[4rem] mq1050:box-border mq750:gap-[1.5rem] mq750:px-[3.438rem] mq750:box-border mq450:pt-[2.625rem] mq450:px-[1.25rem] mq450:pb-[2.625rem] mq450:box-border">
+      <section className="self-stretch bg-color-white flex flex-col items-start py-[6.125rem] px-[6.875rem] box-border gap-[3rem] max-w-full text-left text-[3rem] text-[#1a2530] font-abel mq1050:pt-[4rem] mq1050:px-[3.438rem] mq1050:pb-[4rem] mq1050:box-border mq750:gap-[1.5rem] mq750:px-[3.438rem] mq750:box-border mq450:pt-[2.625rem] mq450:px-[1.25rem] mq450:pb-[2.625rem] mq450:box-border">
         <div className="self-stretch flex items-start gap-[4.25rem] max-w-full mq1050:flex-wrap mq750:gap-[2.125rem] mq450:gap-[1.063rem]">
           <h2 className="m-0 w-[33.75rem] relative text-[length:inherit] leading-[3.625rem] font-bold font-[inherit] inline-block shrink-0 max-w-full mq1050:flex-1 mq1050:text-[2.375rem] mq1050:leading-[2.875rem] mq1050:min-w-full mq450:text-[1.813rem] mq450:leading-[2.188rem]">
             Explore domains across the network
@@ -379,9 +379,14 @@ const Network: NextPage = () => {
               key={index}
               className="self-stretch flex flex-col items-start gap-[1.25rem]"
             >
-              <h3 className="m-0 relative text-[1.5rem] leading-[1.875rem] font-bold font-[inherit] text-[#1a2530] mq450:text-[1.375rem] mq450:leading-[1.75rem]">
+              <Link
+                href={network.domains[0].url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="m-0 relative text-[1.5rem] leading-[1.875rem] font-bold font-[inherit] text-[#1a2530] mq450:text-[1.375rem] mq450:leading-[1.75rem] no-underline hover:text-[#1a8cd5] transition-colors"
+              >
                 {network.name}
-              </h3>
+              </Link>
               <div className="self-stretch grid grid-cols-4 gap-[1.25rem] mq1050:grid-cols-2 mq450:grid-cols-1">
                 {network.domains.map((domain, i) => (
                   <DomainCard key={i} name={domain.name} url={domain.url} />
@@ -410,7 +415,7 @@ const Network: NextPage = () => {
       </section>
 
       {/* Domain Characteristics Section */}
-      <section className="self-stretch bg-[#12171c] flex flex-col items-center py-[6.125rem] px-[6.875rem] box-border gap-[3rem] max-w-full text-center text-[3rem] text-[#eee] font-abel mq1050:pt-[4rem] mq1050:pb-[4rem] mq1050:box-border mq750:gap-[1.5rem] mq750:px-[3.438rem] mq750:box-border mq450:pt-[2.625rem] mq450:px-[1.25rem] mq450:pb-[2.625rem] mq450:box-border">
+      <section className="self-stretch bg-[#12171c] flex flex-col items-center py-[6.125rem] px-[6.875rem] box-border gap-[3rem] max-w-full text-center text-[3rem] text-[#eee] font-abel mq1050:pt-[4rem] mq1050:px-[3.438rem] mq1050:pb-[4rem] mq1050:box-border mq750:gap-[1.5rem] mq750:px-[3.438rem] mq750:box-border mq450:pt-[2.625rem] mq450:px-[1.25rem] mq450:pb-[2.625rem] mq450:box-border">
         <div className="w-[60rem] max-w-full overflow-hidden flex flex-col items-center gap-[1rem]">
           <h2 className="m-0 self-stretch relative text-[length:inherit] leading-[3.625rem] font-bold font-[inherit] mq1050:text-[2.375rem] mq1050:leading-[2.875rem] mq450:text-[1.813rem] mq450:leading-[2.188rem]">
             Domain Characteristics
@@ -420,7 +425,7 @@ const Network: NextPage = () => {
           </div>
         </div>
 
-        <div className="self-stretch grid grid-cols-2 gap-[1.5rem] text-left text-[1.25rem] mq750:grid-cols-1">
+        <div className="self-stretch grid grid-cols-2 gap-[1.5rem] text-left text-[1.25rem] mq1050:grid-cols-1">
           {domainCharacteristics.map((item, index) => (
             <FeatureItem
               key={index}
@@ -437,7 +442,7 @@ const Network: NextPage = () => {
       </section>
 
       {/* Control Distribution Your Way Section */}
-      <section className="self-stretch bg-color-white flex flex-col items-center py-[6.125rem] px-[6.875rem] box-border gap-[4.25rem] max-w-full text-center text-[3rem] text-[#1a2530] font-abel mq1050:pt-[4rem] mq1050:pb-[4rem] mq1050:box-border mq750:gap-[2.125rem] mq750:px-[3.438rem] mq750:box-border mq450:gap-[1.063rem] mq450:pt-[2.625rem] mq450:px-[1.25rem] mq450:pb-[2.625rem] mq450:box-border">
+      <section className="self-stretch bg-color-white flex flex-col items-center py-[6.125rem] px-[6.875rem] box-border gap-[4.25rem] max-w-full text-center text-[3rem] text-[#1a2530] font-abel mq1050:pt-[4rem] mq1050:px-[3.438rem] mq1050:pb-[4rem] mq1050:box-border mq750:gap-[2.125rem] mq750:px-[3.438rem] mq750:box-border mq450:gap-[1.063rem] mq450:pt-[2.625rem] mq450:px-[1.25rem] mq450:pb-[2.625rem] mq450:box-border">
         <div className="w-[51.25rem] max-w-full overflow-hidden flex flex-col items-center gap-[1.5rem]">
           <h2 className="m-0 self-stretch relative text-[length:inherit] leading-[3.625rem] font-bold font-[inherit] mq1050:text-[2.375rem] mq1050:leading-[2.875rem] mq450:text-[1.813rem] mq450:leading-[2.188rem]">
             Control Distribution Your Way
@@ -450,7 +455,7 @@ const Network: NextPage = () => {
 
         <div className="self-stretch flex items-center justify-center gap-[4.25rem] max-w-full mq1050:flex-wrap mq750:gap-[2.125rem]">
           {/* Left visual */}
-          <div className="h-[20rem] w-[24rem] relative max-w-full shrink-0 mq450:scale-[0.85]">
+          <div className="h-[20rem] w-[24rem] relative overflow-hidden max-w-full shrink-0 mq750:hidden mq450:scale-[0.85]">
             {/* Decorative green dots */}
             <div className="absolute top-[6rem] left-[0rem] grid grid-cols-5 gap-[0.625rem]">
               {Array.from({ length: 25 }).map((_, i) => (
@@ -478,7 +483,7 @@ const Network: NextPage = () => {
               </div>
               <div className="flex flex-col items-start text-left">
                 <b className="relative text-[1.125rem] leading-[1.5rem] font-proxima text-[#1a2530]">
-                  1â€“1000
+                  1at“1000
                 </b>
                 <div className="relative text-[0.875rem] leading-[1.25rem] font-proxima text-[#4d565f]">
                   Placement Range
