@@ -1,0 +1,5683 @@
+{
+  "filesModified": [
+    {
+      "path": "app/about-us/page.tsx",
+      "replacements": [
+        {
+          "arbitrary": "backdrop-blur-[8px]",
+          "canonical": "backdrop-blur",
+          "count": 1
+        },
+        {
+          "arbitrary": "bg-[#1a2530]",
+          "canonical": "bg-gray-600",
+          "count": 2
+        },
+        {
+          "arbitrary": "bg-[#4d575f]",
+          "canonical": "bg-gray-400",
+          "count": 3
+        },
+        {
+          "arbitrary": "border-[1px]",
+          "canonical": "border",
+          "count": 3
+        },
+        {
+          "arbitrary": "gap-[0.375rem]",
+          "canonical": "gap-1.5",
+          "count": 3
+        },
+        {
+          "arbitrary": "gap-[0.5rem]",
+          "canonical": "gap-2",
+          "count": 2
+        },
+        {
+          "arbitrary": "gap-[0.625rem]",
+          "canonical": "gap-2.5",
+          "count": 3
+        },
+        {
+          "arbitrary": "gap-[0.75rem]",
+          "canonical": "gap-3",
+          "count": 5
+        },
+        {
+          "arbitrary": "gap-[1.25rem]",
+          "canonical": "gap-5",
+          "count": 9
+        },
+        {
+          "arbitrary": "gap-[1.5rem]",
+          "canonical": "gap-6",
+          "count": 8
+        },
+        {
+          "arbitrary": "gap-[1.75rem]",
+          "canonical": "gap-7",
+          "count": 4
+        },
+        {
+          "arbitrary": "gap-[1rem]",
+          "canonical": "gap-4",
+          "count": 7
+        },
+        {
+          "arbitrary": "gap-[2.5rem]",
+          "canonical": "gap-10",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[3.5rem]",
+          "canonical": "gap-14",
+          "count": 2
+        },
+        {
+          "arbitrary": "gap-[3rem]",
+          "canonical": "gap-12",
+          "count": 1
+        },
+        {
+          "arbitrary": "h-[1.75rem]",
+          "canonical": "h-7",
+          "count": 6
+        },
+        {
+          "arbitrary": "h-[15rem]",
+          "canonical": "h-60",
+          "count": 1
+        },
+        {
+          "arbitrary": "h-[27.5rem]",
+          "canonical": "h-110",
+          "count": 1
+        },
+        {
+          "arbitrary": "h-[3rem]",
+          "canonical": "h-12",
+          "count": 5
+        },
+        {
+          "arbitrary": "leading-[1.25rem]",
+          "canonical": "leading-5",
+          "count": 6
+        },
+        {
+          "arbitrary": "leading-[1.5rem]",
+          "canonical": "leading-6",
+          "count": 3
+        },
+        {
+          "arbitrary": "leading-[1.75rem]",
+          "canonical": "leading-7",
+          "count": 15
+        },
+        {
+          "arbitrary": "leading-[2.5rem]",
+          "canonical": "leading-10",
+          "count": 4
+        },
+        {
+          "arbitrary": "min-w-[16rem]",
+          "canonical": "min-w-64",
+          "count": 3
+        },
+        {
+          "arbitrary": "mq1050:leading-[2rem]",
+          "canonical": "mq1050:leading-8",
+          "count": 3
+        },
+        {
+          "arbitrary": "mq1050:pb-[4rem]",
+          "canonical": "mq1050:pb-16",
+          "count": 3
+        },
+        {
+          "arbitrary": "mq1050:pt-[2.75rem]",
+          "canonical": "mq1050:pt-11",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq1050:pt-[4rem]",
+          "canonical": "mq1050:pt-16",
+          "count": 2
+        },
+        {
+          "arbitrary": "mq450:gap-[1.25rem]",
+          "canonical": "mq450:gap-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq450:leading-[1.5rem]",
+          "canonical": "mq450:leading-6",
+          "count": 5
+        },
+        {
+          "arbitrary": "mq450:mt-[-2rem]",
+          "canonical": "mq450:-mt-8",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq450:pl-[1.25rem]",
+          "canonical": "mq450:pl-5",
+          "count": 3
+        },
+        {
+          "arbitrary": "mq450:pr-[1.25rem]",
+          "canonical": "mq450:pr-5",
+          "count": 3
+        },
+        {
+          "arbitrary": "mq450:px-[1.25rem]",
+          "canonical": "mq450:px-5",
+          "count": 3
+        },
+        {
+          "arbitrary": "mq750:gap-[1.5rem]",
+          "canonical": "mq750:gap-6",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq800:gap-[2rem]",
+          "canonical": "mq800:gap-8",
+          "count": 2
+        },
+        {
+          "arbitrary": "mt-[-1.25rem]",
+          "canonical": "-mt-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "opacity-[0.9]",
+          "canonical": "opacity-90",
+          "count": 3
+        },
+        {
+          "arbitrary": "p-[0.25rem]",
+          "canonical": "p-1",
+          "count": 3
+        },
+        {
+          "arbitrary": "p-[0.5rem]",
+          "canonical": "p-2",
+          "count": 2
+        },
+        {
+          "arbitrary": "p-[0.75rem]",
+          "canonical": "p-3",
+          "count": 1
+        },
+        {
+          "arbitrary": "p-[1.25rem]",
+          "canonical": "p-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "p-[1.5rem]",
+          "canonical": "p-6",
+          "count": 4
+        },
+        {
+          "arbitrary": "pb-[2.5rem]",
+          "canonical": "pb-10",
+          "count": 1
+        },
+        {
+          "arbitrary": "pt-[0rem]",
+          "canonical": "pt-0",
+          "count": 1
+        },
+        {
+          "arbitrary": "px-[0rem]",
+          "canonical": "px-0",
+          "count": 3
+        },
+        {
+          "arbitrary": "px-[1rem]",
+          "canonical": "px-4",
+          "count": 1
+        },
+        {
+          "arbitrary": "py-[1.25rem]",
+          "canonical": "py-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "py-[5rem]",
+          "canonical": "py-20",
+          "count": 1
+        },
+        {
+          "arbitrary": "rounded-[12px]",
+          "canonical": "rounded-md",
+          "count": 1
+        },
+        {
+          "arbitrary": "rounded-[16px]",
+          "canonical": "rounded-lg",
+          "count": 4
+        },
+        {
+          "arbitrary": "rounded-[20px]",
+          "canonical": "rounded-xl",
+          "count": 5
+        },
+        {
+          "arbitrary": "rounded-[28px]",
+          "canonical": "rounded-2xl",
+          "count": 1
+        },
+        {
+          "arbitrary": "rounded-[40px]",
+          "canonical": "rounded-3xl",
+          "count": 3
+        },
+        {
+          "arbitrary": "text-[#0bc111]",
+          "canonical": "text-accent-green",
+          "count": 7
+        },
+        {
+          "arbitrary": "text-[#1a2530]",
+          "canonical": "text-gray-600",
+          "count": 3
+        },
+        {
+          "arbitrary": "text-[#1a8cd5]",
+          "canonical": "text-primary-light",
+          "count": 1
+        },
+        {
+          "arbitrary": "text-[#4d565f]",
+          "canonical": "text-gray-300",
+          "count": 17
+        },
+        {
+          "arbitrary": "text-[#eee]",
+          "canonical": "text-gray-100",
+          "count": 3
+        },
+        {
+          "arbitrary": "w-[0.75rem]",
+          "canonical": "w-3",
+          "count": 1
+        },
+        {
+          "arbitrary": "w-[1.75rem]",
+          "canonical": "w-7",
+          "count": 5
+        },
+        {
+          "arbitrary": "w-[2.75rem]",
+          "canonical": "w-11",
+          "count": 2
+        },
+        {
+          "arbitrary": "w-[3rem]",
+          "canonical": "w-12",
+          "count": 5
+        },
+        {
+          "arbitrary": "z-[0]",
+          "canonical": "z-0",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "path": "app/agency/page.tsx",
+      "replacements": [
+        {
+          "arbitrary": "bg-[#0461c3]",
+          "canonical": "bg-primary",
+          "count": 2
+        },
+        {
+          "arbitrary": "bg-[#12171c]",
+          "canonical": "bg-dark",
+          "count": 1
+        },
+        {
+          "arbitrary": "bg-[#181f25]",
+          "canonical": "bg-dark-light",
+          "count": 1
+        },
+        {
+          "arbitrary": "bg-[#1a8cd5]",
+          "canonical": "bg-primary-light",
+          "count": 2
+        },
+        {
+          "arbitrary": "border-[#e2e5e9]",
+          "canonical": "border-gray-500",
+          "count": 1
+        },
+        {
+          "arbitrary": "border-[1px]",
+          "canonical": "border",
+          "count": 2
+        },
+        {
+          "arbitrary": "bottom-[0rem]",
+          "canonical": "bottom-0",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[0.25rem]",
+          "canonical": "gap-1",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[0.5rem]",
+          "canonical": "gap-2",
+          "count": 3
+        },
+        {
+          "arbitrary": "gap-[0.75rem]",
+          "canonical": "gap-3",
+          "count": 8
+        },
+        {
+          "arbitrary": "gap-[1.25rem]",
+          "canonical": "gap-5",
+          "count": 5
+        },
+        {
+          "arbitrary": "gap-[1.5rem]",
+          "canonical": "gap-6",
+          "count": 11
+        },
+        {
+          "arbitrary": "gap-[1.75rem]",
+          "canonical": "gap-7",
+          "count": 3
+        },
+        {
+          "arbitrary": "gap-[1rem]",
+          "canonical": "gap-4",
+          "count": 5
+        },
+        {
+          "arbitrary": "gap-[2.5rem]",
+          "canonical": "gap-10",
+          "count": 4
+        },
+        {
+          "arbitrary": "gap-[3rem]",
+          "canonical": "gap-12",
+          "count": 5
+        },
+        {
+          "arbitrary": "gap-[5rem]",
+          "canonical": "gap-20",
+          "count": 1
+        },
+        {
+          "arbitrary": "h-[1.25rem]",
+          "canonical": "h-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "h-[1rem]",
+          "canonical": "h-4",
+          "count": 2
+        },
+        {
+          "arbitrary": "h-[3.5rem]",
+          "canonical": "h-14",
+          "count": 2
+        },
+        {
+          "arbitrary": "h-[7.5rem]",
+          "canonical": "h-30",
+          "count": 1
+        },
+        {
+          "arbitrary": "leading-[1.25rem]",
+          "canonical": "leading-5",
+          "count": 5
+        },
+        {
+          "arbitrary": "leading-[1.5rem]",
+          "canonical": "leading-6",
+          "count": 1
+        },
+        {
+          "arbitrary": "leading-[1.75rem]",
+          "canonical": "leading-7",
+          "count": 15
+        },
+        {
+          "arbitrary": "left-[2.25rem]",
+          "canonical": "left-9",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq1050:pb-[4rem]",
+          "canonical": "mq1050:pb-16",
+          "count": 2
+        },
+        {
+          "arbitrary": "mq1050:pt-[4rem]",
+          "canonical": "mq1050:pt-16",
+          "count": 2
+        },
+        {
+          "arbitrary": "mq450:gap-[1.25rem]",
+          "canonical": "mq450:gap-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq450:leading-[1.5rem]",
+          "canonical": "mq450:leading-6",
+          "count": 2
+        },
+        {
+          "arbitrary": "mq450:pl-[1.25rem]",
+          "canonical": "mq450:pl-5",
+          "count": 8
+        },
+        {
+          "arbitrary": "mq450:pr-[1.25rem]",
+          "canonical": "mq450:pr-5",
+          "count": 8
+        },
+        {
+          "arbitrary": "mq450:px-[1.25rem]",
+          "canonical": "mq450:px-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq750:gap-[1.25rem]",
+          "canonical": "mq750:gap-5",
+          "count": 4
+        },
+        {
+          "arbitrary": "mq750:gap-[1.5rem]",
+          "canonical": "mq750:gap-6",
+          "count": 6
+        },
+        {
+          "arbitrary": "mq750:gap-[2.5rem]",
+          "canonical": "mq750:gap-10",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq750:pb-[4rem]",
+          "canonical": "mq750:pb-16",
+          "count": 2
+        },
+        {
+          "arbitrary": "mq750:pl-[1.5rem]",
+          "canonical": "mq750:pl-6",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq750:pr-[1.5rem]",
+          "canonical": "mq750:pr-6",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq750:pt-[2.75rem]",
+          "canonical": "mq750:pt-11",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq750:py-[2.75rem]",
+          "canonical": "mq750:py-11",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq750:py-[4rem]",
+          "canonical": "mq750:py-16",
+          "count": 3
+        },
+        {
+          "arbitrary": "p-[0.25rem]",
+          "canonical": "p-1",
+          "count": 1
+        },
+        {
+          "arbitrary": "p-[0.5rem]",
+          "canonical": "p-2",
+          "count": 1
+        },
+        {
+          "arbitrary": "p-[0.625rem]",
+          "canonical": "p-2.5",
+          "count": 1
+        },
+        {
+          "arbitrary": "p-[0.75rem]",
+          "canonical": "p-3",
+          "count": 1
+        },
+        {
+          "arbitrary": "p-[1.25rem]",
+          "canonical": "p-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "p-[1.5rem]",
+          "canonical": "p-6",
+          "count": 1
+        },
+        {
+          "arbitrary": "p-[3rem]",
+          "canonical": "p-12",
+          "count": 1
+        },
+        {
+          "arbitrary": "pt-[2.5rem]",
+          "canonical": "pt-10",
+          "count": 1
+        },
+        {
+          "arbitrary": "px-[0.25rem]",
+          "canonical": "px-1",
+          "count": 1
+        },
+        {
+          "arbitrary": "px-[0rem]",
+          "canonical": "px-0",
+          "count": 1
+        },
+        {
+          "arbitrary": "px-[1.25rem]",
+          "canonical": "px-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "px-[2.5rem]",
+          "canonical": "px-10",
+          "count": 2
+        },
+        {
+          "arbitrary": "py-[0rem]",
+          "canonical": "py-0",
+          "count": 1
+        },
+        {
+          "arbitrary": "py-[1.25rem]",
+          "canonical": "py-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "py-[1rem]",
+          "canonical": "py-4",
+          "count": 3
+        },
+        {
+          "arbitrary": "rounded-[12px]",
+          "canonical": "rounded-md",
+          "count": 1
+        },
+        {
+          "arbitrary": "rounded-[16px]",
+          "canonical": "rounded-lg",
+          "count": 8
+        },
+        {
+          "arbitrary": "rounded-[20px]",
+          "canonical": "rounded-xl",
+          "count": 4
+        },
+        {
+          "arbitrary": "rounded-[8px]",
+          "canonical": "rounded",
+          "count": 3
+        },
+        {
+          "arbitrary": "text-[#0bc111]",
+          "canonical": "text-accent-green",
+          "count": 3
+        },
+        {
+          "arbitrary": "text-[#1a2530]",
+          "canonical": "text-gray-600",
+          "count": 15
+        },
+        {
+          "arbitrary": "text-[#4d565f]",
+          "canonical": "text-gray-300",
+          "count": 10
+        },
+        {
+          "arbitrary": "text-[#eee]",
+          "canonical": "text-gray-100",
+          "count": 2
+        },
+        {
+          "arbitrary": "w-[1.25rem]",
+          "canonical": "w-5",
+          "count": 2
+        },
+        {
+          "arbitrary": "w-[10rem]",
+          "canonical": "w-40",
+          "count": 1
+        },
+        {
+          "arbitrary": "w-[1rem]",
+          "canonical": "w-4",
+          "count": 2
+        },
+        {
+          "arbitrary": "w-[2.25rem]",
+          "canonical": "w-9",
+          "count": 1
+        },
+        {
+          "arbitrary": "w-[2.5rem]",
+          "canonical": "w-10",
+          "count": 1
+        },
+        {
+          "arbitrary": "w-[20rem]",
+          "canonical": "w-80",
+          "count": 1
+        },
+        {
+          "arbitrary": "w-[27.5rem]",
+          "canonical": "w-110",
+          "count": 1
+        },
+        {
+          "arbitrary": "w-[2rem]",
+          "canonical": "w-8",
+          "count": 1
+        },
+        {
+          "arbitrary": "w-[3rem]",
+          "canonical": "w-12",
+          "count": 1
+        },
+        {
+          "arbitrary": "z-[0]",
+          "canonical": "z-0",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "app/blog/page.tsx",
+      "replacements": [
+        {
+          "arbitrary": "gap-[1.5rem]",
+          "canonical": "gap-6",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq450:px-[1.25rem]",
+          "canonical": "mq450:px-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq800:py-[3.5rem]",
+          "canonical": "mq800:py-14",
+          "count": 1
+        },
+        {
+          "arbitrary": "text-[#4d565f]",
+          "canonical": "text-gray-300",
+          "count": 1
+        },
+        {
+          "arbitrary": "text-[#64676f]",
+          "canonical": "text-gray-200",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "app/contact/page.tsx",
+      "replacements": [
+        {
+          "arbitrary": "bg-[#0461c3]",
+          "canonical": "bg-primary",
+          "count": 4
+        },
+        {
+          "arbitrary": "border-[#e2e5e9]",
+          "canonical": "border-gray-500",
+          "count": 5
+        },
+        {
+          "arbitrary": "border-[1px]",
+          "canonical": "border",
+          "count": 5
+        },
+        {
+          "arbitrary": "border-[4px]",
+          "canonical": "border-4",
+          "count": 10
+        },
+        {
+          "arbitrary": "bottom-[0rem]",
+          "canonical": "bottom-0",
+          "count": 2
+        },
+        {
+          "arbitrary": "focus:border-[#0461c3]",
+          "canonical": "focus:border-primary",
+          "count": 5
+        },
+        {
+          "arbitrary": "gap-[0.25rem]",
+          "canonical": "gap-1",
+          "count": 3
+        },
+        {
+          "arbitrary": "gap-[0.375rem]",
+          "canonical": "gap-1.5",
+          "count": 5
+        },
+        {
+          "arbitrary": "gap-[0.5rem]",
+          "canonical": "gap-2",
+          "count": 8
+        },
+        {
+          "arbitrary": "gap-[0.75rem]",
+          "canonical": "gap-3",
+          "count": 3
+        },
+        {
+          "arbitrary": "gap-[1.25rem]",
+          "canonical": "gap-5",
+          "count": 3
+        },
+        {
+          "arbitrary": "gap-[1.5rem]",
+          "canonical": "gap-6",
+          "count": 2
+        },
+        {
+          "arbitrary": "gap-[1.75rem]",
+          "canonical": "gap-7",
+          "count": 2
+        },
+        {
+          "arbitrary": "gap-[1rem]",
+          "canonical": "gap-4",
+          "count": 6
+        },
+        {
+          "arbitrary": "gap-[5rem]",
+          "canonical": "gap-20",
+          "count": 2
+        },
+        {
+          "arbitrary": "h-[1.25rem]",
+          "canonical": "h-5",
+          "count": 5
+        },
+        {
+          "arbitrary": "h-[1.5rem]",
+          "canonical": "h-6",
+          "count": 2
+        },
+        {
+          "arbitrary": "h-[1rem]",
+          "canonical": "h-4",
+          "count": 4
+        },
+        {
+          "arbitrary": "h-[2.25rem]",
+          "canonical": "h-9",
+          "count": 1
+        },
+        {
+          "arbitrary": "h-[2.75rem]",
+          "canonical": "h-11",
+          "count": 7
+        },
+        {
+          "arbitrary": "h-[3.5rem]",
+          "canonical": "h-14",
+          "count": 3
+        },
+        {
+          "arbitrary": "h-[3rem]",
+          "canonical": "h-12",
+          "count": 1
+        },
+        {
+          "arbitrary": "leading-[1.25rem]",
+          "canonical": "leading-5",
+          "count": 4
+        },
+        {
+          "arbitrary": "leading-[1.5rem]",
+          "canonical": "leading-6",
+          "count": 5
+        },
+        {
+          "arbitrary": "leading-[1.75rem]",
+          "canonical": "leading-7",
+          "count": 7
+        },
+        {
+          "arbitrary": "left-[0rem]",
+          "canonical": "left-0",
+          "count": 2
+        },
+        {
+          "arbitrary": "max-w-[76.25rem]",
+          "canonical": "max-w-section",
+          "count": 2
+        },
+        {
+          "arbitrary": "mq1050:pb-[4rem]",
+          "canonical": "mq1050:pb-16",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq1050:pt-[2.75rem]",
+          "canonical": "mq1050:pt-11",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq450:gap-[1.5rem]",
+          "canonical": "mq450:gap-6",
+          "count": 2
+        },
+        {
+          "arbitrary": "mq450:pl-[1.25rem]",
+          "canonical": "mq450:pl-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq450:pr-[1.25rem]",
+          "canonical": "mq450:pr-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq450:px-[1.25rem]",
+          "canonical": "mq450:px-5",
+          "count": 2
+        },
+        {
+          "arbitrary": "mq450:py-[2rem]",
+          "canonical": "mq450:py-8",
+          "count": 2
+        },
+        {
+          "arbitrary": "opacity-[0.6]",
+          "canonical": "opacity-60",
+          "count": 8
+        },
+        {
+          "arbitrary": "p-[1.25rem]",
+          "canonical": "p-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "p-[2.5rem]",
+          "canonical": "p-10",
+          "count": 1
+        },
+        {
+          "arbitrary": "pr-[1.25rem]",
+          "canonical": "pr-5",
+          "count": 6
+        },
+        {
+          "arbitrary": "px-[0.5rem]",
+          "canonical": "px-2",
+          "count": 1
+        },
+        {
+          "arbitrary": "px-[0.875rem]",
+          "canonical": "px-3.5",
+          "count": 5
+        },
+        {
+          "arbitrary": "px-[0rem]",
+          "canonical": "px-0",
+          "count": 1
+        },
+        {
+          "arbitrary": "px-[1.5rem]",
+          "canonical": "px-6",
+          "count": 4
+        },
+        {
+          "arbitrary": "px-[2.5rem]",
+          "canonical": "px-10",
+          "count": 3
+        },
+        {
+          "arbitrary": "py-[0.5rem]",
+          "canonical": "py-2",
+          "count": 1
+        },
+        {
+          "arbitrary": "py-[0.625rem]",
+          "canonical": "py-2.5",
+          "count": 1
+        },
+        {
+          "arbitrary": "py-[0.75rem]",
+          "canonical": "py-3",
+          "count": 4
+        },
+        {
+          "arbitrary": "py-[1.25rem]",
+          "canonical": "py-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "py-[1rem]",
+          "canonical": "py-4",
+          "count": 9
+        },
+        {
+          "arbitrary": "py-[2.5rem]",
+          "canonical": "py-10",
+          "count": 2
+        },
+        {
+          "arbitrary": "right-[0.875rem]",
+          "canonical": "right-3.5",
+          "count": 1
+        },
+        {
+          "arbitrary": "right-[0rem]",
+          "canonical": "right-0",
+          "count": 2
+        },
+        {
+          "arbitrary": "rounded-[12px]",
+          "canonical": "rounded-md",
+          "count": 12
+        },
+        {
+          "arbitrary": "rounded-[28px]",
+          "canonical": "rounded-2xl",
+          "count": 1
+        },
+        {
+          "arbitrary": "rounded-[8px]",
+          "canonical": "rounded",
+          "count": 9
+        },
+        {
+          "arbitrary": "text-[#0bc111]",
+          "canonical": "text-accent-green",
+          "count": 1
+        },
+        {
+          "arbitrary": "text-[#1a2530]",
+          "canonical": "text-gray-600",
+          "count": 5
+        },
+        {
+          "arbitrary": "text-[#4d565f]",
+          "canonical": "text-gray-300",
+          "count": 6
+        },
+        {
+          "arbitrary": "text-[#64676f]",
+          "canonical": "text-gray-200",
+          "count": 7
+        },
+        {
+          "arbitrary": "top-[0rem]",
+          "canonical": "top-0",
+          "count": 2
+        },
+        {
+          "arbitrary": "top-[2.75rem]",
+          "canonical": "top-11",
+          "count": 2
+        },
+        {
+          "arbitrary": "w-[1.25rem]",
+          "canonical": "w-5",
+          "count": 5
+        },
+        {
+          "arbitrary": "w-[1.5rem]",
+          "canonical": "w-6",
+          "count": 2
+        },
+        {
+          "arbitrary": "w-[1.75rem]",
+          "canonical": "w-7",
+          "count": 1
+        },
+        {
+          "arbitrary": "w-[1rem]",
+          "canonical": "w-4",
+          "count": 4
+        },
+        {
+          "arbitrary": "w-[2.25rem]",
+          "canonical": "w-9",
+          "count": 1
+        },
+        {
+          "arbitrary": "w-[2.75rem]",
+          "canonical": "w-11",
+          "count": 6
+        },
+        {
+          "arbitrary": "w-[3.5rem]",
+          "canonical": "w-14",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "app/faqs/page.tsx",
+      "replacements": [
+        {
+          "arbitrary": "bg-[#0461c3]",
+          "canonical": "bg-primary",
+          "count": 1
+        },
+        {
+          "arbitrary": "bottom-[0rem]",
+          "canonical": "bottom-0",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[0.5rem]",
+          "canonical": "gap-2",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[0.75rem]",
+          "canonical": "gap-3",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[1.25rem]",
+          "canonical": "gap-5",
+          "count": 2
+        },
+        {
+          "arbitrary": "gap-[1.5rem]",
+          "canonical": "gap-6",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[1.75rem]",
+          "canonical": "gap-7",
+          "count": 1
+        },
+        {
+          "arbitrary": "h-[1rem]",
+          "canonical": "h-4",
+          "count": 2
+        },
+        {
+          "arbitrary": "h-[3.5rem]",
+          "canonical": "h-14",
+          "count": 1
+        },
+        {
+          "arbitrary": "leading-[1.25rem]",
+          "canonical": "leading-5",
+          "count": 2
+        },
+        {
+          "arbitrary": "leading-[1.75rem]",
+          "canonical": "leading-7",
+          "count": 1
+        },
+        {
+          "arbitrary": "left-[2.25rem]",
+          "canonical": "left-9",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq1050:pb-[4rem]",
+          "canonical": "mq1050:pb-16",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq1050:pt-[2.75rem]",
+          "canonical": "mq1050:pt-11",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq450:pl-[1.25rem]",
+          "canonical": "mq450:pl-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq450:pr-[1.25rem]",
+          "canonical": "mq450:pr-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq450:px-[1.25rem]",
+          "canonical": "mq450:px-5",
+          "count": 3
+        },
+        {
+          "arbitrary": "px-[2.5rem]",
+          "canonical": "px-10",
+          "count": 1
+        },
+        {
+          "arbitrary": "px-[7.5rem]",
+          "canonical": "px-30",
+          "count": 1
+        },
+        {
+          "arbitrary": "py-[0rem]",
+          "canonical": "py-0",
+          "count": 1
+        },
+        {
+          "arbitrary": "py-[1rem]",
+          "canonical": "py-4",
+          "count": 1
+        },
+        {
+          "arbitrary": "rounded-[8px]",
+          "canonical": "rounded",
+          "count": 1
+        },
+        {
+          "arbitrary": "text-[#0bc111]",
+          "canonical": "text-accent-green",
+          "count": 1
+        },
+        {
+          "arbitrary": "text-[#1a2530]",
+          "canonical": "text-gray-600",
+          "count": 3
+        },
+        {
+          "arbitrary": "w-[1rem]",
+          "canonical": "w-4",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "path": "app/home.tsx",
+      "replacements": [
+        {
+          "arbitrary": "bg-[#12171c]",
+          "canonical": "bg-dark",
+          "count": 3
+        },
+        {
+          "arbitrary": "border-[#e2e5e9]",
+          "canonical": "border-gray-500",
+          "count": 5
+        },
+        {
+          "arbitrary": "border-[1px]",
+          "canonical": "border",
+          "count": 6
+        },
+        {
+          "arbitrary": "bottom-[0rem]",
+          "canonical": "bottom-0",
+          "count": 8
+        },
+        {
+          "arbitrary": "gap-[0.375rem]",
+          "canonical": "gap-1.5",
+          "count": 3
+        },
+        {
+          "arbitrary": "gap-[0.625rem]",
+          "canonical": "gap-2.5",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[0.75rem]",
+          "canonical": "gap-3",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[1.25rem]",
+          "canonical": "gap-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[1.5rem]",
+          "canonical": "gap-6",
+          "count": 3
+        },
+        {
+          "arbitrary": "gap-[1.75rem]",
+          "canonical": "gap-7",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[1rem]",
+          "canonical": "gap-4",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[3rem]",
+          "canonical": "gap-12",
+          "count": 7
+        },
+        {
+          "arbitrary": "h-[1.75rem]",
+          "canonical": "h-7",
+          "count": 2
+        },
+        {
+          "arbitrary": "h-[27.5rem]",
+          "canonical": "h-110",
+          "count": 1
+        },
+        {
+          "arbitrary": "h-[3rem]",
+          "canonical": "h-12",
+          "count": 4
+        },
+        {
+          "arbitrary": "h-[7.5rem]",
+          "canonical": "h-30",
+          "count": 18
+        },
+        {
+          "arbitrary": "leading-[1.25rem]",
+          "canonical": "leading-5",
+          "count": 3
+        },
+        {
+          "arbitrary": "leading-[1.75rem]",
+          "canonical": "leading-7",
+          "count": 10
+        },
+        {
+          "arbitrary": "leading-[2.5rem]",
+          "canonical": "leading-10",
+          "count": 3
+        },
+        {
+          "arbitrary": "leading-[2rem]",
+          "canonical": "leading-8",
+          "count": 1
+        },
+        {
+          "arbitrary": "left-[0rem]",
+          "canonical": "left-0",
+          "count": 6
+        },
+        {
+          "arbitrary": "left-[5.5rem]",
+          "canonical": "left-22",
+          "count": 1
+        },
+        {
+          "arbitrary": "left-[7.5rem]",
+          "canonical": "left-30",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq1125:pb-[4rem]",
+          "canonical": "mq1125:pb-16",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq1125:pt-[4rem]",
+          "canonical": "mq1125:pt-16",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq1350:pb-[4rem]",
+          "canonical": "mq1350:pb-16",
+          "count": 2
+        },
+        {
+          "arbitrary": "mq1350:pt-[4rem]",
+          "canonical": "mq1350:pt-16",
+          "count": 2
+        },
+        {
+          "arbitrary": "mq450:gap-[1.5rem]",
+          "canonical": "mq450:gap-6",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq450:leading-[1.5rem]",
+          "canonical": "mq450:leading-6",
+          "count": 3
+        },
+        {
+          "arbitrary": "mq450:pl-[1.25rem]",
+          "canonical": "mq450:pl-5",
+          "count": 3
+        },
+        {
+          "arbitrary": "mq450:pr-[1.25rem]",
+          "canonical": "mq450:pr-5",
+          "count": 3
+        },
+        {
+          "arbitrary": "mq450:px-[1.25rem]",
+          "canonical": "mq450:px-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq450:py-[2.5rem]",
+          "canonical": "mq450:py-10",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq800:gap-[1.5rem]",
+          "canonical": "mq800:gap-6",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq800:leading-[2rem]",
+          "canonical": "mq800:leading-8",
+          "count": 3
+        },
+        {
+          "arbitrary": "opacity-[0.9]",
+          "canonical": "opacity-90",
+          "count": 3
+        },
+        {
+          "arbitrary": "p-[0.5rem]",
+          "canonical": "p-2",
+          "count": 2
+        },
+        {
+          "arbitrary": "p-[1.5rem]",
+          "canonical": "p-6",
+          "count": 6
+        },
+        {
+          "arbitrary": "pb-[1.75rem]",
+          "canonical": "pb-7",
+          "count": 1
+        },
+        {
+          "arbitrary": "pt-[0rem]",
+          "canonical": "pt-0",
+          "count": 1
+        },
+        {
+          "arbitrary": "px-[0rem]",
+          "canonical": "px-0",
+          "count": 3
+        },
+        {
+          "arbitrary": "px-[1.25rem]",
+          "canonical": "px-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "py-[1.25rem]",
+          "canonical": "py-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "py-[1.5rem]",
+          "canonical": "py-6",
+          "count": 1
+        },
+        {
+          "arbitrary": "py-[5rem]",
+          "canonical": "py-20",
+          "count": 1
+        },
+        {
+          "arbitrary": "right-[0rem]",
+          "canonical": "right-0",
+          "count": 9
+        },
+        {
+          "arbitrary": "rounded-[20px]",
+          "canonical": "rounded-xl",
+          "count": 3
+        },
+        {
+          "arbitrary": "rounded-[40px]",
+          "canonical": "rounded-3xl",
+          "count": 2
+        },
+        {
+          "arbitrary": "text-[#0461c3]",
+          "canonical": "text-primary",
+          "count": 1
+        },
+        {
+          "arbitrary": "text-[#0bc111]",
+          "canonical": "text-accent-green",
+          "count": 3
+        },
+        {
+          "arbitrary": "text-[#1a2530]",
+          "canonical": "text-gray-600",
+          "count": 2
+        },
+        {
+          "arbitrary": "text-[#4d565f]",
+          "canonical": "text-gray-300",
+          "count": 3
+        },
+        {
+          "arbitrary": "text-[#4d575f]",
+          "canonical": "text-gray-400",
+          "count": 1
+        },
+        {
+          "arbitrary": "text-[#eee]",
+          "canonical": "text-gray-100",
+          "count": 2
+        },
+        {
+          "arbitrary": "top-[0rem]",
+          "canonical": "top-0",
+          "count": 8
+        },
+        {
+          "arbitrary": "top-[5rem]",
+          "canonical": "top-20",
+          "count": 1
+        },
+        {
+          "arbitrary": "w-[15rem]",
+          "canonical": "w-60",
+          "count": 1
+        },
+        {
+          "arbitrary": "w-[3rem]",
+          "canonical": "w-12",
+          "count": 4
+        },
+        {
+          "arbitrary": "w-[7.5rem]",
+          "canonical": "w-30",
+          "count": 6
+        },
+        {
+          "arbitrary": "z-[0]",
+          "canonical": "z-0",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "path": "app/network/page.tsx",
+      "replacements": [
+        {
+          "arbitrary": "bg-[#0461c3]",
+          "canonical": "bg-primary",
+          "count": 5
+        },
+        {
+          "arbitrary": "bg-[#0bc111]",
+          "canonical": "bg-accent-green",
+          "count": 1
+        },
+        {
+          "arbitrary": "bg-[#12171c]",
+          "canonical": "bg-dark",
+          "count": 3
+        },
+        {
+          "arbitrary": "bg-[#181f25]",
+          "canonical": "bg-dark-light",
+          "count": 1
+        },
+        {
+          "arbitrary": "bg-[#64676f]",
+          "canonical": "bg-gray-200",
+          "count": 1
+        },
+        {
+          "arbitrary": "bg-[#e2e5e9]",
+          "canonical": "bg-gray-500",
+          "count": 1
+        },
+        {
+          "arbitrary": "border-[1px]",
+          "canonical": "border",
+          "count": 1
+        },
+        {
+          "arbitrary": "bottom-[0rem]",
+          "canonical": "bottom-0",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[0.5rem]",
+          "canonical": "gap-2",
+          "count": 4
+        },
+        {
+          "arbitrary": "gap-[0.625rem]",
+          "canonical": "gap-2.5",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[0.75rem]",
+          "canonical": "gap-3",
+          "count": 5
+        },
+        {
+          "arbitrary": "gap-[1.25rem]",
+          "canonical": "gap-5",
+          "count": 12
+        },
+        {
+          "arbitrary": "gap-[1.5rem]",
+          "canonical": "gap-6",
+          "count": 5
+        },
+        {
+          "arbitrary": "gap-[1.75rem]",
+          "canonical": "gap-7",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[1rem]",
+          "canonical": "gap-4",
+          "count": 4
+        },
+        {
+          "arbitrary": "gap-[2.5rem]",
+          "canonical": "gap-10",
+          "count": 3
+        },
+        {
+          "arbitrary": "gap-[2rem]",
+          "canonical": "gap-8",
+          "count": 3
+        },
+        {
+          "arbitrary": "gap-[3rem]",
+          "canonical": "gap-12",
+          "count": 5
+        },
+        {
+          "arbitrary": "h-[0.375rem]",
+          "canonical": "h-1.5",
+          "count": 1
+        },
+        {
+          "arbitrary": "h-[0.5rem]",
+          "canonical": "h-2",
+          "count": 1
+        },
+        {
+          "arbitrary": "h-[0.625rem]",
+          "canonical": "h-2.5",
+          "count": 1
+        },
+        {
+          "arbitrary": "h-[1.25rem]",
+          "canonical": "h-5",
+          "count": 3
+        },
+        {
+          "arbitrary": "h-[1.5rem]",
+          "canonical": "h-6",
+          "count": 1
+        },
+        {
+          "arbitrary": "h-[1rem]",
+          "canonical": "h-4",
+          "count": 2
+        },
+        {
+          "arbitrary": "h-[20rem]",
+          "canonical": "h-80",
+          "count": 1
+        },
+        {
+          "arbitrary": "h-[3.5rem]",
+          "canonical": "h-14",
+          "count": 2
+        },
+        {
+          "arbitrary": "hover:text-[#1a8cd5]",
+          "canonical": "hover:text-primary-light",
+          "count": 1
+        },
+        {
+          "arbitrary": "leading-[1.25rem]",
+          "canonical": "leading-5",
+          "count": 5
+        },
+        {
+          "arbitrary": "leading-[1.5rem]",
+          "canonical": "leading-6",
+          "count": 3
+        },
+        {
+          "arbitrary": "leading-[1.75rem]",
+          "canonical": "leading-7",
+          "count": 10
+        },
+        {
+          "arbitrary": "leading-[2rem]",
+          "canonical": "leading-8",
+          "count": 1
+        },
+        {
+          "arbitrary": "left-[0rem]",
+          "canonical": "left-0",
+          "count": 2
+        },
+        {
+          "arbitrary": "left-[4rem]",
+          "canonical": "left-16",
+          "count": 1
+        },
+        {
+          "arbitrary": "min-w-[20rem]",
+          "canonical": "min-w-80",
+          "count": 1
+        },
+        {
+          "arbitrary": "min-w-[27.5rem]",
+          "canonical": "min-w-110",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq1050:pb-[4rem]",
+          "canonical": "mq1050:pb-16",
+          "count": 6
+        },
+        {
+          "arbitrary": "mq1050:pt-[2.75rem]",
+          "canonical": "mq1050:pt-11",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq1050:pt-[4rem]",
+          "canonical": "mq1050:pt-16",
+          "count": 5
+        },
+        {
+          "arbitrary": "mq450:leading-[1.75rem]",
+          "canonical": "mq450:leading-7",
+          "count": 2
+        },
+        {
+          "arbitrary": "mq450:pl-[1.25rem]",
+          "canonical": "mq450:pl-5",
+          "count": 3
+        },
+        {
+          "arbitrary": "mq450:pr-[1.25rem]",
+          "canonical": "mq450:pr-5",
+          "count": 3
+        },
+        {
+          "arbitrary": "mq450:px-[1.25rem]",
+          "canonical": "mq450:px-5",
+          "count": 5
+        },
+        {
+          "arbitrary": "mq750:gap-[1.25rem]",
+          "canonical": "mq750:gap-5",
+          "count": 2
+        },
+        {
+          "arbitrary": "mq750:gap-[1.5rem]",
+          "canonical": "mq750:gap-6",
+          "count": 6
+        },
+        {
+          "arbitrary": "mq750:gap-[1rem]",
+          "canonical": "mq750:gap-4",
+          "count": 2
+        },
+        {
+          "arbitrary": "mq750:py-[2.75rem]",
+          "canonical": "mq750:py-11",
+          "count": 1
+        },
+        {
+          "arbitrary": "p-[0.5rem]",
+          "canonical": "p-2",
+          "count": 1
+        },
+        {
+          "arbitrary": "p-[1.25rem]",
+          "canonical": "p-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "p-[1.5rem]",
+          "canonical": "p-6",
+          "count": 1
+        },
+        {
+          "arbitrary": "px-[0.75rem]",
+          "canonical": "px-3",
+          "count": 1
+        },
+        {
+          "arbitrary": "px-[1.25rem]",
+          "canonical": "px-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "px-[1rem]",
+          "canonical": "px-4",
+          "count": 1
+        },
+        {
+          "arbitrary": "px-[2.5rem]",
+          "canonical": "px-10",
+          "count": 2
+        },
+        {
+          "arbitrary": "py-[0.375rem]",
+          "canonical": "py-1.5",
+          "count": 1
+        },
+        {
+          "arbitrary": "py-[0.875rem]",
+          "canonical": "py-3.5",
+          "count": 1
+        },
+        {
+          "arbitrary": "py-[1.25rem]",
+          "canonical": "py-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "py-[1rem]",
+          "canonical": "py-4",
+          "count": 2
+        },
+        {
+          "arbitrary": "py-[3rem]",
+          "canonical": "py-12",
+          "count": 1
+        },
+        {
+          "arbitrary": "rounded-[12px]",
+          "canonical": "rounded-md",
+          "count": 2
+        },
+        {
+          "arbitrary": "rounded-[16px]",
+          "canonical": "rounded-lg",
+          "count": 6
+        },
+        {
+          "arbitrary": "rounded-[20px]",
+          "canonical": "rounded-xl",
+          "count": 3
+        },
+        {
+          "arbitrary": "rounded-[40px]",
+          "canonical": "rounded-3xl",
+          "count": 1
+        },
+        {
+          "arbitrary": "rounded-[8px]",
+          "canonical": "rounded",
+          "count": 3
+        },
+        {
+          "arbitrary": "text-[#0bc111]",
+          "canonical": "text-accent-green",
+          "count": 4
+        },
+        {
+          "arbitrary": "text-[#1a2530]",
+          "canonical": "text-gray-600",
+          "count": 13
+        },
+        {
+          "arbitrary": "text-[#1a8cd5]",
+          "canonical": "text-primary-light",
+          "count": 2
+        },
+        {
+          "arbitrary": "text-[#4d565f]",
+          "canonical": "text-gray-300",
+          "count": 7
+        },
+        {
+          "arbitrary": "text-[#eee]",
+          "canonical": "text-gray-100",
+          "count": 3
+        },
+        {
+          "arbitrary": "top-[0rem]",
+          "canonical": "top-0",
+          "count": 1
+        },
+        {
+          "arbitrary": "top-[1.25rem]",
+          "canonical": "top-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "top-[2.25rem]",
+          "canonical": "top-9",
+          "count": 1
+        },
+        {
+          "arbitrary": "top-[3.5rem]",
+          "canonical": "top-14",
+          "count": 1
+        },
+        {
+          "arbitrary": "top-[6rem]",
+          "canonical": "top-24",
+          "count": 2
+        },
+        {
+          "arbitrary": "top-[7.5rem]",
+          "canonical": "top-30",
+          "count": 1
+        },
+        {
+          "arbitrary": "w-[0.375rem]",
+          "canonical": "w-1.5",
+          "count": 1
+        },
+        {
+          "arbitrary": "w-[0.625rem]",
+          "canonical": "w-2.5",
+          "count": 1
+        },
+        {
+          "arbitrary": "w-[1.25rem]",
+          "canonical": "w-5",
+          "count": 3
+        },
+        {
+          "arbitrary": "w-[1.5rem]",
+          "canonical": "w-6",
+          "count": 1
+        },
+        {
+          "arbitrary": "w-[11rem]",
+          "canonical": "w-44",
+          "count": 1
+        },
+        {
+          "arbitrary": "w-[13rem]",
+          "canonical": "w-52",
+          "count": 1
+        },
+        {
+          "arbitrary": "w-[15rem]",
+          "canonical": "w-60",
+          "count": 1
+        },
+        {
+          "arbitrary": "w-[1rem]",
+          "canonical": "w-4",
+          "count": 2
+        },
+        {
+          "arbitrary": "w-[24rem]",
+          "canonical": "w-96",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "app/pricing/page.tsx",
+      "replacements": [
+        {
+          "arbitrary": "gap-[0.5rem]",
+          "canonical": "gap-2",
+          "count": 2
+        },
+        {
+          "arbitrary": "gap-[1.25rem]",
+          "canonical": "gap-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[1.5rem]",
+          "canonical": "gap-6",
+          "count": 2
+        },
+        {
+          "arbitrary": "gap-[1rem]",
+          "canonical": "gap-4",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[3.5rem]",
+          "canonical": "gap-14",
+          "count": 1
+        },
+        {
+          "arbitrary": "h-[3rem]",
+          "canonical": "h-12",
+          "count": 1
+        },
+        {
+          "arbitrary": "leading-[1.25rem]",
+          "canonical": "leading-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "leading-[1.5rem]",
+          "canonical": "leading-6",
+          "count": 1
+        },
+        {
+          "arbitrary": "leading-[1.75rem]",
+          "canonical": "leading-7",
+          "count": 1
+        },
+        {
+          "arbitrary": "min-w-[15rem]",
+          "canonical": "min-w-60",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq1050:pb-[4rem]",
+          "canonical": "mq1050:pb-16",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq1050:pt-[2.75rem]",
+          "canonical": "mq1050:pt-11",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq450:px-[0rem]",
+          "canonical": "mq450:px-0",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq450:px-[1.25rem]",
+          "canonical": "mq450:px-5",
+          "count": 3
+        },
+        {
+          "arbitrary": "mq800:gap-[1.25rem]",
+          "canonical": "mq800:gap-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq800:gap-[2rem]",
+          "canonical": "mq800:gap-8",
+          "count": 1
+        },
+        {
+          "arbitrary": "p-[1.75rem]",
+          "canonical": "p-7",
+          "count": 1
+        },
+        {
+          "arbitrary": "px-[0.75rem]",
+          "canonical": "px-3",
+          "count": 1
+        },
+        {
+          "arbitrary": "px-[2.5rem]",
+          "canonical": "px-10",
+          "count": 1
+        },
+        {
+          "arbitrary": "py-[0.375rem]",
+          "canonical": "py-1.5",
+          "count": 1
+        },
+        {
+          "arbitrary": "py-[0rem]",
+          "canonical": "py-0",
+          "count": 1
+        },
+        {
+          "arbitrary": "rounded-[12px]",
+          "canonical": "rounded-md",
+          "count": 1
+        },
+        {
+          "arbitrary": "rounded-[40px]",
+          "canonical": "rounded-3xl",
+          "count": 1
+        },
+        {
+          "arbitrary": "text-[#0bc111]",
+          "canonical": "text-accent-green",
+          "count": 1
+        },
+        {
+          "arbitrary": "text-[#1a2530]",
+          "canonical": "text-gray-600",
+          "count": 1
+        },
+        {
+          "arbitrary": "text-[#4d565f]",
+          "canonical": "text-gray-300",
+          "count": 1
+        },
+        {
+          "arbitrary": "text-[#64676f]",
+          "canonical": "text-gray-200",
+          "count": 3
+        },
+        {
+          "arbitrary": "w-[3rem]",
+          "canonical": "w-12",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "components/about.tsx",
+      "replacements": [
+        {
+          "arbitrary": "gap-[0.75rem]",
+          "canonical": "gap-3",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[1.5rem]",
+          "canonical": "gap-6",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[3rem]",
+          "canonical": "gap-12",
+          "count": 2
+        },
+        {
+          "arbitrary": "leading-[1.25rem]",
+          "canonical": "leading-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "leading-[1.75rem]",
+          "canonical": "leading-7",
+          "count": 2
+        },
+        {
+          "arbitrary": "mq450:px-[1.25rem]",
+          "canonical": "mq450:px-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq800:gap-[1.5rem]",
+          "canonical": "mq800:gap-6",
+          "count": 2
+        },
+        {
+          "arbitrary": "py-[5rem]",
+          "canonical": "py-20",
+          "count": 1
+        },
+        {
+          "arbitrary": "text-[#0bc111]",
+          "canonical": "text-accent-green",
+          "count": 1
+        },
+        {
+          "arbitrary": "text-[#1a2530]",
+          "canonical": "text-gray-600",
+          "count": 1
+        },
+        {
+          "arbitrary": "text-[#4d565f]",
+          "canonical": "text-gray-300",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "components/agencies.tsx",
+      "replacements": [
+        {
+          "arbitrary": "bg-[#1a8cd5]",
+          "canonical": "bg-primary-light",
+          "count": 1
+        },
+        {
+          "arbitrary": "border-[#e2e5e9]",
+          "canonical": "border-gray-500",
+          "count": 53
+        },
+        {
+          "arbitrary": "border-[1px]",
+          "canonical": "border",
+          "count": 53
+        },
+        {
+          "arbitrary": "bottom-[0rem]",
+          "canonical": "bottom-0",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[1rem]",
+          "canonical": "gap-4",
+          "count": 1
+        },
+        {
+          "arbitrary": "h-[10rem]",
+          "canonical": "h-40",
+          "count": 1
+        },
+        {
+          "arbitrary": "h-[2rem]",
+          "canonical": "h-8",
+          "count": 52
+        },
+        {
+          "arbitrary": "h-[5rem]",
+          "canonical": "h-20",
+          "count": 1
+        },
+        {
+          "arbitrary": "leading-[1.75rem]",
+          "canonical": "leading-7",
+          "count": 1
+        },
+        {
+          "arbitrary": "p-[0.5rem]",
+          "canonical": "p-2",
+          "count": 1
+        },
+        {
+          "arbitrary": "p-[1.25rem]",
+          "canonical": "p-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "p-[1.75rem]",
+          "canonical": "p-7",
+          "count": 1
+        },
+        {
+          "arbitrary": "rounded-[20px]",
+          "canonical": "rounded-xl",
+          "count": 1
+        },
+        {
+          "arbitrary": "text-[#1a2530]",
+          "canonical": "text-gray-600",
+          "count": 1
+        },
+        {
+          "arbitrary": "text-[#4d565f]",
+          "canonical": "text-gray-300",
+          "count": 1
+        },
+        {
+          "arbitrary": "w-[2rem]",
+          "canonical": "w-8",
+          "count": 52
+        },
+        {
+          "arbitrary": "w-[5rem]",
+          "canonical": "w-20",
+          "count": 1
+        },
+        {
+          "arbitrary": "z-[0]",
+          "canonical": "z-0",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "components/bannerheader.tsx",
+      "replacements": [
+        {
+          "arbitrary": "bg-[#e4e0f7]",
+          "canonical": "bg-accent-purple",
+          "count": 2
+        },
+        {
+          "arbitrary": "border-[1px]",
+          "canonical": "border",
+          "count": 2
+        },
+        {
+          "arbitrary": "bottom-[0rem]",
+          "canonical": "bottom-0",
+          "count": 2
+        },
+        {
+          "arbitrary": "from-[#12171c]",
+          "canonical": "from-dark",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[0.375rem]",
+          "canonical": "gap-1.5",
+          "count": 5
+        },
+        {
+          "arbitrary": "gap-[0.5rem]",
+          "canonical": "gap-2",
+          "count": 4
+        },
+        {
+          "arbitrary": "gap-[0.75rem]",
+          "canonical": "gap-3",
+          "count": 2
+        },
+        {
+          "arbitrary": "gap-[1.25rem]",
+          "canonical": "gap-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[1.75rem]",
+          "canonical": "gap-7",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[1rem]",
+          "canonical": "gap-4",
+          "count": 1
+        },
+        {
+          "arbitrary": "h-[1.5rem]",
+          "canonical": "h-6",
+          "count": 4
+        },
+        {
+          "arbitrary": "h-[1rem]",
+          "canonical": "h-4",
+          "count": 3
+        },
+        {
+          "arbitrary": "h-[2.25rem]",
+          "canonical": "h-9",
+          "count": 3
+        },
+        {
+          "arbitrary": "leading-[1.25rem]",
+          "canonical": "leading-5",
+          "count": 4
+        },
+        {
+          "arbitrary": "leading-[1.75rem]",
+          "canonical": "leading-7",
+          "count": 4
+        },
+        {
+          "arbitrary": "leading-[2rem]",
+          "canonical": "leading-8",
+          "count": 1
+        },
+        {
+          "arbitrary": "left-[0rem]",
+          "canonical": "left-0",
+          "count": 1
+        },
+        {
+          "arbitrary": "ml-[-0.75rem]",
+          "canonical": "-ml-3",
+          "count": 2
+        },
+        {
+          "arbitrary": "mq1350:pl-[1.25rem]",
+          "canonical": "mq1350:pl-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq1350:pr-[0rem]",
+          "canonical": "mq1350:pr-0",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq1350:pr-[1.25rem]",
+          "canonical": "mq1350:pr-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq1350:pt-[1.25rem]",
+          "canonical": "mq1350:pt-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq450:pl-[1.25rem]",
+          "canonical": "mq450:pl-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq450:pr-[1.25rem]",
+          "canonical": "mq450:pr-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "p-[0.5rem]",
+          "canonical": "p-2",
+          "count": 2
+        },
+        {
+          "arbitrary": "pb-[2.5rem]",
+          "canonical": "pb-10",
+          "count": 1
+        },
+        {
+          "arbitrary": "pl-[0rem]",
+          "canonical": "pl-0",
+          "count": 1
+        },
+        {
+          "arbitrary": "pl-[1rem]",
+          "canonical": "pl-4",
+          "count": 1
+        },
+        {
+          "arbitrary": "pr-[0rem]",
+          "canonical": "pr-0",
+          "count": 1
+        },
+        {
+          "arbitrary": "pt-[0rem]",
+          "canonical": "pt-0",
+          "count": 1
+        },
+        {
+          "arbitrary": "px-[1rem]",
+          "canonical": "px-4",
+          "count": 1
+        },
+        {
+          "arbitrary": "py-[0.875rem]",
+          "canonical": "py-3.5",
+          "count": 2
+        },
+        {
+          "arbitrary": "py-[0rem]",
+          "canonical": "py-0",
+          "count": 1
+        },
+        {
+          "arbitrary": "py-[5rem]",
+          "canonical": "py-20",
+          "count": 1
+        },
+        {
+          "arbitrary": "text-[#64676f]",
+          "canonical": "text-gray-200",
+          "count": 2
+        },
+        {
+          "arbitrary": "text-[#eee]",
+          "canonical": "text-gray-100",
+          "count": 2
+        },
+        {
+          "arbitrary": "to-[#060809]",
+          "canonical": "to-dark-darker",
+          "count": 1
+        },
+        {
+          "arbitrary": "top-[0rem]",
+          "canonical": "top-0",
+          "count": 2
+        },
+        {
+          "arbitrary": "w-[1.5rem]",
+          "canonical": "w-6",
+          "count": 4
+        },
+        {
+          "arbitrary": "w-[1rem]",
+          "canonical": "w-4",
+          "count": 3
+        },
+        {
+          "arbitrary": "w-[2.25rem]",
+          "canonical": "w-9",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "path": "components/clients.tsx",
+      "replacements": [
+        {
+          "arbitrary": "gap-[0.75rem]",
+          "canonical": "gap-3",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[1.25rem]",
+          "canonical": "gap-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[1.75rem]",
+          "canonical": "gap-7",
+          "count": 1
+        },
+        {
+          "arbitrary": "h-[1.5rem]",
+          "canonical": "h-6",
+          "count": 1
+        },
+        {
+          "arbitrary": "h-[1.75rem]",
+          "canonical": "h-7",
+          "count": 1
+        },
+        {
+          "arbitrary": "pb-[0rem]",
+          "canonical": "pb-0",
+          "count": 4
+        },
+        {
+          "arbitrary": "pl-[0rem]",
+          "canonical": "pl-0",
+          "count": 3
+        },
+        {
+          "arbitrary": "pr-[0.25rem]",
+          "canonical": "pr-1",
+          "count": 1
+        },
+        {
+          "arbitrary": "pr-[0.375rem]",
+          "canonical": "pr-1.5",
+          "count": 1
+        },
+        {
+          "arbitrary": "pt-[0.125rem]",
+          "canonical": "pt-0.5",
+          "count": 1
+        },
+        {
+          "arbitrary": "pt-[0.25rem]",
+          "canonical": "pt-1",
+          "count": 2
+        },
+        {
+          "arbitrary": "px-[0rem]",
+          "canonical": "px-0",
+          "count": 1
+        },
+        {
+          "arbitrary": "px-[1.25rem]",
+          "canonical": "px-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "py-[3rem]",
+          "canonical": "py-12",
+          "count": 1
+        },
+        {
+          "arbitrary": "text-[#1a2530]",
+          "canonical": "text-gray-600",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "components/component1.tsx",
+      "replacements": [
+        {
+          "arbitrary": "border-[#e2e5e9]",
+          "canonical": "border-gray-500",
+          "count": 1
+        },
+        {
+          "arbitrary": "border-t-[1px]",
+          "canonical": "border-t",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[0rem]",
+          "canonical": "gap-0",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[1rem]",
+          "canonical": "gap-4",
+          "count": 2
+        },
+        {
+          "arbitrary": "h-[1.75rem]",
+          "canonical": "h-7",
+          "count": 1
+        },
+        {
+          "arbitrary": "h-[2rem]",
+          "canonical": "h-8",
+          "count": 1
+        },
+        {
+          "arbitrary": "h-[3.5rem]",
+          "canonical": "h-14",
+          "count": 1
+        },
+        {
+          "arbitrary": "leading-[1.75rem]",
+          "canonical": "leading-7",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq450:leading-[1.5rem]",
+          "canonical": "mq450:leading-6",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq800:pl-[2.25rem]",
+          "canonical": "mq800:pl-9",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq800:pr-[2rem]",
+          "canonical": "mq800:pr-8",
+          "count": 1
+        },
+        {
+          "arbitrary": "p-[0.625rem]",
+          "canonical": "p-2.5",
+          "count": 1
+        },
+        {
+          "arbitrary": "p-[0.75rem]",
+          "canonical": "p-3",
+          "count": 1
+        },
+        {
+          "arbitrary": "pb-[1.5rem]",
+          "canonical": "pb-6",
+          "count": 1
+        },
+        {
+          "arbitrary": "pl-[4.5rem]",
+          "canonical": "pl-18",
+          "count": 1
+        },
+        {
+          "arbitrary": "pr-[4rem]",
+          "canonical": "pr-16",
+          "count": 1
+        },
+        {
+          "arbitrary": "px-[0.75rem]",
+          "canonical": "px-3",
+          "count": 1
+        },
+        {
+          "arbitrary": "text-[#1a2530]",
+          "canonical": "text-gray-600",
+          "count": 1
+        },
+        {
+          "arbitrary": "text-[#4d565f]",
+          "canonical": "text-gray-300",
+          "count": 1
+        },
+        {
+          "arbitrary": "w-[3.5rem]",
+          "canonical": "w-14",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "components/cta-banner.tsx",
+      "replacements": [
+        {
+          "arbitrary": "border-[1px]",
+          "canonical": "border",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[0.5rem]",
+          "canonical": "gap-2",
+          "count": 2
+        },
+        {
+          "arbitrary": "gap-[0.75rem]",
+          "canonical": "gap-3",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[1rem]",
+          "canonical": "gap-4",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[2rem]",
+          "canonical": "gap-8",
+          "count": 1
+        },
+        {
+          "arbitrary": "leading-[1.25rem]",
+          "canonical": "leading-5",
+          "count": 3
+        },
+        {
+          "arbitrary": "leading-[1.75rem]",
+          "canonical": "leading-7",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq450:gap-[1.5rem]",
+          "canonical": "mq450:gap-6",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq450:px-[1.25rem]",
+          "canonical": "mq450:px-5",
+          "count": 2
+        },
+        {
+          "arbitrary": "mq450:py-[2rem]",
+          "canonical": "mq450:py-8",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq750:pb-[4rem]",
+          "canonical": "mq750:pb-16",
+          "count": 1
+        },
+        {
+          "arbitrary": "pt-[2.5rem]",
+          "canonical": "pt-10",
+          "count": 1
+        },
+        {
+          "arbitrary": "px-[1.75rem]",
+          "canonical": "px-7",
+          "count": 1
+        },
+        {
+          "arbitrary": "px-[1rem]",
+          "canonical": "px-4",
+          "count": 1
+        },
+        {
+          "arbitrary": "px-[2.5rem]",
+          "canonical": "px-10",
+          "count": 1
+        },
+        {
+          "arbitrary": "py-[0.5rem]",
+          "canonical": "py-2",
+          "count": 1
+        },
+        {
+          "arbitrary": "py-[0.875rem]",
+          "canonical": "py-3.5",
+          "count": 1
+        },
+        {
+          "arbitrary": "rounded-[8px]",
+          "canonical": "rounded",
+          "count": 1
+        },
+        {
+          "arbitrary": "text-[#1a2530]",
+          "canonical": "text-gray-600",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "path": "components/cta-section.tsx",
+      "replacements": [
+        {
+          "arbitrary": "bg-[#0461c3]",
+          "canonical": "bg-primary",
+          "count": 4
+        },
+        {
+          "arbitrary": "bottom-[0rem]",
+          "canonical": "bottom-0",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[0.625rem]",
+          "canonical": "gap-2.5",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[0.75rem]",
+          "canonical": "gap-3",
+          "count": 5
+        },
+        {
+          "arbitrary": "gap-[1.5rem]",
+          "canonical": "gap-6",
+          "count": 2
+        },
+        {
+          "arbitrary": "gap-[1.75rem]",
+          "canonical": "gap-7",
+          "count": 1
+        },
+        {
+          "arbitrary": "h-[0.75rem]",
+          "canonical": "h-3",
+          "count": 4
+        },
+        {
+          "arbitrary": "leading-[1.25rem]",
+          "canonical": "leading-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "leading-[1.75rem]",
+          "canonical": "leading-7",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq450:px-[1.25rem]",
+          "canonical": "mq450:px-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "p-[0.25rem]",
+          "canonical": "p-1",
+          "count": 4
+        },
+        {
+          "arbitrary": "p-[2.5rem]",
+          "canonical": "p-10",
+          "count": 1
+        },
+        {
+          "arbitrary": "py-[2.5rem]",
+          "canonical": "py-10",
+          "count": 1
+        },
+        {
+          "arbitrary": "text-[#0bc111]",
+          "canonical": "text-accent-green",
+          "count": 1
+        },
+        {
+          "arbitrary": "text-[#1a2530]",
+          "canonical": "text-gray-600",
+          "count": 1
+        },
+        {
+          "arbitrary": "text-[#4d565f]",
+          "canonical": "text-gray-300",
+          "count": 1
+        },
+        {
+          "arbitrary": "text-[#4d575f]",
+          "canonical": "text-gray-400",
+          "count": 1
+        },
+        {
+          "arbitrary": "z-[0]",
+          "canonical": "z-0",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "components/cta-section1.tsx",
+      "replacements": [
+        {
+          "arbitrary": "bg-[#0461c3]",
+          "canonical": "bg-primary",
+          "count": 1
+        },
+        {
+          "arbitrary": "border-[#0461c3]",
+          "canonical": "border-primary",
+          "count": 4
+        },
+        {
+          "arbitrary": "border-[4px]",
+          "canonical": "border-4",
+          "count": 5
+        },
+        {
+          "arbitrary": "bottom-[0rem]",
+          "canonical": "bottom-0",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[0.75rem]",
+          "canonical": "gap-3",
+          "count": 6
+        },
+        {
+          "arbitrary": "gap-[1.75rem]",
+          "canonical": "gap-7",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[5rem]",
+          "canonical": "gap-20",
+          "count": 1
+        },
+        {
+          "arbitrary": "leading-[1.5rem]",
+          "canonical": "leading-6",
+          "count": 5
+        },
+        {
+          "arbitrary": "leading-[1.75rem]",
+          "canonical": "leading-7",
+          "count": 1
+        },
+        {
+          "arbitrary": "left-[0rem]",
+          "canonical": "left-0",
+          "count": 1
+        },
+        {
+          "arbitrary": "left-[2.25rem]",
+          "canonical": "left-9",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq450:gap-[1.25rem]",
+          "canonical": "mq450:gap-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq450:pl-[1.25rem]",
+          "canonical": "mq450:pl-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq450:pr-[1.25rem]",
+          "canonical": "mq450:pr-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq800:gap-[2.5rem]",
+          "canonical": "mq800:gap-10",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq800:pb-[4rem]",
+          "canonical": "mq800:pb-16",
+          "count": 1
+        },
+        {
+          "arbitrary": "pr-[1.25rem]",
+          "canonical": "pr-5",
+          "count": 2
+        },
+        {
+          "arbitrary": "pt-[2.5rem]",
+          "canonical": "pt-10",
+          "count": 1
+        },
+        {
+          "arbitrary": "px-[1.5rem]",
+          "canonical": "px-6",
+          "count": 3
+        },
+        {
+          "arbitrary": "py-[1rem]",
+          "canonical": "py-4",
+          "count": 1
+        },
+        {
+          "arbitrary": "text-[#1a2530]",
+          "canonical": "text-gray-600",
+          "count": 2
+        },
+        {
+          "arbitrary": "top-[0rem]",
+          "canonical": "top-0",
+          "count": 1
+        },
+        {
+          "arbitrary": "z-[0]",
+          "canonical": "z-0",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "components/distribution-step.tsx",
+      "replacements": [
+        {
+          "arbitrary": "gap-[0.5rem]",
+          "canonical": "gap-2",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[1.25rem]",
+          "canonical": "gap-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "leading-[1.75rem]",
+          "canonical": "leading-7",
+          "count": 1
+        },
+        {
+          "arbitrary": "leading-[2.5rem]",
+          "canonical": "leading-10",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq1050:leading-[2rem]",
+          "canonical": "mq1050:leading-8",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq450:leading-[1.5rem]",
+          "canonical": "mq450:leading-6",
+          "count": 2
+        },
+        {
+          "arbitrary": "p-[0.75rem]",
+          "canonical": "p-3",
+          "count": 1
+        },
+        {
+          "arbitrary": "rounded-[40px]",
+          "canonical": "rounded-3xl",
+          "count": 1
+        },
+        {
+          "arbitrary": "text-[#1a2530]",
+          "canonical": "text-gray-600",
+          "count": 1
+        },
+        {
+          "arbitrary": "text-[#1a8cd5]",
+          "canonical": "text-primary-light",
+          "count": 1
+        },
+        {
+          "arbitrary": "text-[#4d565f]",
+          "canonical": "text-gray-300",
+          "count": 1
+        },
+        {
+          "arbitrary": "z-[0]",
+          "canonical": "z-0",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "components/domain-card.tsx",
+      "replacements": [
+        {
+          "arbitrary": "border-[#e2e5e9]",
+          "canonical": "border-gray-500",
+          "count": 1
+        },
+        {
+          "arbitrary": "border-[1px]",
+          "canonical": "border",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[0.5rem]",
+          "canonical": "gap-2",
+          "count": 1
+        },
+        {
+          "arbitrary": "hover:border-[#1a8cd5]",
+          "canonical": "hover:border-primary-light",
+          "count": 1
+        },
+        {
+          "arbitrary": "leading-[1.25rem]",
+          "canonical": "leading-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "leading-[1.5rem]",
+          "canonical": "leading-6",
+          "count": 1
+        },
+        {
+          "arbitrary": "px-[1.25rem]",
+          "canonical": "px-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "py-[1.25rem]",
+          "canonical": "py-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "rounded-[12px]",
+          "canonical": "rounded-md",
+          "count": 1
+        },
+        {
+          "arbitrary": "text-[#1a2530]",
+          "canonical": "text-gray-600",
+          "count": 1
+        },
+        {
+          "arbitrary": "text-[#1a8cd5]",
+          "canonical": "text-primary-light",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "components/faq-accordion.tsx",
+      "replacements": [
+        {
+          "arbitrary": "gap-[0.5rem]",
+          "canonical": "gap-2",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[1rem]",
+          "canonical": "gap-4",
+          "count": 1
+        },
+        {
+          "arbitrary": "leading-[1.75rem]",
+          "canonical": "leading-7",
+          "count": 1
+        },
+        {
+          "arbitrary": "p-[0.375rem]",
+          "canonical": "p-1.5",
+          "count": 1
+        },
+        {
+          "arbitrary": "p-[1.75rem]",
+          "canonical": "p-7",
+          "count": 1
+        },
+        {
+          "arbitrary": "pl-[0rem]",
+          "canonical": "pl-0",
+          "count": 1
+        },
+        {
+          "arbitrary": "pr-[2rem]",
+          "canonical": "pr-8",
+          "count": 1
+        },
+        {
+          "arbitrary": "py-[0rem]",
+          "canonical": "py-0",
+          "count": 1
+        },
+        {
+          "arbitrary": "rounded-[16px]",
+          "canonical": "rounded-lg",
+          "count": 1
+        },
+        {
+          "arbitrary": "text-[#4d565f]",
+          "canonical": "text-gray-300",
+          "count": 1
+        },
+        {
+          "arbitrary": "w-[1.25rem]",
+          "canonical": "w-5",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "components/faq-category.tsx",
+      "replacements": [
+        {
+          "arbitrary": "gap-[0.75rem]",
+          "canonical": "gap-3",
+          "count": 1
+        },
+        {
+          "arbitrary": "h-[1.5rem]",
+          "canonical": "h-6",
+          "count": 2
+        },
+        {
+          "arbitrary": "px-[1.5rem]",
+          "canonical": "px-6",
+          "count": 1
+        },
+        {
+          "arbitrary": "py-[1.25rem]",
+          "canonical": "py-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "w-[1.5rem]",
+          "canonical": "w-6",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "path": "components/feature-item.tsx",
+      "replacements": [
+        {
+          "arbitrary": "bg-[#1a8cd5]",
+          "canonical": "bg-primary-light",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[0.5rem]",
+          "canonical": "gap-2",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[1rem]",
+          "canonical": "gap-4",
+          "count": 1
+        },
+        {
+          "arbitrary": "h-[1.5rem]",
+          "canonical": "h-6",
+          "count": 1
+        },
+        {
+          "arbitrary": "h-[3rem]",
+          "canonical": "h-12",
+          "count": 1
+        },
+        {
+          "arbitrary": "leading-[1.75rem]",
+          "canonical": "leading-7",
+          "count": 3
+        },
+        {
+          "arbitrary": "p-[0.75rem]",
+          "canonical": "p-3",
+          "count": 1
+        },
+        {
+          "arbitrary": "rounded-[40px]",
+          "canonical": "rounded-3xl",
+          "count": 1
+        },
+        {
+          "arbitrary": "w-[1.5rem]",
+          "canonical": "w-6",
+          "count": 1
+        },
+        {
+          "arbitrary": "w-[3rem]",
+          "canonical": "w-12",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "components/footer.tsx",
+      "replacements": [
+        {
+          "arbitrary": "border-[#e2e5e9]",
+          "canonical": "border-gray-500",
+          "count": 2
+        },
+        {
+          "arbitrary": "border-t-[1px]",
+          "canonical": "border-t",
+          "count": 2
+        },
+        {
+          "arbitrary": "gap-[0.5rem]",
+          "canonical": "gap-2",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[2.5rem]",
+          "canonical": "gap-10",
+          "count": 1
+        },
+        {
+          "arbitrary": "h-[1.5rem]",
+          "canonical": "h-6",
+          "count": 1
+        },
+        {
+          "arbitrary": "leading-[1.5rem]",
+          "canonical": "leading-6",
+          "count": 3
+        },
+        {
+          "arbitrary": "mq450:gap-[1.5rem]",
+          "canonical": "mq450:gap-6",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq450:pb-[1.5rem]",
+          "canonical": "mq450:pb-6",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq450:pt-[1.5rem]",
+          "canonical": "mq450:pt-6",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq450:pt-[2.5rem]",
+          "canonical": "mq450:pt-10",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq450:px-[1.25rem]",
+          "canonical": "mq450:px-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq800:gap-[1.5rem]",
+          "canonical": "mq800:gap-6",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq800:gap-[2.5rem]",
+          "canonical": "mq800:gap-10",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq800:pb-[2.5rem]",
+          "canonical": "mq800:pb-10",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq800:pt-[2rem]",
+          "canonical": "mq800:pt-8",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq800:pt-[3.5rem]",
+          "canonical": "mq800:pt-14",
+          "count": 1
+        },
+        {
+          "arbitrary": "pb-[0rem]",
+          "canonical": "pb-0",
+          "count": 1
+        },
+        {
+          "arbitrary": "pt-[3rem]",
+          "canonical": "pt-12",
+          "count": 1
+        },
+        {
+          "arbitrary": "px-[0rem]",
+          "canonical": "px-0",
+          "count": 1
+        },
+        {
+          "arbitrary": "text-[#4d565f]",
+          "canonical": "text-gray-300",
+          "count": 1
+        },
+        {
+          "arbitrary": "w-[7.5rem]",
+          "canonical": "w-30",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "components/frame-component.tsx",
+      "replacements": [
+        {
+          "arbitrary": "bg-[#0461c3]",
+          "canonical": "bg-primary",
+          "count": 1
+        },
+        {
+          "arbitrary": "border-[4px]",
+          "canonical": "border-4",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[0.75rem]",
+          "canonical": "gap-3",
+          "count": 1
+        },
+        {
+          "arbitrary": "h-[1.75rem]",
+          "canonical": "h-7",
+          "count": 1
+        },
+        {
+          "arbitrary": "h-[1rem]",
+          "canonical": "h-4",
+          "count": 1
+        },
+        {
+          "arbitrary": "leading-[1.75rem]",
+          "canonical": "leading-7",
+          "count": 1
+        },
+        {
+          "arbitrary": "p-[0.25rem]",
+          "canonical": "p-1",
+          "count": 1
+        },
+        {
+          "arbitrary": "px-[1.25rem]",
+          "canonical": "px-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "text-[#4d565f]",
+          "canonical": "text-gray-300",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "components/frame-component1.tsx",
+      "replacements": [
+        {
+          "arbitrary": "bg-[#181f25]",
+          "canonical": "bg-dark-light",
+          "count": 1
+        },
+        {
+          "arbitrary": "border-[1px]",
+          "canonical": "border",
+          "count": 1
+        },
+        {
+          "arbitrary": "border-[2px]",
+          "canonical": "border-2",
+          "count": 1
+        },
+        {
+          "arbitrary": "border-b-[1px]",
+          "canonical": "border-b",
+          "count": 2
+        },
+        {
+          "arbitrary": "gap-[0.5rem]",
+          "canonical": "gap-2",
+          "count": 4
+        },
+        {
+          "arbitrary": "gap-[0.75rem]",
+          "canonical": "gap-3",
+          "count": 3
+        },
+        {
+          "arbitrary": "gap-[1.25rem]",
+          "canonical": "gap-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "h-[1rem]",
+          "canonical": "h-4",
+          "count": 3
+        },
+        {
+          "arbitrary": "leading-[1.25rem]",
+          "canonical": "leading-5",
+          "count": 7
+        },
+        {
+          "arbitrary": "leading-[1.75rem]",
+          "canonical": "leading-7",
+          "count": 1
+        },
+        {
+          "arbitrary": "p-[0.75rem]",
+          "canonical": "p-3",
+          "count": 3
+        },
+        {
+          "arbitrary": "px-[0.5rem]",
+          "canonical": "px-2",
+          "count": 3
+        },
+        {
+          "arbitrary": "px-[1.5rem]",
+          "canonical": "px-6",
+          "count": 1
+        },
+        {
+          "arbitrary": "py-[0.25rem]",
+          "canonical": "py-1",
+          "count": 3
+        },
+        {
+          "arbitrary": "py-[1.25rem]",
+          "canonical": "py-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "rounded-[40px]",
+          "canonical": "rounded-3xl",
+          "count": 3
+        },
+        {
+          "arbitrary": "text-[#0461c3]",
+          "canonical": "text-primary",
+          "count": 4
+        },
+        {
+          "arbitrary": "text-[#4d565f]",
+          "canonical": "text-gray-300",
+          "count": 1
+        },
+        {
+          "arbitrary": "text-[#eee]",
+          "canonical": "text-gray-100",
+          "count": 1
+        },
+        {
+          "arbitrary": "w-[1rem]",
+          "canonical": "w-4",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "path": "components/frame-component2.tsx",
+      "replacements": [
+        {
+          "arbitrary": "gap-[0.5rem]",
+          "canonical": "gap-2",
+          "count": 3
+        },
+        {
+          "arbitrary": "gap-[0.75rem]",
+          "canonical": "gap-3",
+          "count": 2
+        },
+        {
+          "arbitrary": "gap-[1.25rem]",
+          "canonical": "gap-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[1.5rem]",
+          "canonical": "gap-6",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[1.75rem]",
+          "canonical": "gap-7",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[1rem]",
+          "canonical": "gap-4",
+          "count": 1
+        },
+        {
+          "arbitrary": "h-[1.75rem]",
+          "canonical": "h-7",
+          "count": 3
+        },
+        {
+          "arbitrary": "h-[3rem]",
+          "canonical": "h-12",
+          "count": 4
+        },
+        {
+          "arbitrary": "leading-[1.25rem]",
+          "canonical": "leading-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "leading-[1.5rem]",
+          "canonical": "leading-6",
+          "count": 3
+        },
+        {
+          "arbitrary": "leading-[1.75rem]",
+          "canonical": "leading-7",
+          "count": 7
+        },
+        {
+          "arbitrary": "left-[5.5rem]",
+          "canonical": "left-22",
+          "count": 1
+        },
+        {
+          "arbitrary": "left-[8rem]",
+          "canonical": "left-32",
+          "count": 1
+        },
+        {
+          "arbitrary": "opacity-[0.9]",
+          "canonical": "opacity-90",
+          "count": 3
+        },
+        {
+          "arbitrary": "px-[1.25rem]",
+          "canonical": "px-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "py-[0rem]",
+          "canonical": "py-0",
+          "count": 1
+        },
+        {
+          "arbitrary": "text-[#0bc111]",
+          "canonical": "text-accent-green",
+          "count": 1
+        },
+        {
+          "arbitrary": "text-[#1a2530]",
+          "canonical": "text-gray-600",
+          "count": 1
+        },
+        {
+          "arbitrary": "text-[#4d565f]",
+          "canonical": "text-gray-300",
+          "count": 2
+        },
+        {
+          "arbitrary": "w-[1.75rem]",
+          "canonical": "w-7",
+          "count": 3
+        },
+        {
+          "arbitrary": "w-[3rem]",
+          "canonical": "w-12",
+          "count": 4
+        },
+        {
+          "arbitrary": "z-[0]",
+          "canonical": "z-0",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "path": "components/frame-component3.tsx",
+      "replacements": [
+        {
+          "arbitrary": "gap-[1.5rem]",
+          "canonical": "gap-6",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[1rem]",
+          "canonical": "gap-4",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[2rem]",
+          "canonical": "gap-8",
+          "count": 1
+        },
+        {
+          "arbitrary": "leading-[1.25rem]",
+          "canonical": "leading-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "leading-[1.75rem]",
+          "canonical": "leading-7",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq1350:pt-[0rem]",
+          "canonical": "mq1350:pt-0",
+          "count": 2
+        },
+        {
+          "arbitrary": "mq450:pt-[0rem]",
+          "canonical": "mq450:pt-0",
+          "count": 2
+        },
+        {
+          "arbitrary": "mq800:gap-[1rem]",
+          "canonical": "mq800:gap-4",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq800:pt-[0rem]",
+          "canonical": "mq800:pt-0",
+          "count": 2
+        },
+        {
+          "arbitrary": "pb-[0rem]",
+          "canonical": "pb-0",
+          "count": 2
+        },
+        {
+          "arbitrary": "px-[0rem]",
+          "canonical": "px-0",
+          "count": 2
+        },
+        {
+          "arbitrary": "text-[#0bc111]",
+          "canonical": "text-accent-green",
+          "count": 1
+        },
+        {
+          "arbitrary": "text-[#1a2530]",
+          "canonical": "text-gray-600",
+          "count": 2
+        },
+        {
+          "arbitrary": "text-[#4d565f]",
+          "canonical": "text-gray-300",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "components/frame-component4.tsx",
+      "replacements": [
+        {
+          "arbitrary": "border-[#e2e5e9]",
+          "canonical": "border-gray-500",
+          "count": 4
+        },
+        {
+          "arbitrary": "border-[1px]",
+          "canonical": "border",
+          "count": 5
+        },
+        {
+          "arbitrary": "gap-[0.5rem]",
+          "canonical": "gap-2",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[0.625rem]",
+          "canonical": "gap-2.5",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[0.75rem]",
+          "canonical": "gap-3",
+          "count": 3
+        },
+        {
+          "arbitrary": "gap-[1.25rem]",
+          "canonical": "gap-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[1.75rem]",
+          "canonical": "gap-7",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[1rem]",
+          "canonical": "gap-4",
+          "count": 5
+        },
+        {
+          "arbitrary": "h-[1.25rem]",
+          "canonical": "h-5",
+          "count": 6
+        },
+        {
+          "arbitrary": "h-[1.5rem]",
+          "canonical": "h-6",
+          "count": 4
+        },
+        {
+          "arbitrary": "h-[2rem]",
+          "canonical": "h-8",
+          "count": 2
+        },
+        {
+          "arbitrary": "leading-[1.5rem]",
+          "canonical": "leading-6",
+          "count": 5
+        },
+        {
+          "arbitrary": "leading-[1.75rem]",
+          "canonical": "leading-7",
+          "count": 2
+        },
+        {
+          "arbitrary": "leading-[2rem]",
+          "canonical": "leading-8",
+          "count": 1
+        },
+        {
+          "arbitrary": "left-[0rem]",
+          "canonical": "left-0",
+          "count": 5
+        },
+        {
+          "arbitrary": "left-[2rem]",
+          "canonical": "left-8",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq450:gap-[2rem]",
+          "canonical": "mq450:gap-8",
+          "count": 1
+        },
+        {
+          "arbitrary": "p-[0.75rem]",
+          "canonical": "p-3",
+          "count": 5
+        },
+        {
+          "arbitrary": "rounded-[40px]",
+          "canonical": "rounded-3xl",
+          "count": 5
+        },
+        {
+          "arbitrary": "text-[#1a2530]",
+          "canonical": "text-gray-600",
+          "count": 2
+        },
+        {
+          "arbitrary": "text-[#4d575f]",
+          "canonical": "text-gray-400",
+          "count": 2
+        },
+        {
+          "arbitrary": "top-[0.25rem]",
+          "canonical": "top-1",
+          "count": 1
+        },
+        {
+          "arbitrary": "top-[0rem]",
+          "canonical": "top-0",
+          "count": 6
+        },
+        {
+          "arbitrary": "w-[1.25rem]",
+          "canonical": "w-5",
+          "count": 2
+        },
+        {
+          "arbitrary": "w-[10rem]",
+          "canonical": "w-40",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "path": "components/frame-component5.tsx",
+      "replacements": [
+        {
+          "arbitrary": "gap-[1.25rem]",
+          "canonical": "gap-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq450:px-[1.25rem]",
+          "canonical": "mq450:px-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq800:px-[2rem]",
+          "canonical": "mq800:px-8",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "components/frame-component6.tsx",
+      "replacements": [
+        {
+          "arbitrary": "[row-gap:20px]",
+          "canonical": "gap-y-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "bg-[#1a8cd5]",
+          "canonical": "bg-primary-light",
+          "count": 1
+        },
+        {
+          "arbitrary": "border-[#e2e5e9]",
+          "canonical": "border-gray-500",
+          "count": 1
+        },
+        {
+          "arbitrary": "border-[1px]",
+          "canonical": "border",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[0.375rem]",
+          "canonical": "gap-1.5",
+          "count": 2
+        },
+        {
+          "arbitrary": "gap-[0.625rem]",
+          "canonical": "gap-2.5",
+          "count": 2
+        },
+        {
+          "arbitrary": "gap-[0.75rem]",
+          "canonical": "gap-3",
+          "count": 4
+        },
+        {
+          "arbitrary": "gap-[1.25rem]",
+          "canonical": "gap-5",
+          "count": 2
+        },
+        {
+          "arbitrary": "gap-[1.5rem]",
+          "canonical": "gap-6",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[1rem]",
+          "canonical": "gap-4",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[3rem]",
+          "canonical": "gap-12",
+          "count": 1
+        },
+        {
+          "arbitrary": "h-[0.5rem]",
+          "canonical": "h-2",
+          "count": 2
+        },
+        {
+          "arbitrary": "h-[1.5rem]",
+          "canonical": "h-6",
+          "count": 2
+        },
+        {
+          "arbitrary": "leading-[1.25rem]",
+          "canonical": "leading-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "leading-[1.75rem]",
+          "canonical": "leading-7",
+          "count": 2
+        },
+        {
+          "arbitrary": "left-[0rem]",
+          "canonical": "left-0",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq450:gap-[1.5rem]",
+          "canonical": "mq450:gap-6",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq450:leading-[1.5rem]",
+          "canonical": "mq450:leading-6",
+          "count": 2
+        },
+        {
+          "arbitrary": "mq450:p-[1.25rem]",
+          "canonical": "mq450:p-5",
+          "count": 2
+        },
+        {
+          "arbitrary": "mq450:pb-[2rem]",
+          "canonical": "mq450:pb-8",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq450:pt-[2rem]",
+          "canonical": "mq450:pt-8",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq450:px-[1.25rem]",
+          "canonical": "mq450:px-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq800:gap-[1.5rem]",
+          "canonical": "mq800:gap-6",
+          "count": 1
+        },
+        {
+          "arbitrary": "p-[0.5rem]",
+          "canonical": "p-2",
+          "count": 1
+        },
+        {
+          "arbitrary": "p-[2rem]",
+          "canonical": "p-8",
+          "count": 2
+        },
+        {
+          "arbitrary": "px-[1rem]",
+          "canonical": "px-4",
+          "count": 2
+        },
+        {
+          "arbitrary": "py-[0rem]",
+          "canonical": "py-0",
+          "count": 2
+        },
+        {
+          "arbitrary": "rounded-[20px]",
+          "canonical": "rounded-xl",
+          "count": 1
+        },
+        {
+          "arbitrary": "text-[#0bc111]",
+          "canonical": "text-accent-green",
+          "count": 1
+        },
+        {
+          "arbitrary": "text-[#1a2530]",
+          "canonical": "text-gray-600",
+          "count": 2
+        },
+        {
+          "arbitrary": "w-[0.5rem]",
+          "canonical": "w-2",
+          "count": 2
+        },
+        {
+          "arbitrary": "w-[1.5rem]",
+          "canonical": "w-6",
+          "count": 2
+        },
+        {
+          "arbitrary": "w-[9rem]",
+          "canonical": "w-36",
+          "count": 1
+        },
+        {
+          "arbitrary": "z-[0]",
+          "canonical": "z-0",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "components/header.tsx",
+      "replacements": [
+        {
+          "arbitrary": "-translate-y-[0.5rem]",
+          "canonical": "-translate-y-2",
+          "count": 1
+        },
+        {
+          "arbitrary": "bg-[#12171c]",
+          "canonical": "bg-dark",
+          "count": 2
+        },
+        {
+          "arbitrary": "border-b-[1px]",
+          "canonical": "border-b",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[0.375rem]",
+          "canonical": "gap-1.5",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[1.25rem]",
+          "canonical": "gap-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[2.5rem]",
+          "canonical": "gap-10",
+          "count": 2
+        },
+        {
+          "arbitrary": "gap-[2rem]",
+          "canonical": "gap-8",
+          "count": 1
+        },
+        {
+          "arbitrary": "h-[0.125rem]",
+          "canonical": "h-0.5",
+          "count": 3
+        },
+        {
+          "arbitrary": "h-[1.5rem]",
+          "canonical": "h-6",
+          "count": 1
+        },
+        {
+          "arbitrary": "h-[2.75rem]",
+          "canonical": "h-11",
+          "count": 2
+        },
+        {
+          "arbitrary": "h-[2rem]",
+          "canonical": "h-8",
+          "count": 1
+        },
+        {
+          "arbitrary": "hover:text-[#0bc111]",
+          "canonical": "hover:text-accent-green",
+          "count": 1
+        },
+        {
+          "arbitrary": "leading-[2rem]",
+          "canonical": "leading-8",
+          "count": 2
+        },
+        {
+          "arbitrary": "mq1125:gap-[1.5rem]",
+          "canonical": "mq1125:gap-6",
+          "count": 2
+        },
+        {
+          "arbitrary": "mq450:px-[1.25rem]",
+          "canonical": "mq450:px-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq450:py-[1rem]",
+          "canonical": "mq450:py-4",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq450:w-[8rem]",
+          "canonical": "mq450:w-32",
+          "count": 1
+        },
+        {
+          "arbitrary": "mt-[1rem]",
+          "canonical": "mt-4",
+          "count": 1
+        },
+        {
+          "arbitrary": "px-[2rem]",
+          "canonical": "px-8",
+          "count": 1
+        },
+        {
+          "arbitrary": "py-[0.75rem]",
+          "canonical": "py-3",
+          "count": 1
+        },
+        {
+          "arbitrary": "py-[1.25rem]",
+          "canonical": "py-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "right-[1.25rem]",
+          "canonical": "right-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "text-[#0bc111]",
+          "canonical": "text-accent-green",
+          "count": 1
+        },
+        {
+          "arbitrary": "text-[#12171c]",
+          "canonical": "text-dark",
+          "count": 1
+        },
+        {
+          "arbitrary": "text-[#64676f]",
+          "canonical": "text-gray-200",
+          "count": 2
+        },
+        {
+          "arbitrary": "top-[0rem]",
+          "canonical": "top-0",
+          "count": 1
+        },
+        {
+          "arbitrary": "top-[1rem]",
+          "canonical": "top-4",
+          "count": 1
+        },
+        {
+          "arbitrary": "translate-y-[0.5rem]",
+          "canonical": "translate-y-2",
+          "count": 1
+        },
+        {
+          "arbitrary": "w-[1.5rem]",
+          "canonical": "w-6",
+          "count": 4
+        },
+        {
+          "arbitrary": "w-[10rem]",
+          "canonical": "w-40",
+          "count": 1
+        },
+        {
+          "arbitrary": "w-[2.75rem]",
+          "canonical": "w-11",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "path": "components/how-it-works.tsx",
+      "replacements": [
+        {
+          "arbitrary": "border-[4px]",
+          "canonical": "border-4",
+          "count": 1
+        },
+        {
+          "arbitrary": "focus-visible:ring-[#0bc111]",
+          "canonical": "focus-visible:ring-accent-green",
+          "count": 1
+        },
+        {
+          "arbitrary": "focus-visible:ring-offset-[#12171c]",
+          "canonical": "focus-visible:ring-offset-dark",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[0.25rem]",
+          "canonical": "gap-1",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[0.75rem]",
+          "canonical": "gap-3",
+          "count": 1
+        },
+        {
+          "arbitrary": "leading-[1.5rem]",
+          "canonical": "leading-6",
+          "count": 2
+        },
+        {
+          "arbitrary": "leading-[1.75rem]",
+          "canonical": "leading-7",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq450:h-[10rem]",
+          "canonical": "mq450:h-40",
+          "count": 1
+        },
+        {
+          "arbitrary": "mt-[-1.25rem]",
+          "canonical": "-mt-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "px-[0.625rem]",
+          "canonical": "px-2.5",
+          "count": 1
+        },
+        {
+          "arbitrary": "px-[1.5rem]",
+          "canonical": "px-6",
+          "count": 1
+        },
+        {
+          "arbitrary": "py-[0.25rem]",
+          "canonical": "py-1",
+          "count": 1
+        },
+        {
+          "arbitrary": "py-[1.25rem]",
+          "canonical": "py-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "rounded-[28px]",
+          "canonical": "rounded-2xl",
+          "count": 1
+        },
+        {
+          "arbitrary": "rounded-[40px]",
+          "canonical": "rounded-3xl",
+          "count": 1
+        },
+        {
+          "arbitrary": "text-[#0bc111]",
+          "canonical": "text-accent-green",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "components/industry-tag.tsx",
+      "replacements": [
+        {
+          "arbitrary": "bg-[#12171c]",
+          "canonical": "bg-dark",
+          "count": 1
+        },
+        {
+          "arbitrary": "bg-[#1a8cd5]",
+          "canonical": "bg-primary-light",
+          "count": 1
+        },
+        {
+          "arbitrary": "border-[1px]",
+          "canonical": "border",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[0.5rem]",
+          "canonical": "gap-2",
+          "count": 1
+        },
+        {
+          "arbitrary": "h-[0.5rem]",
+          "canonical": "h-2",
+          "count": 1
+        },
+        {
+          "arbitrary": "leading-[1.5rem]",
+          "canonical": "leading-6",
+          "count": 1
+        },
+        {
+          "arbitrary": "pl-[1rem]",
+          "canonical": "pl-4",
+          "count": 1
+        },
+        {
+          "arbitrary": "py-[0.375rem]",
+          "canonical": "py-1.5",
+          "count": 1
+        },
+        {
+          "arbitrary": "rounded-[40px]",
+          "canonical": "rounded-3xl",
+          "count": 1
+        },
+        {
+          "arbitrary": "w-[0.5rem]",
+          "canonical": "w-2",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "components/item-menu.tsx",
+      "replacements": [
+        {
+          "arbitrary": "hover:text-[#1a8cd5]",
+          "canonical": "hover:text-primary-light",
+          "count": 1
+        },
+        {
+          "arbitrary": "leading-[1.5rem]",
+          "canonical": "leading-6",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "components/list.tsx",
+      "replacements": [
+        {
+          "arbitrary": "gap-[1.25rem]",
+          "canonical": "gap-5",
+          "count": 2
+        },
+        {
+          "arbitrary": "leading-[2rem]",
+          "canonical": "leading-8",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "components/network-category.tsx",
+      "replacements": [
+        {
+          "arbitrary": "gap-[0.25rem]",
+          "canonical": "gap-1",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[1rem]",
+          "canonical": "gap-4",
+          "count": 1
+        },
+        {
+          "arbitrary": "h-[1.5rem]",
+          "canonical": "h-6",
+          "count": 1
+        },
+        {
+          "arbitrary": "h-[3rem]",
+          "canonical": "h-12",
+          "count": 1
+        },
+        {
+          "arbitrary": "leading-[1.25rem]",
+          "canonical": "leading-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "leading-[1.75rem]",
+          "canonical": "leading-7",
+          "count": 1
+        },
+        {
+          "arbitrary": "pl-[2rem]",
+          "canonical": "pl-8",
+          "count": 1
+        },
+        {
+          "arbitrary": "pr-[1.5rem]",
+          "canonical": "pr-6",
+          "count": 1
+        },
+        {
+          "arbitrary": "py-[1.5rem]",
+          "canonical": "py-6",
+          "count": 1
+        },
+        {
+          "arbitrary": "text-[#1a2530]",
+          "canonical": "text-gray-600",
+          "count": 1
+        },
+        {
+          "arbitrary": "text-[#4d565f]",
+          "canonical": "text-gray-300",
+          "count": 1
+        },
+        {
+          "arbitrary": "w-[1.5rem]",
+          "canonical": "w-6",
+          "count": 1
+        },
+        {
+          "arbitrary": "w-[3rem]",
+          "canonical": "w-12",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "components/network-tag.tsx",
+      "replacements": [
+        {
+          "arbitrary": "gap-[0.5rem]",
+          "canonical": "gap-2",
+          "count": 1
+        },
+        {
+          "arbitrary": "h-[1.25rem]",
+          "canonical": "h-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "leading-[1.5rem]",
+          "canonical": "leading-6",
+          "count": 1
+        },
+        {
+          "arbitrary": "px-[0.75rem]",
+          "canonical": "px-3",
+          "count": 1
+        },
+        {
+          "arbitrary": "py-[0.375rem]",
+          "canonical": "py-1.5",
+          "count": 1
+        },
+        {
+          "arbitrary": "rounded-[40px]",
+          "canonical": "rounded-3xl",
+          "count": 1
+        },
+        {
+          "arbitrary": "text-[#4d565f]",
+          "canonical": "text-gray-300",
+          "count": 1
+        },
+        {
+          "arbitrary": "w-[1.25rem]",
+          "canonical": "w-5",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "components/newsroom-card.tsx",
+      "replacements": [
+        {
+          "arbitrary": "border-[#e2e5e9]",
+          "canonical": "border-gray-500",
+          "count": 1
+        },
+        {
+          "arbitrary": "border-[1px]",
+          "canonical": "border",
+          "count": 1
+        },
+        {
+          "arbitrary": "leading-[1.25rem]",
+          "canonical": "leading-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "leading-[1.5rem]",
+          "canonical": "leading-6",
+          "count": 1
+        },
+        {
+          "arbitrary": "mb-[1.5rem]",
+          "canonical": "mb-6",
+          "count": 1
+        },
+        {
+          "arbitrary": "mt-[0.75rem]",
+          "canonical": "mt-3",
+          "count": 1
+        },
+        {
+          "arbitrary": "px-[1.25rem]",
+          "canonical": "px-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "py-[1.25rem]",
+          "canonical": "py-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "rounded-[12px]",
+          "canonical": "rounded-md",
+          "count": 1
+        },
+        {
+          "arbitrary": "text-[#1a2530]",
+          "canonical": "text-gray-600",
+          "count": 1
+        },
+        {
+          "arbitrary": "text-[#64676f]",
+          "canonical": "text-gray-200",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "components/newsroom.tsx",
+      "replacements": [
+        {
+          "arbitrary": "border-[#e2e5e9]",
+          "canonical": "border-gray-500",
+          "count": 2
+        },
+        {
+          "arbitrary": "border-[1px]",
+          "canonical": "border",
+          "count": 3
+        },
+        {
+          "arbitrary": "gap-[0.75rem]",
+          "canonical": "gap-3",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[1.5rem]",
+          "canonical": "gap-6",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[1rem]",
+          "canonical": "gap-4",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[2.5rem]",
+          "canonical": "gap-10",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[3rem]",
+          "canonical": "gap-12",
+          "count": 1
+        },
+        {
+          "arbitrary": "h-[2.75rem]",
+          "canonical": "h-11",
+          "count": 3
+        },
+        {
+          "arbitrary": "leading-[1.25rem]",
+          "canonical": "leading-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "leading-[1.75rem]",
+          "canonical": "leading-7",
+          "count": 4
+        },
+        {
+          "arbitrary": "mq450:px-[1.25rem]",
+          "canonical": "mq450:px-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq800:py-[3.5rem]",
+          "canonical": "mq800:py-14",
+          "count": 1
+        },
+        {
+          "arbitrary": "text-[#0bc111]",
+          "canonical": "text-accent-green",
+          "count": 1
+        },
+        {
+          "arbitrary": "text-[#1a2530]",
+          "canonical": "text-gray-600",
+          "count": 3
+        },
+        {
+          "arbitrary": "text-[#4d575f]",
+          "canonical": "text-gray-400",
+          "count": 1
+        },
+        {
+          "arbitrary": "text-[#64676f]",
+          "canonical": "text-gray-200",
+          "count": 2
+        },
+        {
+          "arbitrary": "w-[2.75rem]",
+          "canonical": "w-11",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "path": "components/option1.tsx",
+      "replacements": [
+        {
+          "arbitrary": "hover:text-[#4d565f]",
+          "canonical": "hover:text-gray-300",
+          "count": 1
+        },
+        {
+          "arbitrary": "px-[0.25rem]",
+          "canonical": "px-1",
+          "count": 1
+        },
+        {
+          "arbitrary": "py-[0rem]",
+          "canonical": "py-0",
+          "count": 1
+        },
+        {
+          "arbitrary": "text-[#64676f]",
+          "canonical": "text-gray-200",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "components/points.tsx",
+      "replacements": [
+        {
+          "arbitrary": "border-[#e2e5e9]",
+          "canonical": "border-gray-500",
+          "count": 4
+        },
+        {
+          "arbitrary": "border-[1px]",
+          "canonical": "border",
+          "count": 4
+        },
+        {
+          "arbitrary": "gap-[0.75rem]",
+          "canonical": "gap-3",
+          "count": 4
+        },
+        {
+          "arbitrary": "gap-[1.25rem]",
+          "canonical": "gap-5",
+          "count": 2
+        },
+        {
+          "arbitrary": "gap-[1rem]",
+          "canonical": "gap-4",
+          "count": 2
+        },
+        {
+          "arbitrary": "gap-[2.5rem]",
+          "canonical": "gap-10",
+          "count": 3
+        },
+        {
+          "arbitrary": "gap-[2rem]",
+          "canonical": "gap-8",
+          "count": 4
+        },
+        {
+          "arbitrary": "h-[10rem]",
+          "canonical": "h-40",
+          "count": 4
+        },
+        {
+          "arbitrary": "leading-[1.75rem]",
+          "canonical": "leading-7",
+          "count": 8
+        },
+        {
+          "arbitrary": "left-[0rem]",
+          "canonical": "left-0",
+          "count": 8
+        },
+        {
+          "arbitrary": "min-w-[24rem]",
+          "canonical": "min-w-96",
+          "count": 4
+        },
+        {
+          "arbitrary": "mq450:gap-[1.25rem]",
+          "canonical": "mq450:gap-5",
+          "count": 2
+        },
+        {
+          "arbitrary": "mq450:gap-[1rem]",
+          "canonical": "mq450:gap-4",
+          "count": 4
+        },
+        {
+          "arbitrary": "mq450:leading-[1.5rem]",
+          "canonical": "mq450:leading-6",
+          "count": 4
+        },
+        {
+          "arbitrary": "mq450:max-w-[8rem]",
+          "canonical": "mq450:max-w-32",
+          "count": 4
+        },
+        {
+          "arbitrary": "mq450:p-[1.25rem]",
+          "canonical": "mq450:p-5",
+          "count": 4
+        },
+        {
+          "arbitrary": "pl-[2.25rem]",
+          "canonical": "pl-9",
+          "count": 4
+        },
+        {
+          "arbitrary": "text-[#1a2530]",
+          "canonical": "text-gray-600",
+          "count": 1
+        },
+        {
+          "arbitrary": "text-[#4d565f]",
+          "canonical": "text-gray-300",
+          "count": 4
+        },
+        {
+          "arbitrary": "text-[#4d575f]",
+          "canonical": "text-gray-400",
+          "count": 4
+        },
+        {
+          "arbitrary": "top-[0rem]",
+          "canonical": "top-0",
+          "count": 8
+        },
+        {
+          "arbitrary": "w-[10rem]",
+          "canonical": "w-40",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "path": "components/press-releases.tsx",
+      "replacements": [
+        {
+          "arbitrary": "[row-gap:20px]",
+          "canonical": "gap-y-5",
+          "count": 3
+        },
+        {
+          "arbitrary": "bg-[#12171c]",
+          "canonical": "bg-dark",
+          "count": 2
+        },
+        {
+          "arbitrary": "border-[4px]",
+          "canonical": "border-4",
+          "count": 3
+        },
+        {
+          "arbitrary": "bottom-[0rem]",
+          "canonical": "bottom-0",
+          "count": 2
+        },
+        {
+          "arbitrary": "gap-[0.25rem]",
+          "canonical": "gap-1",
+          "count": 3
+        },
+        {
+          "arbitrary": "gap-[0.375rem]",
+          "canonical": "gap-1.5",
+          "count": 33
+        },
+        {
+          "arbitrary": "gap-[0.5rem]",
+          "canonical": "gap-2",
+          "count": 6
+        },
+        {
+          "arbitrary": "gap-[0.625rem]",
+          "canonical": "gap-2.5",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[0.75rem]",
+          "canonical": "gap-3",
+          "count": 15
+        },
+        {
+          "arbitrary": "gap-[1.25rem]",
+          "canonical": "gap-5",
+          "count": 4
+        },
+        {
+          "arbitrary": "gap-[1.5rem]",
+          "canonical": "gap-6",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[1rem]",
+          "canonical": "gap-4",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[2.25rem]",
+          "canonical": "gap-9",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[2.5rem]",
+          "canonical": "gap-10",
+          "count": 2
+        },
+        {
+          "arbitrary": "gap-[3rem]",
+          "canonical": "gap-12",
+          "count": 1
+        },
+        {
+          "arbitrary": "h-[1.5rem]",
+          "canonical": "h-6",
+          "count": 9
+        },
+        {
+          "arbitrary": "h-[1rem]",
+          "canonical": "h-4",
+          "count": 24
+        },
+        {
+          "arbitrary": "h-[2.5rem]",
+          "canonical": "h-10",
+          "count": 1
+        },
+        {
+          "arbitrary": "hover:bg-[#1a2530]",
+          "canonical": "hover:bg-gray-600",
+          "count": 2
+        },
+        {
+          "arbitrary": "leading-[1.25rem]",
+          "canonical": "leading-5",
+          "count": 22
+        },
+        {
+          "arbitrary": "leading-[1.5rem]",
+          "canonical": "leading-6",
+          "count": 9
+        },
+        {
+          "arbitrary": "leading-[1.75rem]",
+          "canonical": "leading-7",
+          "count": 37
+        },
+        {
+          "arbitrary": "mq1125:pb-[4rem]",
+          "canonical": "mq1125:pb-16",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq1125:pt-[4rem]",
+          "canonical": "mq1125:pt-16",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq1350:px-[0.5rem]",
+          "canonical": "mq1350:px-2",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq450:leading-[1.5rem]",
+          "canonical": "mq450:leading-6",
+          "count": 12
+        },
+        {
+          "arbitrary": "mq450:pl-[1.25rem]",
+          "canonical": "mq450:pl-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq450:pr-[1.25rem]",
+          "canonical": "mq450:pr-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq800:gap-[1.25rem]",
+          "canonical": "mq800:gap-5",
+          "count": 2
+        },
+        {
+          "arbitrary": "mq800:gap-[1.5rem]",
+          "canonical": "mq800:gap-6",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq800:pb-[1.25rem]",
+          "canonical": "mq800:pb-5",
+          "count": 3
+        },
+        {
+          "arbitrary": "opacity-[0.9]",
+          "canonical": "opacity-90",
+          "count": 9
+        },
+        {
+          "arbitrary": "p-[0.5rem]",
+          "canonical": "p-2",
+          "count": 2
+        },
+        {
+          "arbitrary": "p-[1.25rem]",
+          "canonical": "p-5",
+          "count": 6
+        },
+        {
+          "arbitrary": "p-[1.5rem]",
+          "canonical": "p-6",
+          "count": 3
+        },
+        {
+          "arbitrary": "pb-[0.25rem]",
+          "canonical": "pb-1",
+          "count": 3
+        },
+        {
+          "arbitrary": "px-[0.5rem]",
+          "canonical": "px-2",
+          "count": 6
+        },
+        {
+          "arbitrary": "px-[0rem]",
+          "canonical": "px-0",
+          "count": 3
+        },
+        {
+          "arbitrary": "py-[0.25rem]",
+          "canonical": "py-1",
+          "count": 6
+        },
+        {
+          "arbitrary": "rounded-[28px]",
+          "canonical": "rounded-2xl",
+          "count": 3
+        },
+        {
+          "arbitrary": "rounded-[40px]",
+          "canonical": "rounded-3xl",
+          "count": 26
+        },
+        {
+          "arbitrary": "text-[#0bc111]",
+          "canonical": "text-accent-green",
+          "count": 1
+        },
+        {
+          "arbitrary": "text-[#1a2530]",
+          "canonical": "text-gray-600",
+          "count": 4
+        },
+        {
+          "arbitrary": "text-[#4d565f]",
+          "canonical": "text-gray-300",
+          "count": 9
+        },
+        {
+          "arbitrary": "text-[#4d575f]",
+          "canonical": "text-gray-400",
+          "count": 7
+        },
+        {
+          "arbitrary": "text-[#eee]",
+          "canonical": "text-gray-100",
+          "count": 3
+        },
+        {
+          "arbitrary": "top-[0rem]",
+          "canonical": "top-0",
+          "count": 2
+        },
+        {
+          "arbitrary": "w-[1rem]",
+          "canonical": "w-4",
+          "count": 24
+        },
+        {
+          "arbitrary": "z-[0]",
+          "canonical": "z-0",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "components/pricing-card.tsx",
+      "replacements": [
+        {
+          "arbitrary": "bg-[#0461c3]",
+          "canonical": "bg-primary",
+          "count": 4
+        },
+        {
+          "arbitrary": "bg-[#181f25]",
+          "canonical": "bg-dark-light",
+          "count": 3
+        },
+        {
+          "arbitrary": "border-[#0461c3]",
+          "canonical": "border-primary",
+          "count": 2
+        },
+        {
+          "arbitrary": "border-[#181f25]",
+          "canonical": "border-dark-light",
+          "count": 1
+        },
+        {
+          "arbitrary": "border-[1px]",
+          "canonical": "border",
+          "count": 2
+        },
+        {
+          "arbitrary": "border-[2px]",
+          "canonical": "border-2",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[0.25rem]",
+          "canonical": "gap-1",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[0.5rem]",
+          "canonical": "gap-2",
+          "count": 3
+        },
+        {
+          "arbitrary": "gap-[0.625rem]",
+          "canonical": "gap-2.5",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[0.75rem]",
+          "canonical": "gap-3",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[1.25rem]",
+          "canonical": "gap-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[1.5rem]",
+          "canonical": "gap-6",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[1.75rem]",
+          "canonical": "gap-7",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[1rem]",
+          "canonical": "gap-4",
+          "count": 4
+        },
+        {
+          "arbitrary": "h-[3.5rem]",
+          "canonical": "h-14",
+          "count": 1
+        },
+        {
+          "arbitrary": "leading-[1.25rem]",
+          "canonical": "leading-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "leading-[1.5rem]",
+          "canonical": "leading-6",
+          "count": 1
+        },
+        {
+          "arbitrary": "leading-[1.75rem]",
+          "canonical": "leading-7",
+          "count": 1
+        },
+        {
+          "arbitrary": "leading-[1rem]",
+          "canonical": "leading-4",
+          "count": 1
+        },
+        {
+          "arbitrary": "leading-[2.5rem]",
+          "canonical": "leading-10",
+          "count": 1
+        },
+        {
+          "arbitrary": "leading-[2rem]",
+          "canonical": "leading-8",
+          "count": 1
+        },
+        {
+          "arbitrary": "min-w-[18rem]",
+          "canonical": "min-w-72",
+          "count": 1
+        },
+        {
+          "arbitrary": "opacity-[0.9]",
+          "canonical": "opacity-90",
+          "count": 1
+        },
+        {
+          "arbitrary": "p-[0.25rem]",
+          "canonical": "p-1",
+          "count": 1
+        },
+        {
+          "arbitrary": "p-[0.5rem]",
+          "canonical": "p-2",
+          "count": 1
+        },
+        {
+          "arbitrary": "p-[0.75rem]",
+          "canonical": "p-3",
+          "count": 1
+        },
+        {
+          "arbitrary": "pb-[1.25rem]",
+          "canonical": "pb-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "pb-[1.75rem]",
+          "canonical": "pb-7",
+          "count": 1
+        },
+        {
+          "arbitrary": "pt-[1.25rem]",
+          "canonical": "pt-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "pt-[1rem]",
+          "canonical": "pt-4",
+          "count": 1
+        },
+        {
+          "arbitrary": "px-[0.625rem]",
+          "canonical": "px-2.5",
+          "count": 1
+        },
+        {
+          "arbitrary": "px-[0.75rem]",
+          "canonical": "px-3",
+          "count": 1
+        },
+        {
+          "arbitrary": "px-[1.25rem]",
+          "canonical": "px-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "px-[1rem]",
+          "canonical": "px-4",
+          "count": 1
+        },
+        {
+          "arbitrary": "py-[0.375rem]",
+          "canonical": "py-1.5",
+          "count": 1
+        },
+        {
+          "arbitrary": "py-[0.5rem]",
+          "canonical": "py-2",
+          "count": 1
+        },
+        {
+          "arbitrary": "rounded-[16px]",
+          "canonical": "rounded-lg",
+          "count": 1
+        },
+        {
+          "arbitrary": "rounded-[40px]",
+          "canonical": "rounded-3xl",
+          "count": 1
+        },
+        {
+          "arbitrary": "rounded-[8px]",
+          "canonical": "rounded",
+          "count": 2
+        },
+        {
+          "arbitrary": "text-[#0461c3]",
+          "canonical": "text-primary",
+          "count": 1
+        },
+        {
+          "arbitrary": "text-[#4d565f]",
+          "canonical": "text-gray-300",
+          "count": 3
+        },
+        {
+          "arbitrary": "text-[#64676f]",
+          "canonical": "text-gray-200",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "path": "components/step.tsx",
+      "replacements": [
+        {
+          "arbitrary": "bg-[#181f25]",
+          "canonical": "bg-dark-light",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[0.25rem]",
+          "canonical": "gap-1",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[1.25rem]",
+          "canonical": "gap-5",
+          "count": 2
+        },
+        {
+          "arbitrary": "gap-[1.5rem]",
+          "canonical": "gap-6",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[3rem]",
+          "canonical": "gap-12",
+          "count": 1
+        },
+        {
+          "arbitrary": "leading-[1.75rem]",
+          "canonical": "leading-7",
+          "count": 3
+        },
+        {
+          "arbitrary": "mq1125:p-[3rem]",
+          "canonical": "mq1125:p-12",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq450:gap-[1.5rem]",
+          "canonical": "mq450:gap-6",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq450:p-[1.25rem]",
+          "canonical": "mq450:p-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq800:gap-[1.5rem]",
+          "canonical": "mq800:gap-6",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq800:p-[2rem]",
+          "canonical": "mq800:p-8",
+          "count": 1
+        },
+        {
+          "arbitrary": "px-[0.625rem]",
+          "canonical": "px-2.5",
+          "count": 1
+        },
+        {
+          "arbitrary": "py-[0.25rem]",
+          "canonical": "py-1",
+          "count": 1
+        },
+        {
+          "arbitrary": "rounded-[28px]",
+          "canonical": "rounded-2xl",
+          "count": 1
+        },
+        {
+          "arbitrary": "rounded-[40px]",
+          "canonical": "rounded-3xl",
+          "count": 1
+        },
+        {
+          "arbitrary": "text-[#0bc111]",
+          "canonical": "text-accent-green",
+          "count": 1
+        },
+        {
+          "arbitrary": "text-[#eee]",
+          "canonical": "text-gray-100",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "components/testimonials.tsx",
+      "replacements": [
+        {
+          "arbitrary": "gap-[0.25rem]",
+          "canonical": "gap-1",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[0.5rem]",
+          "canonical": "gap-2",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[0.75rem]",
+          "canonical": "gap-3",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[1.5rem]",
+          "canonical": "gap-6",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[1rem]",
+          "canonical": "gap-4",
+          "count": 2
+        },
+        {
+          "arbitrary": "h-[1.5rem]",
+          "canonical": "h-6",
+          "count": 10
+        },
+        {
+          "arbitrary": "h-[2.5rem]",
+          "canonical": "h-10",
+          "count": 1
+        },
+        {
+          "arbitrary": "h-[3.5rem]",
+          "canonical": "h-14",
+          "count": 1
+        },
+        {
+          "arbitrary": "p-[1.25rem]",
+          "canonical": "p-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "rounded-[20px]",
+          "canonical": "rounded-xl",
+          "count": 1
+        },
+        {
+          "arbitrary": "text-[#1a2530]",
+          "canonical": "text-gray-600",
+          "count": 1
+        },
+        {
+          "arbitrary": "text-[#4d575f]",
+          "canonical": "text-gray-400",
+          "count": 1
+        },
+        {
+          "arbitrary": "w-[1.5rem]",
+          "canonical": "w-6",
+          "count": 10
+        },
+        {
+          "arbitrary": "w-[3.5rem]",
+          "canonical": "w-14",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "components/title.tsx",
+      "replacements": [
+        {
+          "arbitrary": "gap-[1.25rem]",
+          "canonical": "gap-5",
+          "count": 3
+        },
+        {
+          "arbitrary": "gap-[1.5rem]",
+          "canonical": "gap-6",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[1rem]",
+          "canonical": "gap-4",
+          "count": 1
+        },
+        {
+          "arbitrary": "leading-[1.25rem]",
+          "canonical": "leading-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "leading-[2rem]",
+          "canonical": "leading-8",
+          "count": 1
+        },
+        {
+          "arbitrary": "text-[#0bc111]",
+          "canonical": "text-accent-green",
+          "count": 1
+        },
+        {
+          "arbitrary": "text-[#eee]",
+          "canonical": "text-gray-100",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "components/user-outlined.tsx",
+      "replacements": [
+        {
+          "arbitrary": "gap-[0.5rem]",
+          "canonical": "gap-2",
+          "count": 2
+        },
+        {
+          "arbitrary": "h-[1rem]",
+          "canonical": "h-4",
+          "count": 2
+        },
+        {
+          "arbitrary": "h-[3rem]",
+          "canonical": "h-12",
+          "count": 2
+        },
+        {
+          "arbitrary": "px-[2.25rem]",
+          "canonical": "px-9",
+          "count": 2
+        },
+        {
+          "arbitrary": "py-[0.75rem]",
+          "canonical": "py-3",
+          "count": 2
+        },
+        {
+          "arbitrary": "w-[1rem]",
+          "canonical": "w-4",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "path": "components/why-choose-us.tsx",
+      "replacements": [
+        {
+          "arbitrary": "border-[#1a8cd5]",
+          "canonical": "border-primary-light",
+          "count": 1
+        },
+        {
+          "arbitrary": "border-[#e2e5e9]",
+          "canonical": "border-gray-500",
+          "count": 2
+        },
+        {
+          "arbitrary": "border-b-[1px]",
+          "canonical": "border-b",
+          "count": 1
+        },
+        {
+          "arbitrary": "border-t-[1px]",
+          "canonical": "border-t",
+          "count": 2
+        },
+        {
+          "arbitrary": "gap-[0.25rem]",
+          "canonical": "gap-1",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[0.625rem]",
+          "canonical": "gap-2.5",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[0.75rem]",
+          "canonical": "gap-3",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[1.5rem]",
+          "canonical": "gap-6",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[1rem]",
+          "canonical": "gap-4",
+          "count": 5
+        },
+        {
+          "arbitrary": "gap-[2.5rem]",
+          "canonical": "gap-10",
+          "count": 1
+        },
+        {
+          "arbitrary": "gap-[5rem]",
+          "canonical": "gap-20",
+          "count": 1
+        },
+        {
+          "arbitrary": "h-[0.375rem]",
+          "canonical": "h-1.5",
+          "count": 1
+        },
+        {
+          "arbitrary": "h-[1.75rem]",
+          "canonical": "h-7",
+          "count": 2
+        },
+        {
+          "arbitrary": "h-[2.25rem]",
+          "canonical": "h-9",
+          "count": 1
+        },
+        {
+          "arbitrary": "h-[2rem]",
+          "canonical": "h-8",
+          "count": 1
+        },
+        {
+          "arbitrary": "h-[3.5rem]",
+          "canonical": "h-14",
+          "count": 1
+        },
+        {
+          "arbitrary": "leading-[1.25rem]",
+          "canonical": "leading-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "leading-[1.75rem]",
+          "canonical": "leading-7",
+          "count": 3
+        },
+        {
+          "arbitrary": "mq1350:pb-[4rem]",
+          "canonical": "mq1350:pb-16",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq1350:pt-[4rem]",
+          "canonical": "mq1350:pt-16",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq450:h-[14rem]",
+          "canonical": "mq450:h-56",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq450:leading-[1.5rem]",
+          "canonical": "mq450:leading-6",
+          "count": 3
+        },
+        {
+          "arbitrary": "mq450:pl-[1.25rem]",
+          "canonical": "mq450:pl-5",
+          "count": 2
+        },
+        {
+          "arbitrary": "mq450:pr-[1.25rem]",
+          "canonical": "mq450:pr-5",
+          "count": 2
+        },
+        {
+          "arbitrary": "mq800:gap-[1.25rem]",
+          "canonical": "mq800:gap-5",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq800:h-[20rem]",
+          "canonical": "mq800:h-80",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq800:pl-[2.25rem]",
+          "canonical": "mq800:pl-9",
+          "count": 1
+        },
+        {
+          "arbitrary": "mq800:pr-[2rem]",
+          "canonical": "mq800:pr-8",
+          "count": 1
+        },
+        {
+          "arbitrary": "p-[0.625rem]",
+          "canonical": "p-2.5",
+          "count": 2
+        },
+        {
+          "arbitrary": "p-[0.75rem]",
+          "canonical": "p-3",
+          "count": 1
+        },
+        {
+          "arbitrary": "pb-[2.5rem]",
+          "canonical": "pb-10",
+          "count": 2
+        },
+        {
+          "arbitrary": "pb-[2rem]",
+          "canonical": "pb-8",
+          "count": 1
+        },
+        {
+          "arbitrary": "pl-[4.5rem]",
+          "canonical": "pl-18",
+          "count": 1
+        },
+        {
+          "arbitrary": "pr-[4rem]",
+          "canonical": "pr-16",
+          "count": 1
+        },
+        {
+          "arbitrary": "pt-[0rem]",
+          "canonical": "pt-0",
+          "count": 1
+        },
+        {
+          "arbitrary": "px-[0.625rem]",
+          "canonical": "px-2.5",
+          "count": 1
+        },
+        {
+          "arbitrary": "px-[0.75rem]",
+          "canonical": "px-3",
+          "count": 2
+        },
+        {
+          "arbitrary": "px-[0rem]",
+          "canonical": "px-0",
+          "count": 1
+        },
+        {
+          "arbitrary": "py-[0.75rem]",
+          "canonical": "py-3",
+          "count": 1
+        },
+        {
+          "arbitrary": "py-[0rem]",
+          "canonical": "py-0",
+          "count": 1
+        },
+        {
+          "arbitrary": "rounded-[20px]",
+          "canonical": "rounded-xl",
+          "count": 2
+        },
+        {
+          "arbitrary": "text-[#0bc111]",
+          "canonical": "text-accent-green",
+          "count": 1
+        },
+        {
+          "arbitrary": "text-[#1a2530]",
+          "canonical": "text-gray-600",
+          "count": 3
+        },
+        {
+          "arbitrary": "text-[#4d565f]",
+          "canonical": "text-gray-300",
+          "count": 3
+        },
+        {
+          "arbitrary": "top-[0rem]",
+          "canonical": "top-0",
+          "count": 1
+        },
+        {
+          "arbitrary": "w-[2.25rem]",
+          "canonical": "w-9",
+          "count": 1
+        },
+        {
+          "arbitrary": "w-[2rem]",
+          "canonical": "w-8",
+          "count": 1
+        },
+        {
+          "arbitrary": "w-[3.5rem]",
+          "canonical": "w-14",
+          "count": 1
+        },
+        {
+          "arbitrary": "z-[0]",
+          "canonical": "z-0",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "totalFilesModified": 47,
+    "totalReplacements": 2653
+  }
+}

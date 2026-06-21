@@ -1,0 +1,3719 @@
+{
+  "mappings": [
+    {
+      "arbitrary": "-translate-y-[0.5rem]",
+      "canonical": "-translate-y-2",
+      "reason": "0.5rem matches spacing-2"
+    },
+    {
+      "arbitrary": "[row-gap:20px]",
+      "canonical": "gap-y-5",
+      "reason": "20px row-gap matches gap-y-5"
+    },
+    {
+      "arbitrary": "backdrop-blur-[8px]",
+      "canonical": "backdrop-blur",
+      "reason": "8px matches default backdrop-blur"
+    },
+    {
+      "arbitrary": "bg-[#0461c3]",
+      "canonical": "bg-primary",
+      "reason": "color #0461c3 matches primary"
+    },
+    {
+      "arbitrary": "bg-[#0bc111]",
+      "canonical": "bg-accent-green",
+      "reason": "color #0bc111 matches accent-green"
+    },
+    {
+      "arbitrary": "bg-[#12171c]",
+      "canonical": "bg-dark",
+      "reason": "color #12171c matches dark"
+    },
+    {
+      "arbitrary": "bg-[#181f25]",
+      "canonical": "bg-dark-light",
+      "reason": "color #181f25 matches dark-light"
+    },
+    {
+      "arbitrary": "bg-[#1a2530]",
+      "canonical": "bg-gray-600",
+      "reason": "color #1a2530 matches gray-600"
+    },
+    {
+      "arbitrary": "bg-[#1a8cd5]",
+      "canonical": "bg-primary-light",
+      "reason": "color #1a8cd5 matches primary-light"
+    },
+    {
+      "arbitrary": "bg-[#4d575f]",
+      "canonical": "bg-gray-400",
+      "reason": "color #4d575f matches gray-400"
+    },
+    {
+      "arbitrary": "bg-[#64676f]",
+      "canonical": "bg-gray-200",
+      "reason": "color #64676f matches gray-200"
+    },
+    {
+      "arbitrary": "bg-[#e2e5e9]",
+      "canonical": "bg-gray-500",
+      "reason": "color #e2e5e9 matches gray-500"
+    },
+    {
+      "arbitrary": "bg-[#e4e0f7]",
+      "canonical": "bg-accent-purple",
+      "reason": "color #e4e0f7 matches accent-purple"
+    },
+    {
+      "arbitrary": "border-[#0461c3]",
+      "canonical": "border-primary",
+      "reason": "color #0461c3 matches primary"
+    },
+    {
+      "arbitrary": "border-[#181f25]",
+      "canonical": "border-dark-light",
+      "reason": "color #181f25 matches dark-light"
+    },
+    {
+      "arbitrary": "border-[#1a8cd5]",
+      "canonical": "border-primary-light",
+      "reason": "color #1a8cd5 matches primary-light"
+    },
+    {
+      "arbitrary": "border-[#e2e5e9]",
+      "canonical": "border-gray-500",
+      "reason": "color #e2e5e9 matches gray-500"
+    },
+    {
+      "arbitrary": "border-[1px]",
+      "canonical": "border",
+      "reason": "1px matches default border"
+    },
+    {
+      "arbitrary": "border-[2px]",
+      "canonical": "border-2",
+      "reason": "2px matches border-2"
+    },
+    {
+      "arbitrary": "border-[4px]",
+      "canonical": "border-4",
+      "reason": "4px matches border-4"
+    },
+    {
+      "arbitrary": "border-b-[1px]",
+      "canonical": "border-b",
+      "reason": "1px matches default border-b"
+    },
+    {
+      "arbitrary": "border-t-[1px]",
+      "canonical": "border-t",
+      "reason": "1px matches default border-t"
+    },
+    {
+      "arbitrary": "bottom-[0rem]",
+      "canonical": "bottom-0",
+      "reason": "0rem matches spacing-0"
+    },
+    {
+      "arbitrary": "focus-visible:ring-[#0bc111]",
+      "canonical": "focus-visible:ring-accent-green",
+      "reason": "color #0bc111 matches accent-green"
+    },
+    {
+      "arbitrary": "focus-visible:ring-offset-[#12171c]",
+      "canonical": "focus-visible:ring-offset-dark",
+      "reason": "color #12171c matches dark"
+    },
+    {
+      "arbitrary": "focus:border-[#0461c3]",
+      "canonical": "focus:border-primary",
+      "reason": "color #0461c3 matches primary"
+    },
+    {
+      "arbitrary": "from-[#12171c]",
+      "canonical": "from-dark",
+      "reason": "color #12171c matches dark"
+    },
+    {
+      "arbitrary": "gap-[0.25rem]",
+      "canonical": "gap-1",
+      "reason": "0.25rem matches spacing-1"
+    },
+    {
+      "arbitrary": "gap-[0.375rem]",
+      "canonical": "gap-1.5",
+      "reason": "0.375rem matches spacing-1.5"
+    },
+    {
+      "arbitrary": "gap-[0.5rem]",
+      "canonical": "gap-2",
+      "reason": "0.5rem matches spacing-2"
+    },
+    {
+      "arbitrary": "gap-[0.625rem]",
+      "canonical": "gap-2.5",
+      "reason": "0.625rem matches spacing-2.5"
+    },
+    {
+      "arbitrary": "gap-[0.75rem]",
+      "canonical": "gap-3",
+      "reason": "0.75rem matches spacing-3"
+    },
+    {
+      "arbitrary": "gap-[0rem]",
+      "canonical": "gap-0",
+      "reason": "0rem matches spacing-0"
+    },
+    {
+      "arbitrary": "gap-[1.25rem]",
+      "canonical": "gap-5",
+      "reason": "1.25rem matches spacing-5"
+    },
+    {
+      "arbitrary": "gap-[1.5rem]",
+      "canonical": "gap-6",
+      "reason": "1.5rem matches spacing-6"
+    },
+    {
+      "arbitrary": "gap-[1.75rem]",
+      "canonical": "gap-7",
+      "reason": "1.75rem matches spacing-7"
+    },
+    {
+      "arbitrary": "gap-[1rem]",
+      "canonical": "gap-4",
+      "reason": "1rem matches spacing-4"
+    },
+    {
+      "arbitrary": "gap-[2.25rem]",
+      "canonical": "gap-9",
+      "reason": "2.25rem matches spacing-9"
+    },
+    {
+      "arbitrary": "gap-[2.5rem]",
+      "canonical": "gap-10",
+      "reason": "2.5rem matches spacing-10"
+    },
+    {
+      "arbitrary": "gap-[2rem]",
+      "canonical": "gap-8",
+      "reason": "2rem matches spacing-8"
+    },
+    {
+      "arbitrary": "gap-[3.5rem]",
+      "canonical": "gap-14",
+      "reason": "3.5rem matches spacing-14"
+    },
+    {
+      "arbitrary": "gap-[3rem]",
+      "canonical": "gap-12",
+      "reason": "3rem matches spacing-12"
+    },
+    {
+      "arbitrary": "gap-[5rem]",
+      "canonical": "gap-20",
+      "reason": "5rem matches spacing-20"
+    },
+    {
+      "arbitrary": "h-[0.125rem]",
+      "canonical": "h-0.5",
+      "reason": "0.125rem matches spacing-0.5"
+    },
+    {
+      "arbitrary": "h-[0.375rem]",
+      "canonical": "h-1.5",
+      "reason": "0.375rem matches spacing-1.5"
+    },
+    {
+      "arbitrary": "h-[0.5rem]",
+      "canonical": "h-2",
+      "reason": "0.5rem matches spacing-2"
+    },
+    {
+      "arbitrary": "h-[0.625rem]",
+      "canonical": "h-2.5",
+      "reason": "0.625rem matches spacing-2.5"
+    },
+    {
+      "arbitrary": "h-[0.75rem]",
+      "canonical": "h-3",
+      "reason": "0.75rem matches spacing-3"
+    },
+    {
+      "arbitrary": "h-[1.25rem]",
+      "canonical": "h-5",
+      "reason": "1.25rem matches spacing-5"
+    },
+    {
+      "arbitrary": "h-[1.5rem]",
+      "canonical": "h-6",
+      "reason": "1.5rem matches spacing-6"
+    },
+    {
+      "arbitrary": "h-[1.75rem]",
+      "canonical": "h-7",
+      "reason": "1.75rem matches spacing-7"
+    },
+    {
+      "arbitrary": "h-[10rem]",
+      "canonical": "h-40",
+      "reason": "10rem matches spacing-40"
+    },
+    {
+      "arbitrary": "h-[15rem]",
+      "canonical": "h-60",
+      "reason": "15rem matches spacing-60"
+    },
+    {
+      "arbitrary": "h-[1rem]",
+      "canonical": "h-4",
+      "reason": "1rem matches spacing-4"
+    },
+    {
+      "arbitrary": "h-[2.25rem]",
+      "canonical": "h-9",
+      "reason": "2.25rem matches spacing-9"
+    },
+    {
+      "arbitrary": "h-[2.5rem]",
+      "canonical": "h-10",
+      "reason": "2.5rem matches spacing-10"
+    },
+    {
+      "arbitrary": "h-[2.75rem]",
+      "canonical": "h-11",
+      "reason": "2.75rem matches spacing-11"
+    },
+    {
+      "arbitrary": "h-[20rem]",
+      "canonical": "h-80",
+      "reason": "20rem matches spacing-80"
+    },
+    {
+      "arbitrary": "h-[27.5rem]",
+      "canonical": "h-110",
+      "reason": "27.5rem matches spacing-110"
+    },
+    {
+      "arbitrary": "h-[2rem]",
+      "canonical": "h-8",
+      "reason": "2rem matches spacing-8"
+    },
+    {
+      "arbitrary": "h-[3.5rem]",
+      "canonical": "h-14",
+      "reason": "3.5rem matches spacing-14"
+    },
+    {
+      "arbitrary": "h-[3rem]",
+      "canonical": "h-12",
+      "reason": "3rem matches spacing-12"
+    },
+    {
+      "arbitrary": "h-[5rem]",
+      "canonical": "h-20",
+      "reason": "5rem matches spacing-20"
+    },
+    {
+      "arbitrary": "h-[7.5rem]",
+      "canonical": "h-30",
+      "reason": "7.5rem matches spacing-30"
+    },
+    {
+      "arbitrary": "hover:bg-[#1a2530]",
+      "canonical": "hover:bg-gray-600",
+      "reason": "color #1a2530 matches gray-600"
+    },
+    {
+      "arbitrary": "hover:border-[#1a8cd5]",
+      "canonical": "hover:border-primary-light",
+      "reason": "color #1a8cd5 matches primary-light"
+    },
+    {
+      "arbitrary": "hover:text-[#0bc111]",
+      "canonical": "hover:text-accent-green",
+      "reason": "color #0bc111 matches accent-green"
+    },
+    {
+      "arbitrary": "hover:text-[#1a8cd5]",
+      "canonical": "hover:text-primary-light",
+      "reason": "color #1a8cd5 matches primary-light"
+    },
+    {
+      "arbitrary": "hover:text-[#4d565f]",
+      "canonical": "hover:text-gray-300",
+      "reason": "color #4d565f matches gray-300"
+    },
+    {
+      "arbitrary": "leading-[1.25rem]",
+      "canonical": "leading-5",
+      "reason": "1.25rem matches leading-5"
+    },
+    {
+      "arbitrary": "leading-[1.5rem]",
+      "canonical": "leading-6",
+      "reason": "1.5rem matches leading-6"
+    },
+    {
+      "arbitrary": "leading-[1.75rem]",
+      "canonical": "leading-7",
+      "reason": "1.75rem matches leading-7"
+    },
+    {
+      "arbitrary": "leading-[1rem]",
+      "canonical": "leading-4",
+      "reason": "1rem matches leading-4"
+    },
+    {
+      "arbitrary": "leading-[2.5rem]",
+      "canonical": "leading-10",
+      "reason": "2.5rem matches leading-10"
+    },
+    {
+      "arbitrary": "leading-[2rem]",
+      "canonical": "leading-8",
+      "reason": "2rem matches leading-8"
+    },
+    {
+      "arbitrary": "left-[0rem]",
+      "canonical": "left-0",
+      "reason": "0rem matches spacing-0"
+    },
+    {
+      "arbitrary": "left-[2.25rem]",
+      "canonical": "left-9",
+      "reason": "2.25rem matches spacing-9"
+    },
+    {
+      "arbitrary": "left-[2rem]",
+      "canonical": "left-8",
+      "reason": "2rem matches spacing-8"
+    },
+    {
+      "arbitrary": "left-[4rem]",
+      "canonical": "left-16",
+      "reason": "4rem matches spacing-16"
+    },
+    {
+      "arbitrary": "left-[5.5rem]",
+      "canonical": "left-22",
+      "reason": "5.5rem matches spacing-22"
+    },
+    {
+      "arbitrary": "left-[7.5rem]",
+      "canonical": "left-30",
+      "reason": "7.5rem matches spacing-30"
+    },
+    {
+      "arbitrary": "left-[8rem]",
+      "canonical": "left-32",
+      "reason": "8rem matches spacing-32"
+    },
+    {
+      "arbitrary": "max-w-[76.25rem]",
+      "canonical": "max-w-section",
+      "reason": "76.25rem matches max-w-section"
+    },
+    {
+      "arbitrary": "mb-[1.5rem]",
+      "canonical": "mb-6",
+      "reason": "1.5rem matches spacing-6"
+    },
+    {
+      "arbitrary": "min-w-[15rem]",
+      "canonical": "min-w-60",
+      "reason": "15rem matches spacing-60"
+    },
+    {
+      "arbitrary": "min-w-[16rem]",
+      "canonical": "min-w-64",
+      "reason": "16rem matches spacing-64"
+    },
+    {
+      "arbitrary": "min-w-[18rem]",
+      "canonical": "min-w-72",
+      "reason": "18rem matches spacing-72"
+    },
+    {
+      "arbitrary": "min-w-[20rem]",
+      "canonical": "min-w-80",
+      "reason": "20rem matches spacing-80"
+    },
+    {
+      "arbitrary": "min-w-[24rem]",
+      "canonical": "min-w-96",
+      "reason": "24rem matches spacing-96"
+    },
+    {
+      "arbitrary": "min-w-[27.5rem]",
+      "canonical": "min-w-110",
+      "reason": "27.5rem matches spacing-110"
+    },
+    {
+      "arbitrary": "ml-[-0.75rem]",
+      "canonical": "-ml-3",
+      "reason": "-0.75rem matches spacing-3"
+    },
+    {
+      "arbitrary": "mq1050:leading-[2rem]",
+      "canonical": "mq1050:leading-8",
+      "reason": "2rem matches leading-8"
+    },
+    {
+      "arbitrary": "mq1050:pb-[4rem]",
+      "canonical": "mq1050:pb-16",
+      "reason": "4rem matches spacing-16"
+    },
+    {
+      "arbitrary": "mq1050:pt-[2.75rem]",
+      "canonical": "mq1050:pt-11",
+      "reason": "2.75rem matches spacing-11"
+    },
+    {
+      "arbitrary": "mq1050:pt-[4rem]",
+      "canonical": "mq1050:pt-16",
+      "reason": "4rem matches spacing-16"
+    },
+    {
+      "arbitrary": "mq1125:gap-[1.5rem]",
+      "canonical": "mq1125:gap-6",
+      "reason": "1.5rem matches spacing-6"
+    },
+    {
+      "arbitrary": "mq1125:p-[3rem]",
+      "canonical": "mq1125:p-12",
+      "reason": "3rem matches spacing-12"
+    },
+    {
+      "arbitrary": "mq1125:pb-[4rem]",
+      "canonical": "mq1125:pb-16",
+      "reason": "4rem matches spacing-16"
+    },
+    {
+      "arbitrary": "mq1125:pt-[4rem]",
+      "canonical": "mq1125:pt-16",
+      "reason": "4rem matches spacing-16"
+    },
+    {
+      "arbitrary": "mq1350:pb-[4rem]",
+      "canonical": "mq1350:pb-16",
+      "reason": "4rem matches spacing-16"
+    },
+    {
+      "arbitrary": "mq1350:pl-[1.25rem]",
+      "canonical": "mq1350:pl-5",
+      "reason": "1.25rem matches spacing-5"
+    },
+    {
+      "arbitrary": "mq1350:pr-[0rem]",
+      "canonical": "mq1350:pr-0",
+      "reason": "0rem matches spacing-0"
+    },
+    {
+      "arbitrary": "mq1350:pr-[1.25rem]",
+      "canonical": "mq1350:pr-5",
+      "reason": "1.25rem matches spacing-5"
+    },
+    {
+      "arbitrary": "mq1350:pt-[0rem]",
+      "canonical": "mq1350:pt-0",
+      "reason": "0rem matches spacing-0"
+    },
+    {
+      "arbitrary": "mq1350:pt-[1.25rem]",
+      "canonical": "mq1350:pt-5",
+      "reason": "1.25rem matches spacing-5"
+    },
+    {
+      "arbitrary": "mq1350:pt-[4rem]",
+      "canonical": "mq1350:pt-16",
+      "reason": "4rem matches spacing-16"
+    },
+    {
+      "arbitrary": "mq1350:px-[0.5rem]",
+      "canonical": "mq1350:px-2",
+      "reason": "0.5rem matches spacing-2"
+    },
+    {
+      "arbitrary": "mq450:gap-[1.25rem]",
+      "canonical": "mq450:gap-5",
+      "reason": "1.25rem matches spacing-5"
+    },
+    {
+      "arbitrary": "mq450:gap-[1.5rem]",
+      "canonical": "mq450:gap-6",
+      "reason": "1.5rem matches spacing-6"
+    },
+    {
+      "arbitrary": "mq450:gap-[1rem]",
+      "canonical": "mq450:gap-4",
+      "reason": "1rem matches spacing-4"
+    },
+    {
+      "arbitrary": "mq450:gap-[2rem]",
+      "canonical": "mq450:gap-8",
+      "reason": "2rem matches spacing-8"
+    },
+    {
+      "arbitrary": "mq450:h-[10rem]",
+      "canonical": "mq450:h-40",
+      "reason": "10rem matches spacing-40"
+    },
+    {
+      "arbitrary": "mq450:h-[14rem]",
+      "canonical": "mq450:h-56",
+      "reason": "14rem matches spacing-56"
+    },
+    {
+      "arbitrary": "mq450:leading-[1.5rem]",
+      "canonical": "mq450:leading-6",
+      "reason": "1.5rem matches leading-6"
+    },
+    {
+      "arbitrary": "mq450:leading-[1.75rem]",
+      "canonical": "mq450:leading-7",
+      "reason": "1.75rem matches leading-7"
+    },
+    {
+      "arbitrary": "mq450:max-w-[8rem]",
+      "canonical": "mq450:max-w-32",
+      "reason": "8rem matches spacing-32"
+    },
+    {
+      "arbitrary": "mq450:mt-[-2rem]",
+      "canonical": "mq450:-mt-8",
+      "reason": "-2rem matches spacing-8"
+    },
+    {
+      "arbitrary": "mq450:p-[1.25rem]",
+      "canonical": "mq450:p-5",
+      "reason": "1.25rem matches spacing-5"
+    },
+    {
+      "arbitrary": "mq450:pb-[1.5rem]",
+      "canonical": "mq450:pb-6",
+      "reason": "1.5rem matches spacing-6"
+    },
+    {
+      "arbitrary": "mq450:pb-[2rem]",
+      "canonical": "mq450:pb-8",
+      "reason": "2rem matches spacing-8"
+    },
+    {
+      "arbitrary": "mq450:pl-[1.25rem]",
+      "canonical": "mq450:pl-5",
+      "reason": "1.25rem matches spacing-5"
+    },
+    {
+      "arbitrary": "mq450:pr-[1.25rem]",
+      "canonical": "mq450:pr-5",
+      "reason": "1.25rem matches spacing-5"
+    },
+    {
+      "arbitrary": "mq450:pt-[0rem]",
+      "canonical": "mq450:pt-0",
+      "reason": "0rem matches spacing-0"
+    },
+    {
+      "arbitrary": "mq450:pt-[1.5rem]",
+      "canonical": "mq450:pt-6",
+      "reason": "1.5rem matches spacing-6"
+    },
+    {
+      "arbitrary": "mq450:pt-[2.5rem]",
+      "canonical": "mq450:pt-10",
+      "reason": "2.5rem matches spacing-10"
+    },
+    {
+      "arbitrary": "mq450:pt-[2rem]",
+      "canonical": "mq450:pt-8",
+      "reason": "2rem matches spacing-8"
+    },
+    {
+      "arbitrary": "mq450:px-[0rem]",
+      "canonical": "mq450:px-0",
+      "reason": "0rem matches spacing-0"
+    },
+    {
+      "arbitrary": "mq450:px-[1.25rem]",
+      "canonical": "mq450:px-5",
+      "reason": "1.25rem matches spacing-5"
+    },
+    {
+      "arbitrary": "mq450:py-[1rem]",
+      "canonical": "mq450:py-4",
+      "reason": "1rem matches spacing-4"
+    },
+    {
+      "arbitrary": "mq450:py-[2.5rem]",
+      "canonical": "mq450:py-10",
+      "reason": "2.5rem matches spacing-10"
+    },
+    {
+      "arbitrary": "mq450:py-[2rem]",
+      "canonical": "mq450:py-8",
+      "reason": "2rem matches spacing-8"
+    },
+    {
+      "arbitrary": "mq450:w-[8rem]",
+      "canonical": "mq450:w-32",
+      "reason": "8rem matches spacing-32"
+    },
+    {
+      "arbitrary": "mq750:gap-[1.25rem]",
+      "canonical": "mq750:gap-5",
+      "reason": "1.25rem matches spacing-5"
+    },
+    {
+      "arbitrary": "mq750:gap-[1.5rem]",
+      "canonical": "mq750:gap-6",
+      "reason": "1.5rem matches spacing-6"
+    },
+    {
+      "arbitrary": "mq750:gap-[1rem]",
+      "canonical": "mq750:gap-4",
+      "reason": "1rem matches spacing-4"
+    },
+    {
+      "arbitrary": "mq750:gap-[2.5rem]",
+      "canonical": "mq750:gap-10",
+      "reason": "2.5rem matches spacing-10"
+    },
+    {
+      "arbitrary": "mq750:pb-[4rem]",
+      "canonical": "mq750:pb-16",
+      "reason": "4rem matches spacing-16"
+    },
+    {
+      "arbitrary": "mq750:pl-[1.5rem]",
+      "canonical": "mq750:pl-6",
+      "reason": "1.5rem matches spacing-6"
+    },
+    {
+      "arbitrary": "mq750:pr-[1.5rem]",
+      "canonical": "mq750:pr-6",
+      "reason": "1.5rem matches spacing-6"
+    },
+    {
+      "arbitrary": "mq750:pt-[2.75rem]",
+      "canonical": "mq750:pt-11",
+      "reason": "2.75rem matches spacing-11"
+    },
+    {
+      "arbitrary": "mq750:py-[2.75rem]",
+      "canonical": "mq750:py-11",
+      "reason": "2.75rem matches spacing-11"
+    },
+    {
+      "arbitrary": "mq750:py-[4rem]",
+      "canonical": "mq750:py-16",
+      "reason": "4rem matches spacing-16"
+    },
+    {
+      "arbitrary": "mq800:gap-[1.25rem]",
+      "canonical": "mq800:gap-5",
+      "reason": "1.25rem matches spacing-5"
+    },
+    {
+      "arbitrary": "mq800:gap-[1.5rem]",
+      "canonical": "mq800:gap-6",
+      "reason": "1.5rem matches spacing-6"
+    },
+    {
+      "arbitrary": "mq800:gap-[1rem]",
+      "canonical": "mq800:gap-4",
+      "reason": "1rem matches spacing-4"
+    },
+    {
+      "arbitrary": "mq800:gap-[2.5rem]",
+      "canonical": "mq800:gap-10",
+      "reason": "2.5rem matches spacing-10"
+    },
+    {
+      "arbitrary": "mq800:gap-[2rem]",
+      "canonical": "mq800:gap-8",
+      "reason": "2rem matches spacing-8"
+    },
+    {
+      "arbitrary": "mq800:h-[20rem]",
+      "canonical": "mq800:h-80",
+      "reason": "20rem matches spacing-80"
+    },
+    {
+      "arbitrary": "mq800:leading-[2rem]",
+      "canonical": "mq800:leading-8",
+      "reason": "2rem matches leading-8"
+    },
+    {
+      "arbitrary": "mq800:p-[2rem]",
+      "canonical": "mq800:p-8",
+      "reason": "2rem matches spacing-8"
+    },
+    {
+      "arbitrary": "mq800:pb-[1.25rem]",
+      "canonical": "mq800:pb-5",
+      "reason": "1.25rem matches spacing-5"
+    },
+    {
+      "arbitrary": "mq800:pb-[2.5rem]",
+      "canonical": "mq800:pb-10",
+      "reason": "2.5rem matches spacing-10"
+    },
+    {
+      "arbitrary": "mq800:pb-[4rem]",
+      "canonical": "mq800:pb-16",
+      "reason": "4rem matches spacing-16"
+    },
+    {
+      "arbitrary": "mq800:pl-[2.25rem]",
+      "canonical": "mq800:pl-9",
+      "reason": "2.25rem matches spacing-9"
+    },
+    {
+      "arbitrary": "mq800:pr-[2rem]",
+      "canonical": "mq800:pr-8",
+      "reason": "2rem matches spacing-8"
+    },
+    {
+      "arbitrary": "mq800:pt-[0rem]",
+      "canonical": "mq800:pt-0",
+      "reason": "0rem matches spacing-0"
+    },
+    {
+      "arbitrary": "mq800:pt-[2rem]",
+      "canonical": "mq800:pt-8",
+      "reason": "2rem matches spacing-8"
+    },
+    {
+      "arbitrary": "mq800:pt-[3.5rem]",
+      "canonical": "mq800:pt-14",
+      "reason": "3.5rem matches spacing-14"
+    },
+    {
+      "arbitrary": "mq800:px-[2rem]",
+      "canonical": "mq800:px-8",
+      "reason": "2rem matches spacing-8"
+    },
+    {
+      "arbitrary": "mq800:py-[3.5rem]",
+      "canonical": "mq800:py-14",
+      "reason": "3.5rem matches spacing-14"
+    },
+    {
+      "arbitrary": "mt-[-1.25rem]",
+      "canonical": "-mt-5",
+      "reason": "-1.25rem matches spacing-5"
+    },
+    {
+      "arbitrary": "mt-[0.75rem]",
+      "canonical": "mt-3",
+      "reason": "0.75rem matches spacing-3"
+    },
+    {
+      "arbitrary": "mt-[1rem]",
+      "canonical": "mt-4",
+      "reason": "1rem matches spacing-4"
+    },
+    {
+      "arbitrary": "opacity-[0.6]",
+      "canonical": "opacity-60",
+      "reason": "0.6 matches opacity-60"
+    },
+    {
+      "arbitrary": "opacity-[0.9]",
+      "canonical": "opacity-90",
+      "reason": "0.9 matches opacity-90"
+    },
+    {
+      "arbitrary": "p-[0.25rem]",
+      "canonical": "p-1",
+      "reason": "0.25rem matches spacing-1"
+    },
+    {
+      "arbitrary": "p-[0.375rem]",
+      "canonical": "p-1.5",
+      "reason": "0.375rem matches spacing-1.5"
+    },
+    {
+      "arbitrary": "p-[0.5rem]",
+      "canonical": "p-2",
+      "reason": "0.5rem matches spacing-2"
+    },
+    {
+      "arbitrary": "p-[0.625rem]",
+      "canonical": "p-2.5",
+      "reason": "0.625rem matches spacing-2.5"
+    },
+    {
+      "arbitrary": "p-[0.75rem]",
+      "canonical": "p-3",
+      "reason": "0.75rem matches spacing-3"
+    },
+    {
+      "arbitrary": "p-[1.25rem]",
+      "canonical": "p-5",
+      "reason": "1.25rem matches spacing-5"
+    },
+    {
+      "arbitrary": "p-[1.5rem]",
+      "canonical": "p-6",
+      "reason": "1.5rem matches spacing-6"
+    },
+    {
+      "arbitrary": "p-[1.75rem]",
+      "canonical": "p-7",
+      "reason": "1.75rem matches spacing-7"
+    },
+    {
+      "arbitrary": "p-[2.5rem]",
+      "canonical": "p-10",
+      "reason": "2.5rem matches spacing-10"
+    },
+    {
+      "arbitrary": "p-[2rem]",
+      "canonical": "p-8",
+      "reason": "2rem matches spacing-8"
+    },
+    {
+      "arbitrary": "p-[3rem]",
+      "canonical": "p-12",
+      "reason": "3rem matches spacing-12"
+    },
+    {
+      "arbitrary": "pb-[0.25rem]",
+      "canonical": "pb-1",
+      "reason": "0.25rem matches spacing-1"
+    },
+    {
+      "arbitrary": "pb-[0rem]",
+      "canonical": "pb-0",
+      "reason": "0rem matches spacing-0"
+    },
+    {
+      "arbitrary": "pb-[1.25rem]",
+      "canonical": "pb-5",
+      "reason": "1.25rem matches spacing-5"
+    },
+    {
+      "arbitrary": "pb-[1.5rem]",
+      "canonical": "pb-6",
+      "reason": "1.5rem matches spacing-6"
+    },
+    {
+      "arbitrary": "pb-[1.75rem]",
+      "canonical": "pb-7",
+      "reason": "1.75rem matches spacing-7"
+    },
+    {
+      "arbitrary": "pb-[2.5rem]",
+      "canonical": "pb-10",
+      "reason": "2.5rem matches spacing-10"
+    },
+    {
+      "arbitrary": "pb-[2rem]",
+      "canonical": "pb-8",
+      "reason": "2rem matches spacing-8"
+    },
+    {
+      "arbitrary": "pl-[0rem]",
+      "canonical": "pl-0",
+      "reason": "0rem matches spacing-0"
+    },
+    {
+      "arbitrary": "pl-[1rem]",
+      "canonical": "pl-4",
+      "reason": "1rem matches spacing-4"
+    },
+    {
+      "arbitrary": "pl-[2.25rem]",
+      "canonical": "pl-9",
+      "reason": "2.25rem matches spacing-9"
+    },
+    {
+      "arbitrary": "pl-[2rem]",
+      "canonical": "pl-8",
+      "reason": "2rem matches spacing-8"
+    },
+    {
+      "arbitrary": "pl-[4.5rem]",
+      "canonical": "pl-18",
+      "reason": "4.5rem matches spacing-18"
+    },
+    {
+      "arbitrary": "pr-[0.25rem]",
+      "canonical": "pr-1",
+      "reason": "0.25rem matches spacing-1"
+    },
+    {
+      "arbitrary": "pr-[0.375rem]",
+      "canonical": "pr-1.5",
+      "reason": "0.375rem matches spacing-1.5"
+    },
+    {
+      "arbitrary": "pr-[0rem]",
+      "canonical": "pr-0",
+      "reason": "0rem matches spacing-0"
+    },
+    {
+      "arbitrary": "pr-[1.25rem]",
+      "canonical": "pr-5",
+      "reason": "1.25rem matches spacing-5"
+    },
+    {
+      "arbitrary": "pr-[1.5rem]",
+      "canonical": "pr-6",
+      "reason": "1.5rem matches spacing-6"
+    },
+    {
+      "arbitrary": "pr-[2rem]",
+      "canonical": "pr-8",
+      "reason": "2rem matches spacing-8"
+    },
+    {
+      "arbitrary": "pr-[4rem]",
+      "canonical": "pr-16",
+      "reason": "4rem matches spacing-16"
+    },
+    {
+      "arbitrary": "pt-[0.125rem]",
+      "canonical": "pt-0.5",
+      "reason": "0.125rem matches spacing-0.5"
+    },
+    {
+      "arbitrary": "pt-[0.25rem]",
+      "canonical": "pt-1",
+      "reason": "0.25rem matches spacing-1"
+    },
+    {
+      "arbitrary": "pt-[0rem]",
+      "canonical": "pt-0",
+      "reason": "0rem matches spacing-0"
+    },
+    {
+      "arbitrary": "pt-[1.25rem]",
+      "canonical": "pt-5",
+      "reason": "1.25rem matches spacing-5"
+    },
+    {
+      "arbitrary": "pt-[1rem]",
+      "canonical": "pt-4",
+      "reason": "1rem matches spacing-4"
+    },
+    {
+      "arbitrary": "pt-[2.5rem]",
+      "canonical": "pt-10",
+      "reason": "2.5rem matches spacing-10"
+    },
+    {
+      "arbitrary": "pt-[3rem]",
+      "canonical": "pt-12",
+      "reason": "3rem matches spacing-12"
+    },
+    {
+      "arbitrary": "px-[0.25rem]",
+      "canonical": "px-1",
+      "reason": "0.25rem matches spacing-1"
+    },
+    {
+      "arbitrary": "px-[0.5rem]",
+      "canonical": "px-2",
+      "reason": "0.5rem matches spacing-2"
+    },
+    {
+      "arbitrary": "px-[0.625rem]",
+      "canonical": "px-2.5",
+      "reason": "0.625rem matches spacing-2.5"
+    },
+    {
+      "arbitrary": "px-[0.75rem]",
+      "canonical": "px-3",
+      "reason": "0.75rem matches spacing-3"
+    },
+    {
+      "arbitrary": "px-[0.875rem]",
+      "canonical": "px-3.5",
+      "reason": "0.875rem matches spacing-3.5"
+    },
+    {
+      "arbitrary": "px-[0rem]",
+      "canonical": "px-0",
+      "reason": "0rem matches spacing-0"
+    },
+    {
+      "arbitrary": "px-[1.25rem]",
+      "canonical": "px-5",
+      "reason": "1.25rem matches spacing-5"
+    },
+    {
+      "arbitrary": "px-[1.5rem]",
+      "canonical": "px-6",
+      "reason": "1.5rem matches spacing-6"
+    },
+    {
+      "arbitrary": "px-[1.75rem]",
+      "canonical": "px-7",
+      "reason": "1.75rem matches spacing-7"
+    },
+    {
+      "arbitrary": "px-[1rem]",
+      "canonical": "px-4",
+      "reason": "1rem matches spacing-4"
+    },
+    {
+      "arbitrary": "px-[2.25rem]",
+      "canonical": "px-9",
+      "reason": "2.25rem matches spacing-9"
+    },
+    {
+      "arbitrary": "px-[2.5rem]",
+      "canonical": "px-10",
+      "reason": "2.5rem matches spacing-10"
+    },
+    {
+      "arbitrary": "px-[2rem]",
+      "canonical": "px-8",
+      "reason": "2rem matches spacing-8"
+    },
+    {
+      "arbitrary": "px-[7.5rem]",
+      "canonical": "px-30",
+      "reason": "7.5rem matches spacing-30"
+    },
+    {
+      "arbitrary": "py-[0.25rem]",
+      "canonical": "py-1",
+      "reason": "0.25rem matches spacing-1"
+    },
+    {
+      "arbitrary": "py-[0.375rem]",
+      "canonical": "py-1.5",
+      "reason": "0.375rem matches spacing-1.5"
+    },
+    {
+      "arbitrary": "py-[0.5rem]",
+      "canonical": "py-2",
+      "reason": "0.5rem matches spacing-2"
+    },
+    {
+      "arbitrary": "py-[0.625rem]",
+      "canonical": "py-2.5",
+      "reason": "0.625rem matches spacing-2.5"
+    },
+    {
+      "arbitrary": "py-[0.75rem]",
+      "canonical": "py-3",
+      "reason": "0.75rem matches spacing-3"
+    },
+    {
+      "arbitrary": "py-[0.875rem]",
+      "canonical": "py-3.5",
+      "reason": "0.875rem matches spacing-3.5"
+    },
+    {
+      "arbitrary": "py-[0rem]",
+      "canonical": "py-0",
+      "reason": "0rem matches spacing-0"
+    },
+    {
+      "arbitrary": "py-[1.25rem]",
+      "canonical": "py-5",
+      "reason": "1.25rem matches spacing-5"
+    },
+    {
+      "arbitrary": "py-[1.5rem]",
+      "canonical": "py-6",
+      "reason": "1.5rem matches spacing-6"
+    },
+    {
+      "arbitrary": "py-[1rem]",
+      "canonical": "py-4",
+      "reason": "1rem matches spacing-4"
+    },
+    {
+      "arbitrary": "py-[2.5rem]",
+      "canonical": "py-10",
+      "reason": "2.5rem matches spacing-10"
+    },
+    {
+      "arbitrary": "py-[3rem]",
+      "canonical": "py-12",
+      "reason": "3rem matches spacing-12"
+    },
+    {
+      "arbitrary": "py-[5rem]",
+      "canonical": "py-20",
+      "reason": "5rem matches spacing-20"
+    },
+    {
+      "arbitrary": "right-[0.875rem]",
+      "canonical": "right-3.5",
+      "reason": "0.875rem matches spacing-3.5"
+    },
+    {
+      "arbitrary": "right-[0rem]",
+      "canonical": "right-0",
+      "reason": "0rem matches spacing-0"
+    },
+    {
+      "arbitrary": "right-[1.25rem]",
+      "canonical": "right-5",
+      "reason": "1.25rem matches spacing-5"
+    },
+    {
+      "arbitrary": "rounded-[12px]",
+      "canonical": "rounded-md",
+      "reason": "12px matches rounded-md"
+    },
+    {
+      "arbitrary": "rounded-[16px]",
+      "canonical": "rounded-lg",
+      "reason": "16px matches rounded-lg"
+    },
+    {
+      "arbitrary": "rounded-[20px]",
+      "canonical": "rounded-xl",
+      "reason": "20px matches rounded-xl"
+    },
+    {
+      "arbitrary": "rounded-[28px]",
+      "canonical": "rounded-2xl",
+      "reason": "28px matches rounded-2xl"
+    },
+    {
+      "arbitrary": "rounded-[40px]",
+      "canonical": "rounded-3xl",
+      "reason": "40px matches rounded-3xl"
+    },
+    {
+      "arbitrary": "rounded-[8px]",
+      "canonical": "rounded",
+      "reason": "8px matches default radius"
+    },
+    {
+      "arbitrary": "text-[#0461c3]",
+      "canonical": "text-primary",
+      "reason": "color #0461c3 matches primary"
+    },
+    {
+      "arbitrary": "text-[#0bc111]",
+      "canonical": "text-accent-green",
+      "reason": "color #0bc111 matches accent-green"
+    },
+    {
+      "arbitrary": "text-[#12171c]",
+      "canonical": "text-dark",
+      "reason": "color #12171c matches dark"
+    },
+    {
+      "arbitrary": "text-[#1a2530]",
+      "canonical": "text-gray-600",
+      "reason": "color #1a2530 matches gray-600"
+    },
+    {
+      "arbitrary": "text-[#1a8cd5]",
+      "canonical": "text-primary-light",
+      "reason": "color #1a8cd5 matches primary-light"
+    },
+    {
+      "arbitrary": "text-[#4d565f]",
+      "canonical": "text-gray-300",
+      "reason": "color #4d565f matches gray-300"
+    },
+    {
+      "arbitrary": "text-[#4d575f]",
+      "canonical": "text-gray-400",
+      "reason": "color #4d575f matches gray-400"
+    },
+    {
+      "arbitrary": "text-[#64676f]",
+      "canonical": "text-gray-200",
+      "reason": "color #64676f matches gray-200"
+    },
+    {
+      "arbitrary": "text-[#eee]",
+      "canonical": "text-gray-100",
+      "reason": "color #eeeeee matches gray-100"
+    },
+    {
+      "arbitrary": "to-[#060809]",
+      "canonical": "to-dark-darker",
+      "reason": "color #060809 matches dark-darker"
+    },
+    {
+      "arbitrary": "top-[0.25rem]",
+      "canonical": "top-1",
+      "reason": "0.25rem matches spacing-1"
+    },
+    {
+      "arbitrary": "top-[0rem]",
+      "canonical": "top-0",
+      "reason": "0rem matches spacing-0"
+    },
+    {
+      "arbitrary": "top-[1.25rem]",
+      "canonical": "top-5",
+      "reason": "1.25rem matches spacing-5"
+    },
+    {
+      "arbitrary": "top-[1rem]",
+      "canonical": "top-4",
+      "reason": "1rem matches spacing-4"
+    },
+    {
+      "arbitrary": "top-[2.25rem]",
+      "canonical": "top-9",
+      "reason": "2.25rem matches spacing-9"
+    },
+    {
+      "arbitrary": "top-[2.75rem]",
+      "canonical": "top-11",
+      "reason": "2.75rem matches spacing-11"
+    },
+    {
+      "arbitrary": "top-[3.5rem]",
+      "canonical": "top-14",
+      "reason": "3.5rem matches spacing-14"
+    },
+    {
+      "arbitrary": "top-[5rem]",
+      "canonical": "top-20",
+      "reason": "5rem matches spacing-20"
+    },
+    {
+      "arbitrary": "top-[6rem]",
+      "canonical": "top-24",
+      "reason": "6rem matches spacing-24"
+    },
+    {
+      "arbitrary": "top-[7.5rem]",
+      "canonical": "top-30",
+      "reason": "7.5rem matches spacing-30"
+    },
+    {
+      "arbitrary": "translate-y-[0.5rem]",
+      "canonical": "translate-y-2",
+      "reason": "0.5rem matches spacing-2"
+    },
+    {
+      "arbitrary": "w-[0.375rem]",
+      "canonical": "w-1.5",
+      "reason": "0.375rem matches spacing-1.5"
+    },
+    {
+      "arbitrary": "w-[0.5rem]",
+      "canonical": "w-2",
+      "reason": "0.5rem matches spacing-2"
+    },
+    {
+      "arbitrary": "w-[0.625rem]",
+      "canonical": "w-2.5",
+      "reason": "0.625rem matches spacing-2.5"
+    },
+    {
+      "arbitrary": "w-[0.75rem]",
+      "canonical": "w-3",
+      "reason": "0.75rem matches spacing-3"
+    },
+    {
+      "arbitrary": "w-[1.25rem]",
+      "canonical": "w-5",
+      "reason": "1.25rem matches spacing-5"
+    },
+    {
+      "arbitrary": "w-[1.5rem]",
+      "canonical": "w-6",
+      "reason": "1.5rem matches spacing-6"
+    },
+    {
+      "arbitrary": "w-[1.75rem]",
+      "canonical": "w-7",
+      "reason": "1.75rem matches spacing-7"
+    },
+    {
+      "arbitrary": "w-[10rem]",
+      "canonical": "w-40",
+      "reason": "10rem matches spacing-40"
+    },
+    {
+      "arbitrary": "w-[11rem]",
+      "canonical": "w-44",
+      "reason": "11rem matches spacing-44"
+    },
+    {
+      "arbitrary": "w-[13rem]",
+      "canonical": "w-52",
+      "reason": "13rem matches spacing-52"
+    },
+    {
+      "arbitrary": "w-[15rem]",
+      "canonical": "w-60",
+      "reason": "15rem matches spacing-60"
+    },
+    {
+      "arbitrary": "w-[1rem]",
+      "canonical": "w-4",
+      "reason": "1rem matches spacing-4"
+    },
+    {
+      "arbitrary": "w-[2.25rem]",
+      "canonical": "w-9",
+      "reason": "2.25rem matches spacing-9"
+    },
+    {
+      "arbitrary": "w-[2.5rem]",
+      "canonical": "w-10",
+      "reason": "2.5rem matches spacing-10"
+    },
+    {
+      "arbitrary": "w-[2.75rem]",
+      "canonical": "w-11",
+      "reason": "2.75rem matches spacing-11"
+    },
+    {
+      "arbitrary": "w-[20rem]",
+      "canonical": "w-80",
+      "reason": "20rem matches spacing-80"
+    },
+    {
+      "arbitrary": "w-[24rem]",
+      "canonical": "w-96",
+      "reason": "24rem matches spacing-96"
+    },
+    {
+      "arbitrary": "w-[27.5rem]",
+      "canonical": "w-110",
+      "reason": "27.5rem matches spacing-110"
+    },
+    {
+      "arbitrary": "w-[2rem]",
+      "canonical": "w-8",
+      "reason": "2rem matches spacing-8"
+    },
+    {
+      "arbitrary": "w-[3.5rem]",
+      "canonical": "w-14",
+      "reason": "3.5rem matches spacing-14"
+    },
+    {
+      "arbitrary": "w-[3rem]",
+      "canonical": "w-12",
+      "reason": "3rem matches spacing-12"
+    },
+    {
+      "arbitrary": "w-[5rem]",
+      "canonical": "w-20",
+      "reason": "5rem matches spacing-20"
+    },
+    {
+      "arbitrary": "w-[7.5rem]",
+      "canonical": "w-30",
+      "reason": "7.5rem matches spacing-30"
+    },
+    {
+      "arbitrary": "w-[9rem]",
+      "canonical": "w-36",
+      "reason": "9rem matches spacing-36"
+    },
+    {
+      "arbitrary": "z-[0]",
+      "canonical": "z-0",
+      "reason": "0 matches z-0"
+    }
+  ],
+  "unmapped": [
+    {
+      "arbitrary": "[-webkit-background-clip:text]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "[-webkit-text-fill-color:transparent]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "[backdrop-filter:blur(10px)]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "[backdrop-filter:blur(8px)]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "[background:linear-gradient(#1a2530,_#1a2530),_linear-gradient(180deg,_#0461c3,_#0bc111)]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "[background:linear-gradient(103.11deg,_#177aba,_#1a8cd5)]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "[background:linear-gradient(103.11deg,_#1a8cd5,_#1a8cd5)]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "[background:linear-gradient(180deg,_#0461c3,_#0bc111)]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "[background:linear-gradient(180deg,_#d4e9f7,_#eff5fb)]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "[background:linear-gradient(180deg,_rgba(255,_255,_255,_0.3)_10%,_rgba(255,_255,_255,_0.96)_27.95%)]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "[background:linear-gradient(270deg,_#fff,_rgba(255,_255,_255,_0))]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "[background:linear-gradient(270deg,_#fff,_rgba(255,_255,_255,_0.4))]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "[background:linear-gradient(270deg,_rgba(255,_255,_255,_0.4),_#fff)]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "[background:radial-gradient(circle_at_72%_70%,_#1f79d6,_#0461c3_52%)]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "[border:none]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "[filter:blur(120px)]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "[filter:blur(130px)]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "[filter:drop-shadow(0px_2px_80px_rgba(26,_38,_48,_0.08))]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "basis-[calc((100%_-_3rem)/3)]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "bg-[#005edc]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "bg-[#1a2630]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "bg-[#1e2226]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "bg-[#5b5c5c]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "bg-[#87ceeb]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "bg-[#B4DAF1]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "bg-[#b1ceec]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "bg-[#d9f0ff]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "bg-[#e2eff9]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "bg-[#e6f4ff]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "bg-[#e8f2f8]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "bg-[#eef5fb]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "bg-[#ef6060]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "bg-[#f0f4f8]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "bg-[#f0f8ff]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "bg-[#f7fafd]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "bg-[#f8f8ff]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "bg-[linear-gradient(270deg,_#fff,_rgba(255,_255,_255,_0.2))]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "bg-[linear-gradient(270deg,_rgba(255,_255,_255,_0.2),_#fff)]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "bg-[rgba(0,94,220,0.08)]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "bg-[rgba(11,193,17,0.12)]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "bg-[rgba(11,193,17,0.2)]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "bg-[rgba(217,217,217,0.4)]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "bg-[rgba(226,239,249,0.5)]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "bg-[rgba(24,31,37,0.8)]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "bg-[rgba(242,240,251,0.08)]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "bg-[rgba(255,255,255,0.1)]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "bg-[rgba(255,255,255,0.12)]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "bg-[rgba(26,140,213,0.08)]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "bg-[rgba(26,140,213,0.1)]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "bg-[rgba(26,37,48,0.4)]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "bg-[rgba(4,97,195,0.1)]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "bg-[rgba(4,97,195,0.12)]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "bg-[transparent]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "border-[#005edc]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "border-[#1b2128]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "border-[#242d38]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "border-[#2d3640]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "border-[#ddebf9]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "border-[#ebf3fb]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "border-[#f4f7fa]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "border-[rgba(122,131,140,0.2)]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "border-[rgba(226,229,233,0.5)]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "border-[rgba(255,255,255,0.25)]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "border-t-[6px]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "bottom-[-3.75rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "bottom-[0.188rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "bottom-[13.33%]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "bottom-[17.5%]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "bottom-[2.375rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "flex-[1.1481]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "font-['Proxima_Nova']",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "font-[Inter]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "font-[Onest]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "font-[Urbanist]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "font-[inherit]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "gap-[3.312rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "gap-[3.75rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "gap-[4.25rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "gap-[4.75rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "gap-[6.125rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "h-[1.0625rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "h-[1.625rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "h-[1.875rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "h-[11.25rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "h-[11.563rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "h-[12.5rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "h-[13.375rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "h-[13.625rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "h-[14.375rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "h-[14.438rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "h-[17.5rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "h-[17rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "h-[2.125rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "h-[2.625rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "h-[21rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "h-[22.5rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "h-[23.75rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "h-[23.813rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "h-[26.938rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "h-[28rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "h-[29rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "h-[3.063rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "h-[3.25rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "h-[3.75rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "h-[30.938rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "h-[30rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "h-[31.375rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "h-[32.25rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "h-[33.75rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "h-[37.5rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "h-[38.75rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "h-[4.25rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "h-[4.75rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "h-[5.281rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "h-[5.438rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "h-[68.33%]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "h-[7.75rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "h-[73.33%]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "h-[8.75rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "hover:bg-[#0354a8]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "hover:bg-[#3a444b]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "hover:bg-[#B4DAF1]/90",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "hover:bg-[#b8e0ff]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "hover:bg-[#e0e8f0]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "hover:bg-[#f0f0f0]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "hover:bg-[#f0f4f8]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "hover:bg-[#f7fafd]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "hover:shadow-[0px_2px_12px_rgba(26,38,48,0.12)]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "leading-[1.125rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "leading-[1.182rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "leading-[1.194rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "leading-[1.375rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "leading-[1.625rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "leading-[1.875rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "leading-[2.125rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "leading-[2.375rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "leading-[2.625rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "leading-[3.25rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "leading-[3.625rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "leading-[3rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "leading-[4.25rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "leading-[4.625rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "leading-[4.875rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "leading-[normal]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "left-[-0.187rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "left-[-0.25rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "left-[-0.625rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "left-[-6.875rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "left-[0.063rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "left-[0.188rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "left-[0.938rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "left-[1.92%]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "left-[10.375rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "left-[10.5rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "left-[10.688rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "left-[11.5rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "left-[13.875rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "left-[14.375rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "left-[14.688rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "left-[15.519rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "left-[2.819rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "left-[20.125rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "left-[22.469rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "left-[26.063rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "left-[3.313rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "left-[3.625rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "left-[3.688rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "left-[3.875rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "left-[30.119rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "left-[37.17%]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "left-[49.313rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "left-[6.5rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "left-[7.188rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "left-[calc(50%_-_199.5px)]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "left-[calc(50%_-_24.4px)]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "left-[calc(50%_-_314px)]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "left-[calc(50%_-_630px)]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "m-[0!important]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "max-h-[1000px]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "max-h-[500px]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "max-w-[22.25rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "max-w-[23.75rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "max-w-[27.25rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "max-w-[28.938rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "max-w-[33.25rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "max-w-[36.5rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "max-w-[38.75rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "max-w-[40rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "max-w-[50rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "max-w-[60rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "max-w-[61.25rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "max-w-[calc((100%_-_2.5rem)_/_3)]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "min-h-[34.375rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "min-h-[46.75rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "min-h-[60vh]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "min-w-[10.125rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "min-w-[11.125rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "min-w-[11.438rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "min-w-[11.625rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "min-w-[11.875rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "min-w-[13.063rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "min-w-[13.188rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "min-w-[13.25rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "min-w-[14.438rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "min-w-[15.625rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "min-w-[16.75rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "min-w-[17.375rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "min-w-[17.813rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "min-w-[17.875rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "min-w-[18.313rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "min-w-[18.75rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "min-w-[19.188rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "min-w-[19.375rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "min-w-[19.5rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "min-w-[19.688rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "min-w-[20.125rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "min-w-[20.313rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "min-w-[20.813rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "min-w-[20.938rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "min-w-[21.375rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "min-w-[22.125rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "min-w-[22.75rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "min-w-[23.25rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "min-w-[23.938rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "min-w-[25.688rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "min-w-[26.813rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "min-w-[26rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "min-w-[28.938rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "min-w-[32.313rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "min-w-[4.125rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "min-w-[7.063rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "min-w-[9.5rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "ml-[-0.063rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "ml-[-0.338rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq1050:gap-[1.875rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq1050:leading-[1.875rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq1050:leading-[2.125rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq1050:leading-[2.375rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq1050:leading-[2.875rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq1050:leading-[3.375rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq1050:pl-[1.875rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq1050:pl-[3.438rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq1050:pl-[3.75rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq1050:pl-[5.625rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq1050:pr-[1.875rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq1050:pr-[3.438rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq1050:pr-[3.75rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq1050:pr-[5.625rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq1050:px-[3.438rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq1050:px-[3.75rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq1050:text-[1.625rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq1050:text-[1.813rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq1050:text-[2.375rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq1050:text-[2.813rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq1125:pb-[3.25rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq1125:pt-[3.25rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq1125:px-[3.438rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq1350:pl-[1.875rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq1350:pl-[2.125rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq1350:pl-[2.438rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq1350:pr-[1.875rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq1350:pr-[2.125rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq1350:pr-[2.438rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq1350:px-[2.125rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq1350:px-[5.625rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq450:gap-[0.938rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq450:gap-[1.063rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq450:gap-[1.188rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq450:leading-[1.188rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq450:leading-[1.313rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq450:leading-[1.375rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq450:leading-[1.438rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq450:leading-[1.563rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq450:leading-[1.625rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq450:leading-[1.688rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq450:leading-[1.813rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq450:leading-[2.188rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq450:leading-[2.563rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq450:leading-[2.75rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq450:leading-[2.938rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq450:mb-[-14.8rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq450:pb-[2.438rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq450:pb-[2.625rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq450:pt-[1.813rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq450:pt-[2.438rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq450:pt-[2.625rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq450:py-[1.625rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq450:py-[1.688rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq450:py-[2.125rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq450:py-[2.438rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq450:py-[2.625rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq450:scale-[0.45]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq450:scale-[0.85]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq450:text-[1.125rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq450:text-[1.188rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq450:text-[1.375rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq450:text-[1.813rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq450:text-[1rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq450:text-[2.125rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq450:text-[2.313rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq450:text-[2.5rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq750:gap-[0.938rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq750:gap-[2.125rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq750:leading-[3.375rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq750:pb-[2.625rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq750:pl-[1.875rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq750:pl-[2.813rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq750:pl-[3.438rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq750:pr-[1.875rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq750:pr-[2.813rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq750:pr-[3.438rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq750:pt-[1.625rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq750:pt-[1.813rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq750:px-[1.875rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq750:px-[2.125rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq750:px-[3.438rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq750:py-[2.625rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq750:py-[3.25rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq750:text-[2.813rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq800:gap-[1.125rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq800:gap-[1.625rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq800:gap-[1.875rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq800:gap-[2.125rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq800:gap-[2.375rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq800:gap-[3.063rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq800:leading-[1.875rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq800:leading-[2.375rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq800:leading-[3.375rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq800:leading-[3.688rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq800:leading-[3.875rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq800:mb-[-5.9rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq800:pb-[2.375rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq800:pb-[2.625rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq800:pb-[3.25rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq800:pl-[3.438rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq800:pr-[3.438rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq800:pt-[1.625rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq800:pt-[1.813rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq800:pt-[14.875rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq800:pt-[16.313rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq800:pt-[2.375rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq800:pt-[3.25rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq800:px-[3.438rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq800:py-[2.625rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq800:py-[3.25rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq800:scale-[0.78]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq800:text-[1.625rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq800:text-[1.813rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq800:text-[2.375rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq800:text-[2.813rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq800:text-[3.125rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mq800:text-[3.313rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mt-[-0.063rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mt-[-16.5rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "mt-[-7.125rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "p-[3.75rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "p-[4.25rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "pb-[4.25rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "pb-[6.125rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "pl-[1.687rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "pl-[6.875rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "pr-[0.812rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "pr-[0.937rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "pr-[1.312rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "pr-[2.062rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "pr-[2.187rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "pt-[0.187rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "pt-[1.062rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "pt-[1.375rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "pt-[2.375rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "pt-[22.875rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "pt-[25.125rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "pt-[4.125rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "pt-[4.25rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "pt-[6.25rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "pt-[9.75rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "px-[0.812rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "px-[1.875rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "px-[11.25rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "px-[3.75rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "px-[4.25rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "px-[4.937rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "px-[6.875rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "py-[0.687rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "py-[1.375rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "py-[2.125rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "py-[3.625rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "py-[3.75rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "py-[4.25rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "py-[6.125rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "right-[-0.25rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "right-[-3.875rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "right-[-6.875rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "right-[2.688rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "right-[6.33%]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "right-[65.58%]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "right-[8.625rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "rounded-[100px]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "rounded-[10px]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "rounded-[126px]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "rounded-[24px]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "rounded-[48px]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "rounded-[50%]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "rounded-[50px]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "rounded-[52px]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "rounded-[56px]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "rounded-br-[110px]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "rounded-br-[20px]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "rounded-t-[28px]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "rounded-tl-[110px]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "shadow-[-2px_2px_16px_rgba(26,_38,_48,_0.06)]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "shadow-[0px_0px_12px_rgba(26,38,48,0.08)]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "shadow-[0px_0px_12px_rgba(26,_38,_48,_0.08)]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "shadow-[0px_0px_8px_rgba(26,_38,_48,_0.08)]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "shadow-[0px_12px_32px_rgba(4,97,195,0.32)]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "shadow-[0px_23px_54px_rgba(26,37,48,0.24)]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "shadow-[0px_2px_12px_rgba(26,_38,_48,_0.08)]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "shadow-[0px_2px_12px_rgba(26,_38,_48,_0.12)]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "shadow-[0px_2px_16px_rgba(26,_38,_48,_0.12)]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "shadow-[0px_2px_20px_rgba(26,37,48,0.12)]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "shadow-[0px_2px_8px_rgba(26,37,48,0.04)]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "shadow-[0px_2px_8px_rgba(26,37,48,0.08)]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "shadow-[0px_4px_0px_rgba(26,_37,_48,_0.1)]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "shadow-[0px_4px_16px_rgba(26,38,48,0.08)]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "shadow-[0px_8px_24px_rgba(26,37,48,0.12)]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "shadow-[8px_8px_12px_rgba(26,_38,_48,_0.08)]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "text-[#005edc]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "text-[#0f0928]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "text-[#161c2d]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "text-[#1a2630]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "text-[#b4c3d0]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "text-[#d14343]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "text-[#d1d9e6]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "text-[#f0f4f8]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "text-[#f5f5f5]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "text-[0.75rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "text-[0.875rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "text-[0.9375rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "text-[1.125rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "text-[1.25rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "text-[1.375rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "text-[1.5rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "text-[1.75rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "text-[1.875rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "text-[1rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "text-[2.25rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "text-[2.5rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "text-[2.75rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "text-[2rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "text-[3.5rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "text-[3.875rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "text-[3rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "text-[4.125rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "text-[inherit]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "text-[length:inherit]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "text-[rgba(238,238,238,0.5)]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "text-[rgba(238,238,238,0.8)]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "text-[rgba(255,255,255,0.8)]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "text-[rgba(26,37,48,0.7)]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "text-[rgba(77,86,95,0.8)]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "top-[-0.625rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "top-[-1.625rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "top-[10.813rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "top-[11.563rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "top-[13.33%]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "top-[14.17%]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "top-[19.256rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "top-[2.188rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "top-[2.338rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "top-[23.625rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "top-[3.063rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "top-[5.75rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "top-[8.375rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "top-[calc(50%_-_126px)]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "top-[calc(50%_-_15.7px)]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "top-[calc(50%_-_21px)]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "top-[calc(50%_-_22px)]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "top-[calc(50%_-_232px)]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "top-[calc(50%_-_29px)]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "tracking-[-0.01em]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "tracking-[-0.08px]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "tracking-[0.01em]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "tracking-[0.02em]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "tracking-[normal]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[10.063rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[10.5rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[11.25rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[11.5rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[12.5rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[12.988rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[13.644rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[14.931rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[15.063rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[15.5rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[17.625rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[17.75rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[18.625rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[19.581rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[2.875rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[20.75rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[21.188rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[22.375rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[22.5rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[22.75rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[22.875rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[23.4rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[23.75rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[24.125rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[24.75rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[25rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[26.25rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[26.5rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[26.938rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[27.125rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[27.781rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[29.063rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[29.281rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[29.375rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[29.688rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[3.063rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[3.25rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[3.75rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[30.25rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[30.281rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[31.25rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[32.5%]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[32.5rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[33.25rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[33.75rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[35.125rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[35rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[36.875rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[36rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[37.5rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[38.25rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[39.25rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[39.775rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[4.25rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[40.688rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[40rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[41.25rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[41.875rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[42.5rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[43.063rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[45rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[47.5rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[5.375rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[5.75rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[5.813rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[50.156rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[51.25rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[52.5rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[56.5%]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[6.5rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[6.875rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[60rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[65rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[69rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[7.55rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[7.769rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[7.813rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[76.219rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[76.25rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[78.75rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[8.438rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "w-[90rem]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "z-[1]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "z-[2]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "z-[3]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "z-[4]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "z-[6]",
+      "reason": "no exact Tailwind class"
+    },
+    {
+      "arbitrary": "z-[7]",
+      "reason": "no exact Tailwind class"
+    }
+  ],
+  "summary": {
+    "totalArbitraryClasses": 856,
+    "totalMappings": 284,
+    "totalUnmapped": 572
+  }
+}
