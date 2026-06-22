@@ -1,86 +1,85 @@
 import type { NextPage } from "next";
-
 import Image from "next/image";
+import type {
+  KeyboardEventHandler,
+  MouseEventHandler,
+  Ref,
+} from "react";
 
 export type HowItWorksType = {
   className?: string;
-  rectangle11: string;
-  prop?: string;
-  submitYourPressRelease?: string;
-
-  /** Variant props */
-  property1?: string;
-};
-
-const getHowItWorksContainerStyle = (styleKey: string) => {
-  switch (styleKey) {
-    case "Variant2":
-      return "[&]:border-[#1b2128] [&]:border-solid [&]:border-[4px]";
-  }
-};
-const getRectangleImageStyle = (styleKey: string) => {
-  switch (styleKey) {
-    case "Variant2":
-      return "[&]:h-[5rem] mq450:[&]:h-[10rem]";
-  }
-};
-const getTitleContainerStyle = (styleKey: string) => {
-  switch (styleKey) {
-    case "Variant2":
-      return "[&]:bg-[#12171c]";
-  }
-};
-const getStepContainerStyle = (styleKey: string) => {
-  switch (styleKey) {
-    case "Variant2":
-      return "[&]:bg-[rgba(11,193,17,0.2)]";
-  }
-};
-const getSubmitYourPressStyle = (styleKey: string) => {
-  switch (styleKey) {
-    case "Variant2":
-      return "[&]:text-[rgba(238,238,238,0.8)]";
-  }
+  thumbnailSrc: string;
+  thumbnailAlt: string;
+  stepNumber: string;
+  title: string;
+  isActive: boolean;
+  tabId: string;
+  panelId: string;
+  buttonRef?: Ref<HTMLButtonElement>;
+  onClick: MouseEventHandler<HTMLButtonElement>;
+  onKeyDown: KeyboardEventHandler<HTMLButtonElement>;
 };
 
 const HowItWorks: NextPage<HowItWorksType> = ({
   className = "",
-  property1 = "Default",
-  rectangle11,
-  prop,
-  submitYourPressRelease,
+  thumbnailSrc,
+  thumbnailAlt,
+  stepNumber,
+  title,
+  isActive,
+  tabId,
+  panelId,
+  buttonRef,
+  onClick,
+  onKeyDown,
 }) => {
-  const variantKey = `${property1}`;
-
   return (
-    <div
-      className={`flex-1 rounded-[28px] bg-[rgba(242,240,251,0.08)] border-color-white border-solid border-[4px] overflow-hidden flex flex-col items-center text-center text-[1rem] text-[#0bc111] font-['Proxima_Nova'] mq450:min-w-full mq450:flex-none ${getHowItWorksContainerStyle(variantKey)} ${className}`}
+    <button
+      ref={buttonRef}
+      id={tabId}
+      type="button"
+      role="tab"
+      aria-selected={isActive}
+      aria-controls={panelId}
+      tabIndex={isActive ? 0 : -1}
+      onClick={onClick}
+      onKeyDown={onKeyDown}
+      className={`w-full min-w-0 cursor-pointer appearance-none p-0 rounded-[28px] overflow-hidden flex flex-col items-center text-center text-[1rem] text-[#0bc111] font-['Proxima_Nova'] border-solid border-[4px] transition-[border-color,background-color,box-shadow] duration-200 motion-reduce:transition-none focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-[4px] focus-visible:outline-[#0bc111] ${
+        isActive
+          ? "bg-[rgba(242,240,251,0.08)] border-color-white"
+          : "bg-[rgba(242,240,251,0.08)] border-[#1b2128]"
+      } ${className}`}
     >
       <Image
-        className={`self-stretch h-[10rem] relative max-w-full overflow-hidden shrink-0 object-cover mq450:h-[10rem] ${getRectangleImageStyle(variantKey)}`}
+        className={`self-stretch w-full relative overflow-hidden shrink-0 object-cover transition-[height] duration-200 motion-reduce:transition-none ${
+          isActive
+            ? "h-[10rem]"
+            : "h-[5rem] mq1125:h-[8rem] mq450:h-[10rem]"
+        }`}
         width={256}
         height={160}
-        style={{ width: "auto" }}
         sizes="100vw"
-        alt=""
-        src={rectangle11}
+        alt={thumbnailAlt}
+        src={thumbnailSrc}
       />
       <div
-        className={`self-stretch rounded-t-[28px] rounded-b-none bg-color-white flex flex-col items-center py-[1.25rem] px-[1.5rem] gap-[0.75rem] mt-[-1.25rem] relative mq450:mt-0 ${getTitleContainerStyle(variantKey)}`}
+        className={`self-stretch rounded-t-[28px] rounded-b-none flex flex-col items-center py-[1.25rem] px-[1.5rem] gap-[0.75rem] mt-[-1.25rem] relative transition-colors duration-200 motion-reduce:transition-none mq450:mt-0 ${
+          isActive ? "bg-color-white" : "bg-[#12171c]"
+        }`}
       >
-        <div
-          className={`rounded-[40px] bg-[rgba(11,193,17,0.12)] flex items-center py-[0.25rem] px-[0.625rem] gap-[0.25rem] ${getStepContainerStyle(variantKey)}`}
-        >
+        <div className="rounded-[40px] bg-[rgba(11,193,17,0.2)] flex items-center py-[0.25rem] px-[0.625rem] gap-[0.25rem]">
           <b className="relative leading-[1.5rem]">Step</b>
-          <b className="relative leading-[1.5rem] text-left">{prop}</b>
+          <b className="relative leading-[1.5rem] text-left">{stepNumber}</b>
         </div>
         <h3
-          className={`m-0 self-stretch relative text-[1.25rem] leading-[1.75rem] font-bold font-[inherit] text-[#161c2d] ${getSubmitYourPressStyle(variantKey)}`}
+          className={`m-0 self-stretch relative text-[1.25rem] leading-[1.75rem] font-bold font-[inherit] transition-colors duration-200 motion-reduce:transition-none ${
+            isActive ? "text-[#161c2d]" : "text-[rgba(238,238,238,0.8)]"
+          }`}
         >
-          {submitYourPressRelease}
+          {title}
         </h3>
       </div>
-    </div>
+    </button>
   );
 };
 

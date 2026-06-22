@@ -5,7 +5,6 @@ import Clients from "../components/clients";
 import FrameComponent2 from "../components/frame-component2";
 
 import About from "../components/about";
-import Step from "../components/step";
 import FrameComponent5 from "../components/frame-component5";
 import CtaSection from "../components/cta-section";
 import WhyChooseUs from "../components/why-choose-us";
@@ -112,8 +111,7 @@ const Home: NextPage = () => {
             Simple Access to Global Distribution
           </h1>
         </div>
-        <div className="self-stretch h-[44.75rem] flex flex-col items-start pt-[0rem] px-[0rem] pb-[1.75rem] box-border max-w-full mq450:h-auto mq1350:h-auto">
-          <Step />
+        <div className="self-stretch flex flex-col items-start pt-[0rem] px-[0rem] pb-[1.75rem] box-border max-w-full">
           <FrameComponent5 />
         </div>
       </section>
