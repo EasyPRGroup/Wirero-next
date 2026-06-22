@@ -2,8 +2,41 @@
 import type { NextPage } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import Footer from "../../components/footer";
+import { submitContactForm } from "./apiContact";
+import { useRecaptcha } from "./useRecaptcha";
+
+function getSourceSite() {
+  const configuredSite = process.env.NEXT_PUBLIC_SITE_URL;
+
+  if (typeof window === "undefined") {
+    return configuredSite;
+  }
+
+  const params = new URLSearchParams(window.location.search);
+  const requestedSite = params.get("site") || params.get("uri");
+
+  if (!requestedSite) {
+    return configuredSite;
+  }
+
+  try {
+    const parsedSite = new URL(
+      requestedSite.includes("://")
+        ? requestedSite
+        : `https://${requestedSite}`,
+    );
+
+    if (!["http:", "https:"].includes(parsedSite.protocol)) {
+      return configuredSite;
+    }
+
+    return parsedSite.hostname;
+  } catch {
+    return configuredSite;
+  }
+}
 
 const ContactPage: NextPage = () => {
   const [formData, setFormData] = useState({
@@ -13,6 +46,15 @@ const ContactPage: NextPage = () => {
     companyType: "",
     message: "",
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const isSubmittingRef = useRef(false);
+  const {
+    isRecaptchaConfigured,
+    isRecaptchaReady,
+    recaptchaContainerRef,
+    recaptchaToken,
+    resetRecaptcha,
+  } = useRecaptcha();
 
   const handleInputChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
@@ -21,10 +63,78 @@ const ContactPage: NextPage = () => {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    // Add form submission logic here
+
+    if (isSubmittingRef.current) {
+      return;
+    }
+
+    const contactFormData = {
+      name: formData.fullName.trim(),
+      email: formData.email.trim(),
+      subject: formData.companyType.trim(),
+      message: formData.message.trim(),
+    };
+
+    if (
+      !contactFormData.name ||
+      !contactFormData.email ||
+      !contactFormData.subject ||
+      !contactFormData.message
+    ) {
+      window.alert("Please complete all required fields.");
+      return;
+    }
+
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailPattern.test(contactFormData.email)) {
+      window.alert("Please enter a valid email address.");
+      return;
+    }
+
+    if (!isRecaptchaConfigured) {
+      window.alert("reCAPTCHA configuration is missing.");
+      return;
+    }
+
+    if (!isRecaptchaReady || !recaptchaToken) {
+      window.alert("Please complete the reCAPTCHA verification.");
+      return;
+    }
+
+    isSubmittingRef.current = true;
+    setIsSubmitting(true);
+
+    try {
+      await submitContactForm(
+        {
+          ...contactFormData,
+          recaptchaToken,
+        },
+        getSourceSite(),
+      );
+      setFormData({
+        fullName: "",
+        email: "",
+        companyName: "",
+        companyType: "",
+        message: "",
+      });
+      resetRecaptcha();
+      window.alert("Your message has been sent successfully.");
+    } catch (error) {
+      resetRecaptcha();
+      window.alert(
+        error instanceof Error
+          ? error.message
+          : "Unable to send your message. Please try again.",
+      );
+    } finally {
+      isSubmittingRef.current = false;
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -235,6 +345,7 @@ const ContactPage: NextPage = () => {
                 id="fullName"
                 name="fullName"
                 type="text"
+                required
                 placeholder="Enter your full name"
                 value={formData.fullName}
                 onChange={handleInputChange}
@@ -254,6 +365,7 @@ const ContactPage: NextPage = () => {
                 id="email"
                 name="email"
                 type="email"
+                required
                 placeholder="Enter your email"
                 value={formData.email}
                 onChange={handleInputChange}
@@ -292,6 +404,7 @@ const ContactPage: NextPage = () => {
                 <select
                   id="companyType"
                   name="companyType"
+                  required
                   value={formData.companyType}
                   onChange={handleInputChange}
                   className="self-stretch rounded-[8px] bg-color-white border-[#e2e5e9] border-solid border-[1px] overflow-hidden flex items-center py-[0.75rem] px-[0.875rem] gap-[0.5rem] w-full font-proxima-nova text-[1rem] text-[#64676f] focus:border-[#0461c3] focus:outline-none transition-colors appearance-none cursor-pointer"
@@ -324,6 +437,7 @@ const ContactPage: NextPage = () => {
               <textarea
                 id="message"
                 name="message"
+                required
                 placeholder="Tell us about your distribution needs..."
                 value={formData.message}
                 onChange={handleInputChange}
@@ -332,13 +446,20 @@ const ContactPage: NextPage = () => {
               />
             </div>
 
+            {/* reCAPTCHA */}
+            <div className="self-stretch min-h-[4.875rem] mq450:min-h-[9rem] overflow-hidden">
+              <div ref={recaptchaContainerRef} />
+            </div>
+
             {/* Submit Button */}
             <button
               type="submit"
-              className="cursor-pointer border-none py-[1rem] px-[2.5rem] bg-[#0461c3] h-[3.5rem] rounded-[8px] flex items-center justify-center box-border gap-[0.5rem] text-color-white hover:bg-[#0354a8] transition-colors font-proxima-nova"
+              disabled={isSubmitting || !isRecaptchaReady}
+              aria-disabled={isSubmitting || !isRecaptchaReady}
+              className="cursor-pointer border-none py-[1rem] px-[2.5rem] bg-[#0461c3] h-[3.5rem] rounded-[8px] flex items-center justify-center box-border gap-[0.5rem] text-color-white hover:bg-[#0354a8] transition-colors font-proxima-nova disabled:cursor-not-allowed disabled:opacity-60"
             >
               <span className="relative text-[1rem] leading-[1.25rem] font-semibold">
-                Send Message
+                {isSubmitting ? "Sending..." : "Send Message"}
               </span>
               <Image
                 className="h-[1rem] w-[1rem] relative"
