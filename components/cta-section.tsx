@@ -9,9 +9,21 @@ export type CtaSectionType = {
 
 const CtaSection: NextPage<CtaSectionType> = ({ className = "" }) => {
   const featureItems = [
-    "1000 Independent Domains",
-    "Targeted Category Networks",
-    "Automated Distribution System",
+    {
+      label: "1000 Independent Domains",
+      position: "absolute left-0 top-0",
+      width: "w-[22.375rem]",
+    },
+    {
+      label: "Targeted Category Networks",
+      position: "absolute right-0 top-[5.25rem]",
+      width: "w-[23rem]",
+    },
+    {
+      label: "Automated Distribution System",
+      position: "absolute bottom-0 left-0",
+      width: "w-[24.5rem]",
+    },
   ];
   return (
     <section
@@ -58,7 +70,7 @@ const CtaSection: NextPage<CtaSectionType> = ({ className = "" }) => {
             showArrowRightIcon
           />
         </div>
-        <div className="w-[32.5rem] flex flex-col items-start gap-[1.5rem] max-w-full text-[1.125rem] text-[#4d565f] mq1125:min-w-full mq1350:flex-1">
+        <div className="relative h-[14.5rem] w-[32.5rem] max-w-full shrink-0 text-[1.125rem] text-[#4d565f] mq800:flex mq800:h-auto mq800:w-full mq800:flex-col mq800:items-center mq800:gap-[1rem] mq1125:min-w-full mq1350:flex-1">
           <div className="w-[19.581rem] hidden items-start gap-[0.75rem] shrink-0 mq450:flex-wrap">
             <div className="h-[1.625rem] flex items-center">
               <div className="rounded-[52px] bg-[#0461c3] flex items-center justify-center p-[0.25rem]">
@@ -127,10 +139,11 @@ const CtaSection: NextPage<CtaSectionType> = ({ className = "" }) => {
               Distribution across media platforms
             </div>
           </div>
-          {featureItems.map((item, index) => (
+          {featureItems.map((item) => (
             <FrameComponent
-              key={index}
-              independentDomains={item}
+              key={item.label}
+              className={`${item.position} ${item.width} mq800:static mq800:w-full mq800:items-center`}
+              independentDomains={item.label}
             />
           ))}
         </div>

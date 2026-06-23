@@ -1,102 +1,81 @@
 import type { NextPage } from "next";
-import Image from "next/image";
 import Link from "next/link";
-import UserOutlined from "./user-outlined";
 
 export type CtaSection1Type = {
   className?: string;
 };
 
+const audienceItems = [
+  {
+    label: "Reseller Platforms",
+    className: "left-0 top-0 w-[14.75rem] bg-[#b8d2eb]",
+  },
+  {
+    label: "High-Volume Campaigns",
+    className:
+      "right-0 top-[2.25rem] w-[11.75rem] bg-[#b8d2eb] text-center",
+  },
+  {
+    label: "PR Agencies",
+    className:
+      "left-[3rem] top-[5.5rem] w-[11.75rem] bg-white text-center shadow-[0_4px_14px_rgba(2,38,80,0.14)]",
+  },
+  {
+    label: "Crypto & Forex",
+    className: "right-[-1rem] top-[8.25rem] w-[12.75rem] bg-[#b8d2eb]",
+  },
+  {
+    label: "Enterprise Brands",
+    className: "bottom-0 left-0 w-[14.75rem] bg-[#b8d2eb]",
+  },
+] as const;
+
 const CtaSection1: NextPage<CtaSection1Type> = ({ className = "" }) => {
   return (
     <section
-      className={`self-stretch flex flex-col items-start pt-[2.5rem] px-[6.875rem] pb-[6.125rem] box-border max-w-full text-left text-[1.375rem] text-[#1a2530] font-['Proxima_Nova'] mq450:pl-[1.25rem] mq450:pr-[1.25rem] mq450:box-border mq800:pt-[1.625rem] mq800:px-[3.438rem] mq800:pb-[4rem] mq800:box-border ${className}`}
+      className={`self-stretch pt-[2.5rem] px-[6.875rem] pb-[6.125rem] text-left font-['Proxima_Nova'] mq800:pt-[1.625rem] mq800:px-[3.438rem] mq800:pb-[4rem] mq450:px-[1.25rem] ${className}`}
     >
-      <div className="home-container rounded-3xl bg-[#0461c3] overflow-hidden flex items-center p-[3.75rem] box-border relative isolate gap-[5rem] max-w-full mq450:gap-[1.25rem] mq450:pt-[2.438rem] mq450:pb-[2.438rem] mq450:box-border mq800:gap-[2.5rem] mq1350:flex-wrap mq1350:pl-[1.875rem] mq1350:pr-[1.875rem] mq1350:box-border">
-        <Image
-          className="h-[14.375rem] w-[30.25rem] absolute !m-0 bottom-[0rem] left-[2.25rem] z-[0] shrink-0 mq800:hidden"
-          width={484}
-          height={230}
-          sizes="100vw"
-          alt=""
-          src="/Group-11.svg"
+      <div className="home-container relative isolate grid min-h-[22rem] grid-cols-[minmax(0,1fr)_minmax(28rem,32rem)] items-center gap-[4rem] overflow-hidden rounded-[24px] bg-[#0866c5] px-[3.75rem] py-[3.25rem] mq1050:grid-cols-1 mq1050:gap-[2.5rem] mq1050:px-[3rem] mq800:px-[2rem] mq450:min-h-0 mq450:px-[1.25rem] mq450:py-[2rem]">
+        <div
+          aria-hidden="true"
+          className="absolute bottom-0 left-[16%] z-0 h-[58%] w-[28%] bg-[rgba(26,140,213,0.2)] [clip-path:polygon(0_0,100%_100%,0_100%)] mq800:hidden"
         />
-        <Image
-          className="h-[11.563rem] w-[23.75rem] absolute !m-0 top-[11.563rem] left-[49.313rem] z-[1] shrink-0 mq1350:hidden"
-          width={380}
-          height={185}
-          sizes="100vw"
-          alt=""
-          src="/Vector-3.svg"
+        <div
+          aria-hidden="true"
+          className="absolute right-[3%] top-0 z-0 h-[7rem] w-[25rem] bg-[rgba(255,255,255,0.06)] [clip-path:polygon(20%_0,100%_0,70%_100%,0_100%)] mq800:hidden"
         />
-        <section className="flex-1 flex flex-col items-start gap-[1.75rem] min-w-[23.938rem] z-[2] shrink-0 text-left text-[2.25rem] text-color-white font-['Proxima_Nova'] mq450:min-w-full mq800:min-w-full">
-          <div className="self-stretch overflow-hidden flex flex-col items-start gap-[0.75rem]">
-            <h2 className="m-0 self-stretch relative text-[length:inherit] leading-[3rem] font-bold font-[inherit] mq450:text-[1.375rem] mq450:leading-[1.813rem] mq800:text-[1.813rem] mq800:leading-[2.375rem]">
+
+        <div className="relative z-[2] flex max-w-[37rem] flex-col items-start gap-[1.75rem] text-white">
+          <div className="flex flex-col items-start gap-[0.75rem]">
+            <h2 className="m-0 text-[2.25rem] leading-[3rem] font-bold font-[inherit] mq800:text-[1.813rem] mq800:leading-[2.375rem] mq450:text-[1.5rem] mq450:leading-[1.875rem]">
               Take control of your distribution
             </h2>
-            <div className="self-stretch relative text-[1.125rem] leading-[1.75rem] text-[rgba(238,238,238,0.8)]">
+            <p className="m-0 max-w-[35rem] text-[1.125rem] leading-[1.75rem] text-[rgba(238,238,238,0.8)]">
               Stop relying on third-party networks. Start publishing on your own
               infrastructure.
-            </div>
+            </p>
           </div>
-          <UserOutlined
-            showUserOutlined
+
+          <Link
             href="/contact"
-            userOutlinedBorder="none"
-            userOutlinedPadding="1rem 2.5rem"
-            userOutlinedBackgroundColor="#fff"
-            userOutlinedHeight="3.5rem"
-            userOutlined="/search.svg"
-            showUserOutlinedIcon={false}
-            cTAButton="Get Started with Wirero
-"
-            cTAButtonFontSize="1rem"
-            cTAButtonColor="#1a2530"
-            cTAButtonMargin="unset"
-            arrowRight="/arrow-right1.svg"
-            showArrowRightIcon
-          />
-        </section>
-        <div className="h-[14.438rem] w-[26.938rem] relative [filter:drop-shadow(0px_2px_80px_rgba(26,_38,_48,_0.08))] max-w-full z-[1] shrink-0 origin-top-left mq450:hidden mq800:hidden mq1125:min-w-full mq1350:flex-1">
-          <div className="absolute top-[10.813rem] left-[0.063rem] rounded-xl bg-[#b1ceec] border-[#0461c3] border-solid border-[4px] overflow-hidden flex flex-col items-center py-[0.687rem] px-[1.5rem] gap-[0.75rem]">
-            <h3 className="m-0 relative text-[length:inherit] tracking-[0.02em] leading-[1.625rem] font-semibold font-[inherit] shrink-0 mq450:text-[1.125rem] mq450:leading-[1.313rem]">
-              Enterprise Brands
-            </h3>
-            <div className="w-[23.75rem] relative text-[1rem] leading-[1.5rem] font-[Urbanist] text-[rgba(77,86,95,0.8)] hidden shrink-0">
-              March 10, 2026
+            className="flex h-[3.5rem] min-w-[17rem] items-center justify-center gap-[0.75rem] rounded-lg bg-white px-[2rem] text-[1rem] leading-[1.25rem] font-semibold text-[#1a2530] no-underline transition-transform hover:-translate-y-0.5 mq450:w-full mq450:min-w-0"
+          >
+            <span>Get Started with Wirero</span>
+            <span aria-hidden="true" className="text-[1.25rem] leading-none">
+              →
+            </span>
+          </Link>
+        </div>
+
+        <div className="relative z-[2] h-[14.25rem] w-full max-w-[32rem] justify-self-end mq1050:justify-self-center mq800:grid mq800:h-auto mq800:max-w-[30rem] mq800:grid-cols-2 mq800:gap-[0.75rem] mq450:grid-cols-1">
+          {audienceItems.map((item) => (
+            <div
+              key={item.label}
+              className={`absolute flex min-h-[3.25rem] items-center justify-center rounded-xl px-[1.5rem] py-[0.65rem] text-[1.375rem] leading-[1.625rem] font-semibold text-[#1a2530] mq800:static mq800:w-full mq800:text-center mq450:text-[1.125rem] mq450:leading-[1.375rem] ${item.className}`}
+            >
+              {item.label}
             </div>
-          </div>
-          <div className="absolute top-[2.188rem] left-[13.875rem] rounded-xl bg-[#b1ceec] border-[#0461c3] border-solid border-[4px] overflow-hidden flex flex-col items-center py-[0.687rem] px-[1.5rem] gap-[0.75rem] text-center">
-            <div className="relative tracking-[0.02em] leading-[1.625rem] font-semibold shrink-0 mq450:text-[1.125rem] mq450:leading-[1.313rem]">
-              High-Volume <br />
-              Campaigns
-            </div>
-            <div className="w-[23.75rem] relative text-[1rem] leading-[1.5rem] font-[Urbanist] text-[rgba(77,86,95,0.8)] text-left hidden shrink-0">
-              March 10, 2026
-            </div>
-          </div>
-          <button className="cursor-pointer border-[#0461c3] border-solid border-[4px] py-[0.687rem] pl-[1.687rem] pr-[1.25rem] bg-[#b1ceec] absolute top-[0rem] left-[0rem] rounded-xl overflow-hidden flex flex-col items-center gap-[0.75rem]">
-            <Link href="/network" className="relative text-[1.375rem] tracking-[0.02em] leading-[1.625rem] font-semibold font-['Proxima_Nova'] text-[#1a2530] text-left shrink-0 no-underline mq450:text-[1.125rem] mq450:leading-[1.313rem]">
-              Reseller Platforms
-            </Link>
-            <div className="w-[23.75rem] relative text-[1rem] leading-[1.5rem] font-[Urbanist] text-[rgba(77,86,95,0.8)] text-left hidden shrink-0">
-              March 10, 2026
-            </div>
-          </button>
-          <div className="absolute top-[8.375rem] left-[13.875rem] rounded-xl bg-[#b1ceec] border-[#0461c3] border-solid border-[4px] overflow-hidden flex flex-col items-center py-[1rem] pl-[1.687rem] pr-[1.25rem] gap-[0.75rem]">
-            <h3 className="m-0 relative text-[length:inherit] tracking-[0.02em] leading-[1.625rem] font-semibold font-[inherit] shrink-0 mq450:text-[1.125rem] mq450:leading-[1.313rem]">{`Crypto & Forex`}</h3>
-            <div className="w-[23.75rem] relative text-[1rem] leading-[1.5rem] font-[Urbanist] text-[rgba(77,86,95,0.8)] hidden shrink-0">
-              March 10, 2026
-            </div>
-          </div>
-          <div className="absolute top-[5.75rem] left-[3.313rem] shadow-[0px_0px_12px_rgba(26,_38,_48,_0.08)] rounded-xl bg-color-white border-color-white border-solid border-[4px] overflow-hidden flex flex-col items-center py-[0.687rem] px-[1.5rem] gap-[0.75rem]">
-            <h3 className="m-0 relative text-[length:inherit] tracking-[0.02em] leading-[1.625rem] font-semibold font-[inherit] shrink-0 mq450:text-[1.125rem] mq450:leading-[1.313rem]">
-              PR Agencies
-            </h3>
-            <div className="w-[23.75rem] relative text-[1rem] leading-[1.5rem] font-[Urbanist] text-[rgba(77,86,95,0.8)] hidden shrink-0">
-              March 10, 2026
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>
