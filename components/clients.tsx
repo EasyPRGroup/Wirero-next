@@ -14,9 +14,9 @@ const Clients: NextPage<ClientsType> = ({ className = "" }) => {
         <b className="self-stretch relative tracking-[0.01em] leading-[1.625rem] uppercase shrink-0">
           Trusted by Top Brands
         </b>
-        <b className="relative text-[2.25rem] leading-[3rem] hidden font-[Urbanist] text-[#161c2d] text-left shrink-0 mq450:text-[1.375rem] mq450:leading-[1.813rem] mq800:text-[1.813rem] mq800:leading-[2.375rem]">
+        {/* <b className="relative text-[2.25rem] leading-[3rem] hidden font-[Urbanist] text-[#161c2d] text-left shrink-0 mq450:text-[1.375rem] mq450:leading-[1.813rem] mq800:text-[1.813rem] mq800:leading-[2.375rem]">
           Trusted by Top Brands
-        </b>
+        </b> */}
       </div>
       <div className="w-[69rem] h-[2.125rem] flex items-start gap-[3.312rem] max-w-full mq800:gap-[1.625rem] mq1125:h-auto mq1125:flex-wrap">
         <div className="flex flex-col items-start pt-[0.187rem] pb-[0rem] pl-[0rem] pr-[1.312rem]">

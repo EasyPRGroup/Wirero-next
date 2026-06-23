@@ -12,7 +12,7 @@ const CtaSection1: NextPage<CtaSection1Type> = ({ className = "" }) => {
     <section
       className={`self-stretch flex flex-col items-start pt-[2.5rem] px-[6.875rem] pb-[6.125rem] box-border max-w-full text-left text-[1.375rem] text-[#1a2530] font-['Proxima_Nova'] mq450:pl-[1.25rem] mq450:pr-[1.25rem] mq450:box-border mq800:pt-[1.625rem] mq800:px-[3.438rem] mq800:pb-[4rem] mq800:box-border ${className}`}
     >
-      <div className="self-stretch rounded-3xl bg-[#0461c3] overflow-hidden flex items-center p-[3.75rem] box-border relative isolate gap-[5rem] max-w-full mq450:gap-[1.25rem] mq450:pt-[2.438rem] mq450:pb-[2.438rem] mq450:box-border mq800:gap-[2.5rem] mq1350:flex-wrap mq1350:pl-[1.875rem] mq1350:pr-[1.875rem] mq1350:box-border">
+      <div className="home-container rounded-3xl bg-[#0461c3] overflow-hidden flex items-center p-[3.75rem] box-border relative isolate gap-[5rem] max-w-full mq450:gap-[1.25rem] mq450:pt-[2.438rem] mq450:pb-[2.438rem] mq450:box-border mq800:gap-[2.5rem] mq1350:flex-wrap mq1350:pl-[1.875rem] mq1350:pr-[1.875rem] mq1350:box-border">
         <Image
           className="h-[14.375rem] w-[30.25rem] absolute !m-0 bottom-[0rem] left-[2.25rem] z-[0] shrink-0 mq800:hidden"
           width={484}

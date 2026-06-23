@@ -77,66 +77,68 @@ const Header: NextPage<HeaderType> = ({
   return (
     <>
       <header
-        className={`self-stretch bg-[#12171c] border-[rgba(122,131,140,0.2)] border-solid border-b-[1px] flex items-center justify-between py-[1.25rem] px-[6.875rem] gap-[1.25rem] text-left text-[1.75rem] text-color-white font-[Inter] ${className} mq1125:px-[3.438rem] mq800:px-[3.438rem] mq450:px-[1.25rem] mq450:py-[1rem]`}
+        className={`home-gutters self-stretch bg-[#12171c] border-[rgba(122,131,140,0.2)] border-solid border-b-[1px] py-[1.25rem] text-left text-[1.75rem] text-color-white font-[Inter] ${className} mq450:py-[1rem]`}
       >
-        <Link href="/" className="h-[2rem] w-[10rem] relative block mq450:w-[8rem]">
-          <Image
-            className="absolute top-[calc(50%_-_21px)] left-[0.188rem] w-[3.25rem] h-[2.625rem] object-cover shrink-0"
-            loading="lazy"
-            width={52}
-            height={42}
-            sizes="100vw"
-            alt=""
-            src="/Wirero-main-1@2x.png"
-          />
-          <h2 className="m-0 absolute top-[0rem] left-[3.688rem] text-[length:inherit] leading-[2rem] font-bold font-[inherit] shrink-0">
-            Wirero
-          </h2>
-        </Link>
-
-        {/* Desktop Navigation */}
-        <div className="flex items-center gap-[2.5rem] mq1125:gap-[1.5rem] mq800:hidden">
-          <nav className="m-0 rounded-[50px] flex items-center justify-center gap-[2.5rem] mq1125:gap-[1.5rem] text-left text-[1.125rem] text-[#64676f] font-['Proxima_Nova']">
-            {optionItems.map((item, index) => (
-              <Option
-                key={index}
-                property1={item.property1}
-                showOption={item.showOption}
-                features={item.features}
-                isActive={item.isActive}
-                href={item.href}
-              />
-            ))}
-          </nav>
-          <Link href="/contact">
-            <UserOutlined
-              property1="Variant2"
-              showUserOutlined
-              userOutlined="/user-outlined.svg"
-              showUserOutlinedIcon={false}
-              cTAButton="Contact Us"
-              arrowRight="/arrow-right.svg"
-              showArrowRightIcon={false}
+        <div className="home-container flex items-center justify-between gap-[1.25rem]">
+          <Link href="/" className="h-[2rem] w-[10rem] relative block mq450:w-[8rem]">
+            <Image
+              className="absolute top-[calc(50%_-_21px)] left-[0.188rem] w-[3.25rem] h-[2.625rem] object-cover shrink-0"
+              loading="lazy"
+              width={52}
+              height={42}
+              sizes="100vw"
+              alt=""
+              src="/Wirero-main-1@2x.png"
             />
+            <h2 className="m-0 absolute top-[0rem] left-[3.688rem] text-[length:inherit] leading-[2rem] font-bold font-[inherit] shrink-0">
+              Wirero
+            </h2>
           </Link>
-        </div>
 
-        {/* Hamburger Button */}
-        <button
-          className="hidden mq800:flex flex-col justify-center items-center w-[2.75rem] h-[2.75rem] cursor-pointer bg-transparent border-none p-0 gap-[0.375rem]"
-          onClick={toggleMobileMenu}
-          aria-label="Toggle menu"
-        >
-          <span
-            className={`w-[1.5rem] h-[0.125rem] bg-color-white transition-all duration-300 ${isMobileMenuOpen ? "rotate-45 translate-y-[0.5rem]" : ""}`}
-          />
-          <span
-            className={`w-[1.5rem] h-[0.125rem] bg-color-white transition-all duration-300 ${isMobileMenuOpen ? "opacity-0" : ""}`}
-          />
-          <span
-            className={`w-[1.5rem] h-[0.125rem] bg-color-white transition-all duration-300 ${isMobileMenuOpen ? "-rotate-45 -translate-y-[0.5rem]" : ""}`}
-          />
-        </button>
+          {/* Desktop Navigation */}
+          <div className="flex items-center gap-[2.5rem] mq1125:gap-[1.5rem] mq800:hidden">
+            <nav className="m-0 rounded-[50px] flex items-center justify-center gap-[2.5rem] mq1125:gap-[1.5rem] text-left text-[1.125rem] text-[#64676f] font-['Proxima_Nova']">
+              {optionItems.map((item, index) => (
+                <Option
+                  key={index}
+                  property1={item.property1}
+                  showOption={item.showOption}
+                  features={item.features}
+                  isActive={item.isActive}
+                  href={item.href}
+                />
+              ))}
+            </nav>
+            <Link href="/contact">
+              <UserOutlined
+                property1="Variant2"
+                showUserOutlined
+                userOutlined="/user-outlined.svg"
+                showUserOutlinedIcon={false}
+                cTAButton="Contact Us"
+                arrowRight="/arrow-right.svg"
+                showArrowRightIcon={false}
+              />
+            </Link>
+          </div>
+
+          {/* Hamburger Button */}
+          <button
+            className="hidden mq800:flex flex-col justify-center items-center w-[2.75rem] h-[2.75rem] cursor-pointer bg-transparent border-none p-0 gap-[0.375rem]"
+            onClick={toggleMobileMenu}
+            aria-label="Toggle menu"
+          >
+            <span
+              className={`w-[1.5rem] h-[0.125rem] bg-color-white transition-all duration-300 ${isMobileMenuOpen ? "rotate-45 translate-y-[0.5rem]" : ""}`}
+            />
+            <span
+              className={`w-[1.5rem] h-[0.125rem] bg-color-white transition-all duration-300 ${isMobileMenuOpen ? "opacity-0" : ""}`}
+            />
+            <span
+              className={`w-[1.5rem] h-[0.125rem] bg-color-white transition-all duration-300 ${isMobileMenuOpen ? "-rotate-45 -translate-y-[0.5rem]" : ""}`}
+            />
+          </button>
+        </div>
       </header>
 
       {/* Mobile Menu Overlay */}

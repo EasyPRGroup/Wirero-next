@@ -28,11 +28,11 @@ const List: NextPage<ListType> = ({ className = "" }) => {
     <section
       className={`self-stretch rounded-2xl overflow-hidden flex flex-col items-center gap-[1.25rem] text-center text-[1.25rem] text-[rgba(238,238,238,0.8)] font-['Proxima_Nova'] ${className}`}
     >
-      {/* Network categories grid */}
-      <div className="self-stretch flex items-stretch flex-wrap content-start gap-[1.25rem] shrink-0">
-        {networkCategories.map((category, index) => (
+      <div className="grid w-full auto-rows-fr grid-cols-3 gap-[1.25rem] mq800:grid-cols-2 mq450:grid-cols-1">
+        {networkCategories.map((category) => (
           <NetworkCategory
-            key={index}
+            key={category.name}
+            className="h-full w-full !min-w-0"
             name={category.name}
           />
         ))}

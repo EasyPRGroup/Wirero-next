@@ -228,40 +228,15 @@ const Network: NextPage = () => {
           </h2>
 
           <div className="self-stretch rounded-[16px] overflow-hidden flex flex-col items-center justify-start gap-[1.25rem] text-center text-[1.25rem] text-color-white">
-            {/* First row of category cards */}
-            <section className="self-stretch flex items-start flex-wrap content-start gap-[1.25rem] text-left text-[1.5rem] text-[#1a2530] font-abel">
-              {industryCategories.slice(0, 3).map((category, index) => (
+            <div className="grid w-full auto-rows-fr grid-cols-3 gap-[1.25rem] text-left text-[1.5rem] text-[#1a2530] font-abel mq800:grid-cols-2 mq450:grid-cols-1">
+              {industryCategories.map((category) => (
                 <NetworkCategory
-                  key={index}
+                  key={category}
+                  className="h-full w-full !min-w-0"
                   name={category}
                 />
               ))}
-            </section>
-
-            {/* Second row of category cards */}
-            <section className="self-stretch flex items-start flex-wrap content-start gap-[1.25rem] text-left text-[1.5rem] text-[#1a2530] font-abel">
-              {industryCategories.slice(3, 6).map((category, index) => (
-                <NetworkCategory
-                  key={index + 3}
-                  name={category}
-                />
-              ))}
-            </section>
-
-            {/* Third row of category cards */}
-            <section className="self-stretch flex items-start flex-wrap content-start gap-[1.25rem] text-left text-[1.5rem] text-[#1a2530] font-abel">
-              {industryCategories.slice(6, 9).map((category, index) => (
-                <NetworkCategory
-                  key={index + 6}
-                  name={category}
-                />
-              ))}
-            </section>
-
-            {/* Fourth row - single category */}
-            <section className="self-stretch flex items-start gap-[1.25rem] text-left text-[1.5rem] text-[#1a2530] font-abel">
-              <NetworkCategory name="Food & Beverage" />
-            </section>
+            </div>
 
             <div className="self-stretch relative text-[1.125rem] leading-[1.75rem] text-[rgba(238,238,238,0.8)]">
               Each category includes 100 independent domains, allowing you to

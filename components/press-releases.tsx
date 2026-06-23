@@ -39,7 +39,7 @@ const PressReleases: NextPage<PressReleasesType> = ({ className = "" }) => {
           </div>
         </div>
       </section>
-      <div className="self-stretch flex flex-col items-center gap-[3rem] max-w-full mq800:gap-[1.5rem]">
+      <div className="home-container flex flex-col items-center gap-[3rem] max-w-full mq800:gap-[1.5rem]">
         <div className="w-full flex flex-col items-center gap-[2.25rem] max-w-full shrink-0 mq800:gap-[1.125rem]">
           <div className="self-stretch flex flex-col items-start relative isolate gap-[0.625rem] max-w-full">
             <div
