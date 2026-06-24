@@ -10,6 +10,42 @@ import NetworkCategory from "../../components/network-category";
 import DomainCard from "../../components/domain-card";
 import CtaBanner from "../../components/cta-banner";
 
+const heroDotIndexes = Array.from({ length: 45 });
+
+const NetworkHeroVisual = () => {
+  return (
+    <div
+      className="relative h-[30.938rem] w-[29.688rem] max-w-full shrink-0 mq1050:flex-1 mq1050:basis-[29.688rem] mq750:h-[26rem] mq450:h-[20rem]"
+      aria-label="Network infrastructure visual"
+    >
+      <div className="absolute inset-0" />
+
+      <div className="absolute bottom-[3.125rem] right-[2.75rem] h-[11.25rem] w-[13.25rem] rounded-[8px] bg-[#eaf5fb] mq450:bottom-[2rem] mq450:right-[1.5rem] mq450:h-[7.5rem] mq450:w-[9rem]" />
+
+      <div className="absolute left-[4rem] top-[11.25rem] grid grid-cols-5 gap-x-[0.6875rem] gap-y-[0.625rem] mq750:left-[3.25rem] mq750:top-[9.5rem] mq450:left-[2rem] mq450:top-[7.5rem] mq450:gap-x-[0.5rem] mq450:gap-y-[0.5rem]">
+        {heroDotIndexes.map((_, index) => (
+          <span
+            key={index}
+            className="h-[0.3125rem] w-[0.3125rem] rounded-full bg-[#1a8cd5] mq450:h-[0.25rem] mq450:w-[0.25rem]"
+          />
+        ))}
+      </div>
+
+      <div className="absolute left-[8rem] top-[7.125rem] z-[2] h-[15.625rem] w-[15.625rem] overflow-hidden rounded-[12px] bg-[#b5c0c8] shadow-[0px_22px_48px_rgba(68,80,88,0.24)] mq750:left-[7rem] mq750:top-[6.25rem] mq750:h-[13.75rem] mq750:w-[13.75rem] mq450:left-[4.75rem] mq450:top-[5rem] mq450:h-[10.5rem] mq450:w-[10.5rem]">
+        <div className="h-full w-full bg-[#b5c0c8]" />
+      </div>
+
+      <div className="absolute left-[12.125rem] top-[0.75rem] h-[5.5rem] w-[5.5rem] rounded-[8px] bg-[#66757e] shadow-[0px_24px_42px_rgba(68,80,88,0.28)] mq750:left-[11rem] mq450:left-[8rem] mq450:h-[4rem] mq450:w-[4rem]" />
+      <div className="absolute left-[1.75rem] top-[5.875rem] h-[4.5rem] w-[4.5rem] rounded-[8px] bg-[#66757e] shadow-[0px_24px_42px_rgba(68,80,88,0.28)] mq450:left-[0.875rem] mq450:top-[5rem] mq450:h-[3.25rem] mq450:w-[3.25rem]" />
+      <div className="absolute right-[0.75rem] top-[6rem] h-[5rem] w-[5rem] rounded-[8px] bg-[#66757e] shadow-[0px_24px_42px_rgba(68,80,88,0.28)] mq450:right-[0.5rem] mq450:top-[5.25rem] mq450:h-[3.5rem] mq450:w-[3.5rem]" />
+      <div className="absolute left-[0.25rem] top-[19.125rem] h-[5.875rem] w-[5.875rem] rounded-[8px] bg-[#66757e] shadow-[0px_24px_42px_rgba(68,80,88,0.28)] mq750:top-[17rem] mq450:top-[14rem] mq450:h-[4rem] mq450:w-[4rem]" />
+      <div className="absolute right-[0.875rem] top-[15.75rem] h-[4.5rem] w-[4.5rem] rounded-[8px] bg-[#66757e] shadow-[0px_24px_42px_rgba(68,80,88,0.28)] mq750:top-[14rem] mq450:right-[1rem] mq450:top-[12rem] mq450:h-[3.25rem] mq450:w-[3.25rem]" />
+      <div className="absolute bottom-[0.875rem] left-[10.625rem] h-[5rem] w-[5rem] rounded-[8px] bg-[#66757e] shadow-[0px_24px_42px_rgba(68,80,88,0.28)] mq750:left-[9.75rem] mq450:bottom-[0.5rem] mq450:left-[7rem] mq450:h-[3.5rem] mq450:w-[3.5rem]" />
+      <div className="absolute bottom-[6.875rem] left-[17.25rem] z-[3] h-[4.25rem] w-[4.25rem] rounded-[8px] bg-[#66757e] shadow-[0px_20px_36px_rgba(68,80,88,0.24)] mq750:bottom-[6rem] mq750:left-[16rem] mq450:bottom-[4.625rem] mq450:left-[12rem] mq450:h-[3rem] mq450:w-[3rem]" />
+    </div>
+  );
+};
+
 const Network: NextPage = () => {
   const industryCategories = [
     "Blockchain & Cryptocurrency",
@@ -123,15 +159,7 @@ const Network: NextPage = () => {
             />
           </Link>
         </section>
-        <Image
-          className="h-[30.938rem] w-[29.688rem] relative rounded-[20px] object-contain max-w-full mq1050:flex-1"
-          loading="lazy"
-          width={475}
-          height={495}
-          sizes="100vw"
-          alt=""
-          src="/IMG@2x.png"
-        />
+        <NetworkHeroVisual />
       </section>
 
       {/* Built as Infrastructure Section */}

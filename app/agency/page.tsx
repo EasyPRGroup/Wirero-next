@@ -191,14 +191,14 @@ const Agency: NextPage = () => {
                   key={index}
                   className="rounded-[12px] bg-[#f7fafd] overflow-hidden flex items-center p-[1.25rem] box-border gap-[0.75rem]"
                 >
-                  <div className="rounded-[8px] bg-[#1a8cd5] flex items-center justify-center p-[0.5rem]">
+                  <div className="h-[3rem] w-[3rem] rounded-[12px] bg-[#eaf5fb] flex items-center justify-center p-[0.625rem] box-border shrink-0">
                     <Image
-                      className="h-[1.25rem] w-[1.25rem] relative"
-                      width={20}
-                      height={20}
+                      className="h-[1.75rem] w-[1.75rem] relative"
+                      width={28}
+                      height={28}
                       sizes="100vw"
                       alt=""
-                      src="/diamond-sharp2.svg"
+                      src="/rocket-sharp.svg"
                     />
                   </div>
                   <b className="flex-1 relative text-[1.125rem] leading-[1.5rem] font-proxima text-[#1a2530]">
@@ -231,12 +231,12 @@ const Agency: NextPage = () => {
                 key={index}
                 className="flex-1 overflow-hidden flex items-start gap-[1.25rem] min-w-[17.813rem] mq450:flex-wrap mq450:min-w-full"
               >
-                <div className="h-[4.25rem] w-[4.25rem] rounded-[16px] bg-[#1a8cd5] flex items-center justify-center p-[0.75rem] box-border shrink-0">
+                <div className="h-[4.25rem] w-[4.25rem] rounded-[16px] bg-[#eaf5fb] flex items-center justify-center p-[1rem] box-border shrink-0">
                   <Image
-                    className="w-[2.5rem] relative max-h-full"
+                    className="h-[2.25rem] w-[2.25rem] relative object-contain"
                     loading="lazy"
-                    width={40}
-                    height={40}
+                    width={36}
+                    height={36}
                     sizes="100vw"
                     alt=""
                     src={item.icon}
@@ -470,38 +470,30 @@ const Agency: NextPage = () => {
 
       {/* CTA Section */}
       <section className="self-stretch flex flex-col items-start pt-[2.5rem] px-[6.875rem] pb-[6.125rem] box-border mq750:pt-[1.625rem] mq750:px-[3.438rem] mq750:pb-[4rem] mq750:box-border mq450:pl-[1.25rem] mq450:pr-[1.25rem] mq450:box-border">
-        <div className="self-stretch rounded-[24px] bg-[#0461c3] overflow-hidden flex items-center py-[3.75rem] px-[11.25rem] relative isolate gap-[5rem] mq1350:px-[5.625rem] mq1350:box-border mq1050:pl-[5.625rem] mq1050:pr-[5.625rem] mq1050:box-border mq750:gap-[2.5rem] mq750:pl-[2.813rem] mq750:pr-[2.813rem] mq750:box-border mq450:gap-[1.25rem] mq450:py-[2.438rem] mq450:px-[1.25rem] mq450:box-border">
-          <div className="h-[13.375rem] w-[29.375rem] absolute !m-0 top-[calc(50%_-_126px)] left-[3.625rem] [filter:blur(130px)] rounded-[50px] [background:linear-gradient(103.11deg,_#177aba,_#1a8cd5)] z-[0] shrink-0" />
-          <div className="h-[7.5rem] w-[20rem] absolute !m-0 right-[8.625rem] bottom-[-3.75rem] [filter:blur(120px)] rounded-[50px] [background:linear-gradient(103.11deg,_#1a8cd5,_#1a8cd5)] z-[1] shrink-0" />
-          <Image
-            className="h-[14.375rem] w-[30.25rem] absolute !m-0 bottom-[0rem] left-[2.25rem] z-[2] shrink-0"
-            loading="lazy"
-            width={484}
-            height={230}
-            sizes="100vw"
-            alt=""
-            src="/Group-11.svg"
-          />
-          <section className="flex-1 flex flex-col items-center gap-[1.75rem] z-[3] shrink-0 text-center text-[3rem] text-color-white">
-            <div className="self-stretch overflow-hidden flex flex-col items-start gap-[0.75rem]">
-              <h1 className="m-0 self-stretch relative text-[length:inherit] leading-[3.625rem] font-bold font-abel mq1050:text-[2.375rem] mq1050:leading-[2.875rem] mq450:text-[1.813rem] mq450:leading-[2.188rem]">
+        <div className="self-stretch min-h-[22.5rem] rounded-[24px] bg-[#0461c3] overflow-hidden flex items-center justify-center py-[4.25rem] px-[3rem] relative isolate text-center mq750:min-h-[18rem] mq750:py-[3.25rem] mq750:px-[2rem] mq450:min-h-0 mq450:py-[2.5rem] mq450:px-[1.25rem]">
+          <div className="absolute left-[-7rem] top-[-5rem] z-[0] h-[22rem] w-[30rem] rounded-full bg-[#1a8cd5] opacity-60 blur-[120px]" />
+          <div className="absolute bottom-[-6rem] right-[10%] z-[0] h-[14rem] w-[24rem] rounded-full bg-[#1a8cd5] opacity-45 blur-[110px]" />
+          <div className="absolute inset-0 z-[1] bg-[radial-gradient(circle_at_18%_35%,_rgba(26,140,213,0.45),_transparent_28%),radial-gradient(circle_at_78%_83%,_rgba(26,140,213,0.38),_transparent_30%)]" />
+          <section className="relative z-[2] flex w-full max-w-[52rem] flex-col items-center gap-[1.75rem] text-center text-[3rem] text-color-white">
+            <div className="self-stretch flex flex-col items-center gap-[0.875rem]">
+              <h1 className="m-0 self-stretch relative text-[length:inherit] leading-[3.625rem] font-bold font-proxima mq1050:text-[2.375rem] mq1050:leading-[2.875rem] mq450:text-[1.813rem] mq450:leading-[2.188rem]">
                 Turn Distribution into a Scalable Revenue Stream
               </h1>
-              <div className="self-stretch relative text-[1.125rem] leading-[1.75rem] font-proxima text-[rgba(238,238,238,0.8)]">
+              <div className="self-stretch relative text-[1.125rem] leading-[1.75rem] font-proxima text-[rgba(238,238,238,0.82)]">
                 Start using Wirero as your backend infrastructure.
               </div>
             </div>
             <Link
               href="/contact"
-              className="cursor-pointer [border:none] py-[1rem] px-[2.5rem] bg-color-white h-[3.5rem] rounded-[8px] flex items-center justify-center box-border gap-[0.5rem] no-underline"
+              className="cursor-pointer [border:none] py-[1rem] px-[2.5rem] bg-color-white h-[3.5rem] rounded-[8px] flex items-center justify-center box-border gap-[0.625rem] no-underline shadow-[0px_8px_24px_rgba(0,0,0,0.08)] hover:bg-[#f7fafd] transition-colors"
             >
               <div className="relative text-[1rem] leading-[1.25rem] font-semibold font-proxima text-[#1a2530] text-center shrink-0">
                 Get Started
               </div>
               <Image
-                className="h-[1rem] w-[1rem] relative shrink-0"
-                width={16}
-                height={16}
+                className="h-[1.125rem] w-[1.125rem] relative shrink-0 brightness-0"
+                width={18}
+                height={18}
                 sizes="100vw"
                 alt=""
                 src="/arrow-right1.svg"
