@@ -16,8 +16,10 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body suppressHydrationWarning>
-        <Header />
-        {children}
+        <div className="site-page-frame">
+          <Header />
+          {children}
+        </div>
       </body>
     </html>
   );

@@ -93,7 +93,7 @@ const Network: NextPage = () => {
 
       {/* Hero Section */}
       <section className="self-stretch bg-[#f7fafd] flex items-center py-[4.25rem] px-[6.875rem] box-border gap-[4.25rem] max-w-full mq1050:flex-wrap mq750:gap-[2.125rem] mq750:py-[2.75rem] mq750:px-[3.438rem] mq750:box-border mq450:gap-[1.063rem] mq450:pl-[1.25rem] mq450:pr-[1.25rem] mq450:box-border">
-        <section className="flex-1 overflow-hidden flex flex-col items-start gap-[1.5rem] min-w-[27.5rem] text-left text-[1rem] text-[#0bc111] font-abel mq750:min-w-full">
+        <section className="flex-1 overflow-hidden flex flex-col items-start gap-[1.5rem] min-w-[27.5rem] text-left text-[1rem] text-[#0bc111] font-proxima mq750:min-w-full">
           <b className="relative tracking-[0.02em] leading-[1.25rem] uppercase">
             Network
           </b>
@@ -136,7 +136,7 @@ const Network: NextPage = () => {
 
       {/* Built as Infrastructure Section */}
       <section className="self-stretch flex flex-col items-start pt-[4.25rem] px-[6.875rem] pb-[6.125rem] box-border gap-[3rem] max-w-full text-left text-[1.125rem] text-[#4d565f] font-proxima mq750:gap-[1.5rem] mq750:pl-[3.438rem] mq750:pr-[3.438rem] mq750:box-border mq1050:pt-[2.75rem] mq1050:px-[3.438rem] mq1050:pb-[4rem] mq1050:box-border mq450:pt-[1.813rem] mq450:px-[1.25rem] mq450:pb-[2.625rem] mq450:box-border">
-        <section className="self-stretch overflow-hidden flex flex-col items-start gap-[1.5rem] max-w-full text-left text-[1rem] text-[#0bc111] font-abel">
+        <section className="self-stretch overflow-hidden flex flex-col items-start gap-[1.5rem] max-w-full text-left text-[1rem] text-[#0bc111] font-proxima">
           <div
             className="self-stretch flex items-start gap-[4.25rem] max-w-full text-[3rem] text-[#1a2530] mq1350:flex-wrap mq750:gap-[2.125rem] mq450:gap-[1.063rem]"
           >
@@ -164,7 +164,7 @@ const Network: NextPage = () => {
           </div>
 
           {/* Features List */}
-          <section className="h-[29rem] flex-1 flex items-start min-w-[23.938rem] max-w-full text-left text-[1.25rem] text-[#1a8cd5] font-urbanist mq750:h-auto mq750:min-w-full">
+          <section className="h-[29rem] flex-1 flex items-start min-w-[23.938rem] max-w-full text-left text-[1.25rem] text-[#1a8cd5] font-proxima mq750:h-auto mq750:min-w-full">
             <div className="w-[36.875rem] flex flex-col items-start gap-[2rem] max-w-full mq750:gap-[1rem]">
               <FeatureItem
                 number="1"
@@ -211,7 +211,7 @@ const Network: NextPage = () => {
       </section>
 
       {/* Network Structure Section */}
-      <section className="self-stretch bg-[#12171c] flex flex-col items-center py-[6.125rem] px-[6.875rem] box-border gap-[3rem] max-w-full text-center text-[1rem] text-[#0bc111] font-abel mq1050:pt-[4rem] mq1050:px-[3.438rem] mq1050:pb-[4rem] mq1050:box-border mq750:gap-[1.5rem] mq750:py-[2.625rem] mq750:px-[3.438rem] mq750:box-border mq450:pl-[1.25rem] mq450:pr-[1.25rem] mq450:box-border">
+      <section className="self-stretch bg-[#12171c] flex flex-col items-center py-[6.125rem] px-[6.875rem] box-border gap-[3rem] max-w-full text-center text-[1rem] text-[#0bc111] font-proxima mq1050:pt-[4rem] mq1050:px-[3.438rem] mq1050:pb-[4rem] mq1050:box-border mq750:gap-[1.5rem] mq750:py-[2.625rem] mq750:px-[3.438rem] mq750:box-border mq450:pl-[1.25rem] mq450:pr-[1.25rem] mq450:box-border">
         <div className="w-[60rem] max-w-full overflow-hidden flex flex-col items-center gap-[1rem]">
           <h1 className="m-0 self-stretch relative text-[3rem] leading-[3.625rem] font-bold font-[inherit] text-[#eee] mq1050:text-[2.375rem] mq1050:leading-[2.875rem] mq450:text-[1.813rem] mq450:leading-[2.188rem]">
             Network Structure
@@ -228,7 +228,7 @@ const Network: NextPage = () => {
           </h2>
 
           <div className="self-stretch rounded-[16px] overflow-hidden flex flex-col items-center justify-start gap-[1.25rem] text-center text-[1.25rem] text-color-white">
-            <div className="grid w-full auto-rows-fr grid-cols-3 gap-[1.25rem] text-left text-[1.5rem] text-[#1a2530] font-abel mq800:grid-cols-2 mq450:grid-cols-1">
+            <div className="grid w-full auto-rows-fr grid-cols-3 gap-[1.25rem] text-left text-[1.5rem] text-[#1a2530] font-proxima mq800:grid-cols-2 mq450:grid-cols-1">
               {industryCategories.map((category) => (
                 <NetworkCategory
                   key={category}
@@ -259,7 +259,7 @@ const Network: NextPage = () => {
       </section>
 
       {/* How Distribution Works Section */}
-      <main className="self-stretch max-w-full bg-[#f7fafd] flex flex-col items-center py-[6.125rem] px-[6.875rem] box-border gap-[4.25rem] text-center text-[1rem] text-[#0bc111] font-abel mq1050:pt-[4rem] mq1050:px-[3.438rem] mq1050:pb-[4rem] mq1050:box-border mq750:gap-[2.125rem] mq750:py-[2.625rem] mq750:px-[3.438rem] mq750:box-border mq450:gap-[1.063rem] mq450:pl-[1.25rem] mq450:pr-[1.25rem] mq450:box-border">
+      <main className="self-stretch max-w-full bg-[#f7fafd] flex flex-col items-center py-[6.125rem] px-[6.875rem] box-border gap-[4.25rem] text-center text-[1rem] text-[#0bc111] font-proxima mq1050:pt-[4rem] mq1050:px-[3.438rem] mq1050:pb-[4rem] mq1050:box-border mq750:gap-[2.125rem] mq750:py-[2.625rem] mq750:px-[3.438rem] mq750:box-border mq450:gap-[1.063rem] mq450:pl-[1.25rem] mq450:pr-[1.25rem] mq450:box-border">
         <div className="self-stretch flex flex-col items-center gap-[3rem] mq750:gap-[1.5rem]">
           <div className="w-[51.25rem] max-w-full overflow-hidden flex flex-col items-center gap-[1.5rem]">
             <h2 className="m-0 self-stretch relative text-[3rem] leading-[3.625rem] font-bold font-[inherit] text-[#1a2530] mq1050:text-[2.375rem] mq1050:leading-[2.875rem] mq450:text-[1.813rem] mq450:leading-[2.188rem]">
@@ -335,7 +335,7 @@ const Network: NextPage = () => {
       </main>
 
       {/* Explore Domains Section */}
-      <section className="self-stretch bg-color-white flex flex-col items-start py-[6.125rem] px-[6.875rem] box-border gap-[3rem] max-w-full text-left text-[3rem] text-[#1a2530] font-abel mq1050:pt-[4rem] mq1050:px-[3.438rem] mq1050:pb-[4rem] mq1050:box-border mq750:gap-[1.5rem] mq750:px-[3.438rem] mq750:box-border mq450:pt-[2.625rem] mq450:px-[1.25rem] mq450:pb-[2.625rem] mq450:box-border">
+      <section className="self-stretch bg-color-white flex flex-col items-start py-[6.125rem] px-[6.875rem] box-border gap-[3rem] max-w-full text-left text-[3rem] text-[#1a2530] font-proxima mq1050:pt-[4rem] mq1050:px-[3.438rem] mq1050:pb-[4rem] mq1050:box-border mq750:gap-[1.5rem] mq750:px-[3.438rem] mq750:box-border mq450:pt-[2.625rem] mq450:px-[1.25rem] mq450:pb-[2.625rem] mq450:box-border">
         <div className="self-stretch flex items-start gap-[4.25rem] max-w-full mq1050:flex-wrap mq750:gap-[2.125rem] mq450:gap-[1.063rem]">
           <h2 className="m-0 w-[33.75rem] relative text-[length:inherit] leading-[3.625rem] font-bold font-[inherit] inline-block shrink-0 max-w-full mq1050:flex-1 mq1050:text-[2.375rem] mq1050:leading-[2.875rem] mq1050:min-w-full mq450:text-[1.813rem] mq450:leading-[2.188rem]">
             Explore domains across the network
@@ -390,7 +390,7 @@ const Network: NextPage = () => {
       </section>
 
       {/* Domain Characteristics Section */}
-      <section className="self-stretch bg-[#12171c] flex flex-col items-center py-[6.125rem] px-[6.875rem] box-border gap-[3rem] max-w-full text-center text-[3rem] text-[#eee] font-abel mq1050:pt-[4rem] mq1050:px-[3.438rem] mq1050:pb-[4rem] mq1050:box-border mq750:gap-[1.5rem] mq750:px-[3.438rem] mq750:box-border mq450:pt-[2.625rem] mq450:px-[1.25rem] mq450:pb-[2.625rem] mq450:box-border">
+      <section className="self-stretch bg-[#12171c] flex flex-col items-center py-[6.125rem] px-[6.875rem] box-border gap-[3rem] max-w-full text-center text-[3rem] text-[#eee] font-proxima mq1050:pt-[4rem] mq1050:px-[3.438rem] mq1050:pb-[4rem] mq1050:box-border mq750:gap-[1.5rem] mq750:px-[3.438rem] mq750:box-border mq450:pt-[2.625rem] mq450:px-[1.25rem] mq450:pb-[2.625rem] mq450:box-border">
         <div className="w-[60rem] max-w-full overflow-hidden flex flex-col items-center gap-[1rem]">
           <h2 className="m-0 self-stretch relative text-[length:inherit] leading-[3.625rem] font-bold font-[inherit] mq1050:text-[2.375rem] mq1050:leading-[2.875rem] mq450:text-[1.813rem] mq450:leading-[2.188rem]">
             Domain Characteristics
@@ -417,7 +417,7 @@ const Network: NextPage = () => {
       </section>
 
       {/* Control Distribution Your Way Section */}
-      <section className="self-stretch bg-color-white flex flex-col items-center py-[6.125rem] px-[6.875rem] box-border gap-[4.25rem] max-w-full text-center text-[3rem] text-[#1a2530] font-abel mq1050:pt-[4rem] mq1050:px-[3.438rem] mq1050:pb-[4rem] mq1050:box-border mq750:gap-[2.125rem] mq750:px-[3.438rem] mq750:box-border mq450:gap-[1.063rem] mq450:pt-[2.625rem] mq450:px-[1.25rem] mq450:pb-[2.625rem] mq450:box-border">
+      <section className="self-stretch bg-color-white flex flex-col items-center py-[6.125rem] px-[6.875rem] box-border gap-[4.25rem] max-w-full text-center text-[3rem] text-[#1a2530] font-proxima mq1050:pt-[4rem] mq1050:px-[3.438rem] mq1050:pb-[4rem] mq1050:box-border mq750:gap-[2.125rem] mq750:px-[3.438rem] mq750:box-border mq450:gap-[1.063rem] mq450:pt-[2.625rem] mq450:px-[1.25rem] mq450:pb-[2.625rem] mq450:box-border">
         <div className="w-[51.25rem] max-w-full overflow-hidden flex flex-col items-center gap-[1.5rem]">
           <h2 className="m-0 self-stretch relative text-[length:inherit] leading-[3.625rem] font-bold font-[inherit] mq1050:text-[2.375rem] mq1050:leading-[2.875rem] mq450:text-[1.813rem] mq450:leading-[2.188rem]">
             Control Distribution Your Way
@@ -458,7 +458,7 @@ const Network: NextPage = () => {
               </div>
               <div className="flex flex-col items-start text-left">
                 <b className="relative text-[1.125rem] leading-[1.5rem] font-proxima text-[#1a2530]">
-                  1at“1000
+                  1-1000
                 </b>
                 <div className="relative text-[0.875rem] leading-[1.25rem] font-proxima text-[#4d565f]">
                   Placement Range
