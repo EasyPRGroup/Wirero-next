@@ -202,7 +202,7 @@ const Pricing: NextPage = () => {
 
   return (
     <div className="w-full relative bg-color-white overflow-hidden flex flex-col items-start leading-[normal] tracking-[normal] text-left text-[1rem] text-[#64676f] font-['Proxima_Nova']">
-      <main className="self-stretch flex flex-col items-start pt-[4.25rem] px-[6.875rem] pb-[6.125rem] gap-[4.25rem] mq1050:pt-[2.75rem] mq1050:pb-[4rem] mq800:gap-[2.125rem] mq800:pt-[1.813rem] mq800:px-[3.438rem] mq800:pb-[2.625rem] mq450:gap-[1.063rem] mq450:px-[1.25rem]">
+      <main className="self-stretch flex flex-col items-start pt-[4.25rem] pb-[6.125rem] gap-[4.25rem] home-gutters mq1050:pt-[2.75rem] mq1050:pb-[4rem] mq800:gap-[2.125rem] mq800:pt-[1.813rem] mq800:pb-[2.625rem] mq450:gap-[1.063rem]">
         {/* Hero Section */}
         <section className="self-stretch overflow-hidden flex flex-col items-center py-[0rem] px-[2.5rem] gap-[1.5rem] mq450:px-[0rem]">
           <b className="relative tracking-[0.02em] leading-[1.25rem] uppercase text-[#0bc111]">
@@ -255,7 +255,7 @@ const Pricing: NextPage = () => {
       </main>
 
       {/* Why flat-rate pricing comparison */}
-      <section className="self-stretch bg-[#f7fafd] flex flex-col items-start py-[6.125rem] px-[6.875rem] box-border max-w-full mq800:py-[2.625rem] mq800:px-[3.438rem] mq800:box-border mq450:py-[1.688rem] mq450:px-[1.25rem] mq450:box-border">
+      <section className="self-stretch bg-[#f7fafd] flex flex-col items-start py-[6.125rem] box-border max-w-full home-gutters mq800:py-[2.625rem] mq450:py-[1.688rem]">
         <FrameComponent6
           eyebrow=""
           title="Why flat-rate pricing changes distribution economics"
@@ -279,7 +279,7 @@ const Pricing: NextPage = () => {
       </section>
 
       {/* Why flat-rate pricing works */}
-      <section className="self-stretch bg-color-white flex flex-col items-center py-[6.125rem] px-[6.875rem] box-border gap-[3.5rem] max-w-full text-center text-[#1a2530] font-['Proxima_Nova'] mq800:gap-[2rem] mq800:py-[2.625rem] mq800:px-[3.438rem] mq800:box-border mq450:px-[1.25rem]">
+      <section className="self-stretch bg-color-white flex flex-col items-center py-[6.125rem] box-border gap-[3.5rem] max-w-full text-center text-[#1a2530] font-['Proxima_Nova'] home-gutters mq800:gap-[2rem] mq800:py-[2.625rem]">
         <h2 className="m-0 relative text-[3.5rem] leading-[4.25rem] font-bold mq450:text-[2.125rem] mq450:leading-[2.563rem] mq800:text-[2.813rem] mq800:leading-[3.375rem]">
           Why flat-rate pricing works
         </h2>

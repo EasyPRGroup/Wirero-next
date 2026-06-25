@@ -140,7 +140,7 @@ const ContactPage: NextPage = () => {
   return (
     <div className="w-full relative bg-color-white overflow-hidden flex flex-col items-start leading-[normal] tracking-[normal]">
       {/* Main Content */}
-      <main className="self-stretch flex items-start justify-start flex-wrap content-start pt-[4.25rem] px-[6.875rem] pb-[6.125rem] box-border gap-[4.25rem] max-w-full mq750:gap-[2.125rem] mq750:pt-[1.813rem] mq750:px-[3.438rem] mq750:pb-[2.625rem] mq750:box-border mq1050:pt-[2.75rem] mq1050:px-[3.438rem] mq1050:pb-[4rem] mq1050:box-border mq450:gap-[1.063rem] mq450:pl-[1.25rem] mq450:pr-[1.25rem] mq450:box-border">
+      <main className="self-stretch flex items-start justify-start flex-wrap content-start pt-[4.25rem] home-gutters pb-[6.125rem] box-border gap-[4.25rem] max-w-full mq750:gap-[2.125rem] mq750:pt-[1.813rem] mq750:pb-[2.625rem] mq1050:pt-[2.75rem] mq1050:pb-[4rem] mq450:gap-[1.063rem]">
         {/* Left Column */}
         <section className="flex-[1.1481] overflow-hidden flex flex-col items-start gap-[1.5rem] min-w-[19.375rem] mq450:min-w-full max-w-[33.25rem] text-left text-[1rem] text-[#4d565f] font-proxima-nova">
           {/* Contact Label */}
@@ -475,7 +475,7 @@ const ContactPage: NextPage = () => {
 
       {/* CTA Section 1 */}
       <section className="self-stretch flex flex-col items-center py-[2.5rem] px-[1.875rem] box-border max-w-full text-left text-[1.375rem] text-[#4d565f] font-proxima-nova">
-        <div className="w-full rounded-[24px] bg-[#e6f4ff] flex items-center justify-center flex-wrap content-center py-[3.75rem] px-[1.875rem] box-border gap-[5rem] max-w-[76.25rem] mq450:gap-[1.5rem] mq450:py-[2rem] mq450:px-[1.25rem]">
+        <div className="w-full rounded-[24px] bg-[#e6f4ff] flex items-center justify-center flex-wrap content-center py-[3.75rem] px-[1.875rem] box-border gap-[5rem] max-w-[76.25rem] mq450:gap-[1.5rem] mq450:py-[2rem]">
           <section className="flex-1 flex flex-col items-start gap-[1.75rem] min-w-[15.625rem] mq450:min-w-0 max-w-[36.5rem] text-left text-[2.25rem] text-[#4d565f] font-proxima-nova">
             <div className="self-stretch overflow-hidden flex flex-col items-start gap-[0.75rem]">
               <b className="w-full relative leading-[3rem] inline-block max-w-[36.5rem]">
@@ -535,7 +535,7 @@ const ContactPage: NextPage = () => {
 
       {/* CTA Section 2 */}
       <section className="self-stretch flex flex-col items-center py-[2.5rem] px-[1.875rem] box-border max-w-full text-left text-[1.375rem] text-[#4d565f] font-proxima-nova">
-        <div className="w-full rounded-[24px] bg-[#0461c3] flex items-center justify-center flex-wrap content-center py-[3.75rem] px-[1.875rem] box-border gap-[5rem] max-w-[76.25rem] mq450:gap-[1.5rem] mq450:py-[2rem] mq450:px-[1.25rem]">
+        <div className="w-full rounded-[24px] bg-[#0461c3] flex items-center justify-center flex-wrap content-center py-[3.75rem] px-[1.875rem] box-border gap-[5rem] max-w-[76.25rem] mq450:gap-[1.5rem] mq450:py-[2rem]">
           <section className="flex-1 flex flex-col items-start gap-[1.75rem] min-w-[15.625rem] mq450:min-w-0 max-w-[36.5rem] text-left text-[2.25rem] text-color-white font-proxima-nova">
             <div className="self-stretch overflow-hidden flex flex-col items-start gap-[0.75rem]">
               <b className="self-stretch relative leading-[3rem]">

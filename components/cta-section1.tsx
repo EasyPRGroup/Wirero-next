@@ -33,7 +33,7 @@ const audienceItems = [
 const CtaSection1: NextPage<CtaSection1Type> = ({ className = "" }) => {
   return (
     <section
-      className={`self-stretch pt-[2.5rem] px-[6.875rem] pb-[6.125rem] text-left font-['Proxima_Nova'] mq800:pt-[1.625rem] mq800:px-[3.438rem] mq800:pb-[4rem] mq450:px-[1.25rem] ${className}`}
+      className={`self-stretch pt-[2.5rem] pb-[6.125rem] text-left font-['Proxima_Nova'] home-gutters mq800:pt-[1.625rem] mq800:pb-[4rem] ${className}`}
     >
       <div className="home-container relative isolate grid min-h-[22rem] grid-cols-[minmax(0,1fr)_minmax(28rem,32rem)] items-center gap-[4rem] overflow-hidden rounded-[24px] bg-[#0866c5] px-[3.75rem] py-[3.25rem] mq1050:grid-cols-1 mq1050:gap-[2.5rem] mq1050:px-[3rem] mq800:px-[2rem] mq450:min-h-0 mq450:px-[1.25rem] mq450:py-[2rem]">
         <div

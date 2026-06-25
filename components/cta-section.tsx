@@ -27,7 +27,7 @@ const CtaSection: NextPage<CtaSectionType> = ({ className = "" }) => {
   ];
   return (
     <section
-      className={`self-stretch bg-[#e2eff9] flex flex-col items-start py-[2.5rem] px-[6.875rem] box-border relative isolate gap-[0.625rem] max-w-full mq450:py-[1.625rem] mq450:px-[1.25rem] mq450:box-border mq800:pl-[3.438rem] mq800:pr-[3.438rem] mq800:box-border ${className}`}
+      className={`self-stretch bg-[#e2eff9] flex flex-col items-start py-[2.5rem] box-border relative isolate gap-[0.625rem] max-w-full home-gutters mq450:py-[1.625rem] ${className}`}
     >
       <Image
         className="w-[40.688rem] h-[14.375rem] absolute !m-0 bottom-[0rem] left-[49.313rem] z-[0] shrink-0 mq1350:hidden"

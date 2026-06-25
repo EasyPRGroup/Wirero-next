@@ -92,7 +92,7 @@ const AboutUs: NextPage = () => {
     <div className="w-full relative bg-color-white overflow-hidden flex flex-col items-start leading-[normal] tracking-[normal]">
 
       {/* Hero Section */}
-      <section className="self-stretch flex flex-col items-start pt-[4.25rem] px-[6.875rem] pb-[6.125rem] box-border gap-[4.25rem] max-w-full text-center font-['Proxima_Nova'] mq750:gap-[2.125rem] mq750:pt-[1.813rem] mq750:px-[3.438rem] mq750:pb-[2.625rem] mq750:box-border mq1050:pt-[2.75rem] mq1050:pb-[4rem] mq1050:px-[3.438rem] mq1050:box-border mq450:gap-[1.063rem] mq450:pl-[1.25rem] mq450:pr-[1.25rem] mq450:box-border">
+      <section className="self-stretch flex flex-col items-start pt-[4.25rem] home-gutters pb-[6.125rem] box-border gap-[4.25rem] max-w-full text-center font-['Proxima_Nova'] mq750:gap-[2.125rem] mq750:pt-[1.813rem] mq750:pb-[2.625rem] mq1050:pt-[2.75rem] mq1050:pb-[4rem] mq450:gap-[1.063rem]">
         <section className="self-stretch overflow-hidden flex flex-col items-start gap-[1.5rem] max-w-full text-left text-[1rem] text-[#0bc111]">
           <b className="self-stretch relative tracking-[0.02em] leading-[1.25rem] uppercase">
             About Wirero
@@ -170,7 +170,7 @@ const AboutUs: NextPage = () => {
       </section>
 
       {/* What Wirero Does Section */}
-      <section className="self-stretch bg-[#f8f8ff] flex items-start py-[5rem] px-[6.875rem] box-border gap-[4.25rem] max-w-full mq1050:flex-wrap mq750:gap-[2.125rem] mq750:py-[3.25rem] mq750:px-[3.438rem] mq750:box-border mq450:gap-[1.063rem] mq450:pl-[1.25rem] mq450:pr-[1.25rem] mq450:box-border">
+      <section className="self-stretch bg-[#f8f8ff] flex items-start py-[5rem] home-gutters box-border gap-[4.25rem] max-w-full mq1050:flex-wrap mq750:gap-[2.125rem] mq750:py-[3.25rem] mq450:gap-[1.063rem]">
         <section className="flex-1 flex flex-col items-start gap-[1.75rem] min-w-[20.813rem] text-left text-[1rem] text-[#005edc] font-['Proxima_Nova']">
           <div className="self-stretch overflow-hidden flex flex-col items-start gap-[1.5rem]">
             <b className="self-stretch relative tracking-[0.02em] leading-[1.25rem] uppercase text-[#0bc111]">
@@ -282,7 +282,7 @@ const AboutUs: NextPage = () => {
       </section>
 
       {/* We're Different Section (Dark) */}
-      <main className="self-stretch bg-[#4d575f] flex flex-col items-center py-[6.125rem] px-[6.875rem] box-border gap-[4.25rem] max-w-full text-center text-[1rem] text-[#0bc111] font-['Proxima_Nova'] mq750:gap-[2.125rem] mq750:py-[2.625rem] mq750:px-[3.438rem] mq750:box-border mq1050:pt-[4rem] mq1050:pb-[4rem] mq1050:px-[3.438rem] mq1050:box-border mq450:gap-[1.063rem] mq450:pl-[1.25rem] mq450:pr-[1.25rem] mq450:box-border">
+      <main className="self-stretch bg-[#4d575f] flex flex-col items-center py-[6.125rem] home-gutters box-border gap-[4.25rem] max-w-full text-center text-[1rem] text-[#0bc111] font-['Proxima_Nova'] mq750:gap-[2.125rem] mq750:py-[2.625rem] mq1050:pt-[4rem] mq1050:pb-[4rem] mq450:gap-[1.063rem]">
         <section className="self-stretch overflow-hidden flex flex-col items-start gap-[1.5rem] max-w-full text-left text-[1rem] text-[#0bc111]">
           <b className="self-stretch relative tracking-[0.02em] leading-[1.25rem] uppercase">
             We're different
@@ -361,7 +361,7 @@ const AboutUs: NextPage = () => {
       </main>
 
       {/* Industries We Serve Section */}
-      <section className="self-stretch flex flex-col items-center py-[6.125rem] px-[6.875rem] box-border gap-[4.25rem] max-w-full text-left text-[1.375rem] text-[#4d565f] font-['Proxima_Nova'] mq750:gap-[2.125rem] mq750:pl-[3.438rem] mq750:pr-[3.438rem] mq750:box-border mq1050:pt-[4rem] mq1050:pb-[4rem] mq1050:pl-[3.438rem] mq1050:pr-[3.438rem] mq1050:box-border mq450:gap-[1.063rem] mq450:py-[2.625rem] mq450:px-[1.25rem] mq450:box-border">
+      <section className="self-stretch flex flex-col items-center py-[6.125rem] home-gutters box-border gap-[4.25rem] max-w-full text-left text-[1.375rem] text-[#4d565f] font-['Proxima_Nova'] mq750:gap-[2.125rem] mq1050:pt-[4rem] mq1050:pb-[4rem] mq450:gap-[1.063rem] mq450:py-[2.625rem]">
         <section className="w-[60rem] max-w-full overflow-hidden flex flex-col items-center gap-[1.5rem] shrink-0 text-left text-[1rem] text-[#0bc111]">
           <b className="relative tracking-[0.02em] leading-[1.25rem] uppercase">
             Industries We Serve
@@ -382,7 +382,7 @@ const AboutUs: NextPage = () => {
           <section className="w-[47.5rem] overflow-hidden shrink-0 flex flex-col items-center relative isolate gap-[0.625rem] max-w-full text-left text-[1.375rem] text-[#4d565f] font-['Proxima_Nova'] mq1050:flex-1 mq1050:min-w-full">
             <div
               ref={industryScrollRef}
-              className="w-[42.5rem] max-w-full backdrop-blur-[8px] rounded-[28px] bg-[rgba(0,94,220,0.08)] flex items-start justify-center mq1050:justify-start py-[3.75rem] px-[0rem] box-border gap-[1.25rem] z-[0] shrink-0 mq450:pt-[2.438rem] mq450:pb-[2.438rem] mq450:box-border overflow-x-auto scroll-smooth">
+              className="w-[42.5rem] max-w-full backdrop-blur-[8px] rounded-[28px] bg-[rgba(0,94,220,0.08)] flex items-start justify-center mq1050:justify-start py-[3.75rem] px-[0rem] box-border gap-[1.25rem] z-[0] shrink-0 mq450:pt-[2.438rem] mq450:pb-[2.438rem] overflow-x-auto scroll-smooth">
               {industries.map((industry, index) => (
                 <div
                   key={index}
@@ -468,7 +468,7 @@ const AboutUs: NextPage = () => {
       </section>
 
       {/* Network Structure Section */}
-      <section className="self-stretch bg-[#f7fafd] flex flex-col items-center py-[6.125rem] px-[6.875rem] box-border gap-[3.5rem] max-w-full text-center font-['Proxima_Nova'] mq800:gap-[2rem] mq800:py-[2.625rem] mq800:px-[3.438rem] mq800:box-border mq450:px-[1.25rem] mq450:box-border">
+      <section className="self-stretch bg-[#f7fafd] flex flex-col items-center py-[6.125rem] home-gutters box-border gap-[3.5rem] max-w-full text-center font-['Proxima_Nova'] mq800:gap-[2rem] mq800:py-[2.625rem]">
         <div className="flex flex-col items-center gap-[1.5rem] max-w-[60rem]">
           <b className="relative tracking-[0.02em] leading-[1.25rem] uppercase text-[#0bc111]">
             NETWORK STRUCTURE
@@ -505,7 +505,7 @@ const AboutUs: NextPage = () => {
       </section>
 
       {/* How Distribution Works Section */}
-      <section className="self-stretch bg-color-white flex flex-col items-center py-[6.125rem] px-[6.875rem] box-border gap-[3.5rem] max-w-full text-center font-['Proxima_Nova'] mq800:gap-[2rem] mq800:py-[2.625rem] mq800:px-[3.438rem] mq800:box-border mq450:px-[1.25rem] mq450:box-border">
+      <section className="self-stretch bg-color-white flex flex-col items-center py-[6.125rem] home-gutters box-border gap-[3.5rem] max-w-full text-center font-['Proxima_Nova'] mq800:gap-[2rem] mq800:py-[2.625rem]">
         <div className="flex flex-col items-center gap-[1.5rem] max-w-[60rem]">
           <b className="relative tracking-[0.02em] leading-[1.25rem] uppercase text-[#0bc111]">
             HOW DISTRIBUTION WORKS

@@ -21,7 +21,7 @@ const CtaBanner: NextPage<CtaBannerType> = ({
 }) => {
   return (
     <section
-      className={`self-stretch bg-color-white flex flex-col items-start pt-[2.5rem] px-[6.875rem] pb-[6.125rem] box-border max-w-full mq750:pt-[1.625rem] mq750:px-[3.438rem] mq750:pb-[4rem] mq750:box-border mq450:px-[1.25rem] mq450:box-border ${className}`}
+      className={`self-stretch bg-color-white flex flex-col items-start pt-[2.5rem] pb-[6.125rem] box-border max-w-full home-gutters mq750:pt-[1.625rem] mq750:pb-[4rem] ${className}`}
     >
       <div className="self-stretch [background:radial-gradient(circle_at_72%_70%,_#1f79d6,_#0461c3_52%)] rounded-[24px] flex flex-col items-center justify-center py-[4.25rem] px-[2.5rem] box-border gap-[2rem] max-w-full text-center text-[2.75rem] text-color-white font-proxima mq750:py-[2.625rem] mq450:gap-[1.5rem] mq450:py-[2rem] mq450:px-[1.25rem] mq450:box-border">
         <div className="flex flex-col items-center gap-[1rem] max-w-full">

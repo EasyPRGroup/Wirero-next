@@ -61,6 +61,15 @@ button, a {
   padding-right: clamp(1.25rem, 5vw, 6.875rem);
 }
 
+/* Constrain sole-child content within home-gutters sections to readable width.
+   Only applies when the section has a single wrapper child, preserving
+   multi-child flex layouts (side-by-side columns, grids, etc.). */
+.home-gutters > *:only-child {
+  max-width: 76.25rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .home-container {
   width: 100%;
   max-width: 76.25rem;
@@ -77,8 +86,74 @@ button, a {
 
 .site-page-frame {
   width: 100%;
-  max-width: var(--site-frame-width);
+  max-width: 100rem;
   margin-left: auto;
   margin-right: auto;
   overflow-x: clip;
+}
+
+/* Newsroom article body styling (parsed HTML content) */
+.prose-newsroom {
+  width: 100%;
+}
+.prose-newsroom p {
+  margin: 0 0 1.25rem 0;
+}
+.prose-newsroom p:last-child {
+  margin-bottom: 0;
+}
+.prose-newsroom h2,
+.prose-newsroom h3,
+.prose-newsroom h4 {
+  margin: 1.75rem 0 0.75rem 0;
+  font-weight: 700;
+  color: #1a2530;
+  line-height: 1.4;
+}
+.prose-newsroom h2 {
+  font-size: 1.5rem;
+}
+.prose-newsroom h3 {
+  font-size: 1.25rem;
+}
+.prose-newsroom h4 {
+  font-size: 1.125rem;
+}
+.prose-newsroom a {
+  color: #1a8cd5;
+  text-decoration: underline;
+}
+.prose-newsroom a:hover {
+  color: #0461c3;
+}
+.prose-newsroom img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin: 1rem 0;
+}
+.prose-newsroom ul,
+.prose-newsroom ol {
+  margin: 0 0 1.25rem 0;
+  padding-left: 1.5rem;
+}
+.prose-newsroom li {
+  margin-bottom: 0.5rem;
+}
+.prose-newsroom blockquote {
+  margin: 0 0 1.25rem 0;
+  padding: 0.75rem 1.25rem;
+  border-left: 3px solid #1a8cd5;
+  color: #4d575f;
+  background: #f7fafd;
+  border-radius: 0 8px 8px 0;
+}
+.prose-newsroom figure {
+  margin: 1.25rem 0;
+}
+.prose-newsroom figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: #64676f;
+  text-align: center;
 }

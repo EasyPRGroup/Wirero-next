@@ -8,7 +8,7 @@ export type AboutType = {
 const About: NextPage<AboutType> = ({ className = "" }) => {
   return (
     <section
-      className={`self-stretch bg-[#f7fafd] flex flex-col items-start justify-center py-[5rem] px-[6.875rem] box-border gap-[3rem] max-w-full mq450:py-[2.125rem] mq450:px-[1.25rem] mq450:box-border mq800:gap-[1.5rem] mq800:pl-[3.438rem] mq800:pr-[3.438rem] mq800:box-border mq1125:pt-[3.25rem] mq1125:pb-[3.25rem] mq1125:box-border ${className}`}
+      className={`self-stretch bg-[#f7fafd] flex flex-col items-start justify-center py-[5rem] box-border gap-[3rem] max-w-full home-gutters mq450:py-[2.125rem] mq800:gap-[1.5rem] mq1125:pt-[3.25rem] mq1125:pb-[3.25rem] ${className}`}
     >
       <section className="home-container overflow-hidden flex flex-col items-start gap-[1.5rem] max-w-full text-left text-[1rem] text-[#0bc111] font-['Proxima_Nova']">
         <b className="self-stretch relative tracking-[0.02em] leading-[1.25rem] uppercase">
