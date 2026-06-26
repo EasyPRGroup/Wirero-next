@@ -47,7 +47,7 @@ const Agency: NextPage = () => {
     {
       image: "/image-1371@2x.png",
       title: "News Platforms & Blogs",
-      description: "Extend your offering with â€œexpanded distributionâ€ packages.",
+      description: 'Extend your offering with "expanded distribution" packages.',
     },
   ];
 

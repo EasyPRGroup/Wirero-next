@@ -149,13 +149,13 @@ const PricingCard: NextPage<PricingCardType> = ({
 
   return (
     <section
-      className={`self-stretch min-w-[18rem] rounded-[24px] flex flex-col items-start p-[0.5rem] gap-[1.25rem] text-left text-[0.75rem] font-['Proxima_Nova'] mq450:min-w-full ${className} ${isPopular ? "bg-[#0461c3] shadow-[0px_2px_20px_rgba(26,37,48,0.12)] border-[2px] border-[#0461c3]" : "bg-[#f7fafd] shadow-[0px_2px_8px_rgba(26,37,48,0.04)]"}`}
+      className={`self-stretch min-w-0 rounded-[24px] flex flex-col items-start p-[0.5rem] gap-[1.25rem] text-left text-[0.75rem] font-['Proxima_Nova'] ${className} ${isPopular ? "bg-[#0461c3] shadow-[0px_2px_20px_rgba(26,37,48,0.12)] border-[2px] border-[#0461c3]" : "bg-[#f7fafd] shadow-[0px_2px_8px_rgba(26,37,48,0.04)]"}`}
     >
       <div
         className={`self-stretch rounded-[16px] flex flex-col items-start pt-[1.25rem] px-[1.25rem] pb-[1.75rem] gap-[1.5rem] ${isPopular ? "bg-[#0461c3]" : "bg-color-white"}`}
       >
         <div className="self-stretch flex flex-col items-start gap-[1rem] shrink-0">
-          <div className="self-stretch flex items-start gap-[0.625rem]">
+          <div className="self-stretch flex flex-wrap items-start gap-[0.625rem]">
             <div
               className={`rounded-[52px] flex items-center justify-center p-[0.75rem] shrink-0 ${isPopular ? "bg-[#181f25]" : "bg-[#f0f4f8]"}`}
             >
@@ -229,10 +229,10 @@ const PricingCard: NextPage<PricingCardType> = ({
           </div>
           <Link
             href="/contact"
-            className={`cursor-pointer self-stretch h-[3.5rem] rounded-[8px] flex items-center justify-center gap-[0.5rem] no-underline ${ctaVariant === "filled" ? "bg-[#0461c3] border-none" : "border-[#0461c3] border-solid border-[1px] bg-transparent"} hover:opacity-90 transition-opacity`}
+            className={`cursor-pointer self-stretch min-h-[3.5rem] rounded-[8px] flex items-center justify-center gap-[0.5rem] px-[0.75rem] no-underline ${ctaVariant === "filled" ? "bg-[#0461c3] border-none" : "border-[#0461c3] border-solid border-[1px] bg-transparent"} hover:opacity-90 transition-opacity`}
           >
             <div
-              className={`relative text-[1rem] leading-[1.25rem] font-semibold font-['Proxima_Nova'] text-center shrink-0 ${isPopular ? "text-color-white" : "text-[#0461c3]"}`}
+              className={`relative min-w-0 text-[1rem] leading-[1.25rem] font-semibold font-['Proxima_Nova'] text-center ${isPopular ? "text-color-white" : "text-[#0461c3]"}`}
             >
               {ctaText}
             </div>

@@ -64,8 +64,8 @@ module.exports = {
         "3xl": "40px",
       },
       maxWidth: {
-        container: "90rem",
-        section: "76.25rem",
+        container: "100rem",
+        section: "100rem",
       },
     },
     screens: {

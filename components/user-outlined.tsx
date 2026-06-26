@@ -73,7 +73,7 @@ const UserOutlined: NextPage<UserOutlinedType> = ({
         />
       )}
       <div
-        className="relative text-[0.875rem] leading-[1.125rem] font-semibold font-['Proxima_Nova'] text-[#0f0928] text-center shrink-0"
+        className="relative min-w-0 text-[0.875rem] leading-[1.125rem] font-semibold font-['Proxima_Nova'] text-[#0f0928] text-center"
         style={textStyle}
       >
         {cTAButton}
@@ -97,7 +97,7 @@ const UserOutlined: NextPage<UserOutlinedType> = ({
     return (
       <Link
         href={href}
-        className={`cursor-pointer [border:none] py-[0.75rem] px-[2.25rem] bg-color-white h-[3rem] rounded-lg flex items-center justify-center box-border gap-[0.5rem] no-underline ${className}`}
+        className={`cursor-pointer [border:none] py-[0.75rem] px-[clamp(1rem,4vw,2.25rem)] bg-color-white min-h-[3rem] rounded-lg flex min-w-0 items-center justify-center box-border gap-[0.5rem] no-underline ${className}`}
         style={buttonStyle}
       >
         {content}
@@ -107,7 +107,7 @@ const UserOutlined: NextPage<UserOutlinedType> = ({
 
   return (
     <button
-      className={`cursor-pointer [border:none] py-[0.75rem] px-[2.25rem] bg-color-white h-[3rem] rounded-lg flex items-center justify-center box-border gap-[0.5rem] ${className}`}
+      className={`cursor-pointer [border:none] py-[0.75rem] px-[clamp(1rem,4vw,2.25rem)] bg-color-white min-h-[3rem] rounded-lg flex min-w-0 items-center justify-center box-border gap-[0.5rem] ${className}`}
       style={buttonStyle}
     >
       {content}

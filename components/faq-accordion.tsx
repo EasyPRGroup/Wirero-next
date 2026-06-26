@@ -15,7 +15,7 @@ interface FaqAccordionProps {
 const FaqAccordion: React.FC<FaqAccordionProps> = ({ item, isOpen, onToggle }) => {
   return (
     <div
-      className={`self-stretch rounded-[16px] border overflow-hidden flex flex-col items-start p-[1.75rem] gap-[1rem] transition-all duration-300 ${
+      className={`self-stretch rounded-[16px] border overflow-hidden flex flex-col items-start p-[1.75rem] gap-[1rem] transition-all duration-300 mq450:p-[1.25rem] ${
         isOpen
           ? "bg-color-white shadow-[0px_4px_16px_rgba(26,38,48,0.08)]"
           : "bg-color-white border-[#e2e5e9] border-solid"
@@ -23,10 +23,10 @@ const FaqAccordion: React.FC<FaqAccordionProps> = ({ item, isOpen, onToggle }) =
     >
       <button
         onClick={onToggle}
-        className="self-stretch flex items-start gap-[0.5rem] cursor-pointer bg-transparent border-none p-0 text-left w-full"
+        className="self-stretch flex min-w-0 items-start gap-[0.5rem] cursor-pointer bg-transparent border-none p-0 text-left w-full"
       >
         <b
-          className={`flex-1 relative leading-[2.125rem] font-abel ${
+          className={`min-w-0 flex-1 relative leading-[2.125rem] font-abel break-words ${
             isOpen ? "text-[#1a2530]" : "text-[#1a2530]"
           }`}
         >
@@ -49,7 +49,7 @@ const FaqAccordion: React.FC<FaqAccordionProps> = ({ item, isOpen, onToggle }) =
         }`}
       >
         <div
-          className="flex items-center justify-center py-[0rem] pl-[0rem] pr-[2rem] text-[1.125rem] text-[#4d565f] font-proxima-nova"
+          className="flex items-center justify-center py-[0rem] pl-[0rem] pr-[2rem] text-[1.125rem] text-[#4d565f] font-proxima-nova mq450:pr-0"
         >
           <div className="flex-1 relative leading-[1.75rem]">{item.answer}</div>
         </div>

@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import type { ReactNode } from "react";
+import Image from "next/image";
 import Link from "next/link";
 
 export type CtaBannerType = {
@@ -39,10 +40,10 @@ const CtaBanner: NextPage<CtaBannerType> = ({
             {pills.map((pill, index) => (
               <div
                 key={index}
-                className="flex items-center gap-[0.5rem] py-[0.5rem] px-[1rem] rounded-full bg-[rgba(255,255,255,0.12)] border-[1px] border-solid border-[rgba(255,255,255,0.25)]"
+                className="flex max-w-full items-center gap-[0.5rem] py-[0.5rem] px-[1rem] rounded-full bg-[rgba(255,255,255,0.12)] border-[1px] border-solid border-[rgba(255,255,255,0.25)]"
               >
                 {pill.icon}
-                <span className="relative text-[0.9375rem] leading-[1.25rem] font-semibold font-proxima text-color-white whitespace-nowrap">
+                <span className="relative min-w-0 text-[0.9375rem] leading-[1.25rem] font-semibold font-proxima text-color-white text-center">
                   {pill.text}
                 </span>
               </div>
@@ -51,14 +52,18 @@ const CtaBanner: NextPage<CtaBannerType> = ({
         ) : null}
         <Link
           href={buttonHref}
-          className="cursor-pointer py-[0.875rem] px-[1.75rem] bg-color-white rounded-[8px] flex items-center justify-center box-border gap-[0.5rem] no-underline hover:bg-[#f0f4f8] transition-colors"
+          className="cursor-pointer max-w-full py-[0.875rem] px-[clamp(1rem,4vw,1.75rem)] bg-color-white rounded-[8px] flex min-w-0 items-center justify-center box-border gap-[0.5rem] no-underline hover:bg-[#f0f4f8] transition-colors"
         >
-          <div className="relative text-[1rem] leading-[1.25rem] font-semibold font-proxima text-[#1a2530] text-center shrink-0">
+          <div className="relative min-w-0 text-[1rem] leading-[1.25rem] font-semibold font-proxima text-[#1a2530] text-center">
             {buttonText}
           </div>
-          <div className="relative text-[1.125rem] leading-[1.25rem] font-semibold text-[#1a2530]">
-            →
-          </div>
+          <Image
+            className="h-[1rem] w-[1rem] shrink-0"
+            width={16}
+            height={16}
+            alt=""
+            src="/arrow-right.svg"
+          />
         </Link>
       </div>
     </section>

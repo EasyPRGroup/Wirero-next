@@ -91,7 +91,7 @@ const NetworkCategory: NextPage<NetworkCategoryType> = ({
   return (
     <Link
       href={href}
-      className={`cursor-pointer [border:none] py-[1.5rem] pl-[2rem] pr-[1.5rem] bg-color-white min-w-[18.75rem] mq450:min-w-full rounded-[126px] flex items-center justify-start gap-[1rem] no-underline hover:shadow-[0px_2px_12px_rgba(26,38,48,0.12)] transition-shadow ${className}`}
+      className={`cursor-pointer [border:none] py-[1.5rem] pl-[2rem] pr-[1.5rem] bg-color-white min-w-0 rounded-[126px] flex items-center justify-start gap-[1rem] no-underline hover:shadow-[0px_2px_12px_rgba(26,38,48,0.12)] transition-shadow mq450:pl-[1.25rem] mq450:pr-[1.25rem] ${className}`}
       style={networkCategoryStyle}
     >
       <Image
@@ -104,10 +104,10 @@ const NetworkCategory: NextPage<NetworkCategoryType> = ({
         style={networkCategoryIconStyle}
       />
       <div
-        className="flex-1 flex flex-col items-start gap-[0.25rem]"
+        className="min-w-0 flex-1 flex flex-col items-start gap-[0.25rem]"
         style={networkCategoryNameStyle}
       >
-        <b className="relative text-[1.5rem] leading-[1.75rem] font-['Proxima_Nova'] text-[#1a2530] text-left">{name}</b>
+        <b className="relative text-[1.5rem] leading-[1.75rem] font-['Proxima_Nova'] text-[#1a2530] text-left break-words mq450:text-[1.25rem]">{name}</b>
         <div className="relative text-[1rem] leading-[1.25rem] font-['Proxima_Nova'] text-[#4d565f] text-left hidden shrink-0">
           Technology
         </div>

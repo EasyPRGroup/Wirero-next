@@ -96,7 +96,7 @@ const Header: NextPage<HeaderType> = ({
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="flex items-center gap-[2.5rem] mq1125:gap-[1.5rem] mq800:hidden">
+          <div className="flex items-center gap-[2.5rem] mq1125:hidden">
             <nav className="m-0 rounded-[50px] flex items-center justify-center gap-[2.5rem] mq1125:gap-[1.5rem] text-left text-[1.125rem] text-[#64676f] font-['Proxima_Nova']">
               {optionItems.map((item, index) => (
                 <Option
@@ -124,7 +124,7 @@ const Header: NextPage<HeaderType> = ({
 
           {/* Hamburger Button */}
           <button
-            className="hidden mq800:flex flex-col justify-center items-center w-[2.75rem] h-[2.75rem] cursor-pointer bg-transparent border-none p-0 gap-[0.375rem]"
+            className="hidden mq1125:flex flex-col justify-center items-center w-[2.75rem] h-[2.75rem] cursor-pointer bg-transparent border-none p-0 gap-[0.375rem]"
             onClick={toggleMobileMenu}
             aria-label="Toggle menu"
           >

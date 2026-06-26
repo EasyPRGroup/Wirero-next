@@ -17,7 +17,7 @@ const FaqCategory: React.FC<FaqCategoryProps> = ({
   return (
     <button
       onClick={onClick}
-      className={`cursor-pointer self-stretch rounded-[126px] flex items-center gap-[0.75rem] py-[1.25rem] px-[1.5rem] transition-all duration-200 ${
+      className={`cursor-pointer self-stretch rounded-[126px] flex min-w-0 items-center gap-[0.75rem] py-[1.25rem] px-[1.5rem] text-left transition-all duration-200 ${
         isActive
           ? "bg-[#0461c3] text-color-white"
           : "bg-[#f7fafd] border border-[#e2e5e9] text-[#1a2530]"
@@ -31,9 +31,9 @@ const FaqCategory: React.FC<FaqCategoryProps> = ({
         alt={title}
         src={icon}
       />
-      <div className="flex-1 flex flex-col items-start shrink-0">
+      <div className="min-w-0 flex-1 flex flex-col items-start">
         <h3
-          className={`m-0 self-stretch relative text-[1.25rem] leading-[1.625rem] font-bold font-abel text-left ${
+          className={`m-0 self-stretch relative text-[1.25rem] leading-[1.625rem] font-bold font-abel text-left break-words ${
             isActive ? "text-color-white" : "text-[#1a2530]"
           }`}
         >

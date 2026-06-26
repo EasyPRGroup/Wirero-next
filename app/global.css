@@ -23,7 +23,7 @@
 /* CSS Variable for Proxima Nova font (with free Mulish fallback) */
 :root {
   --font-proxima: 'Proxima Nova', 'Mulish', 'Inter', Arial, sans-serif;
-  --site-frame-width: 90rem;
+  --site-frame-width: 100rem;
 }
 
 /* Base styles - Set Proxima Nova as default font */
@@ -65,28 +65,28 @@ button, a {
    Only applies when the section has a single wrapper child, preserving
    multi-child flex layouts (side-by-side columns, grids, etc.). */
 .home-gutters > *:only-child {
-  max-width: 76.25rem;
+  max-width: 100rem;
   margin-left: auto;
   margin-right: auto;
 }
 
 .home-container {
   width: 100%;
-  max-width: 76.25rem;
+  max-width: 100rem;
   margin-left: auto;
   margin-right: auto;
 }
 
 .home-hero-container {
   width: 100%;
-  max-width: 82.5rem;
+  max-width: 100rem;
   margin-left: auto;
   margin-right: auto;
 }
 
 .site-page-frame {
   width: 100%;
-  max-width: 100rem;
+  max-width: none;
   margin-left: auto;
   margin-right: auto;
   overflow-x: clip;
