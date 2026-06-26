@@ -40,7 +40,7 @@ const Agencies = ({
           </div>
         </div>
       </div>
-      <div className="flex w-full min-w-0 flex-col items-center gap-[1rem] p-[1.75rem] mq450:p-[1.25rem]">
+      <div className="flex w-full min-w-0 flex-col items-center gap-[1rem] px-[1.75rem] py-[1.75rem] mq450:px-[1.25rem] mq450:py-[1.25rem]">
         <h3 className="m-0 w-full break-words text-[length:inherit] leading-[1.875rem] font-bold font-[inherit] mq450:text-[1.25rem] mq450:leading-[1.625rem]">
           {dedicatedProjectMa}
         </h3>

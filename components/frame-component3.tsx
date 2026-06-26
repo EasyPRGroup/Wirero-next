@@ -28,13 +28,13 @@ const audiences = [
 const FrameComponent3 = ({ className = "" }: FrameComponent3Type) => {
   return (
     <section
-      className={`flex w-full flex-col items-start gap-[3rem] font-['Proxima_Nova'] mq800:gap-[2rem] ${className}`}
+      className={`flex w-full flex-col items-center gap-[3rem] font-['Proxima_Nova'] mq800:gap-[2rem] ${className}`}
     >
-      <header className="flex w-full max-w-[45rem] flex-col items-start gap-[1.5rem] text-left text-[1rem] text-[#0bc111]">
+      <header className="flex w-full max-w-[60rem] flex-col items-center gap-[1.5rem] text-center text-[1rem] text-[#0bc111]">
         <b className="tracking-[0.02em] leading-[1.25rem] uppercase">
           Made For Scale
         </b>
-        <div className="flex w-full flex-col items-start gap-[1rem] text-[3.5rem] text-[#1a2530]">
+        <div className="flex w-full flex-col items-center gap-[1rem] text-[3.5rem] text-[#1a2530]">
           <h2 className="m-0 w-full text-[length:inherit] leading-[4.25rem] font-bold font-[inherit] mq800:text-[2.813rem] mq800:leading-[3.375rem] mq450:text-[2.125rem] mq450:leading-[2.563rem]">
             Who is Wirero For?
           </h2>

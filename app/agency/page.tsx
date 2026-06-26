@@ -474,7 +474,7 @@ const Agency: NextPage = () => {
           <div className="absolute left-[-7rem] top-[-5rem] z-[0] h-[22rem] w-[30rem] rounded-full bg-[#1a8cd5] opacity-60 blur-[120px]" />
           <div className="absolute bottom-[-6rem] right-[10%] z-[0] h-[14rem] w-[24rem] rounded-full bg-[#1a8cd5] opacity-45 blur-[110px]" />
           <div className="absolute inset-0 z-[1] bg-[radial-gradient(circle_at_18%_35%,_rgba(26,140,213,0.45),_transparent_28%),radial-gradient(circle_at_78%_83%,_rgba(26,140,213,0.38),_transparent_30%)]" />
-          <section className="relative z-[2] flex w-full max-w-[52rem] flex-col items-center gap-[1.75rem] text-center text-[3rem] text-color-white">
+          <section className="home-container relative z-[2] flex w-full flex-col items-center gap-[1.75rem] text-center text-[3rem] text-color-white">
             <div className="self-stretch flex flex-col items-center gap-[0.875rem]">
               <h1 className="m-0 self-stretch relative text-[length:inherit] leading-[3.625rem] font-bold font-proxima mq1050:text-[2.375rem] mq1050:leading-[2.875rem] mq450:text-[1.813rem] mq450:leading-[2.188rem]">
                 Turn Distribution into a Scalable Revenue Stream

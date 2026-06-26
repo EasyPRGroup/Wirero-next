@@ -179,7 +179,7 @@ const FrameComponent5: NextPage<FrameComponent5Type> = ({ className = "" }) => {
         <div
           role="tablist"
           aria-label="How Wirero Works steps"
-          className="w-[67.75rem] max-w-full grid grid-cols-4 items-end gap-[1.25rem] mq1125:grid-cols-2 mq450:contents"
+          className="w-full max-w-full grid grid-cols-4 items-end gap-[1.25rem] mq1125:grid-cols-2 mq450:contents"
         >
           {HOW_IT_WORKS_STEPS.map((item, index) => (
             <HowItWorks

@@ -104,8 +104,8 @@ const Page = () => {
       </main>
 
       {/* CTA Section */}
-      <section className="self-stretch flex flex-col items-start py-[3.75rem] box-border max-w-full home-gutters mq450:py-[2.438rem]">
-        <div className="self-stretch rounded-[24px] bg-[#0461c3] overflow-hidden flex items-center py-[3.75rem] px-[11.25rem] box-border relative isolate max-w-full mq1050:pl-[5.625rem] mq1050:pr-[5.625rem] mq1050:box-border mq750:pl-[2.813rem] mq750:pr-[2.813rem] mq750:box-border mq450:pl-[1.25rem] mq450:pr-[1.25rem] mq450:box-border">
+      <section className="self-stretch flex flex-col items-center py-[3.75rem] box-border max-w-full home-gutters mq450:py-[2.438rem] mq750:py-[2.5rem]">
+        <div className="self-stretch rounded-[24px] bg-[#0461c3] overflow-hidden flex items-center justify-center py-[3.75rem] px-[2.5rem] box-border relative isolate max-w-full mq1050:py-[3rem] mq750:py-[2.5rem] mq450:px-[1.25rem] mq450:py-[2rem] mq450:box-border">
           <Image
             className="h-[14.375rem] w-[30.25rem] absolute m-[0!important] bottom-[0rem] left-[2.25rem] object-cover z-[3] shrink-0 mq750:hidden"
             loading="lazy"
@@ -115,8 +115,8 @@ const Page = () => {
             src="/Vector-2@2x.png"
           />
 
-          <section className="flex-1 flex flex-col items-center gap-[1.75rem] max-w-full z-[4] shrink-0 text-center text-[3rem] text-color-white font-abel">
-            <div className="self-stretch overflow-hidden flex flex-col items-start gap-[0.75rem]">
+          <section className="home-container flex w-full flex-col items-center gap-[1.75rem] max-w-full z-[4] shrink-0 text-center text-[3rem] text-color-white font-abel">
+            <div className="self-stretch overflow-hidden flex flex-col items-center gap-[0.75rem]">
               <h2 className="m-0 self-stretch relative text-[length:inherit] leading-[3.625rem] font-bold font-[inherit] mq1050:text-[2.375rem] mq1050:leading-[2.875rem] mq450:text-[1.813rem] mq450:leading-[2.188rem]">
                 Still have questions?
               </h2>

@@ -480,7 +480,7 @@ const AboutUs: NextPage = () => {
             The Wirero infrastructure is organized into niche-focused domain categories designed for contextual and scalable distribution.
           </div>
         </div>
-        <div className="self-stretch flex items-start justify-start flex-wrap content-start gap-[1.25rem] text-left">
+        <div className="self-stretch grid w-full auto-rows-fr grid-cols-3 gap-[1.25rem] text-left mq800:grid-cols-2 mq450:grid-cols-1">
           {[
             { name: "Blockchain & Cryptocurrency" },
             { name: "Casino & Gambling" },
@@ -498,7 +498,7 @@ const AboutUs: NextPage = () => {
               name={item.name}
               iconSrc="/blockchain.svg"
               href="/network"
-              className="flex-1 min-w-[16rem] max-w-[calc((100%_-_2.5rem)_/_3)] mq800:max-w-full mq450:max-w-full"
+              className="h-full w-full !min-w-0"
             />
           ))}
         </div>

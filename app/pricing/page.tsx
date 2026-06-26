@@ -255,7 +255,7 @@ const Pricing: NextPage = () => {
       </main>
 
       {/* Why flat-rate pricing comparison */}
-      <section className="self-stretch bg-[#f7fafd] flex flex-col items-start py-[6.125rem] box-border max-w-full home-gutters mq800:py-[2.625rem] mq450:py-[1.688rem]">
+      <section className="self-stretch bg-[#f7fafd] flex flex-col items-center py-[6.125rem] box-border max-w-full home-gutters mq800:py-[2.625rem] mq450:py-[1.688rem]">
         <FrameComponent6
           eyebrow=""
           title="Why flat-rate pricing changes distribution economics"

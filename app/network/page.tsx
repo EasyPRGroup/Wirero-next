@@ -168,10 +168,10 @@ const Network: NextPage = () => {
           <div
             className="self-stretch flex items-start gap-[4.25rem] max-w-full text-[3rem] text-[#1a2530] mq1350:flex-wrap mq750:gap-[2.125rem] mq450:gap-[1.063rem]"
           >
-            <b className="w-[40rem] relative leading-[3.625rem] inline-block shrink-0 max-w-full mq1350:w-full mq1350:min-w-full mq1050:flex-1 mq1050:text-[2.375rem] mq1050:leading-[2.875rem] mq1050:min-w-full mq450:text-[1.813rem] mq450:leading-[2.188rem]">
+            <b className="flex-1 relative leading-[3.625rem] inline-block max-w-full mq1350:w-full mq1350:min-w-full mq1050:flex-1 mq1050:text-[2.375rem] mq1050:leading-[2.875rem] mq1050:min-w-full mq450:text-[1.813rem] mq450:leading-[2.188rem]">
               Built as infrastructure at not a publisher marketplace
             </b>
-            <div className="flex-1 flex flex-col items-start gap-[1.25rem] min-w-[20.813rem] text-[1.125rem] text-[#4d565f] font-proxima mq750:min-w-full">
+            <div className="flex-1 flex flex-col items-start gap-[1.25rem] min-w-0 text-[1.125rem] text-[#4d565f] font-proxima mq750:min-w-full">
               <div className="self-stretch relative leading-[1.75rem]">
                 Wirero operates a privately managed distribution network
                 engineered for scalable deployment across multiple industries.
@@ -185,14 +185,14 @@ const Network: NextPage = () => {
 
         <div className="self-stretch flex items-start justify-center gap-[4.25rem] max-w-full mq1050:flex-wrap mq750:gap-[2.125rem] mq450:gap-[1.063rem]">
           {/* Visual element - abstract shapes */}
-          <div className="h-[23.75rem] w-[35.125rem] relative overflow-hidden max-w-full mq1050:flex-1 mq1050:h-auto mq1050:min-w-full">
+          <div className="h-[23.75rem] flex-1 min-w-0 relative overflow-hidden max-w-full mq1050:flex-1 mq1050:h-auto mq1050:min-w-full">
             <div className="absolute top-[2.25rem] left-[20.125rem] rounded-[16px] bg-[#87ceeb] w-[15rem] h-[17.5rem]"></div>
             <div className="absolute h-full top-[0rem] bottom-[0rem] left-[0rem] rounded-[16px] bg-[#64676f] w-[18.625rem]"></div>
             <div className="absolute top-[6rem] left-[7.188rem] shadow-[0px_23px_54px_rgba(26,37,48,0.24)] rounded-[16px] bg-[#0461c3] w-[20.75rem] h-[11.25rem] z-[1]"></div>
           </div>
 
           {/* Features List */}
-          <section className="h-[29rem] flex-1 flex items-start min-w-[23.938rem] max-w-full text-left text-[1.25rem] text-[#1a8cd5] font-proxima mq750:h-auto mq750:min-w-full">
+          <section className="h-[29rem] flex-1 flex items-start min-w-0 max-w-full text-left text-[1.25rem] text-[#1a8cd5] font-proxima mq750:h-auto mq750:min-w-full">
             <div className="w-[36.875rem] flex flex-col items-start gap-[2rem] max-w-full mq750:gap-[1rem]">
               <FeatureItem
                 number="1"
@@ -446,7 +446,7 @@ const Network: NextPage = () => {
 
       {/* Control Distribution Your Way Section */}
       <section className="self-stretch bg-color-white flex flex-col items-center py-[6.125rem] home-gutters box-border gap-[4.25rem] max-w-full text-center text-[3rem] text-[#1a2530] font-proxima mq1050:pt-[4rem] mq1050:pb-[4rem] mq750:gap-[2.125rem] mq450:gap-[1.063rem] mq450:pt-[2.625rem] mq450:pb-[2.625rem]">
-        <div className="w-[51.25rem] max-w-full overflow-hidden flex flex-col items-center gap-[1.5rem]">
+        <div className="w-[60rem] max-w-full overflow-hidden flex flex-col items-center gap-[1.5rem]">
           <h2 className="m-0 self-stretch relative text-[length:inherit] leading-[3.625rem] font-bold font-[inherit] mq1050:text-[2.375rem] mq1050:leading-[2.875rem] mq450:text-[1.813rem] mq450:leading-[2.188rem]">
             Control Distribution Your Way
           </h2>
@@ -456,7 +456,7 @@ const Network: NextPage = () => {
           </div>
         </div>
 
-        <div className="self-stretch flex items-center justify-center gap-[4.25rem] max-w-full mq1050:flex-wrap mq750:gap-[2.125rem]">
+        <div className="w-full max-w-[76.25rem] flex items-center justify-center gap-[4.25rem] mq1050:flex-wrap mq750:gap-[2.125rem]">
           {/* Left visual */}
           <div className="h-[20rem] w-[24rem] relative overflow-hidden max-w-full shrink-0 mq750:hidden mq450:scale-[0.85]">
             {/* Decorative green dots */}
@@ -510,7 +510,7 @@ const Network: NextPage = () => {
           </div>
 
           {/* Right checklist */}
-          <div className="flex-1 flex flex-col items-start gap-[1.75rem] min-w-[20rem] text-left text-[1.875rem] mq750:min-w-full">
+          <div className="flex-1 flex flex-col items-start gap-[1.75rem] min-w-0 text-left text-[1.875rem] mq750:min-w-full">
             <h2 className="m-0 relative text-[length:inherit] leading-[2.375rem] font-bold font-[inherit] mq450:text-[1.375rem] mq450:leading-[1.75rem]">
               You decide
             </h2>
