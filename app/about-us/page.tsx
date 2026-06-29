@@ -1,7 +1,8 @@
 "use client";
 import type { NextPage } from "next";
 import Image from "next/image";
-import { useRef } from "react";
+import { useRef, useState, useEffect, useCallback } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import CtaBanner from "../../components/cta-banner";
 import Footer from "../../components/footer";
 import NetworkCategory from "../../components/network-category";
@@ -58,31 +59,115 @@ const AboutUs: NextPage = () => {
     {
       title: "PR Agencies",
       image: "/image@2x.png",
-      highlight: false,
+      description:
+        "Distribute press releases and media coverage across targeted industry networks with controlled, rapid deployment.",
     },
     {
       title: "Crypto & Forex Firms",
       image: "/image1@2x.png",
-      highlight: false,
+      description:
+        "Publish market updates, project announcements, and educational content across finance-focused domains.",
     },
     {
       title: "Reseller Platforms",
       image: "/image2@2x.png",
-      highlight: true,
+      description:
+        "Empower your distribution network with white-label solutions. Wirero enables resellers to offer branded content distribution services to their clients, complete with custom domains and reporting dashboards.",
     },
     {
       title: "Media & Content Platforms",
       image: "/image3@2x.png",
-      highlight: false,
+      description:
+        "Scale editorial content across multiple publishing endpoints with centralized workflow and automation.",
     },
   ];
 
   const industryScrollRef = useRef<HTMLDivElement>(null);
+  const [activeIndex, setActiveIndex] = useState(0);
+  const rafRef = useRef<number | null>(null);
+
+  const updateActiveCard = useCallback(() => {
+    const container = industryScrollRef.current;
+    if (!container) return;
+    const cards = Array.from(container.children) as HTMLElement[];
+    if (cards.length === 0) return;
+
+    const containerCenter = container.scrollLeft + container.clientWidth / 2;
+    let closestIndex = 0;
+    let closestDistance = Infinity;
+
+    cards.forEach((card, index) => {
+      const cardCenter = card.offsetLeft + card.offsetWidth / 2;
+      const distance = Math.abs(cardCenter - containerCenter);
+      if (distance < closestDistance) {
+        closestDistance = distance;
+        closestIndex = index;
+      }
+    });
+
+    setActiveIndex(closestIndex);
+  }, []);
+
+  const handleScroll = useCallback(() => {
+    if (rafRef.current !== null) {
+      cancelAnimationFrame(rafRef.current);
+    }
+    rafRef.current = requestAnimationFrame(updateActiveCard);
+  }, [updateActiveCard]);
+
+  useEffect(() => {
+    const container = industryScrollRef.current;
+    if (!container) return;
+
+    const setPadding = () => {
+      const cards = Array.from(container.children) as HTMLElement[];
+      if (cards.length === 0) return;
+      const cardWidth = cards[0].offsetWidth;
+      const padding = Math.max(0, (container.clientWidth - cardWidth) / 2);
+      container.style.paddingLeft = `${padding}px`;
+      container.style.paddingRight = `${padding}px`;
+    };
+
+    setPadding();
+    updateActiveCard();
+
+    const onResize = () => {
+      setPadding();
+      updateActiveCard();
+    };
+
+    window.addEventListener("resize", onResize);
+    container.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener("resize", onResize);
+      container.removeEventListener("scroll", handleScroll);
+      if (rafRef.current !== null) {
+        cancelAnimationFrame(rafRef.current);
+      }
+    };
+  }, [handleScroll, updateActiveCard]);
+
+  const scrollToCard = (index: number) => {
+    const container = industryScrollRef.current;
+    if (!container) return;
+    const cards = Array.from(container.children) as HTMLElement[];
+    if (!cards[index]) return;
+    const card = cards[index];
+    container.scrollTo({
+      left: card.offsetLeft + card.offsetWidth / 2 - container.clientWidth / 2,
+      behavior: "smooth",
+    });
+  };
 
   const scrollIndustry = (direction: "left" | "right") => {
-    if (!industryScrollRef.current) return;
-    const scrollAmount = industryScrollRef.current.clientWidth * 0.5;
-    industryScrollRef.current.scrollBy({
+    const container = industryScrollRef.current;
+    if (!container) return;
+    const cards = Array.from(container.children) as HTMLElement[];
+    if (cards.length === 0) return;
+    const cardWidth = cards[0].offsetWidth;
+    const scrollAmount = cardWidth + 20;
+    container.scrollBy({
       left: direction === "left" ? -scrollAmount : scrollAmount,
       behavior: "smooth",
     });
@@ -378,26 +463,27 @@ const AboutUs: NextPage = () => {
         </section>
 
         {/* Industry Cards */}
-        <div className="self-stretch flex items-center gap-[3rem] max-w-full shrink-0 text-[2.25rem] mq1050:flex-wrap mq750:gap-[1.5rem]">
+        <div className="self-stretch flex items-center gap-[3rem] max-w-full shrink-0 text-[2.25rem] mq1050:flex-wrap mq750:gap-[1.5rem] mq450:gap-[1.25rem]">
           <section className="w-[47.5rem] overflow-hidden shrink-0 flex flex-col items-center relative isolate gap-[0.625rem] max-w-full text-left text-[1.375rem] text-[#4d565f] font-['Proxima_Nova'] mq1050:flex-1 mq1050:min-w-full">
             <div
               ref={industryScrollRef}
-              className="w-[42.5rem] max-w-full backdrop-blur-[8px] rounded-[28px] bg-[rgba(0,94,220,0.08)] flex items-start justify-center mq1050:justify-start py-[3.75rem] px-[0rem] box-border gap-[1.25rem] z-[0] shrink-0 mq450:pt-[2.438rem] mq450:pb-[2.438rem] overflow-x-auto scroll-smooth">
+              className="w-[42.5rem] max-w-full backdrop-blur-[8px] rounded-[28px] bg-[rgba(0,94,220,0.08)] flex items-start justify-start py-[3.75rem] px-[0rem] box-border gap-[1.25rem] z-[0] shrink-0 mq1050:w-full mq450:pt-[2.438rem] mq450:pb-[2.438rem] overflow-x-auto scroll-smooth snap-x snap-mandatory touch-pan-x [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+            >
               {industries.map((industry, index) => (
                 <div
                   key={index}
-                  className={`w-[15.063rem] rounded-[16px] bg-color-white border-color-white border-solid border-[1px] box-border overflow-hidden shrink-0 flex flex-col items-start ${
-                    industry.highlight
-                      ? "shadow-[0px_2px_16px_rgba(26,_38,_48,_0.12)]"
-                      : "opacity-50"
+                  className={`w-[15.063rem] rounded-[16px] bg-color-white border-solid box-border overflow-hidden shrink-0 flex flex-col items-start snap-center transition-all duration-300 ease-out mq450:w-[13.5rem] ${
+                    index === activeIndex
+                      ? "border-[2px] border-[#005edc] shadow-[0px_8px_28px_rgba(0,94,220,0.18)] scale-[1.04] z-10"
+                      : "border-[1px] border-color-white opacity-60 hover:opacity-100"
                   }`}
                 >
                   <Image
-                    className="self-stretch h-[15rem] max-w-full overflow-hidden shrink-0 object-cover"
+                    className="self-stretch h-[15rem] max-w-full overflow-hidden shrink-0 object-cover mq450:h-[12rem]"
                     width={241}
                     height={240}
                     sizes="100vw"
-                    alt=""
+                    alt={industry.title}
                     src={industry.image}
                   />
                   <div className="self-stretch rounded-[16px] bg-color-white flex items-center p-[1.25rem] gap-[0.75rem] mt-[-1.25rem] relative">
@@ -408,40 +494,28 @@ const AboutUs: NextPage = () => {
                 </div>
               ))}
             </div>
-            <div className="w-[2.75rem] h-[29rem] absolute !m-0 top-[calc(50%_-_232px)] left-[-0.25rem] bg-[linear-gradient(270deg,_rgba(255,_255,_255,_0.2),_#fff)] z-[1] shrink-0" />
-            <div className="w-[2.75rem] h-[29rem] absolute !m-0 top-[calc(50%_-_232px)] right-[-0.25rem] bg-[linear-gradient(270deg,_#fff,_rgba(255,_255,_255,_0.2))] z-[2] shrink-0" />
-            <div className="w-full !m-0 absolute top-[calc(50%_-_22px)] left-0 right-0 px-[1rem] box-border flex items-center justify-between gap-[1.25rem] z-[3] shrink-0">
+            <div className="w-[2.75rem] h-[29rem] absolute !m-0 top-[calc(50%_-_232px)] left-[-0.25rem] bg-[linear-gradient(270deg,_rgba(255,_255,_255,_0.2),_#fff)] z-[1] shrink-0 mq450:hidden" />
+            <div className="w-[2.75rem] h-[29rem] absolute !m-0 top-[calc(50%_-_232px)] right-[-0.25rem] bg-[linear-gradient(270deg,_#fff,_rgba(255,_255,_255,_0.2))] z-[2] shrink-0 mq450:hidden" />
+            <div className="w-full !m-0 absolute top-[calc(50%_-_22px)] left-0 right-0 px-[1rem] box-border flex items-center justify-between gap-[1.25rem] z-[3] shrink-0 mq450:hidden">
               <button
                 onClick={() => scrollIndustry("left")}
                 className="rounded-[40px] bg-[#4d575f] flex flex-col items-center justify-center p-[0.5rem] cursor-pointer border-none hover:bg-[#3a444b] transition-colors"
+                aria-label="Scroll left"
               >
-                <Image
-                  className="w-[1.75rem] h-[1.75rem] relative"
-                  width={28}
-                  height={28}
-                  sizes="100vw"
-                  alt="Scroll left"
-                  src="/arrow-left.svg"
-                />
+                <ChevronLeft className="w-[1.75rem] h-[1.75rem] relative text-white" />
               </button>
               <button
                 onClick={() => scrollIndustry("right")}
                 className="rounded-[40px] bg-[#4d575f] flex flex-col items-center justify-center p-[0.5rem] cursor-pointer border-none hover:bg-[#3a444b] transition-colors"
+                aria-label="Scroll right"
               >
-                <Image
-                  className="w-[1.75rem] h-[1.75rem] relative"
-                  width={28}
-                  height={28}
-                  sizes="100vw"
-                  alt="Scroll right"
-                  src="/arrow-right1.svg"
-                />
+                <ChevronRight className="w-[1.75rem] h-[1.75rem] relative text-white" />
               </button>
             </div>
           </section>
 
-          {/* Reseller Platforms Highlight */}
-          <div className="flex-1 overflow-hidden flex flex-col items-start py-[1.25rem] px-[0rem] box-border gap-[1.25rem] min-w-[16.75rem]">
+          {/* Active Industry Detail Panel */}
+          <div className="flex-1 overflow-hidden flex flex-col items-start py-[1.25rem] px-[0rem] box-border gap-[1.25rem] min-w-[16.75rem] mq1050:min-w-full mq1050:pt-[0.5rem]">
             <div className="rounded-[12px] bg-[#005edc] flex items-center justify-center p-[0.75rem]">
               <Image
                 className="h-[1.75rem] w-[1.75rem] relative"
@@ -454,14 +528,26 @@ const AboutUs: NextPage = () => {
             </div>
             <div className="self-stretch flex flex-col items-start gap-[0.75rem]">
               <h2 className="m-0 self-stretch relative text-[length:inherit] leading-[3rem] font-bold font-[inherit] mq1050:text-[1.813rem] mq1050:leading-[2.375rem] mq450:text-[1.375rem] mq450:leading-[1.813rem]">
-                Reseller Platforms
+                {industries[activeIndex].title}
               </h2>
               <div className="self-stretch relative text-[1.125rem] leading-[1.75rem] text-[#4d565f]">
-                Empower your distribution network with white-label solutions.
-                Wirero enables resellers to offer branded content distribution
-                services to their clients, complete with custom domains and
-                reporting dashboards.
+                {industries[activeIndex].description}
               </div>
+            </div>
+            {/* Dots indicator */}
+            <div className="flex items-center gap-[0.5rem] pt-[0.5rem]">
+              {industries.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => scrollToCard(index)}
+                  className={`h-[0.5rem] rounded-full transition-all duration-300 cursor-pointer border-none ${
+                    index === activeIndex
+                      ? "w-[1.5rem] bg-[#005edc]"
+                      : "w-[0.5rem] bg-[#c5cdd5] hover:bg-[#9aa5b0]"
+                  }`}
+                  aria-label={`Go to ${industries[index].title}`}
+                />
+              ))}
             </div>
           </div>
         </div>
