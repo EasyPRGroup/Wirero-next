@@ -2,11 +2,32 @@
 import type { NextPage } from "next";
 import { useRef } from "react";
 import Image from "next/image";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import Testimonials from "./testimonials";
 import UserOutlined from "./user-outlined";
 
 export type PressReleasesType = {
   className?: string;
+};
+
+type ScrollButtonProps = {
+  direction: "left" | "right";
+  onClick: () => void;
+};
+
+const ScrollButton = ({ direction, onClick }: ScrollButtonProps) => {
+  return (
+    <button
+      onClick={onClick}
+      className="rounded-[40px] bg-[#12171c] w-11 h-11 flex flex-col items-center justify-center p-[0.5rem] cursor-pointer border-none hover:bg-[#1a2530] transition-colors"
+    >
+      {direction === "left" ? (
+        <ChevronLeft className="w-7 h-7 relative text-white" />
+      ) : (
+        <ChevronRight className="w-7 h-7 relative text-white" />
+      )}
+    </button>
+  );
 };
 
 const PressReleases: NextPage<PressReleasesType> = ({ className = "" }) => {
@@ -44,8 +65,8 @@ const PressReleases: NextPage<PressReleasesType> = ({ className = "" }) => {
           <div className="self-stretch flex flex-col items-start relative isolate gap-[0.625rem] max-w-full">
             <div
               ref={scrollRef}
-              className="self-stretch overflow-x-auto flex items-center justify-center gap-[2.5rem] max-w-full z-[0] shrink-0 mq800:gap-[1.25rem] scroll-smooth">
-              <section className="h-[30rem] w-[65rem] rounded-[28px] bg-[rgba(242,240,251,0.08)] border-[#f4f7fa] border-solid border-[4px] box-border overflow-hidden shrink-0 flex items-start justify-center [row-gap:20px] max-w-full text-left text-[1.125rem] text-[#1a2530] font-['Proxima_Nova'] mq1125:h-auto mq1125:flex-wrap">
+              className="self-stretch overflow-x-auto flex items-center justify-center gap-[2.5rem] max-w-full z-[0] shrink-0 mq800:gap-[1.25rem] scroll-smooth snap-x snap-mandatory touch-pan-x [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+              <section className="h-[30rem] w-[65rem] rounded-[28px] bg-[rgba(242,240,251,0.08)] border-[#f4f7fa] border-solid border-[4px] box-border overflow-hidden shrink-0 flex items-start justify-center [row-gap:20px] max-w-full text-left text-[1.125rem] text-[#1a2530] font-['Proxima_Nova'] snap-start mq1125:h-auto mq1125:flex-wrap">
                 <div className="self-stretch flex-1 bg-color-white flex flex-col items-start justify-between p-[1.25rem] box-border gap-[1.25rem] min-w-[17.875rem] mq450:min-w-0">
                   <div className="w-[29.063rem] rounded-lg hidden flex-col items-start justify-center py-[0.25rem] px-[0.5rem] box-border gap-[0.5rem] shrink-0 text-[#4d575f]">
                     <div className="rounded-[40px] flex items-center gap-[0.375rem] shrink-0">
@@ -263,7 +284,7 @@ const PressReleases: NextPage<PressReleasesType> = ({ className = "" }) => {
                   </div>
                 </div>
               </section>
-              <div className="h-[32.25rem] w-[65rem] shadow-[0px_2px_16px_rgba(26,_38,_48,_0.12)] rounded-[28px] bg-[rgba(242,240,251,0.08)] border-color-white border-solid border-[4px] box-border overflow-hidden shrink-0 flex items-start justify-center [row-gap:20px] max-w-full mq1125:h-auto mq1125:flex-wrap">
+              <div className="h-[32.25rem] w-[65rem] shadow-[0px_2px_16px_rgba(26,_38,_48,_0.12)] rounded-[28px] bg-[rgba(242,240,251,0.08)] border-color-white border-solid border-[4px] box-border overflow-hidden shrink-0 flex items-start justify-center [row-gap:20px] max-w-full snap-start mq1125:h-auto mq1125:flex-wrap">
                 <section className="self-stretch flex-1 bg-color-white flex flex-col items-start justify-between p-[1.25rem] box-border gap-[1.25rem] min-w-[17.875rem] mq450:min-w-0 text-left text-[1.125rem] text-[#4d575f] font-['Proxima_Nova']">
                   <div className="w-[29.063rem] rounded-lg hidden flex-col items-start justify-center py-[0.25rem] px-[0.5rem] box-border gap-[0.5rem] shrink-0">
                     <div className="rounded-[40px] flex items-center gap-[0.375rem] shrink-0">
@@ -481,7 +502,7 @@ const PressReleases: NextPage<PressReleasesType> = ({ className = "" }) => {
                   </div>
                 </section>
               </div>
-              <section className="h-[30rem] w-[65rem] rounded-[28px] bg-[rgba(242,240,251,0.08)] border-[#f4f7fa] border-solid border-[4px] box-border overflow-hidden shrink-0 flex items-start justify-center [row-gap:20px] max-w-full text-left text-[1.125rem] text-[#4d575f] font-['Proxima_Nova'] mq1125:h-auto mq1125:flex-wrap">
+              <section className="h-[30rem] w-[65rem] rounded-[28px] bg-[rgba(242,240,251,0.08)] border-[#f4f7fa] border-solid border-[4px] box-border overflow-hidden shrink-0 flex items-start justify-center [row-gap:20px] max-w-full text-left text-[1.125rem] text-[#4d575f] font-['Proxima_Nova'] snap-start mq1125:h-auto mq1125:flex-wrap">
                 <div className="self-stretch flex-1 bg-color-white flex flex-col items-start justify-between p-[1.25rem] box-border gap-[1.25rem] min-w-[17.875rem] mq450:min-w-0">
                   <div className="w-[29.063rem] rounded-lg hidden flex-col items-start justify-center py-[0.25rem] px-[0.5rem] box-border gap-[0.5rem] shrink-0">
                     <div className="rounded-[40px] flex items-center gap-[0.375rem] shrink-0">
@@ -702,33 +723,9 @@ const PressReleases: NextPage<PressReleasesType> = ({ className = "" }) => {
             </div>
             <div className="w-[11.25rem] h-full absolute !m-0 top-[0rem] bottom-[0rem] left-[-6.875rem] [background:linear-gradient(270deg,_rgba(255,_255,_255,_0.4),_#fff)] z-[1] shrink-0 mq800:hidden" />
             <div className="w-[11.25rem] h-full absolute !m-0 top-[0rem] right-[-6.875rem] bottom-[0rem] [background:linear-gradient(270deg,_#fff,_rgba(255,_255,_255,_0.4))] z-[2] shrink-0 mq800:hidden" />
-            <div className="w-[78.75rem] max-w-full !m-0 absolute top-[calc(50%_-_22px)] left-[calc(50%_-_630px)] flex items-center justify-between gap-[1.25rem] z-[3] shrink-0 mq1350:w-full mq1350:left-0 mq1350:px-[0.5rem] mq1350:box-border mq800:hidden">
-              <button
-                onClick={() => scroll("left")}
-                className="rounded-[40px] bg-[#12171c] flex flex-col items-center justify-center p-[0.5rem] cursor-pointer border-none hover:bg-[#1a2530] transition-colors"
-              >
-                <Image
-                  className="w-full relative max-h-full h-auto"
-                  width={28}
-                  height={28}
-                  sizes="100vw"
-                  alt="Scroll left"
-                  src="/arrow-left.svg"
-                />
-              </button>
-              <button
-                onClick={() => scroll("right")}
-                className="rounded-[40px] bg-[#12171c] flex flex-col items-center justify-center p-[0.5rem] cursor-pointer border-none hover:bg-[#1a2530] transition-colors"
-              >
-                <Image
-                  className="w-full relative max-h-full h-auto"
-                  width={28}
-                  height={28}
-                  sizes="100vw"
-                  alt="Scroll right"
-                  src="/arrow-right1.svg"
-                />
-              </button>
+            <div className="w-[78.75rem] max-w-full !m-0 absolute top-[calc(50%_-_22px)] left-[calc(50%_-_630px)] flex items-center justify-between gap-[1.25rem] z-[3] shrink-0 mq1350:w-full mq1350:left-0 mq1350:px-[0.5rem] mq1350:box-border">
+              <ScrollButton direction="left" onClick={() => scroll("left")} />
+              <ScrollButton direction="right" onClick={() => scroll("right")} />
             </div>
           </div>
           <div className="flex items-center justify-center gap-[2.5rem] mq800:gap-[1.25rem] mq800:flex-wrap">
