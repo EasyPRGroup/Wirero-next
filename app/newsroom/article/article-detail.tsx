@@ -53,27 +53,29 @@ const formatDate = (value: string) => {
 function Spinner() {
   return (
     <div
-      className="w-full min-h-[60vh] flex flex-col items-center justify-center gap-[1rem] py-[6rem] px-[1.25rem]"
+      className="w-full site-section"
       role="status"
       aria-live="polite"
     >
-      <span className="sr-only">Loading article...</span>
-      <svg
-        className="animate-spin"
-        width="44"
-        height="44"
-        viewBox="0 0 40 40"
-        fill="none"
-        aria-hidden="true"
-      >
-        <circle cx="20" cy="20" r="16" stroke="#e2e5e9" strokeWidth="4" />
-        <path
-          d="M36 20a16 16 0 0 0-16-16"
-          stroke="#1a8cd5"
-          strokeWidth="4"
-          strokeLinecap="round"
-        />
-      </svg>
+      <div className="w-full min-h-[60vh] flex flex-col items-center justify-center gap-[1rem]">
+        <span className="sr-only">Loading article...</span>
+        <svg
+          className="animate-spin"
+          width="44"
+          height="44"
+          viewBox="0 0 40 40"
+          fill="none"
+          aria-hidden="true"
+        >
+          <circle cx="20" cy="20" r="16" stroke="#e2e5e9" strokeWidth="4" />
+          <path
+            d="M36 20a16 16 0 0 0-16-16"
+            stroke="#1a8cd5"
+            strokeWidth="4"
+            strokeLinecap="round"
+          />
+        </svg>
+      </div>
     </div>
   );
 }
@@ -156,38 +158,42 @@ export default function ArticleDetail() {
 
   if (error) {
     return (
-      <div className="w-full max-w-[48rem] mx-auto py-[6rem] px-[1.25rem] flex flex-col items-center gap-[1.5rem] text-center">
-        <h1 className="m-0 text-[2rem] leading-[2.5rem] font-bold text-[#1a2530]">
-          Something went wrong
-        </h1>
-        <p className="m-0 text-[1.125rem] leading-[1.75rem] text-[#d14343]">
-          {error}
-        </p>
-        <Link
-          href="/newsroom/"
-          className="text-[1rem] text-[#1a8cd5] no-underline hover:underline"
-        >
-          Back to Newsroom
-        </Link>
+      <div className="w-full site-section">
+        <div className="w-full max-w-[48rem] mx-auto flex flex-col items-center gap-[1.5rem] text-center">
+          <h1 className="m-0 text-[2rem] leading-[2.5rem] font-bold text-[#1a2530]">
+            Something went wrong
+          </h1>
+          <p className="m-0 text-[1.125rem] leading-[1.75rem] text-[#d14343]">
+            {error}
+          </p>
+          <Link
+            href="/newsroom/"
+            className="text-[1rem] text-[#1a8cd5] no-underline hover:underline"
+          >
+            Back to Newsroom
+          </Link>
+        </div>
       </div>
     );
   }
 
   if (notFound) {
     return (
-      <div className="w-full max-w-[48rem] mx-auto py-[6rem] px-[1.25rem] flex flex-col items-center gap-[1.5rem] text-center">
-        <h1 className="m-0 text-[2rem] leading-[2.5rem] font-bold text-[#1a2530]">
-          Article not found
-        </h1>
-        <p className="m-0 text-[1.125rem] leading-[1.75rem] text-[#64676f]">
-          We couldn&apos;t find the article you were looking for.
-        </p>
-        <Link
-          href="/newsroom/"
-          className="text-[1rem] text-[#1a8cd5] no-underline hover:underline"
-        >
-          Back to Newsroom
-        </Link>
+      <div className="w-full site-section">
+        <div className="w-full max-w-[48rem] mx-auto flex flex-col items-center gap-[1.5rem] text-center">
+          <h1 className="m-0 text-[2rem] leading-[2.5rem] font-bold text-[#1a2530]">
+            Article not found
+          </h1>
+          <p className="m-0 text-[1.125rem] leading-[1.75rem] text-[#64676f]">
+            We couldn&apos;t find the article you were looking for.
+          </p>
+          <Link
+            href="/newsroom/"
+            className="text-[1rem] text-[#1a8cd5] no-underline hover:underline"
+          >
+            Back to Newsroom
+          </Link>
+        </div>
       </div>
     );
   }
@@ -201,7 +207,8 @@ export default function ArticleDetail() {
   const renderParsed = hasHtml || contentIsHtml;
 
   return (
-    <article className="w-full max-w-[48rem] mx-auto py-[5rem] px-[1.25rem] flex flex-col items-center gap-[2rem] text-left">
+    <article className="w-full site-section">
+      <div className="w-full max-w-[48rem] mx-auto flex flex-col items-center gap-[2rem] text-left">
       <div className="w-full flex flex-col items-center gap-[1rem] text-center">
         <b className="relative tracking-[0.02em] leading-[1.25rem] uppercase text-[1rem] text-[#0bc111]">
           Newsroom
@@ -215,7 +222,7 @@ export default function ArticleDetail() {
           {article.title ?? "Untitled article"}
         </h1>
         {article.excerpt ? (
-          <p className="m-0 text-[1.125rem] leading-[1.75rem] font-[Urbanist] text-[#4d575f]">
+          <p className="m-0 text-[1.125rem] leading-[1.75rem] font-proxima text-[#4d575f]">
             {article.excerpt}
           </p>
         ) : null}
@@ -275,6 +282,7 @@ export default function ArticleDetail() {
         >
           ‹ Back to Newsroom
         </Link>
+      </div>
       </div>
     </article>
   );

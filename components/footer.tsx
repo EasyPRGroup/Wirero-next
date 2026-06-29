@@ -16,10 +16,10 @@ const Footer: NextPage<FooterType> = ({
 }) => {
   return (
     <footer
-      className={`w-full bg-[#f7fafd] border-[#e2e5e9] border-solid border-t-[1px] box-border flex flex-col items-start pt-[6.25rem] pb-[4.25rem] gap-[4.25rem] text-left text-[1rem] text-[#4d565f] font-['Proxima_Nova'] ${className} home-gutters mq800:pt-[3.5rem] mq800:pb-[2.5rem] mq800:gap-[2.5rem] mq450:pt-[2.5rem] mq450:pb-[1.5rem] mq450:gap-[1.5rem]`}
+      className={`site-gutters w-full bg-[#f7fafd] border-[#e2e5e9] border-solid border-t-[1px] box-border flex flex-col items-start pt-[6.25rem] pb-[4.25rem] gap-[4.25rem] text-left text-[1rem] text-[#4d565f] font-proxima mq800:pt-[3.5rem] mq800:pb-[2.5rem] mq800:gap-[2.5rem] mq450:pt-[2.5rem] mq450:pb-[1.5rem] mq450:gap-[1.5rem] ${className}`}
     >
       {/* Top Section - Logo and Description */}
-      <div className="home-container flex items-start gap-[2.5rem] mq800:flex-col mq800:gap-[1.5rem]">
+      <div className="site-container flex items-start gap-[2.5rem] mq800:flex-col mq800:gap-[1.5rem]">
         <div className="flex-1 flex items-center gap-[0.5rem] mq450:flex-col mq450:items-start">
           <div className="h-[1.5rem] w-[7.5rem] relative shrink-0">
             <Link href="/">
@@ -53,10 +53,10 @@ const Footer: NextPage<FooterType> = ({
       </div>
 
       {/* Links Section */}
-      <FrameComponent4 className="home-container" />
+      <FrameComponent4 className="site-container" />
 
       {/* Copyright Section */}
-      <div className="home-container border-[#e2e5e9] border-solid border-t-[1px] flex items-start pt-[3rem] px-[0rem] pb-[0rem] mq800:pt-[2rem] mq450:pt-[1.5rem]">
+      <div className="site-container border-[#e2e5e9] border-solid border-t-[1px] flex items-start pt-[3rem] px-[0rem] pb-[0rem] mq800:pt-[2rem] mq450:pt-[1.5rem]">
         <div className="flex-1 relative leading-[1.5rem] capitalize">
           © 2026 Wirero Agency. All rights reserved.
         </div>

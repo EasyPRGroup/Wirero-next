@@ -16,7 +16,7 @@ const Testimonials: NextPage<TestimonialsType> = ({
 }) => {
   return (
     <div
-      className={`self-stretch rounded-[20px] bg-[#e2eff9] flex flex-col items-start p-[1.25rem] gap-[1.5rem] shrink-0 text-left text-[1.25rem] text-[#1a2530] font-['Proxima_Nova'] ${className}`}
+      className={`self-stretch rounded-[20px] bg-[#e2eff9] flex flex-col items-start p-[1.25rem] gap-[1.5rem] shrink-0 text-left text-[1.25rem] text-[#1a2530] font-proxima ${className}`}
     >
       <div className="self-stretch flex flex-col items-start gap-[1rem]">
         <div className="hidden items-center">

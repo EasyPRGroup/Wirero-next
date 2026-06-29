@@ -44,7 +44,7 @@ const HowItWorks: NextPage<HowItWorksType> = ({
       tabIndex={isActive ? 0 : -1}
       onClick={onClick}
       onKeyDown={onKeyDown}
-      className={`w-full min-w-0 cursor-pointer appearance-none p-0 rounded-[28px] overflow-hidden flex flex-col items-center text-center text-[1rem] text-[#0bc111] font-['Proxima_Nova'] border-solid border-[4px] transition-[border-color,background-color,box-shadow] duration-200 motion-reduce:transition-none focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-[4px] focus-visible:outline-[#0bc111] ${
+      className={`w-full min-w-0 cursor-pointer appearance-none p-0 rounded-[28px] overflow-hidden flex flex-col items-center text-center text-[1rem] text-[#0bc111] font-proxima border-solid border-[4px] transition-[border-color,background-color,box-shadow] duration-200 motion-reduce:transition-none focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-[4px] focus-visible:outline-[#0bc111] ${
         isActive
           ? "bg-[rgba(242,240,251,0.08)] border-color-white"
           : "bg-[rgba(242,240,251,0.08)] border-[#1b2128]"

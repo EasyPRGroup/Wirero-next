@@ -1,5 +1,6 @@
 import "./global.css";
 import Header from "../components/header";
+import ScrollToTop from "../components/scroll-to-top";
 
 export const metadata = {
   title: `Wirero`,
@@ -20,6 +21,7 @@ export default function RootLayout({
           <Header />
           {children}
         </div>
+        <ScrollToTop />
       </body>
     </html>
   );

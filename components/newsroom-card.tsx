@@ -32,15 +32,15 @@ const NewsroomCard: NextPage<NewsroomCardType> = ({
           className="w-full h-[9.5rem] object-cover rounded-[8px] mb-[0.875rem]"
         />
       ) : null}
-      <b className="relative text-[1.125rem] leading-[1.5rem] font-bold font-['Proxima_Nova'] text-[#1a2530]">
+      <b className="relative text-[1.125rem] leading-[1.5rem] font-bold font-proxima text-[#1a2530]">
         {title}
       </b>
       {excerpt ? (
-        <p className="relative mt-[0.5rem] text-[0.9375rem] leading-[1.375rem] font-['Proxima_Nova'] text-[#4d575f] line-clamp-3">
+        <p className="relative mt-[0.5rem] text-[0.9375rem] leading-[1.375rem] font-proxima text-[#4d575f] line-clamp-3">
           {excerpt}
         </p>
       ) : null}
-      <div className="relative mt-[0.75rem] text-[0.875rem] leading-[1.25rem] font-['Proxima_Nova'] text-[#64676f]">
+      <div className="relative mt-[0.75rem] text-[0.875rem] leading-[1.25rem] font-proxima text-[#64676f]">
         {date}
       </div>
     </Link>

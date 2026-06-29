@@ -8,13 +8,13 @@ export type ClientsType = {
 const Clients: NextPage<ClientsType> = ({ className = "" }) => {
   return (
     <section
-      className={`self-stretch bg-[#f7fafd] flex flex-col items-center py-[3rem] px-[1.25rem] box-border gap-[1.75rem] max-w-full text-center text-[1.125rem] text-[#1a2530] font-['Proxima_Nova'] ${className}`}
+      className={`site-section-band self-stretch bg-[#f7fafd] flex flex-col items-center box-border gap-[1.75rem] max-w-full text-center text-[1.125rem] text-[#1a2530] font-proxima ${className}`}
     >
       <div className="w-[76.25rem] max-w-full overflow-hidden flex flex-col items-center gap-[0.75rem]">
         <b className="self-stretch relative tracking-[0.01em] leading-[1.625rem] uppercase shrink-0">
           Trusted by Top Brands
         </b>
-        {/* <b className="relative text-[2.25rem] leading-[3rem] hidden font-[Urbanist] text-[#161c2d] text-left shrink-0 mq450:text-[1.375rem] mq450:leading-[1.813rem] mq800:text-[1.813rem] mq800:leading-[2.375rem]">
+        {/* <b className="relative text-[2.25rem] leading-[3rem] hidden font-proxima text-[#161c2d] text-left shrink-0 mq450:text-[1.375rem] mq450:leading-[1.813rem] mq800:text-[1.813rem] mq800:leading-[2.375rem]">
           Trusted by Top Brands
         </b> */}
       </div>

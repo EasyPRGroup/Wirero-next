@@ -132,7 +132,7 @@ const Newsroom: NextPage<NewsroomType> = ({
 
   return (
     <section
-      className={`self-stretch flex flex-col items-center py-[6.125rem] box-border gap-[3rem] max-w-full text-center font-['Proxima_Nova'] home-gutters mq450:py-[2.625rem] mq800:py-[3.5rem] ${className}`}
+      className={`site-section self-stretch flex flex-col items-center box-border gap-[3rem] max-w-full text-center font-proxima ${className}`}
     >
       <div className="w-[60rem] max-w-full flex flex-col items-center gap-[1rem]">
         <b className="relative tracking-[0.02em] leading-[1.25rem] uppercase text-[1rem] text-[#0bc111]">
@@ -141,7 +141,7 @@ const Newsroom: NextPage<NewsroomType> = ({
         <h1 className="m-0 relative text-[3.5rem] leading-[4.25rem] font-bold font-[inherit] text-[#1a2530] mq450:text-[2.125rem] mq450:leading-[2.563rem] mq800:text-[2.813rem] mq800:leading-[3.375rem]">
           Latest News Around the World
         </h1>
-        <div className="relative text-[1.125rem] leading-[1.75rem] font-[Urbanist] text-[#4d575f]">
+        <div className="relative text-[1.125rem] leading-[1.75rem] font-proxima text-[#4d575f]">
           24 hours a day, 7 days a week, 365 days a year. Find out about the
           latest information, news and announcements.
         </div>

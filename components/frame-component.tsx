@@ -16,7 +16,7 @@ const FrameComponent: NextPage<FrameComponentType> = ({
 }) => {
   return (
     <div
-      className={`self-stretch flex flex-col items-start shrink-0 text-left text-[1.375rem] text-[#4d565f] font-['Proxima_Nova'] ${className}`}
+      className={`self-stretch flex flex-col items-start shrink-0 text-left text-[1.375rem] text-[#4d565f] font-proxima ${className}`}
     >
       <div className="flex w-full max-w-full flex-col items-center overflow-hidden rounded-xl border-[4px] border-solid border-color-white bg-color-white py-[0.687rem] px-[1.25rem] shadow-[0px_0px_8px_rgba(26,_38,_48,_0.08)]">
         <div className="w-full flex items-start gap-[0.75rem] max-w-full mq450:flex-wrap">

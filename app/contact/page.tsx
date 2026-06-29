@@ -138,12 +138,12 @@ const ContactPage: NextPage = () => {
   };
 
   return (
-    <div className="w-full relative bg-color-white overflow-hidden flex flex-col items-start leading-[normal] tracking-[normal]">
+    <div className="relative flex w-full min-w-0 flex-col items-stretch overflow-x-clip bg-color-white leading-[normal] tracking-[normal]">
       {/* Main Content */}
-      <main className="self-stretch flex items-start justify-center flex-wrap content-start pt-[4.25rem] home-gutters pb-[6.125rem] box-border gap-[6.25rem] max-w-full mq750:gap-[3.125rem] mq750:pt-[1.813rem] mq750:pb-[2.625rem] mq1050:pt-[2.75rem] mq1050:pb-[4rem] mq450:gap-[2rem]">
-        <div className="home-container flex w-full items-start justify-between flex-wrap content-start gap-[6.25rem] max-w-full mq750:gap-[3.125rem] mq1050:gap-[2rem] mq450:gap-[2rem]">
+      <main className="site-section-hero self-stretch">
+        <div className="site-container flex w-full items-start justify-between flex-wrap content-start gap-[6.25rem] max-w-full mq750:gap-[3.125rem] mq1050:gap-[2rem] mq450:gap-[2rem]">
         {/* Left Column */}
-        <section className="flex-1 overflow-hidden flex flex-col items-start gap-[1.5rem] min-w-0 max-w-[33.25rem] text-left text-[1rem] text-[#4d565f] font-proxima-nova mq750:min-w-full mq1050:max-w-full">
+        <section className="flex-1 overflow-hidden flex flex-col items-start gap-[1.5rem] min-w-0 max-w-[33.25rem] text-left text-[1rem] text-[#4d565f] font-proxima mq750:min-w-full mq1050:max-w-full">
           {/* Contact Label */}
           <b className="self-stretch relative tracking-[0.02em] leading-[1.25rem] uppercase text-[#0bc111]">
             Contact
@@ -312,7 +312,7 @@ const ContactPage: NextPage = () => {
         </section>
 
         {/* Right Column - Form */}
-        <section className="flex-1 rounded-[28px] bg-[#f0f8ff] overflow-hidden flex flex-col items-start p-[2.5rem] box-border gap-[1.25rem] min-w-0 max-w-[33.25rem] text-left text-[2.25rem] text-[#4d565f] font-proxima-nova mq750:min-w-full mq1050:max-w-full">
+        <section className="flex-1 rounded-[28px] bg-[#f0f8ff] overflow-hidden flex flex-col items-start p-[2.5rem] box-border gap-[1.25rem] min-w-0 max-w-[33.25rem] text-left text-[2.25rem] text-[#4d565f] font-proxima mq750:min-w-full mq1050:max-w-full">
           {/* Form Header */}
           <div className="self-stretch flex items-start gap-[1rem] max-w-full">
             <Image
@@ -350,7 +350,7 @@ const ContactPage: NextPage = () => {
                 placeholder="Enter your full name"
                 value={formData.fullName}
                 onChange={handleInputChange}
-                className="self-stretch rounded-[8px] bg-color-white border-[#e2e5e9] border-solid border-[1px] overflow-hidden flex items-center py-[0.75rem] px-[0.875rem] gap-[0.5rem] w-full font-proxima-nova text-[1rem] text-[#1a2530] focus:border-[#0461c3] focus:outline-none transition-colors"
+                className="self-stretch rounded-[8px] bg-color-white border-[#e2e5e9] border-solid border-[1px] overflow-hidden flex items-center py-[0.75rem] px-[0.875rem] gap-[0.5rem] w-full font-proxima text-[1rem] text-[#1a2530] focus:border-[#0461c3] focus:outline-none transition-colors"
               />
             </div>
 
@@ -370,7 +370,7 @@ const ContactPage: NextPage = () => {
                 placeholder="Enter your email"
                 value={formData.email}
                 onChange={handleInputChange}
-                className="self-stretch rounded-[8px] bg-color-white border-[#e2e5e9] border-solid border-[1px] overflow-hidden flex items-center py-[0.75rem] px-[0.875rem] gap-[0.5rem] w-full font-proxima-nova text-[1rem] text-[#1a2530] focus:border-[#0461c3] focus:outline-none transition-colors"
+                className="self-stretch rounded-[8px] bg-color-white border-[#e2e5e9] border-solid border-[1px] overflow-hidden flex items-center py-[0.75rem] px-[0.875rem] gap-[0.5rem] w-full font-proxima text-[1rem] text-[#1a2530] focus:border-[#0461c3] focus:outline-none transition-colors"
               />
             </div>
 
@@ -389,7 +389,7 @@ const ContactPage: NextPage = () => {
                 placeholder="Enter company name (Optional)"
                 value={formData.companyName}
                 onChange={handleInputChange}
-                className="self-stretch rounded-[8px] bg-color-white border-[#e2e5e9] border-solid border-[1px] overflow-hidden flex items-center py-[0.75rem] px-[0.875rem] gap-[0.5rem] w-full font-proxima-nova text-[1rem] text-[#1a2530] focus:border-[#0461c3] focus:outline-none transition-colors"
+                className="self-stretch rounded-[8px] bg-color-white border-[#e2e5e9] border-solid border-[1px] overflow-hidden flex items-center py-[0.75rem] px-[0.875rem] gap-[0.5rem] w-full font-proxima text-[1rem] text-[#1a2530] focus:border-[#0461c3] focus:outline-none transition-colors"
               />
             </div>
 
@@ -408,7 +408,7 @@ const ContactPage: NextPage = () => {
                   required
                   value={formData.companyType}
                   onChange={handleInputChange}
-                  className="self-stretch rounded-[8px] bg-color-white border-[#e2e5e9] border-solid border-[1px] overflow-hidden flex items-center py-[0.75rem] px-[0.875rem] gap-[0.5rem] w-full font-proxima-nova text-[1rem] text-[#64676f] focus:border-[#0461c3] focus:outline-none transition-colors appearance-none cursor-pointer"
+                  className="self-stretch rounded-[8px] bg-color-white border-[#e2e5e9] border-solid border-[1px] overflow-hidden flex items-center py-[0.75rem] px-[0.875rem] gap-[0.5rem] w-full font-proxima text-[1rem] text-[#64676f] focus:border-[#0461c3] focus:outline-none transition-colors appearance-none cursor-pointer"
                 >
                   <option value="">Select company type</option>
                   <option value="agency">Agency</option>
@@ -443,7 +443,7 @@ const ContactPage: NextPage = () => {
                 value={formData.message}
                 onChange={handleInputChange}
                 rows={5}
-                className="self-stretch rounded-[8px] bg-color-white border-[#e2e5e9] border-solid border-[1px] overflow-hidden flex items-start py-[0.625rem] px-[0.875rem] w-full font-proxima-nova text-[1rem] text-[#1a2530] focus:border-[#0461c3] focus:outline-none transition-colors resize-none"
+                className="self-stretch rounded-[8px] bg-color-white border-[#e2e5e9] border-solid border-[1px] overflow-hidden flex items-start py-[0.625rem] px-[0.875rem] w-full font-proxima text-[1rem] text-[#1a2530] focus:border-[#0461c3] focus:outline-none transition-colors resize-none"
               />
             </div>
 
@@ -457,7 +457,7 @@ const ContactPage: NextPage = () => {
               type="submit"
               disabled={isSubmitting || !isRecaptchaReady}
               aria-disabled={isSubmitting || !isRecaptchaReady}
-              className="cursor-pointer border-none py-[1rem] px-[2.5rem] bg-[#0461c3] h-[3.5rem] rounded-[8px] flex items-center justify-center box-border gap-[0.5rem] text-color-white hover:bg-[#0354a8] transition-colors font-proxima-nova disabled:cursor-not-allowed disabled:opacity-60"
+              className="cursor-pointer border-none py-[1rem] px-[2.5rem] bg-[#0461c3] h-[3.5rem] rounded-[8px] flex items-center justify-center box-border gap-[0.5rem] text-color-white hover:bg-[#0354a8] transition-colors font-proxima disabled:cursor-not-allowed disabled:opacity-60"
             >
               <span className="relative text-[1rem] leading-[1.25rem] font-semibold">
                 {isSubmitting ? "Sending..." : "Send Message"}
@@ -476,9 +476,9 @@ const ContactPage: NextPage = () => {
       </main>
 
       {/* CTA Section 1 */}
-      <section className="self-stretch flex flex-col items-center py-[2.5rem] home-gutters box-border max-w-full text-left text-[1.375rem] text-[#4d565f] font-proxima-nova mq750:py-[1.625rem] mq450:py-[1.25rem]">
-        <div className="home-container w-full rounded-[24px] bg-[#e6f4ff] flex items-center justify-center flex-wrap content-center py-[3.75rem] px-[2.5rem] box-border gap-[5rem] max-w-full mq1050:py-[3rem] mq750:gap-[2.5rem] mq450:gap-[1.5rem] mq450:py-[2rem] mq450:px-[1.25rem]">
-          <section className="flex-1 flex flex-col items-start gap-[1.75rem] min-w-[15.625rem] mq450:min-w-0 max-w-[36.5rem] text-left text-[2.25rem] text-[#4d565f] font-proxima-nova">
+      <section className="site-section-cta self-stretch text-left text-[1.375rem] text-[#4d565f] font-proxima">
+        <div className="site-container w-full rounded-[24px] bg-[#e6f4ff] flex items-center justify-center flex-wrap content-center py-[3.75rem] px-[2.5rem] box-border gap-[5rem] max-w-full mq1050:py-[3rem] mq750:gap-[2.5rem] mq450:gap-[1.5rem] mq450:py-[2rem] mq450:px-[1.25rem]">
+          <section className="flex-1 flex flex-col items-start gap-[1.75rem] min-w-[15.625rem] mq450:min-w-0 max-w-[36.5rem] text-left text-[2.25rem] text-[#4d565f] font-proxima">
             <div className="self-stretch overflow-hidden flex flex-col items-start gap-[0.75rem]">
               <b className="w-full relative leading-[3rem] inline-block max-w-[36.5rem]">
                 Amplify Your Announcement Across Global Media
@@ -491,7 +491,7 @@ const ContactPage: NextPage = () => {
             </div>
             <Link
               href="/pricing"
-              className="cursor-pointer border-none py-[1rem] px-[2.5rem] bg-[#0461c3] h-[3.5rem] rounded-[8px] flex items-center justify-center box-border gap-[0.5rem] text-color-white hover:bg-[#0354a8] transition-colors font-proxima-nova no-underline"
+              className="cursor-pointer border-none py-[1rem] px-[2.5rem] bg-[#0461c3] h-[3.5rem] rounded-[8px] flex items-center justify-center box-border gap-[0.5rem] text-color-white hover:bg-[#0354a8] transition-colors font-proxima no-underline"
             >
               <span className="relative text-[1rem] leading-[1.25rem] font-semibold">
                 Submit Press Release
@@ -536,9 +536,9 @@ const ContactPage: NextPage = () => {
       </section>
 
       {/* CTA Section 2 */}
-      <section className="self-stretch flex flex-col items-center py-[2.5rem] home-gutters box-border max-w-full text-left text-[1.375rem] text-[#4d565f] font-proxima-nova mq750:py-[1.625rem] mq450:py-[1.25rem]">
-        <div className="home-container w-full rounded-[24px] bg-[#0461c3] flex items-center justify-center flex-wrap content-center py-[3.75rem] px-[2.5rem] box-border gap-[5rem] max-w-full mq1050:py-[3rem] mq750:gap-[2.5rem] mq450:gap-[1.5rem] mq450:py-[2rem] mq450:px-[1.25rem]">
-          <section className="flex-1 flex flex-col items-start gap-[1.75rem] min-w-[15.625rem] mq450:min-w-0 max-w-[36.5rem] text-left text-[2.25rem] text-color-white font-proxima-nova">
+      <section className="site-section-cta self-stretch text-left text-[1.375rem] text-[#4d565f] font-proxima">
+        <div className="site-container w-full rounded-[24px] bg-[#0461c3] flex items-center justify-center flex-wrap content-center py-[3.75rem] px-[2.5rem] box-border gap-[5rem] max-w-full mq1050:py-[3rem] mq750:gap-[2.5rem] mq450:gap-[1.5rem] mq450:py-[2rem] mq450:px-[1.25rem]">
+          <section className="flex-1 flex flex-col items-start gap-[1.75rem] min-w-[15.625rem] mq450:min-w-0 max-w-[36.5rem] text-left text-[2.25rem] text-color-white font-proxima">
             <div className="self-stretch overflow-hidden flex flex-col items-start gap-[0.75rem]">
               <b className="self-stretch relative leading-[3rem]">
                 Scale your distribution with centralized infrastructure
@@ -551,7 +551,7 @@ const ContactPage: NextPage = () => {
             </div>
             <Link
               href="/pricing"
-              className="cursor-pointer border-none py-[1rem] px-[2.5rem] bg-color-white h-[3.5rem] rounded-[8px] flex items-center justify-center box-border gap-[0.5rem] text-[#1a2530] hover:bg-[#f0f0f0] transition-colors font-proxima-nova no-underline"
+              className="cursor-pointer border-none py-[1rem] px-[2.5rem] bg-color-white h-[3.5rem] rounded-[8px] flex items-center justify-center box-border gap-[0.5rem] text-[#1a2530] hover:bg-[#f0f0f0] transition-colors font-proxima no-underline"
             >
               <span className="relative text-[1rem] leading-[1.25rem] font-semibold">
                 Get Started

@@ -59,11 +59,12 @@ const Page = () => {
   };
 
   return (
-    <div className="w-full relative bg-color-white overflow-hidden flex flex-col items-start leading-[normal] tracking-[normal]">
+    <div className="relative flex w-full min-w-0 flex-col items-stretch overflow-x-clip bg-color-white leading-[normal] tracking-[normal]">
 
       {/* Hero Section */}
-      <section className="self-stretch bg-[#f7fafd] flex items-center py-[4.25rem] box-border max-w-full text-center text-[1rem] text-[#0bc111] font-abel home-gutters">
-        <div className="flex-1 overflow-hidden flex flex-col items-center py-[0rem] px-[7.5rem] box-border gap-[1.5rem] max-w-full mq1050:pl-[3.75rem] mq1050:pr-[3.75rem] mq1050:box-border mq750:pl-[1.875rem] mq750:pr-[1.875rem] mq750:box-border">
+      <section className="site-section-hero self-stretch bg-[#f7fafd]">
+        <div className="site-container flex items-center box-border max-w-full text-center text-[1rem] text-[#0bc111] font-proxima">
+        <div className="flex-1 overflow-hidden flex flex-col items-center py-[0rem] box-border gap-[1.5rem] max-w-full">
           <b className="relative tracking-[0.02em] leading-[1.25rem] uppercase text-left shrink-0">
             FAQs
           </b>
@@ -73,12 +74,14 @@ const Page = () => {
             </h1>
           </div>
         </div>
+        </div>
       </section>
 
       {/* Main Content */}
-      <main className="self-stretch flex items-start flex-wrap content-start pt-[4.25rem] pb-[6.125rem] box-border gap-[4.25rem] max-w-full text-left text-[1.75rem] text-[#1a2530] font-abel home-gutters mq750:gap-[2.125rem] mq1050:pt-[2.75rem] mq1050:pb-[4rem] mq450:gap-[1.063rem] mq450:pt-[1.813rem] mq450:pb-[2.625rem]">
+      <main className="site-section-hero self-stretch">
+        <div className="site-container flex items-start flex-wrap content-start box-border gap-[4.25rem] max-w-full text-left text-[1.75rem] text-[#1a2530] font-proxima mq750:gap-[2.125rem] mq450:gap-[1.063rem]">
         {/* Categories Sidebar */}
-        <section className="flex-1 flex flex-col items-start gap-[1.25rem] min-w-[9.5rem] max-w-[23.75rem] text-left text-[1.25rem] text-color-white font-abel">
+        <section className="flex-1 flex flex-col items-start gap-[1.25rem] min-w-[9.5rem] max-w-[23.75rem] text-left text-[1.25rem] text-color-white font-proxima">
           {faqCategories.map((category, index) => (
             <FaqCategory
               key={index}
@@ -101,10 +104,12 @@ const Page = () => {
             />
           ))}
         </div>
+        </div>
       </main>
 
       {/* CTA Section */}
-      <section className="self-stretch flex flex-col items-center py-[3.75rem] box-border max-w-full home-gutters mq450:py-[2.438rem] mq750:py-[2.5rem]">
+      <section className="site-section-cta self-stretch">
+        <div className="site-container flex flex-col items-center box-border max-w-full">
         <div className="self-stretch rounded-[24px] bg-[#0461c3] overflow-hidden flex items-center justify-center py-[3.75rem] px-[2.5rem] box-border relative isolate max-w-full mq1050:py-[3rem] mq750:py-[2.5rem] mq450:px-[1.25rem] mq450:py-[2rem] mq450:box-border">
           <Image
             className="h-[14.375rem] w-[30.25rem] absolute m-[0!important] bottom-[0rem] left-[2.25rem] object-cover z-[3] shrink-0 mq750:hidden"
@@ -115,12 +120,12 @@ const Page = () => {
             src="/Vector-2@2x.png"
           />
 
-          <section className="home-container flex w-full flex-col items-center gap-[1.75rem] max-w-full z-[4] shrink-0 text-center text-[3rem] text-color-white font-abel">
+          <section className="site-container flex w-full flex-col items-center gap-[1.75rem] max-w-full z-[4] shrink-0 text-center text-[3rem] text-color-white font-proxima">
             <div className="self-stretch overflow-hidden flex flex-col items-center gap-[0.75rem]">
               <h2 className="m-0 self-stretch relative text-[length:inherit] leading-[3.625rem] font-bold font-[inherit] mq1050:text-[2.375rem] mq1050:leading-[2.875rem] mq450:text-[1.813rem] mq450:leading-[2.188rem]">
                 Still have questions?
               </h2>
-              <div className="self-stretch relative text-[1.125rem] leading-[1.75rem] font-proxima-nova text-[#f5f5f5]">
+              <div className="self-stretch relative text-[1.125rem] leading-[1.75rem] font-proxima text-[#f5f5f5]">
                 Contact us or start publishing to see how it works.
               </div>
             </div>
@@ -135,7 +140,7 @@ const Page = () => {
                 alt=""
                 src="/search.svg"
               />
-              <div className="relative text-[1rem] leading-[1.25rem] font-semibold font-proxima-nova text-[#1a2530] text-center shrink-0">
+              <div className="relative text-[1rem] leading-[1.25rem] font-semibold font-proxima text-[#1a2530] text-center shrink-0">
                 Contact us
               </div>
               <Image
@@ -147,6 +152,7 @@ const Page = () => {
               />
             </Link>
           </section>
+        </div>
         </div>
       </section>
 

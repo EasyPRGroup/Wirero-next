@@ -217,7 +217,7 @@ const Points: NextPage<PointsType> = ({
 
   return (
     <div
-      className={`w-[76.25rem] mq450:w-full max-w-full flex flex-col items-start gap-[2.5rem] text-left text-[1.5rem] text-[#1a2530] font-['Proxima_Nova'] ${className}`}
+      className={`w-[76.25rem] mq450:w-full max-w-full flex flex-col items-start gap-[2.5rem] text-left text-[1.5rem] text-[#1a2530] font-proxima ${className}`}
       style={pointsStyle}
     >
       <div className="self-stretch flex items-start flex-wrap content-start gap-[2.5rem] mq450:gap-[1.25rem]">
@@ -252,7 +252,7 @@ const Points: NextPage<PointsType> = ({
               <div className="self-stretch relative leading-[1.75rem] shrink-0">
                 {withLotsOfUnique}
               </div>
-              <div className="w-[22.75rem] relative leading-[1.75rem] font-[Urbanist] text-[#4d575f] hidden shrink-0">
+              <div className="w-[22.75rem] relative leading-[1.75rem] font-proxima text-[#4d575f] hidden shrink-0">
                 With advanced automation and smart distribution technology,
                 Wirero helps connect your news with journalists, bloggers, and
                 online audiences while ensuring seamless integration of media
@@ -292,7 +292,7 @@ const Points: NextPage<PointsType> = ({
               <div className="self-stretch relative leading-[1.75rem] shrink-0">
                 {withLotsOfUnique1}
               </div>
-              <div className="w-[24.75rem] relative leading-[1.75rem] font-[Urbanist] text-[#4d575f] hidden shrink-0">
+              <div className="w-[24.75rem] relative leading-[1.75rem] font-proxima text-[#4d575f] hidden shrink-0">
                 Whether you're a business, PR agency, or marketing team, our
                 experts are ready to help you get the most out of your press
                 release distribution.
@@ -333,7 +333,7 @@ const Points: NextPage<PointsType> = ({
               <div className="self-stretch relative leading-[1.75rem] shrink-0">
                 {withLotsOfUnique2}
               </div>
-              <div className="w-[24.75rem] relative leading-[1.75rem] font-[Urbanist] text-[#4d575f] hidden shrink-0">
+              <div className="w-[24.75rem] relative leading-[1.75rem] font-proxima text-[#4d575f] hidden shrink-0">
                 Our distribution network ensures your news is delivered across
                 multiple platforms, improving visibility and maximizing online
                 exposure.
@@ -375,7 +375,7 @@ const Points: NextPage<PointsType> = ({
               <div className="self-stretch relative leading-[1.75rem] shrink-0">
                 {withLotsOfUnique3}
               </div>
-              <div className="w-[22.75rem] relative leading-[1.75rem] font-[Urbanist] text-[#4d575f] hidden shrink-0">
+              <div className="w-[22.75rem] relative leading-[1.75rem] font-proxima text-[#4d575f] hidden shrink-0">
                 Whether you're a business, PR agency, or marketing team, our
                 experts are ready to help you get the most out of your press
                 release distribution.

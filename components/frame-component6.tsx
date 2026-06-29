@@ -30,7 +30,7 @@ const FrameComponent6: NextPage<FrameComponent6Type> = ({
 }) => {
   return (
     <div
-      className={`self-stretch rounded-3xl bg-color-white border-[#e2e5e9] border-solid border-[1px] box-border flex flex-col items-center py-[3.625rem] px-[4.937rem] gap-[3rem] max-w-full text-center text-[1rem] text-[#0bc111] font-['Proxima_Nova'] mq450:px-[1.25rem] mq450:gap-[1.5rem] mq450:pt-[2rem] mq450:pb-[2rem] mq450:box-border mq800:gap-[1.5rem] mq800:pt-[2.375rem] mq800:pb-[2.375rem] mq800:box-border mq1350:pl-[2.438rem] mq1350:pr-[2.438rem] mq1350:box-border ${className}`}
+      className={`self-stretch rounded-3xl bg-color-white border-[#e2e5e9] border-solid border-[1px] box-border flex flex-col items-center py-[3.625rem] px-[4.937rem] gap-[3rem] max-w-full text-center text-[1rem] text-[#0bc111] font-proxima mq450:px-[1.25rem] mq450:gap-[1.5rem] mq450:pt-[2rem] mq450:pb-[2rem] mq450:box-border mq800:gap-[1.5rem] mq800:pt-[2.375rem] mq800:pb-[2.375rem] mq800:box-border mq1350:pl-[2.438rem] mq1350:pr-[2.438rem] mq1350:box-border ${className}`}
     >
       <div className="w-full max-w-full overflow-hidden flex flex-col items-center gap-[1.5rem]">
         {eyebrow ? (
@@ -44,7 +44,7 @@ const FrameComponent6: NextPage<FrameComponent6Type> = ({
           </h2>
         </div>
       </div>
-      <section className="self-stretch shadow-[0px_2px_12px_rgba(26,_38,_48,_0.08)] rounded-[20px] bg-color-white overflow-hidden flex items-start justify-center p-[0.5rem] box-border [row-gap:20px] max-w-full text-left text-[1.5rem] text-[#1a2530] font-['Proxima_Nova'] mq1350:flex-wrap">
+      <section className="self-stretch shadow-[0px_2px_12px_rgba(26,_38,_48,_0.08)] rounded-[20px] bg-color-white overflow-hidden flex items-start justify-center p-[0.5rem] box-border [row-gap:20px] max-w-full text-left text-[1.5rem] text-[#1a2530] font-proxima mq1350:flex-wrap">
         <div className="flex-1 rounded-2xl bg-[rgba(226,239,249,0.5)] overflow-hidden flex flex-col items-start p-[2rem] box-border relative isolate gap-[1.25rem] min-w-0 mq450:p-[1.25rem] mq1350:w-full mq1350:min-w-full">
           <Image
             className="w-[9rem] h-[3.063rem] absolute !m-0 top-[3.063rem] left-[0rem] z-[0] shrink-0"

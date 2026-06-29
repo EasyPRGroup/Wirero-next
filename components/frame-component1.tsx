@@ -31,7 +31,7 @@ const FrameComponent1: NextPage<FrameComponent1Type> = ({
 
   return (
     <div
-      className={`flex-1 rounded-2xl bg-[#181f25] border-[#242d38] border-solid border-[1px] flex flex-col items-start justify-center py-[1.25rem] px-[1.5rem] gap-[1.25rem] text-left text-[1.5rem] text-[#eee] font-['Proxima_Nova'] ${className}`}
+      className={`flex-1 rounded-2xl bg-[#181f25] border-[#242d38] border-solid border-[1px] flex flex-col items-start justify-center py-[1.25rem] px-[1.5rem] gap-[1.25rem] text-left text-[1.5rem] text-[#eee] font-proxima ${className}`}
     >
       <div className="self-stretch flex items-center gap-[0.5rem] shrink-0">
         <div

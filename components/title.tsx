@@ -71,12 +71,12 @@ const Title: NextPage<TitleType> = ({ className = "" }) => {
   ]);
   return (
     <section
-      className={`self-stretch overflow-hidden flex flex-col items-center gap-[1.5rem] text-center text-[1rem] text-[#eee] font-['Proxima_Nova'] ${className}`}
+      className={`self-stretch overflow-hidden flex flex-col items-center gap-[1.5rem] text-center text-[1rem] text-[#eee] font-proxima ${className}`}
     >
       <b className="w-[51.25rem] relative tracking-[0.02em] leading-[1.25rem] uppercase hidden text-[#0bc111]">
         NETWORK STRUCTURE
       </b>
-      <b className="w-[47.5rem] relative text-[3.5rem] leading-[4.25rem] hidden font-[Urbanist] mq450:text-[2.125rem] mq450:leading-[2.563rem] mq800:text-[2.813rem] mq800:leading-[3.375rem]">
+      <b className="w-[47.5rem] relative text-[3.5rem] leading-[4.25rem] hidden font-proxima mq450:text-[2.125rem] mq450:leading-[2.563rem] mq800:text-[2.813rem] mq800:leading-[3.375rem]">
         See Why Clients Choose Wirero
       </b>
       <div className="self-stretch flex flex-col items-center gap-[1rem] text-[2rem]">

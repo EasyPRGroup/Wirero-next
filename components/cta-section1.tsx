@@ -33,9 +33,9 @@ const audienceItems = [
 const CtaSection1: NextPage<CtaSection1Type> = ({ className = "" }) => {
   return (
     <section
-      className={`self-stretch pt-[2.5rem] pb-[6.125rem] text-left font-['Proxima_Nova'] home-gutters mq800:pt-[1.625rem] mq800:pb-[4rem] ${className}`}
+      className={`site-section self-stretch text-left font-proxima ${className}`}
     >
-      <div className="home-container relative isolate grid min-h-[22rem] grid-cols-[minmax(0,1fr)_minmax(28rem,32rem)] items-center gap-[4rem] overflow-hidden rounded-[24px] bg-[#0866c5] px-[3.75rem] py-[3.25rem] mq1050:grid-cols-1 mq1050:gap-[2.5rem] mq1050:px-[3rem] mq800:px-[2rem] mq450:min-h-0 mq450:px-[1.25rem] mq450:py-[2rem]">
+      <div className="site-container relative isolate grid min-h-[22rem] grid-cols-[minmax(0,1fr)_minmax(28rem,32rem)] items-center gap-[4rem] overflow-hidden rounded-[24px] bg-[#0866c5] px-[3.75rem] py-[3.25rem] mq1050:grid-cols-1 mq1050:gap-[2.5rem] mq1050:px-[3rem] mq800:px-[2rem] mq450:min-h-0 mq450:px-[1.25rem] mq450:py-[2rem]">
         <div
           aria-hidden="true"
           className="absolute bottom-0 left-[16%] z-0 h-[58%] w-[28%] bg-[rgba(26,140,213,0.2)] [clip-path:polygon(0_0,100%_100%,0_100%)] mq800:hidden"

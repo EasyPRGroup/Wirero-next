@@ -175,7 +175,7 @@ const FrameComponent5: NextPage<FrameComponent5Type> = ({ className = "" }) => {
         labelledBy={`how-wirero-works-tab-${displayedStep.id}`}
         contentVisible={contentVisible}
       />
-      <section className="w-full flex items-start justify-center py-0 px-[4.25rem] box-border max-w-full mt-[-7.125rem] relative z-[2] text-center text-[1rem] text-[#0bc111] font-['Proxima_Nova'] mq1125:mt-0 mq1125:px-0 mq450:contents">
+      <section className="w-full flex items-start justify-center py-0 px-[4.25rem] box-border max-w-full mt-[-7.125rem] relative z-[2] text-center text-[1rem] text-[#0bc111] font-proxima mq1125:mt-0 mq1125:px-0 mq450:contents">
         <div
           role="tablist"
           aria-label="How Wirero Works steps"

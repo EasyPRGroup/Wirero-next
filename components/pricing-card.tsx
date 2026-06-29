@@ -149,7 +149,7 @@ const PricingCard: NextPage<PricingCardType> = ({
 
   return (
     <section
-      className={`self-stretch min-w-0 rounded-[24px] flex flex-col items-start p-[0.5rem] gap-[1.25rem] text-left text-[0.75rem] font-['Proxima_Nova'] ${className} ${isPopular ? "bg-[#0461c3] shadow-[0px_2px_20px_rgba(26,37,48,0.12)] border-[2px] border-[#0461c3]" : "bg-[#f7fafd] shadow-[0px_2px_8px_rgba(26,37,48,0.04)]"}`}
+      className={`self-stretch min-w-0 rounded-[24px] flex flex-col items-start p-[0.5rem] gap-[1.25rem] text-left text-[0.75rem] font-proxima ${className} ${isPopular ? "bg-[#0461c3] shadow-[0px_2px_20px_rgba(26,37,48,0.12)] border-[2px] border-[#0461c3]" : "bg-[#f7fafd] shadow-[0px_2px_8px_rgba(26,37,48,0.04)]"}`}
     >
       <div
         className={`self-stretch rounded-[16px] flex flex-col items-start pt-[1.25rem] px-[1.25rem] pb-[1.75rem] gap-[1.5rem] ${isPopular ? "bg-[#0461c3]" : "bg-color-white"}`}
@@ -168,7 +168,7 @@ const PricingCard: NextPage<PricingCardType> = ({
             )}
           </div>
           <div
-            className={`self-stretch flex flex-col items-start gap-[0.5rem] text-[1.75rem] ${isPopular ? "text-color-white" : "text-[#4d565f]"} font-['Proxima_Nova']`}
+            className={`self-stretch flex flex-col items-start gap-[0.5rem] text-[1.75rem] ${isPopular ? "text-color-white" : "text-[#4d565f]"} font-proxima`}
           >
             <h3 className="m-0 self-stretch relative leading-[2.125rem] font-bold font-[inherit]">
               {planName}
@@ -232,7 +232,7 @@ const PricingCard: NextPage<PricingCardType> = ({
             className={`cursor-pointer self-stretch min-h-[3.5rem] rounded-[8px] flex items-center justify-center gap-[0.5rem] px-[0.75rem] no-underline ${ctaVariant === "filled" ? "bg-[#0461c3] border-none" : "border-[#0461c3] border-solid border-[1px] bg-transparent"} hover:opacity-90 transition-opacity`}
           >
             <div
-              className={`relative min-w-0 text-[1rem] leading-[1.25rem] font-semibold font-['Proxima_Nova'] text-center ${isPopular ? "text-color-white" : "text-[#0461c3]"}`}
+              className={`relative min-w-0 text-[1rem] leading-[1.25rem] font-semibold font-proxima text-center ${isPopular ? "text-color-white" : "text-[#0461c3]"}`}
             >
               {ctaText}
             </div>

@@ -107,8 +107,8 @@ const NetworkCategory: NextPage<NetworkCategoryType> = ({
         className="min-w-0 flex-1 flex flex-col items-start gap-[0.25rem]"
         style={networkCategoryNameStyle}
       >
-        <b className="relative text-[1.5rem] leading-[1.75rem] font-['Proxima_Nova'] text-[#1a2530] text-left break-words mq450:text-[1.25rem]">{name}</b>
-        <div className="relative text-[1rem] leading-[1.25rem] font-['Proxima_Nova'] text-[#4d565f] text-left hidden shrink-0">
+        <b className="relative text-[1.5rem] leading-[1.75rem] font-proxima text-[#1a2530] text-left break-words mq450:text-[1.25rem]">{name}</b>
+        <div className="relative text-[1rem] leading-[1.25rem] font-proxima text-[#4d565f] text-left hidden shrink-0">
           Technology
         </div>
       </div>

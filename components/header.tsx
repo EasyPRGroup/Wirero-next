@@ -1,6 +1,6 @@
 "use client";
 import type { NextPage } from "next";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Option from "./option1";
@@ -20,6 +20,27 @@ const Header: NextPage<HeaderType> = ({
   activeLink = "",
 }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isHeaderVisible, setIsHeaderVisible] = useState(true);
+  const lastScrollY = useRef(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      if (currentScrollY < 10) {
+        setIsHeaderVisible(true);
+      } else if (currentScrollY > lastScrollY.current + 5) {
+        setIsHeaderVisible(false);
+      } else if (currentScrollY < lastScrollY.current - 5) {
+        setIsHeaderVisible(true);
+      }
+      lastScrollY.current = currentScrollY;
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const showHeader = isHeaderVisible || isMobileMenuOpen;
 
   const optionItems = [
     {
@@ -77,9 +98,9 @@ const Header: NextPage<HeaderType> = ({
   return (
     <>
       <header
-        className={`home-gutters self-stretch bg-[#12171c] border-[rgba(122,131,140,0.2)] border-solid border-b-[1px] py-[1.25rem] text-left text-[1.75rem] text-color-white font-[Inter] ${className} mq450:py-[1rem]`}
+        className={`sticky top-0 z-40 site-gutters self-stretch bg-[#12171c] border-[rgba(122,131,140,0.2)] border-solid border-b-[1px] py-[1.25rem] text-left text-[1.75rem] text-color-white font-proxima transition-transform duration-300 will-change-transform ${showHeader ? "translate-y-0" : "-translate-y-full"} ${className} mq450:py-[1rem]`}
       >
-        <div className="home-container flex items-center justify-between gap-[1.25rem]">
+        <div className="site-container flex items-center justify-between gap-[1.25rem]">
           <Link href="/" className="h-[2rem] w-[10rem] relative block mq450:w-[8rem]">
             <Image
               className="absolute top-[calc(50%_-_21px)] left-[0.188rem] w-[3.25rem] h-[2.625rem] object-cover shrink-0"
@@ -97,7 +118,7 @@ const Header: NextPage<HeaderType> = ({
 
           {/* Desktop Navigation */}
           <div className="flex items-center gap-[2.5rem] mq1125:hidden">
-            <nav className="m-0 rounded-[50px] flex items-center justify-center gap-[2.5rem] mq1125:gap-[1.5rem] text-left text-[1.125rem] text-[#64676f] font-['Proxima_Nova']">
+            <nav className="m-0 rounded-[50px] flex items-center justify-center gap-[2.5rem] mq1125:gap-[1.5rem] text-left text-[1.125rem] text-[#64676f] font-proxima">
               {optionItems.map((item, index) => (
                 <Option
                   key={index}
@@ -160,7 +181,7 @@ const Header: NextPage<HeaderType> = ({
               src="/x.svg"
             />
           </button>
-          <nav className="flex flex-col items-center gap-[2rem] text-left text-[1.5rem] text-color-white font-['Proxima_Nova']">
+          <nav className="flex flex-col items-center gap-[2rem] text-left text-[1.5rem] text-color-white font-proxima">
             {optionItems.map((item, index) => (
               <Link
                 key={index}

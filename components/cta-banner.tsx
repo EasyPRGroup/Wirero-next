@@ -22,10 +22,10 @@ const CtaBanner: NextPage<CtaBannerType> = ({
 }) => {
   return (
     <section
-      className={`self-stretch bg-color-white flex flex-col items-center pt-[2.5rem] pb-[6.125rem] box-border max-w-full home-gutters mq1050:pt-[1.625rem] mq1050:pb-[4rem] mq750:pt-[1.625rem] mq750:pb-[4rem] mq450:pt-[1.25rem] mq450:pb-[2.625rem] ${className}`}
+      className={`site-section self-stretch bg-color-white flex flex-col items-center box-border max-w-full ${className}`}
     >
       <div className="self-stretch [background:radial-gradient(circle_at_72%_70%,_#1f79d6,_#0461c3_52%)] rounded-[24px] flex flex-col items-center justify-center py-[4.25rem] px-[2.5rem] box-border gap-[2rem] max-w-full text-center text-[2.75rem] text-color-white font-proxima mq1050:py-[3.25rem] mq1050:px-[2rem] mq750:py-[2.625rem] mq450:gap-[1.5rem] mq450:py-[2rem] mq450:px-[1.25rem] mq450:box-border">
-        <div className="home-container flex flex-col items-center gap-[1rem] max-w-full">
+        <div className="site-container flex flex-col items-center gap-[1rem] max-w-full">
           <h2 className="m-0 w-[60rem] max-w-full relative text-[length:inherit] leading-[3.25rem] font-bold font-[inherit] mq1050:w-full mq1050:text-[2.375rem] mq1050:leading-[2.875rem] mq450:text-[1.813rem] mq450:leading-[2.188rem]">
             {title}
           </h2>
@@ -36,7 +36,7 @@ const CtaBanner: NextPage<CtaBannerType> = ({
           ) : null}
         </div>
         {pills.length > 0 ? (
-          <div className="home-container flex flex-wrap items-center justify-center gap-[0.75rem]">
+          <div className="site-container flex flex-wrap items-center justify-center gap-[0.75rem]">
             {pills.map((pill, index) => (
               <div
                 key={index}

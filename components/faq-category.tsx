@@ -33,7 +33,7 @@ const FaqCategory: React.FC<FaqCategoryProps> = ({
       />
       <div className="min-w-0 flex-1 flex flex-col items-start">
         <h3
-          className={`m-0 self-stretch relative text-[1.25rem] leading-[1.625rem] font-bold font-abel text-left break-words ${
+          className={`m-0 self-stretch relative text-[1.25rem] leading-[1.625rem] font-bold font-proxima text-left break-words ${
             isActive ? "text-color-white" : "text-[#1a2530]"
           }`}
         >

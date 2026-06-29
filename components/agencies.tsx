@@ -17,7 +17,7 @@ const Agencies = ({
 }: AgenciesType) => {
   return (
     <article
-      className={`flex w-full max-w-[24.125rem] flex-col items-center overflow-hidden rounded-[20px] border border-solid border-[#e2e5e9] bg-color-white text-center text-[1.5rem] text-[#1a2530] font-['Proxima_Nova'] ${className}`}
+      className={`flex w-full max-w-[24.125rem] flex-col items-center overflow-hidden rounded-[20px] border border-solid border-[#e2e5e9] bg-color-white text-center text-[1.5rem] text-[#1a2530] font-proxima ${className}`}
     >
       <div className="relative isolate flex h-[10rem] w-full items-center justify-center overflow-hidden">
         <div

@@ -38,15 +38,15 @@ const FrameComponent4: NextPage<FrameComponent4Type> = ({ className = "" }) => {
 
   return (
     <div
-      className={`w-full flex items-start gap-[1.75rem] text-left text-[1.25rem] text-[#1a2530] font-['Proxima_Nova'] ${className} mq1050:flex-wrap mq450:flex-col mq450:gap-[2rem]`}
+      className={`w-full flex items-start gap-[1.75rem] text-left text-[1.25rem] text-[#1a2530] font-proxima ${className} mq1050:flex-wrap mq450:flex-col mq450:gap-[2rem]`}
     >
-      <div className="self-stretch flex-1 flex flex-col items-start justify-between gap-[1.25rem] text-[#0f0928] font-[Onest]">
+      <div className="self-stretch flex-1 flex flex-col items-start justify-between gap-[1.25rem] text-[#0f0928] font-proxima">
         <div className="self-stretch h-[3.25rem] flex flex-col items-start gap-[1rem]">
           <div className="w-[10rem] h-[2rem] relative hidden shrink-0">
             <div className="absolute top-[0.25rem] left-[2rem] leading-[1.5rem] capitalize font-semibold hidden">
               subscribe
             </div>
-            <div className="absolute top-[0rem] left-[0rem] w-[10rem] h-[2rem] text-[1.75rem] font-[Inter]">
+            <div className="absolute top-[0rem] left-[0rem] w-[10rem] h-[2rem] text-[1.75rem] font-proxima">
               <Image
                 className="absolute top-[calc(50%_-_21px)] left-[0.188rem] w-[3.25rem] h-[2.625rem] object-cover shrink-0"
                 width={52}
@@ -60,7 +60,7 @@ const FrameComponent4: NextPage<FrameComponent4Type> = ({ className = "" }) => {
               </b>
             </div>
           </div>
-          <div className="w-[17.75rem] h-[8.75rem] hidden flex-col items-start shrink-0 text-[1.125rem] text-[#4d575f] font-[Urbanist]">
+          <div className="w-[17.75rem] h-[8.75rem] hidden flex-col items-start shrink-0 text-[1.125rem] text-[#4d575f] font-proxima">
             <div className="self-stretch relative leading-[1.75rem]">
               Wirero connects your press release to a powerful network of 300+
               global mainstream media websites, helping your announcement reach
@@ -76,7 +76,7 @@ const FrameComponent4: NextPage<FrameComponent4Type> = ({ className = "" }) => {
               alt=""
               src="/mail.svg"
             />
-            <div className="relative text-[1.125rem] leading-[1.75rem] font-['Proxima_Nova'] text-[#4d575f] text-left">
+            <div className="relative text-[1.125rem] leading-[1.75rem] font-proxima text-[#4d575f] text-left">
               hello@wirero.com
             </div>
             <Image
@@ -89,7 +89,7 @@ const FrameComponent4: NextPage<FrameComponent4Type> = ({ className = "" }) => {
             />
           </button>
         </div>
-        <div className="self-stretch flex flex-col items-start gap-[1rem] text-[#1a2530] font-['Proxima_Nova']">
+        <div className="self-stretch flex flex-col items-start gap-[1rem] text-[#1a2530] font-proxima">
           <div className="w-[7.813rem] h-[1.5rem] relative">
             <h3 className="m-0 whitespace-nowrap absolute top-[0rem] left-[0rem] text-[length:inherit] leading-[1.5rem] capitalize font-semibold font-[inherit]">
               Follow us on:

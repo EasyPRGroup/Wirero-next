@@ -4,7 +4,7 @@ import Newsroom from "../../components/newsroom";
 
 const NewsroomPage: NextPage = () => {
   return (
-    <div className="w-full relative bg-color-white overflow-hidden flex flex-col items-start leading-[normal] tracking-[normal]">
+    <div className="relative flex w-full min-w-0 flex-col items-stretch overflow-x-clip bg-color-white leading-[normal] tracking-[normal]">
       <Newsroom />
       <Footer />
     </div>

@@ -94,7 +94,7 @@ const PricingPill = ({
   return (
     <button className="cursor-pointer py-[0.375rem] px-[0.75rem] bg-[#f0f4f8] rounded-[40px] flex items-center gap-[0.5rem] hover:bg-[#e0e8f0] transition-colors">
       {icons[icon]}
-      <div className="relative text-[1.125rem] leading-[1.5rem] font-semibold font-['Proxima_Nova'] text-[#64676f] text-left whitespace-nowrap mq450:whitespace-normal">
+      <div className="relative text-[1.125rem] leading-[1.5rem] font-semibold font-proxima text-[#64676f] text-left whitespace-nowrap mq450:whitespace-normal">
         {text}
       </div>
     </button>
@@ -201,10 +201,11 @@ const Pricing: NextPage = () => {
   ];
 
   return (
-    <div className="w-full relative bg-color-white overflow-hidden flex flex-col items-start leading-[normal] tracking-[normal] text-left text-[1rem] text-[#64676f] font-['Proxima_Nova']">
-      <main className="self-stretch flex flex-col items-start pt-[4.25rem] pb-[6.125rem] gap-[4.25rem] home-gutters mq1050:pt-[2.75rem] mq1050:pb-[4rem] mq800:gap-[2.125rem] mq800:pt-[1.813rem] mq800:pb-[2.625rem] mq450:gap-[1.063rem]">
+    <div className="relative flex w-full min-w-0 flex-col items-stretch overflow-x-clip bg-color-white leading-[normal] tracking-[normal] text-left text-[1rem] text-[#64676f] font-proxima">
+      <main className="site-section-hero self-stretch">
+        <div className="site-container flex flex-col items-start gap-[4.25rem] mq800:gap-[2.125rem] mq450:gap-[1.063rem]">
         {/* Hero Section */}
-        <section className="self-stretch overflow-hidden flex flex-col items-center py-[0rem] px-[2.5rem] gap-[1.5rem] mq450:px-[0rem]">
+        <section className="self-stretch overflow-hidden flex flex-col items-center py-[0rem] gap-[1.5rem]">
           <b className="relative tracking-[0.02em] leading-[1.25rem] uppercase text-[#0bc111]">
             Pricing
           </b>
@@ -252,11 +253,13 @@ const Pricing: NextPage = () => {
             ))}
           </div>
         </div>
+        </div>
       </main>
 
       {/* Why flat-rate pricing comparison */}
-      <section className="self-stretch bg-[#f7fafd] flex flex-col items-center py-[6.125rem] box-border max-w-full home-gutters mq800:py-[2.625rem] mq450:py-[1.688rem]">
+      <section className="site-section self-stretch bg-[#f7fafd] flex flex-col items-center box-border max-w-full">
         <FrameComponent6
+          className="site-container"
           eyebrow=""
           title="Why flat-rate pricing changes distribution economics"
           positiveLabel="With Wirero"
@@ -279,7 +282,8 @@ const Pricing: NextPage = () => {
       </section>
 
       {/* Why flat-rate pricing works */}
-      <section className="self-stretch bg-color-white flex flex-col items-center py-[6.125rem] box-border gap-[3.5rem] max-w-full text-center text-[#1a2530] font-['Proxima_Nova'] home-gutters mq800:gap-[2rem] mq800:py-[2.625rem]">
+      <section className="site-section self-stretch bg-color-white flex flex-col items-center box-border max-w-full text-center text-[#1a2530] font-proxima">
+        <div className="site-container flex flex-col items-center gap-[3.5rem] mq800:gap-[2rem]">
         <h2 className="m-0 relative text-[3.5rem] leading-[4.25rem] font-bold mq450:text-[2.125rem] mq450:leading-[2.563rem] mq800:text-[2.813rem] mq800:leading-[3.375rem]">
           Why flat-rate pricing works
         </h2>
@@ -295,6 +299,7 @@ const Pricing: NextPage = () => {
               className="grow basis-[calc((100%_-_3rem)/3)] min-w-[15rem] rounded-2xl bg-[#f7fafd] p-[1.75rem] box-border"
             />
           ))}
+        </div>
         </div>
       </section>
 

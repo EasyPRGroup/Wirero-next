@@ -46,7 +46,7 @@ const ItemMenu: NextPage<ItemMenuType> = ({
 
   return (
     <div
-      className={`self-stretch flex items-start text-left text-[1rem] text-[rgba(26,37,48,0.7)] font-['Proxima_Nova'] ${className}`}
+      className={`self-stretch flex items-start text-left text-[1rem] text-[rgba(26,37,48,0.7)] font-proxima ${className}`}
       style={itemMenuStyle}
     >
       {href ? (

@@ -54,7 +54,7 @@ const Component1: NextPage<Component1Type> = ({
 
   return (
     <div
-      className={`self-stretch border-[#e2e5e9] border-solid border-t-[1px] overflow-hidden flex flex-col items-center pt-[1.375rem] px-[0.75rem] pb-[1.5rem] gap-[0rem] z-[1] text-left text-[1.5rem] text-[#1a2530] font-['Proxima_Nova'] mq800:flex-wrap ${className}`}
+      className={`self-stretch border-[#e2e5e9] border-solid border-t-[1px] overflow-hidden flex flex-col items-center pt-[1.375rem] px-[0.75rem] pb-[1.5rem] gap-[0rem] z-[1] text-left text-[1.5rem] text-[#1a2530] font-proxima mq800:flex-wrap ${className}`}
       style={div1Style}
     >
       <button

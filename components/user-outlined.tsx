@@ -73,7 +73,7 @@ const UserOutlined: NextPage<UserOutlinedType> = ({
         />
       )}
       <div
-        className="relative min-w-0 text-[0.875rem] leading-[1.125rem] font-semibold font-['Proxima_Nova'] text-[#0f0928] text-center"
+        className="relative min-w-0 text-[0.875rem] leading-[1.125rem] font-semibold font-proxima text-[#0f0928] text-center"
         style={textStyle}
       >
         {cTAButton}

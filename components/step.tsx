@@ -33,7 +33,7 @@ const Step: NextPage<StepType> = ({
       className={`w-full min-h-[34.375rem] rounded-[28px] bg-[#181f25] overflow-hidden shrink-0 flex items-start p-[4.25rem] box-border gap-[3rem] max-w-full z-[1] mq1125:min-h-0 mq1125:flex-col mq1125:gap-[2rem] mq1125:py-[2.5rem] mq1125:px-[2.125rem] mq800:gap-[1.5rem] mq800:py-[2rem] mq450:p-[1.5rem] ${className}`}
     >
       <section
-        className={`min-w-0 flex-1 flex flex-col items-start gap-[1.25rem] text-center text-[1.25rem] text-[#0bc111] font-['Proxima_Nova'] transition-opacity duration-150 motion-reduce:transition-none mq1125:w-full mq1125:min-w-full ${
+        className={`min-w-0 flex-1 flex flex-col items-start gap-[1.25rem] text-center text-[1.25rem] text-[#0bc111] font-proxima transition-opacity duration-150 motion-reduce:transition-none mq1125:w-full mq1125:min-w-full ${
           contentVisible ? "opacity-100" : "opacity-0"
         }`}
       >

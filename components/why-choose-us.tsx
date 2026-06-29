@@ -70,7 +70,7 @@ const WhyChooseUs: NextPage<WhyChooseUsType> = ({ className = "" }) => {
   ]);
   return (
     <section
-      className={`self-stretch bg-[#f7fafd] flex flex-col items-center py-[6.125rem] box-border gap-[4.75rem] max-w-full text-center text-[1rem] text-[#0bc111] font-['Proxima_Nova'] home-gutters mq450:gap-[1.188rem] mq800:gap-[2.375rem] mq800:py-[2.625rem] mq1350:pt-[4rem] mq1350:pb-[4rem] ${className}`}
+      className={`site-section self-stretch bg-[#f7fafd] flex flex-col items-center box-border gap-[4.75rem] max-w-full text-center text-[1rem] text-[#0bc111] font-proxima mq450:gap-[1.188rem] mq800:gap-[2.375rem] ${className}`}
     >
       <div className="w-[60rem] max-w-full overflow-hidden flex flex-col items-center gap-[1.5rem] shrink-0">
         <b className="self-stretch relative tracking-[0.02em] leading-[1.25rem] uppercase">
@@ -80,8 +80,8 @@ const WhyChooseUs: NextPage<WhyChooseUsType> = ({ className = "" }) => {
           Infrastructure Built for Scalable Distribution
         </h1>
       </div>
-      <div className="home-container flex items-start pt-[0rem] px-[0rem] pb-[2.5rem] box-border gap-[2.5rem] max-w-full shrink-0 mq800:gap-[1.25rem] mq1350:flex-wrap">
-        <section className="flex-1 flex flex-col items-start relative isolate min-w-[26.813rem] text-left text-[1.5rem] text-[#1a2530] font-['Proxima_Nova'] mq800:min-w-full">
+      <div className="site-container flex items-start pt-[0rem] px-[0rem] pb-[2.5rem] box-border gap-[2.5rem] max-w-full shrink-0 mq800:gap-[1.25rem] mq1350:flex-wrap">
+        <section className="flex-1 flex flex-col items-start relative isolate min-w-[26.813rem] text-left text-[1.5rem] text-[#1a2530] font-proxima mq800:min-w-full">
           <div className="self-stretch border-[rgba(226,229,233,0.5)] border-solid border-t-[6px] overflow-hidden flex flex-col items-start pt-[1.062rem] px-[0.75rem] pb-[2rem] gap-[0.25rem] z-[0]">
             <button
               onClick={() => setIsFirstOpen(!isFirstOpen)}
@@ -189,7 +189,7 @@ const WhyChooseUs: NextPage<WhyChooseUsType> = ({ className = "" }) => {
         </section>
         <div className="h-[30rem] w-[32.5rem] relative rounded-[20px] bg-[#5b5c5c] max-w-full mq800:min-w-full mq800:h-[20rem] mq450:h-[14rem] mq1350:flex-1" />
       </div>
-      <div className="home-container rounded-[20px] bg-color-white border-[#e2e5e9] border-solid border-t-[1px] box-border hidden items-center flex-wrap content-center pt-[2.375rem] px-[3.75rem] pb-[2.5rem] gap-[5rem] shrink-0 text-left text-[2.25rem] text-[#1a2530]">
+      <div className="site-container rounded-[20px] bg-color-white border-[#e2e5e9] border-solid border-t-[1px] box-border hidden items-center flex-wrap content-center pt-[2.375rem] px-[3.75rem] pb-[2.5rem] gap-[5rem] shrink-0 text-left text-[2.25rem] text-[#1a2530]">
         <div className="flex-1 overflow-hidden flex flex-col items-start gap-[0.75rem] min-w-[32.313rem] mq1125:min-w-full">
           <b className="self-stretch relative leading-[3rem] mq450:text-[1.375rem] mq450:leading-[1.813rem] mq800:text-[1.813rem] mq800:leading-[2.375rem]">
             Start Distributing Your Content Today

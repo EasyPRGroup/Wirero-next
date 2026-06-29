@@ -27,7 +27,7 @@ const CtaSection: NextPage<CtaSectionType> = ({ className = "" }) => {
   ];
   return (
     <section
-      className={`self-stretch bg-[#e2eff9] flex flex-col items-start py-[2.5rem] box-border relative isolate gap-[0.625rem] max-w-full home-gutters mq450:py-[1.625rem] ${className}`}
+      className={`site-section-cta self-stretch bg-[#e2eff9] flex flex-col items-start box-border relative isolate gap-[0.625rem] max-w-full ${className}`}
     >
       <Image
         className="w-[40.688rem] h-[14.375rem] absolute !m-0 bottom-[0rem] left-[49.313rem] z-[0] shrink-0 mq1350:hidden"
@@ -37,7 +37,7 @@ const CtaSection: NextPage<CtaSectionType> = ({ className = "" }) => {
         alt=""
         src="/Group-111.svg"
       />
-      <section className="home-container rounded-3xl flex items-center p-[2.5rem] box-border gap-[3.75rem] max-w-full z-[1] shrink-0 text-left text-[1rem] text-[#0bc111] font-['Proxima_Nova'] mq800:gap-[1.875rem] mq1350:flex-wrap">
+      <section className="site-container rounded-3xl flex items-center p-[2.5rem] box-border gap-[3.75rem] max-w-full z-[1] shrink-0 text-left text-[1rem] text-[#0bc111] font-proxima mq800:gap-[1.875rem] mq1350:flex-wrap">
         <div className="flex-1 flex flex-col items-start gap-[1.75rem] min-w-[22.75rem] mq450:min-w-full mq800:min-w-full">
           <div className="self-stretch overflow-hidden flex flex-col items-start gap-[1.5rem]">
             <b className="relative tracking-[0.02em] leading-[1.25rem] uppercase">

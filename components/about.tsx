@@ -8,9 +8,9 @@ export type AboutType = {
 const About: NextPage<AboutType> = ({ className = "" }) => {
   return (
     <section
-      className={`self-stretch bg-[#f7fafd] flex flex-col items-start justify-center py-[5rem] box-border gap-[3rem] max-w-full home-gutters mq450:py-[2.125rem] mq800:gap-[1.5rem] mq1125:pt-[3.25rem] mq1125:pb-[3.25rem] ${className}`}
+      className={`site-section self-stretch bg-[#f7fafd] flex flex-col items-start justify-center box-border gap-[3rem] max-w-full mq800:gap-[1.5rem] ${className}`}
     >
-      <section className="home-container overflow-hidden flex flex-col items-start gap-[1.5rem] max-w-full text-left text-[1rem] text-[#0bc111] font-['Proxima_Nova']">
+      <section className="site-container overflow-hidden flex flex-col items-start gap-[1.5rem] max-w-full text-left text-[1rem] text-[#0bc111] font-proxima">
         <b className="self-stretch relative tracking-[0.02em] leading-[1.25rem] uppercase">
           BUILT FOR SCALE
         </b>
@@ -30,7 +30,7 @@ const About: NextPage<AboutType> = ({ className = "" }) => {
           </div>
         </div>
       </section>
-      <div className="home-container">
+      <div className="site-container">
         <Points
         pointsWidth="unset"
         pointsAlignSelf="stretch"

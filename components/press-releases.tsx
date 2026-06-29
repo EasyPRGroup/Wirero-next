@@ -44,9 +44,9 @@ const PressReleases: NextPage<PressReleasesType> = ({ className = "" }) => {
 
   return (
     <section
-      className={`self-stretch flex flex-col items-center py-[6.125rem] box-border gap-[4.25rem] max-w-full home-gutters mq450:gap-[1.063rem] mq800:gap-[2.125rem] mq800:py-[2.625rem] mq1125:pt-[4rem] mq1125:pb-[4rem] ${className}`}
+      className={`site-section self-stretch flex flex-col items-center box-border gap-[4.25rem] max-w-full mq450:gap-[1.063rem] mq800:gap-[2.125rem] ${className}`}
     >
-      <section className="w-[60rem] max-w-full overflow-hidden flex flex-col items-center gap-[1.5rem] text-left text-[1rem] text-[#0bc111] font-['Proxima_Nova']">
+      <section className="w-[60rem] max-w-full overflow-hidden flex flex-col items-center gap-[1.5rem] text-left text-[1rem] text-[#0bc111] font-proxima">
         <b className="relative tracking-[0.02em] leading-[1.25rem] uppercase">
           Recently Distributed
         </b>
@@ -54,19 +54,19 @@ const PressReleases: NextPage<PressReleasesType> = ({ className = "" }) => {
           <h2 className="m-0 self-stretch relative text-[length:inherit] leading-[4.25rem] font-bold font-[inherit] mq450:text-[2.125rem] mq450:leading-[2.563rem] mq800:text-[2.813rem] mq800:leading-[3.375rem]">
             Real Distribution. Real Results.
           </h2>
-          <div className="self-stretch relative text-[1.125rem] leading-[1.75rem] font-[Urbanist] text-[#4d575f]">
+          <div className="self-stretch relative text-[1.125rem] leading-[1.75rem] font-proxima text-[#4d575f]">
             See how content is distributed across the Wirero network — and how
             teams use it to scale.
           </div>
         </div>
       </section>
-      <div className="home-container flex flex-col items-center gap-[3rem] max-w-full mq800:gap-[1.5rem]">
+      <div className="site-container flex flex-col items-center gap-[3rem] max-w-full mq800:gap-[1.5rem]">
         <div className="w-full flex flex-col items-center gap-[2.25rem] max-w-full shrink-0 mq800:gap-[1.125rem]">
           <div className="self-stretch flex flex-col items-start relative isolate gap-[0.625rem] max-w-full">
             <div
               ref={scrollRef}
               className="self-stretch overflow-x-auto flex items-center justify-center gap-[2.5rem] max-w-full z-[0] shrink-0 mq800:gap-[1.25rem] scroll-smooth snap-x snap-mandatory touch-pan-x [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-              <section className="h-[30rem] w-[65rem] rounded-[28px] bg-[rgba(242,240,251,0.08)] border-[#f4f7fa] border-solid border-[4px] box-border overflow-hidden shrink-0 flex items-start justify-center [row-gap:20px] max-w-full text-left text-[1.125rem] text-[#1a2530] font-['Proxima_Nova'] snap-start mq1125:h-auto mq1125:flex-wrap">
+              <section className="h-[30rem] w-[65rem] rounded-[28px] bg-[rgba(242,240,251,0.08)] border-[#f4f7fa] border-solid border-[4px] box-border overflow-hidden shrink-0 flex items-start justify-center [row-gap:20px] max-w-full text-left text-[1.125rem] text-[#1a2530] font-proxima snap-start mq1125:h-auto mq1125:flex-wrap">
                 <div className="self-stretch flex-1 bg-color-white flex flex-col items-start justify-between p-[1.25rem] box-border gap-[1.25rem] min-w-[17.875rem] mq450:min-w-0">
                   <div className="w-[29.063rem] rounded-lg hidden flex-col items-start justify-center py-[0.25rem] px-[0.5rem] box-border gap-[0.5rem] shrink-0 text-[#4d575f]">
                     <div className="rounded-[40px] flex items-center gap-[0.375rem] shrink-0">
@@ -285,7 +285,7 @@ const PressReleases: NextPage<PressReleasesType> = ({ className = "" }) => {
                 </div>
               </section>
               <div className="h-[32.25rem] w-[65rem] shadow-[0px_2px_16px_rgba(26,_38,_48,_0.12)] rounded-[28px] bg-[rgba(242,240,251,0.08)] border-color-white border-solid border-[4px] box-border overflow-hidden shrink-0 flex items-start justify-center [row-gap:20px] max-w-full snap-start mq1125:h-auto mq1125:flex-wrap">
-                <section className="self-stretch flex-1 bg-color-white flex flex-col items-start justify-between p-[1.25rem] box-border gap-[1.25rem] min-w-[17.875rem] mq450:min-w-0 text-left text-[1.125rem] text-[#4d575f] font-['Proxima_Nova']">
+                <section className="self-stretch flex-1 bg-color-white flex flex-col items-start justify-between p-[1.25rem] box-border gap-[1.25rem] min-w-[17.875rem] mq450:min-w-0 text-left text-[1.125rem] text-[#4d575f] font-proxima">
                   <div className="w-[29.063rem] rounded-lg hidden flex-col items-start justify-center py-[0.25rem] px-[0.5rem] box-border gap-[0.5rem] shrink-0">
                     <div className="rounded-[40px] flex items-center gap-[0.375rem] shrink-0">
                       <Image
@@ -442,7 +442,7 @@ const PressReleases: NextPage<PressReleasesType> = ({ className = "" }) => {
                     image83="/image-83@2x.png"
                   />
                 </section>
-                <section className="self-stretch w-[37.5rem] flex items-start pt-[25.125rem] px-[0rem] pb-[0.25rem] box-border relative isolate max-w-full text-left text-[1.5rem] text-[#eee] font-['Proxima_Nova'] mq800:pt-[16.313rem] mq800:pb-[1.25rem] mq800:box-border mq1125:flex-1 mq1125:min-w-full">
+                <section className="self-stretch w-[37.5rem] flex items-start pt-[25.125rem] px-[0rem] pb-[0.25rem] box-border relative isolate max-w-full text-left text-[1.5rem] text-[#eee] font-proxima mq800:pt-[16.313rem] mq800:pb-[1.25rem] mq800:box-border mq1125:flex-1 mq1125:min-w-full">
                   <Image
                     className="h-[37.5rem] w-[38.25rem] absolute !m-0 top-[-1.625rem] left-[0.063rem] object-cover shrink-0"
                     width={612}
@@ -502,7 +502,7 @@ const PressReleases: NextPage<PressReleasesType> = ({ className = "" }) => {
                   </div>
                 </section>
               </div>
-              <section className="h-[30rem] w-[65rem] rounded-[28px] bg-[rgba(242,240,251,0.08)] border-[#f4f7fa] border-solid border-[4px] box-border overflow-hidden shrink-0 flex items-start justify-center [row-gap:20px] max-w-full text-left text-[1.125rem] text-[#4d575f] font-['Proxima_Nova'] snap-start mq1125:h-auto mq1125:flex-wrap">
+              <section className="h-[30rem] w-[65rem] rounded-[28px] bg-[rgba(242,240,251,0.08)] border-[#f4f7fa] border-solid border-[4px] box-border overflow-hidden shrink-0 flex items-start justify-center [row-gap:20px] max-w-full text-left text-[1.125rem] text-[#4d575f] font-proxima snap-start mq1125:h-auto mq1125:flex-wrap">
                 <div className="self-stretch flex-1 bg-color-white flex flex-col items-start justify-between p-[1.25rem] box-border gap-[1.25rem] min-w-[17.875rem] mq450:min-w-0">
                   <div className="w-[29.063rem] rounded-lg hidden flex-col items-start justify-center py-[0.25rem] px-[0.5rem] box-border gap-[0.5rem] shrink-0">
                     <div className="rounded-[40px] flex items-center gap-[0.375rem] shrink-0">

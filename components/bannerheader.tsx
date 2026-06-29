@@ -9,10 +9,10 @@ export type BannerheaderType = {
 const Bannerheader: NextPage<BannerheaderType> = ({ className = "" }) => {
   return (
     <section
-      className={`home-gutters flex min-h-[46.75rem] w-full flex-col items-start bg-gradient-to-b from-[#12171c] to-[#060809] p-0 ${className}`}
+      className={`site-gutters flex min-h-[46.75rem] w-full flex-col items-start bg-gradient-to-b from-[#12171c] to-[#060809] p-0 ${className}`}
     >
-      <div className="home-hero-container flex w-full min-w-0 flex-1 items-end justify-between gap-[3.75rem] pb-[2.5rem] mq450:gap-[0.938rem] mq800:gap-[1.875rem] mq1350:flex-wrap mq1350:pt-[1.25rem]">
-        <section className="h-[33.75rem] flex flex-1 flex-col items-start max-w-full text-left text-[4.125rem] text-[#eee] font-['Proxima_Nova'] mq450:h-auto mq800:h-auto mq800:min-w-full mq1350:flex-1">
+      <div className="site-container flex w-full min-w-0 flex-1 items-end justify-between gap-[3.75rem] pb-[2.5rem] mq450:gap-[0.938rem] mq800:gap-[1.875rem] mq1350:flex-wrap mq1350:pt-[1.25rem]">
+        <section className="h-[33.75rem] flex flex-1 flex-col items-start max-w-full text-left text-[4.125rem] text-[#eee] font-proxima mq450:h-auto mq800:h-auto mq800:min-w-full mq1350:flex-1">
           <div className="w-[37.5rem] flex flex-col items-start max-w-full">
             <div className="self-stretch flex flex-col items-start gap-[1.75rem]">
               <div className="self-stretch flex flex-col items-start gap-[1.25rem]">
@@ -97,10 +97,10 @@ const Bannerheader: NextPage<BannerheaderType> = ({ className = "" }) => {
             </div>
           </div>
         </section>
-        <section className="h-[38.75rem] w-[41.875rem] flex items-start py-[5rem] pl-[0rem] pr-0 box-border max-w-full text-left text-[1.5rem] text-[#eee] font-['Proxima_Nova'] mq450:hidden mq800:hidden mq1350:hidden mq800:pt-[3.25rem] mq800:pb-[3.25rem] mq800:box-border mq1125:min-w-full mq1350:pr-0 mq1350:box-border mq1350:min-w-full mq1350:h-auto">
+        <section className="h-[38.75rem] w-[41.875rem] flex items-start py-[5rem] pl-[0rem] pr-0 box-border max-w-full text-left text-[1.5rem] text-[#eee] font-proxima mq450:hidden mq800:hidden mq1350:hidden mq800:pt-[3.25rem] mq800:pb-[3.25rem] mq800:box-border mq1125:min-w-full mq1350:pr-0 mq1350:box-border mq1350:min-w-full mq1350:h-auto">
           <div className="ml-[-0.338rem] h-[26.938rem] w-[39.775rem] relative shrink-0 origin-top-left mq800:scale-[0.78] mq800:mb-[-5.9rem] mq450:scale-[0.45] mq450:mb-[-14.8rem]">
             <div className="absolute h-full top-[0rem] bottom-[0rem] left-[2.819rem] rounded-tl-[110px] rounded-tr-none rounded-br-[110px] rounded-bl-none bg-[rgba(217,217,217,0.4)] w-[23.4rem]" />
-            <div className="absolute top-[19.256rem] left-[0rem] [backdrop-filter:blur(10px)] rounded-xl bg-[rgba(24,31,37,0.8)] border-[rgba(122,131,140,0.2)] border-solid border-[1px] box-border w-[14.931rem] h-[5.281rem] flex items-start py-[0.875rem] pl-[1rem] pr-[0.812rem] gap-[0.75rem]">
+            <div className="absolute top-[19.256rem] left-[0rem] z-[2] [backdrop-filter:blur(10px)] rounded-xl bg-[rgba(24,31,37,0.8)] border-[rgba(122,131,140,0.2)] border-solid border-[1px] box-border w-[14.931rem] h-[5.281rem] flex items-start py-[0.875rem] pl-[1rem] pr-[0.812rem] gap-[0.75rem]">
               <div className="rounded-[100px] bg-[#e4e0f7] flex items-center justify-center p-[0.5rem] gap-[0.375rem] shrink-0">
                 <Image
                   className="h-[1.5rem] w-[1.5rem] relative hidden"
@@ -150,7 +150,7 @@ const Bannerheader: NextPage<BannerheaderType> = ({ className = "" }) => {
                   <h3 className="m-0 relative text-[length:inherit] leading-[1.75rem] font-semibold font-[inherit] shrink-0 mq450:text-[1.188rem] mq450:leading-[1.375rem]">
                     1000+
                   </h3>
-                  <div className="relative text-[1rem] leading-[1.25rem] capitalize font-[Urbanist] text-[#64676f] hidden shrink-0">{`Positive `}</div>
+                  <div className="relative text-[1rem] leading-[1.25rem] capitalize font-proxima text-[#64676f] hidden shrink-0">{`Positive `}</div>
                 </div>
                 <div className="flex items-center text-[1rem] text-[rgba(238,238,238,0.5)]">
                   <div className="relative leading-[1.25rem] capitalize">
@@ -167,7 +167,7 @@ const Bannerheader: NextPage<BannerheaderType> = ({ className = "" }) => {
               alt=""
               src="/Rectangle-33.svg"
             />
-            <div className="absolute top-[2.338rem] left-[30.119rem] [backdrop-filter:blur(10px)] rounded-xl bg-[rgba(24,31,37,0.8)] border-[rgba(122,131,140,0.2)] border-solid border-[1px] flex flex-col items-center py-[0.875rem] px-[1rem] gap-[0.75rem] text-center text-[1.125rem]">
+            <div className="absolute top-[2.338rem] left-[30.119rem] z-[2] [backdrop-filter:blur(10px)] rounded-xl bg-[rgba(24,31,37,0.8)] border-[rgba(122,131,140,0.2)] border-solid border-[1px] flex flex-col items-center py-[0.875rem] px-[1rem] gap-[0.75rem] text-center text-[1.125rem]">
               <div className="rounded-[100px] bg-[#e4e0f7] flex items-center justify-center p-[0.5rem] gap-[0.375rem] shrink-0">
                 <Image
                   className="h-[1.5rem] w-[1.5rem] relative hidden"
@@ -192,7 +192,7 @@ const Bannerheader: NextPage<BannerheaderType> = ({ className = "" }) => {
                     Automated <br />
                     Distribution
                   </div>
-                  <div className="relative text-[1rem] leading-[1.25rem] capitalize font-[Urbanist] text-[#64676f] text-left hidden shrink-0">{`Positive `}</div>
+                  <div className="relative text-[1rem] leading-[1.25rem] capitalize font-proxima text-[#64676f] text-left hidden shrink-0">{`Positive `}</div>
                 </div>
                 <div className="hidden items-center shrink-0 text-left text-[1rem] text-[rgba(238,238,238,0.5)]">
                   <div className="relative leading-[1.25rem] capitalize">

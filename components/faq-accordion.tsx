@@ -26,7 +26,7 @@ const FaqAccordion: React.FC<FaqAccordionProps> = ({ item, isOpen, onToggle }) =
         className="self-stretch flex min-w-0 items-start gap-[0.5rem] cursor-pointer bg-transparent border-none p-0 text-left w-full"
       >
         <b
-          className={`min-w-0 flex-1 relative leading-[2.125rem] font-abel break-words ${
+          className={`min-w-0 flex-1 relative leading-[2.125rem] font-proxima break-words ${
             isOpen ? "text-[#1a2530]" : "text-[#1a2530]"
           }`}
         >
@@ -49,7 +49,7 @@ const FaqAccordion: React.FC<FaqAccordionProps> = ({ item, isOpen, onToggle }) =
         }`}
       >
         <div
-          className="flex items-center justify-center py-[0rem] pl-[0rem] pr-[2rem] text-[1.125rem] text-[#4d565f] font-proxima-nova mq450:pr-0"
+          className="flex items-center justify-center py-[0rem] pl-[0rem] pr-[2rem] text-[1.125rem] text-[#4d565f] font-proxima mq450:pr-0"
         >
           <div className="flex-1 relative leading-[1.75rem]">{item.answer}</div>
         </div>

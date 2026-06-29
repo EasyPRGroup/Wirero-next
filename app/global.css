@@ -1,12 +1,4 @@
-/* Google Fonts - Inter & Urbanist (Open Source) */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,400;0,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Onest:wght@600&display=swap");
-
-/* Mulish - free Proxima Nova alternative (Google Fonts, OFL) */
-@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap");
-
-/* Proxima Nova - Local Font Files (Commercial License Required, optional) */
+/* Proxima Nova - Local Font Files */
 @import url("/fonts/proxima-nova.css");
 
 /* Tailwind CSS v4 imports - must follow @import rules */
@@ -20,15 +12,36 @@
 /* Tailwind configuration */
 @config "../tailwind.config.js";
 
-/* CSS Variable for Proxima Nova font (with free Mulish fallback) */
+/* CSS Variables: design tokens */
 :root {
-  --font-proxima: 'Proxima Nova', 'Mulish', 'Inter', Arial, sans-serif;
+  --font-proxima: 'Proxima Nova', Arial, sans-serif;
+
+  /* Layout */
   --site-frame-width: 100rem;
+  --site-container-max: 100rem;
+  --site-gutter: clamp(1.25rem, 5vw, 6.875rem);
+
+  /* Vertical section spacing scale */
+  --section-y: clamp(2.625rem, 5.5vw, 6.125rem);     /* standard sections */
+  --section-y-hero-top: clamp(1.813rem, 3.5vw, 4.25rem);
+  --section-y-hero-bot: clamp(2.625rem, 5.5vw, 6.125rem);
+  --section-y-band: clamp(1.5rem, 2.5vw, 3rem);      /* thin bands (clients strip) */
+  --section-y-cta: clamp(1.25rem, 2.5vw, 2.5rem);    /* CTA card wrappers */
+
+  /* Internal stacks */
+  --stack-section: clamp(2rem, 4vw, 4.25rem);        /* gap between section sub-blocks */
+  --stack-block: clamp(1rem, 2vw, 1.75rem);          /* gap inside a block */
+  --stack-tight: clamp(0.75rem, 1.2vw, 1.25rem);     /* gap between tight items */
 }
 
 /* Base styles - Set Proxima Nova as default font */
-body {
+html, body {
   @apply leading-[normal] m-0;
+  font-family: var(--font-proxima);
+}
+
+/* Ensure form controls inherit Proxima Nova (browsers default to system fonts) */
+input, button, select, textarea, optgroup {
   font-family: var(--font-proxima);
 }
 
@@ -55,31 +68,36 @@ button, a {
   font-family: var(--font-proxima);
 }
 
-/* Shared responsive layout primitives */
+/* ----------------------------------------------------------------------------
+   Shared layout primitives
+   - .site-gutters / .home-gutters: responsive horizontal page gutters
+   - .site-container / .home-container: max-width content container
+   - .site-section variants: standardized vertical section padding + gutters
+   These classes encode the global spacing scale so individual sections do
+   not redefine arbitrary padding values.
+   -------------------------------------------------------------------------- */
+
+.site-gutters,
 .home-gutters {
-  padding-left: clamp(1.25rem, 5vw, 6.875rem);
-  padding-right: clamp(1.25rem, 5vw, 6.875rem);
+  padding-left: var(--site-gutter);
+  padding-right: var(--site-gutter);
 }
 
-/* Constrain sole-child content within home-gutters sections to readable width.
-   Only applies when the section has a single wrapper child, preserving
-   multi-child flex layouts (side-by-side columns, grids, etc.). */
+/* Constrain sole-child content within gutter sections to the global
+   container width. Only applies when the section has a single wrapper
+   child, preserving multi-child flex layouts. */
+.site-gutters > *:only-child,
 .home-gutters > *:only-child {
-  max-width: 100rem;
+  max-width: var(--site-container-max);
   margin-left: auto;
   margin-right: auto;
 }
 
-.home-container {
-  width: 100%;
-  max-width: 100rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-
+.site-container,
+.home-container,
 .home-hero-container {
   width: 100%;
-  max-width: 100rem;
+  max-width: var(--site-container-max);
   margin-left: auto;
   margin-right: auto;
 }
@@ -91,6 +109,26 @@ button, a {
   margin-right: auto;
   overflow-x: clip;
 }
+
+/* Section padding variants (apply with .site-gutters) */
+.site-section-y { padding-top: var(--section-y); padding-bottom: var(--section-y); }
+.site-section-y-band { padding-top: var(--section-y-band); padding-bottom: var(--section-y-band); }
+.site-section-y-cta { padding-top: var(--section-y-cta); padding-bottom: var(--section-y-cta); }
+.site-section-y-hero {
+  padding-top: var(--section-y-hero-top);
+  padding-bottom: var(--section-y-hero-bot);
+}
+
+/* Combined section utilities (gutters + vertical) */
+.site-section { padding-left: var(--site-gutter); padding-right: var(--site-gutter); padding-top: var(--section-y); padding-bottom: var(--section-y); }
+.site-section-hero { padding-left: var(--site-gutter); padding-right: var(--site-gutter); padding-top: var(--section-y-hero-top); padding-bottom: var(--section-y-hero-bot); }
+.site-section-band { padding-left: var(--site-gutter); padding-right: var(--site-gutter); padding-top: var(--section-y-band); padding-bottom: var(--section-y-band); }
+.site-section-cta { padding-left: var(--site-gutter); padding-right: var(--site-gutter); padding-top: var(--section-y-cta); padding-bottom: var(--section-y-cta); }
+
+/* Section internal vertical rhythm helpers */
+.site-stack-section { row-gap: var(--stack-section); }
+.site-stack-block { row-gap: var(--stack-block); }
+.site-stack-tight { row-gap: var(--stack-tight); }
 
 /* Newsroom article body styling (parsed HTML content) */
 .prose-newsroom {

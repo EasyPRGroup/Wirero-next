@@ -28,7 +28,7 @@ const audiences = [
 const FrameComponent3 = ({ className = "" }: FrameComponent3Type) => {
   return (
     <section
-      className={`flex w-full flex-col items-center gap-[3rem] font-['Proxima_Nova'] mq800:gap-[2rem] ${className}`}
+      className={`flex w-full flex-col items-center gap-[3rem] font-proxima mq800:gap-[2rem] ${className}`}
     >
       <header className="flex w-full max-w-[60rem] flex-col items-center gap-[1.5rem] text-center text-[1rem] text-[#0bc111]">
         <b className="tracking-[0.02em] leading-[1.25rem] uppercase">
