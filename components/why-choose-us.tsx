@@ -1,16 +1,53 @@
 "use client";
 import type { NextPage } from "next";
-import { useState } from "react";
+import { useEffect, useRef, useState, type CSSProperties } from "react";
 import Image from "next/image";
 import Component1 from "./component1";
 import UserOutlined from "./user-outlined";
+
+const capabilityImages = [
+  "/Multi-Domain-Publishing.jpg",
+  "/Niche-Targeting.jpg",
+  "/Dofollow-backlinks.jpg",
+  "/Custom-Anchor-Support.jpg",
+  "/Automated-Distribution.jpg",
+  "/Exportable-Report.jpg",
+];
+
+const CAPABILITY_ROTATE_MS = 5000;
 
 export type WhyChooseUsType = {
   className?: string;
 };
 
 const WhyChooseUs: NextPage<WhyChooseUsType> = ({ className = "" }) => {
-  const [isFirstOpen, setIsFirstOpen] = useState(true);
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
+  const remainingRef = useRef(CAPABILITY_ROTATE_MS);
+  const startRef = useRef(0);
+  const prevIndexRef = useRef(activeIndex);
+
+  useEffect(() => {
+    const indexChanged = prevIndexRef.current !== activeIndex;
+    prevIndexRef.current = activeIndex;
+    if (indexChanged) {
+      remainingRef.current = CAPABILITY_ROTATE_MS;
+    }
+
+    if (isPaused) {
+      return;
+    }
+
+    startRef.current = Date.now();
+    const timer = setTimeout(() => {
+      setActiveIndex((prev) => (prev + 1) % capabilityImages.length);
+    }, remainingRef.current);
+
+    return () => {
+      clearTimeout(timer);
+      remainingRef.current -= Date.now() - startRef.current;
+    };
+  }, [activeIndex, isPaused]);
   const [component1Items] = useState([
     {
       divPadding: "1.375rem 0.75rem 1.5rem" as const,
@@ -81,10 +118,25 @@ const WhyChooseUs: NextPage<WhyChooseUsType> = ({ className = "" }) => {
         </h1>
       </div>
       <div className="site-container flex items-start pt-[0rem] px-[0rem] pb-[2.5rem] box-border gap-[2.5rem] max-w-full shrink-0 mq800:gap-[1.25rem] mq1350:flex-wrap">
-        <section className="flex-1 flex flex-col items-start relative isolate min-w-[26.813rem] text-left text-[1.5rem] text-[#1a2530] font-proxima mq800:min-w-full">
-          <div className="self-stretch border-[rgba(226,229,233,0.5)] border-solid border-t-[6px] overflow-hidden flex flex-col items-start pt-[1.062rem] px-[0.75rem] pb-[2rem] gap-[0.25rem] z-[0]">
+        <section
+          className="flex-1 flex flex-col items-start relative isolate min-w-[26.813rem] text-left text-[1.5rem] text-[#1a2530] font-proxima mq800:min-w-full"
+          onMouseEnter={() => setIsPaused(true)}
+          onMouseLeave={() => setIsPaused(false)}
+        >
+          <div className="self-stretch relative border-[rgba(226,229,233,0.5)] border-solid border-t-[6px] overflow-hidden flex flex-col items-start pt-[1.062rem] px-[0.75rem] pb-[2rem] gap-[0.25rem] z-[0]">
+            {activeIndex === 0 ? (
+              <div
+                className="capability-progress-bar absolute top-0 left-0 h-[0.375rem] bg-[#1a8cd5] z-[8]"
+                style={
+                  {
+                    "--capability-progress-ms": `${CAPABILITY_ROTATE_MS}ms`,
+                    animationPlayState: isPaused ? "paused" : "running",
+                  } as CSSProperties
+                }
+              />
+            ) : null}
             <button
-              onClick={() => setIsFirstOpen(!isFirstOpen)}
+              onClick={() => setActiveIndex(0)}
               className="self-stretch flex items-center gap-[1rem] cursor-pointer bg-transparent border-none p-0 text-left w-full mq800:flex-wrap"
             >
               <div className="h-[3.5rem] w-[3.5rem] rounded-[56px] bg-[rgba(26,140,213,0.1)] flex items-center justify-center py-[0.75rem] px-[0.625rem] box-border">
@@ -110,13 +162,17 @@ const WhyChooseUs: NextPage<WhyChooseUsType> = ({ className = "" }) => {
                   height={28}
                   sizes="100vw"
                   alt=""
-                  src={isFirstOpen ? "/chevron-up.svg" : "/chevron-down.svg"}
+                  src={
+                    activeIndex === 0 ? "/chevron-up.svg" : "/chevron-down.svg"
+                  }
                 />
               </div>
             </button>
             <div
               className={`self-stretch overflow-hidden transition-all duration-300 ${
-                isFirstOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
+                activeIndex === 0
+                  ? "max-h-[900px] opacity-100"
+                  : "max-h-0 opacity-0"
               }`}
             >
               <div className="self-stretch flex flex-col items-start py-[0rem] pl-[4.5rem] pr-[4rem] gap-[1rem] mq800:pl-[2.25rem] mq800:pr-[2rem] mq800:box-border mq450:pl-[1.25rem] mq450:pr-[1.25rem]">
@@ -128,6 +184,17 @@ const WhyChooseUs: NextPage<WhyChooseUsType> = ({ className = "" }) => {
                   simultaneously through one centralized interface. Wirero
                   simplifies large-scale distribution without requiring manual
                   coordination across multiple websites.
+                </div>
+                <div className="hidden mq800:block self-stretch relative h-[16rem] mq450:h-[12rem] rounded-[16px] overflow-hidden">
+                  <Image
+                    className="absolute inset-0 h-full w-full rounded-[16px] object-cover"
+                    loading="lazy"
+                    width={520}
+                    height={480}
+                    sizes="100vw"
+                    alt=""
+                    src={capabilityImages[0]}
+                  />
                 </div>
               </div>
             </div>
@@ -143,6 +210,11 @@ const WhyChooseUs: NextPage<WhyChooseUsType> = ({ className = "" }) => {
               icLayers48pxIconMaxHeight={item.icLayers48pxIconMaxHeight}
               dedicatedProjectMa={item.dedicatedProjectMa}
               withLotsOfUnique={item.withLotsOfUnique}
+              isOpen={activeIndex === index + 1}
+              onToggle={() => setActiveIndex(index + 1)}
+              image={capabilityImages[index + 1]}
+              progressDurationMs={CAPABILITY_ROTATE_MS}
+              progressPaused={isPaused}
             />
           ))}
           <div className="w-[41.25rem] border-[#e2e5e9] border-solid border-t-[1px] border-b-[1px] box-border overflow-x-auto hidden items-center py-[1.375rem] px-[0.75rem] gap-[1rem] z-[6]">
@@ -185,9 +257,23 @@ const WhyChooseUs: NextPage<WhyChooseUsType> = ({ className = "" }) => {
               />
             </div>
           </div>
-          <div className="w-[22.875rem] max-w-full h-[0.375rem] absolute !m-0 top-[0rem] left-[-0.187rem] border-[#1a8cd5] border-solid border-t-[6px] box-border z-[7]" />
         </section>
-        <div className="h-[30rem] w-[32.5rem] relative rounded-[20px] bg-[#5b5c5c] max-w-full mq800:min-w-full mq800:h-[20rem] mq450:h-[14rem] mq1350:flex-1" />
+        <div className="h-[30rem] w-[32.5rem] relative rounded-[20px] overflow-hidden max-w-full mq800:hidden mq1350:flex-1">
+          {capabilityImages.map((src, index) => (
+            <Image
+              key={src}
+              className={`absolute inset-0 h-full w-full rounded-[20px] object-cover transition-opacity duration-500 ${
+                activeIndex === index ? "opacity-100" : "opacity-0"
+              }`}
+              loading="lazy"
+              width={520}
+              height={480}
+              sizes="(max-width: 800px) 100vw, 520px"
+              alt=""
+              src={src}
+            />
+          ))}
+        </div>
       </div>
       <div className="site-container rounded-[20px] bg-color-white border-[#e2e5e9] border-solid border-t-[1px] box-border hidden items-center flex-wrap content-center pt-[2.375rem] px-[3.75rem] pb-[2.5rem] gap-[5rem] shrink-0 text-left text-[2.25rem] text-[#1a2530]">
         <div className="flex-1 overflow-hidden flex flex-col items-start gap-[0.75rem] min-w-[32.313rem] mq1125:min-w-full">

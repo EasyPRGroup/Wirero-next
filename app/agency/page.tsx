@@ -280,7 +280,21 @@ const Agency: NextPage = () => {
               infrastructure.
             </div>
           </section>
-          <section className="w-[35rem] shadow-[-2px_2px_16px_rgba(26,_38,_48,_0.06)] rounded-[16px] bg-color-white overflow-hidden shrink-0 flex flex-col items-start p-[3rem] box-border relative isolate gap-[1.5rem] max-w-full text-left mq1350:flex-1 mq1350:min-w-full mq1050:flex-1 mq1050:min-w-full">
+          <section className="w-[35rem] shadow-[0px_8px_28px_rgba(26,_38,_48,_0.08)] rounded-[16px] bg-color-white overflow-hidden shrink-0 flex flex-col items-start p-[3rem] box-border relative isolate gap-[1.5rem] max-w-full text-left mq1350:flex-1 mq1350:min-w-full mq1050:flex-1 mq1050:min-w-full">
+            <div
+              className="absolute top-0 right-0 w-[3.25rem] h-[3.25rem] z-[1] pointer-events-none"
+              style={{
+                background:
+                  "linear-gradient(225deg, #dbe8f4 0%, #dbe8f4 50%, transparent 50%)",
+              }}
+            />
+            <div
+              className="absolute bottom-0 left-0 w-[3.25rem] h-[3.25rem] z-[1] pointer-events-none"
+              style={{
+                background:
+                  "linear-gradient(45deg, #dbe8f4 0%, #dbe8f4 50%, transparent 50%)",
+              }}
+            />
             <div className="self-stretch flex items-center gap-[0.75rem] z-[2] shrink-0 mq750:flex-wrap">
               <div className="rounded-[48px] bg-[#eef5fb] flex items-center justify-center p-[0.625rem]">
                 <Image
@@ -379,8 +393,8 @@ const Agency: NextPage = () => {
           {integrationOptions.map((option, index) => (
             <section
               key={index}
-              className={`self-stretch overflow-hidden flex items-center gap-[3rem] max-w-full text-left mq1050:flex-wrap mq750:gap-[1.5rem] ${
-                index % 2 === 1 ? "mq1050:flex-wrap-reverse" : ""
+              className={`self-stretch overflow-hidden flex items-center gap-[3rem] max-w-full text-left mq1050:flex-col mq750:gap-[1.5rem] ${
+                index % 2 === 1 ? "flex-row-reverse" : ""
               }`}
             >
               <div className="flex-1 rounded-[16px] flex flex-col items-start py-[1.25rem] px-[0rem] box-border gap-[1.75rem] min-w-[23.25rem] mq750:min-w-full">

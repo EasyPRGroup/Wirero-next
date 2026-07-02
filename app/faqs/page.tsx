@@ -68,8 +68,8 @@ const Page = () => {
           <b className="relative tracking-[0.02em] leading-[1.25rem] uppercase text-left shrink-0">
             FAQs
           </b>
-          <div className="self-stretch flex flex-col items-start max-w-full shrink-0 text-[3.5rem] text-[#1a2530]">
-            <h1 className="m-0 w-full relative text-[length:inherit] leading-[4.25rem] font-bold font-[inherit] inline-block max-w-[61.25rem] shrink-0 mq1050:text-[2.813rem] mq1050:leading-[3.375rem] mq1050:max-w-full mq450:text-[2.125rem] mq450:leading-[2.563rem]">
+          <div className="self-stretch flex flex-col items-center max-w-full shrink-0 text-[3.5rem] text-[#1a2530]">
+            <h1 className="m-0 w-full relative text-[length:inherit] leading-[4.25rem] font-bold font-[inherit] max-w-[61.25rem] shrink-0 text-center mq1050:text-[2.813rem] mq1050:leading-[3.375rem] mq1050:max-w-full mq450:text-[2.125rem] mq450:leading-[2.563rem]">
               Everything you need to know before publishing
             </h1>
           </div>

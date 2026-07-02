@@ -130,6 +130,15 @@ button, a {
 .site-stack-block { row-gap: var(--stack-block); }
 .site-stack-tight { row-gap: var(--stack-tight); }
 
+/* Core Capabilities active-topic progress bar fill */
+@keyframes capability-progress {
+  from { width: 0%; }
+  to { width: 100%; }
+}
+.capability-progress-bar {
+  animation: capability-progress var(--capability-progress-ms, 5000ms) linear forwards;
+}
+
 /* Newsroom article body styling (parsed HTML content) */
 .prose-newsroom {
   width: 100%;

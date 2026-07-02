@@ -9,6 +9,11 @@ export type Component1Type = {
   dedicatedProjectMa?: string;
   withLotsOfUnique?: string;
   defaultOpen?: boolean;
+  isOpen?: boolean;
+  onToggle?: () => void;
+  image?: string;
+  progressDurationMs?: number;
+  progressPaused?: boolean;
 
   /** Style props */
   divPadding?: CSSProperties["padding"];
@@ -29,8 +34,16 @@ const Component1: NextPage<Component1Type> = ({
   dedicatedProjectMa,
   withLotsOfUnique,
   defaultOpen = false,
+  isOpen,
+  onToggle,
+  image,
+  progressDurationMs,
+  progressPaused = false,
 }) => {
-  const [isOpen, setIsOpen] = useState(defaultOpen);
+  const [internalOpen, setInternalOpen] = useState(defaultOpen);
+  const open = isOpen !== undefined ? isOpen : internalOpen;
+  const handleToggle = () =>
+    onToggle ? onToggle() : setInternalOpen((prev) => !prev);
 
   const div1Style: CSSProperties = useMemo(() => {
     return {
@@ -54,11 +67,22 @@ const Component1: NextPage<Component1Type> = ({
 
   return (
     <div
-      className={`self-stretch border-[#e2e5e9] border-solid border-t-[1px] overflow-hidden flex flex-col items-center pt-[1.375rem] px-[0.75rem] pb-[1.5rem] gap-[0rem] z-[1] text-left text-[1.5rem] text-[#1a2530] font-proxima mq800:flex-wrap ${className}`}
+      className={`self-stretch relative border-[#e2e5e9] border-solid border-t-[1px] overflow-hidden flex flex-col items-center pt-[1.375rem] px-[0.75rem] pb-[1.5rem] gap-[0rem] z-[1] text-left text-[1.5rem] text-[#1a2530] font-proxima mq800:flex-wrap ${className}`}
       style={div1Style}
     >
+      {open && progressDurationMs ? (
+        <div
+          className="capability-progress-bar absolute top-0 left-0 h-[0.375rem] bg-[#1a8cd5] z-[8]"
+          style={
+            {
+              "--capability-progress-ms": `${progressDurationMs}ms`,
+              animationPlayState: progressPaused ? "paused" : "running",
+            } as CSSProperties
+          }
+        />
+      ) : null}
       <button
-        onClick={() => setIsOpen(!isOpen)}
+        onClick={handleToggle}
         className="self-stretch flex items-center gap-[1rem] cursor-pointer bg-transparent border-none p-0 text-left w-full"
       >
         <div
@@ -87,17 +111,30 @@ const Component1: NextPage<Component1Type> = ({
             height={28}
             sizes="100vw"
             alt=""
-            src={isOpen ? "/chevron-up.svg" : "/chevron-down.svg"}
+            src={open ? "/chevron-up.svg" : "/chevron-down.svg"}
           />
         </div>
       </button>
       <div
         className={`self-stretch overflow-hidden transition-all duration-300 ${
-          isOpen ? "max-h-[500px] opacity-100 mt-[1rem]" : "max-h-0 opacity-0"
+          open ? "max-h-[900px] opacity-100 mt-[1rem]" : "max-h-0 opacity-0"
         }`}
       >
-        <div className="pl-[4.5rem] pr-[4rem] text-[1.125rem] leading-[1.75rem] text-[#4d565f] mq800:pl-[2.25rem] mq800:pr-[2rem]">
-          {withLotsOfUnique}
+        <div className="flex flex-col gap-[1rem] pl-[4.5rem] pr-[4rem] text-[1.125rem] leading-[1.75rem] text-[#4d565f] mq800:pl-[2.25rem] mq800:pr-[2rem]">
+          <div>{withLotsOfUnique}</div>
+          {image ? (
+            <div className="hidden mq800:block self-stretch relative h-[16rem] mq450:h-[12rem] rounded-[16px] overflow-hidden">
+              <Image
+                className="absolute inset-0 h-full w-full rounded-[16px] object-cover"
+                loading="lazy"
+                width={520}
+                height={480}
+                sizes="100vw"
+                alt=""
+                src={image}
+              />
+            </div>
+          ) : null}
         </div>
       </div>
     </div>

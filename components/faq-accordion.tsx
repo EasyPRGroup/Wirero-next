@@ -49,9 +49,9 @@ const FaqAccordion: React.FC<FaqAccordionProps> = ({ item, isOpen, onToggle }) =
         }`}
       >
         <div
-          className="flex items-center justify-center py-[0rem] pl-[0rem] pr-[2rem] text-[1.125rem] text-[#4d565f] font-proxima mq450:pr-0"
+          className="flex items-start pt-[0.25rem] pb-0 pl-0 pr-[2rem] text-[1.125rem] text-[#4d565f] font-proxima mq450:pr-0"
         >
-          <div className="flex-1 relative leading-[1.75rem]">{item.answer}</div>
+          <div className="flex-1 relative leading-[1.75rem] text-left">{item.answer}</div>
         </div>
       </div>
     </div>
