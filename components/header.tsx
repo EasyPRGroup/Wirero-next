@@ -186,7 +186,7 @@ const Header: NextPage<HeaderType> = ({
               <Link
                 key={index}
                 href={item.href}
-                className={`text-[1.25rem] leading-[2rem] font-medium transition-colors hover:text-[#0bc111] ${item.isActive ? "text-[#0bc111]" : "text-[#64676f]"}`}
+                className={`text-[1.25rem] leading-[2rem] font-medium transition-colors hover:text-color-white ${item.isActive ? "text-[#0bc111]" : "text-[#64676f]"}`}
                 onClick={closeMobileMenu}
               >
                 {item.features}

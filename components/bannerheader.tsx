@@ -99,7 +99,15 @@ const Bannerheader: NextPage<BannerheaderType> = ({ className = "" }) => {
         </section>
         <section className="h-[38.75rem] w-[41.875rem] flex items-start py-[5rem] pl-[0rem] pr-0 box-border max-w-full text-left text-[1.5rem] text-[#eee] font-proxima mq450:hidden mq800:hidden mq1350:hidden mq800:pt-[3.25rem] mq800:pb-[3.25rem] mq800:box-border mq1125:min-w-full mq1350:pr-0 mq1350:box-border mq1350:min-w-full mq1350:h-auto">
           <div className="ml-[-0.338rem] h-[26.938rem] w-[39.775rem] relative shrink-0 origin-top-left mq800:scale-[0.78] mq800:mb-[-5.9rem] mq450:scale-[0.45] mq450:mb-[-14.8rem]">
-            <div className="absolute h-full top-[0rem] bottom-[0rem] left-[2.819rem] rounded-tl-[110px] rounded-tr-none rounded-br-[110px] rounded-bl-none bg-[rgba(217,217,217,0.4)] w-[23.4rem]" />
+            <Image
+              className="absolute h-full top-[0rem] bottom-[0rem] left-[2.819rem] rounded-tl-[110px] rounded-tr-none rounded-br-[110px] rounded-bl-none w-[23.4rem] object-cover"
+              loading="lazy"
+              width={374}
+              height={431}
+              sizes="100vw"
+              alt=""
+              src="/hero-woman.jpg"
+            />
             <div className="absolute top-[19.256rem] left-[0rem] z-[2] [backdrop-filter:blur(10px)] rounded-xl bg-[rgba(24,31,37,0.8)] border-[rgba(122,131,140,0.2)] border-solid border-[1px] box-border w-[14.931rem] h-[5.281rem] flex items-start py-[0.875rem] pl-[1rem] pr-[0.812rem] gap-[0.75rem]">
               <div className="rounded-[100px] bg-[#e4e0f7] flex items-center justify-center p-[0.5rem] gap-[0.375rem] shrink-0">
                 <Image
@@ -159,14 +167,26 @@ const Bannerheader: NextPage<BannerheaderType> = ({ className = "" }) => {
                 </div>
               </div>
             </div>
-            <Image
-              className="absolute h-full top-[0rem] bottom-[0rem] left-[22.469rem] max-h-full w-[12.988rem] z-[1]"
-              width={207.8}
-              height={431}
-              sizes="100vw"
-              alt=""
-              src="/Rectangle-33.svg"
-            />
+            <div
+              className="absolute h-full top-[0rem] bottom-[0rem] left-[22.469rem] max-h-full w-[12.988rem] z-[1] overflow-hidden"
+              style={{
+                maskImage: "url('/Rectangle-33.svg')",
+                maskSize: "100% 100%",
+                maskRepeat: "no-repeat",
+                WebkitMaskImage: "url('/Rectangle-33.svg')",
+                WebkitMaskSize: "100% 100%",
+                WebkitMaskRepeat: "no-repeat",
+              }}
+            >
+              <Image
+                className="h-full w-full object-cover object-right"
+                width={208}
+                height={431}
+                sizes="100vw"
+                alt=""
+                src="/hero-woman.jpg"
+              />
+            </div>
             <div className="absolute top-[2.338rem] left-[30.119rem] z-[2] [backdrop-filter:blur(10px)] rounded-xl bg-[rgba(24,31,37,0.8)] border-[rgba(122,131,140,0.2)] border-solid border-[1px] flex flex-col items-center py-[0.875rem] px-[1rem] gap-[0.75rem] text-center text-[1.125rem]">
               <div className="rounded-[100px] bg-[#e4e0f7] flex items-center justify-center p-[0.5rem] gap-[0.375rem] shrink-0">
                 <Image

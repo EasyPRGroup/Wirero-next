@@ -28,7 +28,7 @@ const Option: NextPage<OptionType> = ({
     !!showOption && (
       <Link
         href={href}
-        className={`flex items-center justify-center py-[0rem] px-[0.25rem] shrink-0 text-left text-[1.125rem] font-proxima ${className} ${isActive ? "text-color-white font-semibold" : "text-[#64676f] font-semibold hover:text-[#4d565f]"}`}
+        className={`flex items-center justify-center py-[0rem] px-[0.25rem] shrink-0 text-left text-[1.125rem] font-proxima transition-colors ${className} ${isActive ? "text-color-white font-semibold" : "text-[#64676f] font-semibold hover:text-color-white"}`}
       >
         <div className={`relative leading-[1.625rem] font-semibold ${isActive ? "text-color-white" : ""}`}>
           {features}

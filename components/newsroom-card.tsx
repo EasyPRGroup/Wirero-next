@@ -21,7 +21,7 @@ const NewsroomCard: NextPage<NewsroomCardType> = ({
   return (
     <Link
       href={href}
-      className={`mb-[1.5rem] block break-inside-avoid rounded-[12px] bg-color-white border-[#e2e5e9] border-solid border-[1px] box-border py-[1.25rem] px-[1.25rem] no-underline hover:shadow-[0px_2px_12px_rgba(26,38,48,0.12)] transition-shadow ${className}`}
+      className={`flex flex-col h-full rounded-[12px] bg-color-white border-[#e2e5e9] border-solid border-[1px] box-border py-[1.25rem] px-[1.25rem] no-underline hover:shadow-[0px_2px_12px_rgba(26,38,48,0.12)] transition-shadow ${className}`}
     >
       {image ? (
         // eslint-disable-next-line @next/next/no-img-element

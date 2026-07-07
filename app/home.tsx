@@ -32,7 +32,7 @@ const Home: NextPage = () => {
               height={440}
               sizes="(max-width: 1350px) 50vw, 360px"
               alt=""
-              src="/IMG-BG@2x.png"
+              src="/wirero-distribute-content.jpg"
             />
             <Image
               className="absolute left-0 top-[5rem] h-[21rem] w-[39.5%] rounded-[20px] object-cover"
@@ -40,7 +40,7 @@ const Home: NextPage = () => {
               height={336}
               sizes="(max-width: 1350px) 40vw, 248px"
               alt=""
-              src="/IMG-BG@2x.png"
+              src="/wirero-checklist-card.jpg"
             />
           </div>
         </div>

@@ -469,7 +469,7 @@ const Network: NextPage = () => {
           </div>
         </div>
 
-        <div className="w-full max-w-[76.25rem] flex items-center justify-center gap-[4.25rem] mq1050:flex-wrap mq750:gap-[2.125rem]">
+        <div className="w-full max-w-[76.25rem] flex items-center justify-center gap-[4.25rem] mq1050:flex-col mq1050:gap-[2.5rem] mq750:gap-[2.125rem]">
           {/* Left visual */}
           <div className="h-[20rem] w-[24rem] relative overflow-hidden max-w-full shrink-0 mq750:hidden mq450:scale-[0.85]">
             {/* Decorative green dots */}
@@ -523,7 +523,7 @@ const Network: NextPage = () => {
           </div>
 
           {/* Right checklist */}
-          <div className="flex-1 flex flex-col items-start gap-[1.75rem] min-w-0 text-left text-[1.875rem] mq750:min-w-full">
+          <div className="flex flex-col items-start gap-[1.75rem] min-w-0 text-left text-[1.875rem] mq1050:w-full mq1050:max-w-[26rem]">
             <h2 className="m-0 relative text-[length:inherit] leading-[2.375rem] font-bold font-[inherit] mq450:text-[1.375rem] mq450:leading-[1.75rem]">
               You decide
             </h2>

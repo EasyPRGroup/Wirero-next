@@ -10,7 +10,7 @@ import {
 
 export type NewsroomType = {
   className?: string;
-  /** Number of articles shown per page (backend-driven, fixed at 10) */
+  /** Number of articles shown per page (fixed at 9) */
   pageSize?: number;
 };
 
@@ -79,7 +79,7 @@ function getPageNumbers(current: number, total: number): (number | "...")[] {
 
 const Newsroom: NextPage<NewsroomType> = ({
   className = "",
-  pageSize = 10,
+  pageSize = 9,
 }) => {
   const [articles, setArticles] = useState<Article[]>([]);
   const [page, setPage] = useState(1);
@@ -162,7 +162,7 @@ const Newsroom: NextPage<NewsroomType> = ({
             No articles available right now.
           </div>
         ) : (
-          <div className="w-full columns-3 gap-[1.5rem] mq1050:columns-2 mq750:columns-1 text-left">
+          <div className="w-full grid grid-cols-3 gap-[1.5rem] mq1050:grid-cols-2 mq750:grid-cols-1 text-left">
             {articles.map((article) => (
               <NewsroomCard
                 key={String(article.id ?? article.slug ?? article.title)}
