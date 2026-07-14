@@ -17,11 +17,11 @@ const FrameComponent2: NextPage<FrameComponent2Type> = ({ className = "" }) => {
         </b>
         <div className="self-stretch flex flex-col items-start gap-[1rem] text-[1.125rem] text-[#4d565f]">
           <h3 className="m-0 self-stretch relative text-[2.25rem] leading-[3rem] font-bold font-[inherit] text-[#1a2530] mq450:text-[1.375rem] mq450:leading-[1.813rem] mq800:text-[1.813rem] mq800:leading-[2.375rem]">
-            A distribution infrastructure—not a traditional newswire.
+            A distribution infrastructure, not a traditional newswire.
           </h3>
           <div className="w-[26.5rem] hidden flex-col items-start gap-[0.75rem]">
             <div className="self-stretch relative leading-[1.75rem]">
-              Wirero is built to give you access — not make unrealistic claims.
+              Wirero is built to give you access, not make unrealistic claims.
             </div>
             <div className="self-stretch relative leading-[1.75rem]">
               Instead of promising reach or media coverage, we provide a

@@ -261,7 +261,7 @@ export function postHref(post: BlogPost): string {
 }
 
 // ---------------------------------------------------------------------------
-// Mock/demo content — used only until the real blog API is configured.
+// Mock/demo content, used only until the real blog API is configured.
 // ---------------------------------------------------------------------------
 
 const MOCK_BASE_POSTS: BlogPost[] = [

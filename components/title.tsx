@@ -84,7 +84,7 @@ const Title: NextPage<TitleType> = ({ className = "" }) => {
           Trusted Publishing Platforms
         </h2>
         <div className="w-[51.25rem] relative text-[1.25rem] leading-[2rem] text-[rgba(238,238,238,0.8)] hidden shrink-0 mq450:text-[1rem] mq450:leading-[1.625rem]">
-          Wirero is structured for targeted reach—not random placement.
+          Wirero is structured for targeted reach, not random placement.
         </div>
       </div>
       <div className="self-stretch overflow-hidden flex flex-col items-center gap-[1.25rem] text-left text-[1.5rem]">

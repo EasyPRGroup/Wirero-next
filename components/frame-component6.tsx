@@ -14,7 +14,7 @@ export type FrameComponent6Type = {
 const FrameComponent6: NextPage<FrameComponent6Type> = ({
   className = "",
   eyebrow = "TRANSPARENCY",
-  title = "What Wirero is—and what it isn’t",
+  title = "What Wirero is, and what it isn’t",
   positiveLabel = "What it is",
   positiveItems = [
     "Built for distribution scale, not editorial placement",

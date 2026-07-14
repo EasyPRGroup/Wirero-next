@@ -49,7 +49,7 @@ const CtaSection: NextPage<CtaSectionType> = ({ className = "" }) => {
               </h2>
               <div className="self-stretch relative text-[1.125rem] leading-[1.75rem] text-[#4d575f]">
                 Access the distribution network through a flexible subscription
-                model — designed for ongoing usage without complexity.
+                model, designed for ongoing usage without complexity.
               </div>
             </div>
           </div>

@@ -32,7 +32,7 @@ const Bannerheader: NextPage<BannerheaderType> = ({ className = "" }) => {
                 <div className="self-stretch relative text-[1.25rem] leading-[2rem] text-[rgba(238,238,238,0.5)] mq450:text-[1rem] mq450:leading-[1.625rem]">
                   A dedicated multi-domain publishing infrastructure for
                   agencies, platforms, and brands that need scalable
-                  distribution—without relying on third-party news wires.
+                  distribution, without relying on third-party news wires.
                 </div>
               </div>
               <div className="cursor-pointer [border:none] p-0 bg-[transparent] flex items-start">

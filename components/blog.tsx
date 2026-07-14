@@ -126,7 +126,7 @@ const Blog: NextPage<BlogType> = ({ className = "", pageSize = 9 }) => {
           }
         }
       } else {
-        // No API configured yet — show bundled demo content.
+        // No API configured yet, show bundled demo content.
         const fallback = getMockBlogPosts(page, pageSize);
         if (active) {
           setPosts(fallback.posts);

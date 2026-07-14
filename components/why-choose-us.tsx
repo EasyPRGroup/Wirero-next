@@ -80,7 +80,7 @@ const WhyChooseUs: NextPage<WhyChooseUsType> = ({ className = "" }) => {
       icLayers48pxIconMaxHeight: "100%" as const,
       dedicatedProjectMa: "Custom Anchor Support",
       withLotsOfUnique:
-        "Wirero is designed as a long-term platform for continuous distribution. As your content needs grow, the platform scales with you—supporting repeated use rather than one-time campaigns.",
+        "Wirero is designed as a long-term platform for continuous distribution. As your content needs grow, the platform scales with you, supporting repeated use rather than one-time campaigns.",
     },
     {
       divPadding: "1.375rem 0.75rem" as const,

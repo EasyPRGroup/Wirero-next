@@ -55,7 +55,7 @@ const PressReleases: NextPage<PressReleasesType> = ({ className = "" }) => {
             Real Distribution. Real Results.
           </h2>
           <div className="self-stretch relative text-[1.125rem] leading-[1.75rem] font-proxima text-[#4d575f]">
-            See how content is distributed across the Wirero network — and how
+            See how content is distributed across the Wirero network, and how
             teams use it to scale.
           </div>
         </div>

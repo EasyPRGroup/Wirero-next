@@ -71,7 +71,7 @@ const Home: NextPage = () => {
               Precision distribution across 10 industry-specific networks
             </h1>
             <h3 className="m-0 self-stretch relative text-[1.25rem] leading-[2rem] font-normal font-[inherit] text-[rgba(238,238,238,0.8)] mq450:text-[1rem] mq450:leading-[1.625rem]">
-              Wirero is structured for targeted reach—not random placement.
+              Wirero is structured for targeted reach, not random placement.
             </h3>
           </div>
         </div>
