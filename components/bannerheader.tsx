@@ -109,8 +109,8 @@ const Bannerheader: NextPage<BannerheaderType> = ({ className = "" }) => {
               />
             </div>
 
-            <div
-              className="absolute inset-y-0 right-0 w-[20%] bg-[#686d70]"
+            {/* <div
+              className="absolute inset-y-0 right-0 h-full w-[20%] bg-[#686d70]"
               style={{
                 maskImage: "url('/Rectangle-33.svg')",
                 maskSize: "100% 100%",
@@ -119,7 +119,7 @@ const Bannerheader: NextPage<BannerheaderType> = ({ className = "" }) => {
                 WebkitMaskSize: "100% 100%",
                 WebkitMaskRepeat: "no-repeat",
               }}
-            />
+            /> */}
 
             <div className="absolute bottom-[9%] left-0 z-[2] flex w-[15rem] items-center gap-[0.75rem] rounded-xl border border-solid border-[rgba(122,131,140,0.2)] bg-[rgba(24,31,37,0.92)] px-[1rem] py-[0.875rem] shadow-lg [backdrop-filter:blur(10px)] mq450:w-[11.5rem] mq450:gap-[0.5rem] mq450:px-[0.75rem] mq450:py-[0.625rem]">
               <div className="flex shrink-0 items-center justify-center rounded-full bg-[#e4e0f7] p-[0.5rem] mq450:p-[0.375rem]">
@@ -142,8 +142,8 @@ const Bannerheader: NextPage<BannerheaderType> = ({ className = "" }) => {
               </div>
             </div>
 
-            <div className="absolute right-[-10%] top-[9%] z-[2] flex w-[9.5rem] flex-col items-center gap-[0.75rem] rounded-xl border border-solid border-[rgba(122,131,140,0.2)] bg-[rgba(24,31,37,0.92)] px-[1rem] py-[0.875rem] text-center text-[1.125rem] shadow-lg [backdrop-filter:blur(10px)] mq450:right-[-3%] mq450:w-[7.25rem] mq450:gap-[0.5rem] mq450:px-[0.625rem] mq450:py-[0.625rem]">
-              <div className="flex shrink-0 items-center justify-center rounded-full bg-[#e4e0f7] p-[0.5rem] mq450:p-[0.375rem]">
+            <div className="absolute right-[0%] top-[9%] z-[2] flex min-h-[8rem] w-[10rem] flex-col items-center justify-center gap-[0.75rem] rounded-l-[1.25rem] border-y border-l border-solid border-[rgba(122,131,140,0.2)] bg-[#242a2f] px-[1rem] py-[0.875rem] text-center text-[1.125rem] shadow-lg mq450:right-[-3%] mq450:min-h-[6.75rem] mq450:w-[7.5rem] mq450:gap-[0.5rem] mq450:rounded-l-[1rem] mq450:px-[0.625rem] mq450:py-[0.625rem]">
+              <div className="flex h-[2.625rem] w-[2.625rem] shrink-0 items-center justify-center rounded-full border border-solid border-[rgba(190,180,226,0.7)] bg-[#e4e0f7] shadow-[0_0_0_3px_rgba(24,31,37,0.25)] mq450:h-[2rem] mq450:w-[2rem]">
                 <Image
                   className="relative h-[1.5rem] w-[1.5rem] mq450:h-[1.125rem] mq450:w-[1.125rem]"
                   width={24}
