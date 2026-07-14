@@ -46,7 +46,7 @@ const PressReleases: NextPage<PressReleasesType> = ({ className = "" }) => {
     <section
       className={`site-section self-stretch flex flex-col items-center box-border gap-[4.25rem] max-w-full mq450:gap-[1.063rem] mq800:gap-[2.125rem] ${className}`}
     >
-      <section className="w-[60rem] max-w-full overflow-hidden flex flex-col items-center gap-[1.5rem] text-left text-[1rem] text-[#0bc111] font-proxima">
+      <section className="w-full max-w-[60rem] min-w-0 overflow-hidden flex flex-col items-center gap-[1.5rem] text-left text-[1rem] text-[#0bc111] font-proxima">
         <b className="relative tracking-[0.02em] leading-[1.25rem] uppercase">
           Recently Distributed
         </b>
@@ -67,7 +67,7 @@ const PressReleases: NextPage<PressReleasesType> = ({ className = "" }) => {
               ref={scrollRef}
               className="self-stretch overflow-x-auto flex items-center justify-center gap-[2.5rem] max-w-full z-[0] shrink-0 mq800:gap-[1.25rem] scroll-smooth snap-x snap-mandatory touch-pan-x [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
               <section className="h-[30rem] w-[65rem] rounded-[28px] bg-[rgba(242,240,251,0.08)] border-[#f4f7fa] border-solid border-[4px] box-border overflow-hidden shrink-0 flex items-start justify-center [row-gap:20px] max-w-full text-left text-[1.125rem] text-[#1a2530] font-proxima snap-start mq1125:h-auto mq1125:flex-wrap">
-                <div className="self-stretch flex-1 bg-color-white flex flex-col items-start justify-between p-[1.25rem] box-border gap-[1.25rem] min-w-[17.875rem] mq450:min-w-0">
+                <div className="self-stretch flex-1 bg-color-white flex flex-col items-start justify-between p-[1.25rem] box-border gap-[1.25rem] min-w-0">
                   <div className="w-[29.063rem] rounded-lg hidden flex-col items-start justify-center py-[0.25rem] px-[0.5rem] box-border gap-[0.5rem] shrink-0 text-[#4d575f]">
                     <div className="rounded-[40px] flex items-center gap-[0.375rem] shrink-0">
                       <Image
@@ -148,7 +148,7 @@ const PressReleases: NextPage<PressReleasesType> = ({ className = "" }) => {
                             src="/solar-global-bold3.svg"
                           />
                         </div>
-                        <h3 className="m-0 flex-1 relative text-[length:inherit] leading-[1.875rem] inline-block min-w-[13.188rem] shrink-0 font-[inherit] mq450:text-[1.188rem] mq450:leading-[1.5rem]">
+                        <h3 className="m-0 flex-1 relative text-[length:inherit] leading-[1.875rem] inline-block min-w-0 shrink-0 font-[inherit] mq450:text-[1.188rem] mq450:leading-[1.5rem]">
                           <span className="font-semibold leading-[1.25rem]">{`Published on `}</span>
                           <b className="text-transparent !bg-clip-text [background:linear-gradient(180deg,_#0461c3,_#0bc111)] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] leading-[1.25rem]">
                             25+ websites
@@ -174,7 +174,7 @@ const PressReleases: NextPage<PressReleasesType> = ({ className = "" }) => {
                             src="/target-fill1.svg"
                           />
                         </div>
-                        <h3 className="m-0 flex-1 relative text-[length:inherit] leading-[1.875rem] inline-block min-w-[13.188rem] shrink-0 font-[inherit] mq450:text-[1.188rem] mq450:leading-[1.5rem]">
+                        <h3 className="m-0 flex-1 relative text-[length:inherit] leading-[1.875rem] inline-block min-w-0 shrink-0 font-[inherit] mq450:text-[1.188rem] mq450:leading-[1.5rem]">
                           <span className="font-semibold leading-[1.25rem]">{`Reached `}</span>
                           <b className="text-transparent !bg-clip-text [background:linear-gradient(180deg,_#0461c3,_#0bc111)] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] leading-[1.25rem]">
                             Multiple
@@ -204,7 +204,7 @@ const PressReleases: NextPage<PressReleasesType> = ({ className = "" }) => {
                             src="/stack-fill.svg"
                           />
                         </div>
-                        <h3 className="m-0 flex-1 relative text-[length:inherit] leading-[1.875rem] inline-block min-w-[13.188rem] shrink-0 font-[inherit] mq450:text-[1.188rem] mq450:leading-[1.5rem]">
+                        <h3 className="m-0 flex-1 relative text-[length:inherit] leading-[1.875rem] inline-block min-w-0 shrink-0 font-[inherit] mq450:text-[1.188rem] mq450:leading-[1.5rem]">
                           <span className="font-semibold leading-[1.25rem]">{`Categorized `}</span>
                           <b className="text-transparent !bg-clip-text [background:linear-gradient(180deg,_#0461c3,_#0bc111)] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] leading-[1.25rem]">
                             Distribution
@@ -285,7 +285,7 @@ const PressReleases: NextPage<PressReleasesType> = ({ className = "" }) => {
                 </div>
               </section>
               <div className="h-[32.25rem] w-[65rem] shadow-[0px_2px_16px_rgba(26,_38,_48,_0.12)] rounded-[28px] bg-[rgba(242,240,251,0.08)] border-color-white border-solid border-[4px] box-border overflow-hidden shrink-0 flex items-start justify-center [row-gap:20px] max-w-full snap-start mq1125:h-auto mq1125:flex-wrap">
-                <section className="self-stretch flex-1 bg-color-white flex flex-col items-start justify-between p-[1.25rem] box-border gap-[1.25rem] min-w-[17.875rem] mq450:min-w-0 text-left text-[1.125rem] text-[#4d575f] font-proxima">
+                <section className="self-stretch flex-1 bg-color-white flex flex-col items-start justify-between p-[1.25rem] box-border gap-[1.25rem] min-w-0 text-left text-[1.125rem] text-[#4d575f] font-proxima">
                   <div className="w-[29.063rem] rounded-lg hidden flex-col items-start justify-center py-[0.25rem] px-[0.5rem] box-border gap-[0.5rem] shrink-0">
                     <div className="rounded-[40px] flex items-center gap-[0.375rem] shrink-0">
                       <Image
@@ -366,7 +366,7 @@ const PressReleases: NextPage<PressReleasesType> = ({ className = "" }) => {
                             src="/solar-global-bold3.svg"
                           />
                         </div>
-                        <h3 className="m-0 flex-1 relative text-[length:inherit] leading-[1.875rem] inline-block min-w-[13.188rem] shrink-0 font-[inherit] mq450:text-[1.188rem] mq450:leading-[1.5rem]">
+                        <h3 className="m-0 flex-1 relative text-[length:inherit] leading-[1.875rem] inline-block min-w-0 shrink-0 font-[inherit] mq450:text-[1.188rem] mq450:leading-[1.5rem]">
                           <span className="font-semibold leading-[1.25rem]">{`Published on `}</span>
                           <b className="text-transparent !bg-clip-text [background:linear-gradient(180deg,_#0461c3,_#0bc111)] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] leading-[1.25rem]">
                             25+ websites
@@ -392,7 +392,7 @@ const PressReleases: NextPage<PressReleasesType> = ({ className = "" }) => {
                             src="/target-fill1.svg"
                           />
                         </div>
-                        <h3 className="m-0 flex-1 relative text-[length:inherit] leading-[1.875rem] inline-block min-w-[13.188rem] shrink-0 font-[inherit] mq450:text-[1.188rem] mq450:leading-[1.5rem]">
+                        <h3 className="m-0 flex-1 relative text-[length:inherit] leading-[1.875rem] inline-block min-w-0 shrink-0 font-[inherit] mq450:text-[1.188rem] mq450:leading-[1.5rem]">
                           <span className="font-semibold leading-[1.25rem]">{`Reached `}</span>
                           <b className="text-transparent !bg-clip-text [background:linear-gradient(180deg,_#0461c3,_#0bc111)] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] leading-[1.25rem]">
                             Multiple
@@ -422,7 +422,7 @@ const PressReleases: NextPage<PressReleasesType> = ({ className = "" }) => {
                             src="/stack-fill.svg"
                           />
                         </div>
-                        <h3 className="m-0 flex-1 relative text-[length:inherit] leading-[1.875rem] inline-block min-w-[13.063rem] shrink-0 font-[inherit] mq450:text-[1.188rem] mq450:leading-[1.5rem]">
+                        <h3 className="m-0 flex-1 relative text-[length:inherit] leading-[1.875rem] inline-block min-w-0 shrink-0 font-[inherit] mq450:text-[1.188rem] mq450:leading-[1.5rem]">
                           <span className="font-semibold leading-[1.25rem]">{`Categorized `}</span>
                           <b className="text-transparent !bg-clip-text [background:linear-gradient(180deg,_#0461c3,_#0bc111)] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] leading-[1.25rem]">
                             Distribution
@@ -503,7 +503,7 @@ const PressReleases: NextPage<PressReleasesType> = ({ className = "" }) => {
                 </section>
               </div>
               <section className="h-[30rem] w-[65rem] rounded-[28px] bg-[rgba(242,240,251,0.08)] border-[#f4f7fa] border-solid border-[4px] box-border overflow-hidden shrink-0 flex items-start justify-center [row-gap:20px] max-w-full text-left text-[1.125rem] text-[#4d575f] font-proxima snap-start mq1125:h-auto mq1125:flex-wrap">
-                <div className="self-stretch flex-1 bg-color-white flex flex-col items-start justify-between p-[1.25rem] box-border gap-[1.25rem] min-w-[17.875rem] mq450:min-w-0">
+                <div className="self-stretch flex-1 bg-color-white flex flex-col items-start justify-between p-[1.25rem] box-border gap-[1.25rem] min-w-0">
                   <div className="w-[29.063rem] rounded-lg hidden flex-col items-start justify-center py-[0.25rem] px-[0.5rem] box-border gap-[0.5rem] shrink-0">
                     <div className="rounded-[40px] flex items-center gap-[0.375rem] shrink-0">
                       <Image
@@ -584,7 +584,7 @@ const PressReleases: NextPage<PressReleasesType> = ({ className = "" }) => {
                             src="/solar-global-bold3.svg"
                           />
                         </div>
-                        <h3 className="m-0 flex-1 relative text-[length:inherit] leading-[1.875rem] inline-block min-w-[4.125rem] shrink-0 font-[inherit] mq450:text-[1.188rem] mq450:leading-[1.5rem]">
+                        <h3 className="m-0 flex-1 relative text-[length:inherit] leading-[1.875rem] inline-block min-w-0 shrink-0 font-[inherit] mq450:text-[1.188rem] mq450:leading-[1.5rem]">
                           <span className="font-semibold leading-[1.25rem]">{`Published on `}</span>
                           <b className="text-transparent !bg-clip-text [background:linear-gradient(180deg,_#0461c3,_#0bc111)] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] leading-[1.25rem]">
                             25+ websites
@@ -610,7 +610,7 @@ const PressReleases: NextPage<PressReleasesType> = ({ className = "" }) => {
                             src="/target-fill1.svg"
                           />
                         </div>
-                        <h3 className="m-0 flex-1 relative text-[length:inherit] leading-[1.875rem] inline-block min-w-[4.125rem] shrink-0 font-[inherit] mq450:text-[1.188rem] mq450:leading-[1.5rem]">
+                        <h3 className="m-0 flex-1 relative text-[length:inherit] leading-[1.875rem] inline-block min-w-0 shrink-0 font-[inherit] mq450:text-[1.188rem] mq450:leading-[1.5rem]">
                           <span className="font-semibold leading-[1.25rem]">{`Reached `}</span>
                           <b className="text-transparent !bg-clip-text [background:linear-gradient(180deg,_#0461c3,_#0bc111)] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] leading-[1.25rem]">
                             Multiple
@@ -640,7 +640,7 @@ const PressReleases: NextPage<PressReleasesType> = ({ className = "" }) => {
                             src="/stack-fill.svg"
                           />
                         </div>
-                        <h3 className="m-0 flex-1 relative text-[length:inherit] leading-[1.875rem] inline-block min-w-[4.125rem] shrink-0 font-[inherit] mq450:text-[1.188rem] mq450:leading-[1.5rem]">
+                        <h3 className="m-0 flex-1 relative text-[length:inherit] leading-[1.875rem] inline-block min-w-0 shrink-0 font-[inherit] mq450:text-[1.188rem] mq450:leading-[1.5rem]">
                           <span className="font-semibold leading-[1.25rem]">{`Categorized `}</span>
                           <b className="text-transparent !bg-clip-text [background:linear-gradient(180deg,_#0461c3,_#0bc111)] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] leading-[1.25rem]">
                             Distribution

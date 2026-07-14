@@ -109,17 +109,17 @@ const WhyChooseUs: NextPage<WhyChooseUsType> = ({ className = "" }) => {
     <section
       className={`site-section self-stretch bg-[#f7fafd] flex flex-col items-center box-border gap-[4.75rem] max-w-full text-center text-[1rem] text-[#0bc111] font-proxima mq450:gap-[1.188rem] mq800:gap-[2.375rem] ${className}`}
     >
-      <div className="w-[60rem] max-w-full overflow-hidden flex flex-col items-center gap-[1.5rem] shrink-0">
+      <div className="w-full max-w-[60rem] min-w-0 overflow-hidden flex flex-col items-center gap-[1.5rem] shrink-0">
         <b className="self-stretch relative tracking-[0.02em] leading-[1.25rem] uppercase">
           Core Capabilities
         </b>
-        <h1 className="m-0 self-stretch relative text-[3.5rem] leading-[4.25rem] font-bold font-[inherit] text-[#1a2530] mq450:text-[2.125rem] mq450:leading-[2.563rem] mq800:text-[2.813rem] mq800:leading-[3.375rem]">
+        <h1 className="m-0 self-stretch relative fluid-h2 font-bold font-[inherit] text-[#1a2530]">
           Infrastructure Built for Scalable Distribution
         </h1>
       </div>
       <div className="site-container flex items-start pt-[0rem] px-[0rem] pb-[2.5rem] box-border gap-[2.5rem] max-w-full shrink-0 mq800:gap-[1.25rem] mq1350:flex-wrap">
         <section
-          className="flex-1 flex flex-col items-start relative isolate min-w-[26.813rem] text-left text-[1.5rem] text-[#1a2530] font-proxima mq800:min-w-full"
+          className="flex-1 flex flex-col items-start relative isolate min-w-0 max-w-full text-left text-[1.5rem] text-[#1a2530] font-proxima"
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => setIsPaused(false)}
         >
@@ -150,7 +150,7 @@ const WhyChooseUs: NextPage<WhyChooseUsType> = ({ className = "" }) => {
                   src="/solar-global-bold2.svg"
                 />
               </div>
-              <div className="flex-1 flex flex-col items-start gap-[1rem] min-w-[20.313rem] mq800:min-w-0">
+              <div className="flex-1 flex flex-col items-start gap-[1rem] min-w-0">
                 <h3 className="m-0 self-stretch relative text-[length:inherit] leading-[1.875rem] font-bold font-[inherit] shrink-0 mq450:text-[1.188rem] mq450:leading-[1.5rem]">
                   Multi-Domain Publishing
                 </h3>
@@ -258,7 +258,7 @@ const WhyChooseUs: NextPage<WhyChooseUsType> = ({ className = "" }) => {
             </div>
           </div>
         </section>
-        <div className="h-[30rem] w-[32.5rem] relative rounded-[20px] overflow-hidden max-w-full mq800:hidden mq1350:flex-1">
+        <div className="h-[min(30rem,55vw)] w-full max-w-[32.5rem] relative rounded-[20px] overflow-hidden min-w-0 mq800:hidden mq1350:flex-1">
           {capabilityImages.map((src, index) => (
             <Image
               key={src}
@@ -276,7 +276,7 @@ const WhyChooseUs: NextPage<WhyChooseUsType> = ({ className = "" }) => {
         </div>
       </div>
       <div className="site-container rounded-[20px] bg-color-white border-[#e2e5e9] border-solid border-t-[1px] box-border hidden items-center flex-wrap content-center pt-[2.375rem] px-[3.75rem] pb-[2.5rem] gap-[5rem] shrink-0 text-left text-[2.25rem] text-[#1a2530]">
-        <div className="flex-1 overflow-hidden flex flex-col items-start gap-[0.75rem] min-w-[32.313rem] mq1125:min-w-full">
+        <div className="flex-1 overflow-hidden flex flex-col items-start gap-[0.75rem] min-w-0 max-w-full">
           <b className="self-stretch relative leading-[3rem] mq450:text-[1.375rem] mq450:leading-[1.813rem] mq800:text-[1.813rem] mq800:leading-[2.375rem]">
             Start Distributing Your Content Today
           </b>

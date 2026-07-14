@@ -81,7 +81,7 @@ const Page = () => {
       <main className="site-section-hero self-stretch">
         <div className="site-container flex items-start flex-wrap content-start box-border gap-[4.25rem] max-w-full text-left text-[1.75rem] text-[#1a2530] font-proxima mq750:gap-[2.125rem] mq450:gap-[1.063rem]">
         {/* Categories Sidebar */}
-        <section className="flex-1 flex flex-col items-start gap-[1.25rem] min-w-[9.5rem] max-w-[23.75rem] text-left text-[1.25rem] text-color-white font-proxima">
+        <section className="flex-1 flex flex-col items-start gap-[1.25rem] min-w-0 max-w-[23.75rem] text-left text-[1.25rem] text-color-white font-proxima">
           {faqCategories.map((category, index) => (
             <FaqCategory
               key={index}
@@ -94,7 +94,7 @@ const Page = () => {
         </section>
 
         {/* FAQ Items */}
-        <div className="flex-1 flex flex-col items-start gap-[1.25rem] min-w-[20.938rem] mq450:min-w-full max-w-full">
+        <div className="flex-1 flex flex-col items-start gap-[1.25rem] min-w-0 max-w-full">
           {faqItems.map((item, index) => (
             <FaqAccordion
               key={index}

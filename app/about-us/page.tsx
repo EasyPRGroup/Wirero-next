@@ -186,7 +186,7 @@ const AboutUs: NextPage = () => {
               <h1 className="m-0 w-[32.5rem] relative text-[length:inherit] leading-[4.25rem] font-bold font-[inherit] inline-block shrink-0 max-w-full mq1350:w-full mq1350:min-w-full mq1050:flex-1 mq1050:text-[2.813rem] mq1050:leading-[3.375rem] mq1050:min-w-full mq800:text-[2.375rem] mq800:leading-[2.875rem] mq450:text-[2.125rem] mq450:leading-[2.563rem]">
                 Built for scalable content distribution
               </h1>
-              <div className="flex-1 flex flex-col items-start gap-[1.25rem] min-w-[25.688rem] text-[1.125rem] text-[#1A2530] mq1350:min-w-full mq750:min-w-full mq450:text-[1rem]">
+              <div className="flex-1 flex flex-col items-start gap-[1.25rem] min-w-0 max-w-full text-[1.125rem] text-[#1A2530] mq450:text-[1rem]">
                 <div className="self-stretch relative leading-[1.75rem]">
                   Wirero is a multi-domain publishing infrastructure designed
                   for agencies, platforms, and brands that need fast, controlled
@@ -364,7 +364,7 @@ const AboutUs: NextPage = () => {
               <h1 className="m-0 w-[32.5rem] relative text-[length:inherit] leading-[3.625rem] font-bold font-[inherit] inline-block shrink-0 max-w-full mq1350:w-full mq1350:min-w-full mq1050:flex-1 mq1050:text-[2.375rem] mq1050:leading-[2.875rem] mq1050:min-w-full mq800:text-[2rem] mq800:leading-[2.5rem] mq450:text-[1.813rem] mq450:leading-[2.188rem]">
                 What Makes Wirero Different
               </h1>
-              <div className="flex-1 relative text-[1.125rem] leading-[1.75rem] text-[rgba(238,238,238,0.8)] inline-block min-w-[25.688rem] mq1350:min-w-full mq750:min-w-full mq450:text-[1rem]">
+              <div className="flex-1 relative text-[1.125rem] leading-[1.75rem] text-[rgba(238,238,238,0.8)] inline-block min-w-0 max-w-full mq450:text-[1rem]">
                 Wirero is a controlled multi-domain distribution infrastructure
                 built for scalable publishing. Instead of relying on external
                 publishers or manual outreach, the platform enables fast,
@@ -379,7 +379,7 @@ const AboutUs: NextPage = () => {
               {differentFeatures.slice(0, 3).map((feature, index) => (
                 <div
                   key={index}
-                  className="flex-1 min-w-[16rem] mq800:min-w-[calc(50%-0.875rem)] mq450:min-w-full rounded-[20px] bg-[#1a2530] border-[rgba(122,131,140,0.2)] border-solid border-[1px] overflow-hidden flex flex-col items-start p-[1.5rem] gap-[1.25rem] mq450:p-[1.25rem] mq450:gap-[1rem]"
+                  className="flex-1 min-w-0 basis-[16rem] max-w-full rounded-[20px] bg-[#1a2530] border-[rgba(122,131,140,0.2)] border-solid border-[1px] overflow-hidden flex flex-col items-start p-[1.5rem] gap-[1.25rem] mq450:p-[1.25rem] mq450:gap-[1rem]"
                 >
                   <div className="rounded-[16px] flex items-center justify-center p-[0.25rem]">
                     <Image
@@ -407,7 +407,7 @@ const AboutUs: NextPage = () => {
               {differentFeatures.slice(3, 6).map((feature, index) => (
                 <div
                   key={index + 3}
-                  className="flex-1 min-w-[16rem] mq800:min-w-[calc(50%-0.875rem)] mq450:min-w-full rounded-[20px] bg-[#1a2530] border-[rgba(122,131,140,0.2)] border-solid border-[1px] overflow-hidden flex flex-col items-start p-[1.5rem] gap-[1.25rem] mq450:p-[1.25rem] mq450:gap-[1rem]"
+                  className="flex-1 min-w-0 basis-[16rem] max-w-full rounded-[20px] bg-[#1a2530] border-[rgba(122,131,140,0.2)] border-solid border-[1px] overflow-hidden flex flex-col items-start p-[1.5rem] gap-[1.25rem] mq450:p-[1.25rem] mq450:gap-[1rem]"
                 >
                   <div className="rounded-[16px] flex items-center justify-center p-[0.25rem]">
                     <Image

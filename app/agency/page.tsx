@@ -124,7 +124,7 @@ const Agency: NextPage = () => {
       {/* Hero Section */}
       <section className="site-section-hero self-stretch bg-color-white">
         <div className="site-container flex items-center box-border gap-[4.25rem] max-w-full mq1050:flex-wrap mq750:gap-[2.125rem] mq450:gap-[1.063rem]">
-        <section className="flex-1 overflow-hidden flex flex-col items-start gap-[1.5rem] min-w-[28.938rem] text-left text-[1rem] text-[#0bc111] font-proxima mq750:min-w-full">
+        <section className="flex-1 overflow-hidden flex flex-col items-start gap-[1.5rem] min-w-0 max-w-full text-left text-[1rem] text-[#0bc111] font-proxima">
           <b className="relative tracking-[0.02em] leading-[1.25rem] uppercase">
             AGENCY
           </b>
@@ -172,7 +172,7 @@ const Agency: NextPage = () => {
             <h1 className="m-0 w-[33.75rem] relative text-[length:inherit] leading-[3.625rem] font-bold font-proxima inline-block shrink-0 max-w-full mq1350:w-full mq1350:min-w-full mq1050:flex-1 mq1050:text-[2.375rem] mq1050:leading-[2.875rem] mq1050:min-w-full mq450:text-[1.813rem] mq450:leading-[2.188rem]">
               Built for agencies and distribution platforms
             </h1>
-            <div className="flex-1 flex flex-col items-start gap-[1.25rem] min-w-[25.688rem] text-[1.125rem] text-[#4d565f] font-proxima mq1350:min-w-full mq750:min-w-full">
+            <div className="flex-1 flex flex-col items-start gap-[1.25rem] min-w-0 max-w-full text-[1.125rem] text-[#4d565f] font-proxima">
               <div className="self-stretch relative leading-[1.75rem]">
                 If you already offer PR, SEO, media placement, or content
                 distribution services, Wirero becomes your backend publishing
@@ -221,7 +221,7 @@ const Agency: NextPage = () => {
       {/* How Agencies Use Wirero */}
       <section className="site-section self-stretch bg-[#f7fafd]">
         <div className="site-container flex flex-col items-center box-border gap-[4.25rem] text-center max-w-full mq750:gap-[2.125rem] mq450:gap-[1.063rem]">
-        <div className="w-[60rem] max-w-full overflow-hidden flex flex-col items-center gap-[1.5rem]">
+        <div className="w-full max-w-[60rem] min-w-0 overflow-hidden flex flex-col items-center gap-[1.5rem]">
           <b className="self-stretch relative tracking-[0.02em] leading-[1.25rem] uppercase text-[#0bc111] font-proxima">
             HOW AGENCIES USE WIRERO
           </b>
@@ -234,7 +234,7 @@ const Agency: NextPage = () => {
             {howAgenciesUse.map((item, index) => (
               <div
                 key={index}
-                className="flex-1 overflow-hidden flex items-start gap-[1.25rem] min-w-[17.813rem] mq450:flex-wrap mq450:min-w-full"
+                className="flex-1 overflow-hidden flex items-start gap-[1.25rem] min-w-0 max-w-full mq450:flex-wrap"
               >
                 <div className="h-[4.25rem] w-[4.25rem] rounded-[16px] bg-[#eaf5fb] flex items-center justify-center p-[1rem] box-border shrink-0">
                   <Image
@@ -247,7 +247,7 @@ const Agency: NextPage = () => {
                     src={item.icon}
                   />
                 </div>
-                <div className="flex-1 flex flex-col items-start gap-[1rem] min-w-[11.875rem]">
+                <div className="flex-1 flex flex-col items-start gap-[1rem] min-w-0">
                   <h3 className="m-0 self-stretch relative text-[1.5rem] leading-[1.875rem] font-bold font-proxima text-[#1a2530] mq450:text-[1.188rem] mq450:leading-[1.5rem]">
                     {item.title}
                   </h3>
@@ -266,7 +266,7 @@ const Agency: NextPage = () => {
       <section className="site-section self-stretch rounded-[24px] bg-color-white">
         <div className="site-container flex flex-col items-center box-border max-w-full mq750:gap-[1.5rem]">
         <div className="w-full rounded-[20px] bg-[#eef5fb] overflow-hidden flex items-center p-[3.75rem] box-border gap-[3.75rem] max-w-full mq1350:flex-wrap mq1050:gap-[1.875rem] mq750:gap-[0.938rem] mq450:pt-[2.438rem] mq450:pb-[2.438rem]">
-          <section className="flex-1 flex flex-col items-start gap-[1.25rem] min-w-[19.5rem]">
+          <section className="flex-1 flex flex-col items-start gap-[1.25rem] min-w-0 max-w-full">
             <div className="self-stretch overflow-hidden flex flex-col items-start gap-[1.5rem]">
               <div className="self-stretch flex flex-col items-start gap-[1rem] text-left text-[3rem] text-[#1a2530]">
                 <h1 className="m-0 self-stretch relative text-[length:inherit] leading-[3.625rem] font-bold font-proxima mq1050:text-[2.375rem] mq1050:leading-[2.875rem] mq450:text-[1.813rem] mq450:leading-[2.188rem]">
@@ -343,7 +343,7 @@ const Agency: NextPage = () => {
       {/* Use Cases (Dark) */}
       <section className="site-section self-stretch bg-[#12171c]">
         <div className="site-container flex flex-col items-center box-border gap-[3rem] text-center max-w-full mq750:gap-[1.5rem]">
-        <div className="w-[51.25rem] max-w-full overflow-hidden flex flex-col items-center gap-[1.5rem]">
+        <div className="w-full max-w-[51.25rem] min-w-0 overflow-hidden flex flex-col items-center gap-[1.5rem]">
           <h2 className="m-0 self-stretch relative text-[3rem] leading-[3.625rem] font-bold font-proxima text-[#eee] mq1050:text-[2.375rem] mq1050:leading-[2.875rem] mq450:text-[1.813rem] mq450:leading-[2.188rem]">
             Use Cases
           </h2>
@@ -353,7 +353,7 @@ const Agency: NextPage = () => {
             {useCases.map((useCase, index) => (
               <div
                 key={index}
-                className="flex-1 overflow-hidden flex flex-col items-start gap-[1.5rem] min-w-[17.813rem] mq450:min-w-full"
+                className="flex-1 overflow-hidden flex flex-col items-start gap-[1.5rem] min-w-0 max-w-full"
               >
                 <div className="self-stretch h-[12.5rem] rounded-[16px] bg-[#181f25] border-[rgba(122,131,140,0.2)] border-solid border-[1px] box-border flex flex-col items-center justify-center gap-[0.75rem]">
                   <Image
@@ -384,7 +384,7 @@ const Agency: NextPage = () => {
       {/* Integration Options */}
       <main className="site-section self-stretch bg-[#f7fafd]">
         <div className="site-container flex flex-col items-center box-border gap-[3rem] max-w-full text-center mq750:gap-[1.5rem]">
-        <div className="w-[51.25rem] max-w-full overflow-hidden flex flex-col items-center gap-[1.5rem]">
+        <div className="w-full max-w-[51.25rem] min-w-0 overflow-hidden flex flex-col items-center gap-[1.5rem]">
           <h2 className="m-0 self-stretch relative text-[3rem] leading-[3.625rem] font-bold font-proxima text-[#1a2530] mq1050:text-[2.375rem] mq1050:leading-[2.875rem] mq450:text-[1.813rem] mq450:leading-[2.188rem]">
             Integration Options
           </h2>
@@ -397,7 +397,7 @@ const Agency: NextPage = () => {
                 index % 2 === 1 ? "flex-row-reverse" : ""
               }`}
             >
-              <div className="flex-1 rounded-[16px] flex flex-col items-start py-[1.25rem] px-[0rem] box-border gap-[1.75rem] min-w-[23.25rem] mq750:min-w-full">
+              <div className="flex-1 rounded-[16px] flex flex-col items-start py-[1.25rem] px-[0rem] box-border gap-[1.75rem] min-w-0 max-w-full">
                 <div className="self-stretch flex items-center gap-[0.75rem] mq750:flex-wrap">
                   <Image
                     className="w-[2rem] relative max-h-full"
@@ -459,7 +459,7 @@ const Agency: NextPage = () => {
             <h1 className="m-0 w-[40rem] relative text-[length:inherit] leading-[3.625rem] font-bold font-proxima inline-block shrink-0 max-w-full mq1350:w-full mq1350:min-w-full mq1050:flex-1 mq1050:text-[2.375rem] mq1050:leading-[2.875rem] mq1050:min-w-full mq450:text-[1.813rem] mq450:leading-[2.188rem]">
               Reliable infrastructure built for scalable PR distribution
             </h1>
-            <div className="flex-1 relative text-[1.125rem] leading-[1.75rem] font-proxima text-[#4d565f] inline-block min-w-[20.813rem] mq1350:min-w-full">
+            <div className="flex-1 relative text-[1.125rem] leading-[1.75rem] font-proxima text-[#4d565f] inline-block min-w-0 max-w-full">
               Wirero gives agencies and resellers a faster, more controllable
               way to manage large-scale distribution without relying on
               fragmented publisher relationships or costly manual operations.

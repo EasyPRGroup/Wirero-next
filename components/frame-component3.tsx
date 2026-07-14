@@ -35,7 +35,7 @@ const FrameComponent3 = ({ className = "" }: FrameComponent3Type) => {
           Made For Scale
         </b>
         <div className="flex w-full flex-col items-center gap-[1rem] text-[3.5rem] text-[#1a2530]">
-          <h2 className="m-0 w-full text-[length:inherit] leading-[4.25rem] font-bold font-[inherit] mq800:text-[2.813rem] mq800:leading-[3.375rem] mq450:text-[2.125rem] mq450:leading-[2.563rem]">
+          <h2 className="m-0 w-full fluid-h2 font-bold font-[inherit]">
             Who is Wirero For?
           </h2>
           <p className="m-0 w-full text-[1.125rem] leading-[1.75rem] text-[#4d565f]">

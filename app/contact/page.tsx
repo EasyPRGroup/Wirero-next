@@ -184,7 +184,7 @@ const ContactPage: NextPage = () => {
                   src="/mail.svg"
                 />
               </div>
-              <div className="flex-1 flex flex-col items-start gap-[0.25rem] min-w-[19.188rem] mq450:min-w-0 max-w-full">
+              <div className="flex-1 flex flex-col items-start gap-[0.25rem] min-w-0 max-w-full">
                 <h3 className="m-0 self-stretch relative text-[length:inherit] leading-[1.625rem] font-semibold font-[inherit]">
                   Email Address:
                 </h3>
@@ -205,7 +205,7 @@ const ContactPage: NextPage = () => {
                   src="/phone.svg"
                 />
               </div>
-              <div className="flex-1 flex flex-col items-start gap-[0.25rem] min-w-[19.188rem] mq450:min-w-0 max-w-full">
+              <div className="flex-1 flex flex-col items-start gap-[0.25rem] min-w-0 max-w-full">
                 <h3 className="m-0 self-stretch relative text-[length:inherit] leading-[1.625rem] font-semibold font-[inherit]">
                   Phone Number:
                 </h3>
@@ -277,7 +277,7 @@ const ContactPage: NextPage = () => {
 
           {/* New to Wirero Card */}
           <div className="self-stretch rounded-[24px] bg-[#e6f4ff] overflow-hidden flex items-start p-[1.25rem] box-border gap-[1.5rem] max-w-full text-[1.5rem] text-[#4d565f]">
-            <div className="flex-1 flex items-start gap-[1rem] min-w-[17.375rem] mq450:min-w-0 max-w-full">
+            <div className="flex-1 flex items-start gap-[1rem] min-w-0 max-w-full">
               <Image
                 className="w-[3.5rem] h-auto relative max-h-full object-cover rounded"
                 width={54}
@@ -286,7 +286,7 @@ const ContactPage: NextPage = () => {
                 alt="New to Wirero"
                 src="/Group-1.jpg"
               />
-              <div className="flex-1 flex flex-col items-start gap-[0.25rem] min-w-[14.438rem] mq450:min-w-0 max-w-full">
+              <div className="flex-1 flex flex-col items-start gap-[0.25rem] min-w-0 max-w-full">
                 <h3 className="m-0 self-stretch relative text-[length:inherit] leading-[1.875rem] font-bold font-[inherit]">
                   New to Wirero?
                 </h3>
@@ -322,7 +322,7 @@ const ContactPage: NextPage = () => {
               alt="Message icon"
               src="/mail.svg"
             />
-            <div className="flex-1 flex flex-col items-start min-w-[20.125rem] mq450:min-w-0 max-w-full">
+            <div className="flex-1 flex flex-col items-start min-w-0 max-w-full">
               <h1 className="m-0 self-stretch relative text-[length:inherit] leading-[3rem] font-bold font-[inherit] shrink-0">
                 Send Us a Message
               </h1>
@@ -478,7 +478,7 @@ const ContactPage: NextPage = () => {
       {/* CTA Section 1 */}
       <section className="site-section-cta self-stretch text-left text-[1.375rem] text-[#4d565f] font-proxima">
         <div className="site-container w-full rounded-[24px] bg-[#e6f4ff] flex items-center justify-center flex-wrap content-center py-[3.75rem] px-[2.5rem] box-border gap-[5rem] max-w-full mq1050:py-[3rem] mq750:gap-[2.5rem] mq450:gap-[1.5rem] mq450:py-[2rem] mq450:px-[1.25rem]">
-          <section className="flex-1 flex flex-col items-start gap-[1.75rem] min-w-[15.625rem] mq450:min-w-0 max-w-[36.5rem] text-left text-[2.25rem] text-[#4d565f] font-proxima">
+          <section className="flex-1 flex flex-col items-start gap-[1.75rem] min-w-0 max-w-[36.5rem] text-left text-[2.25rem] text-[#4d565f] font-proxima">
             <div className="self-stretch overflow-hidden flex flex-col items-start gap-[0.75rem]">
               <b className="w-full relative leading-[3rem] inline-block max-w-[36.5rem]">
                 Amplify Your Announcement Across Global Media
@@ -505,7 +505,7 @@ const ContactPage: NextPage = () => {
               />
             </Link>
           </section>
-          <div className="h-[13.625rem] flex-1 relative min-w-[15.625rem] max-w-[27.25rem] mq750:max-w-full mq450:hidden">
+          <div className="h-[13.625rem] flex-1 relative min-w-0 max-w-[27.25rem] mq750:max-w-full mq450:hidden">
             <div className="absolute bottom-[0rem] left-[0rem] shadow-[0px_0px_12px_rgba(26,38,48,0.08)] rounded-[12px] bg-color-white border-color-white border-solid border-[4px] overflow-hidden flex flex-col items-center py-[0.687rem] pl-[1.687rem] pr-[1.25rem] opacity-[0.6]">
               <h3 className="m-0 relative text-[length:inherit] tracking-[0.02em] leading-[1.625rem] font-semibold font-[inherit] shrink-0">
                 Growing Businesses
@@ -538,7 +538,7 @@ const ContactPage: NextPage = () => {
       {/* CTA Section 2 */}
       <section className="site-section-cta self-stretch text-left text-[1.375rem] text-[#4d565f] font-proxima">
         <div className="site-container w-full rounded-[24px] bg-[#0461c3] flex items-center justify-center flex-wrap content-center py-[3.75rem] px-[2.5rem] box-border gap-[5rem] max-w-full mq1050:py-[3rem] mq750:gap-[2.5rem] mq450:gap-[1.5rem] mq450:py-[2rem] mq450:px-[1.25rem]">
-          <section className="flex-1 flex flex-col items-start gap-[1.75rem] min-w-[15.625rem] mq450:min-w-0 max-w-[36.5rem] text-left text-[2.25rem] text-color-white font-proxima">
+          <section className="flex-1 flex flex-col items-start gap-[1.75rem] min-w-0 max-w-[36.5rem] text-left text-[2.25rem] text-color-white font-proxima">
             <div className="self-stretch overflow-hidden flex flex-col items-start gap-[0.75rem]">
               <b className="self-stretch relative leading-[3rem]">
                 Scale your distribution with centralized infrastructure
@@ -565,7 +565,7 @@ const ContactPage: NextPage = () => {
               />
             </Link>
           </section>
-          <div className="h-[13.625rem] flex-1 relative min-w-[15.625rem] max-w-[27.25rem] mq750:max-w-full mq450:hidden">
+          <div className="h-[13.625rem] flex-1 relative min-w-0 max-w-[27.25rem] mq750:max-w-full mq450:hidden">
             <div className="absolute bottom-[0rem] left-[0rem] shadow-[0px_0px_12px_rgba(26,38,48,0.08)] rounded-[12px] bg-color-white border-color-white border-solid border-[4px] overflow-hidden flex flex-col items-center py-[0.687rem] pl-[1.687rem] pr-[1.25rem] opacity-[0.6]">
               <h3 className="m-0 relative text-[length:inherit] tracking-[0.02em] leading-[1.625rem] font-semibold font-[inherit] shrink-0">
                 Growing Businesses

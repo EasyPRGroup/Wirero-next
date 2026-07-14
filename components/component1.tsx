@@ -99,7 +99,7 @@ const Component1: NextPage<Component1Type> = ({
             style={icLayers48pxIconStyle}
           />
         </div>
-        <div className="flex-1 flex flex-col items-start gap-[1rem] min-w-[20.313rem] mq800:min-w-0">
+        <div className="flex-1 flex flex-col items-start gap-[1rem] min-w-0">
           <h3 className="m-0 self-stretch relative text-[length:inherit] leading-[1.875rem] font-bold font-[inherit] shrink-0 mq450:text-[1.188rem] mq450:leading-[1.5rem]">
             {dedicatedProjectMa}
           </h3>

@@ -296,7 +296,7 @@ const Pricing: NextPage = () => {
               title={item.title}
               description={item.description}
               badgeClassName="h-[3rem] w-[3rem] rounded-[12px] bg-color-white shadow-[0px_2px_8px_rgba(26,37,48,0.08)]"
-              className="grow basis-[calc((100%_-_3rem)/3)] min-w-[15rem] rounded-2xl bg-[#f7fafd] p-[1.75rem] box-border"
+              className="grow basis-[min(100%,18rem)] min-w-0 rounded-2xl bg-[#f7fafd] p-[1.75rem] box-border"
             />
           ))}
         </div>

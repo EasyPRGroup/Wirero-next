@@ -35,7 +35,7 @@ const CtaSection1: NextPage<CtaSection1Type> = ({ className = "" }) => {
     <section
       className={`site-section self-stretch text-left font-proxima ${className}`}
     >
-      <div className="site-container relative isolate grid min-h-[22rem] grid-cols-[minmax(0,1fr)_minmax(28rem,32rem)] items-center gap-[4rem] overflow-hidden rounded-[24px] bg-[#0866c5] px-[3.75rem] py-[3.25rem] mq1050:grid-cols-1 mq1050:gap-[2.5rem] mq1050:px-[3rem] mq800:px-[2rem] mq450:min-h-0 mq450:px-[1.25rem] mq450:py-[2rem]">
+      <div className="site-container relative isolate grid min-h-[22rem] min-w-0 grid-cols-1 items-center gap-[4rem] overflow-hidden rounded-[24px] bg-[#0866c5] px-[3.75rem] py-[3.25rem] mq1050:gap-[2.5rem] mq1050:px-[3rem] mq800:px-[2rem] mq450:min-h-0 mq450:px-[1.25rem] mq450:py-[2rem] min-[1126px]:grid-cols-[minmax(0,1fr)_minmax(0,32rem)]">
         <div
           aria-hidden="true"
           className="absolute bottom-0 left-[16%] z-0 h-[58%] w-[28%] bg-[rgba(26,140,213,0.2)] [clip-path:polygon(0_0,100%_100%,0_100%)] mq800:hidden"
@@ -58,7 +58,7 @@ const CtaSection1: NextPage<CtaSection1Type> = ({ className = "" }) => {
 
           <Link
             href="/contact"
-            className="flex h-[3.5rem] min-w-[17rem] items-center justify-center gap-[0.75rem] rounded-lg bg-white px-[2rem] text-[1rem] leading-[1.25rem] font-semibold text-[#1a2530] no-underline transition-transform hover:-translate-y-0.5 mq450:w-full mq450:min-w-0"
+            className="flex h-[3.5rem] min-w-0 w-full max-w-[17rem] items-center justify-center gap-[0.75rem] rounded-lg bg-white px-[2rem] text-[1rem] leading-[1.25rem] font-semibold text-[#1a2530] no-underline transition-transform hover:-translate-y-0.5 mq450:max-w-none"
           >
             <span>Get Started with Wirero</span>
             <span aria-hidden="true" className="text-[1.25rem] leading-none">

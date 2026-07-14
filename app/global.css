@@ -35,9 +35,33 @@
 }
 
 /* Base styles - Set Proxima Nova as default font */
+html {
+  @apply m-0;
+  /* Keep zoom/layout stable and prevent sideways page scroll */
+  overflow-x: clip;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
 html, body {
   @apply leading-[normal] m-0;
   font-family: var(--font-proxima);
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+body {
+  min-width: 0;
+  position: relative;
+}
+
+img,
+svg,
+video,
+canvas {
+  max-width: 100%;
+  height: auto;
 }
 
 /* Ensure form controls inherit Proxima Nova (browsers default to system fonts) */
@@ -107,7 +131,53 @@ button, a {
   max-width: none;
   margin-left: auto;
   margin-right: auto;
+  min-width: 0;
   overflow-x: clip;
+}
+
+/* Zoom / resize safety: flex children can shrink instead of forcing overflow */
+.site-container,
+.home-container,
+.home-hero-container,
+.site-page-frame,
+.site-section,
+.site-section-hero,
+.site-section-band,
+.site-section-cta,
+.site-gutters,
+.home-gutters {
+  min-width: 0;
+}
+
+/* Fluid type helpers for large headings that break under browser zoom */
+.fluid-h1 {
+  font-size: clamp(2.125rem, 1.4rem + 2.6vw, 3.875rem);
+  line-height: 1.15;
+}
+
+.fluid-h2 {
+  font-size: clamp(1.813rem, 1.2rem + 2vw, 3.5rem);
+  line-height: 1.2;
+}
+
+.fluid-h3 {
+  font-size: clamp(1.375rem, 1.1rem + 1.1vw, 2.25rem);
+  line-height: 1.25;
+}
+
+/* Prefer wrapping flex rows over fixed min-width cards under zoom */
+.site-flex-safe {
+  min-width: 0;
+  flex: 1 1 auto;
+  max-width: 100%;
+}
+
+.site-media-frame {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  overflow: hidden;
 }
 
 /* Section padding variants (apply with .site-gutters) */

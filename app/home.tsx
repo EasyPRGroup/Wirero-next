@@ -24,7 +24,7 @@ const Home: NextPage = () => {
       <section className="site-section self-stretch text-left text-[3rem] text-[#0461c3] font-proxima">
         <div className="site-container flex min-w-0 items-center gap-[3rem] mq800:gap-[1.5rem] mq1350:flex-wrap">
           <FrameComponent2 />
-          <div className="relative h-[27.5rem] w-[39.25rem] max-w-full shrink-0 overflow-hidden rounded-[20px] mq800:hidden mq1125:min-w-full mq1350:flex-1">
+          <div className="relative h-[min(27.5rem,50vw)] w-full max-w-[39.25rem] min-w-0 shrink overflow-hidden rounded-[20px] mq800:hidden mq1350:flex-1">
             <Image
               className="absolute inset-y-0 right-0 h-full w-[57.3%] rounded-[20px] object-cover"
               loading="lazy"
@@ -52,7 +52,7 @@ const Home: NextPage = () => {
             <b className="self-stretch tracking-[0.02em] leading-[1.25rem] uppercase">
               How Wirero Works
             </b>
-            <h1 className="m-0 self-stretch text-[3.5rem] leading-[4.25rem] font-bold font-[inherit] text-[#eee] mq450:text-[2.125rem] mq450:leading-[2.563rem] mq800:text-[2.813rem] mq800:leading-[3.375rem]">
+            <h1 className="m-0 self-stretch fluid-h2 font-bold font-[inherit] text-[#eee]">
               Simple Access to Global Distribution
             </h1>
           </div>
@@ -62,12 +62,12 @@ const Home: NextPage = () => {
       <CtaSection />
       <WhyChooseUs />
       <section className="site-section self-stretch flex flex-col items-center gap-[4.25rem] bg-[#12171c] mq450:gap-[1.063rem] mq800:gap-[2.125rem]">
-        <div className="w-[60rem] max-w-full overflow-hidden flex flex-col items-center gap-[1.5rem] text-center text-[3.5rem] text-[#eee] font-proxima">
+        <div className="w-full max-w-[60rem] min-w-0 overflow-hidden flex flex-col items-center gap-[1.5rem] text-center text-[3.5rem] text-[#eee] font-proxima">
           <b className="self-stretch relative text-[1rem] tracking-[0.02em] leading-[1.25rem] uppercase text-[#0bc111]">
             NETWORK STRUCTURE
           </b>
           <div className="self-stretch flex flex-col items-center gap-[1rem]">
-            <h1 className="m-0 self-stretch relative text-[length:inherit] leading-[4.25rem] font-bold font-[inherit] mq450:text-[2.125rem] mq450:leading-[2.563rem] mq800:text-[2.813rem] mq800:leading-[3.375rem]">
+            <h1 className="m-0 self-stretch relative fluid-h2 font-bold font-[inherit]">
               Precision distribution across 10 industry-specific networks
             </h1>
             <h3 className="m-0 self-stretch relative text-[1.25rem] leading-[2rem] font-normal font-[inherit] text-[rgba(238,238,238,0.8)] mq450:text-[1rem] mq450:leading-[1.625rem]">

@@ -15,10 +15,10 @@ const About: NextPage<AboutType> = ({ className = "" }) => {
           BUILT FOR SCALE
         </b>
         <div className="self-stretch flex items-start gap-[3rem] max-w-full text-[3.5rem] text-[#1a2530] mq450:flex-col mq800:gap-[1.5rem] mq1350:flex-wrap">
-          <h1 className="m-0 flex-1 relative text-[length:inherit] leading-[4.25rem] font-bold font-[inherit] inline-block min-w-[26rem] mq450:min-w-full mq450:text-[2.125rem] mq450:leading-[2.563rem] mq800:text-[2.813rem] mq800:leading-[3.375rem] mq800:min-w-full">
+          <h1 className="m-0 flex-1 relative fluid-h2 font-bold font-[inherit] inline-block min-w-0 max-w-full">
             Everything Designed for High-Volume Distribution
           </h1>
-          <div className="w-[33.25rem] flex flex-col items-start gap-[0.75rem] max-w-full min-w-0 mq450:min-w-full text-[1.125rem] text-[#4d565f] mq800:min-w-full mq1350:flex-1">
+          <div className="w-full max-w-[33.25rem] flex flex-col items-start gap-[0.75rem] min-w-0 text-[1.125rem] text-[#4d565f] mq1350:flex-1">
             <div className="self-stretch relative leading-[1.75rem]">
               Infrastructure optimized for scale, automation, and operational
               efficiency.

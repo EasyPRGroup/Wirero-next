@@ -26,11 +26,11 @@ const CtaBanner: NextPage<CtaBannerType> = ({
     >
       <div className="self-stretch [background:radial-gradient(circle_at_72%_70%,_#1f79d6,_#0461c3_52%)] rounded-[24px] flex flex-col items-center justify-center py-[4.25rem] px-[2.5rem] box-border gap-[2rem] max-w-full text-center text-[2.75rem] text-color-white font-proxima mq1050:py-[3.25rem] mq1050:px-[2rem] mq750:py-[2.625rem] mq450:gap-[1.5rem] mq450:py-[2rem] mq450:px-[1.25rem] mq450:box-border">
         <div className="site-container flex flex-col items-center gap-[1rem] max-w-full">
-          <h2 className="m-0 w-[60rem] max-w-full relative text-[length:inherit] leading-[3.25rem] font-bold font-[inherit] mq1050:w-full mq1050:text-[2.375rem] mq1050:leading-[2.875rem] mq450:text-[1.813rem] mq450:leading-[2.188rem]">
+          <h2 className="m-0 w-full max-w-[60rem] min-w-0 relative fluid-h2 font-bold font-[inherit]">
             {title}
           </h2>
           {subtitle ? (
-            <div className="w-[60rem] max-w-full relative text-[1.125rem] leading-[1.75rem] font-proxima text-[rgba(255,255,255,0.8)] mq1050:w-full">
+            <div className="w-full max-w-[60rem] min-w-0 relative text-[1.125rem] leading-[1.75rem] font-proxima text-[rgba(255,255,255,0.8)]">
               {subtitle}
             </div>
           ) : null}

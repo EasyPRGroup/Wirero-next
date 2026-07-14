@@ -134,7 +134,7 @@ const Newsroom: NextPage<NewsroomType> = ({
     <section
       className={`site-section self-stretch flex flex-col items-center box-border gap-[3rem] max-w-full text-center font-proxima ${className}`}
     >
-      <div className="w-[60rem] max-w-full flex flex-col items-center gap-[1rem]">
+      <div className="w-full max-w-[60rem] min-w-0 flex flex-col items-center gap-[1rem]">
         <b className="relative tracking-[0.02em] leading-[1.25rem] uppercase text-[1rem] text-[#0bc111]">
           Newsroom
         </b>

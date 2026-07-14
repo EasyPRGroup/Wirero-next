@@ -22,7 +22,7 @@ const DistributionStep: NextPage<DistributionStepType> = ({
           {number}
         </h2>
       </div>
-      <div className="flex-1 flex flex-col items-start gap-[0.5rem] min-w-[22.75rem] text-[1.5rem] text-[#1a2530] font-proxima mq750:min-w-full">
+      <div className="flex-1 flex flex-col items-start gap-[0.5rem] min-w-0 max-w-full text-[1.5rem] text-[#1a2530] font-proxima">
         <h3 className="m-0 self-stretch relative text-[length:inherit] leading-[1.875rem] font-bold font-[inherit] mq450:text-[1.188rem] mq450:leading-[1.5rem]">
           {title}
         </h3>

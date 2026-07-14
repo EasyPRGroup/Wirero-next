@@ -9,7 +9,7 @@ export type FrameComponent2Type = {
 const FrameComponent2: NextPage<FrameComponent2Type> = ({ className = "" }) => {
   return (
     <section
-      className={`flex-1 flex flex-col items-start box-border gap-[1.75rem] min-w-[22.125rem] text-left text-[1rem] text-[#0bc111] font-proxima mq800:min-w-full ${className}`}
+      className={`flex-1 flex flex-col items-start box-border gap-[1.75rem] min-w-0 max-w-full text-left text-[1rem] text-[#0bc111] font-proxima ${className}`}
     >
       <div className="self-stretch overflow-hidden flex flex-col items-start gap-[1.5rem]">
         <b className="self-stretch relative tracking-[0.02em] leading-[1.25rem] uppercase">

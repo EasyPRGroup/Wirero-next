@@ -47,7 +47,7 @@ const FeatureItem: NextPage<FeatureItemType> = ({
         )}
       </div>
       <div
-        className={`flex-1 flex flex-col items-start gap-[0.5rem] font-proxima ${vertical ? "" : "min-w-[21.375rem] mq750:min-w-full"} ${titleColor}`}
+        className={`flex-1 flex flex-col items-start gap-[0.5rem] min-w-0 font-proxima ${titleColor}`}
       >
         <h3 className="m-0 self-stretch relative text-[length:inherit] leading-[1.75rem] font-bold font-[inherit] mq450:text-[1rem] mq450:leading-[1.375rem]">
           {title}

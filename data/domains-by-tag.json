@@ -1,0 +1,787 @@
+[
+  {
+    "tag": "Untagged",
+    "name": "wirero.com",
+    "url": "https://wirero.com"
+  },
+  {
+    "tag": "Banking / Finance Services",
+    "name": "goldwatchr.com",
+    "url": "http://goldwatchr.com/"
+  },
+  {
+    "tag": "Banking / Finance Services",
+    "name": "fxdigests.com",
+    "url": "http://fxdigests.com/"
+  },
+  {
+    "tag": "Banking / Finance Services",
+    "name": "fundreviewer.com",
+    "url": "http://fundreviewer.com/"
+  },
+  {
+    "tag": "Banking / Finance Services",
+    "name": "fxcurrent.com",
+    "url": "http://fxcurrent.com/"
+  },
+  {
+    "tag": "Banking / Finance Services",
+    "name": "pipbrief.com",
+    "url": "http://pipbrief.com/"
+  },
+  {
+    "tag": "Banking / Finance Services",
+    "name": "nasdaqly.com",
+    "url": "http://nasdaqly.com/"
+  },
+  {
+    "tag": "Banking / Finance Services",
+    "name": "hedgebrief.com",
+    "url": "http://hedgebrief.com/"
+  },
+  {
+    "tag": "Banking / Finance Services",
+    "name": "bullory.com",
+    "url": "http://bullory.com/"
+  },
+  {
+    "tag": "Banking / Finance Services",
+    "name": "nasdaqeye.com",
+    "url": "http://nasdaqeye.com/"
+  },
+  {
+    "tag": "Banking / Finance Services",
+    "name": "tickexo.com",
+    "url": "http://tickexo.com/"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "rollthemeta.com",
+    "url": "http://rollthemeta.com/"
+  },
+  {
+    "tag": "Banking / Finance Services",
+    "name": "fundheadline.com",
+    "url": "http://fundheadline.com"
+  },
+  {
+    "tag": "Banking / Finance Services",
+    "name": "fundbullet.com",
+    "url": "http://fundbullet.com"
+  },
+  {
+    "tag": "Banking / Finance Services",
+    "name": "finnewsroom.com",
+    "url": "http://finnewsroom.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "dotmediax.com",
+    "url": "http://dotmediax.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "coinrevol.com",
+    "url": "http://coinrevol.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "coinhivey.com",
+    "url": "http://coinhivey.com/"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "coinfamex.com",
+    "url": "http://coinfamex.com/"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "bitfluxer.com",
+    "url": "https://bitfluxer.com/"
+  },
+  {
+    "tag": "Banking / Finance Services",
+    "name": "niceheadlines.com",
+    "url": "niceheadlines.com"
+  },
+  {
+    "tag": "Untagged",
+    "name": "houstonheadlines.com",
+    "url": "https://houstonheadlines.com"
+  },
+  {
+    "tag": "Untagged",
+    "name": "detroitbulletin.com",
+    "url": "https://detroitbulletin.com"
+  },
+  {
+    "tag": "Untagged",
+    "name": "sydneyheadlines.com",
+    "url": "https://sydneyheadlines.com"
+  },
+  {
+    "tag": "Untagged",
+    "name": "perthbulletin.com",
+    "url": "https://perthbulletin.com"
+  },
+  {
+    "tag": "Untagged",
+    "name": "londonpostdaily.com",
+    "url": "https://londonpostdaily.com"
+  },
+  {
+    "tag": "Untagged",
+    "name": "liverpoolchronicle.com",
+    "url": "liverpoolchronicle.com"
+  },
+  {
+    "tag": "Untagged",
+    "name": "miaminewsdaily.com",
+    "url": "https://miaminewsdaily.com/"
+  },
+  {
+    "tag": "Untagged",
+    "name": "lagosbulletin.com",
+    "url": "https://lagosbulletin.com/"
+  },
+  {
+    "tag": "Untagged",
+    "name": "sharjahheadlines.com",
+    "url": "https://sharjahheadlines.com/"
+  },
+  {
+    "tag": "Healthcare & Pharmaceutical",
+    "name": "www.sanjosebulletin.com",
+    "url": "http://www.sanjosebulletin.com/"
+  },
+  {
+    "tag": "Healthcare & Pharmaceutical",
+    "name": "rxchronicle.com",
+    "url": "https://rxchronicle.com"
+  },
+  {
+    "tag": "Healthcare & Pharmaceutical",
+    "name": "pharmainformer.com",
+    "url": "https://pharmainformer.com"
+  },
+  {
+    "tag": "Healthcare & Pharmaceutical",
+    "name": "welltrackers.com",
+    "url": "https://welltrackers.com/"
+  },
+  {
+    "tag": "Healthcare & Pharmaceutical",
+    "name": "curawire.com",
+    "url": "https://curawire.com/"
+  },
+  {
+    "tag": "Healthcare & Pharmaceutical",
+    "name": "drugvital.com",
+    "url": "https://drugvital.com/"
+  },
+  {
+    "tag": "Healthcare & Pharmaceutical",
+    "name": "pharmaobserver.com",
+    "url": "https://pharmaobserver.com"
+  },
+  {
+    "tag": "Healthcare & Pharmaceutical",
+    "name": "medijournalist.com",
+    "url": "https://medijournalist.com"
+  },
+  {
+    "tag": "Healthcare & Pharmaceutical",
+    "name": "medipulsenews.com",
+    "url": "https://medipulsenews.com"
+  },
+  {
+    "tag": "Healthcare & Pharmaceutical",
+    "name": "curebulletin.com",
+    "url": "https://curebulletin.com"
+  },
+  {
+    "tag": "Healthcare & Pharmaceutical",
+    "name": "healdrugs.com",
+    "url": "https://healdrugs.com/"
+  },
+  {
+    "tag": "Healthcare & Pharmaceutical",
+    "name": "rxchron.com",
+    "url": "https://rxchron.com"
+  },
+  {
+    "tag": "Healthcare & Pharmaceutical",
+    "name": "clinicanews.com",
+    "url": "https://clinicanews.com"
+  },
+  {
+    "tag": "Healthcare & Pharmaceutical",
+    "name": "curabrief.com",
+    "url": "https://curabrief.com"
+  },
+  {
+    "tag": "Healthcare & Pharmaceutical",
+    "name": "nutrasio.com",
+    "url": "https://nutrasio.com"
+  },
+  {
+    "tag": "Healthcare & Pharmaceutical",
+    "name": "clinicanews.com",
+    "url": "https://clinicanews.com/"
+  },
+  {
+    "tag": "Healthcare & Pharmaceutical",
+    "name": "well3x.com",
+    "url": "https://well3x.com/"
+  },
+  {
+    "tag": "Healthcare & Pharmaceutical",
+    "name": "bioreporters.com",
+    "url": "https://bioreporters.com/"
+  },
+  {
+    "tag": "Healthcare & Pharmaceutical",
+    "name": "wellxyz.com",
+    "url": "https://wellxyz.com/"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "coincloudy.com",
+    "url": "https://coincloudy.com/"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "jackdao.com",
+    "url": "https://jackdao.com/"
+  },
+  {
+    "tag": "Banking / Finance Services",
+    "name": "casinnow.com",
+    "url": "https://casinnow.com/"
+  },
+  {
+    "tag": "Banking / Finance Services",
+    "name": "localhost",
+    "url": "http://localhost"
+  },
+  {
+    "tag": "Banking / Finance Services",
+    "name": "degenchips.com",
+    "url": "https://degenchips.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "coinsae.com",
+    "url": "https://coinsae.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "tokwagerz.com",
+    "url": "https://tokwagerz.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "rollznow.com",
+    "url": "https://rollznow.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "chainminey.com",
+    "url": "https://chainminey.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "betchainz.com",
+    "url": "https://betchainz.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "cryptenx.com",
+    "url": "https://cryptenx.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "web3zee.com",
+    "url": "https://web3zee.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "coinhiv.com",
+    "url": "https://coinhiv.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "chainiv.com",
+    "url": "https://chainiv.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "blokmeta.com",
+    "url": "https://blokmeta.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "tokmintz.com",
+    "url": "https://tokmintz.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "coinjackz.com",
+    "url": "https://coinjackz.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "rollbetz.com",
+    "url": "https://rollbetz.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "blokjack.com",
+    "url": "https://blokjack.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "blokplay.com",
+    "url": "https://blokplay.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "rollweb3.com",
+    "url": "https://rollweb3.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "spinweb3.com",
+    "url": "https://spinweb3.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "blokgo.com",
+    "url": "https://blokgo.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "tokwire.com",
+    "url": "https://tokwire.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "crypmag.com",
+    "url": "https://crypmag.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "caznix.com",
+    "url": "https://caznix.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "betchainx.com",
+    "url": "https://betchainx.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "rollitdao.com",
+    "url": "https://rollitdao.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "dealalog.com",
+    "url": "https://dealalog.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "reelohub.com",
+    "url": "https://reelohub.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "crypjackpot.com",
+    "url": "https://crypjackpot.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "blokminties.com",
+    "url": "https://blokminties.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "coinspiner.com",
+    "url": "https://coinspiner.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "tokwager.com",
+    "url": "https://tokwager.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "luckdapp.com",
+    "url": "https://luckdapp.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "crypodds.com",
+    "url": "https://crypodds.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "https:/blokroll.com",
+    "url": "https:/blokroll.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "blokcast.com",
+    "url": "https://blokcast.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "blokone.com",
+    "url": "https://blokone.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "tokeye.com",
+    "url": "https://tokeye.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "blokmag.com",
+    "url": "https://blokmag.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "blokto.com",
+    "url": "https://blokto.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "dicerz.com",
+    "url": "https://dicerz.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "betandbridge.com",
+    "url": "https://betandbridge.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "blufflog.com",
+    "url": "https://blufflog.com"
+  },
+  {
+    "tag": "Untagged",
+    "name": "casinmagcom",
+    "url": "https://casinmagcom"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "chainmaxx.com",
+    "url": "https://chainmaxx.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "coinpursy.com",
+    "url": "https://coinpursy.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "bitwatchx.com",
+    "url": "https://bitwatchx.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "cointracky.com",
+    "url": "https://cointracky.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "blockmarky.com",
+    "url": "https://blockmarky.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "coinleverx.com",
+    "url": "https://coinleverx.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "ethpioneer.com",
+    "url": "https://ethpioneer.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "ethpursuit.com",
+    "url": "https://ethpursuit.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "finblocker.com",
+    "url": "https://finblocker.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "slotnstake.com",
+    "url": "https://slotnstake.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "jackpotmint.com",
+    "url": "https://jackpotmint.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "layer2casino.com",
+    "url": "https://layer2casino.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "shillandspin.com",
+    "url": "https://shillandspin.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "spindaoz.com",
+    "url": "https://spindaoz.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "wagermag.com",
+    "url": "https://wagermag.com"
+  },
+  {
+    "tag": "Untagged",
+    "name": "rollonchain.com",
+    "url": "https://rollonchain.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "rollandearn.com",
+    "url": "https://rollandearn.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "dealzmag.com",
+    "url": "https://dealzmag.com"
+  },
+  {
+    "tag": "Untagged",
+    "name": "reelonow.com",
+    "url": "https://reelonow.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "l2slots.com",
+    "url": "https://l2slots.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "chainplayz.com",
+    "url": "https://chainplayz.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "zkcasinoroll.com",
+    "url": "https://zkcasinoroll.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "wagerdao.com",
+    "url": "https://wagerdao.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "rollzmag.com",
+    "url": "https://rollzmag.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "betsyhub.com",
+    "url": "https://betsyhub.com"
+  },
+  {
+    "tag": "Untagged",
+    "name": "playslog.com",
+    "url": "https://playslog.com"
+  },
+  {
+    "tag": "Untagged",
+    "name": "bluffnow.com",
+    "url": "https://bluffnow.com"
+  },
+  {
+    "tag": "Untagged",
+    "name": "roundmag.com",
+    "url": "https://roundmag.com"
+  },
+  {
+    "tag": "Untagged",
+    "name": "oddsnnow.com",
+    "url": "https://oddsnnow.com"
+  },
+  {
+    "tag": "Untagged",
+    "name": "chainplayz.com",
+    "url": "https://chainplayz.com"
+  },
+  {
+    "tag": "Untagged",
+    "name": "yieldgambler.com",
+    "url": "https://yieldgambler.com"
+  },
+  {
+    "tag": "Untagged",
+    "name": "dust2win.com",
+    "url": "https://dust2win.com"
+  },
+  {
+    "tag": "Untagged",
+    "name": "chainslotz.com",
+    "url": "https://chainslotz.com"
+  },
+  {
+    "tag": "Untagged",
+    "name": "nftgamble.com",
+    "url": "https://nftgamble.com"
+  },
+  {
+    "tag": "Untagged",
+    "name": "gamblnow.com",
+    "url": "https://gamblnow.com"
+  },
+  {
+    "tag": "Untagged",
+    "name": "zkroller.com",
+    "url": "https://zkroller.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "web3ground.co",
+    "url": "https://web3ground.co"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "newsblocky.com",
+    "url": "https://newsblocky.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "ethblocker.com",
+    "url": "https://ethblocker.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "ethwatcher.com",
+    "url": "https://ethwatcher.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "cyptoflash.com",
+    "url": "https://cyptoflash.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "coinpanelx.com",
+    "url": "https://coinpanelx.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "coininboxx.com",
+    "url": "https://coininboxx.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "web3sweeep.com",
+    "url": "https://web3sweeep.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "web3mintx.com",
+    "url": "https://web3mintx.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "web3focusx.com",
+    "url": "https://web3focusx.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "web3flowx.com",
+    "url": "https://web3flowx.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "ethtrackr.com",
+    "url": "https://ethtrackr.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "ethpurs.com",
+    "url": "https://ethpurs.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "ethmediax.com",
+    "url": "https://ethmediax.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "cryptodexx.com",
+    "url": "https://cryptodexx.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "cointraxx.com",
+    "url": "https://cointraxx.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "coinstreamy.com",
+    "url": "https://coinstreamy.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "coinoptixx.com",
+    "url": "https://coinoptixx.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "coinnetxx.com",
+    "url": "https://coinnetxx.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "coinmapx.com",
+    "url": "https://coinmapx.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "coinfusexx.com",
+    "url": "https://coinfusexx.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "chainradx.com",
+    "url": "https://chainradx.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "chainexx.com",
+    "url": "https://chainexx.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "blockupx.com",
+    "url": "https://blockupx.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "blockexx.com",
+    "url": "https://blockexx.com"
+  },
+  {
+    "tag": "Blockchain & Cryptocurrency",
+    "name": "bitportals.com",
+    "url": "https://bitportals.com"
+  }
+]
