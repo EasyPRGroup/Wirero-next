@@ -16,7 +16,7 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://wirero.com";
 export const metadata: Metadata = {
   title: "Media Network | 1000+ News Sites for Press Release Distribution",
   description:
-    "Explore Wirero's distribution network of 1000+ independently hosted news and media domains across crypto, finance, healthcare, tech, cannabis, real estate, and more. Targeted press release placement by industry.",
+    "Explore Wirero's network of 1000+ news domains across crypto, finance, healthcare, tech, and more. Targeted press release placement by industry.",
   alternates: { canonical: `${SITE_URL}/network` },
   openGraph: {
     title: "Media Network | 1000+ News Sites for Press Release Distribution",

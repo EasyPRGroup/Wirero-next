@@ -9,7 +9,7 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://wirero.com";
 export const metadata: Metadata = {
   title: "PR Agency Distribution Solutions | White-Label Press Release Service",
   description:
-    "Scale your PR agency with Wirero's white-label press release distribution infrastructure. Offer clients multi-domain publishing across 1000+ sites without outreach, negotiations, or per-placement costs.",
+    "White-label press release distribution for PR agencies. Offer clients multi-domain publishing across 1000+ sites without outreach or per-placement costs.",
   alternates: { canonical: `${SITE_URL}/agency` },
   openGraph: {
     title: "PR Agency Distribution Solutions | White-Label Service",

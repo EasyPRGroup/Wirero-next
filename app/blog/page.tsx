@@ -8,7 +8,7 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://wirero.com";
 export const metadata: Metadata = {
   title: "Blog | Press Release Tips, Distribution Strategies & PR Guides",
   description:
-    "Learn press release distribution strategies, content syndication tips, SEO backlink techniques, and multi-domain publishing best practices. Expert guides for PR professionals and agencies.",
+    "Press release distribution strategies, content syndication tips, and multi-domain publishing guides. Expert insights for PR professionals.",
   alternates: { canonical: `${SITE_URL}/blog` },
   openGraph: {
     title: "Blog | Press Release Distribution Tips & PR Strategies",

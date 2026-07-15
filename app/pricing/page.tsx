@@ -11,7 +11,7 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://wirero.com";
 export const metadata: Metadata = {
   title: "Pricing | Unlimited Press Release Distribution Plans from $250/mo",
   description:
-    "Flat-rate press release distribution starting at $250/month. Publish across 1000+ domains with dofollow backlinks, RSS automation, and full reporting. No per-placement fees, no scaling limits.",
+    "Press release distribution from $250/month. Publish across 1000+ domains with dofollow backlinks and RSS automation. No per-placement fees.",
   alternates: { canonical: `${SITE_URL}/pricing` },
   openGraph: {
     title: "Press Release Distribution Pricing | Plans from $250/mo",

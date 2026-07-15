@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     template: "%s | Wirero",
   },
   description:
-    "Distribute press releases across 1000+ news sites and media domains instantly. Wirero offers automated multi-domain publishing, dofollow backlinks, and industry-targeted distribution for PR agencies and brands.",
+    "Distribute press releases across 1000+ news sites instantly. Automated multi-domain publishing with dofollow backlinks for PR agencies and brands.",
   keywords: [
     "press release distribution",
     "press release distribution service",
