@@ -1,6 +1,22 @@
 import type { NextPage } from "next";
+import type { Metadata } from "next";
 import Footer from "../../components/footer";
 import Blog from "../../components/blog";
+
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://wirero.com";
+
+export const metadata: Metadata = {
+  title: "Blog | Press Release Tips, Distribution Strategies & PR Guides",
+  description:
+    "Learn press release distribution strategies, content syndication tips, SEO backlink techniques, and multi-domain publishing best practices. Expert guides for PR professionals and agencies.",
+  alternates: { canonical: `${SITE_URL}/blog` },
+  openGraph: {
+    title: "Blog | Press Release Distribution Tips & PR Strategies",
+    description:
+      "Expert guides on press release distribution, content syndication, SEO backlinks, and scalable publishing strategies for PR agencies.",
+    url: `${SITE_URL}/blog`,
+  },
+};
 
 const BlogPage: NextPage = () => {
   return (

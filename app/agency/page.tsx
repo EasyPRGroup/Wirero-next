@@ -1,7 +1,23 @@
+import type { Metadata } from "next";
 import type { NextPage } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import Footer from "../../components/footer";
+
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://wirero.com";
+
+export const metadata: Metadata = {
+  title: "PR Agency Distribution Solutions | White-Label Press Release Service",
+  description:
+    "Scale your PR agency with Wirero's white-label press release distribution infrastructure. Offer clients multi-domain publishing across 1000+ sites without outreach, negotiations, or per-placement costs.",
+  alternates: { canonical: `${SITE_URL}/agency` },
+  openGraph: {
+    title: "PR Agency Distribution Solutions | White-Label Service",
+    description:
+      "White-label press release distribution for PR agencies. Multi-domain publishing across 1000+ sites with no outreach or per-placement costs.",
+    url: `${SITE_URL}/agency`,
+  },
+};
 
 const Agency: NextPage = () => {
   const noNeedItems = [

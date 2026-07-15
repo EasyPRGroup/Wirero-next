@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import type { NextPage } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -9,6 +10,21 @@ import IndustryTag from "../../components/industry-tag";
 import NetworkCategory from "../../components/network-category";
 import DomainCard from "../../components/domain-card";
 import CtaBanner from "../../components/cta-banner";
+
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://wirero.com";
+
+export const metadata: Metadata = {
+  title: "Media Network | 1000+ News Sites for Press Release Distribution",
+  description:
+    "Explore Wirero's distribution network of 1000+ independently hosted news and media domains across crypto, finance, healthcare, tech, cannabis, real estate, and more. Targeted press release placement by industry.",
+  alternates: { canonical: `${SITE_URL}/network` },
+  openGraph: {
+    title: "Media Network | 1000+ News Sites for Press Release Distribution",
+    description:
+      "A controlled network of 1000+ news domains across 10 industries for targeted press release distribution and content syndication.",
+    url: `${SITE_URL}/network`,
+  },
+};
 
 const heroDotIndexes = Array.from({ length: 45 });
 
@@ -144,7 +160,7 @@ const Network: NextPage = () => {
             </div>
           </div>
           <Link
-            href="/contact"
+            href="#explore-domains"
             className="cursor-pointer [border:none] py-[1rem] px-[2.5rem] bg-[#0461c3] h-[3.5rem] rounded-[8px] flex items-center justify-center box-border gap-[0.5rem] no-underline hover:bg-[#0354a8] transition-colors"
           >
             <div className="relative text-[1rem] leading-[1.25rem] font-semibold font-proxima text-color-white text-center shrink-0">
@@ -371,7 +387,10 @@ const Network: NextPage = () => {
       </main>
 
       {/* Explore Domains Section */}
-      <section className="site-section self-stretch bg-color-white">
+      <section
+        id="explore-domains"
+        className="site-section scroll-mt-[6rem] self-stretch bg-color-white"
+      >
         <div className="site-container flex flex-col items-start box-border gap-[3rem] max-w-full text-left text-[3rem] text-[#1a2530] font-proxima mq750:gap-[1.5rem]">
         <div className="self-stretch flex items-start gap-[4.25rem] max-w-full mq1050:flex-wrap mq750:gap-[2.125rem] mq450:gap-[1.063rem]">
           <h2 className="m-0 w-[33.75rem] relative text-[length:inherit] leading-[3.625rem] font-bold font-[inherit] inline-block shrink-0 max-w-full mq1050:flex-1 mq1050:text-[2.375rem] mq1050:leading-[2.875rem] mq1050:min-w-full mq450:text-[1.813rem] mq450:leading-[2.188rem]">

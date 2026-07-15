@@ -97,9 +97,9 @@ const FrameComponent4: NextPage<FrameComponent4Type> = ({ className = "" }) => {
           </div>
           <div className="self-stretch flex flex-col items-start">
             <div className="flex items-center gap-[0.5rem]">
-              <div className="rounded-[40px] border-[#e2e5e9] border-solid border-[1px] flex items-center justify-center p-[0.75rem]">
+              <div className="h-[2.75rem] w-[2.75rem] rounded-[40px] border-[#e2e5e9] border-solid border-[1px] box-border flex items-center justify-center p-[0.75rem]">
                 <Image
-                  className="h-[1.25rem] w-full relative"
+                  className="h-[1.25rem] w-[1.25rem] relative shrink-0"
                   width={20}
                   height={20}
                   sizes="100vw"
@@ -107,19 +107,19 @@ const FrameComponent4: NextPage<FrameComponent4Type> = ({ className = "" }) => {
                   src="/facebook.svg"
                 />
               </div>
-              <div className="rounded-[40px] border-[#e2e5e9] border-solid border-[1px] flex items-center justify-center p-[0.75rem]">
+              <div className="h-[2.75rem] w-[2.75rem] rounded-[40px] border-[#e2e5e9] border-solid border-[1px] box-border flex items-center justify-center p-[0.75rem]">
                 <Image
-                  className="h-[1.25rem] w-full relative object-cover"
+                  className="h-[1.25rem] w-[1.25rem] relative shrink-0"
                   width={20}
                   height={20}
                   sizes="100vw"
                   alt=""
-                  src="/twitter@2x.png"
+                  src="/twitter.svg"
                 />
               </div>
-              <div className="rounded-[40px] border-[#e2e5e9] border-solid border-[1px] flex items-center justify-center p-[0.75rem]">
+              <div className="h-[2.75rem] w-[2.75rem] rounded-[40px] border-[#e2e5e9] border-solid border-[1px] box-border flex items-center justify-center p-[0.75rem]">
                 <Image
-                  className="h-[1.25rem] w-full relative"
+                  className="h-[1.25rem] w-[1.25rem] relative shrink-0"
                   width={20}
                   height={20}
                   sizes="100vw"
@@ -127,9 +127,9 @@ const FrameComponent4: NextPage<FrameComponent4Type> = ({ className = "" }) => {
                   src="/linkedin-fill.svg"
                 />
               </div>
-              <div className="rounded-[40px] border-[#e2e5e9] border-solid border-[1px] flex items-center justify-center p-[0.75rem]">
+              <div className="h-[2.75rem] w-[2.75rem] rounded-[40px] border-[#e2e5e9] border-solid border-[1px] box-border flex items-center justify-center p-[0.75rem]">
                 <Image
-                  className="h-[1.25rem] w-full relative"
+                  className="h-[1.25rem] w-[1.25rem] relative shrink-0"
                   width={20}
                   height={20}
                   sizes="100vw"

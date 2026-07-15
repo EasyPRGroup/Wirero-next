@@ -257,14 +257,14 @@ export async function fetchBlogPost(
 /** Build the client-side href for a blog post detail page. */
 export function postHref(post: BlogPost): string {
   const slug = post.slug ?? post.id ?? "";
-  return `/blog/post?slug=${encodeURIComponent(String(slug))}`;
+  return `/blog/${encodeURIComponent(String(slug))}`;
 }
 
 // ---------------------------------------------------------------------------
 // Mock/demo content, used only until the real blog API is configured.
 // ---------------------------------------------------------------------------
 
-const MOCK_BASE_POSTS: BlogPost[] = [
+export const MOCK_BASE_POSTS: BlogPost[] = [
   {
     slug: "future-of-content-distribution",
     title:

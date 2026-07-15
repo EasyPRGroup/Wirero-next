@@ -1,10 +1,25 @@
-"use client";
+import type { Metadata } from "next";
 import type { NextPage } from "next";
 import Footer from "../../components/footer";
 import PricingCard from "../../components/pricing-card";
 import FrameComponent6 from "../../components/frame-component6";
 import FeatureItem from "../../components/feature-item";
 import CtaBanner from "../../components/cta-banner";
+
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://wirero.com";
+
+export const metadata: Metadata = {
+  title: "Pricing | Unlimited Press Release Distribution Plans from $250/mo",
+  description:
+    "Flat-rate press release distribution starting at $250/month. Publish across 1000+ domains with dofollow backlinks, RSS automation, and full reporting. No per-placement fees, no scaling limits.",
+  alternates: { canonical: `${SITE_URL}/pricing` },
+  openGraph: {
+    title: "Press Release Distribution Pricing | Plans from $250/mo",
+    description:
+      "Unlimited press release distribution from $250/month. 1000+ domains, dofollow backlinks, RSS automation. No per-placement fees.",
+    url: `${SITE_URL}/pricing`,
+  },
+};
 
 const PricingPill = ({
   icon,

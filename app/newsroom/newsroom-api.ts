@@ -240,10 +240,9 @@ export async function fetchArticle(
 }
 
 /**
- * Build the client-side href for an article detail page, keeping it
- * static-export safe (query param, not a dynamic segment).
+ * Build the href for an article detail page using the dynamic route segment.
  */
 export function articleHref(article: Article): string {
   const slug = article.slug ?? article.id ?? "";
-  return `/newsroom/article?slug=${encodeURIComponent(String(slug))}`;
+  return `/newsroom/${encodeURIComponent(String(slug))}`;
 }

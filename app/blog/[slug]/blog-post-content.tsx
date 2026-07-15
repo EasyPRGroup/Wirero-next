@@ -1,14 +1,8 @@
 "use client";
-import { useEffect, useMemo, useState } from "react";
+import { useMemo } from "react";
 import Link from "next/link";
-import { useSearchParams } from "next/navigation";
 import parse from "html-react-parser";
-import {
-  fetchBlogPost,
-  getMockBlogPostDetail,
-  isBlogApiConfigured,
-  type BlogPostDetail,
-} from "../blog-api";
+import type { BlogPostDetail } from "../blog-api";
 
 function sanitizeHtml(html: string): string {
   return html
@@ -84,113 +78,27 @@ const ShareIcons = () => (
   </div>
 );
 
-function Spinner() {
-  return (
-    <div className="w-full site-section" role="status" aria-live="polite">
-      <div className="w-full min-h-[60vh] flex flex-col items-center justify-center gap-[1rem]">
-        <span className="sr-only">Loading post...</span>
-        <svg className="animate-spin" width="44" height="44" viewBox="0 0 40 40" fill="none" aria-hidden="true">
-          <circle cx="20" cy="20" r="16" stroke="#e2e5e9" strokeWidth="4" />
-          <path d="M36 20a16 16 0 0 0-16-16" stroke="#0bc111" strokeWidth="4" strokeLinecap="round" />
-        </svg>
-      </div>
-    </div>
-  );
+interface BlogPostContentProps {
+  post: BlogPostDetail;
 }
 
-export default function BlogPostDetail() {
-  const searchParams = useSearchParams();
-  const slug = searchParams.get("slug");
-
-  const [detail, setDetail] = useState<BlogPostDetail | null>(null);
-  const [loading, setLoading] = useState(true);
-  const [notFound, setNotFound] = useState(false);
-
-  useEffect(() => {
-    if (!slug) {
-      setDetail(null);
-      setNotFound(true);
-      setLoading(false);
-      return;
-    }
-
-    let active = true;
-    const controller = new AbortController();
-
-    const load = async () => {
-      setLoading(true);
-      setNotFound(false);
-
-      if (isBlogApiConfigured()) {
-        try {
-          const real = await fetchBlogPost(slug, controller.signal);
-          if (real) {
-            if (active) setDetail(real);
-            if (active) setLoading(false);
-            return;
-          }
-        } catch (err) {
-          if (err instanceof DOMException && err.name === "AbortError") {
-            return;
-          }
-          // Fall through to mock lookup below on any live API failure.
-        }
-      }
-
-      const mock = getMockBlogPostDetail(slug);
-      if (active) {
-        if (mock) setDetail(mock);
-        else setNotFound(true);
-        setLoading(false);
-      }
-    };
-
-    load();
-    return () => {
-      active = false;
-      controller.abort();
-    };
-  }, [slug]);
-
+export default function BlogPostContent({ post }: BlogPostContentProps) {
   const parsedHtml = useMemo(() => {
     const html =
-      detail?.contentHtml ||
-      (detail?.content && looksLikeHtml(detail.content) ? detail.content : "");
+      post.contentHtml ||
+      (post.content && looksLikeHtml(post.content) ? post.content : "");
     if (!html) return null;
     return renderHtml(html);
-  }, [detail?.contentHtml, detail?.content]);
+  }, [post.contentHtml, post.content]);
 
-  if (loading) return <Spinner />;
-
-  if (notFound || !detail) {
-    return (
-      <div className="w-full site-section">
-        <div className="w-full max-w-[48rem] mx-auto flex flex-col items-center gap-[1.5rem] text-center">
-          <h1 className="m-0 text-[2rem] leading-[2.5rem] font-bold text-[#1a2530]">
-            Post not found
-          </h1>
-          <p className="m-0 text-[1.125rem] leading-[1.75rem] text-[#64676f]">
-            We couldn&apos;t find the post you were looking for.
-          </p>
-          <Link
-            href="/blog/"
-            className="text-[1rem] text-[#0461c3] no-underline hover:underline"
-          >
-            ‹ Back to Blog
-          </Link>
-        </div>
-      </div>
-    );
-  }
-
-  const hasStructuredBody = Boolean(detail.sections && detail.sections.length);
+  const hasStructuredBody = Boolean(post.sections && post.sections.length);
   const tocItems = hasStructuredBody
     ? [
-        ...(detail.coreHeading
-          ? [{ id: "core-principles", label: detail.coreHeading }]
+        ...(post.coreHeading
+          ? [{ id: "core-principles", label: post.coreHeading }]
           : []),
-        ...(detail.sections ?? []).map((s) => ({ id: s.id, label: s.heading })),
-        ...(detail.closing ? [{ id: detail.closing.id, label: detail.closing.heading }] : []),
+        ...(post.sections ?? []).map((s) => ({ id: s.id, label: s.heading })),
+        ...(post.closing ? [{ id: post.closing.id, label: post.closing.heading }] : []),
       ]
     : [];
 
@@ -203,35 +111,35 @@ export default function BlogPostDetail() {
             Blog
           </b>
           <h1 className="m-0 text-[2.5rem] leading-[3rem] font-bold text-[#1a2530] mq450:text-[1.875rem] mq450:leading-[2.25rem]">
-            {detail.title ?? "Untitled post"}
+            {post.title ?? "Untitled post"}
           </h1>
           <div className="flex flex-wrap items-center justify-center gap-[0.625rem] text-[0.9375rem] leading-[1.25rem] text-[#64676f]">
-            {detail.author?.avatar ? (
+            {post.author?.avatar ? (
               // eslint-disable-next-line @next/next/no-img-element
               <img
-                src={detail.author.avatar}
+                src={post.author.avatar}
                 alt=""
                 className="h-[1.625rem] w-[1.625rem] rounded-[50%] object-cover"
               />
             ) : null}
-            {detail.author?.name ? (
-              <span className="font-semibold text-[#1a2530]">{detail.author.name}</span>
+            {post.author?.name ? (
+              <span className="font-semibold text-[#1a2530]">{post.author.name}</span>
             ) : null}
-            {detail.date ? (
+            {post.date ? (
               <>
                 <span aria-hidden="true">•</span>
                 <span className="flex items-center gap-[0.375rem]">
                   <CalendarIcon />
-                  {detail.date}
+                  {post.date}
                 </span>
               </>
             ) : null}
-            {detail.readTime ? (
+            {post.readTime ? (
               <>
                 <span aria-hidden="true">•</span>
                 <span className="flex items-center gap-[0.375rem]">
                   <ClockIcon />
-                  {detail.readTime}
+                  {post.readTime}
                 </span>
               </>
             ) : null}
@@ -239,10 +147,10 @@ export default function BlogPostDetail() {
         </div>
 
         {/* Hero image */}
-        {detail.image ? (
+        {post.image ? (
           // eslint-disable-next-line @next/next/no-img-element
           <img
-            src={detail.image}
+            src={post.image}
             alt=""
             className="w-full max-w-[52rem] max-h-[26rem] object-cover rounded-[12px]"
           />
@@ -253,35 +161,35 @@ export default function BlogPostDetail() {
           <div className="flex-1 min-w-0 flex flex-col gap-[1.75rem] text-[#1a2530] text-[1.0625rem] leading-[1.75rem]">
             {hasStructuredBody ? (
               <>
-                {(detail.intro ?? []).map((p, i) => (
+                {(post.intro ?? []).map((p, i) => (
                   <p key={i} className="m-0 text-[#4d575f]">
                     {p}
                   </p>
                 ))}
 
-                {detail.keyHighlights && detail.keyHighlights.length ? (
+                {post.keyHighlights && post.keyHighlights.length ? (
                   <div className="flex flex-col gap-[0.75rem]">
                     <b className="text-[#1a2530]">Key highlights:</b>
                     <ul className="m-0 pl-[1.25rem] flex flex-col gap-[0.5rem] text-[#4d575f]">
-                      {detail.keyHighlights.map((item, i) => (
+                      {post.keyHighlights.map((item, i) => (
                         <li key={i}>{item}</li>
                       ))}
                     </ul>
                   </div>
                 ) : null}
 
-                {detail.coreHeading ? (
+                {post.coreHeading ? (
                   <div id="core-principles" className="flex flex-col gap-[0.75rem] scroll-mt-[6rem]">
                     <h2 className="m-0 text-[1.75rem] leading-[2.25rem] font-bold text-[#1a2530]">
-                      {detail.coreHeading}
+                      {post.coreHeading}
                     </h2>
-                    {detail.coreIntro ? (
-                      <p className="m-0 text-[#4d575f]">{detail.coreIntro}</p>
+                    {post.coreIntro ? (
+                      <p className="m-0 text-[#4d575f]">{post.coreIntro}</p>
                     ) : null}
                   </div>
                 ) : null}
 
-                {(detail.sections ?? []).map((section) => (
+                {(post.sections ?? []).map((section) => (
                   <div
                     key={section.id}
                     id={section.id}
@@ -298,15 +206,15 @@ export default function BlogPostDetail() {
                   </div>
                 ))}
 
-                {detail.closing ? (
+                {post.closing ? (
                   <div
-                    id={detail.closing.id}
+                    id={post.closing.id}
                     className="flex flex-col gap-[0.75rem] scroll-mt-[6rem]"
                   >
                     <h2 className="m-0 text-[1.75rem] leading-[2.25rem] font-bold text-[#1a2530]">
-                      {detail.closing.heading}
+                      {post.closing.heading}
                     </h2>
-                    {detail.closing.paragraphs.map((p, i) => (
+                    {post.closing.paragraphs.map((p, i) => (
                       <p key={i} className="m-0 text-[#4d575f]">
                         {p}
                       </p>
@@ -316,10 +224,10 @@ export default function BlogPostDetail() {
               </>
             ) : parsedHtml ? (
               <div className="prose-newsroom">{parsedHtml}</div>
-            ) : detail.content ? (
-              <p className="m-0 whitespace-pre-line text-[#4d575f]">{detail.content}</p>
-            ) : detail.excerpt ? (
-              <p className="m-0 text-[#4d575f]">{detail.excerpt}</p>
+            ) : post.content ? (
+              <p className="m-0 whitespace-pre-line text-[#4d575f]">{post.content}</p>
+            ) : post.excerpt ? (
+              <p className="m-0 text-[#4d575f]">{post.excerpt}</p>
             ) : (
               <p className="m-0 text-[#64676f]">This post has no content yet.</p>
             )}
@@ -345,23 +253,23 @@ export default function BlogPostDetail() {
                 </div>
               ) : null}
 
-              {detail.author?.name ? (
+              {post.author?.name ? (
                 <div className="rounded-[12px] border-[#e2e5e9] border-solid border-[1px] p-[1.125rem] flex items-center gap-[0.75rem]">
-                  {detail.author.avatar ? (
+                  {post.author.avatar ? (
                     // eslint-disable-next-line @next/next/no-img-element
                     <img
-                      src={detail.author.avatar}
+                      src={post.author.avatar}
                       alt=""
                       className="h-[2.5rem] w-[2.5rem] rounded-[50%] object-cover shrink-0"
                     />
                   ) : null}
                   <div className="flex flex-col">
                     <span className="text-[0.9375rem] font-semibold text-[#1a2530]">
-                      {detail.author.name}
+                      {post.author.name}
                     </span>
-                    {detail.author.handle ? (
+                    {post.author.handle ? (
                       <span className="text-[0.8125rem] text-[#64676f]">
-                        {detail.author.handle}
+                        {post.author.handle}
                       </span>
                     ) : null}
                   </div>
