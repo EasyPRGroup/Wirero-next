@@ -6,7 +6,7 @@ import Component1 from "./component1";
 import UserOutlined from "./user-outlined";
 
 const capabilityImages = [
-  "/Multi-Domain-Publishing.jpg",
+  "/core-capabilities-media.jpg",
   "/Niche-Targeting.jpg",
   "/Dofollow-backlinks.jpg",
   "/Custom-Anchor-Support.jpg",

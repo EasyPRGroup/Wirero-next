@@ -79,7 +79,7 @@ const PressReleases: NextPage<PressReleasesType> = ({ className = "" }) => {
                         src="/circle-check-big.svg"
                       />
                       <div className="relative leading-[1.75rem] font-semibold">
-                        Published on 25+ Websites
+                        Published on 1000+ Domains
                       </div>
                     </div>
                     <div className="rounded-[40px] flex items-center gap-[0.375rem] shrink-0">
@@ -151,7 +151,7 @@ const PressReleases: NextPage<PressReleasesType> = ({ className = "" }) => {
                         <h3 className="m-0 flex-1 relative text-[length:inherit] leading-[1.875rem] inline-block min-w-0 shrink-0 font-[inherit] mq450:text-[1.188rem] mq450:leading-[1.5rem]">
                           <span className="font-semibold leading-[1.25rem]">{`Published on `}</span>
                           <b className="text-transparent !bg-clip-text [background:linear-gradient(180deg,_#0461c3,_#0bc111)] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] leading-[1.25rem]">
-                            25+ websites
+                            1000+ domains
                           </b>
                         </h3>
                         <div className="w-[13.644rem] relative text-[1.25rem] leading-[1.5rem] capitalize font-semibold hidden shrink-0 mq450:text-[1rem] mq450:leading-[1.188rem]">
@@ -231,7 +231,7 @@ const PressReleases: NextPage<PressReleasesType> = ({ className = "" }) => {
                     height={600}
                     sizes="100vw"
                     alt=""
-                    src="/Rectangle-111@2x.png"
+                    src="/publish-your-content-medias.jpg"
                   />
                   <div className="w-[37.5rem] [backdrop-filter:blur(8px)] rounded-t-none rounded-br-[20px] rounded-bl-none bg-[rgba(26,37,48,0.4)] flex flex-col items-start p-[1.5rem] box-border gap-[0.75rem] max-w-full z-[1] shrink-0">
                     <div className="self-stretch flex flex-col items-start gap-[0.25rem] shrink-0">
@@ -297,7 +297,7 @@ const PressReleases: NextPage<PressReleasesType> = ({ className = "" }) => {
                         src="/circle-check-big.svg"
                       />
                       <div className="relative leading-[1.75rem] font-semibold">
-                        Published on 25+ Websites
+                        Published on 1000+ Domains
                       </div>
                     </div>
                     <div className="rounded-[40px] flex items-center gap-[0.375rem] shrink-0">
@@ -369,7 +369,7 @@ const PressReleases: NextPage<PressReleasesType> = ({ className = "" }) => {
                         <h3 className="m-0 flex-1 relative text-[length:inherit] leading-[1.875rem] inline-block min-w-0 shrink-0 font-[inherit] mq450:text-[1.188rem] mq450:leading-[1.5rem]">
                           <span className="font-semibold leading-[1.25rem]">{`Published on `}</span>
                           <b className="text-transparent !bg-clip-text [background:linear-gradient(180deg,_#0461c3,_#0bc111)] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] leading-[1.25rem]">
-                            25+ websites
+                            1000+ domains
                           </b>
                         </h3>
                         <div className="w-[13.644rem] relative text-[1.25rem] leading-[1.5rem] capitalize font-semibold hidden shrink-0 mq450:text-[1rem] mq450:leading-[1.188rem]">
@@ -449,7 +449,7 @@ const PressReleases: NextPage<PressReleasesType> = ({ className = "" }) => {
                     height={600}
                     sizes="100vw"
                     alt=""
-                    src="/Rectangle-111@2x.png"
+                    src="/Dofollow-backlinks.jpg"
                   />
                   <div className="w-[37.5rem] [backdrop-filter:blur(8px)] rounded-t-none rounded-br-[20px] rounded-bl-none bg-[rgba(26,37,48,0.4)] flex flex-col items-start p-[1.5rem] box-border gap-[0.75rem] max-w-full z-[1] shrink-0">
                     <div className="self-stretch flex flex-col items-start gap-[0.25rem] shrink-0">
@@ -515,7 +515,7 @@ const PressReleases: NextPage<PressReleasesType> = ({ className = "" }) => {
                         src="/circle-check-big.svg"
                       />
                       <div className="relative leading-[1.75rem] font-semibold">
-                        Published on 25+ Websites
+                        Published on 1000+ Domains
                       </div>
                     </div>
                     <div className="rounded-[40px] flex items-center gap-[0.375rem] shrink-0">
@@ -587,7 +587,7 @@ const PressReleases: NextPage<PressReleasesType> = ({ className = "" }) => {
                         <h3 className="m-0 flex-1 relative text-[length:inherit] leading-[1.875rem] inline-block min-w-0 shrink-0 font-[inherit] mq450:text-[1.188rem] mq450:leading-[1.5rem]">
                           <span className="font-semibold leading-[1.25rem]">{`Published on `}</span>
                           <b className="text-transparent !bg-clip-text [background:linear-gradient(180deg,_#0461c3,_#0bc111)] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] leading-[1.25rem]">
-                            25+ websites
+                            1000+ domains
                           </b>
                         </h3>
                         <div className="w-[13.644rem] relative text-[1.25rem] leading-[1.5rem] capitalize font-semibold hidden shrink-0 mq450:text-[1rem] mq450:leading-[1.188rem]">
@@ -667,7 +667,7 @@ const PressReleases: NextPage<PressReleasesType> = ({ className = "" }) => {
                     height={600}
                     sizes="100vw"
                     alt=""
-                    src="/Rectangle-111@2x.png"
+                    src="/Niche-Targeting.jpg"
                   />
                   <div className="w-[37.5rem] [backdrop-filter:blur(8px)] rounded-t-none rounded-br-[20px] rounded-bl-none bg-[rgba(26,37,48,0.4)] flex flex-col items-start p-[1.5rem] box-border gap-[0.75rem] max-w-full z-[1] shrink-0">
                     <div className="self-stretch flex flex-col items-start gap-[0.25rem] shrink-0">
