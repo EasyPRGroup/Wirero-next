@@ -220,8 +220,8 @@ const Points: NextPage<PointsType> = ({
       className={`w-[76.25rem] mq450:w-full max-w-full flex flex-col items-start gap-[2.5rem] text-left text-[1.5rem] text-[#1a2530] font-proxima ${className}`}
       style={pointsStyle}
     >
-      <div className="self-stretch flex items-start flex-wrap content-start gap-[2.5rem] mq450:gap-[1.25rem]">
-        <div className="self-stretch flex-1 rounded-3xl border-[#e2e5e9] border-solid border-[1px] box-border overflow-hidden flex items-start py-[2.125rem] pl-[2.25rem] pr-[2.187rem] gap-[2rem] min-w-0 max-w-full mq450:p-[1.25rem] mq450:gap-[1rem] mq800:flex-wrap">
+      <div className="self-stretch flex items-start flex-wrap content-start gap-[2.5rem] mq800:gap-[1.5rem] mq450:gap-[1.25rem]">
+        <div className="flex-1 rounded-3xl border-[#e2e5e9] border-solid border-[1px] box-border overflow-hidden flex items-start py-[2.125rem] pl-[2.25rem] pr-[2.187rem] gap-[2rem] min-w-[calc(50%-1.25rem)] max-w-full mq1050:min-w-full mq800:py-[1.75rem] mq800:px-[1.75rem] mq800:gap-[1.5rem] mq450:p-[1.25rem] mq450:gap-[1rem] mq800:flex-wrap">
           <div
             className="h-[10rem] w-[10.063rem] relative mq800:hidden"
             style={groupDivStyle}
@@ -243,13 +243,13 @@ const Points: NextPage<PointsType> = ({
             style={frameDivStyle}
           >
             <b
-              className="self-stretch relative leading-[1.875rem] mq450:text-[1.188rem] mq450:leading-[1.5rem]"
+              className="self-stretch relative text-[1.5rem] leading-[1.875rem] mq800:text-[1.375rem] mq800:leading-[1.75rem] mq450:text-[1.25rem] mq450:leading-[1.625rem]"
               style={dedicatedProjectMaStyle}
             >
               {dedicatedProjectMa}
             </b>
-            <div className="self-stretch flex flex-col items-start gap-[1rem] text-[1.125rem] text-[#4d565f]">
-              <div className="self-stretch relative leading-[1.75rem] shrink-0">
+            <div className="self-stretch flex flex-col items-start gap-[1rem] text-[1.125rem] text-[#4d565f] mq450:gap-[0.75rem]">
+              <div className="self-stretch relative leading-[1.75rem] shrink-0 mq800:text-[1.063rem] mq800:leading-[1.625rem] mq450:text-[1rem] mq450:leading-[1.5rem]">
                 {withLotsOfUnique}
               </div>
               <div className="w-[22.75rem] relative leading-[1.75rem] font-proxima text-[#4d575f] hidden shrink-0">
@@ -261,7 +261,7 @@ const Points: NextPage<PointsType> = ({
             </div>
           </div>
         </div>
-        <div className="self-stretch flex-1 rounded-3xl border-[#e2e5e9] border-solid border-[1px] box-border overflow-hidden flex items-start py-[2.125rem] pl-[2.25rem] pr-[2.187rem] gap-[2rem] min-w-0 max-w-full mq450:p-[1.25rem] mq450:gap-[1rem] mq800:flex-wrap">
+        <div className="flex-1 rounded-3xl border-[#e2e5e9] border-solid border-[1px] box-border overflow-hidden flex items-start py-[2.125rem] pl-[2.25rem] pr-[2.187rem] gap-[2rem] min-w-[calc(50%-1.25rem)] max-w-full mq1050:min-w-full mq800:py-[1.75rem] mq800:px-[1.75rem] mq800:gap-[1.5rem] mq450:p-[1.25rem] mq450:gap-[1rem] mq800:flex-wrap">
           <div
             className="h-[10rem] w-[10rem] relative mq800:hidden"
             style={groupDiv1Style}
@@ -283,13 +283,13 @@ const Points: NextPage<PointsType> = ({
             style={frameDiv1Style}
           >
             <b
-              className="self-stretch relative leading-[1.875rem] mq450:text-[1.188rem] mq450:leading-[1.5rem]"
+              className="self-stretch relative text-[1.5rem] leading-[1.875rem] mq800:text-[1.375rem] mq800:leading-[1.75rem] mq450:text-[1.25rem] mq450:leading-[1.625rem]"
               style={dedicatedProjectMa1Style}
             >
               {dedicatedProjectMa1}
             </b>
-            <div className="self-stretch flex flex-col items-start gap-[1.25rem] text-[1.125rem] text-[#4d565f]">
-              <div className="self-stretch relative leading-[1.75rem] shrink-0">
+            <div className="self-stretch flex flex-col items-start gap-[1.25rem] text-[1.125rem] text-[#4d565f] mq450:gap-[0.75rem]">
+              <div className="self-stretch relative leading-[1.75rem] shrink-0 mq800:text-[1.063rem] mq800:leading-[1.625rem] mq450:text-[1rem] mq450:leading-[1.5rem]">
                 {withLotsOfUnique1}
               </div>
               <div className="w-[24.75rem] relative leading-[1.75rem] font-proxima text-[#4d575f] hidden shrink-0">
@@ -301,8 +301,8 @@ const Points: NextPage<PointsType> = ({
           </div>
         </div>
       </div>
-      <div className="self-stretch flex items-start flex-wrap content-start gap-[2.5rem] mq450:gap-[1.25rem]">
-        <div className="flex-1 rounded-3xl border-[#e2e5e9] border-solid border-[1px] box-border overflow-hidden flex items-start py-[2.125rem] pl-[2.25rem] pr-[2.187rem] gap-[2rem] min-w-0 max-w-full mq450:p-[1.25rem] mq450:gap-[1rem] mq800:flex-wrap">
+      <div className="self-stretch flex items-start flex-wrap content-start gap-[2.5rem] mq800:gap-[1.5rem] mq450:gap-[1.25rem]">
+        <div className="flex-1 rounded-3xl border-[#e2e5e9] border-solid border-[1px] box-border overflow-hidden flex items-start py-[2.125rem] pl-[2.25rem] pr-[2.187rem] gap-[2rem] min-w-[calc(50%-1.25rem)] max-w-full mq1050:min-w-full mq800:py-[1.75rem] mq800:px-[1.75rem] mq800:gap-[1.5rem] mq450:p-[1.25rem] mq450:gap-[1rem] mq800:flex-wrap">
           <div
             className="h-[10rem] w-[10rem] relative mq800:hidden"
             style={groupDiv2Style}
@@ -324,13 +324,13 @@ const Points: NextPage<PointsType> = ({
             style={frameDiv2Style}
           >
             <b
-              className="self-stretch relative leading-[1.875rem] mq450:text-[1.188rem] mq450:leading-[1.5rem]"
+              className="self-stretch relative text-[1.5rem] leading-[1.875rem] mq800:text-[1.375rem] mq800:leading-[1.75rem] mq450:text-[1.25rem] mq450:leading-[1.625rem]"
               style={dedicatedProjectMa2Style}
             >
               {dedicatedProjectMa2}
             </b>
-            <div className="self-stretch flex flex-col items-start gap-[1.25rem] text-[1.125rem] text-[#4d565f]">
-              <div className="self-stretch relative leading-[1.75rem] shrink-0">
+            <div className="self-stretch flex flex-col items-start gap-[1.25rem] text-[1.125rem] text-[#4d565f] mq450:gap-[0.75rem]">
+              <div className="self-stretch relative leading-[1.75rem] shrink-0 mq800:text-[1.063rem] mq800:leading-[1.625rem] mq450:text-[1rem] mq450:leading-[1.5rem]">
                 {withLotsOfUnique2}
               </div>
               <div className="w-[24.75rem] relative leading-[1.75rem] font-proxima text-[#4d575f] hidden shrink-0">
@@ -342,7 +342,7 @@ const Points: NextPage<PointsType> = ({
           </div>
         </div>
         <div
-          className="self-stretch flex-1 rounded-3xl border-[#e2e5e9] border-solid border-[1px] box-border overflow-hidden flex items-start py-[2.125rem] pl-[2.25rem] pr-[2.187rem] gap-[2rem] min-w-0 max-w-full mq450:p-[1.25rem] mq450:gap-[1rem] mq800:flex-wrap"
+          className="flex-1 rounded-3xl border-[#e2e5e9] border-solid border-[1px] box-border overflow-hidden flex items-start py-[2.125rem] pl-[2.25rem] pr-[2.187rem] gap-[2rem] min-w-[calc(50%-1.25rem)] max-w-full mq1050:min-w-full mq800:py-[1.75rem] mq800:px-[1.75rem] mq800:gap-[1.5rem] mq450:p-[1.25rem] mq450:gap-[1rem] mq800:flex-wrap"
           style={divStyle}
         >
           <div
@@ -366,13 +366,13 @@ const Points: NextPage<PointsType> = ({
             style={frameDiv3Style}
           >
             <b
-              className="self-stretch relative leading-[1.875rem] mq450:text-[1.188rem] mq450:leading-[1.5rem]"
+              className="self-stretch relative text-[1.5rem] leading-[1.875rem] mq800:text-[1.375rem] mq800:leading-[1.75rem] mq450:text-[1.25rem] mq450:leading-[1.625rem]"
               style={dedicatedProjectMa3Style}
             >
               {dedicatedProjectMa3}
             </b>
-            <div className="self-stretch flex flex-col items-start gap-[1rem] text-[1.125rem] text-[#4d565f]">
-              <div className="self-stretch relative leading-[1.75rem] shrink-0">
+            <div className="self-stretch flex flex-col items-start gap-[1rem] text-[1.125rem] text-[#4d565f] mq450:gap-[0.75rem]">
+              <div className="self-stretch relative leading-[1.75rem] shrink-0 mq800:text-[1.063rem] mq800:leading-[1.625rem] mq450:text-[1rem] mq450:leading-[1.5rem]">
                 {withLotsOfUnique3}
               </div>
               <div className="w-[22.75rem] relative leading-[1.75rem] font-proxima text-[#4d575f] hidden shrink-0">

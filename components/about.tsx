@@ -8,22 +8,22 @@ export type AboutType = {
 const About: NextPage<AboutType> = ({ className = "" }) => {
   return (
     <section
-      className={`site-section self-stretch bg-[#f7fafd] flex flex-col items-start justify-center box-border gap-[3rem] max-w-full mq800:gap-[1.5rem] ${className}`}
+      className={`site-section self-stretch bg-[#f7fafd] flex flex-col items-start justify-center box-border gap-[3rem] max-w-full mq800:gap-[2rem] mq450:gap-[1.5rem] ${className}`}
     >
-      <section className="site-container overflow-hidden flex flex-col items-start gap-[1.5rem] max-w-full text-left text-[1rem] text-[#0bc111] font-proxima">
-        <b className="self-stretch relative tracking-[0.02em] leading-[1.25rem] uppercase">
+      <section className="site-container overflow-hidden flex flex-col items-start gap-[1.5rem] max-w-full text-left text-[1rem] text-[#0bc111] font-proxima mq450:gap-[1.25rem]">
+        <b className="self-stretch relative tracking-[0.02em] leading-[1.25rem] uppercase mq450:text-[0.875rem] mq450:leading-[1.125rem]">
           BUILT FOR SCALE
         </b>
-        <div className="self-stretch flex items-start gap-[3rem] max-w-full text-[3.5rem] text-[#1a2530] mq450:flex-col mq800:gap-[1.5rem] mq1350:flex-wrap">
-          <h1 className="m-0 flex-1 relative fluid-h2 font-bold font-[inherit] inline-block min-w-0 max-w-full">
+        <div className="self-stretch flex items-start gap-[3rem] max-w-full text-[3.5rem] text-[#1a2530] mq450:flex-col mq450:gap-[1.25rem] mq800:gap-[2rem] mq1350:flex-wrap">
+          <h1 className="m-0 flex-1 relative fluid-h2 font-bold font-[inherit] inline-block min-w-0 max-w-full mq1050:text-[2.5rem] mq1050:leading-[3rem] mq800:text-[2rem] mq800:leading-[2.5rem] mq450:text-[1.75rem] mq450:leading-[2.125rem]">
             Everything Designed for High-Volume Distribution
           </h1>
-          <div className="w-full max-w-[33.25rem] flex flex-col items-start gap-[0.75rem] min-w-0 text-[1.125rem] text-[#4d565f] mq1350:flex-1">
-            <div className="self-stretch relative leading-[1.75rem]">
+          <div className="w-full max-w-[33.25rem] flex flex-col items-start gap-[0.75rem] min-w-0 text-[1.125rem] text-[#4d565f] mq1350:flex-1 mq450:gap-[0.625rem]">
+            <div className="self-stretch relative leading-[1.75rem] mq800:text-[1.063rem] mq800:leading-[1.625rem] mq450:text-[1rem] mq450:leading-[1.5rem]">
               Infrastructure optimized for scale, automation, and operational
               efficiency.
             </div>
-            <div className="self-stretch relative leading-[1.75rem]">
+            <div className="self-stretch relative leading-[1.75rem] mq800:text-[1.063rem] mq800:leading-[1.625rem] mq450:text-[1rem] mq450:leading-[1.5rem]">
               Built for speed, automation, and large-scale publishing across
               independent distribution networks.
             </div>
