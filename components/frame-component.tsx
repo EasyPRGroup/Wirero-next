@@ -18,9 +18,9 @@ const FrameComponent: NextPage<FrameComponentType> = ({
     <div
       className={`self-stretch flex flex-col items-start shrink-0 text-left text-[1.375rem] text-[#4d565f] font-proxima ${className}`}
     >
-      <div className="flex w-full max-w-full flex-col items-center overflow-hidden rounded-xl border-[4px] border-solid border-color-white bg-color-white py-[0.687rem] px-[1.25rem] shadow-[0px_0px_8px_rgba(26,_38,_48,_0.08)]">
-        <div className="w-full flex items-start gap-[0.75rem] max-w-full mq450:flex-wrap">
-          <div className="h-[1.75rem] flex items-center">
+      <div className="flex w-full max-w-full flex-col items-center overflow-hidden rounded-xl border-[4px] border-solid border-color-white bg-color-white py-[0.687rem] px-[1.25rem] shadow-[0px_0px_8px_rgba(26,_38,_48,_0.08)] mq450:px-[0.75rem]">
+        <div className="w-full flex items-start gap-[0.75rem] max-w-full mq450:gap-[0.5rem]">
+          <div className="h-[1.75rem] flex items-center shrink-0">
             <div className="rounded-[52px] bg-[#0461c3] flex items-center justify-center p-[0.25rem]">
               <Image
                 className="h-[1rem] w-full relative"
@@ -32,7 +32,7 @@ const FrameComponent: NextPage<FrameComponentType> = ({
               />
             </div>
           </div>
-          <h3 className="m-0 flex-1 relative text-[length:inherit] leading-[1.75rem] font-semibold font-[inherit] inline-block min-w-[11.125rem] mq450:text-[1.125rem] mq450:leading-[1.375rem]">
+          <h3 className="m-0 flex-1 relative text-[length:inherit] leading-[1.75rem] font-semibold font-[inherit] inline-block min-w-0 mq450:text-[1rem] mq450:leading-[1.5rem]">
             {independentDomains}
           </h3>
         </div>

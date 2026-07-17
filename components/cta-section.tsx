@@ -37,8 +37,8 @@ const CtaSection: NextPage<CtaSectionType> = ({ className = "" }) => {
         alt=""
         src="/Group-111.svg"
       />
-      <section className="site-container rounded-3xl flex items-center p-[2.5rem] box-border gap-[3.75rem] max-w-full z-[1] shrink-0 text-left text-[1rem] text-[#0bc111] font-proxima mq800:gap-[1.875rem] mq1350:flex-wrap">
-        <div className="flex-1 flex flex-col items-start gap-[1.75rem] min-w-0 max-w-full">
+      <section className="site-container rounded-3xl flex items-center p-[2.5rem] box-border gap-[3.75rem] max-w-full z-[1] shrink-0 text-left text-[1rem] text-[#0bc111] font-proxima mq450:p-[1.25rem] mq450:gap-[2rem] mq800:gap-[1.875rem] mq1350:flex-wrap">
+        <div className="flex-1 flex flex-col items-start gap-[1.75rem] min-w-0 max-w-full mq450:gap-[1.25rem]">
           <div className="self-stretch overflow-hidden flex flex-col items-start gap-[1.5rem]">
             <b className="relative tracking-[0.02em] leading-[1.25rem] uppercase">
               Subscription Access
@@ -70,7 +70,7 @@ const CtaSection: NextPage<CtaSectionType> = ({ className = "" }) => {
             showArrowRightIcon
           />
         </div>
-        <div className="relative h-auto min-h-[14.5rem] w-full max-w-[32.5rem] min-w-0 shrink text-[1.125rem] text-[#4d565f] mq800:flex mq800:min-h-0 mq800:w-full mq800:flex-col mq800:items-center mq800:gap-[1rem] mq1350:flex-1">
+        <div className="relative h-auto min-h-[14.5rem] w-full max-w-[32.5rem] min-w-0 shrink text-[1.125rem] text-[#4d565f] flex flex-col gap-[1rem] mq800:min-h-0 mq1350:flex-1">
           <div className="w-[19.581rem] hidden items-start gap-[0.75rem] shrink-0 mq450:flex-wrap">
             <div className="h-[1.625rem] flex items-center">
               <div className="rounded-[52px] bg-[#0461c3] flex items-center justify-center p-[0.25rem]">
@@ -142,7 +142,7 @@ const CtaSection: NextPage<CtaSectionType> = ({ className = "" }) => {
           {featureItems.map((item) => (
             <FrameComponent
               key={item.label}
-              className={`${item.position} ${item.width} mq800:static mq800:w-full mq800:items-center`}
+              className="w-full"
               independentDomains={item.label}
             />
           ))}

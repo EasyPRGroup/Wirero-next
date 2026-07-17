@@ -297,12 +297,12 @@ const FaqsContent = () => {
       {/* Hero Section */}
       <section className="site-section-hero self-stretch bg-[#f7fafd]">
         <div className="site-container flex items-center box-border max-w-full text-center text-[1rem] text-[#0bc111] font-proxima">
-        <div className="flex-1 overflow-hidden flex flex-col items-center py-[0rem] box-border gap-[1.5rem] max-w-full">
-          <b className="relative tracking-[0.02em] leading-[1.25rem] uppercase text-left shrink-0">
+        <div className="flex-1 overflow-hidden flex flex-col items-center py-[0rem] box-border gap-[1.5rem] max-w-full mq450:gap-[1rem]">
+          <b className="relative tracking-[0.02em] leading-[1.25rem] uppercase text-left shrink-0 mq450:text-[0.875rem] mq450:leading-[1.125rem]">
             FAQs
           </b>
           <div className="self-stretch flex flex-col items-center max-w-full shrink-0 text-[3.5rem] text-[#1a2530]">
-            <h1 className="m-0 w-full relative text-[length:inherit] leading-[4.25rem] font-bold font-[inherit] max-w-[61.25rem] shrink-0 text-center mq1050:text-[2.813rem] mq1050:leading-[3.375rem] mq1050:max-w-full mq450:text-[2.125rem] mq450:leading-[2.563rem]">
+            <h1 className="m-0 w-full relative text-[length:inherit] leading-[4.25rem] font-bold font-[inherit] max-w-[61.25rem] shrink-0 text-center mq1050:text-[2.5rem] mq1050:leading-[3rem] mq1050:max-w-full mq800:text-[2rem] mq800:leading-[2.5rem] mq450:text-[1.75rem] mq450:leading-[2.125rem]">
               Everything you need to know before publishing
             </h1>
           </div>
@@ -312,40 +312,44 @@ const FaqsContent = () => {
 
       {/* Main Content */}
       <main className="site-section-hero self-stretch">
-        <div className="site-container flex items-start flex-wrap content-start box-border gap-[4.25rem] max-w-full text-left text-[1.75rem] text-[#1a2530] font-proxima mq750:gap-[2.125rem] mq450:gap-[1.063rem]">
-        {/* Categories Sidebar */}
-        <section className="flex-1 flex flex-col items-start gap-[1.25rem] min-w-0 max-w-[23.75rem] text-left text-[1.25rem] text-color-white font-proxima">
-          {faqCategories.map((category, index) => (
-            <FaqCategory
-              key={index}
-              icon={category.icon}
-              title={category.title}
-              isActive={activeCategory === index}
-              onClick={() => handleCategoryChange(index)}
-            />
-          ))}
-        </section>
-
-        {/* FAQ Items */}
-        <div className="flex-1 flex flex-col items-start gap-[1.25rem] min-w-0 max-w-full">
-          {faqItems.map((item, index) => (
-            <FaqAccordion
-              key={index}
-              item={item}
-              isOpen={openFaqIndex === index}
-              onToggle={() => handleFaqToggle(index)}
-            />
-          ))}
-        </div>
+        <div className="site-container flex flex-col items-start box-border gap-[2.5rem] max-w-full text-left text-[1.75rem] text-[#1a2530] font-proxima mq800:gap-[2rem] mq450:gap-[1.5rem]">
+          {faqCategories.map((category, categoryIndex) => {
+            const categoryFaqItems = faqItemsByCategory[categoryIndex] ?? [];
+            return (
+              <section key={categoryIndex} className="self-stretch flex flex-col items-start gap-[1.25rem] mq800:gap-[1rem]">
+                {/* Category Button */}
+                <FaqCategory
+                  icon={category.icon}
+                  title={category.title}
+                  isActive={activeCategory === categoryIndex}
+                  onClick={() => handleCategoryChange(categoryIndex)}
+                />
+                
+                {/* FAQ Items for this category */}
+                {activeCategory === categoryIndex && (
+                  <div className="self-stretch flex flex-col items-start gap-[1.25rem] pl-[1rem] mq800:gap-[1rem] mq450:pl-[0.5rem]">
+                    {categoryFaqItems.map((item, faqIndex) => (
+                      <FaqAccordion
+                        key={faqIndex}
+                        item={item}
+                        isOpen={openFaqIndex === faqIndex}
+                        onToggle={() => handleFaqToggle(faqIndex)}
+                      />
+                    ))}
+                  </div>
+                )}
+              </section>
+            );
+          })}
         </div>
       </main>
 
       {/* CTA Section */}
       <section className="site-section-cta self-stretch">
         <div className="site-container flex flex-col items-center box-border max-w-full">
-        <div className="self-stretch rounded-[24px] bg-[#0461c3] overflow-hidden flex items-center justify-center py-[3.75rem] px-[2.5rem] box-border relative isolate max-w-full mq1050:py-[3rem] mq750:py-[2.5rem] mq450:px-[1.25rem] mq450:py-[2rem] mq450:box-border">
+        <div className="self-stretch rounded-[24px] bg-[#0461c3] overflow-hidden flex items-center justify-center py-[3.75rem] px-[2.5rem] box-border relative isolate max-w-full mq1050:py-[3rem] mq800:py-[2.5rem] mq800:px-[1.5rem] mq450:px-[1.25rem] mq450:py-[2rem] mq450:box-border">
           <Image
-            className="h-[14.375rem] w-[30.25rem] absolute m-[0!important] bottom-[0rem] left-[2.25rem] object-cover z-[3] shrink-0 mq750:hidden"
+            className="h-[14.375rem] w-[30.25rem] absolute m-[0!important] bottom-[0rem] left-[2.25rem] object-cover z-[3] shrink-0 mq800:hidden"
             loading="lazy"
             width={484}
             height={230}
@@ -353,18 +357,18 @@ const FaqsContent = () => {
             src="/Vector-2@2x.png"
           />
 
-          <section className="site-container flex w-full flex-col items-center gap-[1.75rem] max-w-full z-[4] shrink-0 text-center text-[3rem] text-color-white font-proxima">
-            <div className="self-stretch overflow-hidden flex flex-col items-center gap-[0.75rem]">
-              <h2 className="m-0 self-stretch relative text-[length:inherit] leading-[3.625rem] font-bold font-[inherit] mq1050:text-[2.375rem] mq1050:leading-[2.875rem] mq450:text-[1.813rem] mq450:leading-[2.188rem]">
+          <section className="site-container flex w-full flex-col items-center gap-[1.75rem] max-w-full z-[4] shrink-0 text-center text-[3rem] text-color-white font-proxima mq450:gap-[1.25rem]">
+            <div className="self-stretch overflow-hidden flex flex-col items-center gap-[0.75rem] mq450:gap-[0.5rem]">
+              <h2 className="m-0 self-stretch relative text-[length:inherit] leading-[3.625rem] font-bold font-[inherit] mq1050:text-[2.25rem] mq1050:leading-[2.75rem] mq800:text-[2rem] mq800:leading-[2.5rem] mq450:text-[1.75rem] mq450:leading-[2.125rem]">
                 Still have questions?
               </h2>
-              <div className="self-stretch relative text-[1.125rem] leading-[1.75rem] font-proxima text-[#f5f5f5]">
+              <div className="self-stretch relative text-[1.125rem] leading-[1.75rem] font-proxima text-[#f5f5f5] mq450:text-[1rem] mq450:leading-[1.625rem]">
                 Contact us or start publishing to see how it works.
               </div>
             </div>
             <Link
               href="/contact"
-              className="cursor-pointer border-none py-[1rem] px-[2.5rem] bg-color-white h-[3.5rem] rounded-[8px] flex items-center justify-center box-border gap-[0.5rem] no-underline"
+              className="cursor-pointer border-none py-[1rem] px-[2.5rem] bg-color-white h-[3.5rem] rounded-[8px] flex items-center justify-center box-border gap-[0.5rem] no-underline hover:bg-[#f7fafd] transition-colors mq450:w-full mq450:h-auto mq450:py-[0.875rem] mq450:px-[1.5rem]"
             >
               <Image
                 className="h-[1rem] w-[1rem] relative hidden shrink-0"
@@ -373,11 +377,11 @@ const FaqsContent = () => {
                 alt=""
                 src="/search.svg"
               />
-              <div className="relative text-[1rem] leading-[1.25rem] font-semibold font-proxima text-[#1a2530] text-center shrink-0">
+              <div className="relative text-[1rem] leading-[1.25rem] font-semibold font-proxima text-[#1a2530] text-center shrink-0 mq450:text-[0.938rem]">
                 Contact us
               </div>
               <Image
-                className="h-[1rem] w-[1rem] relative shrink-0"
+                className="h-[1rem] w-[1rem] relative shrink-0 mq450:h-[0.875rem] mq450:w-[0.875rem]"
                 width={16}
                 height={16}
                 alt=""

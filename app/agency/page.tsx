@@ -139,27 +139,27 @@ const Agency: NextPage = () => {
     <div className="relative flex w-full min-w-0 flex-col items-stretch overflow-x-clip bg-color-white leading-[normal] tracking-[normal]">
       {/* Hero Section */}
       <section className="site-section-hero self-stretch bg-color-white">
-        <div className="site-container flex items-center box-border gap-[4.25rem] max-w-full mq1050:flex-wrap mq750:gap-[2.125rem] mq450:gap-[1.063rem]">
-        <section className="flex-1 overflow-hidden flex flex-col items-start gap-[1.5rem] min-w-0 max-w-full text-left text-[1rem] text-[#0bc111] font-proxima">
-          <b className="relative tracking-[0.02em] leading-[1.25rem] uppercase">
+        <div className="site-container flex items-center box-border gap-[4.25rem] max-w-full mq1050:flex-wrap mq800:gap-[2.5rem] mq450:gap-[2rem]">
+        <section className="flex-1 overflow-hidden flex flex-col items-start gap-[1.5rem] min-w-0 max-w-full text-left text-[1rem] text-[#0bc111] font-proxima mq800:gap-[1.25rem] mq450:gap-[1rem]">
+          <b className="relative tracking-[0.02em] leading-[1.25rem] uppercase mq450:text-[0.875rem]">
             AGENCY
           </b>
-          <div className="self-stretch flex flex-col items-start gap-[1rem] text-[3.5rem] text-[#1a2530]">
-            <b className="self-stretch relative leading-[4.25rem] mq1050:text-[2.813rem] mq1050:leading-[3.375rem] mq450:text-[2.125rem] mq450:leading-[2.563rem]">
+          <div className="self-stretch flex flex-col items-start gap-[1rem] text-[3.5rem] text-[#1a2530] mq450:gap-[0.75rem]">
+            <h1 className="m-0 self-stretch relative text-[length:inherit] leading-[4.25rem] font-bold font-[inherit] mq1050:text-[2.5rem] mq1050:leading-[3rem] mq800:text-[2rem] mq800:leading-[2.5rem] mq450:text-[1.75rem] mq450:leading-[2.125rem]">
               Expand your PR offering without expanding your costs
-            </b>
-            <div className="self-stretch relative text-[1.125rem] leading-[1.75rem] font-proxima text-[#4d565f]">
+            </h1>
+            <div className="self-stretch relative text-[1.125rem] leading-[1.75rem] font-proxima text-[#4d565f] mq800:text-[1.063rem] mq800:leading-[1.625rem] mq450:text-[1rem] mq450:leading-[1.5rem]">
               Give your clients large-scale multi-domain distribution through a
               dedicated backend infrastructure built for agencies, reseller
               platforms, and high-volume campaigns.
             </div>
           </div>
-          <button className="cursor-pointer [border:none] py-[1rem] px-[2.5rem] bg-[#0461c3] h-[3.5rem] rounded-[8px] flex items-center justify-center box-border gap-[0.5rem]">
-            <div className="relative text-[1rem] leading-[1.25rem] font-semibold font-proxima text-color-white text-center shrink-0">
+          <button className="cursor-pointer [border:none] py-[1rem] px-[2.5rem] bg-[#0461c3] h-[3.5rem] rounded-[8px] flex items-center justify-center box-border gap-[0.5rem] hover:bg-[#0554af] transition-colors mq450:w-full mq450:h-auto mq450:py-[0.875rem] mq450:px-[1.5rem]">
+            <div className="relative text-[1rem] leading-[1.25rem] font-semibold font-proxima text-color-white text-center shrink-0 mq450:text-[0.938rem]">
               Become a Partner
             </div>
             <Image
-              className="h-[1rem] w-[1rem] relative shrink-0"
+              className="h-[1rem] w-[1rem] relative shrink-0 mq450:h-[0.875rem] mq450:w-[0.875rem]"
               width={16}
               height={16}
               sizes="100vw"
@@ -168,15 +168,17 @@ const Agency: NextPage = () => {
             />
           </button>
         </section>
-        <Image
-          className="w-[27.5rem] relative rounded-[20px] max-h-full object-cover max-w-full mq1050:flex-1"
-          loading="lazy"
-          width={440}
-          height={495}
-          sizes="100vw"
-          alt=""
-          src="/IMG1@2x.png"
-        />
+        <div className="w-[27.5rem] relative rounded-[20px] max-h-full max-w-full hidden mq800:block mq1050:flex-1">
+          <Image
+            className="w-full h-full rounded-[20px] object-cover"
+            loading="lazy"
+            width={440}
+            height={495}
+            sizes="(max-width: 1050px) 50vw, 440px"
+            alt=""
+            src="/IMG1@2x.png"
+          />
+        </div>
         </div>
       </section>
 
@@ -236,25 +238,25 @@ const Agency: NextPage = () => {
 
       {/* How Agencies Use Wirero */}
       <section className="site-section self-stretch bg-[#f7fafd]">
-        <div className="site-container flex flex-col items-center box-border gap-[4.25rem] text-center max-w-full mq750:gap-[2.125rem] mq450:gap-[1.063rem]">
-        <div className="w-full max-w-[60rem] min-w-0 overflow-hidden flex flex-col items-center gap-[1.5rem]">
-          <b className="self-stretch relative tracking-[0.02em] leading-[1.25rem] uppercase text-[#0bc111] font-proxima">
+        <div className="site-container flex flex-col items-center box-border gap-[4.25rem] text-center max-w-full mq800:gap-[2.5rem] mq450:gap-[1.5rem]">
+        <div className="w-full max-w-[60rem] min-w-0 overflow-hidden flex flex-col items-center gap-[1.5rem] mq450:gap-[1rem]">
+          <b className="self-stretch relative tracking-[0.02em] leading-[1.25rem] uppercase text-[#0bc111] font-proxima mq450:text-[0.875rem] mq450:leading-[1.125rem]">
             HOW AGENCIES USE WIRERO
           </b>
-          <h1 className="m-0 self-stretch relative text-[3rem] leading-[3.625rem] font-bold font-proxima text-[#1a2530] mq1050:text-[2.375rem] mq1050:leading-[2.875rem] mq450:text-[1.813rem] mq450:leading-[2.188rem]">
+          <h2 className="m-0 self-stretch relative text-[3rem] leading-[3.625rem] font-bold font-proxima text-[#1a2530] mq1050:text-[2.25rem] mq1050:leading-[2.75rem] mq800:text-[2rem] mq800:leading-[2.5rem] mq450:text-[1.75rem] mq450:leading-[2.125rem]">
             Sell distribution packages at scale
-          </h1>
+          </h2>
         </div>
-        <section className="self-stretch flex flex-col items-start gap-[2.5rem] text-left mq750:gap-[1.25rem]">
-          <div className="self-stretch flex items-start flex-wrap content-start gap-[2.5rem] mq750:gap-[1.25rem]">
+        <section className="self-stretch flex flex-col items-start gap-[2.5rem] text-left mq800:gap-[2rem] mq450:gap-[1.5rem]">
+          <div className="self-stretch flex items-start flex-wrap content-start gap-[2.5rem] mq800:gap-[2rem] mq450:gap-[1.5rem]">
             {howAgenciesUse.map((item, index) => (
               <div
                 key={index}
-                className="flex-1 overflow-hidden flex items-start gap-[1.25rem] min-w-0 max-w-full mq450:flex-wrap"
+                className="flex-1 overflow-hidden flex items-start gap-[1.25rem] min-w-0 max-w-full mq1050:min-w-full mq800:flex-col mq800:items-center mq800:text-center mq450:gap-[1rem]"
               >
-                <div className="h-[4.25rem] w-[4.25rem] rounded-[16px] bg-[#eaf5fb] flex items-center justify-center p-[1rem] box-border shrink-0">
+                <div className="h-[4.25rem] w-[4.25rem] rounded-[16px] bg-[#eaf5fb] flex items-center justify-center p-[1rem] box-border shrink-0 mq450:h-[3.5rem] mq450:w-[3.5rem] mq450:p-[0.75rem]">
                   <Image
-                    className="h-[2.25rem] w-[2.25rem] relative object-contain"
+                    className="h-[2.25rem] w-[2.25rem] relative object-contain mq450:h-[2rem] mq450:w-[2rem]"
                     loading="lazy"
                     width={36}
                     height={36}
@@ -263,11 +265,11 @@ const Agency: NextPage = () => {
                     src={item.icon}
                   />
                 </div>
-                <div className="flex-1 flex flex-col items-start gap-[1rem] min-w-0">
-                  <h3 className="m-0 self-stretch relative text-[1.5rem] leading-[1.875rem] font-bold font-proxima text-[#1a2530] mq450:text-[1.188rem] mq450:leading-[1.5rem]">
+                <div className="flex-1 flex flex-col items-start gap-[1rem] min-w-0 mq800:items-center mq450:gap-[0.75rem]">
+                  <h3 className="m-0 self-stretch relative text-[1.5rem] leading-[1.875rem] font-bold font-proxima text-[#1a2530] mq800:text-[1.375rem] mq800:leading-[1.75rem] mq450:text-[1.25rem] mq450:leading-[1.625rem]">
                     {item.title}
                   </h3>
-                  <div className="self-stretch relative text-[1.125rem] leading-[1.75rem] font-proxima text-[#4d565f]">
+                  <div className="self-stretch relative text-[1.125rem] leading-[1.75rem] font-proxima text-[#4d565f] mq800:text-[1.063rem] mq800:leading-[1.625rem] mq450:text-[1rem] mq450:leading-[1.5rem]">
                     {item.description}
                   </div>
                 </div>
@@ -358,35 +360,35 @@ const Agency: NextPage = () => {
 
       {/* Use Cases (Dark) */}
       <section className="site-section self-stretch bg-[#12171c]">
-        <div className="site-container flex flex-col items-center box-border gap-[3rem] text-center max-w-full mq750:gap-[1.5rem]">
-        <div className="w-full max-w-[51.25rem] min-w-0 overflow-hidden flex flex-col items-center gap-[1.5rem]">
-          <h2 className="m-0 self-stretch relative text-[3rem] leading-[3.625rem] font-bold font-proxima text-[#eee] mq1050:text-[2.375rem] mq1050:leading-[2.875rem] mq450:text-[1.813rem] mq450:leading-[2.188rem]">
+        <div className="site-container flex flex-col items-center box-border gap-[3rem] text-center max-w-full mq800:gap-[2.5rem] mq450:gap-[2rem]">
+        <div className="w-full max-w-[51.25rem] min-w-0 overflow-hidden flex flex-col items-center gap-[1.5rem] mq450:gap-[1rem]">
+          <h2 className="m-0 self-stretch relative text-[3rem] leading-[3.625rem] font-bold font-proxima text-[#eee] mq1050:text-[2.25rem] mq1050:leading-[2.75rem] mq800:text-[2rem] mq800:leading-[2.5rem] mq450:text-[1.75rem] mq450:leading-[2.125rem]">
             Use Cases
           </h2>
         </div>
-        <section className="self-stretch flex flex-col items-start gap-[2.5rem] text-left mq750:gap-[1.25rem]">
-          <div className="self-stretch flex items-start flex-wrap content-start gap-[2.5rem] mq750:gap-[1.25rem]">
+        <section className="self-stretch flex flex-col items-start gap-[2.5rem] text-left mq800:gap-[2rem] mq450:gap-[1.5rem]">
+          <div className="self-stretch flex items-start flex-wrap content-start gap-[2.5rem] mq800:gap-[2rem] mq450:gap-[1.5rem]">
             {useCases.map((useCase, index) => (
               <div
                 key={index}
-                className="flex-1 overflow-hidden flex flex-col items-start gap-[1.5rem] min-w-0 max-w-full"
+                className="flex-1 overflow-hidden flex flex-col items-start gap-[1.5rem] min-w-0 max-w-full mq1050:min-w-[calc(50%-1.25rem)] mq800:min-w-[calc(50%-1rem)] mq450:min-w-full mq450:gap-[1.25rem]"
               >
-                <div className="self-stretch h-[12.5rem] rounded-[16px] bg-[#181f25] border-[rgba(122,131,140,0.2)] border-solid border-[1px] box-border flex flex-col items-center justify-center gap-[0.75rem]">
+                <div className="self-stretch h-[12.5rem] rounded-[16px] bg-[#181f25] border-[rgba(122,131,140,0.2)] border-solid border-[1px] box-border flex flex-col items-center justify-center gap-[0.75rem] mq800:h-[11rem] mq450:h-[10rem]">
                   <Image
-                    className="w-[10rem] relative max-h-full object-cover shrink-0"
+                    className="w-[10rem] relative max-h-full object-cover shrink-0 mq800:w-[9rem] mq450:w-[8rem]"
                     loading="lazy"
                     width={160}
                     height={160}
-                    sizes="100vw"
+                    sizes="(max-width: 450px) 128px, (max-width: 800px) 144px, 160px"
                     alt=""
                     src={useCase.image}
                   />
                 </div>
-                <div className="self-stretch rounded-[16px] flex flex-col items-start py-[0rem] px-[0.25rem] gap-[0.75rem]">
-                  <h3 className="m-0 self-stretch relative text-[1.5rem] leading-[1.875rem] font-bold font-proxima text-[#eee] mq450:text-[1.188rem] mq450:leading-[1.5rem]">
+                <div className="self-stretch rounded-[16px] flex flex-col items-start py-[0rem] px-[0.25rem] gap-[0.75rem] mq450:gap-[0.5rem]">
+                  <h3 className="m-0 self-stretch relative text-[1.5rem] leading-[1.875rem] font-bold font-proxima text-[#eee] mq800:text-[1.375rem] mq800:leading-[1.75rem] mq450:text-[1.25rem] mq450:leading-[1.625rem]">
                     {useCase.title}
                   </h3>
-                  <div className="self-stretch relative text-[1.125rem] leading-[1.75rem] font-proxima text-[rgba(238,238,238,0.8)]">
+                  <div className="self-stretch relative text-[1.125rem] leading-[1.75rem] font-proxima text-[rgba(238,238,238,0.8)] mq800:text-[1.063rem] mq800:leading-[1.625rem] mq450:text-[1rem] mq450:leading-[1.5rem]">
                     {useCase.description}
                   </div>
                 </div>
