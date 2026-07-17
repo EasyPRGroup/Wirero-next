@@ -2,6 +2,7 @@ import "./global.css";
 import type { Metadata } from "next";
 import Header from "../components/header";
 import ScrollToTop from "../components/scroll-to-top";
+import GoogleAnalytics from "../components/google-analytics";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://wirero.com";
 
@@ -82,6 +83,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body suppressHydrationWarning>
+        <GoogleAnalytics />
         <div className="site-page-frame">
           <Header />
           {children}
