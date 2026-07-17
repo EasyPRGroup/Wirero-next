@@ -223,7 +223,7 @@ const Points: NextPage<PointsType> = ({
       <div className="self-stretch flex items-start flex-wrap content-start gap-[2.5rem] mq450:gap-[1.25rem]">
         <div className="self-stretch flex-1 rounded-3xl border-[#e2e5e9] border-solid border-[1px] box-border overflow-hidden flex items-start py-[2.125rem] pl-[2.25rem] pr-[2.187rem] gap-[2rem] min-w-0 max-w-full mq450:p-[1.25rem] mq450:gap-[1rem] mq800:flex-wrap">
           <div
-            className="h-[10rem] w-[10.063rem] relative hidden mq800:block"
+            className="h-[10rem] w-[10.063rem] relative mq800:hidden"
             style={groupDivStyle}
           >
             {!!showImage91Icon && (
@@ -263,7 +263,7 @@ const Points: NextPage<PointsType> = ({
         </div>
         <div className="self-stretch flex-1 rounded-3xl border-[#e2e5e9] border-solid border-[1px] box-border overflow-hidden flex items-start py-[2.125rem] pl-[2.25rem] pr-[2.187rem] gap-[2rem] min-w-0 max-w-full mq450:p-[1.25rem] mq450:gap-[1rem] mq800:flex-wrap">
           <div
-            className="h-[10rem] w-[10rem] relative hidden mq800:block"
+            className="h-[10rem] w-[10rem] relative mq800:hidden"
             style={groupDiv1Style}
           >
             {!!showImage92Icon && (
@@ -304,7 +304,7 @@ const Points: NextPage<PointsType> = ({
       <div className="self-stretch flex items-start flex-wrap content-start gap-[2.5rem] mq450:gap-[1.25rem]">
         <div className="flex-1 rounded-3xl border-[#e2e5e9] border-solid border-[1px] box-border overflow-hidden flex items-start py-[2.125rem] pl-[2.25rem] pr-[2.187rem] gap-[2rem] min-w-0 max-w-full mq450:p-[1.25rem] mq450:gap-[1rem] mq800:flex-wrap">
           <div
-            className="h-[10rem] w-[10rem] relative hidden mq800:block"
+            className="h-[10rem] w-[10rem] relative mq800:hidden"
             style={groupDiv2Style}
           >
             {!!showImage90Icon && (
@@ -346,7 +346,7 @@ const Points: NextPage<PointsType> = ({
           style={divStyle}
         >
           <div
-            className="h-[10rem] w-[10rem] relative hidden mq800:block"
+            className="h-[10rem] w-[10rem] relative mq800:hidden"
             style={groupDiv3Style}
           >
             {!!showImage93Icon && (
