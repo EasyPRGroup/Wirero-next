@@ -1,9 +1,8 @@
 import type { MetadataRoute } from "next";
-import { MOCK_BASE_POSTS } from "./blog/blog-api";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://wirero.com";
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const staticPages: MetadataRoute.Sitemap = [
     {
       url: SITE_URL,
@@ -67,12 +66,36 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
-  const blogPosts: MetadataRoute.Sitemap = MOCK_BASE_POSTS.map((post) => ({
-    url: `${SITE_URL}/blog/${post.slug}`,
-    lastModified: new Date(),
-    changeFrequency: "weekly" as const,
-    priority: 0.7,
-  }));
+  // Fetch blog posts from API for sitemap
+  let blogPosts: MetadataRoute.Sitemap = [];
+  
+  try {
+    const apiBase = process.env.NEXT_PUBLIC_API_BASE_URL;
+    if (apiBase) {
+      const response = await fetch(`${apiBase}/public/blogs?limit=1000`, {
+        headers: {
+          "x-api-key": process.env.NEXT_PUBLIC_API_KEY || "",
+        },
+        // Cache for 1 hour during build
+        next: { revalidate: 3600 }
+      });
+      
+      if (response.ok) {
+        const data = await response.json();
+        if (data.success && data.data) {
+          blogPosts = data.data.map((post: { slug?: string; publishedAt?: string }) => ({
+            url: `${SITE_URL}/blog/${post.slug || ""}`,
+            lastModified: post.publishedAt ? new Date(post.publishedAt) : new Date(),
+            changeFrequency: "weekly" as const,
+            priority: 0.7,
+          }));
+        }
+      }
+    }
+  } catch (error) {
+    console.warn("Failed to fetch blog posts for sitemap:", error);
+    // Return empty blog posts array on error
+  }
 
   return [...staticPages, ...blogPosts];
 }

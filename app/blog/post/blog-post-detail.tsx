@@ -5,7 +5,6 @@ import { useSearchParams } from "next/navigation";
 import parse from "html-react-parser";
 import {
   fetchBlogPost,
-  getMockBlogPostDetail,
   isBlogApiConfigured,
   type BlogPostDetail,
 } from "../blog-api";
@@ -121,27 +120,33 @@ export default function BlogPostDetail() {
       setLoading(true);
       setNotFound(false);
 
-      if (isBlogApiConfigured()) {
-        try {
-          const real = await fetchBlogPost(slug, controller.signal);
-          if (real) {
-            if (active) setDetail(real);
-            if (active) setLoading(false);
-            return;
-          }
-        } catch (err) {
-          if (err instanceof DOMException && err.name === "AbortError") {
-            return;
-          }
-          // Fall through to mock lookup below on any live API failure.
+      if (!isBlogApiConfigured()) {
+        if (active) {
+          setNotFound(true);
+          setLoading(false);
         }
+        return;
       }
 
-      const mock = getMockBlogPostDetail(slug);
-      if (active) {
-        if (mock) setDetail(mock);
-        else setNotFound(true);
-        setLoading(false);
+      try {
+        const real = await fetchBlogPost(slug, controller.signal);
+        if (active) {
+          if (real) {
+            setDetail(real as BlogPostDetail);
+          } else {
+            setNotFound(true);
+          }
+          setLoading(false);
+        }
+      } catch (err) {
+        if (err instanceof DOMException && err.name === "AbortError") {
+          return;
+        }
+        if (active) {
+          console.error("Failed to load blog post:", err);
+          setNotFound(true);
+          setLoading(false);
+        }
       }
     };
 

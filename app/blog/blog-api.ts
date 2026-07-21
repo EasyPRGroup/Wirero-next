@@ -1,10 +1,8 @@
 // Shared blog API helpers used by the Blog list component.
 // Mirrors the pattern used by `app/newsroom/newsroom-api.ts`.
 //
-// Until NEXT_PUBLIC_BLOG_API_BASE_URL / NEXT_PUBLIC_BLOG_SITE_URL (or the
-// shared NEXT_PUBLIC_API_BASE_URL / NEXT_PUBLIC_SITE_URL) are set in `.env`,
-// `isBlogApiConfigured()` returns false and the Blog component falls back to
-// the bundled mock posts below so the page always renders.
+// Requires NEXT_PUBLIC_API_BASE_URL to be set in `.env` for the Blog API to work.
+// Use `isBlogApiConfigured()` to check if the API is properly configured.
 
 export type BlogPost = {
   id?: string | number;
@@ -68,22 +66,6 @@ function pickString(raw: RawPost, keys: string[]): string | undefined {
     }
   }
   return undefined;
-}
-
-function pickNumber(
-  raw: Record<string, unknown> | null,
-  keys: string[],
-): number {
-  if (!raw) return 0;
-  for (const key of keys) {
-    const value = raw[key];
-    if (typeof value === "number" && Number.isFinite(value)) return value;
-    if (typeof value === "string" && value.trim() !== "") {
-      const parsed = Number(value);
-      if (Number.isFinite(parsed)) return parsed;
-    }
-  }
-  return 0;
 }
 
 /**
