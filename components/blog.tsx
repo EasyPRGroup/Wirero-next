@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import BlogCard from "./blog-card";
 import {
   fetchBlogPosts,
-  getMockBlogPosts,
   isBlogApiConfigured,
   postHref,
   type BlogPost,
@@ -100,37 +99,35 @@ const Blog: NextPage<BlogType> = ({ className = "", pageSize = 9 }) => {
     const loadPosts = async () => {
       setLoading(true);
 
-      if (isBlogApiConfigured()) {
-        try {
-          const result = await fetchBlogPosts(
-            page,
-            pageSize,
-            controller.signal,
-          );
-          if (active) {
-            setPosts(result.posts);
-            setTotalPages(result.totalPages);
-          }
-        } catch (err) {
-          if (
-            err instanceof DOMException &&
-            err.name === "AbortError"
-          ) {
-            return;
-          }
-          // Fall back to demo content if the live API request fails.
-          const fallback = getMockBlogPosts(page, pageSize);
-          if (active) {
-            setPosts(fallback.posts);
-            setTotalPages(fallback.totalPages);
-          }
-        }
-      } else {
-        // No API configured yet, show bundled demo content.
-        const fallback = getMockBlogPosts(page, pageSize);
+      if (!isBlogApiConfigured()) {
         if (active) {
-          setPosts(fallback.posts);
-          setTotalPages(fallback.totalPages);
+          setPosts([]);
+          setTotalPages(1);
+        }
+        if (active) setLoading(false);
+        return;
+      }
+
+      try {
+        const result = await fetchBlogPosts(
+          page,
+          pageSize,
+          controller.signal,
+        );
+        if (active) {
+          setPosts(result.posts);
+          setTotalPages(result.totalPages);
+        }
+      } catch (err) {
+        if (
+          err instanceof DOMException &&
+          err.name === "AbortError"
+        ) {
+          return;
+        }
+        if (active) {
+          setPosts([]);
+          setTotalPages(1);
         }
       }
 

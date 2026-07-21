@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import {
-  MOCK_BASE_POSTS,
-  getMockBlogPostDetail,
   fetchBlogPost,
   isBlogApiConfigured,
   type BlogPostDetail,
@@ -13,22 +11,6 @@ import Footer from "../../../components/footer";
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://wirero.com";
 
 export const revalidate = 3600;
-
-export function generateStaticParams() {
-  return MOCK_BASE_POSTS.map((post) => ({ slug: post.slug! }));
-}
-
-async function getPost(slug: string): Promise<BlogPostDetail | null> {
-  if (isBlogApiConfigured()) {
-    try {
-      const real = await fetchBlogPost(slug);
-      if (real) return real as BlogPostDetail;
-    } catch {
-      // Fall through to mock lookup on any live API failure.
-    }
-  }
-  return getMockBlogPostDetail(slug);
-}
 
 export async function generateMetadata({
   params,
@@ -42,31 +24,52 @@ export async function generateMetadata({
     return { title: "Post Not Found" };
   }
 
-  const title = post.title ?? "Blog Post";
+  // Use SEO fields from API if available, fallback to content fields
+  const title = post.metaTitle || post.title || "Blog Post";
   const description =
-    post.excerpt ??
-    post.intro?.[0] ??
-    `Learn about ${post.category?.toLowerCase() || "content distribution"} strategies and best practices for press release publishing and media syndication.`;
-  const url = `${SITE_URL}/blog/${slug}`;
+    post.metaDescription ||
+    post.excerpt ||
+    post.intro?.[0] ||
+    `Learn about ${post.category?.toLowerCase() || "content distribution"} strategies and best practices.`;
+  
+  const canonicalUrl = post.canonicalUrl || `${SITE_URL}/blog/${slug}`;
+  const ogTitle = post.ogTitle || title;
+  const ogDescription = post.ogDescription || description;
+  const ogImageUrl = post.ogImage || post.image || "";
 
   return {
     title,
     description,
-    alternates: { canonical: url },
+    ...(post.metaKeywords ? { keywords: post.metaKeywords.split(",").map(k => k.trim()) } : {}),
+    alternates: { canonical: canonicalUrl },
+    robots: post.robots || "index, follow",
     openGraph: {
-      title,
-      description,
-      url,
+      title: ogTitle,
+      description: ogDescription,
+      url: canonicalUrl,
       type: "article",
-      ...(post.image ? { images: [{ url: post.image }] } : {}),
+      ...(ogImageUrl ? { images: [{ url: ogImageUrl }] } : {}),
     },
     twitter: {
       card: "summary_large_image",
-      title,
-      description,
-      ...(post.image ? { images: [post.image] } : {}),
+      title: ogTitle,
+      description: ogDescription,
+      ...(ogImageUrl ? { images: [ogImageUrl] } : {}),
     },
   };
+}
+
+async function getPost(slug: string): Promise<BlogPostDetail | null> {
+  if (!isBlogApiConfigured()) {
+    return null;
+  }
+  try {
+    const real = await fetchBlogPost(slug);
+    if (real) return real as BlogPostDetail;
+  } catch {
+    // Fall through to return null on API failure
+  }
+  return null;
 }
 
 export default async function BlogPostPage({
