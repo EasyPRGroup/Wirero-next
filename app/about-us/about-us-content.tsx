@@ -57,28 +57,40 @@ const AboutUs: NextPage = () => {
 
   const industries = [
     {
-      title: "PR Agencies",
+      title: "Newswire",
       image: "/image@2x.png",
       description:
-        "Distribute press releases and media coverage across targeted industry networks with controlled, rapid deployment.",
+        "Amplify your press releases to thousands of indexed domains with instant distribution. Get comprehensive coverage reports and track your news reach across our extensive network of news-focused properties.",
     },
     {
-      title: "Crypto & Forex Firms",
+      title: "Digital Marketing Agency",
       image: "/image1@2x.png",
       description:
-        "Publish market updates, project announcements, and educational content across finance-focused domains.",
+        "Scale client campaigns across multiple industry verticals from a single platform. Deliver results with multi-domain distribution, precise targeting, and detailed performance analytics for every campaign.",
     },
     {
-      title: "Reseller Platforms",
+      title: "Content Marketing Agency",
       image: "/image2@2x.png",
       description:
-        "Empower your distribution network with white-label solutions. Wirero enables resellers to offer branded content distribution services to their clients, complete with custom domains and reporting dashboards.",
+        "Maximize content reach for your clients through our premium domain network. Deploy blog posts, articles, and thought leadership across relevant industry sites with automated scheduling and tracking.",
     },
     {
-      title: "Media & Content Platforms",
+      title: "Freelancer",
       image: "/image3@2x.png",
       description:
-        "Scale editorial content across multiple publishing endpoints with centralized workflow and automation.",
+        "Offer professional distribution services to your clients without the overhead. Access our infrastructure to deliver enterprise-grade content publishing under your own brand.",
+    },
+    {
+      title: "Media Networks",
+      image: "/image3@2x.png",
+      description:
+        "Manage multiple publications efficiently with centralized content distribution. Sync publishing across your network of sites and expand reach beyond your existing audience.",
+    },
+    {
+      title: "Wires Services",
+      image: "/image3@2x.png",
+      description:
+        "Specialized distribution for press releases and announcements. Ensure your news reaches maximum visibility with our wire service network designed for speed and comprehensive coverage.",
     },
   ];
 
