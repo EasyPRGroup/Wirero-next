@@ -9,21 +9,6 @@ import {
   type BlogPostDetail,
 } from "../blog-api";
 
-function formatDate(raw: string): string {
-  if (!raw) return "";
-  try {
-    const d = new Date(raw);
-    if (isNaN(d.getTime())) return raw;
-    return d.toLocaleDateString("en-US", {
-      year: "numeric",
-      month: "short",
-      day: "numeric",
-    });
-  } catch {
-    return raw;
-  }
-}
-
 function sanitizeHtml(html: string): string {
   return html
     .replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, "")
@@ -242,7 +227,7 @@ export default function BlogPostDetail() {
                 <span aria-hidden="true">•</span>
                 <span className="flex items-center gap-[0.375rem]">
                   <CalendarIcon />
-                  {formatDate(detail.date)}
+                  {detail.date}
                 </span>
               </>
             ) : null}

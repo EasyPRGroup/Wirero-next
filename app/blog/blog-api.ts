@@ -68,6 +68,21 @@ function pickString(raw: RawPost, keys: string[]): string | undefined {
   return undefined;
 }
 
+function formatDate(raw: string): string {
+  if (!raw) return "";
+  try {
+    const d = new Date(raw);
+    if (isNaN(d.getTime())) return raw;
+    return d.toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "short",
+      day: "numeric",
+    });
+  } catch {
+    return raw;
+  }
+}
+
 /**
  * Normalize the API base URL defensively.
  * - Strips a trailing `/client` segment if present (so we can re-append it).
@@ -179,7 +194,7 @@ export function normalizePost(raw: RawPost): BlogPost {
   const title = pickString(raw, ["title"]) ?? "Untitled post";
   const id = pickString(raw, ["_id", "id", "slug", "title"]) ?? "";
   const slug = pickString(raw, ["slug", "uri", "id"]) ?? String(id);
-  const date = pickString(raw, ["publishedAt", "date", "createdAt"]) ?? "";
+  const date = formatDate(pickString(raw, ["publishedAt", "date", "createdAt"]) ?? "");
   const excerpt = pickString(raw, ["excerpt", "summary", "description"]) ?? "";
   const image = pickString(raw, ["featuredImage", "image", "thumbnail"]) ?? "";
   const category = pickString(raw, ["category", "tag", "topic", "section"]) ?? "";

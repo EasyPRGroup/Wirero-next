@@ -12,21 +12,6 @@ export type BlogCardType = {
   href?: string;
 };
 
-function formatDate(raw: string): string {
-  if (!raw) return "";
-  try {
-    const d = new Date(raw);
-    if (isNaN(d.getTime())) return raw;
-    return d.toLocaleDateString("en-US", {
-      year: "numeric",
-      month: "short",
-      day: "numeric",
-    });
-  } catch {
-    return raw;
-  }
-}
-
 const CalendarIcon = () => (
   <svg
     width="14"
@@ -121,7 +106,7 @@ const BlogCard: NextPage<BlogCardType> = ({
         <div className="flex items-center gap-[1rem] text-[0.8125rem] leading-[1.125rem] font-proxima text-[#64676f]">
           <span className="flex items-center gap-[0.375rem]">
             <CalendarIcon />
-            {formatDate(date)}
+            {date}
           </span>
           {readTime ? (
             <span className="flex items-center gap-[0.375rem]">

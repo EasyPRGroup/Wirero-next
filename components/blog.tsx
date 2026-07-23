@@ -9,21 +9,6 @@ import {
   type BlogPost,
 } from "../app/blog/blog-api";
 
-function formatDate(raw: string): string {
-  if (!raw) return "";
-  try {
-    const d = new Date(raw);
-    if (isNaN(d.getTime())) return raw;
-    return d.toLocaleDateString("en-US", {
-      year: "numeric",
-      month: "short",
-      day: "numeric",
-    });
-  } catch {
-    return raw;
-  }
-}
-
 export type BlogType = {
   className?: string;
   /** Number of posts shown per page */
@@ -191,7 +176,7 @@ const Blog: NextPage<BlogType> = ({ className = "", pageSize = 9 }) => {
               <BlogCard
                 key={String(post.id ?? post.slug ?? post.title)}
                 title={post.title ?? "Untitled post"}
-                date={formatDate(post.date ?? "")}
+                date={post.date ?? ""}
                 readTime={post.readTime}
                 category={post.category}
                 excerpt={post.excerpt}
