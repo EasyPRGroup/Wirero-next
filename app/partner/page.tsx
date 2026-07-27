@@ -151,9 +151,9 @@ const Partner: NextPage = () => {
             </div>
             <a
               href="#how-it-works"
-              className="cursor-pointer [border:none] py-[1rem] px-[2.5rem] bg-transparent border-[#0461c3] border-solid border-[1px] h-[3.5rem] rounded-[8px] flex items-center justify-center box-border gap-[0.5rem] hover:bg-[#f7fafd] transition-colors mq450:w-full mq450:h-auto mq450:py-[0.875rem] mq450:px-[1.5rem] no-underline"
+              className="cursor-pointer [border:none] py-[1rem] px-[2.5rem] bg-[#0461c3] h-[3.5rem] rounded-[8px] flex items-center justify-center box-border gap-[0.5rem] hover:bg-[#0554af] transition-colors mq450:w-full mq450:h-auto mq450:py-[0.875rem] mq450:px-[1.5rem] no-underline"
             >
-              <div className="relative text-[1rem] leading-[1.25rem] font-semibold font-proxima text-[#0461c3] text-center shrink-0 mq450:text-[0.938rem]">
+              <div className="relative text-[1rem] leading-[1.25rem] font-semibold font-proxima text-color-white text-center shrink-0 mq450:text-[0.938rem]">
                 See How It Works
               </div>
             </a>
