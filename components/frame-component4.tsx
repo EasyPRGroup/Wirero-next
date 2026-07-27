@@ -25,8 +25,9 @@ const FrameComponent4: NextPage<FrameComponent4Type> = ({ className = "" }) => {
     { showItemMenu: true, aboutUs: "About", href: "/about-us" },
     { showItemMenu: true, aboutUs: "Media Network", href: "/network" },
     { showItemMenu: true, aboutUs: "Pricing", href: "/pricing" },
-    { showItemMenu: false, aboutUs: "Distribution Process" },
     { showItemMenu: true, aboutUs: "Agencies", href: "/agency" },
+    { showItemMenu: true, aboutUs: "Partner", href: "/partner" },
+    { showItemMenu: false, aboutUs: "Distribution Process" },
   ];
 
   const legalLinks = [

@@ -53,6 +53,13 @@ const Header: NextPage<HeaderType> = ({
     {
       property1: "default" as const,
       showOption: true,
+      features: "Pricing",
+      isActive: activeLink === "Pricing",
+      href: "/pricing",
+    },
+    {
+      property1: "default" as const,
+      showOption: true,
       features: "Agencies",
       isActive: activeLink === "Agencies",
       href: "/agency",
@@ -63,13 +70,6 @@ const Header: NextPage<HeaderType> = ({
       features: "FAQs",
       isActive: activeLink === "FAQs",
       href: "/faqs",
-    },
-    {
-      property1: "default" as const,
-      showOption: true,
-      features: "Pricing",
-      isActive: activeLink === "Pricing",
-      href: "/pricing",
     },
     {
       property1: "default" as const,

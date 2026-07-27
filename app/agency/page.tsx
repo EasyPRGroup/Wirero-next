@@ -154,7 +154,7 @@ const Agency: NextPage = () => {
               platforms, and high-volume campaigns.
             </div>
           </div>
-          <button className="cursor-pointer [border:none] py-[1rem] px-[2.5rem] bg-[#0461c3] h-[3.5rem] rounded-[8px] flex items-center justify-center box-border gap-[0.5rem] hover:bg-[#0554af] transition-colors mq450:w-full mq450:h-auto mq450:py-[0.875rem] mq450:px-[1.5rem]">
+          <Link href="/partner" className="cursor-pointer [border:none] py-[1rem] px-[2.5rem] bg-[#0461c3] h-[3.5rem] rounded-[8px] flex items-center justify-center box-border gap-[0.5rem] hover:bg-[#0554af] transition-colors mq450:w-full mq450:h-auto mq450:py-[0.875rem] mq450:px-[1.5rem] no-underline">
             <div className="relative text-[1rem] leading-[1.25rem] font-semibold font-proxima text-color-white text-center shrink-0 mq450:text-[0.938rem]">
               Become a Partner
             </div>
@@ -166,7 +166,7 @@ const Agency: NextPage = () => {
               alt=""
               src="/arrow-right1.svg"
             />
-          </button>
+          </Link>
         </section>
         <div className="w-[27.5rem] relative rounded-[20px] max-h-full max-w-full hidden mq800:block mq1050:flex-1">
           <Image
