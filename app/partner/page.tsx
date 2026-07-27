@@ -158,15 +158,15 @@ const Partner: NextPage = () => {
               </div>
             </a>
           </section>
-          <div className="w-[27.5rem] relative rounded-[20px] max-h-full max-w-full hidden mq800:block mq1050:flex-1">
+          <div className="w-[27.5rem] relative rounded-[20px] max-h-full max-w-full mq800:block mq1050:flex-1">
             <Image
               className="w-full h-full rounded-[20px] object-cover"
               loading="lazy"
               width={440}
               height={495}
               sizes="(max-width: 1050px) 50vw, 440px"
-              alt=""
-              src="/IMG1@2x.png"
+              alt="Partner with Wirero"
+              src="/network-infrastructure.jpg"
             />
           </div>
         </div>
@@ -215,8 +215,8 @@ const Partner: NextPage = () => {
               width={463}
               height={360}
               sizes="100vw"
-              alt=""
-              src="/Rectangle-111@2x.png"
+              alt="Wirero backend infrastructure"
+              src="/wirero-distribute-content.jpg"
             />
           </div>
         </div>
@@ -238,10 +238,10 @@ const Partner: NextPage = () => {
               {steps.map((step, index) => (
                 <div
                   key={index}
-                  className="rounded-[20px] bg-[#f7fafd] overflow-hidden flex flex-col items-start p-[1.5rem] gap-[1rem] mq450:gap-[0.75rem]"
+                  className="rounded-[20px] bg-[#f7fafd] overflow-hidden flex flex-col items-start p-[1.5rem] gap-[1rem] mq450:gap-[0.75rem] hover:shadow-[0px_4px_20px_rgba(26,37,48,0.08)] transition-shadow border-[1px] border-transparent hover:border-[#e2e5e9]"
                 >
-                  <div className="rounded-[16px] bg-[#eaf5fb] flex items-center justify-center p-[0.75rem]">
-                    <h3 className="m-0 relative text-[1.5rem] leading-[1.875rem] font-bold font-proxima text-[#0461c3]">
+                  <div className="rounded-[16px] bg-[#0461c3] flex items-center justify-center p-[0.75rem]">
+                    <h3 className="m-0 relative text-[1.5rem] leading-[1.875rem] font-bold font-proxima text-color-white">
                       {step.number}
                     </h3>
                   </div>
@@ -275,7 +275,7 @@ const Partner: NextPage = () => {
             {benefits.map((benefit, index) => (
               <div
                 key={index}
-                className="rounded-[20px] bg-color-white border-[#e2e5e9] border-solid border-[1px] overflow-hidden flex flex-col items-start p-[1.5rem] gap-[1.25rem]"
+                className="rounded-[20px] bg-color-white border-[#e2e5e9] border-solid border-[1px] overflow-hidden flex flex-col items-start p-[1.5rem] gap-[1.25rem] hover:shadow-[0px_4px_20px_rgba(26,37,48,0.08)] transition-shadow hover:border-[#0461c3]"
               >
                 <div className="rounded-[16px] bg-[#eaf5fb] flex items-center justify-center p-[0.75rem]">
                   <Image
@@ -316,7 +316,7 @@ const Partner: NextPage = () => {
             {packages.map((pkg, index) => (
               <div
                 key={index}
-                className={`flex-1 overflow-hidden rounded-[24px] flex flex-col items-start p-[0.5rem] gap-[1.25rem] text-left text-[0.75rem] font-proxima min-w-[calc(33.333%-1.333rem)] mq1050:min-w-[calc(50%-1rem)] mq450:min-w-full ${pkg.isPopular ? "bg-[#0461c3] shadow-[0px_2px_20px_rgba(26,37,48,0.12)] border-[2px] border-[#0461c3]" : "bg-[#f7fafd] shadow-[0px_2px_8px_rgba(26,37,48,0.04)]"}`}
+                className={`flex-1 overflow-hidden rounded-[24px] flex flex-col items-start p-[0.5rem] gap-[1.25rem] text-left text-[0.75rem] font-proxima min-w-[calc(33.333%-1.333rem)] mq1050:min-w-[calc(50%-1rem)] mq450:min-w-full transition-shadow hover:shadow-[0px_8px_30px_rgba(26,37,48,0.15)] ${pkg.isPopular ? "bg-[#0461c3] shadow-[0px_2px_20px_rgba(26,37,48,0.12)] border-[2px] border-[#0461c3]" : "bg-[#f7fafd] shadow-[0px_2px_8px_rgba(26,37,48,0.04)]"}`}
               >
                 <div
                   className={`self-stretch rounded-[16px] flex flex-col items-start pt-[1.25rem] px-[1.25rem] pb-[1.75rem] gap-[1.5rem] ${pkg.isPopular ? "bg-[#0461c3]" : "bg-color-white"}`}
@@ -382,8 +382,12 @@ const Partner: NextPage = () => {
       </section>
 
       {/* 6. RESELLER CONTROL (Dark Section) */}
-      <section className="site-section self-stretch bg-[#12171c]">
-        <div className="site-container flex flex-col items-center box-border gap-[3rem] text-center max-w-full mq800:gap-[2.5rem] mq450:gap-[2rem]">
+      <section className="site-section self-stretch bg-[#12171c] relative overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <div className="absolute top-[-10%] right-[-5%] w-[40rem] h-[40rem] rounded-full bg-[#0461c3] opacity-10 blur-[120px]" />
+          <div className="absolute bottom-[-10%] left-[-5%] w-[35rem] h-[35rem] rounded-full bg-[#1a8cd5] opacity-15 blur-[100px]" />
+        </div>
+        <div className="site-container relative z-10 flex flex-col items-center box-border gap-[3rem] text-center max-w-full mq800:gap-[2.5rem] mq450:gap-[2rem]">
           <div className="w-full max-w-[51.25rem] min-w-0 overflow-hidden flex flex-col items-center gap-[1.5rem] mq450:gap-[1rem]">
             <h2 className="m-0 self-stretch relative text-[3rem] leading-[3.625rem] font-bold font-proxima text-[#eee] mq1050:text-[2.25rem] mq1050:leading-[2.75rem] mq800:text-[2rem] mq800:leading-[2.5rem] mq450:text-[1.75rem] mq450:leading-[2.125rem]">
               You stay in control
@@ -423,8 +427,12 @@ const Partner: NextPage = () => {
       </section>
 
       {/* 7. IDEAL PARTNERS (IconList or Grid) */}
-      <section className="site-section self-stretch bg-color-white">
-        <div className="site-container flex flex-col items-center box-border gap-[4.25rem] max-w-full text-center mq800:gap-[2.5rem] mq450:gap-[1.5rem]">
+      <section className="site-section self-stretch bg-[linear-gradient(135deg,_#f0f9ff_0%,_#e0f2fe_100%)] relative overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <div className="absolute top-[5%] left-[10%] w-[30rem] h-[30rem] rounded-full bg-[#0bc111] opacity-5 blur-[100px]" />
+          <div className="absolute bottom-[10%] right-[5%] w-[25rem] h-[25rem] rounded-full bg-[#0461c3] opacity-5 blur-[80px]" />
+        </div>
+        <div className="site-container relative z-10 flex flex-col items-center box-border gap-[4.25rem] max-w-full text-center mq800:gap-[2.5rem] mq450:gap-[1.5rem]">
           <div className="w-full max-w-[60rem] min-w-0 overflow-hidden flex flex-col items-center gap-[1.5rem] mq450:gap-[1rem]">
             <b className="self-stretch relative tracking-[0.02em] leading-[1.25rem] uppercase text-[#0bc111] font-proxima mq450:text-[0.875rem] mq450:leading-[1.125rem]">
               IDEAL PARTNERS
@@ -437,11 +445,11 @@ const Partner: NextPage = () => {
             {idealPartners.map((partner, index) => (
               <div
                 key={index}
-                className="flex-1 overflow-hidden flex flex-col items-center gap-[1rem] min-w-0 max-w-full mq1050:min-w-[calc(33.333%-1.667rem)] mq800:min-w-[calc(50%-1rem)] mq450:min-w-full"
+                className="flex-1 overflow-hidden flex flex-col items-center gap-[1rem] min-w-0 max-w-full mq1050:min-w-[calc(33.333%-1.667rem)] mq800:min-w-[calc(50%-1rem)] mq450:min-w-full hover:transform hover:scale-105 transition-transform duration-300"
               >
-                <div className="h-[4.25rem] w-[4.25rem] rounded-[16px] bg-[#eaf5fb] flex items-center justify-center p-[1rem] box-border shrink-0 mq450:h-[3.5rem] mq450:w-[3.5rem] mq450:p-[0.75rem]">
+                <div className="h-[4.25rem] w-[4.25rem] rounded-[16px] bg-[#eaf5fb] flex items-center justify-center p-[1rem] box-border shrink-0 mq450:h-[3.5rem] mq450:w-[3.5rem] mq450:p-[0.75rem] hover:bg-[#0461c3] transition-colors group">
                   <Image
-                    className="h-[2.25rem] w-[2.25rem] relative object-contain mq450:h-[2rem] mq450:w-[2rem]"
+                    className="h-[2.25rem] w-[2.25rem] relative object-contain mq450:h-[2rem] mq450:w-[2rem] group-hover:brightness-0 group-hover:invert"
                     loading="lazy"
                     width={36}
                     height={36}
@@ -470,24 +478,23 @@ const Partner: NextPage = () => {
               How you distribute
             </h2>
           </div>
-          <div className="self-stretch flex items-start flex-wrap content-start gap-[2.5rem] mq800:gap-[2rem] mq450:gap-[1.5rem]">
+          <div className="self-stretch grid grid-cols-3 gap-[2rem] text-left mq750:grid-cols-2 mq450:grid-cols-1">
             {integrationOptions.map((option, index) => (
               <div
                 key={index}
-                className="flex-1 overflow-hidden flex items-start gap-[1.25rem] min-w-0 max-w-full mq1050:min-w-[calc(33.333%-1.667rem)] mq800:min-w-[calc(50%-1rem)] mq450:min-w-full mq450:flex-col mq450:items-center mq450:text-center"
+                className="rounded-[20px] bg-color-white border-[#e2e5e9] border-solid border-[1px] overflow-hidden flex flex-col items-start p-[1.5rem] gap-[1.25rem] hover:shadow-[0px_4px_20px_rgba(26,37,48,0.08)] transition-shadow"
               >
-                <div className="h-[4.25rem] w-[4.25rem] rounded-[16px] bg-[#eaf5fb] flex items-center justify-center p-[1rem] box-border shrink-0 mq450:h-[3.5rem] mq450:w-[3.5rem] mq450:p-[0.75rem]">
+                <div className="rounded-[16px] bg-[#eaf5fb] flex items-center justify-center p-[0.75rem]">
                   <Image
-                    className="h-[2.25rem] w-[2.25rem] relative object-contain mq450:h-[2rem] mq450:w-[2rem]"
-                    loading="lazy"
-                    width={36}
-                    height={36}
+                    className="h-[2rem] w-[2rem] relative"
+                    width={32}
+                    height={32}
                     sizes="100vw"
                     alt=""
                     src={option.icon}
                   />
                 </div>
-                <div className="flex-1 flex flex-col items-start gap-[0.5rem] mq800:items-center mq450:items-center">
+                <div className="self-stretch flex flex-col items-start gap-[0.5rem]">
                   <h3 className="m-0 self-stretch relative text-[1.25rem] leading-[1.625rem] font-bold font-proxima text-[#1a2530] mq450:text-[1.125rem] mq450:leading-[1.5rem]">
                     {option.title}
                   </h3>
@@ -502,39 +509,43 @@ const Partner: NextPage = () => {
       </section>
 
       {/* 10. TRUST / TRANSPARENCY SECTION */}
-      <section className="site-section self-stretch bg-[#f7fafd]">
-        <div className="site-container flex flex-col items-center box-border gap-[4.25rem] max-w-full text-center mq800:gap-[2.5rem] mq450:gap-[1.5rem]">
+      <section className="site-section self-stretch bg-[#12171c] relative overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <div className="absolute top-[8%] left-[5%] w-[32rem] h-[32rem] rounded-full bg-[#0461c3] opacity-10 blur-[110px]" />
+          <div className="absolute bottom-[12%] right-[8%] w-[26rem] h-[26rem] rounded-full bg-[#1a8cd5] opacity-10 blur-[85px]" />
+        </div>
+        <div className="site-container relative z-10 flex flex-col items-center box-border gap-[4.25rem] max-w-full text-center mq800:gap-[2.5rem] mq450:gap-[1.5rem]">
           <div className="w-full max-w-[60rem] min-w-0 overflow-hidden flex flex-col items-center gap-[1.5rem] mq450:gap-[1rem]">
             <b className="self-stretch relative tracking-[0.02em] leading-[1.25rem] uppercase text-[#0bc111] font-proxima mq450:text-[0.875rem] mq450:leading-[1.125rem]">
               TRUST & TRANSPARENCY
             </b>
-            <h2 className="m-0 self-stretch relative text-[3rem] leading-[3.625rem] font-bold font-proxima text-[#1a2530] mq1050:text-[2.25rem] mq1050:leading-[2.75rem] mq800:text-[2rem] mq800:leading-[2.5rem] mq450:text-[1.75rem] mq450:leading-[2.125rem]">
+            <h2 className="m-0 self-stretch relative text-[3rem] leading-[3.625rem] font-bold font-proxima text-[#eee] mq1050:text-[2.25rem] mq1050:leading-[2.75rem] mq800:text-[2rem] mq800:leading-[2.5rem] mq450:text-[1.75rem] mq450:leading-[2.125rem]">
               What Wirero is (and isn't)
             </h2>
           </div>
           <div className="self-stretch grid grid-cols-2 gap-[2rem] text-left mq750:grid-cols-1">
             {[
-              "Not a traditional PR service",
-              "No external publisher dependency",
-              "Built for distribution scale",
-              "Not positioned as high-traffic media",
+              { text: "Not a traditional PR service", icon: "/newspaper.svg" },
+              { text: "No external publisher dependency", icon: "/shield.svg" },
+              { text: "Built for distribution scale", icon: "/rocket-sharp.svg" },
+              { text: "Not positioned as high-traffic media", icon: "/chart-line.svg" },
             ].map((item, index) => (
               <div
                 key={index}
-                className="rounded-[20px] bg-color-white border-[#e2e5e9] border-solid border-[1px] overflow-hidden flex items-center p-[1.5rem] gap-[1rem]"
+                className="rounded-[20px] bg-[#1e293b] border-[#334155] border-solid border-[1px] overflow-hidden flex items-center p-[1.5rem] gap-[1rem] hover:shadow-[0px_4px_20px_rgba(0,0,0,0.3)] transition-shadow"
               >
-                <div className="h-[3rem] w-[3rem] rounded-[12px] bg-[#eaf5fb] flex items-center justify-center p-[0.625rem] box-border shrink-0">
+                <div className="h-[3rem] w-[3rem] rounded-[12px] bg-[#0461c3] flex items-center justify-center p-[0.625rem] box-border shrink-0">
                   <Image
-                    className="h-[1.75rem] w-[1.75rem] relative"
+                    className="h-[1.75rem] w-[1.75rem] relative brightness-0 invert"
                     width={28}
                     height={28}
                     sizes="100vw"
                     alt=""
-                    src="/check-check.svg"
+                    src={item.icon}
                   />
                 </div>
-                <div className="flex-1 relative text-[1.125rem] leading-[1.5rem] font-semibold font-proxima text-[#1a2530]">
-                  {item}
+                <div className="flex-1 relative text-[1.125rem] leading-[1.5rem] font-semibold font-proxima text-[#eee]">
+                  {item.text}
                 </div>
               </div>
             ))}
@@ -555,9 +566,18 @@ const Partner: NextPage = () => {
                   Simple revenue model
                 </h1>
                 <div className="self-stretch flex flex-col items-center gap-[1rem] text-[1.125rem] leading-[1.75rem] font-proxima text-[rgba(238,238,238,0.82)]">
-                  <div>• Flat monthly cost for access</div>
-                  <div>• Sell per distribution at your price</div>
-                  <div>• Unlimited scaling potential</div>
+                  <div className="flex items-center gap-[0.75rem]">
+                    <Image className="h-[1.25rem] w-[1.25rem]" width={20} height={20} sizes="100vw" alt="" src="/ion-cash.svg" />
+                    <span>Flat monthly cost for access</span>
+                  </div>
+                  <div className="flex items-center gap-[0.75rem]">
+                    <Image className="h-[1.25rem] w-[1.25rem]" width={20} height={20} sizes="100vw" alt="" src="/rocket-sharp.svg" />
+                    <span>Sell per distribution at your price</span>
+                  </div>
+                  <div className="flex items-center gap-[0.75rem]">
+                    <Image className="h-[1.25rem] w-[1.25rem]" width={20} height={20} sizes="100vw" alt="" src="/chart-line.svg" />
+                    <span>Unlimited scaling potential</span>
+                  </div>
                 </div>
               </div>
               <Link
