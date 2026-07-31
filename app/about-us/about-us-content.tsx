@@ -58,37 +58,37 @@ const AboutUs: NextPage = () => {
   const industries = [
     {
       title: "Newswire",
-      image: "/image@2x.png",
+      image: "/newswire.jpg",
       description:
         "Amplify your press releases to thousands of indexed domains with instant distribution. Get comprehensive coverage reports and track your news reach across our extensive network of news-focused properties.",
     },
     {
       title: "Digital Marketing Agency",
-      image: "/image1@2x.png",
+      image: "/digital marketing agency.jpg",
       description:
         "Scale client campaigns across multiple industry verticals from a single platform. Deliver results with multi-domain distribution, precise targeting, and detailed performance analytics for every campaign.",
     },
     {
       title: "Content Marketing Agency",
-      image: "/image2@2x.png",
+      image: "/content marketing.jpg",
       description:
         "Maximize content reach for your clients through our premium domain network. Deploy blog posts, articles, and thought leadership across relevant industry sites with automated scheduling and tracking.",
     },
     {
       title: "Freelancer",
-      image: "/image3@2x.png",
+      image: "/Freelancer.jpg",
       description:
         "Offer professional distribution services to your clients without the overhead. Access our infrastructure to deliver enterprise-grade content publishing under your own brand.",
     },
     {
       title: "Media Networks",
-      image: "/image3@2x.png",
+      image: "/media network.jpg",
       description:
         "Manage multiple publications efficiently with centralized content distribution. Sync publishing across your network of sites and expand reach beyond your existing audience.",
     },
     {
       title: "Wires Services",
-      image: "/image3@2x.png",
+      image: "/wire service.jpg",
       description:
         "Specialized distribution for press releases and announcements. Ensure your news reaches maximum visibility with our wire service network designed for speed and comprehensive coverage.",
     },
@@ -215,11 +215,25 @@ const AboutUs: NextPage = () => {
 
           {/* Image Showcase */}
           <div className="self-stretch flex items-stretch gap-[1.5rem] max-w-full mq1050:gap-[1rem] mq800:flex-col mq800:gap-[1rem]">
-            <div className="w-[22rem] h-[20rem] shrink-0 rounded-[20px] bg-[#4d575f] overflow-hidden flex items-center justify-center mq1125:w-[18rem] mq1050:w-[15rem] mq1050:h-[17rem] mq800:w-full mq800:h-[16rem] mq450:h-[12rem]">
-              {/* TODO: replace with <Image src="..." /> when asset is provided */}
+            <div className="w-[22rem] h-[20rem] shrink-0 rounded-[20px] overflow-hidden flex items-center justify-center mq1125:w-[18rem] mq1050:w-[15rem] mq1050:h-[17rem] mq800:w-full mq800:h-[16rem] mq450:h-[12rem]">
+              <Image
+                src="/Hero small.jpg"
+                alt="Wirero distribution network showcase"
+                width={352}
+                height={320}
+                className="h-full w-full object-cover"
+                priority
+              />
             </div>
-            <div className="flex-1 min-w-0 h-[20rem] rounded-[20px] bg-[#4d575f] overflow-hidden flex items-center justify-center mq1050:h-[17rem] mq800:w-full mq800:h-[16rem] mq450:h-[12rem]">
-              {/* TODO: replace with <Image src="..." /> when asset is provided */}
+            <div className="flex-1 min-w-0 h-[20rem] rounded-[20px] overflow-hidden flex items-center justify-center bg-transparent mq1050:h-[17rem] mq800:w-full mq800:h-[16rem] mq450:h-[12rem]">
+              <Image
+                src="/Hero-Wide.jpg"
+                alt="Wirero hero artwork"
+                width={800}
+                height={320}
+                className="h-full w-full object-contain"
+                priority
+              />
             </div>
           </div>
 
@@ -359,7 +373,7 @@ const AboutUs: NextPage = () => {
               height={380}
               sizes="100vw"
               alt=""
-              src="/IMG@2x.png"
+              src="/What.jpg"
             />
           </section>
         </div>
