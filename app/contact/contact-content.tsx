@@ -57,7 +57,9 @@ const ContactPage: NextPage = () => {
   } = useRecaptcha();
 
   const handleInputChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >,
   ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
@@ -142,336 +144,336 @@ const ContactPage: NextPage = () => {
       {/* Main Content */}
       <main className="site-section-hero self-stretch">
         <div className="site-container flex w-full items-start justify-between flex-wrap content-start gap-[6.25rem] max-w-full mq750:gap-[3.125rem] mq1050:gap-[2rem] mq450:gap-[2rem]">
-        {/* Left Column */}
-        <section className="flex-1 overflow-hidden flex flex-col items-start gap-[1.5rem] min-w-0 max-w-[33.25rem] text-left text-[1rem] text-[#4d565f] font-proxima mq750:min-w-full mq1050:max-w-full">
-          {/* Contact Label */}
-          <b className="self-stretch relative tracking-[0.02em] leading-[1.25rem] uppercase text-[#0bc111]">
-            Contact
-          </b>
-
-          {/* Title */}
-          <div className="self-stretch flex flex-col items-start gap-[1rem] max-w-full text-[3.5rem]">
-            <b className="self-stretch relative leading-[4.25rem] mq750:text-[2.813rem] mq750:leading-[3.375rem] mq450:text-[2.125rem] mq450:leading-[2.563rem]">
-              Get in touch with Wirero
+          {/* Left Column */}
+          <section className="flex-1 overflow-hidden flex flex-col items-start gap-[1.5rem] min-w-0 max-w-[33.25rem] text-left text-[1rem] text-[#4d565f] font-proxima mq750:min-w-full mq1050:max-w-full">
+            {/* Contact Label */}
+            <b className="self-stretch relative tracking-[0.02em] leading-[1.25rem] uppercase text-[#0bc111]">
+              Contact
             </b>
 
-            {/* Description */}
-            <div className="self-stretch flex flex-col items-start gap-[1.25rem] max-w-full text-[1.125rem] text-[#64676f]">
-              <div className="self-stretch relative leading-[1.75rem]">
-                Have questions about distribution infrastructure, pricing,
-                integrations, or network access? Our team is here to help you
-                understand how Wirero works and how it can fit your publishing
-                workflow.
-              </div>
-              <div className="self-stretch relative leading-[1.75rem]">
-                Whether you are an agency, reseller platform, or high-frequency
-                publishing team, we will help you find the right distribution
-                setup for your needs.
+            {/* Title */}
+            <div className="self-stretch flex flex-col items-start gap-[1rem] max-w-full text-[3.5rem]">
+              <b className="self-stretch relative leading-[4.25rem] mq750:text-[2.813rem] mq750:leading-[3.375rem] mq450:text-[2.125rem] mq450:leading-[2.563rem]">
+                Get in touch with Wirero
+              </b>
+
+              {/* Description */}
+              <div className="self-stretch flex flex-col items-start gap-[1.25rem] max-w-full text-[1.125rem] text-[#64676f]">
+                <div className="self-stretch relative leading-[1.75rem]">
+                  Have questions about distribution infrastructure, pricing,
+                  integrations, or network access? Our team is here to help you
+                  understand how Wirero works and how it can fit your publishing
+                  workflow.
+                </div>
+                <div className="self-stretch relative leading-[1.75rem]">
+                  Whether you are an agency, reseller platform, or
+                  high-frequency publishing team, we will help you find the
+                  right distribution setup for your needs.
+                </div>
               </div>
             </div>
-          </div>
 
-          {/* Contact Info Cards */}
-          <div className="self-stretch flex flex-col items-start py-[1.25rem] px-[0rem] box-border gap-[1.25rem] max-w-full text-[1.25rem]">
-            {/* Email Card */}
-            <div className="self-stretch overflow-hidden flex items-start gap-[1rem] max-w-full">
-              <div className="h-[2.75rem] w-[2.75rem] relative rounded-[12px] bg-[#d9f0ff] flex items-center justify-center">
+            {/* Contact Info Cards */}
+            <div className="self-stretch flex flex-col items-start py-[1.25rem] px-[0rem] box-border gap-[1.25rem] max-w-full text-[1.25rem]">
+              {/* Email Card */}
+              <div className="self-stretch overflow-hidden flex items-start gap-[1rem] max-w-full">
+                <div className="h-[2.75rem] w-[2.75rem] relative rounded-[12px] bg-[#d9f0ff] flex items-center justify-center">
+                  <Image
+                    className="h-[1.5rem] w-[1.5rem] object-contain"
+                    width={24}
+                    height={24}
+                    alt="Email icon"
+                    src="/mail.svg"
+                  />
+                </div>
+                <div className="flex-1 flex flex-col items-start gap-[0.25rem] min-w-0 max-w-full">
+                  <h3 className="m-0 self-stretch relative text-[length:inherit] leading-[1.625rem] font-semibold font-[inherit]">
+                    Email Address:
+                  </h3>
+                  <div className="self-stretch relative text-[1.125rem] leading-[1.75rem] text-[#64676f]">
+                    info@wirero.com
+                  </div>
+                </div>
+              </div>
+
+              {/* Phone Card */}
+              <div className="self-stretch overflow-hidden flex items-start gap-[1rem] max-w-full">
+                <div className="h-[2.75rem] w-[2.75rem] relative rounded-[12px] bg-[#d9f0ff] flex items-center justify-center">
+                  <Image
+                    className="h-[1.5rem] w-[1.5rem] object-contain"
+                    width={24}
+                    height={24}
+                    alt="Phone icon"
+                    src="/phone.svg"
+                  />
+                </div>
+                <div className="flex-1 flex flex-col items-start gap-[0.25rem] min-w-0 max-w-full">
+                  <h3 className="m-0 self-stretch relative text-[length:inherit] leading-[1.625rem] font-semibold font-[inherit]">
+                    Phone Number:
+                  </h3>
+                  <div className="self-stretch relative text-[1.125rem] leading-[1.75rem] text-[#64676f]">
+                    +00 9812345678
+                  </div>
+                </div>
+              </div>
+
+              {/* Social Media */}
+              <div className="self-stretch overflow-hidden flex items-start max-w-full">
+                <div className="flex-1 flex flex-col items-start gap-[0.75rem] max-w-full">
+                  <h3 className="m-0 self-stretch relative text-[length:inherit] leading-[1.625rem] font-semibold font-[inherit]">
+                    Social Media:
+                  </h3>
+                  <div className="w-[12.5rem] h-[2.75rem] flex items-center gap-[0.5rem]">
+                    <Link
+                      href="#"
+                      className="h-[2.75rem] w-[2.75rem] relative rounded-full flex items-center justify-center bg-[#d9f0ff] hover:bg-[#b8e0ff] transition-colors"
+                    >
+                      <Image
+                        className="h-[1.25rem] w-[1.25rem] object-contain"
+                        width={20}
+                        height={20}
+                        alt="Facebook"
+                        src="/facebook.svg"
+                      />
+                    </Link>
+                    <Link
+                      href="#"
+                      className="h-[2.75rem] w-[2.75rem] relative rounded-full flex items-center justify-center bg-[#d9f0ff] hover:bg-[#b8e0ff] transition-colors"
+                    >
+                      <Image
+                        className="h-[1.25rem] w-[1.25rem] object-contain"
+                        width={20}
+                        height={20}
+                        alt="Twitter"
+                        src="/twitter.svg"
+                      />
+                    </Link>
+                    <Link
+                      href="#"
+                      className="h-[2.75rem] w-[2.75rem] relative rounded-full flex items-center justify-center bg-[#d9f0ff] hover:bg-[#b8e0ff] transition-colors"
+                    >
+                      <Image
+                        className="h-[1.25rem] w-[1.25rem] object-contain"
+                        width={20}
+                        height={20}
+                        alt="LinkedIn"
+                        src="/linkedin-fill.svg"
+                      />
+                    </Link>
+                    <Link
+                      href="#"
+                      className="h-[2.75rem] w-[2.75rem] relative rounded-full flex items-center justify-center bg-[#d9f0ff] hover:bg-[#b8e0ff] transition-colors"
+                    >
+                      <Image
+                        className="h-[1.25rem] w-[1.25rem] object-contain"
+                        width={20}
+                        height={20}
+                        alt="Instagram"
+                        src="/instagram.svg"
+                      />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* New to Wirero Card */}
+            <div className="self-stretch rounded-[24px] bg-[#e6f4ff] overflow-hidden flex items-start p-[1.25rem] box-border gap-[1.5rem] max-w-full text-[1.5rem] text-[#4d565f]">
+              <div className="flex-1 flex items-start gap-[1rem] min-w-0 max-w-full">
                 <Image
-                  className="h-[1.5rem] w-[1.5rem] object-contain"
-                  width={24}
-                  height={24}
-                  alt="Email icon"
-                  src="/mail.svg"
+                  className="w-[3.5rem] h-auto relative max-h-full object-cover rounded"
+                  width={54}
+                  height={30}
+                  loading="lazy"
+                  alt="New to Wirero"
+                  src="/Group-1.jpg"
                 />
-              </div>
-              <div className="flex-1 flex flex-col items-start gap-[0.25rem] min-w-0 max-w-full">
-                <h3 className="m-0 self-stretch relative text-[length:inherit] leading-[1.625rem] font-semibold font-[inherit]">
-                  Email Address:
-                </h3>
-                <div className="self-stretch relative text-[1.125rem] leading-[1.75rem] text-[#64676f]">
-                  hello@wirero.com
+                <div className="flex-1 flex flex-col items-start gap-[0.25rem] min-w-0 max-w-full">
+                  <h3 className="m-0 self-stretch relative text-[length:inherit] leading-[1.875rem] font-bold font-[inherit]">
+                    New to Wirero?
+                  </h3>
+                  <div className="w-full relative text-[1.125rem] leading-[1.75rem] text-[#64676f] inline-block max-w-[22.25rem]">
+                    Explore how our multi-domain distribution infrastructure
+                    works.
+                  </div>
                 </div>
               </div>
-            </div>
-
-            {/* Phone Card */}
-            <div className="self-stretch overflow-hidden flex items-start gap-[1rem] max-w-full">
-              <div className="h-[2.75rem] w-[2.75rem] relative rounded-[12px] bg-[#d9f0ff] flex items-center justify-center">
+              <Link
+                href="#"
+                className="cursor-pointer border-none py-[0.5rem] px-[0.5rem] bg-[#0461c3] h-[2.25rem] w-[2.25rem] rounded-[8px] flex items-center justify-center box-border text-color-white hover:bg-[#0354a8] transition-colors no-underline"
+              >
                 <Image
-                  className="h-[1.5rem] w-[1.5rem] object-contain"
-                  width={24}
-                  height={24}
-                  alt="Phone icon"
-                  src="/phone.svg"
+                  className="h-[1.25rem] w-[1.25rem]"
+                  width={20}
+                  height={20}
+                  alt="Arrow"
+                  src="/arrow-right.svg"
                 />
-              </div>
-              <div className="flex-1 flex flex-col items-start gap-[0.25rem] min-w-0 max-w-full">
-                <h3 className="m-0 self-stretch relative text-[length:inherit] leading-[1.625rem] font-semibold font-[inherit]">
-                  Phone Number:
-                </h3>
-                <div className="self-stretch relative text-[1.125rem] leading-[1.75rem] text-[#64676f]">
-                  +00 9812345678
-                </div>
-              </div>
+              </Link>
             </div>
+          </section>
 
-            {/* Social Media */}
-            <div className="self-stretch overflow-hidden flex items-start max-w-full">
-              <div className="flex-1 flex flex-col items-start gap-[0.75rem] max-w-full">
-                <h3 className="m-0 self-stretch relative text-[length:inherit] leading-[1.625rem] font-semibold font-[inherit]">
-                  Social Media:
-                </h3>
-                <div className="w-[12.5rem] h-[2.75rem] flex items-center gap-[0.5rem]">
-                  <Link
-                    href="#"
-                    className="h-[2.75rem] w-[2.75rem] relative rounded-full flex items-center justify-center bg-[#d9f0ff] hover:bg-[#b8e0ff] transition-colors"
-                  >
-                    <Image
-                      className="h-[1.25rem] w-[1.25rem] object-contain"
-                      width={20}
-                      height={20}
-                      alt="Facebook"
-                      src="/facebook.svg"
-                    />
-                  </Link>
-                  <Link
-                    href="#"
-                    className="h-[2.75rem] w-[2.75rem] relative rounded-full flex items-center justify-center bg-[#d9f0ff] hover:bg-[#b8e0ff] transition-colors"
-                  >
-                    <Image
-                      className="h-[1.25rem] w-[1.25rem] object-contain"
-                      width={20}
-                      height={20}
-                      alt="Twitter"
-                      src="/twitter.svg"
-                    />
-                  </Link>
-                  <Link
-                    href="#"
-                    className="h-[2.75rem] w-[2.75rem] relative rounded-full flex items-center justify-center bg-[#d9f0ff] hover:bg-[#b8e0ff] transition-colors"
-                  >
-                    <Image
-                      className="h-[1.25rem] w-[1.25rem] object-contain"
-                      width={20}
-                      height={20}
-                      alt="LinkedIn"
-                      src="/linkedin-fill.svg"
-                    />
-                  </Link>
-                  <Link
-                    href="#"
-                    className="h-[2.75rem] w-[2.75rem] relative rounded-full flex items-center justify-center bg-[#d9f0ff] hover:bg-[#b8e0ff] transition-colors"
-                  >
-                    <Image
-                      className="h-[1.25rem] w-[1.25rem] object-contain"
-                      width={20}
-                      height={20}
-                      alt="Instagram"
-                      src="/instagram.svg"
-                    />
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* New to Wirero Card */}
-          <div className="self-stretch rounded-[24px] bg-[#e6f4ff] overflow-hidden flex items-start p-[1.25rem] box-border gap-[1.5rem] max-w-full text-[1.5rem] text-[#4d565f]">
-            <div className="flex-1 flex items-start gap-[1rem] min-w-0 max-w-full">
+          {/* Right Column - Form */}
+          <section className="flex-1 rounded-[28px] bg-[#f0f8ff] overflow-hidden flex flex-col items-start p-[2.5rem] box-border gap-[1.25rem] min-w-0 max-w-[33.25rem] text-left text-[2.25rem] text-[#4d565f] font-proxima mq750:min-w-full mq1050:max-w-full">
+            {/* Form Header */}
+            <div className="self-stretch flex items-start gap-[1rem] max-w-full">
               <Image
-                className="w-[3.5rem] h-auto relative max-h-full object-cover rounded"
-                width={54}
-                height={30}
-                loading="lazy"
-                alt="New to Wirero"
-                src="/Group-1.jpg"
+                className="h-[3rem] w-[1.75rem] relative"
+                width={28}
+                height={48}
+                alt="Message icon"
+                src="/mail.svg"
               />
-              <div className="flex-1 flex flex-col items-start gap-[0.25rem] min-w-0 max-w-full">
-                <h3 className="m-0 self-stretch relative text-[length:inherit] leading-[1.875rem] font-bold font-[inherit]">
-                  New to Wirero?
-                </h3>
-                <div className="w-full relative text-[1.125rem] leading-[1.75rem] text-[#64676f] inline-block max-w-[22.25rem]">
-                  Explore how our multi-domain distribution infrastructure
-                  works.
-                </div>
+              <div className="flex-1 flex flex-col items-start min-w-0 max-w-full">
+                <h1 className="m-0 self-stretch relative text-[length:inherit] leading-[3rem] font-bold font-[inherit] shrink-0">
+                  Send Us a Message
+                </h1>
               </div>
             </div>
-            <Link
-              href="#"
-              className="cursor-pointer border-none py-[0.5rem] px-[0.5rem] bg-[#0461c3] h-[2.25rem] w-[2.25rem] rounded-[8px] flex items-center justify-center box-border text-color-white hover:bg-[#0354a8] transition-colors no-underline"
+
+            {/* Form */}
+            <form
+              onSubmit={handleSubmit}
+              className="self-stretch flex flex-col items-start gap-[1rem] text-[1rem] text-[#64676f]"
             >
-              <Image
-                className="h-[1.25rem] w-[1.25rem]"
-                width={20}
-                height={20}
-                alt="Arrow"
-                src="/arrow-right.svg"
-              />
-            </Link>
-          </div>
-        </section>
-
-        {/* Right Column - Form */}
-        <section className="flex-1 rounded-[28px] bg-[#f0f8ff] overflow-hidden flex flex-col items-start p-[2.5rem] box-border gap-[1.25rem] min-w-0 max-w-[33.25rem] text-left text-[2.25rem] text-[#4d565f] font-proxima mq750:min-w-full mq1050:max-w-full">
-          {/* Form Header */}
-          <div className="self-stretch flex items-start gap-[1rem] max-w-full">
-            <Image
-              className="h-[3rem] w-[1.75rem] relative"
-              width={28}
-              height={48}
-              alt="Message icon"
-              src="/mail.svg"
-            />
-            <div className="flex-1 flex flex-col items-start min-w-0 max-w-full">
-              <h1 className="m-0 self-stretch relative text-[length:inherit] leading-[3rem] font-bold font-[inherit] shrink-0">
-                Send Us a Message
-              </h1>
-            </div>
-          </div>
-
-          {/* Form */}
-          <form
-            onSubmit={handleSubmit}
-            className="self-stretch flex flex-col items-start gap-[1rem] text-[1rem] text-[#64676f]"
-          >
-            {/* Full Name */}
-            <div className="self-stretch flex flex-col items-start gap-[0.375rem]">
-              <label
-                htmlFor="fullName"
-                className="relative leading-[1.5rem] font-semibold"
-              >
-                Full Name
-              </label>
-              <input
-                id="fullName"
-                name="fullName"
-                type="text"
-                required
-                placeholder="Enter your full name"
-                value={formData.fullName}
-                onChange={handleInputChange}
-                className="self-stretch rounded-[8px] bg-color-white border-[#e2e5e9] border-solid border-[1px] overflow-hidden flex items-center py-[0.75rem] px-[0.875rem] gap-[0.5rem] w-full font-proxima text-[1rem] text-[#1a2530] focus:border-[#0461c3] focus:outline-none transition-colors"
-              />
-            </div>
-
-            {/* Email Address */}
-            <div className="self-stretch flex flex-col items-start gap-[0.375rem]">
-              <label
-                htmlFor="email"
-                className="relative leading-[1.5rem] font-semibold"
-              >
-                Email Address
-              </label>
-              <input
-                id="email"
-                name="email"
-                type="email"
-                required
-                placeholder="Enter your email"
-                value={formData.email}
-                onChange={handleInputChange}
-                className="self-stretch rounded-[8px] bg-color-white border-[#e2e5e9] border-solid border-[1px] overflow-hidden flex items-center py-[0.75rem] px-[0.875rem] gap-[0.5rem] w-full font-proxima text-[1rem] text-[#1a2530] focus:border-[#0461c3] focus:outline-none transition-colors"
-              />
-            </div>
-
-            {/* Company Name (Optional) */}
-            <div className="self-stretch flex flex-col items-start gap-[0.375rem]">
-              <label
-                htmlFor="companyName"
-                className="relative leading-[1.5rem] font-semibold"
-              >
-                Company Name (Optional)
-              </label>
-              <input
-                id="companyName"
-                name="companyName"
-                type="text"
-                placeholder="Enter company name (Optional)"
-                value={formData.companyName}
-                onChange={handleInputChange}
-                className="self-stretch rounded-[8px] bg-color-white border-[#e2e5e9] border-solid border-[1px] overflow-hidden flex items-center py-[0.75rem] px-[0.875rem] gap-[0.5rem] w-full font-proxima text-[1rem] text-[#1a2530] focus:border-[#0461c3] focus:outline-none transition-colors"
-              />
-            </div>
-
-            {/* Company Type */}
-            <div className="self-stretch flex flex-col items-start gap-[0.375rem]">
-              <label
-                htmlFor="companyType"
-                className="relative leading-[1.5rem] font-semibold"
-              >
-                Company Type
-              </label>
-              <div className="self-stretch relative">
-                <select
-                  id="companyType"
-                  name="companyType"
-                  required
-                  value={formData.companyType}
-                  onChange={handleInputChange}
-                  className="self-stretch rounded-[8px] bg-color-white border-[#e2e5e9] border-solid border-[1px] overflow-hidden flex items-center py-[0.75rem] px-[0.875rem] gap-[0.5rem] w-full font-proxima text-[1rem] text-[#64676f] focus:border-[#0461c3] focus:outline-none transition-colors appearance-none cursor-pointer"
+              {/* Full Name */}
+              <div className="self-stretch flex flex-col items-start gap-[0.375rem]">
+                <label
+                  htmlFor="fullName"
+                  className="relative leading-[1.5rem] font-semibold"
                 >
-                  <option value="">Select company type</option>
-                  <option value="agency">Agency</option>
-                  <option value="startup">Startup</option>
-                  <option value="enterprise">Enterprise</option>
-                  <option value="reseller">Reseller</option>
-                  <option value="individual">Individual</option>
-                </select>
+                  Full Name
+                </label>
+                <input
+                  id="fullName"
+                  name="fullName"
+                  type="text"
+                  required
+                  placeholder="Enter your full name"
+                  value={formData.fullName}
+                  onChange={handleInputChange}
+                  className="self-stretch rounded-[8px] bg-color-white border-[#e2e5e9] border-solid border-[1px] overflow-hidden flex items-center py-[0.75rem] px-[0.875rem] gap-[0.5rem] w-full font-proxima text-[1rem] text-[#1a2530] focus:border-[#0461c3] focus:outline-none transition-colors"
+                />
+              </div>
+
+              {/* Email Address */}
+              <div className="self-stretch flex flex-col items-start gap-[0.375rem]">
+                <label
+                  htmlFor="email"
+                  className="relative leading-[1.5rem] font-semibold"
+                >
+                  Email Address
+                </label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  required
+                  placeholder="Enter your email"
+                  value={formData.email}
+                  onChange={handleInputChange}
+                  className="self-stretch rounded-[8px] bg-color-white border-[#e2e5e9] border-solid border-[1px] overflow-hidden flex items-center py-[0.75rem] px-[0.875rem] gap-[0.5rem] w-full font-proxima text-[1rem] text-[#1a2530] focus:border-[#0461c3] focus:outline-none transition-colors"
+                />
+              </div>
+
+              {/* Company Name (Optional) */}
+              <div className="self-stretch flex flex-col items-start gap-[0.375rem]">
+                <label
+                  htmlFor="companyName"
+                  className="relative leading-[1.5rem] font-semibold"
+                >
+                  Company Name (Optional)
+                </label>
+                <input
+                  id="companyName"
+                  name="companyName"
+                  type="text"
+                  placeholder="Enter company name (Optional)"
+                  value={formData.companyName}
+                  onChange={handleInputChange}
+                  className="self-stretch rounded-[8px] bg-color-white border-[#e2e5e9] border-solid border-[1px] overflow-hidden flex items-center py-[0.75rem] px-[0.875rem] gap-[0.5rem] w-full font-proxima text-[1rem] text-[#1a2530] focus:border-[#0461c3] focus:outline-none transition-colors"
+                />
+              </div>
+
+              {/* Company Type */}
+              <div className="self-stretch flex flex-col items-start gap-[0.375rem]">
+                <label
+                  htmlFor="companyType"
+                  className="relative leading-[1.5rem] font-semibold"
+                >
+                  Company Type
+                </label>
+                <div className="self-stretch relative">
+                  <select
+                    id="companyType"
+                    name="companyType"
+                    required
+                    value={formData.companyType}
+                    onChange={handleInputChange}
+                    className="self-stretch rounded-[8px] bg-color-white border-[#e2e5e9] border-solid border-[1px] overflow-hidden flex items-center py-[0.75rem] px-[0.875rem] gap-[0.5rem] w-full font-proxima text-[1rem] text-[#64676f] focus:border-[#0461c3] focus:outline-none transition-colors appearance-none cursor-pointer"
+                  >
+                    <option value="">Select company type</option>
+                    <option value="agency">Agency</option>
+                    <option value="startup">Startup</option>
+                    <option value="enterprise">Enterprise</option>
+                    <option value="reseller">Reseller</option>
+                    <option value="individual">Individual</option>
+                  </select>
+                  <Image
+                    className="h-[1rem] w-[1rem] absolute right-[0.875rem] top-1/2 -translate-y-1/2 pointer-events-none"
+                    width={16}
+                    height={16}
+                    alt="Dropdown"
+                    src="/chevron-down.svg"
+                  />
+                </div>
+              </div>
+
+              {/* Message */}
+              <div className="self-stretch flex flex-col items-start gap-[0.375rem]">
+                <label
+                  htmlFor="message"
+                  className="relative leading-[1.5rem] font-semibold"
+                >
+                  Message
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  required
+                  placeholder="Tell us about your distribution needs..."
+                  value={formData.message}
+                  onChange={handleInputChange}
+                  rows={5}
+                  className="self-stretch rounded-[8px] bg-color-white border-[#e2e5e9] border-solid border-[1px] overflow-hidden flex items-start py-[0.625rem] px-[0.875rem] w-full font-proxima text-[1rem] text-[#1a2530] focus:border-[#0461c3] focus:outline-none transition-colors resize-none"
+                />
+              </div>
+
+              {/* reCAPTCHA */}
+              <div className="self-stretch min-h-[4.875rem] mq450:min-h-[9rem] overflow-hidden">
+                <div ref={recaptchaContainerRef} />
+              </div>
+
+              {/* Submit Button */}
+              <button
+                type="submit"
+                disabled={isSubmitting || !isRecaptchaReady}
+                aria-disabled={isSubmitting || !isRecaptchaReady}
+                className="cursor-pointer border-none py-[1rem] px-[2.5rem] bg-[#0461c3] h-[3.5rem] rounded-[8px] flex items-center justify-center box-border gap-[0.5rem] text-color-white hover:bg-[#0354a8] transition-colors font-proxima disabled:cursor-not-allowed disabled:opacity-60"
+              >
+                <span className="relative text-[1rem] leading-[1.25rem] font-semibold">
+                  {isSubmitting ? "Sending..." : "Send Message"}
+                </span>
                 <Image
-                  className="h-[1rem] w-[1rem] absolute right-[0.875rem] top-1/2 -translate-y-1/2 pointer-events-none"
+                  className="h-[1rem] w-[1rem] relative"
                   width={16}
                   height={16}
-                  alt="Dropdown"
-                  src="/chevron-down.svg"
+                  alt="Arrow"
+                  src="/arrow-right1.svg"
                 />
-              </div>
-            </div>
-
-            {/* Message */}
-            <div className="self-stretch flex flex-col items-start gap-[0.375rem]">
-              <label
-                htmlFor="message"
-                className="relative leading-[1.5rem] font-semibold"
-              >
-                Message
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                required
-                placeholder="Tell us about your distribution needs..."
-                value={formData.message}
-                onChange={handleInputChange}
-                rows={5}
-                className="self-stretch rounded-[8px] bg-color-white border-[#e2e5e9] border-solid border-[1px] overflow-hidden flex items-start py-[0.625rem] px-[0.875rem] w-full font-proxima text-[1rem] text-[#1a2530] focus:border-[#0461c3] focus:outline-none transition-colors resize-none"
-              />
-            </div>
-
-            {/* reCAPTCHA */}
-            <div className="self-stretch min-h-[4.875rem] mq450:min-h-[9rem] overflow-hidden">
-              <div ref={recaptchaContainerRef} />
-            </div>
-
-            {/* Submit Button */}
-            <button
-              type="submit"
-              disabled={isSubmitting || !isRecaptchaReady}
-              aria-disabled={isSubmitting || !isRecaptchaReady}
-              className="cursor-pointer border-none py-[1rem] px-[2.5rem] bg-[#0461c3] h-[3.5rem] rounded-[8px] flex items-center justify-center box-border gap-[0.5rem] text-color-white hover:bg-[#0354a8] transition-colors font-proxima disabled:cursor-not-allowed disabled:opacity-60"
-            >
-              <span className="relative text-[1rem] leading-[1.25rem] font-semibold">
-                {isSubmitting ? "Sending..." : "Send Message"}
-              </span>
-              <Image
-                className="h-[1rem] w-[1rem] relative"
-                width={16}
-                height={16}
-                alt="Arrow"
-                src="/arrow-right1.svg"
-              />
-            </button>
-          </form>
-        </section>
+              </button>
+            </form>
+          </section>
         </div>
       </main>
 

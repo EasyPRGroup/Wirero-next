@@ -78,7 +78,7 @@ const FrameComponent4: NextPage<FrameComponent4Type> = ({ className = "" }) => {
               src="/mail.svg"
             />
             <div className="relative text-[1.125rem] leading-[1.75rem] font-proxima text-[#4d575f] text-left">
-              hello@wirero.com
+              info@wirero.com
             </div>
             <Image
               className="h-[1.25rem] w-[1.25rem] relative"
