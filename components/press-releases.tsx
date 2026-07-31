@@ -502,7 +502,7 @@ const PressReleases: NextPage<PressReleasesType> = ({ className = "" }) => {
                   </div>
                 </section>
               </div>
-              <section className="h-[30rem] w-[65rem] rounded-[28px] bg-[rgba(242,240,251,0.08)] border-[#f4f7fa] border-solid border-[4px] box-border overflow-hidden shrink-0 flex items-start justify-center [row-gap:20px] max-w-full text-left text-[1.125rem] text-[#4d575f] font-proxima snap-start mq1125:h-auto mq1125:flex-wrap">
+              {/* <section className="h-[30rem] w-[65rem] rounded-[28px] bg-[rgba(242,240,251,0.08)] border-[#f4f7fa] border-solid border-[4px] box-border overflow-hidden shrink-0 flex items-start justify-center [row-gap:20px] max-w-full text-left text-[1.125rem] text-[#4d575f] font-proxima snap-start mq1125:h-auto mq1125:flex-wrap">
                 <div className="self-stretch flex-1 bg-color-white flex flex-col items-start justify-between p-[1.25rem] box-border gap-[1.25rem] min-w-0">
                   <div className="w-[29.063rem] rounded-lg hidden flex-col items-start justify-center py-[0.25rem] px-[0.5rem] box-border gap-[0.5rem] shrink-0">
                     <div className="rounded-[40px] flex items-center gap-[0.375rem] shrink-0">
@@ -719,7 +719,7 @@ const PressReleases: NextPage<PressReleasesType> = ({ className = "" }) => {
                     </div>
                   </div>
                 </div>
-              </section>
+              </section> */}
             </div>
             <div className="w-[11.25rem] h-full absolute !m-0 top-[0rem] bottom-[0rem] left-[-6.875rem] [background:linear-gradient(270deg,_rgba(255,_255,_255,_0.4),_#fff)] z-[1] shrink-0 mq800:hidden" />
             <div className="w-[11.25rem] h-full absolute !m-0 top-[0rem] right-[-6.875rem] bottom-[0rem] [background:linear-gradient(270deg,_#fff,_rgba(255,_255,_255,_0.4))] z-[2] shrink-0 mq800:hidden" />
@@ -728,7 +728,7 @@ const PressReleases: NextPage<PressReleasesType> = ({ className = "" }) => {
               <ScrollButton direction="right" onClick={() => scroll("right")} />
             </div>
           </div>
-          <div className="flex items-center justify-center gap-[2.5rem] mq800:gap-[1.25rem] mq800:flex-wrap">
+          {/* <div className="flex items-center justify-center gap-[2.5rem] mq800:gap-[1.25rem] mq800:flex-wrap">
             <Image
               className="w-[10.5rem] relative max-h-full object-cover"
               width={168}
@@ -761,7 +761,7 @@ const PressReleases: NextPage<PressReleasesType> = ({ className = "" }) => {
               alt=""
               src="/Object2@2x.png"
             />
-          </div>
+          </div> */}
         </div>
         <UserOutlined
           showUserOutlined={false}
