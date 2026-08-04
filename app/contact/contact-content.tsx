@@ -197,7 +197,7 @@ const ContactPage: NextPage = () => {
               </div>
 
               {/* Phone Card */}
-              <div className="self-stretch overflow-hidden flex items-start gap-[1rem] max-w-full">
+              {/* <div className="self-stretch overflow-hidden flex items-start gap-[1rem] max-w-full">
                 <div className="h-[2.75rem] w-[2.75rem] relative rounded-[12px] bg-[#d9f0ff] flex items-center justify-center">
                   <Image
                     className="h-[1.5rem] w-[1.5rem] object-contain"
@@ -215,7 +215,7 @@ const ContactPage: NextPage = () => {
                     +00 9812345678
                   </div>
                 </div>
-              </div>
+              </div> */}
 
               {/* Social Media */}
               <div className="self-stretch overflow-hidden flex items-start max-w-full">
