@@ -29,12 +29,19 @@ const Clients: NextPage<ClientsType> = ({ className = "" }) => {
       className: "w-full h-[2.5rem] relative object-contain",
     },
     {
-      src: "/Logo Horizontal Color.svg",
+      src: "/openpr-logo-slogan.svg",
       alt: "Newswire",
       width: 160,
       height: 40,
       className: "w-full h-[2.5rem] relative object-contain",
     },
+    // {
+    //   src: "/Logo Horizontal Color.svg",
+    //   alt: "Newswire",
+    //   width: 160,
+    //   height: 40,
+    //   className: "w-full h-[2.5rem] relative object-contain",
+    // },
   ];
 
   return (
