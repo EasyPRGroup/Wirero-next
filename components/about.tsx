@@ -78,6 +78,8 @@ const About: NextPage<AboutType> = ({ className = "" }) => {
         />
       </div>
     </section>
+
+    // kjdfhsdkhf
   );
 };
 
