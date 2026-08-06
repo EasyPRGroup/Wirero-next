@@ -1,13 +1,48 @@
 import { NextResponse } from "next/server";
 import * as XLSX from "xlsx";
-import domainsData from "../../../data/domains-by-tag.json";
 
 export async function GET() {
   try {
-    const data = domainsData as Array<{ tag: string; name: string; url: string }>;
+    const apiBaseUrl = process.env.NEXT_PUBLIC_API_BASE_URL;
+    const apiKey = process.env.NEXT_PUBLIC_API_KEY;
+
+    if (!apiBaseUrl || !apiKey) {
+      console.error("Missing API configuration:", { apiBaseUrl: !!apiBaseUrl, apiKey: !!apiKey });
+      return NextResponse.json(
+        { error: "API configuration is missing" },
+        { status: 500 }
+      );
+    }
+
+    const baseUrl = apiBaseUrl.replace(/\/client\/?$/, "").replace(/\/$/, "");
+    const response = await fetch(`${baseUrl}/client/sites`, {
+      headers: {
+        "x-api-key": apiKey,
+      },
+      next: { revalidate: 3600 },
+    });
+
+    if (!response.ok) {
+      const errorText = await response.text();
+      console.error("Failed to fetch sites:", response.status, errorText);
+      return NextResponse.json(
+        { error: "Failed to fetch sites from API" },
+        { status: response.status }
+      );
+    }
+
+    const data = await response.json();
+    const sites = data.sites || [];
+
+    if (sites.length === 0) {
+      return NextResponse.json(
+        { error: "No sites found" },
+        { status: 404 }
+      );
+    }
 
     const worksheet = XLSX.utils.json_to_sheet(
-      data.map((item, index) => ({
+      sites.map((item: { name: string; url: string; tag: string }, index: number) => ({
         "#": index + 1,
         "Media Category": item.tag,
         "Site Name": item.name,
