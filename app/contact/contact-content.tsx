@@ -44,6 +44,7 @@ const ContactPage: NextPage = () => {
     email: "",
     companyName: "",
     companyType: "",
+    selectedPackage: "",
     message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -77,6 +78,7 @@ const ContactPage: NextPage = () => {
       email: formData.email.trim(),
       subject: formData.companyType.trim(),
       message: formData.message.trim(),
+      selectedPackage: formData.selectedPackage.trim(),
     };
 
     if (
@@ -122,6 +124,7 @@ const ContactPage: NextPage = () => {
         email: "",
         companyName: "",
         companyType: "",
+        selectedPackage: "",
         message: "",
       });
       resetRecaptcha();
@@ -395,39 +398,71 @@ const ContactPage: NextPage = () => {
                 />
               </div>
 
-              {/* Company Type */}
-              <div className="self-stretch flex flex-col items-start gap-[0.375rem]">
-                <label
-                  htmlFor="companyType"
-                  className="relative leading-[1.5rem] font-semibold"
-                >
-                  Company Type
-                </label>
-                <div className="self-stretch relative">
-                  <select
-                    id="companyType"
-                    name="companyType"
-                    required
-                    value={formData.companyType}
-                    onChange={handleInputChange}
-                    className="self-stretch rounded-[8px] bg-color-white border-[#e2e5e9] border-solid border-[1px] overflow-hidden flex items-center py-[0.75rem] px-[0.875rem] gap-[0.5rem] w-full font-proxima text-[1rem] text-[#64676f] focus:border-[#0461c3] focus:outline-none transition-colors appearance-none cursor-pointer"
-                  >
-                    <option value="">Select company type</option>
-                    <option value="agency">Agency</option>
-                    <option value="startup">Startup</option>
-                    <option value="enterprise">Enterprise</option>
-                    <option value="reseller">Reseller</option>
-                    <option value="individual">Individual</option>
-                  </select>
-                  <Image
-                    className="h-[1rem] w-[1rem] absolute right-[0.875rem] top-1/2 -translate-y-1/2 pointer-events-none"
-                    width={16}
-                    height={16}
-                    alt="Dropdown"
-                    src="/chevron-down.svg"
-                  />
-                </div>
-              </div>
+               {/* Company Type */}
+               <div className="self-stretch flex flex-col items-start gap-[0.375rem]">
+                 <label
+                   htmlFor="companyType"
+                   className="relative leading-[1.5rem] font-semibold"
+                 >
+                   Company Type
+                 </label>
+                 <div className="self-stretch relative">
+                   <select
+                     id="companyType"
+                     name="companyType"
+                     required
+                     value={formData.companyType}
+                     onChange={handleInputChange}
+                     className="self-stretch rounded-[8px] bg-color-white border-[#e2e5e9] border-solid border-[1px] overflow-hidden flex items-center py-[0.75rem] px-[0.875rem] gap-[0.5rem] w-full font-proxima text-[1rem] text-[#64676f] focus:border-[#0461c3] focus:outline-none transition-colors appearance-none cursor-pointer"
+                   >
+                     <option value="">Select company type</option>
+                     <option value="agency">Agency</option>
+                     <option value="startup">Startup</option>
+                     <option value="enterprise">Enterprise</option>
+                     <option value="reseller">Reseller</option>
+                     <option value="individual">Individual</option>
+                   </select>
+                   <Image
+                     className="h-[1rem] w-[1rem] absolute right-[0.875rem] top-1/2 -translate-y-1/2 pointer-events-none"
+                     width={16}
+                     height={16}
+                     alt="Dropdown"
+                     src="/chevron-down.svg"
+                   />
+                 </div>
+               </div>
+
+               {/* Interested Package */}
+               <div className="self-stretch flex flex-col items-start gap-[0.375rem]">
+                 <label
+                   htmlFor="selectedPackage"
+                   className="relative leading-[1.5rem] font-semibold"
+                 >
+                   Interested Package
+                 </label>
+                 <div className="self-stretch relative">
+                   <select
+                     id="selectedPackage"
+                     name="selectedPackage"
+                     value={formData.selectedPackage}
+                     onChange={handleInputChange}
+                     className="self-stretch rounded-[8px] bg-color-white border-[#e2e5e9] border-solid border-[1px] overflow-hidden flex items-center py-[0.75rem] px-[0.875rem] gap-[0.5rem] w-full font-proxima text-[1rem] text-[#64676f] focus:border-[#0461c3] focus:outline-none transition-colors appearance-none cursor-pointer"
+                   >
+                     <option value="">Select a package</option>
+                     <option value="starter">Starter Plan - $250/mo</option>
+                     <option value="unlimited">Unlimited Plan - $500/mo</option>
+                     <option value="banner">Banner Network Placement - $1000/mo</option>
+                     <option value="widget">Email / Widget Placement - $1000/mo</option>
+                   </select>
+                   <Image
+                     className="h-[1rem] w-[1rem] absolute right-[0.875rem] top-1/2 -translate-y-1/2 pointer-events-none"
+                     width={16}
+                     height={16}
+                     alt="Dropdown"
+                     src="/chevron-down.svg"
+                   />
+                 </div>
+               </div>
 
               {/* Message */}
               <div className="self-stretch flex flex-col items-start gap-[0.375rem]">

@@ -3,6 +3,7 @@ export interface ContactFormData {
   email: string;
   subject: string;
   message: string;
+  selectedPackage?: string;
 }
 
 export interface ContactSubmissionData extends ContactFormData {

@@ -229,11 +229,9 @@ const PricingCard: NextPage<PricingCardType> = ({
           </div>
           <Link
             href="/contact"
-            className={`cursor-pointer self-stretch min-h-[3.5rem] rounded-[8px] flex items-center justify-center gap-[0.5rem] px-[0.75rem] no-underline ${ctaVariant === "filled" ? "bg-[#0461c3] border-none" : "border-[#0461c3] border-solid border-[1px] bg-transparent"} hover:opacity-90 transition-opacity`}
+            className={`cursor-pointer self-stretch h-[3.5rem] rounded-[8px] flex items-center justify-center gap-[0.5rem] py-[1rem] px-[1.5rem] box-border no-underline font-proxima focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-[3px] focus-visible:outline-[#0bc111] ${ctaVariant === "filled" ? "bg-[#0461c3] border-[1px] border-solid border-white text-color-white hover:bg-[#0554af] transition-colors" : "border-[#0461c3] border-solid border-[1px] bg-transparent text-[#0461c3] hover:bg-[#f7fafd] transition-colors"}`}
           >
-            <div
-              className={`relative min-w-0 text-[1rem] leading-[1.25rem] font-semibold font-proxima text-center ${isPopular ? "text-color-white" : "text-[#0461c3]"}`}
-            >
+            <div className="relative min-w-0 text-[1rem] leading-[1.25rem] font-semibold font-proxima text-center">
               {ctaText}
             </div>
           </Link>
