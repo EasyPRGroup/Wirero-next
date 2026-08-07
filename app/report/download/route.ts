@@ -19,7 +19,7 @@ export async function GET() {
       headers: {
         "x-api-key": apiKey,
       },
-      next: { revalidate: 3600 },
+      next: { revalidate: 300 },
     });
 
     if (!response.ok) {

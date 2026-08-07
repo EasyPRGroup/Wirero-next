@@ -77,7 +77,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
           "x-api-key": process.env.NEXT_PUBLIC_API_KEY || "",
         },
         // Cache for 1 hour during build
-        next: { revalidate: 3600 }
+        next: { revalidate: 300 }
       });
       
       if (response.ok) {

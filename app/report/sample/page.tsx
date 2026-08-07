@@ -34,7 +34,7 @@ const SampleReportPage: NextPage = () => {
           headers: {
             "x-api-key": apiKey,
           },
-          next: { revalidate: 3600 },
+          next: { revalidate: 60 },
         });
 
         if (!response.ok) {

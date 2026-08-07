@@ -10,7 +10,7 @@ import Footer from "../../../components/footer";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://wirero.com";
 
-export const revalidate = 3600;
+export const revalidate = 60;
 
 export async function generateMetadata({
   params,
