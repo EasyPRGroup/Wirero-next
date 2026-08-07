@@ -21,7 +21,6 @@ const Header: NextPage<HeaderType> = ({
 }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isHeaderVisible, setIsHeaderVisible] = useState(true);
-  const [isSampleReportOpen, setIsSampleReportOpen] = useState(false);
   const lastScrollY = useRef(0);
 
   useEffect(() => {
@@ -96,16 +95,6 @@ const Header: NextPage<HeaderType> = ({
     setIsMobileMenuOpen(false);
   };
 
-  const handleSampleReportDownload = () => {
-    setIsSampleReportOpen(false);
-    const link = document.createElement("a");
-    link.href = "/report/download";
-    link.download = "wirero-sample-report.xlsx";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
-
   return (
     <>
       <header
@@ -140,26 +129,16 @@ const Header: NextPage<HeaderType> = ({
                   href={item.href}
                 />
               ))}
-              <div className="relative">
-                <button
-                  onClick={() => setIsSampleReportOpen(!isSampleReportOpen)}
-                  className="flex items-center justify-center py-[0rem] px-[0.25rem] shrink-0 text-left text-[1.125rem] font-proxima transition-colors text-[#64676f] font-semibold hover:text-color-white"
-                >
-                  <div className="relative leading-[1.625rem] font-semibold">
-                    Sample Report
-                  </div>
-                </button>
-                 {isSampleReportOpen && (
-                  <div className="absolute top-full left-0 mt-[0.5rem] bg-[#1a2530] border border-[#2a3544] rounded-lg shadow-lg overflow-hidden min-w-[12rem] z-50">
-                    <button
-                      onClick={handleSampleReportDownload}
-                      className="block w-full text-left px-[1rem] py-[0.75rem] text-[1rem] text-[#64676f] hover:text-color-white hover:bg-[#0461c3] transition-colors whitespace-nowrap"
-                    >
-                      Download Sample Report
-                    </button>
-                  </div>
-                )}
-              </div>
+              <Link
+                href="/report/sample"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center py-[0rem] px-[0.25rem] shrink-0 text-left text-[1.125rem] font-proxima transition-colors text-[#64676f] font-semibold hover:text-color-white no-underline"
+              >
+                <div className="relative leading-[1.625rem] font-semibold">
+                  Sample Report
+                </div>
+              </Link>
             </nav>
             <Link href="/contact">
               <UserOutlined
@@ -223,15 +202,15 @@ const Header: NextPage<HeaderType> = ({
                 {item.features}
               </Link>
             ))}
-            <button
-              onClick={() => {
-                closeMobileMenu();
-                handleSampleReportDownload();
-              }}
-              className="text-[1.25rem] leading-[2rem] font-medium transition-colors text-[#64676f] hover:text-color-white"
+            <Link
+              href="/report/sample"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[1.25rem] leading-[2rem] font-medium transition-colors text-[#64676f] hover:text-color-white no-underline"
+              onClick={closeMobileMenu}
             >
               Sample Report
-            </button>
+            </Link>
             <Link
               href="/contact"
               className="mt-[1rem] px-[2rem] py-[0.75rem] bg-color-white text-[#12171c] rounded-lg text-[1rem] font-semibold"
